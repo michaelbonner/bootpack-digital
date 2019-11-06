@@ -18,6 +18,14 @@ module.exports = {
         icon: `src/images/bootpack-icon.png`
       }
     },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: `GTM-KCZ4PZC`,
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: `gatsby` }
+      }
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,

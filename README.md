@@ -1,6 +1,6 @@
 # Bootpack Digital
 
-Public webiste for Bootpack Digital, LLC
+Public website for Bootpack Digital, LLC
 
 ## What is Tailwind?
 
