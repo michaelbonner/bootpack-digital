@@ -2,38 +2,36 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import Functions from "../images/functions.svg";
+import Destinations from "../images/destinations.svg";
+import { Link } from "gatsby";
 
 function IndexPage() {
   return (
     <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
-      />
+      <SEO title="Bootpack Digital, LLC" />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block mx-auto w-1/2"
-          src={catAndHumanIllustration}
-        />
+      <div
+        className="w-full pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        style={{ backgroundImage: Destinations, backgroundSize: `100%` }}
+      >
+        <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+          <h1 className="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
+            People first, product second
+          </h1>
+          <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">
+            We work with and for people to build quality experiences for people.
+          </p>
+        </div>
 
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold no-underline text-gray-900"
-            href="https://tailwindcss.com/"
-          >
-            Tailwind
-          </a>
-          , a utility-first CSS framework.
-        </p>
-      </section>
+        <div className="w-full xl:w-3/5 py-6 overflow-y-hidden">
+          <img
+            alt="People First"
+            className="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
+            src={Functions}
+          />
+        </div>
+      </div>
     </Layout>
   );
 }

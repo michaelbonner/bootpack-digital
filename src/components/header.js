@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
+import BootpackHorizontal from "../images/bootpack-horizontal.svg";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -14,67 +15,36 @@ function Header() {
   `);
 
   return (
-    <header className="bg-teal-700">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-        <Link className="flex items-center no-underline text-white" to="/">
-          <svg
-            className="fill-current h-8 mr-2 w-8"
-            height="54"
-            viewBox="0 0 54 54"
-            width="54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg>
-          <span className="font-bold text-xl tracking-tight">
-            {site.siteMetadata.title}
-          </span>
+    <div className="w-full container mx-auto p-6">
+      <div className="w-full flex items-center justify-between">
+        <Link
+          className="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+          to="/"
+        >
+          <img
+            alt="Bootpack Digital"
+            className="h-20"
+            src={BootpackHorizontal}
+          />
         </Link>
 
-        <button
-          className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+        <div className="flex w-1/2 justify-end content-center">
+          <a
+            className="inline-block text-blue-300 no-underline hover:text-blue-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 "
+            data-tippy-content="#facebook_id"
+            href="https://www.facebook.com/sharer/sharer.php?u=#"
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-
-        <nav
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
-        >
-          {[
-            {
-              route: `/`,
-              title: `Home`
-            },
-            {
-              route: `/about`,
-              title: `About`
-            },
-            {
-              route: `/contact`,
-              title: `Contact`
-            }
-          ].map(link => (
-            <Link
-              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
-              key={link.title}
-              to={link.route}
+            <svg
+              className="fill-current h-6"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              {link.title}
-            </Link>
-          ))}
-        </nav>
+              <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
+            </svg>
+          </a>
+        </div>
       </div>
-    </header>
+    </div>
   );
 }
 
