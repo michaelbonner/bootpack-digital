@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Functions from "../images/functions.svg";
 import Destinations from "../images/destinations.svg";
-import { Link } from "gatsby";
 
 function IndexPage() {
   return (

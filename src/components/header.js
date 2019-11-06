@@ -1,19 +1,8 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
-import React, { useState } from "react";
+import { Link } from "gatsby";
+import React from "react";
 import BootpackHorizontal from "../images/bootpack-horizontal.svg";
 
 function Header() {
-  const [isExpanded, toggleExpansion] = useState(false);
-  const { site } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
     <div className="w-full container mx-auto p-6">
       <div className="w-full flex items-center justify-between">
