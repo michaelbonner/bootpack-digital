@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="border-t border-gray-200 mt-8">
+    <footer className="border-t border-gray-200">
       <nav className="flex justify-between p-4 md:p-8 text-sm">
         <p>&copy; {new Date().getFullYear()} Bootpack Digital, LLC</p>
 

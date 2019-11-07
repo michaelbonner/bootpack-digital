@@ -29,8 +29,8 @@ function IndexPage() {
           />
         </div>
       </div>
-      <div className="w-full max-w-6xl mx-auto bg-gray-300 py-6 px-6 mt-16">
-        <h1 className="pb-4 mb-6 text-2xl uppercase text-gray-700 border-b border-gray-400">
+      <div className="w-full max-w-6xl mx-auto bg-gray-300 py-6 px-12 mt-16 shadow-md rounded-lg">
+        <h1 className="pb-8 pt-6 mb-6 text-2xl uppercase text-gray-700 border-b border-gray-400 font-medium">
           Get in touch!
         </h1>
         <ContactForm />
