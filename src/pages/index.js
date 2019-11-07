@@ -8,7 +8,7 @@ import ContactForm from "../components/contact-form";
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Bootpack Digital, LLC" />
+      <SEO title="Custom web development in Utah" />
 
       <div className="w-full py-24 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">

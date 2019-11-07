@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Bootpack Digital`,
+    title: `Bootpack Digital, LLC`,
     description: `Bootpack Digital provides quality experience for PEOPLE`,
     author: `@bootpack`
   },
