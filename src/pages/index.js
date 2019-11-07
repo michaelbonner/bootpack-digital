@@ -3,7 +3,6 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Functions from "../images/functions.svg";
-import Destinations from "../images/destinations.svg";
 import ContactForm from "../components/contact-form";
 
 function IndexPage() {
@@ -11,16 +10,14 @@ function IndexPage() {
     <Layout>
       <SEO title="Bootpack Digital, LLC" />
 
-      <div
-        className="w-full pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
-        style={{ backgroundImage: Destinations, backgroundSize: `100%` }}
-      >
+      <div className="w-full py-24 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-          <h1 className="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
+          <h1 className="my-4 text-3xl md:text-5xl text-blue-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
             People first, product second
           </h1>
-          <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">
-            We work with and for people to build quality experiences for people.
+          <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle text-blue-600">
+            We work with <strong>people</strong> to build quality experiences
+            for <strong>people</strong>.
           </p>
         </div>
 

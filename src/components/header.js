@@ -4,7 +4,7 @@ import BootpackHorizontal from "../images/bootpack-horizontal.svg";
 
 function Header() {
   return (
-    <div className="w-full container mx-auto p-6">
+    <div className="w-full mx-auto p-6">
       <div className="w-full flex items-center justify-between">
         <Link
           className="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
