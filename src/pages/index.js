@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Functions from "../images/functions.svg";
 import Destinations from "../images/destinations.svg";
+import ContactForm from "../components/contact-form";
 
 function IndexPage() {
   return (
@@ -30,6 +31,12 @@ function IndexPage() {
             src={Functions}
           />
         </div>
+      </div>
+      <div className="w-full bg-gray-300 py-6 px-6 mt-16">
+        <h1 className="pb-4 mb-6 text-2xl uppercase text-gray-700 border-b border-gray-400">
+          Get in touch!
+        </h1>
+        <ContactForm />
       </div>
     </Layout>
   );
