@@ -29,7 +29,7 @@ function IndexPage() {
           />
         </div>
       </div>
-      <div className="w-full bg-gray-300 py-6 px-6 mt-16">
+      <div className="w-full max-w-6xl mx-auto bg-gray-300 py-6 px-6 mt-16">
         <h1 className="pb-4 mb-6 text-2xl uppercase text-gray-700 border-b border-gray-400">
           Get in touch!
         </h1>
