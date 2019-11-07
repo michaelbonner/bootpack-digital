@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Bootpack Digital, LLC`,
     description: `Bootpack Digital provides quality experience for PEOPLE`,
-    author: `@bootpack`
+    author: `@bootpack`,
+    siteUrl: `https://bootpackdigital.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,6 +27,7 @@ module.exports = {
         defaultDataLayer: { platform: `gatsby` }
       }
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
