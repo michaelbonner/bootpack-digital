@@ -16,8 +16,9 @@ function IndexPage() {
             People first, product second
           </h1>
           <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle text-blue-600">
-            We work with <strong>people</strong> to build quality experiences
-            for <strong>people</strong>.
+            We are <strong>people</strong> working with <strong>people</strong>
+            {` `}
+            to build quality experiences for <strong>people</strong>.
           </p>
         </div>
 
