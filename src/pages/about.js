@@ -6,10 +6,7 @@ import SEO from "../components/seo";
 function AboutPage() {
   return (
     <Layout>
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="About Us"
-      />
+      <SEO title="About Us" />
 
       <div className="w-full py-16">
         We're a small group of passionate creators trying to make a difference.
