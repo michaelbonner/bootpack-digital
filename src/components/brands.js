@@ -1,8 +1,8 @@
 import React from "react";
-import CocaCola from "../images/clients/coca-cola-classic.svg";
-import EdgeHomes from "../images/clients/edge-homes.svg";
-import FranklinCovey from "../images/clients/franklin-covey.svg";
-import Ogio from "../images/clients/ogio.svg";
+import CocaCola from "../images/clients/coca-cola-classic-gray.svg";
+import EdgeHomes from "../images/clients/edge-homes-gray.svg";
+import FranklinCovey from "../images/clients/franklin-covey-gray.svg";
+import Ogio from "../images/clients/ogio-gray.svg";
 
 function Brands() {
   return (
