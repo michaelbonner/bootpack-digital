@@ -70,7 +70,7 @@ function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="firstName"
                 >
                   First Name*
@@ -90,7 +90,7 @@ function ContactForm() {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="lastName"
                 >
                   Last Name*
@@ -112,7 +112,7 @@ function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="email"
                 >
                   Email*
@@ -134,7 +134,7 @@ function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="company"
                 >
                   Company
@@ -154,7 +154,7 @@ function ContactForm() {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="phone"
                 >
                   Phone Number
@@ -176,7 +176,7 @@ function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
                   htmlFor="message"
                 >
                   How Can We Help?*
