@@ -187,7 +187,7 @@ function ContactForm() {
                   name="message"
                   onBlur={handleBlur}
                   onChange={handleChange}
-                  placeholder="Need a website for our app"
+                  placeholder="Please give us details about what you're trying to accomplish"
                   rows="10"
                 ></textarea>
                 <p className="text-red-500 text-xs italic px-2 pt-1">
