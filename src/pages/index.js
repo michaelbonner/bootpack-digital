@@ -13,7 +13,7 @@ function IndexPage() {
 
       <div className="w-full py-24 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-          <h1 className="my-4 text-3xl md:text-5xl text-blue-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
+          <h1 className="my-4 text-3xl md:text-5xl text-navy-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
             People first, product second
           </h1>
           <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle text-blue-600">
