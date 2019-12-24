@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Functions from "../images/functions.svg";
+import Heatmap from "../images/heatmap.svg";
 import ContactForm from "../components/contact-form";
 import Brands from "../components/brands";
 
@@ -27,7 +27,7 @@ function IndexPage() {
           <img
             alt="People First"
             className="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
-            src={Functions}
+            src={Heatmap}
           />
         </div>
       </div>
