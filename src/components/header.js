@@ -20,7 +20,7 @@ function Header() {
         <div className="flex w-1/2 justify-end content-center">
           <a
             className="inline-block text-blue-300 no-underline hover:text-blue-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 "
-            href="https://www.facebook.com/Bootpack-Digital-LLC-105277397590244/"
+            href="https://fb.me/bootpack.digital"
           >
             <svg
               className="fill-current h-6"
