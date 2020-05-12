@@ -5,7 +5,7 @@
   "author": "Michael Bonner <michaelwbonner@gmail.com>",
   "dependencies": {
     "formik": "^2.0.8",
-    "gatsby": "^2.18.12",
+    "gatsby": "^2.21.24",
     "gatsby-plugin-google-tagmanager": "^2.1.20",
     "gatsby-plugin-manifest": "^2.2.33",
     "gatsby-plugin-offline": "^3.0.29",
