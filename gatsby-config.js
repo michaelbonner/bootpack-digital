@@ -3,7 +3,7 @@ module.exports = {
     title: `Bootpack Digital, LLC`,
     description: `Bootpack Digital provides quality experience for PEOPLE`,
     author: `@bootpack`,
-    siteUrl: `https://bootpackdigital.com`
+    siteUrl: `https://bootpackdigital.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,26 +16,28 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4299E1`,
         display: `minimal-ui`,
-        icon: `src/images/bootpack-icon.png`
-      }
+        icon: `src/images/bootpack-icon.png`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: `GTM-KCZ4PZC`,
         includeInDevelopment: false,
-        defaultDataLayer: { platform: `gatsby` }
-      }
+        defaultDataLayer: { platform: `gatsby` },
+      },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        purgeOnly: [`src/css/style.css`]
-      }
+        purgeOnly: [`src/css/style.css`],
+      },
     },
-    `gatsby-plugin-offline`
-  ]
+    `gatsby-plugin-offline`,
+  ],
 };
