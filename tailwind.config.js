@@ -1,6 +1,7 @@
 // See https://tailwindcss.com/docs/configuration for details
 
 module.exports = {
+  purge: false,
   theme: {
     extend: {
       colors: {
@@ -13,7 +14,7 @@ module.exports = {
           600: `#237AA5`,
           700: `#17516E`,
           800: `#123D52`,
-          900: `#0C2937`
+          900: `#0C2937`,
         },
         navy: {
           100: `#E6EFF4`,
@@ -24,7 +25,7 @@ module.exports = {
           600: `#005481`,
           700: `#003856`,
           800: `#002A40`,
-          900: `#001C2B`
+          900: `#001C2B`,
         },
         orange: {
           100: `#FEEFEE`,
@@ -35,11 +36,11 @@ module.exports = {
           600: `#D8564A`,
           700: `#903A31`,
           800: `#6C2B25`,
-          900: `#481D19`
-        }
-      }
-    }
+          900: `#481D19`,
+        },
+      },
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 };
