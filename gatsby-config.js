@@ -27,6 +27,15 @@ module.exports = {
         defaultDataLayer: { platform: `gatsby` },
       },
     },
+    {
+      resolve: `gatsby-plugin-preconnect`,
+      options: {
+        domains: [
+          `https://www.google-analytics.com`,
+          `https://www.googletagmanager.com`,
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
