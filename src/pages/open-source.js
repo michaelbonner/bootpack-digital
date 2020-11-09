@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -6,7 +7,7 @@ const OpenSource = () => {
   return (
     <Layout>
       <SEO title="Open Source Projects from Bootpack Digital" />
-      <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-lg mx-auto lg:max-w-7xl">
           <div>
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
@@ -71,7 +72,7 @@ const OpenSource = () => {
         </div>
       </div>
 
-      <div className="bg-gray-100">
+      <div className="bg-gray-200">
         <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 md:text-4xl md:leading-10">
             <span className="block">Ready to build something together?</span>
@@ -81,12 +82,12 @@ const OpenSource = () => {
           </h2>
           <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0">
             <div className="inline-flex rounded-md shadow">
-              <a
+              <Link
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 transition duration-150 ease-in-out"
-                href="/contact"
+                to="/contact"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>

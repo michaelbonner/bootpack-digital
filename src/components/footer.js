@@ -4,7 +4,7 @@ import SocialIcons from "./social-icons";
 
 function Footer() {
   return (
-    <footer className="border-t border-gray-200 lg:flex justify-between items-end">
+    <footer className="lg:flex justify-between items-end">
       <nav className="w-full lg:flex justify-between items-end p-4 md:p-8 text-sm">
         <div className="block lg:flex items-center">
           <p className="mr-12">

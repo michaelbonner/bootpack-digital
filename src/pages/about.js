@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import MichaelBonner from "../components/images/michael-bonner";
+import { Link } from "gatsby";
 
 function AboutPage() {
   return (
@@ -81,12 +82,12 @@ function AboutPage() {
           </h2>
           <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0">
             <div className="inline-flex rounded-md shadow">
-              <a
+              <Link
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 transition duration-150 ease-in-out"
-                href="/contact"
+                to="/contact"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>

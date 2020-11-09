@@ -38,14 +38,18 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
       >
         <img alt="Bootpack Digital" className="w-full" src={BootpackVertical} />
       </Link>
-      <hr className="mx-8 border-gray-100" />
+      <Link
+        className="block text-navy-400 font-semibold text-xl py-2 px-4"
+        to="/"
+      >
+        Home
+      </Link>
       <Link
         className="block text-navy-400 font-semibold text-xl py-2 px-4"
         to="/work"
       >
         Work
       </Link>
-      <hr className="mx-8 border-gray-100" />
       <Link
         className="block text-navy-400 font-semibold text-xl py-2 px-4"
         to="/open-source"
@@ -63,7 +67,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   return (
-    <div className="w-full mx-auto p-6">
+    <div className="bg-white z-20 w-full mx-auto px-6 py-2 sticky top-0">
       <div className="w-full flex items-center justify-between">
         <div className="w-full justify-between flex items-center">
           <Link
