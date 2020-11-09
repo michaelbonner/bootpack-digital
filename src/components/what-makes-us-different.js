@@ -2,7 +2,7 @@ import React from "react";
 
 const WhatMakesUsDifferent = () => {
   return (
-    <div className="my-12 py-12 bg-white">
+    <div className="lg:my-12 py-12 bg-white">
       <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>

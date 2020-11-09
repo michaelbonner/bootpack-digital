@@ -13,7 +13,7 @@ function IndexPage() {
       <SEO title="Custom web development in Utah" />
 
       <div className="container mx-auto">
-        <div className="w-full py-24 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div className="w-full py-12 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
             <h1 className="my-4 text-3xl md:text-5xl text-navy-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
               Software and Web Developers{` `}
@@ -25,7 +25,7 @@ function IndexPage() {
               a business to succeed. Let us help you get your product ot the
               next level.
             </p>
-            <div className="rounded-md shadow">
+            <div className="rounded-md shadow my-4 lg:my-0">
               <a
                 className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                 href="#get-in-touch"
@@ -35,7 +35,7 @@ function IndexPage() {
             </div>
           </div>
 
-          <div className="w-full xl:w-3/5 py-6 overflow-y-hidden">
+          <div className="w-full xl:w-3/5 pt-12 lg:py-6 overflow-y-hidden">
             <img
               alt="People First"
               className="w-5/6 mx-auto lg:mr-0 slide-in-bottom"

@@ -16,8 +16,8 @@ function BrandImage({ title, logo }) {
 
 function Brands() {
   return (
-    <div className="bg-gray-100">
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100">
+      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="mt-8">
             <h2 className="text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
