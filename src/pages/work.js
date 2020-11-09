@@ -1,19 +1,15 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import HereKidsWin from "../images/work/here-kids-win.jpg";
-import Cosgriff from "../images/work/cosgriff.jpg";
-import HeritageOfPreston from "../images/work/heritage-of-preston.jpg";
+import HereKidsWin from "../components/images/work/here-kids-win";
+import Cosgriff from "../components/images/work/cosgriff";
+import HeritageOfPreston from "../components/images/work/heritage-of-preston";
 
 const WorkItem = ({ description, link, poster, title }) => {
   return (
     <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <a class="flex-shrink-0" href={link}>
-        <img
-          alt="Here Kids Win"
-          class="h-48 w-full object-cover"
-          src={poster}
-        />
+        {poster}
       </a>
       <div class="flex-1 bg-white p-6 flex flex-col justify-between">
         <div class="flex-1">
@@ -72,19 +68,19 @@ const Work = () => {
             <WorkItem
               description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted.`}
               link={`https://herekidswin.com/`}
-              poster={HereKidsWin}
+              poster={<HereKidsWin />}
               title={`Here Kids Win`}
             />
             <WorkItem
               description={`J.E. Cosgriff Memorial Catholic School has been a long time client that needed a refresh. We rebuilt the site to make it easier for users to find what they are looking for and easier for employees to add content.`}
               link={`https://cosgriff.org/`}
-              poster={Cosgriff}
+              poster={<Cosgriff />}
               title={`J.E. Cosgriff Memorial Catholic School`}
             />
             <WorkItem
               description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
               link={`https://www.heritageofpreston.com/`}
-              poster={HeritageOfPreston}
+              poster={<HeritageOfPreston />}
               title={`Heritage Senior Living`}
             />
           </div>
