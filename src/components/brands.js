@@ -8,7 +8,7 @@ import WasatchCovers from "../images/clients/wasatch-covers-gray.svg";
 
 function BrandImage({ title, logo }) {
   return (
-    <div className="col-span-1 flex justify-center py-3 px-4">
+    <div className="py-3 px-4">
       <img alt={title} src={logo} />
     </div>
   );
@@ -28,7 +28,7 @@ function Brands() {
               sizes of projects. We're proud of the work we do!
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+          <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0">
             <BrandImage logo={CocaCola} title="CocaCola" />
             <BrandImage
               logo={NationalEnergyFoundation}

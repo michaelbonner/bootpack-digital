@@ -195,15 +195,13 @@ function ContactForm() {
                 </p>
               </div>
             </div>
-            <div>
-              <button
-                className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                disabled={isSubmitting}
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
+            <button
+              className="w-full lg:w-auto px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+              disabled={isSubmitting}
+              type="submit"
+            >
+              Submit
+            </button>
           </form>
           <div className={submitted ? `visible` : `hidden`}>
             <h2>Thank you for contacting us! We'll be in touch soon</h2>

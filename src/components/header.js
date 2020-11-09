@@ -41,15 +41,27 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
     <div
       className={
         mobileNavOpen
-          ? `absolute z-50 top-4 left-4 right-4 bg-white shadow-lg border border-gray-100 py-4 px-6 rounded-md`
+          ? `absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-lg border border-gray-100 py-4 px-6 rounded-md`
           : `hidden`
       }
     >
       <button
-        className="absolute right-3 top-3 text-navy-700 font-semibold w-6 h-6"
+        className="absolute right-5 top-5 text-orange-500 font-semibold w-6 h-6"
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
-        X
+        <svg
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+          />
+        </svg>
       </button>
 
       <Link
@@ -58,12 +70,14 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
       >
         <img alt="Bootpack Digital" className="w-full" src={BootpackVertical} />
       </Link>
+      <hr className="mx-8 border-gray-100" />
       <Link
         className="block text-navy-400 font-semibold text-xl py-2 px-4"
         to="/work"
       >
         Work
       </Link>
+      <hr className="mx-8 border-gray-100" />
       <Link
         className="block text-navy-400 font-semibold text-xl py-2 px-4"
         to="/open-source"

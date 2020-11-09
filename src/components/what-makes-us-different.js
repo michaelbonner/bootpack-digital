@@ -27,9 +27,10 @@ const WhatMakesUsDifferent = () => {
                 15 years of experience
               </h5>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                We've been around the block. We've built large scale production
-                applications and will bring that knowledge to any project, no
-                matter how big or small.
+                We've been around the block. We've worked at agencies, in house,
+                and freelance. We've built large scale production applications
+                and will bring that knowledge to any project, no matter how big
+                or small.
               </p>
             </div>
           </div>
@@ -56,9 +57,9 @@ const WhatMakesUsDifferent = () => {
               </h5>
               <p className="mt-2 text-base leading-6 text-gray-500">
                 We offer an understanding of ROI and work with clients to tune
-                their ideas into something shippable. The client is always
-                right, but sometimes there needs to be some massaging to get
-                that idea to work for the masses.
+                their ideas into something shippable. Go to market strategies
+                can make or break your product. We can help guide you down a
+                path that works for you. We're only happy when you're happy.
               </p>
             </div>
           </div>
@@ -88,6 +89,11 @@ const WhatMakesUsDifferent = () => {
                 the latest tech to make customer experience as smooth and
                 reliable as possible. We like the latest tech, your clients like
                 the latest tech, it's a win-win.
+              </p>
+              <p className="mt-2 text-sm underline">
+                <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbootpackdigital.com%2F&tab=desktop">
+                  Check out our PageSpeed score
+                </a>
               </p>
             </div>
           </div>
