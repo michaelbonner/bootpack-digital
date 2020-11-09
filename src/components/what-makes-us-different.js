@@ -91,7 +91,11 @@ const WhatMakesUsDifferent = () => {
                 the latest tech, it's a win-win.
               </p>
               <p className="mt-2 text-sm underline">
-                <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbootpackdigital.com%2F&tab=desktop">
+                <a
+                  href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbootpackdigital.com%2F&tab=desktop"
+                  rel="noopener nofollow noreferrer"
+                  target="_blank"
+                >
                   Check out our PageSpeed score
                 </a>
               </p>

@@ -53,7 +53,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
         Open Source
       </Link>
 
-      <div className="mt-4">
+      <div className="mt-4 flex justify-center">
         <SocialIcons />
       </div>
     </div>
@@ -65,7 +65,7 @@ function Header() {
   return (
     <div className="w-full mx-auto p-6">
       <div className="w-full flex items-center justify-between">
-        <div className="flex items-center">
+        <div className="w-full justify-between flex items-center">
           <Link
             className="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl mr-0 lg:mr-8"
             to="/"
@@ -80,6 +80,12 @@ function Header() {
           <div className="hidden lg:flex">
             <Link
               className="text-navy-400 hover:underline font-semibold text-xl px-4"
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className="text-navy-400 hover:underline font-semibold text-xl px-4"
               to="/work"
             >
               Work
@@ -91,10 +97,6 @@ function Header() {
               Open Source
             </Link>
           </div>
-        </div>
-
-        <div className="hidden lg:flex w-1/2 justify-end content-center">
-          <SocialIcons />
         </div>
 
         <button

@@ -12,6 +12,7 @@
         "ogio",
         "purgecss",
         "tagmanager",
-        "tailwindcss"
+        "tailwindcss",
+        "unclip"
     ]
 }
