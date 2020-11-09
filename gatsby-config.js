@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     title: `Bootpack Digital, LLC`,
@@ -34,6 +36,13 @@ module.exports = {
           `https://www.google-analytics.com`,
           `https://www.googletagmanager.com`,
         ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     `gatsby-transformer-sharp`,
