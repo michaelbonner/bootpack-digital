@@ -16,7 +16,7 @@ function BrandImage({ title, logo }) {
 
 function Brands() {
   return (
-    <div class="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100">
+    <div className="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100">
       <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="mt-8">
@@ -28,7 +28,7 @@ function Brands() {
               sizes of projects. We're proud of the work we do!
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0">
+          <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 items-center">
             <BrandImage logo={CocaCola} title="CocaCola" />
             <BrandImage
               logo={NationalEnergyFoundation}

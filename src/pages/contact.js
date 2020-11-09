@@ -8,9 +8,14 @@ function ContactPage() {
   return (
     <Layout>
       <SEO title="Contact" />
-      <section className="w-full max-w-6xl mx-auto bg-gray-300 py-6 px-12 mt-16 shadow-md">
-        <ContactForm />
-      </section>
+      <div className="container mx-auto">
+        <h1 className="mt-12 text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
+          Get in touch
+        </h1>
+        <section className="w-full mx-auto py-6 mt-4">
+          <ContactForm />
+        </section>
+      </div>
     </Layout>
   );
 }

@@ -7,21 +7,23 @@ import HeritageOfPreston from "../components/images/work/heritage-of-preston";
 
 const WorkItem = ({ description, link, poster, title }) => {
   return (
-    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-      <a class="flex-shrink-0" href={link}>
+    <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <a className="flex-shrink-0" href={link}>
         {poster}
       </a>
-      <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-        <div class="flex-1">
-          <a class="block" href={link}>
-            <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+      <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+        <div className="flex-1">
+          <a className="block" href={link}>
+            <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {title}
             </h3>
-            <p class="mt-3 text-base leading-6 text-gray-500">{description}</p>
+            <p className="mt-3 text-base leading-6 text-gray-500">
+              {description}
+            </p>
           </a>
         </div>
-        <div class="mt-6 flex items-center">
-          <div class="flex-shrink-0">
+        <div className="mt-6 flex items-center">
+          <div className="flex-shrink-0">
             <a
               className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
               href={link}
@@ -53,18 +55,18 @@ const Work = () => {
   return (
     <Layout>
       <SEO title="Work of Bootpack Digital" />
-      <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-        <div class="relative max-w-7xl mx-auto">
-          <div class="text-center">
-            <h2 class="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
+      <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div className="relative max-w-7xl mx-auto">
+          <div>
+            <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
               Our Work
             </h2>
-            <p class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
+            <p className="mt-3 max-w-2xl text-xl leading-7 text-gray-500 sm:mt-4">
               We build engaging, custom experiences for our clients. Here's a
               few examples we're particularly proud of.
             </p>
           </div>
-          <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+          <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
             <WorkItem
               description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted.`}
               link={`https://herekidswin.com/`}
@@ -83,6 +85,27 @@ const Work = () => {
               poster={<HeritageOfPreston />}
               title={`Heritage Senior Living`}
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-100">
+        <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
+          <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 md:text-4xl md:leading-10">
+            <span className="block">Ready to get started?</span>
+            <span className="block text-blue-600">
+              Send us a message so we can chat.
+            </span>
+          </h2>
+          <div className="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 transition duration-150 ease-in-out"
+                href="/contact"
+              >
+                Get in touch
+              </a>
+            </div>
           </div>
         </div>
       </div>
