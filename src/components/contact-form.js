@@ -14,11 +14,11 @@ const validationSchema = Yup.object().shape({
   email: Yup.string()
     .email(`Enter a Valid Email!`)
     .required(`Email is Required!`),
-  message: Yup.string().required(`Message is Required!`)
+  message: Yup.string().required(`Message is Required!`),
 });
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + `=` + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + `=` + encodeURIComponent(data[key]))
     .join(`&`);
 };
 
@@ -33,14 +33,14 @@ function ContactForm() {
           headers: { "Content-Type": `application/x-www-form-urlencoded` },
           body: encode({
             "form-name": `contact`,
-            ...values
-          })
+            ...values,
+          }),
         })
           .then(() => {
             setSubmitted(true);
             setSubmitting(false);
           })
-          .catch(error => {
+          .catch((error) => {
             alert(`Error: Please Try Again!`);
             setSubmitting(false);
           });
@@ -55,7 +55,7 @@ function ContactForm() {
         handleBlur,
         handleSubmit,
         handleReset,
-        isSubmitting
+        isSubmitting,
         /* and other goodies */
       }) => (
         <>
@@ -67,7 +67,7 @@ function ContactForm() {
             onReset={handleReset}
             onSubmit={handleSubmit}
           >
-            <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="mt-8 flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block tracking-wide text-gray-700 text-xs font-bold mb-2"
