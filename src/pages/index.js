@@ -48,7 +48,9 @@ function IndexPage() {
             <h2 className="text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
               Get in touch!
             </h2>
-            <ContactForm />
+            <div className="lg:mx-24">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>
