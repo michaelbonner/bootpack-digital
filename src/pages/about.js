@@ -110,7 +110,7 @@ function AboutPage() {
           </div>
           <div className="max-w-prose text-gray-500 mx-auto mt-12 pt-12">
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
-              Why "Bootpack"?
+              Why the name "Bootpack"?
             </h2>
             <p className="mt-4">
               We're from Utah, so a lot of our lives revolve around outdoor
