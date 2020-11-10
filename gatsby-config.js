@@ -3,7 +3,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `Bootpack Digital, LLC`,
-    description: `Bootpack Digital is a custom web and software developer in Salt Lake, UT`,
+    description: `We build websites, mobile applications, and web software. We want to help you turn your ideas into realities. We understand how to build quality software, and we understand what it takes for a business to succeed.`,
     author: `@bootpack`,
     siteUrl: `https://bootpackdigital.com`,
   },
