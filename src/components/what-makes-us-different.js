@@ -53,11 +53,11 @@ const WhatMakesUsDifferent = () => {
             </div>
             <div className="mt-5">
               <h5 className="text-lg leading-6 font-medium text-gray-900">
-                Understanding of business
+                Business knowledge
               </h5>
               <p className="mt-2 text-base leading-6 text-gray-500">
                 We offer an understanding of ROI and work with clients to tune
-                their ideas into something shippable. Go to market strategies
+                their ideas into something shippable. Go-to-market strategies
                 can make or break your product. We can help guide you down a
                 path that works for you. We're only happy when you're happy.
               </p>
