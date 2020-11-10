@@ -126,6 +126,7 @@ function Header() {
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
+            <title>Menu</title>
             <path
               d="M4 6h16M4 12h16m-7 6h7"
               strokeLinecap="round"
