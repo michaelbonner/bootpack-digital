@@ -9,12 +9,22 @@ import { Link } from "gatsby";
 const WorkItem = ({ description, link, poster, title }) => {
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-      <a className="flex-shrink-0" href={link}>
+      <a
+        className="flex-shrink-0"
+        href={link}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         {poster}
       </a>
       <div className="flex-1 bg-white p-6 flex flex-col justify-between">
         <div className="flex-1">
-          <a className="block" href={link}>
+          <a
+            className="block"
+            href={link}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {title}
             </h3>
@@ -28,6 +38,8 @@ const WorkItem = ({ description, link, poster, title }) => {
             <a
               className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
               href={link}
+              rel="noopener noreferrer"
+              target="_blank"
             >
               View Site
               <svg
@@ -78,7 +90,7 @@ const Work = () => {
               description={`Wasatch Covers was tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site loads in a snap now, check it out for yourself. Now that customers aren't waiting seconds for a single page to load conversion are dramatically up.`}
               link={`https://wasatchcovers.com/`}
               poster={<WasatchCovers />}
-              title={`Wasastch Covers`}
+              title={`Wasatch Covers`}
             />
             <WorkItem
               description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
