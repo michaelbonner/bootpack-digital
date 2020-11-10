@@ -9,7 +9,7 @@ import * as Scroll from "react-scroll";
 function IndexPage() {
   return (
     <Layout>
-      <SEO title="Custom web development in Utah" />
+      <SEO title="Custom web and app developer in Utah" />
 
       <div className="hero-bg">
         <div className="container mx-auto lg:py-12">

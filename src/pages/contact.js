@@ -7,7 +7,10 @@ import Obfuscate from "react-obfuscate";
 function ContactPage() {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO
+        description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
+        title="Contact Bootpack Digital"
+      />
       <div className="bg-white pt-8">
         <div className="container mx-auto px-4 text-gray-700">
           <h1 className="mt-12 text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">

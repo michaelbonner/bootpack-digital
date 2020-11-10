@@ -67,7 +67,10 @@ const WorkItem = ({ description, link, poster, title }) => {
 const Work = () => {
   return (
     <Layout>
-      <SEO title="Work of Bootpack Digital" />
+      <SEO
+        description="We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of."
+        title="Work from Bootpack Digital"
+      />
       <div className="relative hero-bg pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-7xl mx-auto">
           <div>

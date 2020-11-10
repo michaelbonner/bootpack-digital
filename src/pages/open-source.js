@@ -6,7 +6,10 @@ import SEO from "../components/seo";
 const OpenSource = () => {
   return (
     <Layout>
-      <SEO title="Open Source Projects from Bootpack Digital" />
+      <SEO
+        description="Open source is important to the modern web. We are committed to sharing tools we think will strengthen the web development community."
+        title="Open Source Projects from Bootpack Digital"
+      />
       <div className="hero-bg to-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-lg mx-auto lg:max-w-7xl">
           <div>
