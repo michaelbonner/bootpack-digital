@@ -24,7 +24,7 @@ function IndexPage() {
                 We build websites, mobile applications, and web software. We
                 want to help you turn your ideas into realities. We understand
                 how to build quality software, and we understand what it takes
-                for a business to succeed. Let us help you get your product ot
+                for a business to succeed. Let us help you get your product to
                 the next level.
               </p>
               <div className="rounded-md shadow my-4 lg:my-0">
