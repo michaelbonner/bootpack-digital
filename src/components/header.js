@@ -90,12 +90,6 @@ function Header() {
           <div className="hidden lg:flex">
             <Link
               className="text-navy-400 hover:underline font-semibold text-xl px-4"
-              to="/"
-            >
-              Home
-            </Link>
-            <Link
-              className="text-navy-400 hover:underline font-semibold text-xl px-4"
               to="/work"
             >
               Work
