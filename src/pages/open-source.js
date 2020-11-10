@@ -15,9 +15,10 @@ const OpenSource = () => {
             </h2>
             <div className="mt-3 sm:mt-4">
               <p className="text-xl leading-7 text-gray-500 max-w-screen-md">
-                Most of the web is built on open-source projects. Since we rely
-                on it so heavily we thought we'd try to share some projects of
-                our own.
+                Most of the web is built on open-source projects. Since open
+                source projects are such a valuable resource, we are committed
+                to sharing tools we think will strengthen the web development
+                community.
               </p>
             </div>
           </div>
