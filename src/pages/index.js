@@ -33,7 +33,7 @@ function IndexPage() {
                   smooth={true}
                   to="get-in-touch"
                 >
-                  Send us a message
+                  Request a quote
                 </Scroll.Link>
               </div>
             </div>
