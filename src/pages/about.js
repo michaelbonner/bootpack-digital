@@ -21,7 +21,7 @@ function AboutPage() {
           </div>
 
           <div className="max-w-prose text-gray-500 mx-auto">
-            <p className="text-xl text-gray-500 py-12">
+            <p className="text-gray-500 py-12">
               We are a small group of passionate creators trying to make a
               difference. We value quality deliverables and human interaction.
               People are who we are, who we build for, and who we work for.
@@ -32,17 +32,17 @@ function AboutPage() {
               Who are we?
             </h2>
           </div>
-          <div className="max-w-prose mx-auto mt-8">
+          <div className="max-w-prose mx-auto mt-8 shadow-lg border border-gray-100 rounded-lg">
             <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
-              <MichaelBonner className="overflow-hidden shadow-lg rounded-lg my-0 py-0" />
-              <div className="sm:col-span-2 flex flex-col justify-between pb-1">
-                <div className="space-y-4">
+              <MichaelBonner className="overflow-hidden shadow-lg rounded-t-lg lg:rounded-r-none lg:rounded-l-lg my-0 py-0" />
+              <div className="sm:col-span-2 flex flex-col justify-between pb-2 pt-4 pr-4">
+                <div className="space-y-4 px-4 lg:px-0">
                   <div className="text-lg leading-6 font-medium space-y-1">
                     <h3 className="text-xl">Michael Bonner</h3>
                     <p className="text-orange-600 mt-2">Founder</p>
                   </div>
                   <div className="text-lg leading-7">
-                    <p className="text-gray-500">
+                    <p className="text-gray-500 text-base">
                       Michael started Bootpack Digital in 2019 as the next
                       generation of a freelance business he started in 2006.
                       Michael has been building websites since he was 16. What
@@ -52,10 +52,10 @@ function AboutPage() {
                     </p>
                   </div>
                 </div>
-                <div className="flex mt-4">
+                <div className="flex gap-2 mt-4 ml-4 lg:ml-0">
                   <a href="https://www.linkedin.com/in/michaelbonner/">
                     <svg
-                      className="w-6 h-6 fill-current text-blue-600"
+                      className="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
                       viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -68,7 +68,7 @@ function AboutPage() {
                     href="https://www.instagram.com/michael__bonner/"
                   >
                     <svg
-                      className="w-6 h-6 fill-current text-blue-600"
+                      className="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
                       viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -79,7 +79,7 @@ function AboutPage() {
                   </a>
                   <a className="ml-2" href="https://github.com/michaelbonner">
                     <svg
-                      className="w-6 h-6 fill-current text-blue-600"
+                      className="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
                       viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -89,7 +89,7 @@ function AboutPage() {
                   </a>
                   <a className="ml-2" href="https://michaelbonner.dev/">
                     <svg
-                      className="w-6 h-6 fill-current text-blue-600"
+                      className="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
                       viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
                     >
