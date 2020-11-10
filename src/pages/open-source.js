@@ -30,12 +30,12 @@ const OpenSource = () => {
                 <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
                   Is It Down Checker
                 </h3>
-                <p className="mt-3 text-base leading-6 text-gray-500">
-                  A tool to track whether or not your sites are up. It also
-                  keeps track of how often a site goes down, and for how long.
-                  An invaluable tool for any company that manages several sites.
-                </p>
               </a>
+              <p className="mt-3 text-base leading-6 text-gray-500">
+                A tool to track whether or not your sites are up. It also keeps
+                track of how often a site goes down, and for how long. An
+                invaluable tool for any company that manages several sites.
+              </p>
               <div className="mt-3">
                 <a
                   className="text-base leading-6 font-semibold text-orange-600 hover:text-orange-500 transition ease-in-out duration-150"
