@@ -79,7 +79,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   return (
-    <div className="bg-white z-20 w-full mx-auto px-6 py-2 sticky lg:relative top-0 shadow-md lg:shadow-none">
+    <div className="bg-white z-20 w-full mx-auto px-6 py-2 sticky top-0 shadow-md lg:shadow-none">
       <div className="w-full flex items-center justify-between">
         <div className="w-full justify-between flex items-center">
           <Link
