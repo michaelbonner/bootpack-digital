@@ -60,6 +60,7 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        { name: `author`, content: `Michael Bonner` },
       ]
         .concat(
           keywords.length > 0
