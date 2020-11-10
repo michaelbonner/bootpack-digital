@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import HereKidsWin from "../components/images/work/here-kids-win";
-import Cosgriff from "../components/images/work/cosgriff";
+import WasatchCovers from "../components/images/work/wasatch-covers";
 import HeritageOfPreston from "../components/images/work/heritage-of-preston";
 import { Link } from "gatsby";
 
@@ -69,16 +69,16 @@ const Work = () => {
           </div>
           <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
             <WorkItem
-              description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented designers at Faktory to build an engaging experience seen by hundreds of thousands.`}
+              description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands.`}
               link={`https://herekidswin.com/`}
               poster={<HereKidsWin />}
               title={`Here Kids Win`}
             />
             <WorkItem
-              description={`J.E. Cosgriff Memorial Catholic School has been a long time client that needed a refresh. We rebuilt the site to make it easier for users to find what they are looking for and easier for employees to add content.`}
-              link={`https://cosgriff.org/`}
-              poster={<Cosgriff />}
-              title={`J.E. Cosgriff Memorial Catholic School`}
+              description={`Wasatch Covers was tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site loads in a snap now, check it out for yourself. Now that customers aren't waiting seconds for a single page to load conversion are dramatically up.`}
+              link={`https://wasatchcovers.com/`}
+              poster={<WasatchCovers />}
+              title={`Wasastch Covers`}
             />
             <WorkItem
               description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
