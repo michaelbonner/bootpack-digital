@@ -38,9 +38,9 @@ function ContactPage() {
                   d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="32"
                 />
               </svg>
               <p className="ml-2">
@@ -71,9 +71,9 @@ function ContactPage() {
                   d="M112 160l144 112 144-112"
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="32"
                 />
               </svg>
               <p className="ml-2">
@@ -94,8 +94,8 @@ function ContactPage() {
                   d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
                   fill="none"
                   stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
+                  strokeMiterlimit="10"
+                  strokeWidth="32"
                 />
               </svg>
               <p className="ml-2">
