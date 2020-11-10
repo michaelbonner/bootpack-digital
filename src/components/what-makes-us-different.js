@@ -85,8 +85,8 @@ const WhatMakesUsDifferent = () => {
                 The latest tech
               </h5>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                Blazing fast performance equals conversions. Period. We build on
-                the latest tech to make customer experience as smooth and
+                Blazing fast performance improves conversions. Period. We build
+                on the latest tech to make customer experience as smooth and
                 reliable as possible. We like the latest tech, your clients like
                 the latest tech, it's a win-win.
               </p>
