@@ -52,6 +52,12 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
       </Link>
       <Link
         className="block text-navy-400 font-semibold text-xl py-2 px-4"
+        to="/about"
+      >
+        About
+      </Link>
+      <Link
+        className="block text-navy-400 font-semibold text-xl py-2 px-4"
         to="/open-source"
       >
         Open Source
@@ -67,7 +73,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   return (
-    <div className="bg-white z-20 w-full mx-auto px-6 py-2 sticky top-0">
+    <div className="bg-white z-20 w-full mx-auto px-6 py-2 sticky lg:relative top-0 shadow-md lg:shadow-none">
       <div className="w-full flex items-center justify-between">
         <div className="w-full justify-between flex items-center">
           <Link
@@ -93,6 +99,12 @@ function Header() {
               to="/work"
             >
               Work
+            </Link>
+            <Link
+              className="text-navy-400 hover:underline font-semibold text-xl px-4"
+              to="/about"
+            >
+              About
             </Link>
             <Link
               className="text-navy-400 hover:underline font-semibold text-xl px-4"

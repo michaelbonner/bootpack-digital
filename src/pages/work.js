@@ -56,7 +56,7 @@ const Work = () => {
   return (
     <Layout>
       <SEO title="Work of Bootpack Digital" />
-      <div className="relative bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="relative hero-bg pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-7xl mx-auto">
           <div>
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
@@ -69,7 +69,7 @@ const Work = () => {
           </div>
           <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
             <WorkItem
-              description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted.`}
+              description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented designers at Faktory to build an engaging experience seen by hundreds of thousands.`}
               link={`https://herekidswin.com/`}
               poster={<HereKidsWin />}
               title={`Here Kids Win`}

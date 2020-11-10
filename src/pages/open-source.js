@@ -7,7 +7,7 @@ const OpenSource = () => {
   return (
     <Layout>
       <SEO title="Open Source Projects from Bootpack Digital" />
-      <div className="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="hero-bg to-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="relative max-w-lg mx-auto lg:max-w-7xl">
           <div>
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
@@ -21,10 +21,10 @@ const OpenSource = () => {
               </p>
             </div>
           </div>
-          <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+          <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12">
             <div>
               <a
-                className="block"
+                className="block hover:underline"
                 href="https://github.com/michaelbonner/is-it-down"
               >
                 <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
@@ -47,18 +47,18 @@ const OpenSource = () => {
             </div>
             <div>
               <a
-                className="block"
+                className="block hover:underline"
                 href="https://github.com/michaelbonner/redirects-wizard"
               >
                 <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
                   Redirects Wizard
                 </h3>
-                <p className="mt-3 text-base leading-6 text-gray-500">
-                  Sometimes when you're migrating a site you have a lot of links
-                  you need to redirect somewhere else. Redirects Wizard allows
-                  you to do that task, but much quicker.
-                </p>
               </a>
+              <p className="mt-3 text-base leading-6 text-gray-500">
+                Sometimes when you're migrating a site you have a lot of links
+                you need to redirect somewhere else. Redirects Wizard allows you
+                to do that task, but much quicker.
+              </p>
               <div className="mt-3">
                 <a
                   className="text-base leading-6 font-semibold text-orange-600 hover:text-orange-500 transition ease-in-out duration-150"

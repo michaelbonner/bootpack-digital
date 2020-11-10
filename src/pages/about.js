@@ -12,16 +12,16 @@ function AboutPage() {
       <div className="relative py-16 bg-white overflow-hidden text-lg leading-8">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto mb-6">
-            <p className="text-base text-center leading-6 text-blue-600 font-semibold tracking-wide uppercase">
+            <p className="text-base text-center leading-6 text-orange-500 font-semibold tracking-wide uppercase">
               Introducing
             </p>
-            <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-navy-700 sm:text-4xl sm:leading-10">
+            <h1 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-navy-600 sm:text-4xl sm:leading-10">
               Bootpack Digital
             </h1>
           </div>
 
           <div className="max-w-prose text-gray-500 mx-auto">
-            <p className="text-xl text-gray-500 leading-8">
+            <p className="text-xl text-gray-500 leading-8 py-12">
               We're a small group of passionate creators trying to make a
               difference. We value quality deliverables and human interaction.
               People are who we are, who we build for, and who we work for.
@@ -55,7 +55,7 @@ function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="max-w-prose text-gray-500 mx-auto mt-12">
+          <div className="max-w-prose text-gray-500 mx-auto mt-12 pt-12">
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
               Why "Bootpack"?
             </h2>
