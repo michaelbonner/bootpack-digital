@@ -113,14 +113,14 @@ function AboutPage() {
               Why "Bootpack"?
             </h2>
             <p className="mt-4">
-              I'm from Utah, so a lot of my life revolves around outdoor sports.
-              Sometimes when you're skiing you need to need to unclip and hike
-              your way to find fresh snow. To get there you can follow a boot
-              pack, which is where other hikers have hiked up a steep section.
-              The boot pack helps make the journey easier. That's where we come
-              in; our goal is to help you, and your business, get to the next
-              level. We've spent years laying a solid boot pack, now we can help
-              you get there.
+              We're from Utah, so a lot of our lives revolve around outdoor
+              sports. Sometimes when you're skiing you need to need to unclip
+              and hike your way to find fresh snow. To get there you can follow
+              a boot pack, which is where other hikers have hiked up a steep
+              section. The boot pack helps make the journey easier. That's where
+              we come in; our goal is to help you, and your business, get to the
+              next level. We've spent years laying a solid boot pack, now we can
+              help you get there.
             </p>
           </div>
         </div>
