@@ -33,6 +33,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: title,
         },
         {
+          property: `og:image`,
+          content: `/og-image.jpg`,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },

@@ -3,7 +3,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `Bootpack Digital, LLC`,
-    description: `Bootpack Digital provides quality experience for PEOPLE`,
+    description: `Bootpack Digital is a custom web and software developer in Salt Lake, UT`,
     author: `@bootpack`,
     siteUrl: `https://bootpackdigital.com`,
   },
