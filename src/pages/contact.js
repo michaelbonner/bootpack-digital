@@ -1,8 +1,8 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ContactForm from "../components/contact-form";
+import Obfuscate from "react-obfuscate";
 
 function ContactPage() {
   return (
@@ -44,7 +44,7 @@ function ContactPage() {
                 />
               </svg>
               <p className="ml-2">
-                <a href="tel:+18018395287">(801) 839-5287</a>
+                <Obfuscate tel="(801) 839-5287" />
               </p>
             </div>
             <div className="flex items-center mt-4">
@@ -77,9 +77,7 @@ function ContactPage() {
                 />
               </svg>
               <p className="ml-2">
-                <a href="mailto:hey@bootpackdigital.com">
-                  hey@bootpackdigital.com
-                </a>
+                <Obfuscate email="hey@bootpackdigital.com" />
               </p>
             </div>
             <div className="flex items-center mt-4">
