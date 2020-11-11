@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import CocaCola from "../images/clients/coca-cola-classic-gray.svg";
 import EdgeHomes from "../images/clients/edge-homes-gray.svg";
@@ -21,11 +22,16 @@ function Brands() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="lg:mt-8">
             <h2 className="text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
-              Brands we've worked with
+              Brands we have worked with
             </h2>
             <p className="mt-3 max-w-3xl text-lg leading-7 text-navy-700">
-              We've worked with companies from all different industries on all
-              sizes of projects. We're proud of the work we do!
+              We have worked with companies from all different industries on all
+              sizes of projects.
+            </p>
+            <p className="mt-3">
+              <Link className="underline text-lg text-blue-500" to="/work">
+                See some of our work
+              </Link>
             </p>
           </div>
           <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 items-center">

@@ -23,9 +23,9 @@ function IndexPage() {
               <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle text-blue-600">
                 We build websites, mobile applications, and web software. We
                 want to help you turn your ideas into realities. We understand
-                how to build quality software, and we understand what it takes
-                for a business to succeed. Let us help you get your product to
-                the next level.
+                how to build quality software, and understand what it takes for
+                a business to succeed. Let us help you get your product to the
+                next level.
               </p>
               <div className="rounded-md shadow my-4 lg:my-0">
                 <Scroll.Link

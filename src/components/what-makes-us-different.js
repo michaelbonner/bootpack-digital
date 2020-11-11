@@ -27,10 +27,11 @@ const WhatMakesUsDifferent = () => {
                 15 years of experience
               </h5>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                We've been around the block. We've worked at agencies, in house,
-                and freelance. We've built large scale production applications
-                and will bring that knowledge to any project, no matter how big
-                or small.
+                Experience matters when it comes to building quality software.
+                Working at agencies, in-house, and freelance has given us a
+                breadth of understanding that's hard to come by any other way.
+                We've built large scale production applications and will bring
+                that knowledge to any project, no matter how big or small.
               </p>
             </div>
           </div>
@@ -56,10 +57,11 @@ const WhatMakesUsDifferent = () => {
                 Business knowledge
               </h5>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                We offer an understanding of ROI and work with clients to tune
-                their ideas into something shippable. Go-to-market strategies
-                can make or break your product. We can help guide you down a
-                path that works for you. We're only happy when you're happy.
+                We don't just think about the code. Helping businesses grow has
+                given us an understanding of ROI that allows us to help clients
+                tune their ideas into something shippable and lovable.
+                Go-to-market strategies can make or break your product. We can
+                help guide you down a path that works for you.
               </p>
             </div>
           </div>
@@ -86,7 +88,7 @@ const WhatMakesUsDifferent = () => {
               </h5>
               <p className="mt-2 text-base leading-6 text-gray-500">
                 Blazing fast performance improves conversions. Period. We build
-                on the latest tech to make customer experience as smooth and
+                on the latest tech to make the customer experience as smooth and
                 reliable as possible. We like the latest tech, your clients like
                 the latest tech, it's a win-win.
               </p>
@@ -96,7 +98,7 @@ const WhatMakesUsDifferent = () => {
                   rel="noopener nofollow noreferrer"
                   target="_blank"
                 >
-                  Check out our PageSpeed score
+                  Check out our Google PageSpeed score
                 </a>
               </p>
             </div>
