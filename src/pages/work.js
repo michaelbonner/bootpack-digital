@@ -90,7 +90,7 @@ const Work = () => {
               title={`Here Kids Win`}
             />
             <WorkItem
-              description={`Wasatch Covers was tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site loads in a snap now, check it out for yourself. Now that customers aren't waiting seconds for a single page to load conversion are dramatically up.`}
+              description={`Wasatch Covers was tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap, check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load.`}
               link={`https://wasatchcovers.com/`}
               poster={<WasatchCovers />}
               title={`Wasatch Covers`}
