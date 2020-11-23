@@ -9,7 +9,7 @@ function ContactPage() {
     <Layout>
       <SEO
         description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
-        title="Contact Bootpack Digital"
+        title="Contact Us"
       />
       <div className="bg-white pt-8">
         <div className="container mx-auto px-4 text-gray-700">
