@@ -5,6 +5,7 @@
   "author": "Michael Bonner <michaelwbonner@gmail.com>",
   "dependencies": {
     "@tailwindcss/ui": "^0.7.2",
+    "autoprefixer": "^10.0.2",
     "formik": "^2.2.5",
     "gatsby": "^2.27.1",
     "gatsby-image": "^2.6.0",
