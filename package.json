@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Michael Bonner <michaelwbonner@gmail.com>",
   "dependencies": {
-    "@tailwindcss/ui": "^0.7.2",
     "autoprefixer": "^10.0.2",
     "formik": "^2.2.5",
     "gatsby": "^2.27.1",
@@ -22,12 +21,12 @@
     "gatsby-transformer-sharp": "^2.7.0",
     "postcss": "^8.1.10",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-obfuscate": "^3.6.8",
     "react-scroll": "^1.8.1",
-    "yup": "^0.31.0"
+    "yup": "^0.32.0"
   },
   "keywords": [
     "gatsby",
