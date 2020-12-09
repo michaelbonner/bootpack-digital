@@ -7,10 +7,14 @@ function NotFoundPage() {
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <div>
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Looks like this page is a ghost that got abducted by aliens...
-        </h2>
+      <div className="relative py-16 bg-white overflow-hidden text-lg leading-8">
+        <div className="relative px-4 sm:px-6 lg:px-8">
+          <div>
+            <h1 className="text-2xl font-bold inline-block my-8 p-3">
+              404: Looks like you got lost along the way.
+            </h1>
+          </div>
+        </div>
       </div>
     </Layout>
   );
