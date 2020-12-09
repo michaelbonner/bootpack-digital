@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "author": "Michael Bonner <michaelwbonner@gmail.com>",
   "dependencies": {
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "^10.1.0",
     "formik": "^2.2.5",
-    "gatsby": "^2.27.1",
+    "gatsby": "^2.28.1",
     "gatsby-image": "^2.6.0",
     "gatsby-plugin-google-tagmanager": "^2.6.0",
     "gatsby-plugin-manifest": "^2.7.0",
@@ -14,18 +14,18 @@
     "gatsby-plugin-postcss": "^3.3.0",
     "gatsby-plugin-preconnect": "^1.1.54",
     "gatsby-plugin-react-helmet": "^3.5.0",
-    "gatsby-plugin-sharp": "^2.9.0",
+    "gatsby-plugin-sharp": "^2.10.1",
     "gatsby-plugin-sitemap": "^2.7.0",
     "gatsby-source-filesystem": "^2.6.1",
     "gatsby-transformer-sharp": "^2.7.0",
-    "postcss": "^8.1.14",
+    "postcss": "^8.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-obfuscate": "^3.6.8",
     "react-scroll": "^1.8.1",
-    "yup": "^0.32.3"
+    "yup": "^0.32.6"
   },
   "keywords": [
     "gatsby",
