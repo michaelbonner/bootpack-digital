@@ -12,13 +12,67 @@ function PrivacyPage() {
       />
       <div className="bg-white py-8">
         <div className="container mx-auto px-4 text-gray-700">
-          <h1 className="mt-12 text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
-            Bootpack Digital, LLC Terms of Service
+          <h1 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:leading-10">
+            Privacy Policy and Terms of Service
           </h1>
+          <h2 className="mt-12 text-2xl leading-9 font-extrabold text-navy-600 sm:leading-10">
+            Privacy Policy
+          </h2>
           <div className="pt-4 max-w-3xl lg:mx-24">
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <p className="mt-4">
+              Your privacy is important to us. It is Bootpack Digital, LLC's
+              policy to respect your privacy regarding any information we may
+              collect from you across our website,{` `}
+              <a href="https://bootpackdigital.com/">
+                https://bootpackdigital.com/
+              </a>
+              , and other sites we own and operate.
+            </p>
+            <p className="mt-4">
+              We only ask for personal information when we truly need it to
+              provide a service to you. We collect it by fair and lawful means,
+              with your knowledge and consent. We also let you know why we’re
+              collecting it and how it will be used.
+            </p>
+            <p className="mt-4">
+              We only retain collected information for as long as necessary to
+              provide you with your requested service. What data we store, we’ll
+              protect within commercially acceptable means to prevent loss and
+              theft, as well as unauthorized access, disclosure, copying, use or
+              modification.
+            </p>
+            <p className="mt-4">
+              We don’t share any personally identifying information publicly or
+              with third-parties, except when required to by law.
+            </p>
+            <p className="mt-4">
+              Our website may link to external sites that are not operated by
+              us. Please be aware that we have no control over the content and
+              practices of these sites, and cannot accept responsibility or
+              liability for their respective privacy policies.
+            </p>
+            <p className="mt-4">
+              You are free to refuse our request for your personal information,
+              with the understanding that we may be unable to provide you with
+              some of your desired services.
+            </p>
+            <p className="mt-4">
+              Your continued use of our website will be regarded as acceptance
+              of our practices around privacy and personal information. If you
+              have any questions about how we handle user data and personal
+              information, feel free to contact us.
+            </p>
+            <p className="mt-4">
+              This policy is effective as of 1 December 2020.
+            </p>
+          </div>
+          <h2 className="mt-12 text-2xl leading-9 font-extrabold text-navy-600 sm:leading-10">
+            Bootpack Digital, LLC Terms of Service
+          </h2>
+          <div className="pt-4 max-w-3xl lg:mx-24">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               1. Terms
-            </h2>
+            </h3>
             <p className="mt-4">
               By accessing the website at{` `}
               <a className="underline" href="https://bootpackdigital.com/">
@@ -31,9 +85,9 @@ function PrivacyPage() {
               using or accessing this site. The materials contained in this
               website are protected by applicable copyright and trademark law.
             </p>
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               2. Use License
-            </h2>
+            </h3>
             <ol className="ml-8 list-roman" type="a">
               <li className="mt-2">
                 Permission is granted to temporarily download one copy of the
@@ -70,9 +124,9 @@ function PrivacyPage() {
                 electronic or printed format.
               </li>
             </ol>
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               3. Disclaimer
-            </h2>
+            </h3>
             <ol className="ml-8 list-roman" type="a">
               <li className="mt-2">
                 The materials on Bootpack Digital, LLC's website are provided on
@@ -91,9 +145,9 @@ function PrivacyPage() {
                 this site.
               </li>
             </ol>
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               4. Limitations
-            </h2>
+            </h3>
             <p className="mt-4">
               In no event shall Bootpack Digital, LLC or its suppliers be liable
               for any damages (including, without limitation, damages for loss
@@ -106,9 +160,9 @@ function PrivacyPage() {
               limitations of liability for consequential or incidental damages,
               these limitations may not apply to you.
             </p>
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               5. Accuracy of materials
-            </h2>
+            </h3>
             <p className="mt-4">
               The materials appearing on Bootpack Digital, LLC's website could
               include technical, typographical, or photographic errors. Bootpack
@@ -118,9 +172,9 @@ function PrivacyPage() {
               time without notice. However Bootpack Digital, LLC does not make
               any commitment to update the materials.
             </p>
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               6. Links
-            </h2>
+            </h3>
             <p className="mt-4">
               Bootpack Digital, LLC has not reviewed all of the sites linked to
               its website and is not responsible for the contents of any such
@@ -128,18 +182,18 @@ function PrivacyPage() {
               by Bootpack Digital, LLC of the site. Use of any such linked
               website is at the user's own risk.
             </p>
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               7. Modifications
-            </h2>
+            </h3>
             <p className="mt-4">
               Bootpack Digital, LLC may revise these terms of service for its
               website at any time without notice. By using this website you are
               agreeing to be bound by the then current version of these terms of
               service.
             </p>
-            <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
+            <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               8. Governing Law
-            </h2>
+            </h3>
             <p className="mt-4">
               These terms and conditions are governed by and construed in
               accordance with the laws of UT and you irrevocably submit to the

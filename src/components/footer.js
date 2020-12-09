@@ -40,15 +40,9 @@ function Footer() {
             </Link>
             <Link
               className="block font-semibold py-4 lg:py-2 lg:px-4"
-              to="/privacy"
+              to="/policies"
             >
-              Privacy
-            </Link>
-            <Link
-              className="block font-semibold py-4 lg:py-2 lg:px-4"
-              to="/terms"
-            >
-              Terms
+              Policies
             </Link>
           </div>
         </div>
