@@ -34,14 +34,14 @@ function PrivacyPage() {
             <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               2. Use License
             </h2>
-            <ol className="ml-4" type="a">
+            <ol className="ml-4 list-roman" type="a">
               <li>
                 Permission is granted to temporarily download one copy of the
                 materials (information or software) on Bootpack Digital, LLC's
                 website for personal, non-commercial transitory viewing only.
                 This is the grant of a license, not a transfer of title, and
                 under this license you may not:
-                <ol className="ml-4" type="i">
+                <ol className="ml-4 list-decimal" type="i">
                   <li>modify or copy the materials;</li>
                   <li>
                     use the materials for any commercial purpose, or for any
@@ -73,7 +73,7 @@ function PrivacyPage() {
             <h2 className="mt-12 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
               3. Disclaimer
             </h2>
-            <ol className="ml-4" type="a">
+            <ol className="ml-4 list-roman" type="a">
               <li>
                 The materials on Bootpack Digital, LLC's website are provided on
                 an 'as is' basis. Bootpack Digital, LLC makes no warranties,
