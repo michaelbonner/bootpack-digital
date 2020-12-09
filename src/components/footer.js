@@ -11,41 +11,41 @@ function Footer() {
             &copy; {new Date().getFullYear()} Bootpack Digital, LLC
           </p>
           <div className="grid grid-cols-2 lg:flex text-base">
-            <Link className="block font-semibold py-4 lg:py-2 lg:px-2" to="/">
+            <Link className="block font-semibold py-4 lg:py-2 lg:px-4" to="/">
               Home
             </Link>
             <Link
-              className="block font-semibold py-4 lg:py-2 lg:px-2"
+              className="block font-semibold py-4 lg:py-2 lg:px-4"
               to="/work"
             >
               Work
             </Link>
             <Link
-              className="block font-semibold py-4 lg:py-2 lg:px-2"
+              className="block font-semibold py-4 lg:py-2 lg:px-4"
               to="/about"
             >
               About
             </Link>
             <Link
-              className="block font-semibold py-4 lg:py-2 lg:px-2"
+              className="block font-semibold py-4 lg:py-2 lg:px-4"
               to="/open-source"
             >
               Open Source
             </Link>
             <Link
-              className="block font-semibold py-4 lg:py-2 lg:px-2"
+              className="block font-semibold py-4 lg:py-2 lg:px-4"
               to="/contact"
             >
               Contact
             </Link>
             <Link
-              className="block font-semibold py-4 lg:py-2 lg:px-2"
+              className="block font-semibold py-4 lg:py-2 lg:px-4"
               to="/privacy"
             >
               Privacy
             </Link>
             <Link
-              className="block font-semibold py-4 lg:py-2 lg:px-2"
+              className="block font-semibold py-4 lg:py-2 lg:px-4"
               to="/terms"
             >
               Terms
