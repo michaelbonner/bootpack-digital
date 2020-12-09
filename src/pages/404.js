@@ -9,11 +9,11 @@ function NotFoundPage() {
       <SEO title="404: Not found" />
       <div className="relative py-16 bg-white overflow-hidden text-lg leading-8">
         <div className="relative px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-navy-600 text-2xl font-bold inline-block my-8 p-3">
-            404: Looks like you got lost along the way.
+          <h1 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
+            404: Looks like you got lost along the way
           </h1>
           <svg
-            className="w-full max-w-2xl mx-auto"
+            className="w-full max-w-2xl mx-auto mt-8"
             id="e37c00f5-ff96-45aa-87ea-1a24b78ba7bd"
             viewBox="0 0 1176.60617 873.97852"
             xmlns="http://www.w3.org/2000/svg"
