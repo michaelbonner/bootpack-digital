@@ -21,7 +21,7 @@ function PrivacyPage() {
             </h2>
             <p className="mt-4">
               By accessing the website at{` `}
-              <a href="https://bootpackdigital.com/">
+              <a className="underline" href="https://bootpackdigital.com/">
                 https://bootpackdigital.com/
               </a>
               , you are agreeing to be bound by these terms of service, all
