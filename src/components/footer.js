@@ -38,6 +38,12 @@ function Footer() {
             >
               Contact
             </Link>
+            <Link
+              className="block font-semibold py-4 lg:py-2 lg:px-4"
+              to="/privacy"
+            >
+              Privacy
+            </Link>
           </div>
         </div>
 
