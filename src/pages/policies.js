@@ -8,9 +8,9 @@ function PrivacyPage() {
     <Layout>
       <SEO
         description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
-        title="Terms of Service"
+        title="Privacy Policy and Terms of Service"
       />
-      <div className="bg-white py-8">
+      <div className="bg-white pt-8 pb-16">
         <div className="container mx-auto px-4 text-gray-700">
           <h1 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:leading-10">
             Privacy Policy and Terms of Service
@@ -23,9 +23,9 @@ function PrivacyPage() {
               Your privacy is important to us. It is Bootpack Digital, LLC's
               policy to respect your privacy regarding any information we may
               collect from you across our website,{` `}
-              <a href="https://bootpackdigital.com/">
+              <Link className="underline" to={`/`}>
                 https://bootpackdigital.com/
-              </a>
+              </Link>
               , and other sites we own and operate.
             </p>
             <p className="mt-4">
@@ -60,14 +60,18 @@ function PrivacyPage() {
               Your continued use of our website will be regarded as acceptance
               of our practices around privacy and personal information. If you
               have any questions about how we handle user data and personal
-              information, feel free to contact us.
+              information, feel free to{` `}
+              <Link className="underline" to={`/contact`}>
+                contact us
+              </Link>
+              .
             </p>
             <p className="mt-4">
               This policy is effective as of 1 December 2020.
             </p>
           </div>
           <h2 className="mt-12 text-2xl leading-9 font-extrabold text-navy-600 sm:leading-10">
-            Bootpack Digital, LLC Terms of Service
+            Terms of Service
           </h2>
           <div className="pt-4 max-w-3xl lg:mx-24">
             <h3 className="mt-8 text-2xl leading-9 font-bold text-navy-600 sm:text-2xl sm:leading-10">
@@ -75,9 +79,9 @@ function PrivacyPage() {
             </h3>
             <p className="mt-4">
               By accessing the website at{` `}
-              <a className="underline" href="https://bootpackdigital.com/">
+              <Link className="underline" to={`/`}>
                 https://bootpackdigital.com/
-              </a>
+              </Link>
               , you are agreeing to be bound by these terms of service, all
               applicable laws and regulations, and agree that you are
               responsible for compliance with any applicable local laws. If you
@@ -198,14 +202,6 @@ function PrivacyPage() {
               These terms and conditions are governed by and construed in
               accordance with the laws of UT and you irrevocably submit to the
               exclusive jurisdiction of the courts in that State or location.
-            </p>
-            <p className="mt-4">
-              <a
-                href="https://getterms.io"
-                title="Generate a free terms of use document"
-              >
-                Terms of Use created with GetTerms.
-              </a>
             </p>
           </div>
         </div>
