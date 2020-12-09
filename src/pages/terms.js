@@ -8,7 +8,7 @@ function PrivacyPage() {
     <Layout>
       <SEO
         description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
-        title="Contact Us"
+        title="Terms of Service"
       />
       <div className="bg-white py-8">
         <div className="container mx-auto px-4 text-gray-700">
