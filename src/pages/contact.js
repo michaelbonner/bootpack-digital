@@ -116,17 +116,16 @@ function ContactPage() {
               </div>
               <div>
                 <a
-                  className="border border-navy-300 hover:border-navy-400 rounded-lg mt-6 lg:mt-0 py-2 px-4 flex justify-between items-end hover:bg-gray-50 transition-all"
+                  className="flex w-full lg:w-auto px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
                   href="https://calendly.com/michaelbonner/30-minute-project-discussion"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="mx-2 text-gray-500 flex items-end">
+                  <span className="mx-2 text-white flex items-end">
                     Schedule a call on
                     <svg
-                      className="fill-current inline-block w-20 ml-2"
+                      className="fill-current text-white inline-block w-20 ml-2"
                       style={{
-                        color: `#2D8CFF`,
                         enableBackground: `new 0 0 534 160`,
                       }}
                       version="1.1"
@@ -162,22 +161,6 @@ function ContactPage() {
 		S306.7-97.3,309.4-92.5z"
                         />
                       </g>
-                    </svg>
-                  </span>
-                  <span>
-                    <svg
-                      className="w-4 h-4 mb-1 ml-2 stroke-current text-gray-500"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Open</title>
-                      <path
-                        d="M384 224v184a40 40 0 01-40 40H104a40 40 0 01-40-40V168a40 40 0 0140-40h167.48M336 64h112v112M224 288L440 72"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="32"
-                      />
                     </svg>
                   </span>
                 </a>
