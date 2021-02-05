@@ -13,7 +13,7 @@ function IndexPage() {
 
       <div className="hero-bg">
         <div className="container mx-auto lg:py-12">
-          <div className="w-full py-12 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+          <div className="w-full max-w-screen-xl py-12 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <div className="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
               <h1 className="my-4 text-3xl md:text-5xl text-navy-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
                 Software and Web Developers{` `}
@@ -43,7 +43,7 @@ function IndexPage() {
       <WhatMakesUsDifferent />
       <Brands />
       <div className="bg-white py-12" id="get-in-touch">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-screen-xl">
           <div className="w-full mx-auto py-6 px-8">
             <h2 className="text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
               Get in touch!
