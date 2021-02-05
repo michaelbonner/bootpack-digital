@@ -14,28 +14,28 @@ function AboutPage() {
 
       <div className="relative py-16 bg-white overflow-hidden text-lg leading-8">
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="text-lg max-w-prose mx-auto mb-6">
-            <p className="text-base text-center leading-6 text-orange-500 font-semibold tracking-wide uppercase">
-              Introducing
-            </p>
-            <h1 className="mt-2 mb-8 text-3xl text-center font-extrabold tracking-tight text-navy-600 sm:text-4xl sm:leading-10">
+          <div className="text-lg max-w-3xl mx-auto mb-6">
+            <h1 className="mb-6 text-3xl font-extrabold tracking-tight text-navy-600 sm:text-4xl sm:leading-10">
+              <span className="block text-base leading-6 text-orange-500 font-semibold tracking-wide uppercase">
+                Introducing
+              </span>
               Bootpack Digital
             </h1>
           </div>
 
-          <div className="max-w-prose text-gray-500 mx-auto">
+          <div className="max-w-3xl text-gray-500 mx-auto">
             <p className="text-gray-500 py-12">
               We are a small group of passionate creators trying to make a
               difference. We value quality deliverables and human interaction.
               People are who we are, who we build for, and who we work for.
             </p>
           </div>
-          <div className="max-w-prose text-gray-500 mx-auto mt-12">
+          <div className="max-w-3xl text-gray-500 mx-auto mt-12">
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
               Who are we?
             </h2>
           </div>
-          <div className="max-w-prose mx-auto mt-8 shadow-lg border border-gray-100 rounded-lg">
+          <div className="max-w-3xl mx-auto mt-8 shadow-lg border border-gray-100 rounded-lg">
             <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
               <MichaelBonner className="overflow-hidden shadow-lg rounded-t-lg lg:rounded-r-none lg:rounded-l-lg my-0 py-0" />
               <div className="sm:col-span-2 flex flex-col justify-between pb-2 pt-4 pr-4">
@@ -111,7 +111,7 @@ function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="max-w-prose text-gray-500 mx-auto mt-12 pt-12">
+          <div className="max-w-3xl text-gray-500 mx-auto mt-12 pt-12">
             <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
               Why the name "Bootpack"?
             </h2>
