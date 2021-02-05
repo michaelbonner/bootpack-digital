@@ -11,7 +11,7 @@ function PrivacyPage() {
         title="Privacy Policy and Terms of Service"
       />
       <div className="bg-white pt-8 pb-16">
-        <div className="container mx-auto px-4 text-gray-700">
+        <div className="container mx-auto px-4 text-gray-700 max-w-5xl mt-16">
           <h1 className="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:leading-10">
             Privacy Policy and Terms of Service
           </h1>
