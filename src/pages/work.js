@@ -1,9 +1,12 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Cosgriff from "../components/images/work/cosgriff";
+import DenverWindowWellCovers from "../components/images/work/denver-window-well-covers";
 import HereKidsWin from "../components/images/work/here-kids-win";
-import WasatchCovers from "../components/images/work/wasatch-covers";
 import HeritageOfPreston from "../components/images/work/heritage-of-preston";
+import ThunderBiotech from "../components/images/work/thunder-biotech";
+import WasatchCovers from "../components/images/work/wasatch-covers";
 import { Link } from "gatsby";
 
 const WorkItem = ({ description, link, poster, title }) => {
@@ -82,12 +85,12 @@ const Work = () => {
               few examples we're particularly proud of.
             </p>
           </div>
-          <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+          <div className="mt-12 grid gap-x-5 gap-y-10 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
             <WorkItem
               description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands.`}
               link={`https://herekidswin.com/`}
               poster={<HereKidsWin />}
-              title={`Here Kids Win`}
+              title={`Primary Children's Hospital | Here Kids Win`}
             />
             <WorkItem
               description={`Wasatch Covers was tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap, check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load.`}
@@ -100,6 +103,24 @@ const Work = () => {
               link={`https://www.heritageofpreston.com/`}
               poster={<HeritageOfPreston />}
               title={`Heritage Senior Living`}
+            />
+            <WorkItem
+              description={`Denver Window Well Covers was a ground up build to service the semi-custom needs of Colorado residents. Servicing Colorado since 2002, Denver Window Well Covers offers a quality product at the lowest prices on window well covers in Colorado and Denver areas.`}
+              link={`https://cosgriff.org/`}
+              poster={<DenverWindowWellCovers />}
+              title={`Denver Window Well Covers`}
+            />
+            <WorkItem
+              description={`The Cosgriff school used a site we built about 10 years ago. Needless to say it was time for a fresh coat of paint and a rethink of how the pages were organized. We rebuilt the site from the ground up in ~4 weeks. After comparing analytics the new site clearly outperforms the old site in nearly every measurable way.`}
+              link={`https://cosgriff.org/`}
+              poster={<Cosgriff />}
+              title={`J.E. Cosgriff School`}
+            />
+            <WorkItem
+              description={`Thunder Biotech is a cancer research group with huge aspirations. They needed a site that conveyed their purpose and vision. We worked with the team at Faktory to build a site to accomplish their goals.`}
+              link={`https://thunderbiotech.com/`}
+              poster={<ThunderBiotech />}
+              title={`Thunder Biotech`}
             />
           </div>
         </div>

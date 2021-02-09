@@ -15,10 +15,5 @@ export default function Image() {
       }
     }
   `);
-  return (
-    <Img
-      alt="J.E. Cosgriff Memorial Catholic School"
-      fluid={data.file.childImageSharp.fluid}
-    />
-  );
+  return <Img alt="Here Kids Win" fluid={data.file.childImageSharp.fluid} />;
 }
