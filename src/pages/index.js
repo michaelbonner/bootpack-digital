@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ContactForm from "../components/contact-form";
 import Brands from "../components/brands";
 import WhatMakesUsDifferent from "../components/what-makes-us-different";
-import * as Scroll from "react-scroll";
 
 function IndexPage() {
   return (
@@ -28,13 +28,12 @@ function IndexPage() {
                 next level.
               </p>
               <div className="rounded-md shadow my-4 lg:my-0">
-                <Scroll.Link
-                  className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                  smooth={true}
-                  to="get-in-touch"
+                <Link
+                  className="lg:ml-4 flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                  to="/contact"
                 >
-                  Request a quote
-                </Scroll.Link>
+                  Request a Quote
+                </Link>
               </div>
             </div>
           </div>
