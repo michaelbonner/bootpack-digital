@@ -105,7 +105,7 @@ const Work = () => {
               title={`Heritage Senior Living`}
             />
             <WorkItem
-              description={`Denver Window Well Covers was a ground up build to service the semi-custom needs of Colorado residents. Servicing Colorado since 2002, Denver Window Well Covers offers a quality product at the lowest prices on window well covers in Colorado and Denver areas.`}
+              description={`Denver Window Well Covers was a ground up build to service the semi-custom needs of Colorado residents. Denver Window Well Covers offers a quality product at the lowest prices on window well covers in Colorado and Denver areas.`}
               link={`https://denverwindowwellcovers.com/`}
               poster={<DenverWindowWellCovers />}
               title={`Denver Window Well Covers`}
