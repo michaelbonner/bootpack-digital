@@ -14,7 +14,7 @@ const MobileNav = ({ mobileNavOpen, setMobileNavOpen }) => {
       }
     >
       <button
-        className="absolute right-5 top-5 text-orange-500 font-semibold w-6 h-6"
+        className="absolute right-3 top-5 text-orange-500 font-semibold w-6 h-6"
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
         <svg
