@@ -1,24 +1,20 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Image({ className }) {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "michael-bonner.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  file(relativePath: {eq: "michael-bonner.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
-  `);
+  }
+}
+`);
   return (
-    <Img
+    <GatsbyImage
+      image={data.file.childImageSharp.gatsbyImageData}
       alt="Michael Bonner"
-      className={className}
-      fluid={data.file.childImageSharp.fluid}
-    />
+      className={className} />
   );
 }
