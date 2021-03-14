@@ -2,7 +2,7 @@
   "name": "bootpack-digital",
   "description": "Public website for Bootpack Digital, LLC",
   "version": "1.0.0",
-  "author": "Michael Bonner <michaelwbonner@gmail.com>",
+  "author": "Michael Bonner <mike@bootpackdigital.com>",
   "dependencies": {
     "autoprefixer": "^10.2.5",
     "formik": "^2.2.6",
