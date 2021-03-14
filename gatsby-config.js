@@ -19,6 +19,9 @@ module.exports = {
         theme_color: `#4299E1`,
         display: `minimal-ui`,
         icon: `src/images/bootpack-icon.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     {
