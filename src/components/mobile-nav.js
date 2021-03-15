@@ -6,6 +6,14 @@ import BootpackVertical from "../images/bootpack-digital.svg";
 const MobileNav = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
+  useEffect(() => {
+    console.log("hello from useEffect");
+  }, []);
+
+  useLayoutEffect(() => {
+    console.log("hello from useLayoutEffect");
+  }, []);
+
   return (
     <>
       <button
