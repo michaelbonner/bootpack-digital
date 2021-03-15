@@ -9,6 +9,7 @@ import KnowYourForce from "../components/images/work/know-your-force";
 import ThunderBiotech from "../components/images/work/thunder-biotech";
 import WasatchCovers from "../components/images/work/wasatch-covers";
 import { Link } from "gatsby";
+import TheDoctorsCbd from "../components/images/work/the-doctors-cbd";
 
 const WorkItem = ({ description, link, poster, title }) => {
   return (
@@ -128,6 +129,12 @@ const Work = () => {
               link={`https://thunderbiotech.com/`}
               poster={<ThunderBiotech />}
               title={`Thunder Biotech`}
+            />
+            <WorkItem
+              description={`The Doctors CBD had an existing site, but it was slow and lacked the features they needed in order to sell their products online. We redesigned a new elegant site that has helped them list and sell their products online.`}
+              link={`https://www.thedoctorscbdrelief.com/`}
+              poster={<TheDoctorsCbd />}
+              title={`The Doctors CBD`}
             />
           </div>
         </div>
