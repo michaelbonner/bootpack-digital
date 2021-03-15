@@ -1,18 +1,10 @@
 import { Link } from "gatsby";
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useState } from "react";
 import SocialIcons from "./social-icons";
 import BootpackVertical from "../images/bootpack-digital.svg";
 
 const MobileNav = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
-  useEffect(() => {
-    console.log("hello from useEffect");
-  }, []);
-
-  useLayoutEffect(() => {
-    console.log("hello from useLayoutEffect");
-  }, []);
 
   return (
     <>
