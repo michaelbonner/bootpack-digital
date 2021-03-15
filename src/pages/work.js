@@ -5,6 +5,7 @@ import Cosgriff from "../components/images/work/cosgriff";
 import DenverWindowWellCovers from "../components/images/work/denver-window-well-covers";
 import HereKidsWin from "../components/images/work/here-kids-win";
 import HeritageOfPreston from "../components/images/work/heritage-of-preston";
+import KnowYourForce from "../components/images/work/know-your-force";
 import ThunderBiotech from "../components/images/work/thunder-biotech";
 import WasatchCovers from "../components/images/work/wasatch-covers";
 import { Link } from "gatsby";
@@ -97,6 +98,12 @@ const Work = () => {
               link={`https://wasatchcovers.com/`}
               poster={<WasatchCovers />}
               title={`Wasatch Covers`}
+            />
+            <WorkItem
+              description={`Know Your Force (KYF) is rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code, and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely. `}
+              link={`https://knowyourforce.com/`}
+              poster={<KnowYourForce />}
+              title={`Know Your Force`}
             />
             <WorkItem
               description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
