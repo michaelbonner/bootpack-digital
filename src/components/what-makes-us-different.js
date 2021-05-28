@@ -23,9 +23,9 @@ const WhatMakesUsDifferent = () => {
               </svg>
             </div>
             <div className="mt-5">
-              <h5 className="text-lg leading-6 font-medium text-gray-900">
+              <h3 className="text-lg leading-6 font-medium text-gray-900">
                 15 years of experience
-              </h5>
+              </h3>
               <p className="mt-2 text-base leading-6 text-gray-500">
                 Experience matters when it comes to building quality software.
                 Working at agencies, in-house, and freelance has given us a
@@ -53,9 +53,9 @@ const WhatMakesUsDifferent = () => {
               </svg>
             </div>
             <div className="mt-5">
-              <h5 className="text-lg leading-6 font-medium text-gray-900">
+              <h3 className="text-lg leading-6 font-medium text-gray-900">
                 Business knowledge
-              </h5>
+              </h3>
               <p className="mt-2 text-base leading-6 text-gray-500">
                 We don't just think about the code. Helping businesses grow has
                 given us an understanding of ROI that allows us to help clients
@@ -83,9 +83,9 @@ const WhatMakesUsDifferent = () => {
               </svg>
             </div>
             <div className="mt-5">
-              <h5 className="text-lg leading-6 font-medium text-gray-900">
+              <h3 className="text-lg leading-6 font-medium text-gray-900">
                 The latest tech
-              </h5>
+              </h3>
               <p className="mt-2 text-base leading-6 text-gray-500">
                 Blazing fast performance improves conversions. Period. We build
                 on the latest tech to make the customer experience as smooth and
