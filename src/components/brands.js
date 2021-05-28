@@ -7,10 +7,10 @@ import NationalEnergyFoundation from "../images/clients/national-energy-foundati
 import Ogio from "../images/clients/ogio-gray.svg";
 import WasatchCovers from "../images/clients/wasatch-covers-gray.svg";
 
-function BrandImage({ title, logo }) {
+function BrandImage({ title, logo, width = 300, height = 126 }) {
   return (
     <div className="py-3 px-4">
-      <img alt={title} src={logo} />
+      <img alt={title} src={logo} width={width} height={height} />
     </div>
   );
 }
@@ -35,18 +35,37 @@ function Brands() {
             </p>
           </div>
           <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 items-center">
-            <BrandImage logo={CocaCola} title="CocaCola" />
+            <BrandImage
+              logo={CocaCola}
+              title="CocaCola"
+              width={300}
+              height={126}
+            />
             <BrandImage
               logo={NationalEnergyFoundation}
               title="National Energy Foundation"
+              width={300}
+              height={130}
             />
-            <BrandImage logo={EdgeHomes} title="EDGEHomes" />
+            <BrandImage
+              logo={EdgeHomes}
+              title="EDGEHomes"
+              width={300}
+              height={65}
+            />
             <BrandImage
               logo={IntermountainHealthcare}
               title="Intermountain Healthcare"
+              width={300}
+              height={63}
             />
-            <BrandImage logo={Ogio} title="Ogio" />
-            <BrandImage logo={WasatchCovers} title="Wasatch Covers" />
+            <BrandImage logo={Ogio} title="Ogio" width={300} height={102} />
+            <BrandImage
+              logo={WasatchCovers}
+              title="Wasatch Covers"
+              width={298}
+              height={150}
+            />
           </div>
         </div>
       </div>
