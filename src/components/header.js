@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import BootpackHorizontal from "../images/bootpack-horizontal.svg";
+import BootpackHorizontal from "../animated-images/bootpack-horizontal.svg";
 import MobileNav from "./mobile-nav";
 
 function Header() {
@@ -12,11 +12,7 @@ function Header() {
             className="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl mr-0 lg:mr-8"
             to="/"
           >
-            <img
-              alt="Bootpack Digital"
-              className="h-20"
-              src={BootpackHorizontal}
-            />
+            <BootpackHorizontal alt="Bootpack Digital" className="h-20" />
           </Link>
 
           <div className="hidden lg:flex items-center">
