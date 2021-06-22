@@ -16,7 +16,7 @@ module.exports = {
         short_name: `Bootpack`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4299E1`,
+        theme_color: `#005D8F`,
         display: `minimal-ui`,
         icon: `src/images/bootpack-icon.png`,
         icon_options: {
