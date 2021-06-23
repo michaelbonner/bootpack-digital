@@ -3,8 +3,6 @@ import React from "react";
 import Header from "./header";
 import Footer from "./footer";
 
-import "../../src/css/style.css";
-
 function Layout({ children }) {
   return (
     <div className="leading-normal tracking-normal text-gray-900">
