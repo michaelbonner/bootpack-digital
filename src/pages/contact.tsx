@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ContactForm from "../components/contact-form";
@@ -125,9 +125,11 @@ function ContactPage() {
                     Schedule a call on
                     <svg
                       className="fill-current text-white inline-block w-20 ml-2"
-                      style={{
-                        enableBackground: `new 0 0 534 160`,
-                      }}
+                      style={
+                        {
+                          enableBackground: `new 0 0 534 160`,
+                        } as CSSProperties
+                      }
                       version="1.1"
                       viewBox="0 0 534 160"
                       x="0px"
