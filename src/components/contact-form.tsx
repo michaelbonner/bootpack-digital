@@ -22,11 +22,29 @@ const encode = (data) => {
     .join(`&`);
 };
 
+interface ContactFields {
+  firstName: string;
+  lastName: string;
+  email: string;
+  company: string;
+  phone: string;
+  message: string;
+}
+
 function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   return (
     <Formik
-      initialValues={{ email: ``, password: `` }}
+      initialValues={
+        {
+          firstName: "",
+          lastName: "",
+          email: "",
+          company: "",
+          phone: "",
+          message: "",
+        } as ContactFields
+      }
       onSubmit={(values, { setSubmitting }) => {
         fetch(`/?no-cache=1`, {
           method: `POST`,
@@ -188,7 +206,7 @@ function ContactForm() {
                   onBlur={handleBlur}
                   onChange={handleChange}
                   placeholder="Please give us details about what you're trying to accomplish"
-                  rows="10"
+                  rows={10}
                 ></textarea>
                 <p className="text-red-500 text-xs italic px-2 pt-1">
                   {errors.message && touched.message && errors.message}
