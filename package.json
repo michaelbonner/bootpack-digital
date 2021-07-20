@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Michael Bonner <mike@bootpackdigital.com>",
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "formik": "^2.2.9",
     "gatsby": "^3.10.0",
     "gatsby-plugin-google-tagmanager": "^3.10.0",

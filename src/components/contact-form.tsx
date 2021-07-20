@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { useForm, ValidationError } from "@formspree/react";
+import { useEffect } from "react";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string()
@@ -33,6 +35,16 @@ interface ContactFields {
 
 function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("xgerlrdz");
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setSubmitted(true);
+    }
+    if (state.errors.length) {
+      alert(state.errors[0]);
+    }
+  }, [state]);
   return (
     <Formik
       initialValues={
@@ -46,22 +58,8 @@ function ContactForm() {
         } as ContactFields
       }
       onSubmit={(values, { setSubmitting }) => {
-        fetch(`/?no-cache=1`, {
-          method: `POST`,
-          headers: { "Content-Type": `application/x-www-form-urlencoded` },
-          body: encode({
-            "form-name": `contact`,
-            ...values,
-          }),
-        })
-          .then(() => {
-            setSubmitted(true);
-            setSubmitting(false);
-          })
-          .catch((error) => {
-            alert(`Error: Please Try Again!`);
-            setSubmitting(false);
-          });
+        handleSubmit(values);
+        setSubmitting(false);
       }}
       validationSchema={validationSchema}
     >
