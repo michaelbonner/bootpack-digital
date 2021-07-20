@@ -77,8 +77,6 @@ function ContactForm() {
         <>
           <form
             className={submitted ? `hidden` : `visible`}
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
             name="contact"
             onReset={handleReset}
             onSubmit={handleSubmit}
