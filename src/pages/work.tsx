@@ -1,16 +1,17 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { Link } from "gatsby";
 import Cosgriff from "../components/images/work/cosgriff";
 import DenverWindowWellCovers from "../components/images/work/denver-window-well-covers";
 import HereKidsWin from "../components/images/work/here-kids-win";
 import HeritageOfPreston from "../components/images/work/heritage-of-preston";
+import JeremyMiller from "../components/images/work/jeremy-miller";
 import KnowYourForce from "../components/images/work/know-your-force";
+import Ravens from "../components/images/work/ravens";
+import TheDoctorsCbd from "../components/images/work/the-doctors-cbd";
 import ThunderBiotech from "../components/images/work/thunder-biotech";
 import WasatchCovers from "../components/images/work/wasatch-covers";
-import Ravens from "../components/images/work/ravens";
-import { Link } from "gatsby";
-import TheDoctorsCbd from "../components/images/work/the-doctors-cbd";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const WorkItem = ({ description, link, poster, title }) => {
   return (
@@ -102,16 +103,16 @@ const Work = () => {
               title={`Wasatch Covers`}
             />
             <WorkItem
-              description={`Know Your Force (KYF) is rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code, and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely. `}
-              link={`https://knowyourforce.com/`}
-              poster={<KnowYourForce />}
-              title={`Know Your Force`}
-            />
-            <WorkItem
               description={`As skilled technicians with a unique sensibility for storytelling, RAVENS are poised to execute nearly any mission from heavy lift aerials to pursuit tracking or technical phantom flex high speed work.`}
               link={`https://ravensfilmworks.com/`}
               poster={<Ravens />}
               title={`Ravens Film Works`}
+            />
+            <WorkItem
+              description={`Know Your Force (KYF) is rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code, and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely. `}
+              link={`https://knowyourforce.com/`}
+              poster={<KnowYourForce />}
+              title={`Know Your Force`}
             />
             <WorkItem
               description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
@@ -124,6 +125,12 @@ const Work = () => {
               link={`https://denverwindowwellcovers.com/`}
               poster={<DenverWindowWellCovers />}
               title={`Denver Window Well Covers`}
+            />
+            <WorkItem
+              description={`Jeremy Miller is an award-winning film director based in Salt Lake City, Utah. He wanted a new site that put the focus on the work, so we built him a site that did exactly that in a stylistic way. Be sure to check out the custom Vimeo player on the individual work page; we're pretty proud of that one.`}
+              link={`https://jeremymillerdirector.com/`}
+              poster={<JeremyMiller />}
+              title={`Director Jeremy Miller`}
             />
             <WorkItem
               description={`The Cosgriff school used a site we built about 10 years ago. Needless to say it was time for a fresh coat of paint and a rethink of how the pages were organized. We rebuilt the site from the ground up in ~4 weeks. After comparing analytics the new site clearly outperforms the old site in nearly every measurable way.`}
