@@ -6,6 +6,7 @@
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "@types/react-helmet": "^6.1.4",
+    "deepmerge": "^4.2.2",
     "formik": "^2.2.9",
     "gatsby": "^3.11.1",
     "gatsby-plugin-google-tagmanager": "^3.11.0",
