@@ -5,6 +5,7 @@
   "author": "Michael Bonner <mike@bootpackdigital.com>",
   "dependencies": {
     "@formspree/react": "^2.2.3",
+    "@types/react-helmet": "^6.1.4",
     "formik": "^2.2.9",
     "gatsby": "^3.11.1",
     "gatsby-plugin-google-tagmanager": "^3.11.0",
