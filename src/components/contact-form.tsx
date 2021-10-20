@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import { useEffect } from "react";
 
 const validationSchema = Yup.object().shape({
@@ -18,11 +18,6 @@ const validationSchema = Yup.object().shape({
     .required(`Email is Required!`),
   message: Yup.string().required(`Message is Required!`),
 });
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + `=` + encodeURIComponent(data[key]))
-    .join(`&`);
-};
 
 interface ContactFields {
   firstName: string;
@@ -35,7 +30,7 @@ interface ContactFields {
 
 function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
-  const [state, handleSubmit] = useForm("xgerlrdz");
+  const [state, handleSubmit] = useForm(`xgerlrdz`);
 
   useEffect(() => {
     if (state.succeeded) {
@@ -49,12 +44,12 @@ function ContactForm() {
     <Formik
       initialValues={
         {
-          firstName: "",
-          lastName: "",
-          email: "",
-          company: "",
-          phone: "",
-          message: "",
+          firstName: ``,
+          lastName: ``,
+          email: ``,
+          company: ``,
+          phone: ``,
+          message: ``,
         } as ContactFields
       }
       onSubmit={(values, { setSubmitting }) => {
