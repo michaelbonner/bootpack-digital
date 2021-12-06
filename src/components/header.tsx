@@ -18,25 +18,25 @@ function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               className="text-navy-400 hover:underline font-semibold text-xl px-4"
-              to="/work"
+              to="/work/"
             >
               Work
             </Link>
             <Link
               className="text-navy-400 hover:underline font-semibold text-xl px-4"
-              to="/about"
+              to="/about/"
             >
               About
             </Link>
             <Link
               className="text-navy-400 hover:underline font-semibold text-xl px-4"
-              to="/open-source"
+              to="/open-source/"
             >
               Open Source
             </Link>
             <Link
               className="lg:ml-4 flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-              to="/contact"
+              to="/contact/"
             >
               Request a Quote
             </Link>

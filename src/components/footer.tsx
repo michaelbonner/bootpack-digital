@@ -16,31 +16,31 @@ function Footer() {
             </Link>
             <Link
               className="block font-semibold py-4 lg:py-2 lg:px-4"
-              to="/work"
+              to="/work/"
             >
               Work
             </Link>
             <Link
               className="block font-semibold py-4 lg:py-2 lg:px-4"
-              to="/about"
+              to="/about/"
             >
               About
             </Link>
             <Link
               className="block font-semibold py-4 lg:py-2 lg:px-4"
-              to="/open-source"
+              to="/open-source/"
             >
               Open Source
             </Link>
             <Link
               className="block font-semibold py-4 lg:py-2 lg:px-4"
-              to="/contact"
+              to="/contact/"
             >
               Contact
             </Link>
             <Link
               className="block font-semibold py-4 lg:py-2 lg:px-4"
-              to="/policies"
+              to="/policies/"
             >
               Policies
             </Link>

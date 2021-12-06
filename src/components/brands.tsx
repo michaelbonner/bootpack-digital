@@ -29,42 +29,42 @@ function Brands() {
               sizes of projects.
             </p>
             <p className="mt-3">
-              <Link className="underline text-lg text-blue-500" to="/work">
+              <Link className="underline text-lg text-blue-500" to="/work/">
                 See some of our work
               </Link>
             </p>
           </div>
           <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 items-center">
             <BrandImage
+              height={126}
               logo={CocaCola}
               title="CocaCola"
               width={300}
-              height={126}
             />
             <BrandImage
+              height={130}
               logo={NationalEnergyFoundation}
               title="National Energy Foundation"
               width={300}
-              height={130}
             />
             <BrandImage
+              height={65}
               logo={EdgeHomes}
               title="EDGEHomes"
               width={300}
-              height={65}
             />
             <BrandImage
+              height={63}
               logo={IntermountainHealthcare}
               title="Intermountain Healthcare"
               width={300}
-              height={63}
             />
-            <BrandImage logo={Ogio} title="Ogio" width={300} height={102} />
+            <BrandImage height={102} logo={Ogio} title="Ogio" width={300} />
             <BrandImage
+              height={150}
               logo={WasatchCovers}
               title="Wasatch Covers"
               width={298}
-              height={150}
             />
           </div>
         </div>
