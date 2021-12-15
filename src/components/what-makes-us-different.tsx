@@ -94,7 +94,7 @@ const WhatMakesUsDifferent = () => {
               </p>
               <p className="mt-2 text-sm underline">
                 <a
-                  href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbootpackdigital.com%2F&tab=desktop"
+                  href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbootpackdigital.com%2F"
                   rel="noopener nofollow noreferrer"
                   target="_blank"
                 >
