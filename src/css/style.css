@@ -6,6 +6,7 @@ html,
 body {
   @apply bg-navy-700;
   background-image: url("../images/navy-topo.svg");
+  font-size: 18px;
 }
 
 .hero-bg {
