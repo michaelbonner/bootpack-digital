@@ -14,13 +14,13 @@ function IndexPage() {
       <div className="hero-bg">
         <div className="container mx-auto lg:py-12">
           <div className="w-full max-w-screen-xl py-12 md:py-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <div className="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
-              <h1 className="my-4 text-3xl md:text-5xl text-navy-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
+            <div className="flex flex-col w-full xl:w-4/5 justify-center lg:items-start overflow-y-hidden">
+              <h1 className="my-4 text-2xl md:text-4xl xl:text-5xl text-navy-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
                 Software and Web Developers{` `}
                 <br />
                 <span className="text-blue-500">based in Salt Lake, UT</span>
               </h1>
-              <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle text-blue-600">
+              <p className="leading-normal text-base md:text-xl mb-8 text-center md:text-left slide-in-bottom-subtitle text-blue-600">
                 We help you build websites, mobile applications, and web
                 software that works. We want to help you turn your ideas into
                 solutions that scale with your business. We see ourselves as a

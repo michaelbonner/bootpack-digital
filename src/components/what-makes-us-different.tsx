@@ -57,11 +57,12 @@ const WhatMakesUsDifferent = () => {
                 Business knowledge
               </h3>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                We don't just think about the code. Helping businesses grow has
-                given us an understanding of ROI that allows us to help clients
-                tune their ideas into something shippable and lovable.
-                Go-to-market strategies can make or break your product. We can
-                help guide you down a path that works for you.
+                We are a business minded development group. We don't just think
+                about the code. Helping businesses grow has given us an
+                understanding of ROI that allows us to help clients tune their
+                ideas into something shippable and lovable. Go-to-market
+                strategies can make or break your product. We can help guide you
+                down a path that works for you.
               </p>
             </div>
           </div>
