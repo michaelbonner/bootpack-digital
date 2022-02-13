@@ -18,14 +18,14 @@ function IndexPage() {
               <h1 className="my-4 text-3xl md:text-5xl text-navy-500 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">
                 Software and Web Developers{` `}
                 <br />
-                <span className="text-blue-500">in Salt Lake, UT</span>
+                <span className="text-blue-500">based in Salt Lake, UT</span>
               </h1>
               <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle text-blue-600">
-                We build websites, mobile applications, and web software. We
-                want to help you turn your ideas into realities. We understand
-                how to build quality software, and understand what it takes for
-                a business to succeed. Let us help you get your product to the
-                next level.
+                We help you build websites, mobile applications, and web
+                software that works. We want to help you turn your ideas into
+                solutions that scale with your business. We see ourselves as a
+                partner with you, and we're committed to making every venture as
+                successful as possible.
               </p>
               <div className="rounded-md shadow my-4 lg:my-0">
                 <Link
