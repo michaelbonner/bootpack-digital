@@ -13,15 +13,26 @@ function ContactPage() {
       />
       <div className="bg-white pt-8">
         <div className="container mx-auto px-4 text-gray-700 max-w-3xl">
-          <h1 className="mt-12 text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
-            Get in touch
-          </h1>
-          <p className="mt-4 text-xl max-w-3xl">
-            Do you have a project idea or an existing site that needs to be
-            updated? Do you need an outside consultant? Fill out this form and
-            we'll be in touch. We specialize in custom web design, web
-            development, and app development.
-          </p>
+          <div className="prose">
+            <h1 className="mt-12 text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
+              Get in touch
+            </h1>
+            <p>
+              Set up some time to talk to Michael Bonner, the founder, not a
+              sales person or an intern.
+            </p>
+            <p>
+              We love meeting new people and hearing new ideas. Our goal is to
+              help you build your website, mobile app, or web app. We'll work
+              with you to understand what you need, and we'll make it happen.
+            </p>
+            <p>
+              Do you have a project idea or an existing site that needs to be
+              updated? Do you need an outside consultant? Fill out this form and
+              we'll be in touch. We specialize in custom web design, web
+              development, and app development.
+            </p>
+          </div>
           <div className="pt-4 max-w-3xl mx-auto">
             <div className="flex flex-wrap justify-between items-end">
               <div>
