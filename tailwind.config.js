@@ -45,5 +45,5 @@ module.exports = {
       roman: `upper-roman`,
     },
   },
-  plugins: [],
+  plugins: [require(`@tailwindcss/typography`)],
 };
