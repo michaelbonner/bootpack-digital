@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import BlackthornSoftware from "../components/images/work/blackthorn-software";
 import Cosgriff from "../components/images/work/cosgriff";
 import DenverWindowWellCovers from "../components/images/work/denver-window-well-covers";
 import HereKidsWin from "../components/images/work/here-kids-win";
@@ -149,6 +150,12 @@ const Work = () => {
               link={`https://www.thedoctorscbdrelief.com/`}
               poster={<TheDoctorsCbd />}
               title={`The Doctors CBD`}
+            />
+            <WorkItem
+              description={`Blackthorn Software helps you run a better business by creating top to bottom visibility for every part of the project by providing a suite of management tools for companies of all sizes to keep track of their team members, projects, and even assets.`}
+              link={`https://blackthornsoftware.com/`}
+              poster={<BlackthornSoftware />}
+              title={`Blackthorn Software`}
             />
           </div>
         </div>
