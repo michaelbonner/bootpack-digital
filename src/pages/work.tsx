@@ -152,7 +152,7 @@ const Work = () => {
               title={`The Doctors CBD`}
             />
             <WorkItem
-              description={`Blackthorn Software helps you run a better business by creating top to bottom visibility for every part of the project by providing a suite of management tools for companies of all sizes to keep track of their team members, projects, and even assets.`}
+              description={`A collaborative effort with the team at Blackthorn Software. Their software helps you run a better business by creating top to bottom visibility for every part of the project by providing a suite of management tools for companies of all sizes to keep track of their team members, projects, and even assets.`}
               link={`https://blackthornsoftware.com/`}
               poster={<BlackthornSoftware />}
               title={`Blackthorn Software`}
