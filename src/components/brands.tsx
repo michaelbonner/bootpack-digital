@@ -10,7 +10,7 @@ import WasatchCovers from "../images/clients/wasatch-covers-gray.svg";
 function BrandImage({ title, logo, width = 300, height = 126 }) {
   return (
     <div className="py-3 px-4">
-      <img alt={title} src={logo} width={width} height={height} />
+      <img alt={title} height={height} src={logo} width={width} />
     </div>
   );
 }

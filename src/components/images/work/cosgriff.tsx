@@ -1,11 +1,11 @@
-import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 export default function Cosgriff() {
   return (
     <StaticImage
-      src="../../../images/work/cosgriff.jpg"
       alt="J.E. Cosgriff School"
+      src="../../../images/work/cosgriff.jpg"
     />
   );
 }

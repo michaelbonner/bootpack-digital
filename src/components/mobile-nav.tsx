@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import SocialIcons from "./social-icons";
 import BootpackVertical from "../images/bootpack-digital.svg";
+import SocialIcons from "./social-icons";
 
 const MobileNav = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);

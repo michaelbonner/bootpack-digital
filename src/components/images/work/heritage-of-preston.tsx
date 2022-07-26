@@ -1,11 +1,11 @@
-import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 export default function HeritageOfPreston() {
   return (
     <StaticImage
-      src="../../../images/work/heritage-of-preston.jpg"
       alt="Heritage of Preston"
+      src="../../../images/work/heritage-of-preston.jpg"
     />
   );
 }

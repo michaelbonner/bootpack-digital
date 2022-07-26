@@ -1,11 +1,11 @@
-import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 export default function WasatchCovers() {
   return (
     <StaticImage
-      src="../../../images/work/wasatch-covers.jpg"
       alt="Wasatch Covers"
+      src="../../../images/work/wasatch-covers.jpg"
     />
   );
 }

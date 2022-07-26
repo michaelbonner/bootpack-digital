@@ -1,9 +1,9 @@
-import React from "react";
 import { Link } from "gatsby";
+import React from "react";
+import Brands from "../components/brands";
+import ContactForm from "../components/contact-form";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ContactForm from "../components/contact-form";
-import Brands from "../components/brands";
 import WhatMakesUsDifferent from "../components/what-makes-us-different";
 
 function IndexPage() {

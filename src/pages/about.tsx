@@ -1,8 +1,8 @@
+import { Link } from "gatsby";
 import React from "react";
+import MichaelBonner from "../components/images/michael-bonner";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import MichaelBonner from "../components/images/michael-bonner";
-import { Link } from "gatsby";
 
 function AboutPage() {
   return (

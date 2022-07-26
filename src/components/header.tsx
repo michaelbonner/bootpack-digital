@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "gatsby";
+import React from "react";
 import BootpackHorizontal from "../animated-images/bootpack-horizontal.svg";
 import MobileNav from "./mobile-nav";
 

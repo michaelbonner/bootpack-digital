@@ -1,11 +1,11 @@
-import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 export default function ThunderBiotech() {
   return (
     <StaticImage
-      src="../../../images/work/thunder-biotech.jpg"
       alt="Wasatch Covers"
+      src="../../../images/work/thunder-biotech.jpg"
     />
   );
 }

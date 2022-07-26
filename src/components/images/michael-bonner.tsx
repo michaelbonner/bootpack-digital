@@ -1,12 +1,12 @@
-import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 export default function MichaelBonner({ className }) {
   return (
     <StaticImage
-      src="../../images/michael-bonner.jpg"
       alt="Michael Bonner"
       className={className}
+      src="../../images/michael-bonner.jpg"
     />
   );
 }

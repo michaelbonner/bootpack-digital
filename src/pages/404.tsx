@@ -1,6 +1,5 @@
-import React from "react";
 import lottie from "lottie-web";
-import { createRef, useEffect } from "react";
+import React, { createRef, useEffect } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import animation from "../lottie/lost.json";

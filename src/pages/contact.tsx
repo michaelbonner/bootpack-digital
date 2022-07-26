@@ -1,8 +1,8 @@
 import React, { CSSProperties } from "react";
+import Obfuscate from "react-obfuscate";
+import ContactForm from "../components/contact-form";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ContactForm from "../components/contact-form";
-import Obfuscate from "react-obfuscate";
 
 function ContactPage() {
   return (

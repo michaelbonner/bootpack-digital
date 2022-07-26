@@ -1,11 +1,11 @@
-import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 export default function KnowYourForce() {
   return (
     <StaticImage
-      src="../../../images/work/know-your-force.jpg"
       alt="Know Your Force"
+      src="../../../images/work/know-your-force.jpg"
     />
   );
 }

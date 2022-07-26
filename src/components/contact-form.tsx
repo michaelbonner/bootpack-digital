@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Formik } from "formik";
-import * as Yup from "yup";
 import { useForm } from "@formspree/react";
-import { useEffect } from "react";
+import { Formik } from "formik";
+import React, { useEffect, useState } from "react";
+import * as Yup from "yup";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string()
