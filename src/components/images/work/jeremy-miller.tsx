@@ -4,8 +4,8 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function JeremyMiller() {
   return (
     <StaticImage
-      src="../../../images/work/jeremy-miller.jpg"
       alt="Director Jeremy Miller"
+      src="../../../images/work/jeremy-miller.jpg"
     />
   );
 }
