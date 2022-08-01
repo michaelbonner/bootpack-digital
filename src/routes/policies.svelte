@@ -1,9 +1,16 @@
+<script lang="ts">
+  const seoTitle = "Privacy Policy and Terms of Service | Bootpack Digital";
+  const seoDescription =
+    "Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!";
+</script>
+
 <svelte:head>
-  <title>Privacy Policy and Terms of Service | Bootpack Digital</title>
-  <meta
-    name="description"
-    content="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
-  />
+  <title>{seoTitle}</title>
+  <meta name="description" content={seoDescription} />
+  <meta property="og:title" content={seoTitle} />
+  <meta property="og:description" content={seoDescription} />
+  <meta name="twitter:title" content={seoTitle} />
+  <meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
 <div class="bg-white pt-8 pb-16">

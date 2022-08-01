@@ -1,13 +1,17 @@
 <script lang="ts">
   import MichaelBonner from "../images/michael-bonner.jpg";
+  let seoTitle = "About Us | Bootpack Digital";
+  let seoDescription =
+    "Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for.";
 </script>
 
 <svelte:head>
-  <title>About Us | Bootpack Digital</title>
-  <meta
-    name="description"
-    content="Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for."
-  />
+  <title>{seoTitle}</title>
+  <meta name="description" content={seoDescription} />
+  <meta property="og:title" content={seoTitle} />
+  <meta property="og:description" content={seoDescription} />
+  <meta name="twitter:title" content={seoTitle} />
+  <meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
 <div class="relative py-16 bg-white overflow-hidden text-lg leading-8">

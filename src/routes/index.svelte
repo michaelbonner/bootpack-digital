@@ -2,14 +2,19 @@
   import Brands from "../components/brands.svelte";
   import ContactForm from "../components/contact-form.svelte";
   import WhatMakesUsDifferent from "../components/what-makes-us-different.svelte";
+
+  const seoTitle = "Custom web and app developer in Utah | Bootpack Digital";
+  const seoDescription =
+    "We build websites, mobile applications, and web software. We want to help you turn your ideas into realities. We understand how to build quality software, and we understand what it takes for a business to succeed.";
 </script>
 
 <svelte:head>
-  <title>Custom web and app developer in Utah | Bootpack Digital</title>
-  <meta
-    name="description"
-    content="We build websites, mobile applications, and web software. We want to help you turn your ideas into realities. We understand how to build quality software, and we understand what it takes for a business to succeed."
-  />
+  <title>{seoTitle}</title>
+  <meta name="description" content={seoDescription} />
+  <meta property="og:title" content={seoTitle} />
+  <meta property="og:description" content={seoDescription} />
+  <meta name="twitter:title" content={seoTitle} />
+  <meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
 <div class="hero-bg">

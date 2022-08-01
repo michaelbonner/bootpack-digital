@@ -1,9 +1,16 @@
+<script lang="ts">
+  const seoTitle = "Open Source Projects | Bootpack Digital";
+  const seoDescription =
+    "Open source is important to the modern web. We are committed to sharing tools we think will strengthen the web development community.";
+</script>
+
 <svelte:head>
-  <title>Open Source Projects | Bootpack Digital</title>
-  <meta
-    name="description"
-    content="Open source is important to the modern web. We are committed to sharing tools we think will strengthen the web development community."
-  />
+  <title>{seoTitle}</title>
+  <meta name="description" content={seoDescription} />
+  <meta property="og:title" content={seoTitle} />
+  <meta property="og:description" content={seoDescription} />
+  <meta name="twitter:title" content={seoTitle} />
+  <meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
 <div

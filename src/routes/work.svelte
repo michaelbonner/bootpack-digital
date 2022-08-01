@@ -12,14 +12,19 @@
   import TheDoctorsCbd from "../images/work/the-doctors-cbd.jpg";
   import ThunderBiotech from "../images/work/thunder-biotech.jpg";
   import WasatchCovers from "../images/work/wasatch-covers.jpg";
+
+  const seoTitle = "Work | Bootpack Digital";
+  const seoDescription =
+    "We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of.";
 </script>
 
 <svelte:head>
-  <title>Work | Bootpack Digital</title>
-  <meta
-    name="description"
-    content="We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of."
-  />
+  <title>{seoTitle}</title>
+  <meta name="description" content={seoDescription} />
+  <meta property="og:title" content={seoTitle} />
+  <meta property="og:description" content={seoDescription} />
+  <meta name="twitter:title" content={seoTitle} />
+  <meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
 <div
