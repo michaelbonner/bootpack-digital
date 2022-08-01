@@ -6,5 +6,5 @@
 </script>
 
 <div class="py-3 px-4">
-  <img alt={title} {height} src={logo} {width} />
+  <img alt={title} {height} loading="lazy" src={logo} {width} />
 </div>

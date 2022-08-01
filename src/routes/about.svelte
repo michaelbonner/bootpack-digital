@@ -53,6 +53,7 @@
           alt="Headshot of Michael Bonner"
           class="overflow-hidden shadow-lg rounded-t-lg lg:rounded-r-none lg:rounded-l-lg my-0 py-0"
           height="395"
+          loading="lazy"
           src={MichaelBonner}
           width="266"
         />

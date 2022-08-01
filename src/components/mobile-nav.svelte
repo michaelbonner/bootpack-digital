@@ -52,7 +52,12 @@
       class="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl mr-0 lg:mr-8"
       href="/"
     >
-      <img alt="Bootpack Digital" class="w-full" src={BootpackDigital} />
+      <img
+        alt="Bootpack Digital"
+        class="w-full"
+        loading="lazy"
+        src={BootpackDigital}
+      />
     </a>
     <a class="block text-navy-400 font-semibold text-xl py-2 px-4" href="/"
       >Home</a

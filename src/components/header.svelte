@@ -16,6 +16,7 @@
           alt="Bootpack Digital"
           class="h-20"
           height="90"
+          loading="lazy"
           src={BootpackHorizontal}
           width="298"
         />
