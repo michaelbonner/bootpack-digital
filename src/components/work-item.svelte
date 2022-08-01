@@ -3,6 +3,8 @@
   export let link: string;
   export let poster: string;
   export let title: string;
+  export let posterAvif = "";
+  export let posterWebp = "";
 </script>
 
 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
@@ -12,7 +14,12 @@
     rel="noopener noreferrer"
     target="_blank"
   >
-    <img alt={title} height="232" loading="lazy" src={poster} width="465" />
+    <picture>
+      <source srcset={posterAvif} type="image/avif" />
+      <source srcset={posterWebp} type="image/webp" />
+      <img src={poster} height="232" width="465" alt={title} />
+    </picture>
+    <!-- <img alt={title} height="232" loading="lazy" src={poster} width="465" /> -->
   </a>
   <div class="flex-1 bg-white p-6 flex flex-col justify-between">
     <div class="flex-1">
