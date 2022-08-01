@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ContactForm from '../components/contact-form.svelte';
 	import { Obfuscate } from 'svelte-obfuscate';
+	import ContactForm from '../components/contact-form.svelte';
 
 	const seoTitle = 'Contact Us | Bootpack Digital';
 	const seoDescription =

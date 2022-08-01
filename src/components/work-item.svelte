@@ -12,9 +12,8 @@
 		<picture>
 			<source srcset={posterAvif} type="image/avif" />
 			<source srcset={posterWebp} type="image/webp" />
-			<img src={poster} height="232" width="465" alt={title} />
+			<img alt={title} height="232" loading="lazy" src={poster} width="465" />
 		</picture>
-		<!-- <img alt={title} height="232" loading="lazy" src={poster} width="465" /> -->
 	</a>
 	<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 		<div class="flex-1">

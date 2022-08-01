@@ -1,8 +1,8 @@
 <script>
-	let mobileNavOpen = false;
-
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
+
+	let mobileNavOpen = false;
 </script>
 
 <button class="block lg:hidden" on:click={() => (mobileNavOpen = !mobileNavOpen)}>

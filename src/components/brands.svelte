@@ -1,12 +1,11 @@
 <script>
-	import BrandImage from './brand-image.svelte';
-
 	import CocaCola from '../images/clients/coca-cola-classic-gray.svg';
-	import NationalEnergyFoundation from '../images/clients/national-energy-foundation-gray.svg';
 	import EdgeHomes from '../images/clients/edge-homes-gray.svg';
 	import IntermountainHealthcare from '../images/clients/intermountain-healthcare-gray.svg';
+	import NationalEnergyFoundation from '../images/clients/national-energy-foundation-gray.svg';
 	import Ogio from '../images/clients/ogio-gray.svg';
 	import WasatchCovers from '../images/clients/wasatch-covers-gray.svg';
+	import BrandImage from './brand-image.svelte';
 </script>
 
 <div class="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 py-4 lg:py-24">
