@@ -13,8 +13,8 @@
 				<a class="block font-semibold py-4 lg:py-2 lg:px-4" href="/work">Work</a>
 				<a class="block font-semibold py-4 lg:py-2 lg:px-4" href="/about">About</a>
 				<a class="block font-semibold py-4 lg:py-2 lg:px-4" href="/open-source">Open Source</a>
-				<a class="block font-semibold py-4 lg:py-2 lg:px-4" href="/contact/">Contact</a>
-				<a class="block font-semibold py-4 lg:py-2 lg:px-4" href="/policies/">Policies</a>
+				<a class="block font-semibold py-4 lg:py-2 lg:px-4" href="/contact">Contact</a>
+				<a class="block font-semibold py-4 lg:py-2 lg:px-4" href="/policies">Policies</a>
 			</div>
 		</div>
 

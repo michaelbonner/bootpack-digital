@@ -168,7 +168,7 @@
 			<div class="inline-flex rounded-md shadow">
 				<a
 					class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 transition duration-150 ease-in-out"
-					href="/contact/"
+					href="/contact"
 				>
 					Get in touch
 				</a>
