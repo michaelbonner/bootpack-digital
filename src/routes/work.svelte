@@ -82,7 +82,7 @@
 				title={`Wasatch Covers`}
 			/>
 			<WorkItem
-				description={`JME FILM CO is an award-winning film studio located on the edge of Salt Lake City. They partner with brands and agencies to craft authentic content, commercials, and heartfelt stories. We partnered with their design team to create a beautiful and engaging experience.`}
+				description={`JME FILM CO had an outdated website that didn't represent their brand. We partnered with their design team to create a beautiful and engaging experience that more reflected who they are. The site is built to allow infinite customization from the CMS and still provide excellent performance on the front-end.`}
 				link={`https://www.jmillsent.com/`}
 				poster={JMills}
 				posterWebp={JMillsWebp}
