@@ -1,5 +1,7 @@
 <script lang="ts">
   import MichaelBonner from "../images/michael-bonner.jpg";
+  import MichaelBonnerWebp from "../images/michael-bonner.jpg?w=300,500;700;900&webp&srcset";
+  import MichaelBonnerAvif from "../images/michael-bonner.jpg?w=300,500;700;900&avif&srcset";
   let seoTitle = "About Us | Bootpack Digital";
   let seoDescription =
     "Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for.";
@@ -49,14 +51,18 @@
       <div
         class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8"
       >
-        <img
-          alt="Headshot of Michael Bonner"
-          class="overflow-hidden shadow-lg rounded-t-lg lg:rounded-r-none lg:rounded-l-lg my-0 py-0"
-          height="395"
-          loading="lazy"
-          src={MichaelBonner}
-          width="266"
-        />
+        <picture>
+          <source srcset={MichaelBonnerAvif} type="image/avif" />
+          <source srcset={MichaelBonnerWebp} type="image/webp" />
+          <img
+            alt="Headshot of Michael Bonner"
+            class="overflow-hidden shadow-lg rounded-t-lg lg:rounded-r-none lg:rounded-l-lg my-0 py-0"
+            height="395"
+            loading="lazy"
+            src={MichaelBonner}
+            width="266"
+          />
+        </picture>
 
         <div class="sm:col-span-2 flex flex-col justify-between pb-2 pt-4 pr-4">
           <div class="space-y-4 px-4 lg:px-0">
