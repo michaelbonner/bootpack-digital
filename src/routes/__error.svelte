@@ -13,6 +13,10 @@
   export let title: string;
 </script>
 
+<svelte:head>
+  <title>{title}</title>
+</svelte:head>
+
 <div class="relative py-16 bg-white overflow-hidden text-lg leading-8">
   <div class="relative px-4 sm:px-6 lg:px-8 text-center grid gap-y-12">
     <h1
