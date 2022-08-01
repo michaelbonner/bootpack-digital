@@ -1,9 +1,10 @@
-<script lang="ts">
-  // <SEO
-  //     description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
-  //     title="Privacy Policy and Terms of Service"
-  //   />
-</script>
+<svelte:head>
+  <title>Privacy Policy and Terms of Service | Bootpack Digital</title>
+  <meta
+    name="description"
+    content="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
+  />
+</svelte:head>
 
 <div class="bg-white pt-8 pb-16">
   <div class="container mx-auto px-4 text-gray-700 max-w-5xl mt-16">

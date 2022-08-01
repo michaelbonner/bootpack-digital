@@ -12,12 +12,15 @@
   import TheDoctorsCbd from "../images/work/the-doctors-cbd.jpg";
   import ThunderBiotech from "../images/work/thunder-biotech.jpg";
   import WasatchCovers from "../images/work/wasatch-covers.jpg";
-
-  //   <SEO
-  //     description="We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of."
-  //     title="Work"
-  //   />
 </script>
+
+<svelte:head>
+  <title>Work | Bootpack Digital</title>
+  <meta
+    name="description"
+    content="We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of."
+  />
+</svelte:head>
 
 <div
   class="relative hero-bg pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"

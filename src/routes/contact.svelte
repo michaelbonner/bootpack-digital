@@ -1,12 +1,15 @@
 <script lang="ts">
   import ContactForm from "../components/contact-form.svelte";
   import { Obfuscate } from "svelte-obfuscate";
-
-  // <SEO
-  //     description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
-  //     title="Contact Us"
-  //   />
 </script>
+
+<svelte:head>
+  <title>Contact Us | Bootpack Digital</title>
+  <meta
+    name="description"
+    content="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
+  />
+</svelte:head>
 
 <div class="bg-white pt-8">
   <div class="container mx-auto px-4 text-gray-700 max-w-3xl">

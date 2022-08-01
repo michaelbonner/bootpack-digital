@@ -1,10 +1,14 @@
 <script lang="ts">
   import MichaelBonner from "../images/michael-bonner.jpg";
-  // <SEO
-  //   description="Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for."
-  //   title="About Us"
-  // />
 </script>
+
+<svelte:head>
+  <title>About Us | Bootpack Digital</title>
+  <meta
+    name="description"
+    content="Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for."
+  />
+</svelte:head>
 
 <div class="relative py-16 bg-white overflow-hidden text-lg leading-8">
   <div class="relative px-4 sm:px-6 lg:px-8">
