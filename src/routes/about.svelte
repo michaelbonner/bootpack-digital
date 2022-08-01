@@ -51,8 +51,10 @@
       >
         <img
           alt="Headshot of Michael Bonner"
-          src={MichaelBonner}
           class="overflow-hidden shadow-lg rounded-t-lg lg:rounded-r-none lg:rounded-l-lg my-0 py-0"
+          height="395"
+          src={MichaelBonner}
+          width="266"
         />
 
         <div class="sm:col-span-2 flex flex-col justify-between pb-2 pt-4 pr-4">
