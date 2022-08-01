@@ -1,8 +1,14 @@
 <script>
+	import { navigating, page } from '$app/stores';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
 
 	let mobileNavOpen = false;
+
+	$: if ($navigating) {
+		console.log('page', $page);
+		mobileNavOpen = false;
+	}
 </script>
 
 <button class="block lg:hidden" on:click={() => (mobileNavOpen = !mobileNavOpen)}>
@@ -46,14 +52,34 @@
 		>
 			<img alt="Bootpack Digital" class="w-full" loading="lazy" src={BootpackDigital} />
 		</a>
-		<a class="block text-navy-400 font-semibold text-xl py-2 px-4" href="/">Home</a>
-		<a class="block text-navy-400 font-semibold text-xl py-2 px-4" href="/work/">Work</a>
-		<a class="block text-navy-400 font-semibold text-xl py-2 px-4" href="/about/">About</a>
-		<a class="block text-navy-400 font-semibold text-xl py-2 px-4" href="/open-source/">
+		<a
+			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
+				$page.url.pathname === '/' && 'bg-navy-100'
+			}`}
+			href="/">Home</a
+		>
+		<a
+			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
+				$page.url.pathname === '/work' && 'bg-navy-100'
+			}`}
+			href="/work">Work</a
+		>
+		<a
+			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
+				$page.url.pathname === '/about' && 'bg-navy-100'
+			}`}
+			href="/about">About</a
+		>
+		<a
+			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
+				$page.url.pathname === '/open-source' && 'bg-navy-100'
+			}`}
+			href="/open-source"
+		>
 			Open Source
 		</a>
 		<a
-			class="lg:ml-4 flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+			class="lg:ml-4 mt-2 flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
 			href="/contact/"
 		>
 			Request a Quote

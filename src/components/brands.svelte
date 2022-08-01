@@ -19,7 +19,7 @@
 					We have worked with companies from all different industries on all sizes of projects.
 				</p>
 				<p class="mt-3">
-					<a class="underline text-lg text-blue-500" href="/work/">See some of our work</a>
+					<a class="underline text-lg text-blue-500" href="/work">See some of our work</a>
 				</p>
 			</div>
 			<div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 items-center">

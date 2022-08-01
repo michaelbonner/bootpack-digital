@@ -21,11 +21,11 @@
 			</a>
 
 			<div class="hidden lg:flex items-center">
-				<a class="text-navy-400 hover:underline font-semibold text-xl px-4" href="/work/"> Work </a>
-				<a class="text-navy-400 hover:underline font-semibold text-xl px-4" href="/about/">
+				<a class="text-navy-400 hover:underline font-semibold text-xl px-4" href="/work"> Work </a>
+				<a class="text-navy-400 hover:underline font-semibold text-xl px-4" href="/about">
 					About
 				</a>
-				<a class="text-navy-400 hover:underline font-semibold text-xl px-4" href="/open-source/">
+				<a class="text-navy-400 hover:underline font-semibold text-xl px-4" href="/open-source">
 					Open Source
 				</a>
 				<a
