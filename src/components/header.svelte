@@ -12,7 +12,13 @@
         class="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl mr-0 lg:mr-8"
         href="/"
       >
-        <img src={BootpackHorizontal} alt="Bootpack Digital" class="h-20" />
+        <img
+          alt="Bootpack Digital"
+          class="h-20"
+          height="90"
+          src={BootpackHorizontal}
+          width="298"
+        />
       </a>
 
       <div class="hidden lg:flex items-center">
