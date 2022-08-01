@@ -77,6 +77,9 @@ export const PATH = "/Users/michaelbonner/Development/non-billable-projects/boot
 /** @type {import('$env/static/private').npm_package_json} */
 export const npm_package_json = "/Users/michaelbonner/Development/non-billable-projects/bootpack-digital/package.json";
 
+/** @type {import('$env/static/private').npm_config_engine_strict} */
+export const npm_config_engine_strict = "true";
+
 /** @type {import('$env/static/private')._} */
 export const _ = "/Users/michaelbonner/Development/non-billable-projects/bootpack-digital/node_modules/.bin/vite";
 
@@ -96,7 +99,7 @@ export const npm_command = "run-script";
 export const PWD = "/Users/michaelbonner/Development/non-billable-projects/bootpack-digital";
 
 /** @type {import('$env/static/private').npm_lifecycle_event} */
-export const npm_lifecycle_event = "dev";
+export const npm_lifecycle_event = "build";
 
 /** @type {import('$env/static/private').EDITOR} */
 export const EDITOR = "vim";
@@ -147,7 +150,7 @@ export const LESS = "-R";
 export const LOGNAME = "michaelbonner";
 
 /** @type {import('$env/static/private').npm_lifecycle_script} */
-export const npm_lifecycle_script = "vite dev";
+export const npm_lifecycle_script = "vite build";
 
 /** @type {import('$env/static/private').npm_config_user_agent} */
 export const npm_config_user_agent = "npm/8.6.0 node/v16.15.0 darwin arm64 workspaces/false";
@@ -163,3 +166,6 @@ export const npm_config_prefix = "/Users/michaelbonner/.npm-global";
 
 /** @type {import('$env/static/private').COLORTERM} */
 export const COLORTERM = "truecolor";
+
+/** @type {import('$env/static/private').NODE_ENV} */
+export const NODE_ENV = "production";
