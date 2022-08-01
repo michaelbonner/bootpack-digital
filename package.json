@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@tailwindcss/typography": "^0.5.4"
+		"@tailwindcss/typography": "^0.5.4",
+		"svelte-obfuscate": "^0.3.0"
 	}
 }
