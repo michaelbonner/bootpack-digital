@@ -12,7 +12,7 @@
     rel="noopener noreferrer"
     target="_blank"
   >
-    <img alt={title} src={poster} />
+    <img alt={title} height="232" src={poster} width="465" />
   </a>
   <div class="flex-1 bg-white p-6 flex flex-col justify-between">
     <div class="flex-1">
