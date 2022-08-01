@@ -6,7 +6,6 @@
 	let mobileNavOpen = false;
 
 	$: if ($navigating) {
-		console.log('page', $page);
 		mobileNavOpen = false;
 	}
 </script>

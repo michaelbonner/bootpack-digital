@@ -3,7 +3,6 @@
 	let isSubmitting = false;
 
 	const handleSubmit = async (event: SubmitEvent) => {
-		console.log('e.target', event.target);
 		const formData = new FormData(event.target as HTMLFormElement);
 
 		fetch('https://formspree.io/f/xgerlrdz', {
