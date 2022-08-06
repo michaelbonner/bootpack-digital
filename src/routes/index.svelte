@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Brands from '../components/brands.svelte';
 	import ContactForm from '../components/contact-form.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';

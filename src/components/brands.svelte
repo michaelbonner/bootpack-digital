@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import CocaCola from '../images/clients/coca-cola-classic-gray.svg';
 	import EdgeHomes from '../images/clients/edge-homes-gray.svg';
 	import IntermountainHealthcare from '../images/clients/intermountain-healthcare-gray.svg';
@@ -9,20 +9,20 @@
 </script>
 
 <div class="bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 py-4 lg:py-24">
-	<div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
-		<div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+	<div class="mx-auto max-w-screen-xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
+		<div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-8">
 			<div class="lg:mt-8">
-				<h2 class="text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
+				<h2 class="text-3xl font-extrabold leading-9 text-navy-600 sm:text-4xl sm:leading-10">
 					Brands we have worked with
 				</h2>
 				<p class="mt-3 max-w-3xl text-lg leading-7 text-navy-700">
 					We have worked with companies from all different industries on all sizes of projects.
 				</p>
 				<p class="mt-3">
-					<a class="underline text-lg text-blue-500" href="/work">See some of our work</a>
+					<a class="text-lg text-blue-500 underline" href="/work">See some of our work</a>
 				</p>
 			</div>
-			<div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 items-center">
+			<div class="mt-8 grid grid-cols-2 items-center gap-0.5 md:grid-cols-3 lg:mt-0">
 				<BrandImage height={126} logo={CocaCola} title="CocaCola" width={300} />
 				<BrandImage
 					height={130}

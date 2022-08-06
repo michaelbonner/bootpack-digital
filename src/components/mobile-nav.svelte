@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { navigating, page } from '$app/stores';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
@@ -32,7 +32,7 @@
 		class={`absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-lg border border-gray-100 py-4 px-6 rounded-md`}
 	>
 		<button
-			class="absolute right-3 top-5 text-orange-500 font-semibold w-6 h-6"
+			class="absolute right-3 top-5 h-6 w-6 font-semibold text-orange-500"
 			on:click={() => (mobileNavOpen = !mobileNavOpen)}
 		>
 			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
 		</button>
 
 		<a
-			class="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl mr-0 lg:mr-8"
+			class="mr-0 flex items-center text-2xl font-bold text-blue-400 no-underline hover:no-underline lg:mr-8 lg:text-4xl"
 			href="/"
 		>
 			<img alt="Bootpack Digital" class="w-full" loading="lazy" src={BootpackDigital} />
@@ -78,7 +78,7 @@
 			Open Source
 		</a>
 		<a
-			class="lg:ml-4 mt-2 flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+			class="focus:shadow-outline mt-2 flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none lg:ml-4"
 			href="/contact"
 		>
 			Request a Quote

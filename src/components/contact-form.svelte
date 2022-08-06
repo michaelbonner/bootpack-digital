@@ -43,51 +43,51 @@
 	name="contact"
 	on:submit|preventDefault={handleSubmit}
 >
-	<div class="mt-8 flex flex-wrap -mx-3 mb-6">
-		<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-			<label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="firstName">
+	<div class="-mx-3 mt-8 mb-6 flex flex-wrap">
+		<div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
+			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="firstName">
 				First Name*
 			</label>
 			<input
-				class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="firstName"
 				name="firstName"
 				placeholder="Jane"
 				required
 				type="text"
 			/>
-			<p class="text-red-500 text-xs italic px-2 pt-1">
+			<p class="px-2 pt-1 text-xs italic text-red-500">
 				{#if errors.firstName && touched.firstName}
 					{errors.firstName}
 				{/if}
 			</p>
 		</div>
-		<div class="w-full md:w-1/2 px-3">
-			<label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="lastName">
+		<div class="w-full px-3 md:w-1/2">
+			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="lastName">
 				Last Name*
 			</label>
 			<input
-				class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="lastName"
 				name="lastName"
 				placeholder="Doe"
 				required
 				type="text"
 			/>
-			<p class="text-red-500 text-xs italic px-2 pt-1">
+			<p class="px-2 pt-1 text-xs italic text-red-500">
 				{#if errors.lastName && touched.lastName}
 					{errors.lastName}
 				{/if}
 			</p>
 		</div>
 	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="w-full px-3 mb-0">
-			<label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+	<div class="-mx-3 mb-6 flex flex-wrap">
+		<div class="mb-0 w-full px-3">
+			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="email">
 				Email*
 			</label>
 			<input
-				class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="email"
 				name="email"
 				placeholder="jane@company.com"
@@ -99,13 +99,13 @@
 			{/if}
 		</div>
 	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-			<label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="company">
+	<div class="-mx-3 mb-6 flex flex-wrap">
+		<div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
+			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="company">
 				Company
 			</label>
 			<input
-				class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="company"
 				name="company"
 				placeholder="Company Name"
@@ -115,12 +115,12 @@
 				{errors.company}
 			{/if}
 		</div>
-		<div class="w-full md:w-1/2 px-3">
-			<label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="phone">
+		<div class="w-full px-3 md:w-1/2">
+			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="phone">
 				Phone Number
 			</label>
 			<input
-				class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="phone"
 				name="phone"
 				placeholder="801-111-2222"
@@ -131,20 +131,20 @@
 			{/if}
 		</div>
 	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="w-full px-3 mb-6 md:mb-0">
-			<label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+	<div class="-mx-3 mb-6 flex flex-wrap">
+		<div class="mb-6 w-full px-3 md:mb-0">
+			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="message">
 				How Can We Help?*
 			</label>
 			<textarea
-				class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="message"
 				name="message"
 				placeholder="Please give us details about what you're trying to accomplish"
 				required
 				rows={10}
 			/>
-			<p class="text-red-500 text-xs italic px-2 pt-1">
+			<p class="px-2 pt-1 text-xs italic text-red-500">
 				{#if errors.message && touched.message}
 					{errors.message}
 				{/if}
@@ -152,12 +152,12 @@
 		</div>
 	</div>
 	{#if errorMessage}
-		<p class="text-red-500 text-xs italic px-2 pt-1">
+		<p class="px-2 pt-1 text-xs italic text-red-500">
 			{errorMessage}
 		</p>
 	{/if}
 	<button
-		class="w-full lg:w-auto px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+		class="focus:shadow-outline w-full rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none lg:w-auto"
 		disabled={isSubmitting}
 		type="submit"
 	>

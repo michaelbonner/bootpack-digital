@@ -8,7 +8,7 @@
 	export let lazy = false;
 </script>
 
-<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
 	<a class="flex-shrink-0" href={link} rel="noopener noreferrer" target="_blank">
 		<picture>
 			<source srcset={posterAvif} type="image/avif" />
@@ -16,10 +16,10 @@
 			<img alt={title} height="232" loading={lazy ? 'lazy' : 'eager'} src={poster} width="465" />
 		</picture>
 	</a>
-	<div class="flex-1 bg-white p-6 flex flex-col justify-between">
+	<div class="flex flex-1 flex-col justify-between bg-white p-6">
 		<div class="flex-1">
 			<a class="block" href={link} rel="noopener noreferrer" target="_blank">
-				<h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+				<h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
 					{title}
 				</h3>
 				<p class="mt-3 text-base leading-6 text-gray-500">
@@ -30,14 +30,14 @@
 		<div class="mt-6 flex items-center">
 			<div class="flex-shrink-0">
 				<a
-					class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+					class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none"
 					href={link}
 					rel="noopener noreferrer"
 					target="_blank"
 				>
 					View Site
 					<svg
-						class="ml-1 text-white w-5"
+						class="ml-1 w-5 text-white"
 						fill="none"
 						stroke="currentColor"
 						viewBox="0 0 24 24"

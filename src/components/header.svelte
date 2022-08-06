@@ -19,11 +19,11 @@
 	];
 </script>
 
-<div class="bg-white z-20 w-full mx-auto px-6 py-2 sticky top-0 shadow-md lg:shadow-none">
-	<div class="w-full flex items-center justify-between">
-		<div class="w-full justify-between flex items-center">
+<div class="sticky top-0 z-20 mx-auto w-full bg-white px-6 py-2 shadow-md lg:shadow-none">
+	<div class="flex w-full items-center justify-between">
+		<div class="flex w-full items-center justify-between">
 			<a
-				class="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl mr-0 lg:mr-8"
+				class="mr-0 flex items-center text-2xl font-bold text-blue-400 no-underline hover:no-underline lg:mr-8 lg:text-4xl"
 				href="/"
 			>
 				<img
@@ -36,7 +36,7 @@
 				/>
 			</a>
 
-			<div class="hidden lg:flex items-center">
+			<div class="hidden items-center lg:flex">
 				{#each mainLinks as link}
 					<a
 						class={`text-navy-400 hover:underline underline-offset-4 hover:decoration-blue-400 font-semibold text-xl px-4 ${
@@ -49,7 +49,7 @@
 					</a>
 				{/each}
 				<a
-					class="lg:ml-4 flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+					class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none lg:ml-4"
 					href="/contact"
 				>
 					Request a Quote

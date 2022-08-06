@@ -1,8 +1,8 @@
-<div class="py-12 lg:py-36 bg-white">
-	<div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
+<div class="bg-white py-12 lg:py-36">
+	<div class="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
 		<div class="lg:grid lg:grid-cols-3 lg:gap-8">
 			<div>
-				<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+				<div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
 					<svg
 						class="h-6 w-6"
 						fill="none"
@@ -19,7 +19,7 @@
 					</svg>
 				</div>
 				<div class="mt-5">
-					<h3 class="text-lg leading-6 font-medium text-gray-900">15 years of experience</h3>
+					<h3 class="text-lg font-medium leading-6 text-gray-900">15 years of experience</h3>
 					<p class="mt-2 text-base leading-6 text-gray-500">
 						Experience matters when it comes to building quality software. Working at agencies,
 						in-house, and freelance has given us a breadth of understanding that's hard to come by
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 			<div class="mt-10 lg:mt-0">
-				<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+				<div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
 					<svg
 						class="h-6 w-6"
 						fill="none"
@@ -46,7 +46,7 @@
 					</svg>
 				</div>
 				<div class="mt-5">
-					<h3 class="text-lg leading-6 font-medium text-gray-900">Business knowledge</h3>
+					<h3 class="text-lg font-medium leading-6 text-gray-900">Business knowledge</h3>
 					<p class="mt-2 text-base leading-6 text-gray-500">
 						We are a business minded development group. We don't just think about the code. Helping
 						businesses grow has given us an understanding of ROI that allows us to help clients tune
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 			<div class="mt-10 lg:mt-0">
-				<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+				<div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
 					<svg
 						class="h-6 w-6"
 						fill="none"
@@ -73,7 +73,7 @@
 					</svg>
 				</div>
 				<div class="mt-5">
-					<h3 class="text-lg leading-6 font-medium text-gray-900">The latest tech</h3>
+					<h3 class="text-lg font-medium leading-6 text-gray-900">The latest tech</h3>
 					<p class="mt-2 text-base leading-6 text-gray-500">
 						Blazing fast performance improves conversions. Period. We build on the latest tech to
 						make the customer experience as smooth and reliable as possible. We like the latest
