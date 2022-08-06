@@ -96,6 +96,7 @@
 				posterWebp={KnowYourForceWebp}
 				posterAvif={KnowYourForceAvif}
 				title={`Know Your Force`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
@@ -104,6 +105,7 @@
 				posterWebp={HeritageOfPrestonWebp}
 				posterAvif={HeritageOfPrestonAvif}
 				title={`Heritage Senior Living`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`Denver Window Well Covers was a ground up build to service the semi-custom needs of Colorado residents. Denver Window Well Covers offers a quality product at the lowest prices on window well covers in Colorado and Denver areas.`}
@@ -112,6 +114,7 @@
 				posterWebp={DenverWindowWellCoversWebp}
 				posterAvif={DenverWindowWellCoversAvif}
 				title={`Denver Window Well Covers`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`Jeremy Miller is an award-winning film director based in Salt Lake City, Utah. He wanted a new site that put the focus on the work, so we built him a site that did exactly that in a stylistic way. Be sure to check out the custom Vimeo player on the individual work page; we're pretty proud of that one.`}
@@ -120,6 +123,7 @@
 				posterWebp={JeremyMillerWebp}
 				posterAvif={JeremyMillerAvif}
 				title={`Director Jeremy Miller`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`The Cosgriff school used a site we built about 10 years ago. Needless to say it was time for a fresh coat of paint and a rethink of how the pages were organized. We rebuilt the site from the ground up in ~4 weeks. After comparing analytics the new site clearly outperforms the old site in nearly every measurable way.`}
@@ -128,6 +132,7 @@
 				posterWebp={CosgriffWebp}
 				posterAvif={CosgriffAvif}
 				title={`J.E. Cosgriff School`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`Thunder Biotech is a cancer research group with huge aspirations. They needed a site that conveyed their purpose and vision. We worked with the team at Faktory to build a site to accomplish their goals.`}
@@ -136,6 +141,7 @@
 				posterWebp={ThunderBiotechWebp}
 				posterAvif={ThunderBiotechAvif}
 				title={`Thunder Biotech`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`As skilled technicians with a unique sensibility for storytelling, RAVENS are poised to execute nearly any mission from heavy lift aerials to pursuit tracking or technical phantom flex high speed work.`}
@@ -144,6 +150,7 @@
 				posterWebp={RavensWebp}
 				posterAvif={RavensAvif}
 				title={`Ravens Film Works`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`The Doctors CBD had an existing site, but it was slow and lacked the features they needed in order to sell their products online. We redesigned a new elegant site that has helped them list and sell their products online.`}
@@ -152,6 +159,7 @@
 				posterWebp={TheDoctorsCbdWebp}
 				posterAvif={TheDoctorsCbdAvif}
 				title={`The Doctors CBD`}
+				lazy={true}
 			/>
 			<WorkItem
 				description={`A collaborative effort with the team at Blackthorn Software. Their software helps you run a better business by creating top to bottom visibility for every part of the project by providing a suite of management tools for companies of all sizes to keep track of their team members, projects, and even assets.`}
@@ -160,6 +168,7 @@
 				posterWebp={BlackthornSoftwareWebp}
 				posterAvif={BlackthornSoftwareAvif}
 				title={`Blackthorn Software`}
+				lazy={true}
 			/>
 		</div>
 	</div>
