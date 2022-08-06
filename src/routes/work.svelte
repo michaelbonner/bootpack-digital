@@ -51,11 +51,11 @@
 	<meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
-<div class="relative hero-bg pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-	<div class="relative max-w-7xl mx-auto">
+<div class="hero-bg relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+	<div class="relative mx-auto max-w-7xl">
 		<div>
 			<h2
-				class="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10"
+				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 			>
 				Our Work
 			</h2>
@@ -64,7 +64,7 @@
 				particularly proud of.
 			</p>
 		</div>
-		<div class="mt-12 grid gap-x-5 gap-y-10 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+		<div class="mx-auto mt-12 grid max-w-lg gap-x-5 gap-y-10 lg:max-w-none lg:grid-cols-3">
 			<WorkItem
 				description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands.`}
 				link={`https://herekidswin.com/`}
@@ -176,18 +176,18 @@
 
 <div class="bg-gray-200">
 	<div
-		class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between"
+		class="mx-auto max-w-screen-xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8"
 	>
 		<h2
-			class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 md:text-4xl md:leading-10"
+			class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 md:text-4xl md:leading-10"
 		>
 			<span class="block">Ready to get started?</span>
 			<span class="block text-blue-600"> Send us a message so we can chat. </span>
 		</h2>
-		<div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+		<div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
 			<div class="inline-flex rounded-md shadow">
 				<a
-					class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 transition duration-150 ease-in-out"
+					class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-blue-500"
 					href="/contact"
 				>
 					Get in touch

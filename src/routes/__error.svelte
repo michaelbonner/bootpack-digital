@@ -17,10 +17,10 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div class="relative py-16 bg-white overflow-hidden text-lg leading-8">
-	<div class="relative px-4 sm:px-6 lg:px-8 text-center grid gap-y-12">
+<div class="relative overflow-hidden bg-white py-16 text-lg leading-8">
+	<div class="relative grid gap-y-12 px-4 text-center sm:px-6 lg:px-8">
 		<h1
-			class="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10"
+			class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 		>
 			Looks like you got lost along the way
 		</h1>

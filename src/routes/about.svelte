@@ -16,14 +16,14 @@
 	<meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
-<div class="relative py-16 bg-white overflow-hidden text-lg leading-8">
+<div class="relative overflow-hidden bg-white py-16 text-lg leading-8">
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<div class="text-lg max-w-3xl mx-auto mb-6">
+		<div class="mx-auto mb-6 max-w-3xl text-lg">
 			<h1
 				class="mb-6 text-3xl font-extrabold tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 			>
 				<span
-					class="block text-base leading-6 text-orange-500 font-semibold tracking-wide uppercase"
+					class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-500"
 				>
 					Introducing
 				</span>
@@ -31,28 +31,28 @@
 			</h1>
 		</div>
 
-		<div class="max-w-3xl text-gray-500 mx-auto">
-			<p class="text-gray-500 py-12">
+		<div class="mx-auto max-w-3xl text-gray-500">
+			<p class="py-12 text-gray-500">
 				We are a small group of passionate creators trying to make a difference. We value quality
 				deliverables and human interaction. People are who we are, who we build for, and who we work
 				for.
 			</p>
 		</div>
-		<div class="max-w-3xl text-gray-500 mx-auto mt-12">
+		<div class="mx-auto mt-12 max-w-3xl text-gray-500">
 			<h2
-				class="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10"
+				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 			>
 				Who are we?
 			</h2>
 		</div>
-		<div class="max-w-3xl mx-auto mt-8 shadow-lg border border-gray-100 rounded-lg">
+		<div class="mx-auto mt-8 max-w-3xl rounded-lg border border-gray-100 shadow-lg">
 			<div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
 				<picture>
 					<source srcset={MichaelBonnerAvif} type="image/avif" />
 					<source srcset={MichaelBonnerWebp} type="image/webp" />
 					<img
 						alt="Headshot of Michael Bonner"
-						class="overflow-hidden shadow-lg rounded-t-lg lg:rounded-r-none lg:rounded-l-lg my-0 py-0"
+						class="my-0 overflow-hidden rounded-t-lg py-0 shadow-lg lg:rounded-r-none lg:rounded-l-lg"
 						height="395"
 						loading="lazy"
 						src={MichaelBonner}
@@ -60,14 +60,14 @@
 					/>
 				</picture>
 
-				<div class="sm:col-span-2 flex flex-col justify-between pb-2 pt-4 pr-4">
+				<div class="flex flex-col justify-between pb-2 pt-4 pr-4 sm:col-span-2">
 					<div class="space-y-4 px-4 lg:px-0">
-						<div class="text-lg leading-6 font-medium space-y-1">
+						<div class="space-y-1 text-lg font-medium leading-6">
 							<h3 class="text-xl">Michael Bonner</h3>
-							<p class="text-orange-600 mt-2">Founder</p>
+							<p class="mt-2 text-orange-600">Founder</p>
 						</div>
 						<div class="text-lg leading-7">
-							<p class="text-gray-500 text-base">
+							<p class="text-base text-gray-500">
 								Michael started Bootpack Digital in 2019 as the next generation of a freelance
 								business he started in 2006. Michael has been building websites since he was 16.
 								What started out as a fun thing to do became a livelihood. Michael has worked at
@@ -75,10 +75,10 @@
 							</p>
 						</div>
 					</div>
-					<div class="flex gap-2 mt-4 ml-4 lg:ml-0">
+					<div class="mt-4 ml-4 flex gap-2 lg:ml-0">
 						<a href="https://www.linkedin.com/in/michaelbonner/">
 							<svg
-								class="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
+								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -90,7 +90,7 @@
 						</a>
 						<a class="ml-2" href="https://www.instagram.com/michael__bonner/">
 							<svg
-								class="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
+								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -105,7 +105,7 @@
 						</a>
 						<a class="ml-2" href="https://github.com/michaelbonner">
 							<svg
-								class="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
+								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -117,7 +117,7 @@
 						</a>
 						<a class="ml-2" href="https://michaelbonner.dev/">
 							<svg
-								class="w-8 h-8 fill-current text-blue-600 hover:text-blue-800 transition-all ease-in-out"
+								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -136,9 +136,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="max-w-3xl text-gray-500 mx-auto mt-12 pt-12">
+		<div class="mx-auto mt-12 max-w-3xl pt-12 text-gray-500">
 			<h2
-				class="text-3xl leading-9 tracking-tight font-extrabold text-navy-600 sm:text-4xl sm:leading-10"
+				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 			>
 				Why the name "Bootpack"?
 			</h2>
@@ -156,18 +156,18 @@
 
 <div class="bg-gray-100">
 	<div
-		class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between"
+		class="mx-auto max-w-screen-xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8"
 	>
 		<h2
-			class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 md:text-4xl md:leading-10"
+			class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 md:text-4xl md:leading-10"
 		>
 			<span class="block">Ready to build something together?</span>
 			<span class="block text-blue-600"> Send us a message so we can chat. </span>
 		</h2>
-		<div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+		<div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
 			<div class="inline-flex rounded-md shadow">
 				<a
-					class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 transition duration-150 ease-in-out"
+					class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-blue-500"
 					href="/contact"
 				>
 					Get in touch

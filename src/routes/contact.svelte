@@ -17,9 +17,9 @@
 </svelte:head>
 
 <div class="bg-white pt-8">
-	<div class="container mx-auto px-4 text-gray-700 max-w-3xl">
+	<div class="container mx-auto max-w-3xl px-4 text-gray-700">
 		<div class="prose">
-			<h1 class="mt-12 text-3xl leading-9 font-extrabold text-navy-600 sm:text-4xl sm:leading-10">
+			<h1 class="mt-12 text-3xl font-extrabold leading-9 text-navy-600 sm:text-4xl sm:leading-10">
 				Get in touch
 			</h1>
 			<p>
@@ -36,12 +36,12 @@
 				design, web development, and app development.
 			</p>
 		</div>
-		<div class="pt-4 max-w-3xl mx-auto">
-			<div class="flex flex-wrap justify-between items-end">
+		<div class="mx-auto max-w-3xl pt-4">
+			<div class="flex flex-wrap items-end justify-between">
 				<div>
-					<div class="flex items-center mt-4">
+					<div class="mt-4 flex items-center">
 						<svg
-							class="w-6 h-5 fill-current text-blue-600"
+							class="h-5 w-6 fill-current text-blue-600"
 							viewBox="0 0 512 512"
 							xmlns="http://www.w3.org/2000/svg"
 						>
@@ -72,9 +72,9 @@
 							<Obfuscate telephone="(801) 839-5287" />
 						</p>
 					</div>
-					<div class="flex items-center mt-4">
+					<div class="mt-4 flex items-center">
 						<svg
-							class="w-6 h-5 fill-current text-blue-600"
+							class="h-5 w-6 fill-current text-blue-600"
 							viewBox="0 0 512 512"
 							xmlns="http://www.w3.org/2000/svg"
 						>
@@ -105,9 +105,9 @@
 							<Obfuscate email="hey@bootpackdigital.com" />
 						</p>
 					</div>
-					<div class="flex items-center mt-4">
+					<div class="mt-4 flex items-center">
 						<svg
-							class="w-6 h-5 fill-current text-blue-600"
+							class="h-5 w-6 fill-current text-blue-600"
 							viewBox="0 0 512 512"
 							xmlns="http://www.w3.org/2000/svg"
 						>
@@ -132,15 +132,15 @@
 				</div>
 				<div>
 					<a
-						class="flex w-full lg:w-auto mt-8 px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+						class="focus:shadow-outline mt-8 flex w-full rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-blue-500 focus:outline-none lg:w-auto"
 						href="https://calendly.com/michaelbonner/30-minute-project-discussion?utm_source=bootpack_website"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<span class="mx-2 text-white flex items-end">
+						<span class="mx-2 flex items-end text-white">
 							Schedule a call on
 							<svg
-								class="fill-current text-white inline-block w-20 ml-2"
+								class="ml-2 inline-block w-20 fill-current text-white"
 								style="enable-background: `new 0 0 534 160`"
 								version="1.1"
 								viewBox="0 0 534 160"
@@ -181,7 +181,7 @@
 				</div>
 			</div>
 		</div>
-		<section class="w-full max-w-3xl mx-auto pt-6 lg:pt-8 pb-24 mt-8 lg:mt-12 border-t">
+		<section class="mx-auto mt-8 w-full max-w-3xl border-t pt-6 pb-24 lg:mt-12 lg:pt-8">
 			<ContactForm />
 		</section>
 	</div>
