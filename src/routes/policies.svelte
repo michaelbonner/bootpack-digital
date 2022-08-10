@@ -1,7 +1,7 @@
 <script lang="ts">
 	const seoTitle = 'Privacy Policy and Terms of Service | Bootpack Digital';
 	const seoDescription =
-		'Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!';
+		'We are committed to protecting your privacy. This Privacy Policy describes how we collect and use information about you when you use our website.';
 </script>
 
 <svelte:head>
