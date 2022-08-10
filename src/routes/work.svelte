@@ -54,11 +54,11 @@
 <div class="hero-bg relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
 	<div class="relative mx-auto max-w-7xl">
 		<div>
-			<h2
+			<h1
 				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 			>
-				Our Work
-			</h2>
+				Custom Web Development Projects
+			</h1>
 			<p class="mt-3 max-w-2xl text-xl leading-7 text-gray-500 sm:mt-4">
 				We build engaging, custom experiences for our clients. Here's a few examples we're
 				particularly proud of.
