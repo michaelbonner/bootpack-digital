@@ -40,7 +40,7 @@
 			<div class="hidden items-center lg:flex">
 				{#each mainLinks as link}
 					<a
-						class={`text-navy-400 hover:underline underline-offset-4 hover:decoration-blue-400 font-semibold text-xl px-4 ${
+						class={`text-navy-500 hover:underline underline-offset-4 hover:decoration-blue-400 font-semibold text-xl px-4 ${
 							$page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}

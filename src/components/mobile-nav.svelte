@@ -8,11 +8,34 @@
 	$: if ($navigating) {
 		mobileNavOpen = false;
 	}
+
+	const mainLinks = [
+		{
+			label: 'Home',
+			url: '/'
+		},
+		{
+			label: 'Work',
+			url: '/work'
+		},
+		{
+			label: 'About',
+			url: '/about'
+		},
+		{
+			label: 'Open Source',
+			url: '/open-source'
+		},
+		{
+			label: 'Contact',
+			url: '/contact'
+		}
+	];
 </script>
 
 <button class="block lg:hidden" on:click={() => (mobileNavOpen = !mobileNavOpen)}>
 	<svg
-		class="w-8 stroke-current text-navy-400"
+		class="w-8 stroke-current text-navy-500"
 		fill="none"
 		stroke="currentColor"
 		viewBox="0 0 24 24"
@@ -29,7 +52,7 @@
 </button>
 {#if mobileNavOpen}
 	<div
-		class={`absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-lg border border-gray-100 py-4 px-6 rounded-md`}
+		class={`grid gap-2 absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-md border border-gray-100 py-4 px-6 rounded-md`}
 	>
 		<button
 			class="absolute right-3 top-5 h-6 w-6 font-semibold text-orange-500"
@@ -51,40 +74,19 @@
 		>
 			<img alt="Bootpack Digital" class="w-full" loading="lazy" src={BootpackDigital} />
 		</a>
-		<a
-			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
-				$page.url.pathname === '/' && 'bg-navy-100'
-			}`}
-			href="/">Home</a
-		>
-		<a
-			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
-				$page.url.pathname === '/work' && 'bg-navy-100'
-			}`}
-			href="/work">Work</a
-		>
-		<a
-			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
-				$page.url.pathname === '/about' && 'bg-navy-100'
-			}`}
-			href="/about">About</a
-		>
-		<a
-			class={`block text-navy-400 font-semibold text-xl py-2 px-4 rounded-lg ${
-				$page.url.pathname === '/open-source' && 'bg-navy-100'
-			}`}
-			href="/open-source"
-		>
-			Open Source
-		</a>
-		<a
-			class="focus:shadow-outline mt-2 flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none lg:ml-4"
-			href="/contact"
-		>
-			Request a Quote
-		</a>
 
-		<div class="mt-4 flex justify-center">
+		{#each mainLinks as link}
+			<a
+				class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
+					$page.url.pathname === link.url && 'bg-navy-100'
+				}`}
+				href={link.url}
+			>
+				{link.label}
+			</a>
+		{/each}
+
+		<div class="-mx-6 mt-4 -mb-4 flex justify-center rounded-b-md bg-gray-100 py-4 px-6">
 			<SocialIcons />
 		</div>
 	</div>
