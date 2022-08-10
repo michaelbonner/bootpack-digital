@@ -25,6 +25,7 @@
 			<a
 				class="mr-0 flex items-center text-2xl font-bold text-blue-400 no-underline hover:no-underline lg:mr-8 lg:text-4xl"
 				href="/"
+				title="Bootpack Digital home page"
 			>
 				<img
 					alt="Bootpack Digital"
