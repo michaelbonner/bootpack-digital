@@ -154,7 +154,7 @@
 			/>
 			<WorkItem
 				description={`The Doctors CBD had an existing site, but it was slow and lacked the features they needed in order to sell their products online. We redesigned a new elegant site that has helped them list and sell their products online.`}
-				link={`https://www.thedoctorscbdrelief.com/`}
+				link={`https://thedoctorscbdrelief.com/`}
 				poster={TheDoctorsCbd}
 				posterWebp={TheDoctorsCbdWebp}
 				posterAvif={TheDoctorsCbdAvif}
