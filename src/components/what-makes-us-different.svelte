@@ -81,7 +81,7 @@
 					</p>
 					<p class="mt-2 text-sm underline">
 						<a
-							href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbootpackdigital.com%2F"
+							href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbootpackdigital.com%2F&form_factor=desktop"
 							rel="noopener nofollow noreferrer"
 							target="_blank"
 						>
