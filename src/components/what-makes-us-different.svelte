@@ -19,12 +19,12 @@
 					</svg>
 				</div>
 				<div class="mt-5">
-					<h3 class="text-lg font-medium leading-6 text-gray-900">15 years of experience</h3>
+					<h3 class="text-lg font-medium leading-6 text-gray-900">18+ years of experience</h3>
 					<p class="mt-2 text-base leading-6 text-gray-500">
-						Experience matters when it comes to building quality software. Working at agencies,
-						in-house, and freelance has given us a breadth of understanding that's hard to come by
-						any other way. We've built large scale production applications and will bring that
-						knowledge to any project, no matter how big or small.
+						Experience matters when it comes to building quality software and websites. Working at
+						agencies, in-house, and freelance has given us a breadth of understanding that's hard to
+						come by any other way. We've built large scale production applications and will bring
+						that knowledge to any project, no matter how big or small.
 					</p>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 					<p class="mt-2 text-base leading-6 text-gray-500">
 						Blazing fast performance improves conversions. Period. We build on the latest tech to
 						make the customer experience as smooth and reliable as possible. We like the latest
-						tech, your clients like the latest tech, it's a win-win.
+						tech, your customers like the latest tech, it's a win-win.
 					</p>
 					<p class="mt-2 text-sm underline">
 						<a
