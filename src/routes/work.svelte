@@ -9,6 +9,9 @@
 	import DenverWindowWellCovers from '../images/work/denver-window-well-covers.jpg';
 	import DenverWindowWellCoversWebp from '../images/work/denver-window-well-covers.jpg?w=300;500;700;900&webp&srcset';
 	import DenverWindowWellCoversAvif from '../images/work/denver-window-well-covers.jpg?w=300;500;700;900&avif&srcset';
+	import Faktory from '../images/work/faktory.jpg';
+	import FaktoryWebp from '../images/work/faktory.jpg?w=300;500;700;900&webp&srcset';
+	import FaktoryAvif from '../images/work/faktory.jpg?w=300;500;700;900&avif&srcset';
 	import HereKidsWin from '../images/work/here-kids-win.jpg';
 	import HereKidsWinWebp from '../images/work/here-kids-win.jpg?w=300;500;700;900&webp&srcset';
 	import HereKidsWinAvif from '../images/work/here-kids-win.jpg?w=300;500;700;900&avif&srcset';
@@ -150,6 +153,15 @@
 				posterWebp={RavensWebp}
 				posterAvif={RavensAvif}
 				title={`Ravens Film Works`}
+				lazy={true}
+			/>
+			<WorkItem
+				description={`Faktory is a creative agency that needed a refresh of their old site. We worked with their designers and content team to build a site that would showcase their work and establish their brand.`}
+				link={`https://www.faktoryagency.com/`}
+				poster={Faktory}
+				posterWebp={FaktoryWebp}
+				posterAvif={FaktoryAvif}
+				title={`Faktory`}
 				lazy={true}
 			/>
 			<WorkItem
