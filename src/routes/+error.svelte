@@ -1,20 +1,9 @@
 <script context="module" lang="ts">
-	/** @type {import('@sveltejs/kit').Load} */
-	export function load({ error, status }: { error: any; status: number }) {
-		return {
-			props: {
-				title: `${status}: ${error.message}`
-			}
-		};
-	}
-</script>
-
-<script lang="ts">
-	export let title: string;
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{$page.status}: {$page.error?.message}</title>
 </svelte:head>
 
 <div class="relative overflow-hidden bg-white py-16 text-lg leading-8">
@@ -25,7 +14,7 @@
 			Looks like you got lost along the way
 		</h1>
 		<p>
-			{title}
+			{$page.status}: {$page.error?.message}
 		</p>
 	</div>
 </div>
