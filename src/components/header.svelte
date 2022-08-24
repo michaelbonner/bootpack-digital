@@ -27,14 +27,7 @@
 				href="/"
 				title="Bootpack Digital home page"
 			>
-				<img
-					alt="Bootpack Digital"
-					class="h-20"
-					height="90"
-					loading="lazy"
-					src={BootpackHorizontal}
-					width="298"
-				/>
+				<img alt="Bootpack Digital" class="h-20" height="90" src={BootpackHorizontal} width="298" />
 			</a>
 
 			<div class="hidden items-center lg:flex">
