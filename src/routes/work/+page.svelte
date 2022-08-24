@@ -138,6 +138,15 @@
 				lazy={true}
 			/>
 			<WorkItem
+				description={`Faktory is a creative agency that needed a refresh of their old site. We worked with their designers and content team to build a site that would showcase their work and establish their brand.`}
+				link={`https://www.faktoryagency.com/`}
+				poster={Faktory}
+				posterWebp={FaktoryWebp}
+				posterAvif={FaktoryAvif}
+				title={`Faktory`}
+				lazy={true}
+			/>
+			<WorkItem
 				description={`Thunder Biotech is a cancer research group with huge aspirations. They needed a site that conveyed their purpose and vision. We worked with the team at Faktory to build a site to accomplish their goals.`}
 				link={`https://thunderbiotech.com/`}
 				poster={ThunderBiotech}
@@ -153,15 +162,6 @@
 				posterWebp={RavensWebp}
 				posterAvif={RavensAvif}
 				title={`Ravens Film Works`}
-				lazy={true}
-			/>
-			<WorkItem
-				description={`Faktory is a creative agency that needed a refresh of their old site. We worked with their designers and content team to build a site that would showcase their work and establish their brand.`}
-				link={`https://www.faktoryagency.com/`}
-				poster={Faktory}
-				posterWebp={FaktoryWebp}
-				posterAvif={FaktoryAvif}
-				title={`Faktory`}
 				lazy={true}
 			/>
 			<WorkItem
