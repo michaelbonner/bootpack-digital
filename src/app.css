@@ -11,5 +11,12 @@ body {
 
 .hero-bg {
 	@apply bg-gray-50;
+	background-size: cover;
+	background-position: center top;
+	background-image: url('/images/hero-bg.webp');
+}
+
+.gray-topo {
+	@apply bg-gray-50;
 	background-image: url('/images/gray-topo.svg');
 }

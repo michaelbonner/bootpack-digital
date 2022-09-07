@@ -13,8 +13,8 @@
 	<meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
-<div class="hero-bg to-gray-100 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
-	<div class="relative mx-auto max-w-lg lg:max-w-7xl">
+<div class="gray-topo to-gray-100 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+	<div class="relative mx-auto grid max-w-lg gap-8 lg:max-w-7xl">
 		<div>
 			<h1
 				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div
-			class="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12"
+			class="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 md:mt-8 md:pt-8 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12"
 		>
 			<div>
 				<a class="block hover:underline" href="https://github.com/michaelbonner/is-it-down">

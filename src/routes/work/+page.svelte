@@ -54,7 +54,7 @@
 	<meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
-<div class="hero-bg relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+<div class="gray-topo relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
 	<div class="relative mx-auto max-w-7xl">
 		<div>
 			<h1
