@@ -10,6 +10,6 @@ body {
 }
 
 .hero-bg {
-	@apply bg-gray-50;
-	background-image: url('/images/gray-topo.svg');
+	@apply bg-blue-50;
+	background-image: url('/images/blue-topo.svg');
 }

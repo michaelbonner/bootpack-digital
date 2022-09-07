@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ContactBanner from '../../components/contact-banner.svelte';
 	import MichaelBonner from '../../images/michael-bonner.jpg';
 	import MichaelBonnerAvif from '../../images/michael-bonner.jpg?w=300,500;700;900&avif&srcset';
 	import MichaelBonnerWebp from '../../images/michael-bonner.jpg?w=300,500;700;900&webp&srcset';
@@ -154,25 +155,7 @@
 	</div>
 </div>
 
-<div class="bg-gray-100">
-	<div
-		class="mx-auto max-w-screen-xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-24 lg:px-8"
-	>
-		<h2
-			class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 md:text-4xl md:leading-10"
-		>
-			<span class="block">Ready to build something together?</span>
-			<span class="block text-blue-600"> Send us a message so we can chat. </span>
-		</h2>
-		<div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-			<div class="inline-flex rounded-md shadow">
-				<a
-					class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-blue-500"
-					href="/contact"
-				>
-					Get in touch
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
+<ContactBanner
+	textLine1="Ready to build something together?"
+	textLine2="Send us a message so we can chat."
+/>
