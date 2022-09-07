@@ -9,7 +9,7 @@
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-	<a class="bg-gray-100" href={link} rel="noopener noreferrer" target="_blank">
+	<a class="bg-blue-100" href={link} rel="noopener noreferrer" target="_blank">
 		<picture>
 			<source srcset={posterAvif} type="image/avif" />
 			<source srcset={posterWebp} type="image/webp" />
