@@ -23,11 +23,16 @@
 	<div class="flex w-full items-center justify-between">
 		<div class="flex w-full items-center justify-between">
 			<a
-				class="mr-0 flex items-center text-2xl font-bold text-blue-400 no-underline hover:no-underline lg:mr-8 lg:text-4xl"
+				class="mr-auto flex items-center text-2xl font-bold text-blue-400 no-underline hover:no-underline lg:mr-8 lg:text-4xl"
 				href="/"
 				title="Bootpack Digital home page"
 			>
-				<img alt="Bootpack Digital" class="h-20" height="90" src={BootpackHorizontal} width="298" />
+				<img
+					alt="Bootpack Digital"
+					class="lg:h-18 h-14 py-2 lg:py-2"
+					height="90"
+					src={BootpackHorizontal}
+				/>
 			</a>
 
 			<div class="hidden items-center lg:flex">

@@ -33,7 +33,7 @@
 	];
 </script>
 
-<button class="block lg:hidden" on:click={() => (mobileNavOpen = !mobileNavOpen)}>
+<button class="block pb-1 lg:hidden" on:click={() => (mobileNavOpen = !mobileNavOpen)}>
 	<svg
 		class="w-8 stroke-current text-navy-500"
 		fill="none"
