@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { navigating, page } from '$app/stores';
+	import { fly } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
 
@@ -52,6 +53,8 @@
 </button>
 {#if mobileNavOpen}
 	<div
+		in:fly={{ x: 0, y: -100, duration: 300 }}
+		out:fly={{ x: 0, y: -100, duration: 300 }}
 		class={`grid gap-2 absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-md border border-gray-100 py-4 px-6 rounded-md`}
 	>
 		<button
