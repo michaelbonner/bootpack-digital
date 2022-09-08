@@ -28,7 +28,7 @@
 				>
 					Software and Web Developers{` `}
 					<br />
-					<span class="text-blue-500">based in Salt Lake City, UT</span>
+					<span class="text-blue-500">based in Salt Lake City, Utah</span>
 				</h1>
 				<p
 					class="slide-in-bottom-subtitle mb-8 text-center text-base leading-normal text-blue-600 md:text-left md:text-xl"
