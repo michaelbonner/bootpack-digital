@@ -15,4 +15,10 @@
 	<Header />
 	<slot />
 	<Footer />
+	<script
+		lang="js"
+		src="https://embed.tawk.to/632142d937898912e96900dc/1gcsuq8kr"
+		async="true"
+		charset="UTF-8"
+		crossorigin="*"></script>
 </div>
