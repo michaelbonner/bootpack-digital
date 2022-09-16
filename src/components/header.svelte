@@ -30,7 +30,8 @@
 				<img
 					alt="Bootpack Digital"
 					class="lg:h-18 h-14 py-2 lg:py-2"
-					height="90"
+					height="45"
+					width="218"
 					src={BootpackHorizontal}
 				/>
 			</a>
