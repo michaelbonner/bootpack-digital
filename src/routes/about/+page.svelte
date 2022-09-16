@@ -48,40 +48,36 @@
 		</div>
 		<div class="mx-auto mt-8 max-w-3xl">
 			<div class="items-start sm:grid sm:gap-6 lg:flex lg:gap-8">
-				<div class="px-4 lg:px-0">
-					<div
-						class="mt-4 h-72 w-full flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 shadow-md md:mx-auto md:mt-0 md:h-64 md:w-52"
-					>
-						<picture class="overflow-hidden">
-							<source srcset={MichaelBonnerAvif} type="image/avif" />
-							<source srcset={MichaelBonnerWebp} type="image/webp" />
-							<img
-								alt="Michael Bonner"
-								height={1400}
-								loading="lazy"
-								src={MichaelBonner}
-								width={1079}
-							/>
-						</picture>
-					</div>
+				<div
+					class="mt-4 h-72 w-full flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 shadow-md md:mx-auto md:mt-0 md:h-64 md:w-52"
+				>
+					<picture class="overflow-hidden">
+						<source srcset={MichaelBonnerAvif} type="image/avif" />
+						<source srcset={MichaelBonnerWebp} type="image/webp" />
+						<img
+							alt="Michael Bonner"
+							height={1400}
+							loading="lazy"
+							src={MichaelBonner}
+							width={1079}
+						/>
+					</picture>
 				</div>
 
-				<div class="mt-4 flex flex-col justify-between pr-4 lg:mt-0">
-					<div class="space-y-4 px-4 lg:px-0">
+				<div class="mt-4 flex flex-col justify-between lg:mt-0">
+					<div class="space-y-4">
 						<div class="space-y-1 text-lg font-medium leading-6">
 							<h3 class="text-xl">Michael Bonner</h3>
 							<p class="mt-2 text-orange-600">Founder</p>
 						</div>
-						<div class="text-lg leading-7">
-							<p class="text-base text-gray-500">
-								Michael started Bootpack Digital in 2019 as the next generation of a freelance
-								business he started in 2006. Michael has been building websites since he was 16.
-								What started out as a fun thing to do became a livelihood. Michael has worked at
-								several different companies, including managing a development team for 5 years.
-							</p>
-						</div>
+						<p class="text-gray-500">
+							Michael started Bootpack Digital in 2019 as the next generation of a freelance
+							business he started in 2006. Michael has been building websites since he was 16. What
+							started out as a fun thing to do became a livelihood. Michael has worked at several
+							different companies, including managing a development team for 5 years.
+						</p>
 					</div>
-					<div class="mt-4 ml-4 flex gap-2 lg:ml-0">
+					<div class="mt-4 flex gap-2">
 						<a href="https://www.linkedin.com/in/michaelbonner/">
 							<svg
 								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
