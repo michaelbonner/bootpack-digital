@@ -145,12 +145,12 @@
 				Why the name "Bootpack"?
 			</h2>
 			<p class="mt-4">
-				We're from Utah, so a lot of our lives revolve around outdoor sports. Sometimes when you're
-				skiing you need to unclip and hike your way to find fresh snow. To get there you can follow
-				a boot pack, which is where other hikers have hiked up a steep section. The boot pack helps
-				make the journey easier. That's where we come in; our goal is to help you, and your
-				business, get to the next level. We've spent years laying a solid boot pack, now we can help
-				you get there.
+				We're from Utah and we love skiing. Sometimes when you are skiing you need to unclip and
+				hike your way to find the best snow. To get there you can follow a boot pack, which is where
+				other hikers have hiked up a section too steap to skin up. The boot pack helps make the
+				journey easier. That's where we come in; our goal is to help you, and your business, get to
+				the next level. We've spent years laying a solid boot pack of experience, now we want to
+				help you and your product reach new heights.
 			</p>
 		</div>
 	</div>
