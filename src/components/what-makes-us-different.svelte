@@ -19,7 +19,7 @@
 					</svg>
 				</div>
 				<div class="mt-5">
-					<h3 class="text-lg font-medium leading-6 text-gray-900">18+ years of experience</h3>
+					<h2 class="text-lg font-medium leading-6 text-gray-900">18+ years of experience</h2>
 					<p class="mt-2 text-base leading-6 text-gray-500">
 						Experience matters when it comes to building quality software and websites. Working at
 						agencies, in-house, and freelance has given us a breadth of understanding that's hard to
@@ -38,7 +38,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<path
-							d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+							d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0h2m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width={2}
@@ -46,7 +46,7 @@
 					</svg>
 				</div>
 				<div class="mt-5">
-					<h3 class="text-lg font-medium leading-6 text-gray-900">Business knowledge</h3>
+					<h2 class="text-lg font-medium leading-6 text-gray-900">Business knowledge</h2>
 					<p class="mt-2 text-base leading-6 text-gray-500">
 						We are a business minded development group. We don't just think about the code. Helping
 						businesses grow has given us an understanding of ROI that allows us to help clients tune
@@ -73,7 +73,7 @@
 					</svg>
 				</div>
 				<div class="mt-5">
-					<h3 class="text-lg font-medium leading-6 text-gray-900">The latest tech</h3>
+					<h2 class="text-lg font-medium leading-6 text-gray-900">The latest tech</h2>
 					<p class="mt-2 text-base leading-6 text-gray-500">
 						Blazing fast performance improves conversions. Period. We build on the latest tech to
 						make the customer experience as smooth and reliable as possible. We like the latest
