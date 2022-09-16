@@ -146,7 +146,7 @@
 </div>
 
 <div
-	class="bpd-why-bootpack bg-white bg-cover bg-center pb-64"
+	class="bg-white bg-cover bg-bottom pb-72 md:bg-center md:pb-64"
 	style={`	
 background-image: url("/images/bootpack-in-snow.jpg");
 background-image: -webkit-image-set(
@@ -161,7 +161,7 @@ background-image: image-set(
 );
 	`}
 >
-	<div class="mx-auto max-w-3xl pt-12 text-gray-500">
+	<div class="mx-auto max-w-3xl px-4 pt-12 text-gray-500">
 		<h2
 			class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 		>
