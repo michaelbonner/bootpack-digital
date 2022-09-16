@@ -49,7 +49,7 @@
 		<div class="mx-auto mt-8 max-w-3xl">
 			<div class="items-start sm:grid sm:gap-6 lg:flex lg:gap-8">
 				<div
-					class="mt-4 h-72 w-full flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 shadow-md md:mx-auto md:mt-0 md:h-64 md:w-52"
+					class="mt-4 h-80 w-full max-w-[460px] flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 shadow-md md:mx-auto md:mt-0 md:h-72 md:w-56"
 				>
 					<picture class="overflow-hidden">
 						<source srcset={MichaelBonnerAvif} type="image/avif" />
@@ -65,12 +65,16 @@
 				</div>
 
 				<div class="mt-4 flex flex-col justify-between lg:mt-0">
-					<div class="space-y-4">
-						<div class="space-y-1 text-lg font-medium leading-6">
-							<h3 class="text-xl">Michael Bonner</h3>
-							<p class="mt-2 text-orange-600">Founder</p>
+					<div class="gap-y-4">
+						<div class="grid text-lg font-medium leading-6">
+							<p
+								class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-500"
+							>
+								Founder
+							</p>
+							<h3 class="text-xl font-bold text-navy-600">Michael Bonner</h3>
 						</div>
-						<p class="text-gray-500">
+						<p class="mt-2 text-gray-500">
 							Michael started Bootpack Digital in 2019 as the next generation of a freelance
 							business he started in 2006. Michael has been building websites since he was 16. What
 							started out as a fun thing to do became a livelihood. Michael has worked at several
