@@ -142,21 +142,39 @@
 				</div>
 			</div>
 		</div>
-		<div class="mx-auto mt-12 max-w-3xl pt-12 text-gray-500">
-			<h2
-				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
-			>
-				Why the name "Bootpack"?
-			</h2>
-			<p class="mt-4">
-				We're from Utah and we love skiing. Sometimes when you are skiing you need to unclip and
-				hike your way to find the best snow. To get there you can follow a boot pack, which is where
-				other hikers have hiked up a section too steap to skin up. The boot pack helps make the
-				journey easier. That's where we come in; our goal is to help you, and your business, get to
-				the next level. We've spent years laying a solid boot pack of experience, now we want to
-				help you and your product reach new heights.
-			</p>
-		</div>
+	</div>
+</div>
+
+<div
+	class="bpd-why-bootpack bg-white bg-cover bg-center pb-64"
+	style={`	
+background-image: url("/images/bootpack-in-snow.jpg");
+background-image: -webkit-image-set(
+	url("/images/bootpack-in-snow.jpg") 1x,
+	url("/images/bootpack-in-snow.webp") 1x,
+	url("/images/bootpack-in-snow.avif") 1x
+);
+background-image: image-set(
+	url("/images/bootpack-in-snow.jpg") 1x,
+	url("/images/bootpack-in-snow.webp") 1x,
+	url("/images/bootpack-in-snow.avif") 1x
+);
+	`}
+>
+	<div class="mx-auto max-w-3xl pt-12 text-gray-500">
+		<h2
+			class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
+		>
+			Why the name "Bootpack"?
+		</h2>
+		<p class="mt-4">
+			We're from Utah and we love skiing. Sometimes when you are skiing you need to unclip and hike
+			your way to find the best snow. To get there you can follow a boot pack, which is where other
+			hikers have hiked up a section too steap to skin up. The boot pack helps make the journey
+			easier. That's where we come in; our goal is to help you, and your business, get to the next
+			level. We've spent years laying a solid boot pack of experience, now we want to help you and
+			your product reach new heights.
+		</p>
 	</div>
 </div>
 
