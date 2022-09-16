@@ -66,23 +66,23 @@
 
 				<div class="mt-4 flex flex-col justify-between lg:mt-0">
 					<div class="gap-y-4">
-						<div class="grid text-lg font-medium leading-6">
+						<div>
 							<p
 								class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-500"
 							>
 								Founder
 							</p>
-							<h3 class="text-xl font-bold text-navy-600">Michael Bonner</h3>
+							<h3 class="text-2xl font-bold text-navy-600">Michael Bonner</h3>
 						</div>
-						<p class="mt-2 text-gray-500">
+						<p class="mt-2 text-base leading-7 text-gray-500">
 							Michael started Bootpack Digital in 2019 as the next generation of a freelance
 							business he started in 2006. Michael has been building websites since he was 16. What
 							started out as a fun thing to do became a livelihood. Michael has worked at several
 							different companies, including managing a development team for 5 years.
 						</p>
 					</div>
-					<div class="mt-4 flex gap-2">
-						<a href="https://www.linkedin.com/in/michaelbonner/">
+					<div class="mt-4 flex gap-4">
+						<a href="https://www.linkedin.com/in/michaelbonner/" title="LinkedIn">
 							<svg
 								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
@@ -94,7 +94,7 @@
 								/>
 							</svg>
 						</a>
-						<a class="ml-2" href="https://www.instagram.com/michael__bonner/">
+						<a href="https://www.instagram.com/michael__bonner/" title="Instagram">
 							<svg
 								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
@@ -109,7 +109,7 @@
 								/>
 							</svg>
 						</a>
-						<a class="ml-2" href="https://github.com/michaelbonner">
+						<a href="https://github.com/michaelbonner" title="GitHub">
 							<svg
 								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
@@ -121,7 +121,7 @@
 								/>
 							</svg>
 						</a>
-						<a class="ml-2" href="https://michaelbonner.dev/">
+						<a href="https://michaelbonner.dev/" title="Personal Website">
 							<svg
 								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
 								viewBox="0 0 512 512"
