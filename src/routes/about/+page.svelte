@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
-	import MichaelBonner from '../../images/michael-bonner.jpg';
+	import MichaelBonner from '../../images/michael-bonner.jpg?w=300,500;700;900&srcset';
 	import MichaelBonnerAvif from '../../images/michael-bonner.jpg?w=300,500;700;900&avif&srcset';
 	import MichaelBonnerWebp from '../../images/michael-bonner.jpg?w=300,500;700;900&webp&srcset';
 	let seoTitle = 'About Us | Bootpack Digital';
@@ -46,22 +46,27 @@
 				Who are we?
 			</h2>
 		</div>
-		<div class="mx-auto mt-8 max-w-3xl rounded-lg border border-gray-100 shadow-lg">
-			<div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
-				<picture>
-					<source srcset={MichaelBonnerAvif} type="image/avif" />
-					<source srcset={MichaelBonnerWebp} type="image/webp" />
-					<img
-						alt="Headshot of Michael Bonner"
-						class="my-0 overflow-hidden rounded-t-lg py-0 shadow-lg lg:rounded-r-none lg:rounded-l-lg"
-						height="395"
-						loading="lazy"
-						src={MichaelBonner}
-						width="266"
-					/>
-				</picture>
+		<div class="mx-auto mt-8 max-w-3xl">
+			<div class="items-start sm:grid sm:gap-6 lg:flex lg:gap-8">
+				<div class="px-4 lg:px-0">
+					<div
+						class="mt-4 h-72 w-full flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 shadow-md md:mx-auto md:mt-0 md:h-64 md:w-52"
+					>
+						<picture class="overflow-hidden">
+							<source srcset={MichaelBonnerAvif} type="image/avif" />
+							<source srcset={MichaelBonnerWebp} type="image/webp" />
+							<img
+								alt="Michael Bonner"
+								height={1400}
+								loading="lazy"
+								src={MichaelBonner}
+								width={1079}
+							/>
+						</picture>
+					</div>
+				</div>
 
-				<div class="flex flex-col justify-between pb-2 pt-4 pr-4 sm:col-span-2">
+				<div class="mt-4 flex flex-col justify-between pr-4 lg:mt-0">
 					<div class="space-y-4 px-4 lg:px-0">
 						<div class="space-y-1 text-lg font-medium leading-6">
 							<h3 class="text-xl">Michael Bonner</h3>
