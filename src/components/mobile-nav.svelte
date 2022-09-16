@@ -75,7 +75,14 @@
 			class="mr-0 flex items-center text-2xl font-bold text-blue-400 no-underline hover:no-underline lg:mr-8 lg:text-4xl"
 			href="/"
 		>
-			<img alt="Bootpack Digital" class="w-full" loading="lazy" src={BootpackDigital} />
+			<img
+				alt="Bootpack Digital"
+				class="w-full"
+				loading="lazy"
+				src={BootpackDigital}
+				height="652"
+				width="1002"
+			/>
 		</a>
 
 		{#each mainLinks as link}
