@@ -146,7 +146,7 @@
 </div>
 
 <div
-	class="bg-white bg-cover bg-bottom pb-72 md:bg-center md:pb-64"
+	class="bg-cover bg-center pb-72 md:pb-64"
 	style={`	
 background-image: url("/images/bootpack-in-snow.jpg");
 background-image: -webkit-image-set(
