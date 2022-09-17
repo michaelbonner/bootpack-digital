@@ -39,7 +39,7 @@
 			<div class="grid grid-cols-2 text-base lg:flex">
 				{#each links as link}
 					<a
-						class={`block font-semibold py-4 lg:py-2 lg:px-4 hover:underline decoration-2 underline-offset-4 hover:decoration-blue-300 transition-all
+						class={`block font-semibold py-4 lg:py-2 lg:px-4 hover:underline decoration-2 hover:decoration-blue-300 transition-all
 						${$page.url.pathname === link.url && 'underline decoration-blue-600'}
 						`}
 						href={link.url}>{link.label}</a

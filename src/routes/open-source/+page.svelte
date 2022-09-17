@@ -33,7 +33,7 @@
 				</div>
 				<div class="mt-3 inline-flex text-gray-500 sm:mt-4">
 					<a
-						class="group flex items-center gap-2 rounded-lg border bg-white py-2 px-5 underline-offset-2 shadow-sm transition-colors hover:text-navy-800 hover:underline"
+						class="group flex items-center gap-2 rounded-lg border bg-white py-2 px-5 shadow-sm transition-colors hover:text-navy-800 hover:underline"
 						href="https://github.com/michaelbonner?tab=repositories&q=&type=source&language=&sort=&utm_source=bootpackdigital.com/open-source"
 					>
 						<svg
@@ -65,7 +65,7 @@
 				</p>
 				<div class="mt-3">
 					<a
-						class="text-base font-semibold leading-6 text-orange-600 underline-offset-2 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+						class="text-base font-semibold leading-6 text-orange-600 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
 						href="https://github.com/michaelbonner/is-it-down"
 					>
 						See Is It Down Checker Code on GitHub
@@ -82,7 +82,7 @@
 				</p>
 				<div class="mt-3">
 					<a
-						class="text-base font-semibold leading-6 text-orange-600 underline-offset-2 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+						class="text-base font-semibold leading-6 text-orange-600 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
 						href="https://github.com/michaelbonner/redirects-wizard"
 					>
 						See Redirects Wizard Code on GitHub

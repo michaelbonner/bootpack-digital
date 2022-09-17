@@ -13,3 +13,7 @@ body {
 	@apply bg-blue-50;
 	background-image: url('/images/blue-topo.svg');
 }
+
+.underline {
+	text-underline-offset: 2px;
+}
