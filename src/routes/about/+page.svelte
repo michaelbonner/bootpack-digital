@@ -58,7 +58,7 @@
 							alt="Michael Bonner"
 							height={1400}
 							loading="lazy"
-							src={MichaelBonner}
+							srcset={MichaelBonner}
 							width={1079}
 						/>
 					</picture>
