@@ -11,6 +11,32 @@
 	let loadTawkTo = false;
 
 	setTimeout(() => (loadTawkTo = true), 3000);
+
+	console.log(`
+██████   ██████   ██████  ████████ ██████   █████   ██████ ██   ██ 
+██   ██ ██    ██ ██    ██    ██    ██   ██ ██   ██ ██      ██  ██  
+██████  ██    ██ ██    ██    ██    ██████  ███████ ██      █████   
+██   ██ ██    ██ ██    ██    ██    ██      ██   ██ ██      ██  ██  
+██████   ██████   ██████     ██    ██      ██   ██  ██████ ██   ██ 
+                                                                   
+
+██████  ██  ██████  ██ ████████  █████  ██      
+██   ██ ██ ██       ██    ██    ██   ██ ██      
+██   ██ ██ ██   ███ ██    ██    ███████ ██      
+██   ██ ██ ██    ██ ██    ██    ██   ██ ██      
+██████  ██  ██████  ██    ██    ██   ██ ███████ 
+                                                
+`);
+
+	console.log(
+		"%c If you're seeing this, maybe you should consider working with us. ",
+		'color: #237AA5'
+	);
+
+	console.log(
+		'%c Hit me up on LinkedIn: https://www.linkedin.com/in/michaelbonner/ ',
+		'color: #D8564A'
+	);
 </script>
 
 <Gtm {gtmId} {gtmDataPoints} />
