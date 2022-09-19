@@ -7,6 +7,10 @@
 
 	const gtmId = 'GTM-KCZ4PZC';
 	const gtmDataPoints: string[] = [];
+
+	let loadTawkTo = false;
+
+	setTimeout(() => (loadTawkTo = true), 3000);
 </script>
 
 <Gtm {gtmId} {gtmDataPoints} />
@@ -15,10 +19,12 @@
 	<Header />
 	<slot />
 	<Footer />
-	<script
-		lang="js"
-		src="https://embed.tawk.to/632142d937898912e96900dc/1gcsuq8kr"
-		async="true"
-		charset="UTF-8"
-		crossorigin="*"></script>
+	{#if loadTawkTo}
+		<script
+			lang="js"
+			src="https://embed.tawk.to/632142d937898912e96900dc/1gcsuq8kr"
+			async="true"
+			charset="UTF-8"
+			crossorigin="*"></script>
+	{/if}
 </div>
