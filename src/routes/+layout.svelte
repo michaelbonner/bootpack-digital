@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
 	import '../app.css';
 
 	import Footer from '../components/footer.svelte';
@@ -12,31 +13,7 @@
 
 	setTimeout(() => (loadTawkTo = true), 3000);
 
-	console.info(`
-██████   ██████   ██████  ████████ ██████   █████   ██████ ██   ██ 
-██   ██ ██    ██ ██    ██    ██    ██   ██ ██   ██ ██      ██  ██  
-██████  ██    ██ ██    ██    ██    ██████  ███████ ██      █████   
-██   ██ ██    ██ ██    ██    ██    ██      ██   ██ ██      ██  ██  
-██████   ██████   ██████     ██    ██      ██   ██  ██████ ██   ██ 
-                                                                   
-
-██████  ██  ██████  ██ ████████  █████  ██      
-██   ██ ██ ██       ██    ██    ██   ██ ██      
-██   ██ ██ ██   ███ ██    ██    ███████ ██      
-██   ██ ██ ██    ██ ██    ██    ██   ██ ██      
-██████  ██  ██████  ██    ██    ██   ██ ███████ 
-                                                
-`);
-
-	console.info(
-		"%c If you're seeing this, maybe you should consider working with us. ",
-		'color: #237AA5'
-	);
-
-	console.info(
-		'%c Hit me up on LinkedIn: https://www.linkedin.com/in/michaelbonner/ ',
-		'color: #D8564A'
-	);
+	printBootpackConsoleInfo();
 </script>
 
 <Gtm {gtmId} {gtmDataPoints} />
