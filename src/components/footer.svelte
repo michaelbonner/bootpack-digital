@@ -48,7 +48,7 @@
 			</div>
 		</div>
 
-		<div class="mt-6 flex justify-start lg:mt-0 lg:justify-end">
+		<div class="mt-6 flex justify-start lg:mt-0 lg:justify-end lg:pr-24">
 			<SocialIcons />
 		</div>
 	</nav>
