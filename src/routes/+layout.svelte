@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
 	import '../app.css';
 
+	import { onMount } from 'svelte';
 	import Footer from '../components/footer.svelte';
 	import Gtm from '../components/gtm.svelte';
 	import Header from '../components/header.svelte';
+	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
 
 	const gtmId = 'GTM-KCZ4PZC';
 	const gtmDataPoints: string[] = [];
@@ -13,7 +14,11 @@
 
 	setTimeout(() => (loadTawkTo = true), 3000);
 
-	printBootpackConsoleInfo();
+	onMount(async () => {
+		if (typeof window !== 'undefined') {
+			printBootpackConsoleInfo();
+		}
+	});
 </script>
 
 <Gtm {gtmId} {gtmDataPoints} />
