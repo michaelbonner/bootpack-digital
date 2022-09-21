@@ -12,6 +12,7 @@ body {
 .hero-bg {
 	@apply bg-blue-50;
 	background-image: url('/images/blue-topo.svg');
+	background-size: 740px 740px;
 }
 
 .underline {
