@@ -33,9 +33,6 @@
 	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.jpg';
 	import TheDoctorsCbdWebp from '../../images/work/the-doctors-cbd.jpg?w=300;500;700;900&webp&srcset';
 	import TheDoctorsCbdAvif from '../../images/work/the-doctors-cbd.jpg?w=300;500;700;900&avif&srcset';
-	import ThunderBiotech from '../../images/work/thunder-biotech.jpg';
-	import ThunderBiotechWebp from '../../images/work/thunder-biotech.jpg?w=300;500;700;900&webp&srcset';
-	import ThunderBiotechAvif from '../../images/work/thunder-biotech.jpg?w=300;500;700;900&avif&srcset';
 	import WasatchCovers from '../../images/work/wasatch-covers.jpg';
 	import WasatchCoversWebp from '../../images/work/wasatch-covers.jpg?w=300;500;700;900&webp&srcset';
 	import WasatchCoversAvif from '../../images/work/wasatch-covers.jpg?w=300;500;700;900&avif&srcset';
@@ -145,15 +142,6 @@
 				posterWebp={FaktoryWebp}
 				posterAvif={FaktoryAvif}
 				title={`Faktory`}
-				lazy={true}
-			/>
-			<WorkItem
-				description={`Thunder Biotech is a cancer research group with huge aspirations. They needed a site that conveyed their purpose and vision. We worked with the team at Faktory to build a site to accomplish their goals.`}
-				link={`https://thunderbiotech.com/`}
-				poster={ThunderBiotech}
-				posterWebp={ThunderBiotechWebp}
-				posterAvif={ThunderBiotechAvif}
-				title={`Thunder Biotech`}
 				lazy={true}
 			/>
 			<WorkItem
