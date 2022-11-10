@@ -148,6 +148,7 @@
 								xmlns="http://www.w3.org/2000/svg"
 								y="0px"
 							>
+								<title>Zoom</title>
 								<g transform="matrix(1.3743674 0 0 1.3743674 -4.586789 185.07591)">
 									<path
 										class="st0"
