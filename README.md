@@ -1,4 +1,4 @@
-![Bootpack Digital](./repo-image.jpg 'Bootpack Digital')
+![Bootpack Digital](./static/og-image.jpg 'Bootpack Digital')
 
 # Bootpack Digital
 
