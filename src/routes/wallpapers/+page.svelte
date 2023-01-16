@@ -11,7 +11,7 @@
 
 	const wallpapers: Wallpaper[] = [
 		{
-			title: '5k',
+			title: '5k Desktop',
 			src: '/images/wallpapers/bootpack-digital-5k.jpg',
 			width: 1200
 		},
@@ -21,7 +21,7 @@
 			width: 1200
 		},
 		{
-			title: 'iPad',
+			title: 'Tablet',
 			src: '/images/wallpapers/bootpack-digital-5-k-i-pad-pro-12-9.jpg',
 			width: 1200
 		},
@@ -49,21 +49,21 @@
 				Wallpapers
 			</h1>
 			<p class="mt-4 text-lg leading-7 text-gray-500">
-				We have a collection of wallpapers that we've created for our own use. We hope you enjoy
-				them.
+				Here&apos;s a collection of wallpapers that we&apos;ve created for our own use. We figure
+				maybe somebody else will enjoy them too.
 			</p>
 		</div>
 		{#each wallpapers as wallpaper}
 			<div class="grid justify-start gap-4">
-				<h2 class="text-3xl font-extrabold leading-9 text-navy-600 sm:text-4xl sm:leading-10">
+				<h2 class="text-2xl font-extrabold leading-9 text-navy-600 sm:text-3xl sm:leading-10">
 					{wallpaper.title}
 				</h2>
-				<div class="group relative">
-					<img alt={`${wallpaper.title} Wallpaper`} src={wallpaper.src} width={wallpaper.width} />
-					<a
-						class="absolute bottom-2 right-2 rounded-md bg-white p-2 opacity-100 transition-opacity group-hover:opacity-100 md:opacity-0"
-						href={wallpaper.src}
-						download
+				<div class="group relative  shadow-lg">
+					<a href={wallpaper.src} download>
+						<img alt={`${wallpaper.title} Wallpaper`} src={wallpaper.src} width={wallpaper.width} />
+					</a>
+					<div
+						class="pointer-events-none absolute bottom-2 right-2 rounded-md bg-white p-2 opacity-100 transition-opacity group-hover:opacity-100 md:opacity-0"
 					>
 						<svg
 							stroke="currentColor"
@@ -80,7 +80,7 @@
 								d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
 							/></svg
 						>
-					</a>
+					</div>
 				</div>
 			</div>
 		{/each}
