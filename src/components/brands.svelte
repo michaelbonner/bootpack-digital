@@ -4,7 +4,7 @@
 	import IntermountainHealthcare from '../images/clients/intermountain-healthcare-gray.svg';
 	import NationalEnergyFoundation from '../images/clients/national-energy-foundation-gray.svg';
 	import Ogio from '../images/clients/ogio-gray.svg';
-	import WasatchCovers from '../images/clients/wasatch-covers-gray.svg';
+	import DominionEnergy from '../images/clients/dominion-energy-gray.svg';
 	import BrandImage from './brand-image.svelte';
 </script>
 
@@ -22,7 +22,7 @@
 					<a class="text-lg text-blue-500 underline" href="/work">See some of our work</a>
 				</p>
 			</div>
-			<div class="mt-8 grid grid-cols-2 items-center gap-0.5 md:grid-cols-3 lg:mt-0">
+			<div class="mt-8 grid grid-cols-2 items-center gap-x-0.5 gap-y-4 md:grid-cols-3 lg:mt-0">
 				<BrandImage height={126} logo={CocaCola} title="CocaCola" width={300} />
 				<BrandImage
 					height={130}
@@ -38,7 +38,7 @@
 					width={300}
 				/>
 				<BrandImage height={102} logo={Ogio} title="Ogio" width={300} />
-				<BrandImage height={150} logo={WasatchCovers} title="Wasatch Covers" width={298} />
+				<BrandImage height={150} logo={DominionEnergy} title="Dominion Energy" width={300} />
 			</div>
 		</div>
 	</div>
