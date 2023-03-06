@@ -39,7 +39,7 @@
 			<div class="hidden items-center lg:flex">
 				{#each mainLinks as link}
 					<a
-						class={`text-navy-500 hover:underline hover:decoration-blue-400 font-semibold text-xl px-4 ${
+						class={`px-4 text-xl font-semibold text-navy-500 hover:underline hover:decoration-blue-400 ${
 							$page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}
@@ -49,7 +49,7 @@
 					</a>
 				{/each}
 				<a
-					class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none lg:ml-4"
+					class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-700 px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none lg:ml-4"
 					href="/contact"
 				>
 					Request a Quote

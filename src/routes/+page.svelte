@@ -39,7 +39,7 @@
 				</p>
 				<div class="my-4 rounded-md shadow lg:my-0">
 					<a
-						class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none"
+						class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-700 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none"
 						href="/contact"
 					>
 						Request a Quote

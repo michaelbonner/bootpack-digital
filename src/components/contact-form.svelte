@@ -157,7 +157,7 @@
 		</p>
 	{/if}
 	<button
-		class="focus:shadow-outline w-full rounded-md border border-transparent bg-orange-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-500 focus:outline-none lg:w-auto"
+		class="focus:shadow-outline w-full rounded-md border border-transparent bg-orange-700 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none lg:w-auto"
 		disabled={isSubmitting}
 		type="submit"
 	>
