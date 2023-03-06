@@ -61,7 +61,7 @@
 			<h1
 				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 			>
-				Custom Web Development Projects
+				Custom Web Design and Development Projects
 			</h1>
 			<p class="mt-3 max-w-2xl text-xl leading-7 text-gray-500 sm:mt-4">
 				We build engaging, custom experiences for our clients. Here's a few examples we're

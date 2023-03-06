@@ -19,9 +19,9 @@
 	<div class="flex flex-1 flex-col justify-between bg-white p-6">
 		<div class="flex-1">
 			<a class="block" href={link} rel="noopener noreferrer" target="_blank">
-				<h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
+				<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
 					{title}
-				</h3>
+				</h2>
 				<p class="mt-3 text-base leading-6 text-gray-500">
 					{description}
 				</p>
