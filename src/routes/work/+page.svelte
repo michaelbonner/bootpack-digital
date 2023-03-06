@@ -33,6 +33,9 @@
 	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.jpg';
 	import TheDoctorsCbdWebp from '../../images/work/the-doctors-cbd.jpg?w=300;500;700;900&webp&srcset';
 	import TheDoctorsCbdAvif from '../../images/work/the-doctors-cbd.jpg?w=300;500;700;900&avif&srcset';
+	import ThermWise from '../../images/work/thermwise.jpg';
+	import ThermWiseWebp from '../../images/work/thermwise.jpg?w=300;500;700;900&webp&srcset';
+	import ThermWiseAvif from '../../images/work/thermwise.jpg?w=300;500;700;900&avif&srcset';
 	import WasatchCovers from '../../images/work/wasatch-covers.jpg';
 	import WasatchCoversWebp from '../../images/work/wasatch-covers.jpg?w=300;500;700;900&webp&srcset';
 	import WasatchCoversAvif from '../../images/work/wasatch-covers.jpg?w=300;500;700;900&avif&srcset';
@@ -106,6 +109,15 @@
 				posterWebp={HeritageOfPrestonWebp}
 				posterAvif={HeritageOfPrestonAvif}
 				title={`Heritage Senior Living`}
+				lazy={true}
+			/>
+			<WorkItem
+				description={`A collaborative effort with the team at Dominion Energy and Faktory. The ThermWise program website aids homeowners and businesses in saving money and conserving energy.`}
+				link={`https://www.thermwise.com/`}
+				poster={ThermWise}
+				posterWebp={ThermWiseWebp}
+				posterAvif={ThermWiseAvif}
+				title={`ThermWise`}
 				lazy={true}
 			/>
 			<WorkItem
