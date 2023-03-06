@@ -24,7 +24,7 @@
 				class="mb-6 text-3xl font-extrabold tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
 			>
 				<span
-					class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-500"
+					class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-700"
 				>
 					Introducing
 				</span>
@@ -68,7 +68,7 @@
 					<div class="gap-y-4">
 						<div>
 							<p
-								class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-500"
+								class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-700"
 							>
 								Founder
 							</p>

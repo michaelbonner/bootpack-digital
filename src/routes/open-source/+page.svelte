@@ -56,7 +56,7 @@
 		>
 			<div>
 				<a class="block hover:underline" href="https://github.com/michaelbonner/is-it-down">
-					<h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">Is It Down Checker</h3>
+					<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900">Is It Down Checker</h2>
 				</a>
 				<p class="mt-3 text-base leading-6 text-gray-500">
 					A tool to track whether or not your sites are up. It also keeps track of how often a site
@@ -74,7 +74,7 @@
 			</div>
 			<div>
 				<a class="block hover:underline" href="https://github.com/michaelbonner/redirects-wizard">
-					<h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">Redirects Wizard</h3>
+					<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900">Redirects Wizard</h2>
 				</a>
 				<p class="mt-3 text-base leading-6 text-gray-500">
 					Sometimes when you're migrating a site you have a lot of links you need to redirect
