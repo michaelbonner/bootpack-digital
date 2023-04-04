@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@builder.io/partytown": "^0.7.5",
 		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.5.5",
+		"@sveltejs/kit": "^1.15.1",
 		"@tailwindcss/typography": "^0.5.9",
 		"@typescript-eslint/eslint-plugin": "^5.51.0",
 		"@typescript-eslint/parser": "^5.51.0",
