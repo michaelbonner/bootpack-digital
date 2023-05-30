@@ -41,6 +41,23 @@
 			</div>
 		</div>
 		<h2 class="mt-12 text-2xl font-extrabold leading-9 text-navy-600 sm:leading-10">
+			Cookie Policy
+		</h2>
+		<div class="prose max-w-3xl pt-4 lg:mx-24">
+			<div
+				id="policy"
+				class="w-full max-w-3xl"
+				data-policy-key="TUVWa1VHNWxaRGhWWTFnMWVIYzlQUT09"
+				data-extra="h-align=left&no-title=true&table-style=accordion"
+			>
+				Please wait while the policy is loaded. If it does not load, please <a
+					rel="nofollow"
+					href="https://app.termageddon.com/api/policy/TUVWa1VHNWxaRGhWWTFnMWVIYzlQUT09?h-align=left&no-title=true&table-style=accordion"
+					target="_blank">click here</a
+				>.
+			</div>
+		</div>
+		<h2 class="mt-12 text-2xl font-extrabold leading-9 text-navy-600 sm:leading-10">
 			Terms of Service
 		</h2>
 		<div class="max-w-3xl pt-4 lg:mx-24">
