@@ -19,6 +19,6 @@ body {
 	text-underline-offset: 2px;
 }
 
-#policy .accordions .accordion .accordion-content {
+#policy .accordions .accordion .accordion-content .accordion-section {
 	padding: 0px 2rem;
 }
