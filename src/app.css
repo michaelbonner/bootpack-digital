@@ -18,3 +18,7 @@ body {
 .underline {
 	text-underline-offset: 2px;
 }
+
+#policy .accordions .accordion .accordion-content {
+	padding: 0px 2rem;
+}
