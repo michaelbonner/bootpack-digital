@@ -23,23 +23,6 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="//privacy-proxy.usercentrics.eu" />
-	<link
-		rel="preload"
-		href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"
-		as="script"
-	/>
-	<script
-		type="application/javascript"
-		src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"
-	></script>
-	<script
-		id="usercentrics-cmp"
-		src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-		data-settings-id="SX-j_HeXaiTxQU"
-		async
-	></script>
-
 	<script>
 		// Config options
 		partytown = {
@@ -66,8 +49,10 @@
 	</script>
 	<!-- Insert `partytownSnippet` here -->
 	<!-- Insert `partytownSnippet` here -->
+	<!-- Insert `partytownSnippet` here -->
 	<script bind:this={scriptEl}></script>
 
+	<!-- GTM script + config -->
 	<!-- GTM script + config -->
 	<!-- GTM script + config -->
 	<script

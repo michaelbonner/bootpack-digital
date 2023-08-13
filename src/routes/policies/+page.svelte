@@ -1,5 +1,7 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
+	import PrivacyPolicy from './privacy-policy.svelte';
+	import CookiePolicy from './cookie-policy.svelte';
 
 	const seoTitle = 'Privacy Policy and Terms of Service | Bootpack Digital';
 	const seoDescription =
@@ -25,37 +27,13 @@
 			Privacy Policy
 		</h2>
 		<div class="prose max-w-3xl pt-4 lg:mx-24">
-			<div
-				id="policy"
-				class="w-full max-w-3xl"
-				data-policy-key="V21sb2JFbE1PRGRGZEd4TkwxRTlQUT09"
-				data-extra="h-align=left&no-title=true&table-style=accordion"
-			>
-				Please wait while the policy is loaded. If it does not load, please
-				<a
-					rel="nofollow"
-					href="https://app.termageddon.com/api/policy/V21sb2JFbE1PRGRGZEd4TkwxRTlQUT09?h-align=left&no-title=true&table-style=accordion"
-					target="_blank">click here</a
-				>
-				.
-			</div>
+			<PrivacyPolicy />
 		</div>
 		<h2 class="mt-12 text-2xl font-extrabold leading-9 text-navy-600 sm:leading-10">
 			Cookie Policy
 		</h2>
 		<div class="prose max-w-3xl pt-4 lg:mx-24">
-			<div
-				id="policy"
-				class="w-full max-w-3xl"
-				data-policy-key="TUVWa1VHNWxaRGhWWTFnMWVIYzlQUT09"
-				data-extra="h-align=left&no-title=true&table-style=accordion"
-			>
-				Please wait while the policy is loaded. If it does not load, please <a
-					rel="nofollow"
-					href="https://app.termageddon.com/api/policy/TUVWa1VHNWxaRGhWWTFnMWVIYzlQUT09?h-align=left&no-title=true&table-style=accordion"
-					target="_blank">click here</a
-				>.
-			</div>
+			<CookiePolicy />
 		</div>
 		<h2 class="mt-12 text-2xl font-extrabold leading-9 text-navy-600 sm:leading-10">
 			Terms of Service
