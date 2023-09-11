@@ -55,13 +55,15 @@
 			class="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12"
 		>
 			<div>
-				<a class="block hover:underline" href="https://github.com/michaelbonner/is-it-down">
-					<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900">Is It Down Checker</h2>
+				<a class="block hover:underline" href="https://github.com/michaelbonner/pagespeed">
+					<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900">PageSpeed</h2>
 				</a>
 				<p class="mt-3 text-base leading-6 text-gray-500">
-					A tool to track whether or not your sites are up. It also keeps track of how often a site
-					goes down, and for how long. An invaluable tool for any company that manages several
-					sites.
+					Keep track of your PageSpeed insights scores. Just add your URLs to the config and deploy
+					the code. Then you'll see a simple view of your PageSpeed scores. <a
+						class="underline"
+						href="https://pagespeed.bootpack.dev/">Here's what it looks like for this site</a
+					>
 				</p>
 				<div class="mt-3">
 					<a
@@ -72,6 +74,7 @@
 					</a>
 				</div>
 			</div>
+
 			<div>
 				<a class="block hover:underline" href="https://github.com/michaelbonner/redirects-wizard">
 					<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900">Redirects Wizard</h2>
@@ -86,6 +89,25 @@
 						href="https://github.com/michaelbonner/redirects-wizard"
 					>
 						See Redirects Wizard Code on GitHub
+					</a>
+				</div>
+			</div>
+
+			<div>
+				<a class="block hover:underline" href="https://github.com/michaelbonner/is-it-down">
+					<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900">Is It Down Checker</h2>
+				</a>
+				<p class="mt-3 text-base leading-6 text-gray-500">
+					A tool to track whether or not your sites are up. It also keeps track of how often a site
+					goes down, and for how long. An invaluable tool for any company that manages several
+					sites.
+				</p>
+				<div class="mt-3">
+					<a
+						class="text-base font-semibold leading-6 text-orange-600 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+						href="https://github.com/michaelbonner/is-it-down"
+					>
+						See Is It Down Checker Code on GitHub
 					</a>
 				</div>
 			</div>
