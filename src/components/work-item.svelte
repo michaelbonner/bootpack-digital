@@ -4,6 +4,7 @@
 	export let poster: string;
 	export let title: string;
 	export let lazy = false;
+	export let linkText = 'View Site';
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
@@ -26,26 +27,26 @@
 		<div class="mt-6 flex items-center">
 			<div class="flex-shrink-0">
 				<a
-					class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-700 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none"
+					class="flex gap-2 items-center text-blue-500 underline"
 					href={link}
 					rel="noopener noreferrer"
 					target="_blank"
 				>
-					View Site
 					<svg
-						class="ml-1 w-5 text-white"
-						fill="none"
 						stroke="currentColor"
+						fill="none"
+						stroke-width="2"
 						viewBox="0 0 24 24"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						height="1em"
+						width="1em"
 						xmlns="http://www.w3.org/2000/svg"
+						><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path
+							d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+						/></svg
 					>
-						<path
-							d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width={2}
-						/>
-					</svg>
+					{linkText}
 				</a>
 			</div>
 		</div>
