@@ -3,16 +3,12 @@
 	export let link: string;
 	export let poster: string;
 	export let title: string;
-	export let posterAvif = '';
-	export let posterWebp = '';
 	export let lazy = false;
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
 	<a class="bg-blue-100" href={link} rel="noopener noreferrer" target="_blank">
 		<picture>
-			<source srcset={posterAvif} type="image/avif" />
-			<source srcset={posterWebp} type="image/webp" />
 			<img alt={title} height="232" loading={lazy ? 'lazy' : 'eager'} src={poster} width="465" />
 		</picture>
 	</a>

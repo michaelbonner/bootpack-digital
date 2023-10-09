@@ -141,7 +141,6 @@
 							Schedule a call on
 							<svg
 								class="ml-2 inline-block w-20 fill-current text-white"
-								style="enable-background: `new 0 0 534 160`"
 								version="1.1"
 								viewBox="0 0 534 160"
 								x="0px"
