@@ -7,10 +7,6 @@
 	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
 	import { partytownSnippet } from '@builder.io/partytown/integration';
 
-	let loadTawkTo = false;
-
-	setTimeout(() => (loadTawkTo = true), 3000);
-
 	let scriptEl: HTMLScriptElement;
 	onMount(async () => {
 		if (typeof window !== 'undefined') {
@@ -50,8 +46,12 @@
 	<!-- Insert `partytownSnippet` here -->
 	<!-- Insert `partytownSnippet` here -->
 	<!-- Insert `partytownSnippet` here -->
+	<!-- Insert `partytownSnippet` here -->
+	<!-- Insert `partytownSnippet` here -->
 	<script bind:this={scriptEl}></script>
 
+	<!-- GTM script + config -->
+	<!-- GTM script + config -->
 	<!-- GTM script + config -->
 	<!-- GTM script + config -->
 	<!-- GTM script + config -->
@@ -77,13 +77,4 @@
 	<Header />
 	<slot />
 	<Footer />
-	{#if loadTawkTo}
-		<script
-			lang="js"
-			src="https://embed.tawk.to/632142d937898912e96900dc/1gcsuq8kr"
-			async
-			charset="UTF-8"
-			crossorigin="*"
-		></script>
-	{/if}
 </div>
