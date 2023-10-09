@@ -27,7 +27,7 @@
 		<div class="mt-6 flex items-center">
 			<div class="flex-shrink-0">
 				<a
-					class="flex gap-2 items-center text-blue-500 underline"
+					class="flex gap-2 items-center text-blue-600 underline hover:text-blue-700 transition-colors font-medium"
 					href={link}
 					rel="noopener noreferrer"
 					target="_blank"
