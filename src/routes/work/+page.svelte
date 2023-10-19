@@ -4,6 +4,7 @@
 	import Cosgriff from '../../images/work/cosgriff.webp';
 	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.webp';
 	import Faktory from '../../images/work/faktory.webp';
+	import Hanks from '../../images/work/hanks-garage-venue.webp';
 	import HereKidsWin from '../../images/work/here-kids-win.webp';
 	import HeritageOfPreston from '../../images/work/heritage-of-preston.webp';
 	import JeremyMiller from '../../images/work/jeremy-miller.webp';
@@ -126,6 +127,14 @@
 				linkText="Visit Ravens Film Works"
 				poster={Ravens}
 				title={`Ravens Film Works`}
+				lazy={true}
+			/>
+			<WorkItem
+				description={`A rad event space in North Salt Lake. Dance, dine, and have fun amongst some of the greatest road machines ever conceived or built.`}
+				link={`https://www.hanksgaragevenue.com/`}
+				linkText="Visit Hanks Garage Venue"
+				poster={Hanks}
+				title={`Hanks Garage Venue`}
 				lazy={true}
 			/>
 			<WorkItem
