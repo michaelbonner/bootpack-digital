@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
 
-	const seoTitle = 'Open Source Projects | Bootpack Digital';
+	const seoTitle = 'Open Source Projects from Bootpack Digital';
 	const seoDescription =
 		'Open source is important to the modern web. We are committed to sharing tools we think will strengthen the web development community.';
 </script>

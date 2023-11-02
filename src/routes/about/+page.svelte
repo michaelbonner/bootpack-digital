@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import MichaelBonner from '../../images/michael-bonner.webp';
-	let seoTitle = 'About Us | Bootpack Digital';
+	let seoTitle = 'About Bootpack Digital, a Utah Based Web and App Development Agency';
 	let seoDescription =
 		'Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for.';
 </script>

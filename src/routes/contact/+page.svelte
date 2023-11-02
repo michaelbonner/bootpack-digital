@@ -2,7 +2,7 @@
 	import { Obfuscate } from 'svelte-obfuscate';
 	import ContactForm from '../../components/contact-form.svelte';
 
-	const seoTitle = 'Contact Us | Bootpack Digital';
+	const seoTitle = 'Get in Touch with Bootpack Digital';
 	const seoDescription =
 		'Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!';
 </script>

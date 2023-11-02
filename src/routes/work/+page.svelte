@@ -16,7 +16,7 @@
 	import WasatchCovers from '../../images/work/wasatch-covers.webp';
 	import ContactBanner from '../../components/contact-banner.svelte';
 
-	const seoTitle = 'Work | Bootpack Digital';
+	const seoTitle = 'Web Design & Development Portfolio from Bootpack Digital';
 	const seoDescription =
 		"We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of.";
 </script>
