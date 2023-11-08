@@ -1,7 +1,8 @@
 <script lang="ts">
+	import ContactBanner from '../../components/contact-banner.svelte';
 	import WorkItem from '../../components/work-item.svelte';
-	import CrewView from '../../images/work/crewview.webp';
 	import Cosgriff from '../../images/work/cosgriff.webp';
+	import CrewView from '../../images/work/crewview.webp';
 	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.webp';
 	import Faktory from '../../images/work/faktory.webp';
 	import Hanks from '../../images/work/hanks-garage-venue.webp';
@@ -10,11 +11,11 @@
 	import JeremyMiller from '../../images/work/jeremy-miller.webp';
 	import JMills from '../../images/work/jmills.webp';
 	import KnowYourForce from '../../images/work/know-your-force.webp';
+	import NEF from '../../images/work/national-energy-foundation.webp';
 	import Ravens from '../../images/work/ravens.webp';
 	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.webp';
 	import ThermWise from '../../images/work/thermwise.webp';
 	import WasatchCovers from '../../images/work/wasatch-covers.webp';
-	import ContactBanner from '../../components/contact-banner.svelte';
 
 	const seoTitle = 'Web Design & Development Portfolio from Bootpack Digital';
 	const seoDescription =
@@ -50,6 +51,13 @@
 				linkText="Visit Here Kids Win"
 				poster={HereKidsWin}
 				title={`Primary Children's Hospital | Here Kids Win`}
+			/>
+			<WorkItem
+				description={`National Energy Foundation (NEF) is a non-profit energy education organization that specializes in K-gray education. They needed a new website that represent their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update.`}
+				link={`https://nef1.org/`}
+				linkText="Visit NEF"
+				poster={NEF}
+				title={`National Energy Foundation`}
 			/>
 			<WorkItem
 				description={`Wasatch Covers was tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap, check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load.`}
