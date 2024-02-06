@@ -74,6 +74,14 @@
 				title={`JME Film Co`}
 			/>
 			<WorkItem
+				description={`A collaborative effort with the team at Blackthorn Software. Their CrewView software helps you run a better business by creating top to bottom visibility for every part of the project by providing a suite of management tools for companies of all sizes to keep track of their team members, projects, and even assets.`}
+				link={`https://www.crewview.com/`}
+				linkText={`Visit CrewView`}
+				poster={CrewView}
+				title={`CrewView`}
+				lazy={true}
+			/>
+			<WorkItem
 				description={`Know Your Force (KYF) is rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code, and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely. `}
 				link={`https://knowyourforce.com/`}
 				linkText="Visit KYF"
@@ -82,19 +90,19 @@
 				lazy={true}
 			/>
 			<WorkItem
-				description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
-				link={`https://www.heritageofpreston.com/`}
-				linkText="Visit Heritage Senior Living"
-				poster={HeritageOfPreston}
-				title={`Heritage Senior Living`}
-				lazy={true}
-			/>
-			<WorkItem
 				description={`A collaborative effort with the team at Dominion Energy and Faktory. The ThermWise program website aids homeowners and businesses in saving money and conserving energy.`}
 				link={`https://www.thermwise.com/`}
 				linkText="Visit ThermWise"
 				poster={ThermWise}
 				title={`ThermWise`}
+				lazy={true}
+			/>
+			<WorkItem
+				description={`Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos.`}
+				link={`https://www.heritageofpreston.com/`}
+				linkText="Visit Heritage Senior Living"
+				poster={HeritageOfPreston}
+				title={`Heritage Senior Living`}
 				lazy={true}
 			/>
 			<WorkItem
@@ -151,14 +159,6 @@
 				linkText="Visit The Doctors CBD"
 				poster={TheDoctorsCbd}
 				title={`The Doctors CBD`}
-				lazy={true}
-			/>
-			<WorkItem
-				description={`A collaborative effort with the team at Blackthorn Software. Their CrewView software helps you run a better business by creating top to bottom visibility for every part of the project by providing a suite of management tools for companies of all sizes to keep track of their team members, projects, and even assets.`}
-				link={`https://www.crewview.com/`}
-				linkText={`Visit CrewView`}
-				poster={CrewView}
-				title={`CrewView`}
 				lazy={true}
 			/>
 		</div>
