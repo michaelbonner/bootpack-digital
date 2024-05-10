@@ -13,6 +13,8 @@
 	<meta property="og:description" content={seoDescription} />
 	<meta name="twitter:title" content={seoTitle} />
 	<meta name="twitter:description" content={seoDescription} />
+
+	<link rel="canonical" href="https://bootpackdigital.com/about" />
 </svelte:head>
 
 <div class="relative overflow-hidden bg-white py-16 text-lg leading-8">

@@ -14,6 +14,8 @@
 	<meta property="og:description" content={seoDescription} />
 	<meta name="twitter:title" content={seoTitle} />
 	<meta name="twitter:description" content={seoDescription} />
+
+	<link rel="canonical" href="https://bootpackdigital.com/contact" />
 </svelte:head>
 
 <div class="bg-white pt-8">

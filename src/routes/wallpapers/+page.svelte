@@ -40,6 +40,8 @@
 	<meta property="og:description" content={seoDescription} />
 	<meta name="twitter:title" content={seoTitle} />
 	<meta name="twitter:description" content={seoDescription} />
+
+	<link rel="canonical" href="https://bootpackdigital.com/wallpapers" />
 </svelte:head>
 
 <div class="bg-white pt-8 pb-16">
@@ -58,7 +60,7 @@
 				<h2 class="text-2xl font-extrabold leading-9 text-navy-600 sm:text-3xl sm:leading-10">
 					{wallpaper.title}
 				</h2>
-				<div class="group relative  shadow-lg">
+				<div class="group relative shadow-lg">
 					<a href={wallpaper.src} download>
 						<img alt={`${wallpaper.title} Wallpaper`} src={wallpaper.src} width={wallpaper.width} />
 					</a>
