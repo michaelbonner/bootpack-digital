@@ -44,16 +44,8 @@
 		};
 	</script>
 	<!-- Insert `partytownSnippet` here -->
-	<!-- Insert `partytownSnippet` here -->
-	<!-- Insert `partytownSnippet` here -->
-	<!-- Insert `partytownSnippet` here -->
-	<!-- Insert `partytownSnippet` here -->
 	<script bind:this={scriptEl}></script>
 
-	<!-- GTM script + config -->
-	<!-- GTM script + config -->
-	<!-- GTM script + config -->
-	<!-- GTM script + config -->
 	<!-- GTM script + config -->
 	<script
 		type="text/partytown"
