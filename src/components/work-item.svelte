@@ -9,9 +9,7 @@
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
 	<a class="bg-blue-100" href={link} rel="noopener noreferrer" target="_blank">
-		<picture>
-			<enhanced:img alt={title} loading={lazy ? 'lazy' : 'eager'} src={poster} />
-		</picture>
+		<enhanced:img alt={title} loading={lazy ? 'lazy' : 'eager'} src={poster} />
 	</a>
 	<div class="flex flex-1 flex-col justify-between bg-white p-6">
 		<div class="flex-1">

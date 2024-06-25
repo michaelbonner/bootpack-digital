@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import MichaelBonner from '../../images/michael-bonner.webp?enhanced';
+
 	let seoTitle = 'About Bootpack Digital, a Utah Based Web and App Development Agency';
 	let seoDescription =
 		'Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for.';
@@ -51,9 +52,7 @@
 				<div
 					class="mt-4 h-80 w-full max-w-[460px] flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 shadow-md md:mx-auto md:mt-0 md:h-72 md:w-56"
 				>
-					<picture class="overflow-hidden">
-						<enhanced:img alt="Michael Bonner" loading="lazy" srcset={MichaelBonner} />
-					</picture>
+					<enhanced:img alt="Michael Bonner" loading="lazy" src={MichaelBonner} />
 				</div>
 
 				<div class="mt-4 flex flex-col justify-between lg:mt-0">
