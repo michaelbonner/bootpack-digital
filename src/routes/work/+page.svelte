@@ -1,22 +1,22 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import WorkItem from '../../components/work-item.svelte';
-	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.webp';
-	import Cosgriff from '../../images/work/cosgriff.webp';
-	import CrewView from '../../images/work/crewview.webp';
-	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.webp';
-	import Faktory from '../../images/work/faktory.webp';
-	import Hanks from '../../images/work/hanks-garage-venue.webp';
-	import HereKidsWin from '../../images/work/here-kids-win.webp';
-	import HeritageOfPreston from '../../images/work/heritage-of-preston.webp';
-	import JeremyMiller from '../../images/work/jeremy-miller.webp';
-	import JMills from '../../images/work/jmills.webp';
-	import KnowYourForce from '../../images/work/know-your-force.webp';
-	import NEF from '../../images/work/national-energy-foundation.webp';
-	import Ravens from '../../images/work/ravens.webp';
-	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.webp';
-	import ThermWise from '../../images/work/thermwise.webp';
-	import WasatchCovers from '../../images/work/wasatch-covers.webp';
+	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.webp?enhanced';
+	import Cosgriff from '../../images/work/cosgriff.webp?enhanced';
+	import CrewView from '../../images/work/crewview.webp?enhanced';
+	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.webp?enhanced';
+	import Faktory from '../../images/work/faktory.webp?enhanced';
+	import Hanks from '../../images/work/hanks-garage-venue.webp?enhanced';
+	import HereKidsWin from '../../images/work/here-kids-win.webp?enhanced';
+	import HeritageOfPreston from '../../images/work/heritage-of-preston.webp?enhanced';
+	import JeremyMiller from '../../images/work/jeremy-miller.webp?enhanced';
+	import JMills from '../../images/work/jmills.webp?enhanced';
+	import KnowYourForce from '../../images/work/know-your-force.webp?enhanced';
+	import NEF from '../../images/work/national-energy-foundation.webp?enhanced';
+	import Ravens from '../../images/work/ravens.webp?enhanced';
+	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.webp?enhanced';
+	import ThermWise from '../../images/work/thermwise.webp?enhanced';
+	import WasatchCovers from '../../images/work/wasatch-covers.webp?enhanced';
 
 	const seoTitle = 'Web Design & Development Portfolio from Bootpack Digital';
 	const seoDescription =
