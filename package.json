@@ -14,7 +14,6 @@
 	},
 	"devDependencies": {
 		"@builder.io/partytown": "^0.10.0",
-		"@sveltejs/adapter-auto": "^3.1.1",
 		"@sveltejs/enhanced-img": "^0.3.0",
 		"@sveltejs/kit": "^2.5.3",
 		"@tailwindcss/typography": "^0.5.10",
@@ -37,5 +36,8 @@
 		"typescript": "^5.4.2",
 		"vite": "^5.1.5"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/adapter-vercel": "^5.3.2"
+	}
 }
