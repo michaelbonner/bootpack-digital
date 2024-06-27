@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
-	import MichaelBonner from '../../images/michael-bonner.webp?enhanced';
+	import MichaelBonner from '../../images/michael-bonner.jpg?enhanced';
 
 	let seoTitle = 'About Bootpack Digital, a Utah Based Web and App Development Agency';
 	let seoDescription =
@@ -136,11 +136,14 @@
 	</div>
 </div>
 
-<div class="bg-white">
-	<div
-		class="mx-auto max-w-6xl bg-cover bg-right pb-48 md:bg-bottom md:pb-64"
-		style={`background-image: url("/images/bootpack-in-snow.webp");`}
-	>
+<div class="relative bg-white overflow-hidden">
+	<enhanced:img
+		class="absolute inset-0 object-cover object-right lg:object-bottom h-full w-full"
+		alt="Bootpack in snow"
+		loading="lazy"
+		src="../../images/bootpack-in-snow.jpg"
+	/>
+	<div class="relative mx-auto max-w-6xl pb-48 md:pb-80">
 		<div class="mx-auto max-w-3xl px-4 pt-12 text-gray-500">
 			<h2
 				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
