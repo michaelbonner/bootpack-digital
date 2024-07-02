@@ -17,6 +17,15 @@
 	<meta name="twitter:description" content={seoDescription} />
 
 	<link rel="canonical" href="https://bootpackdigital.com/" />
+
+	<link
+		as="image"
+		href="/images/blue-topo.svg"
+		imagesizes="100vw"
+		imagesrcset="/images/blue-topo.svg"
+		rel="preload"
+		type="image/svg+xml"
+	/>
 </svelte:head>
 
 <div class="hero-bg">
