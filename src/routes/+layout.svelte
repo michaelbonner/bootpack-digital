@@ -4,7 +4,7 @@
 	import { browser } from '$app/environment';
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
 	import { partytownSnippet } from '@builder.io/partytown/integration';
-	import posthog from 'posthog-js-lite';
+	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
