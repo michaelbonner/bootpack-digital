@@ -1,11 +1,13 @@
 <script lang="ts">
 	import '../app.css';
 
+	import { browser } from '$app/environment';
+	import { partytownSnippet } from '@builder.io/partytown/integration';
+	import posthog from 'posthog-js-lite';
 	import { onMount } from 'svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
 	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
-	import { partytownSnippet } from '@builder.io/partytown/integration';
 
 	let scriptEl: HTMLScriptElement;
 	onMount(async () => {
@@ -16,6 +18,18 @@
 			scriptEl.textContent = partytownSnippet();
 		}
 	});
+
+	export const load = async () => {
+		if (browser) {
+			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
+				api_host: '/ingest',
+				capture_pageleave: false,
+				capture_pageview: false,
+				ui_host: 'https://us.posthog.com'
+			});
+		}
+		return;
+	};
 </script>
 
 <svelte:head>
