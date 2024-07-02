@@ -2,6 +2,7 @@
 	import '../app.css';
 
 	import { browser } from '$app/environment';
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
 	import { partytownSnippet } from '@builder.io/partytown/integration';
 	import posthog from 'posthog-js-lite';
 	import { onMount } from 'svelte';
@@ -30,6 +31,12 @@
 		}
 		return;
 	};
+	load();
+
+	if (browser) {
+		beforeNavigate(() => posthog.capture('$pageleave'));
+		afterNavigate(() => posthog.capture('$pageview'));
+	}
 </script>
 
 <svelte:head>
