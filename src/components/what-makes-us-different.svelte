@@ -114,7 +114,10 @@
 									/></g
 								></svg
 							>
-							<span> Check out our Google PageSpeed score </span>
+							<span
+								>Check out our Google PageSpeed score
+								<span class="sr-only"> (opens a new tab)</span></span
+							>
 						</a>
 					</p>
 				</div>

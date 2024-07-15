@@ -149,7 +149,8 @@
 		This Website uses Google Analytics to collect information about you and your behaviors. If you
 		would like to opt out of Google Analytics, please visit <a
 			href="https://tools.google.com/dlpage/gaoptout/"
-			target="_blank">https://tools.google.com/dlpage/gaoptout/</a
+			target="_blank"
+			>https://tools.google.com/dlpage/gaoptout/<span class="sr-only"> (opens a new tab)</span></a
 		>.
 	</p>
 

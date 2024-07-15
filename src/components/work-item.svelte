@@ -12,6 +12,7 @@
 >
 	<a class="bg-blue-100" href={link} rel="noopener noreferrer" target="_blank">
 		<enhanced:img alt={title} loading={lazy ? 'lazy' : 'eager'} src={poster} />
+		<span class="sr-only"> (opens a new tab)</span>
 	</a>
 	<div class="flex flex-1 flex-col justify-between bg-white p-6">
 		<div class="flex-1">
@@ -22,6 +23,7 @@
 				<p class="mt-3 text-base leading-6 text-gray-500">
 					{description}
 				</p>
+				<span class="sr-only"> (opens a new tab)</span>
 			</a>
 		</div>
 		<div class="mt-6 flex items-center">
@@ -47,6 +49,7 @@
 						/></svg
 					>
 					{linkText}
+					<span class="sr-only"> (opens a new tab)</span>
 				</a>
 			</div>
 		</div>

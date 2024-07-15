@@ -178,6 +178,7 @@
 									/>
 								</g>
 							</svg>
+							<span class="sr-only"> (opens a new tab)</span>
 						</span>
 					</a>
 				</div>
