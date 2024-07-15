@@ -88,6 +88,8 @@
 
 <div class="leading-normal tracking-normal text-gray-900">
 	<Header />
-	<slot />
+	<main>
+		<slot />
+	</main>
 	<Footer />
 </div>
