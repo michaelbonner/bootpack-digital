@@ -49,6 +49,7 @@
 				First Name*
 			</label>
 			<input
+				aria-required="true"
 				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="firstName"
 				name="firstName"
@@ -67,6 +68,7 @@
 				Last Name*
 			</label>
 			<input
+				aria-required="true"
 				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="lastName"
 				name="lastName"
@@ -87,6 +89,7 @@
 				Email*
 			</label>
 			<input
+				aria-required="true"
 				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="email"
 				name="email"
@@ -137,6 +140,7 @@
 				How Can We Help?*
 			</label>
 			<textarea
+				aria-required="true"
 				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
 				id="message"
 				name="message"
