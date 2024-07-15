@@ -68,11 +68,12 @@
 						class="pointer-events-none absolute bottom-2 right-2 rounded-md bg-white p-2 opacity-100 transition-opacity group-hover:opacity-100 md:opacity-0"
 					>
 						<svg
-							stroke="currentColor"
 							fill="none"
-							stroke-width="0"
-							viewBox="0 0 24 24"
 							height="1em"
+							role="presentation"
+							stroke-width="0"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
 							width="1em"
 							xmlns="http://www.w3.org/2000/svg"
 							><path
