@@ -66,7 +66,7 @@
 				</p>
 				<div class="mt-3">
 					<a
-						class="text-base font-semibold leading-6 text-orange-600 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
 						href="https://github.com/michaelbonner/is-it-down"
 					>
 						See Is It Down Checker Code on GitHub
@@ -84,7 +84,7 @@
 				</p>
 				<div class="mt-3">
 					<a
-						class="text-base font-semibold leading-6 text-orange-600 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
 						href="https://github.com/michaelbonner/redirects-wizard"
 					>
 						See Redirects Wizard Code on GitHub
@@ -103,7 +103,7 @@
 				</p>
 				<div class="mt-3">
 					<a
-						class="text-base font-semibold leading-6 text-orange-600 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
 						href="https://github.com/michaelbonner/is-it-down"
 					>
 						See Is It Down Checker Code on GitHub
