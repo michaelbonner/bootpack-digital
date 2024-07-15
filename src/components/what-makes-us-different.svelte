@@ -92,6 +92,7 @@
 							<svg
 								class="h-5 w-5 transition-transform group-hover:scale-110"
 								height="2500"
+								role="presentation"
 								width="2500"
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 512 520.331"
