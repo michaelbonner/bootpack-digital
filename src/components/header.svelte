@@ -19,7 +19,7 @@
 	];
 </script>
 
-<div class="sticky top-0 z-20 mx-auto w-full bg-white px-6 py-2 shadow-md lg:shadow-none">
+<header class="sticky top-0 z-20 mx-auto w-full bg-white px-6 py-2 shadow-md lg:shadow-none">
 	<div class="flex w-full items-center justify-between 2xl:px-4">
 		<div class="flex w-full items-center justify-between">
 			<a
@@ -59,4 +59,4 @@
 
 		<MobileNav />
 	</div>
-</div>
+</header>
