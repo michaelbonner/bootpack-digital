@@ -2,6 +2,7 @@
 	import Brands from '../components/brands.svelte';
 	import ContactForm from '../components/contact-form.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
+	import BlueTopo from '../images/blue-topo.svg';
 
 	const seoTitle = 'Custom web and app developer in Utah | Bootpack Digital';
 	const seoDescription =
@@ -17,19 +18,21 @@
 	<meta name="twitter:description" content={seoDescription} />
 
 	<link rel="canonical" href="https://bootpackdigital.com/" />
-
-	<link
-		as="image"
-		href="/images/blue-topo.svg"
-		imagesizes="100vw"
-		imagesrcset="/images/blue-topo.svg"
-		rel="preload"
-		type="image/svg+xml"
-	/>
 </svelte:head>
 
-<div class="hero-bg">
-	<div class="container mx-auto lg:py-12">
+<div class="hero-bg relative bg-blue-50">
+	<div class="absolute inset-0 h-full w-full overflow-hidden flex opacity-80">
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+	</div>
+	<div class="relative container mx-auto lg:py-12">
 		<div
 			class="mx-auto flex w-full max-w-screen-xl flex-col flex-wrap items-center py-12 px-6 md:flex-row md:py-24"
 		>
