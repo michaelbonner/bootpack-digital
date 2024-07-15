@@ -22,15 +22,78 @@
 
 <div class="hero-bg relative bg-blue-50">
 	<div class="absolute inset-0 h-full w-full overflow-hidden flex opacity-80">
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
-		<img class="min-h-full" src={BlueTopo} alt="Blue topographic map" width="740" height="740" />
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
+		<img
+			loading="eager"
+			class="min-h-full"
+			src={BlueTopo}
+			alt="Blue topographic map"
+			width="740"
+			height="740"
+		/>
 	</div>
 	<div class="relative container mx-auto lg:py-12">
 		<div
