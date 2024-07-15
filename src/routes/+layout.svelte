@@ -87,8 +87,11 @@
 </svelte:head>
 
 <div class="leading-normal tracking-normal text-gray-900">
+	<div class="sr-only text-right bg-white p-2">
+		<a class="border py-1 px-2" href="#main-content">Skip to main content</a>
+	</div>
 	<Header />
-	<main>
+	<main id="main-content">
 		<slot />
 	</main>
 	<Footer />
