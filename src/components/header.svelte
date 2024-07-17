@@ -6,6 +6,10 @@
 
 	const mainLinks = [
 		{
+			label: 'Home',
+			url: '/'
+		},
+		{
 			label: 'Work',
 			url: '/work'
 		},
@@ -47,7 +51,7 @@
 			<div class="hidden items-center lg:flex">
 				{#each mainLinks as link}
 					<a
-						class={`px-4 text-xl font-semibold text-navy-500 hover:underline hover:decoration-blue-400 ${
+						class={`px-3 text-lg font-semibold text-navy-500 hover:underline hover:decoration-blue-400 ${
 							$page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}
