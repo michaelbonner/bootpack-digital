@@ -44,6 +44,21 @@ export async function GET() {
             <changefreq>daily</changefreq>
             <priority>0.7</priority>
         </url>
+        <url>
+            <loc>${website}/policies/privacy-policy</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+        </url>
+        <url>
+            <loc>${website}/policies/cookie-policy</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+        </url>
+        <url>
+            <loc>${website}/policies/terms-of-service</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+        </url>
       </urlset>`,
 		{ headers: headers }
 	);
