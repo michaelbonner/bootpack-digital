@@ -20,7 +20,7 @@
 </svelte:head>
 
 <div class="bg-white pb-16 pt-8">
-	<div class="container mx-auto mt-16 max-w-5xl px-4 text-gray-700">
+	<div class="container mx-auto mt-8 max-w-5xl px-4 text-gray-700">
 		<Links />
 
 		<h1 class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:leading-10 mt-10">

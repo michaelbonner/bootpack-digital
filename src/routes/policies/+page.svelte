@@ -34,7 +34,9 @@
 			</p>
 		</div>
 
-		<Links />
+		<div class="mt-10">
+			<Links />
+		</div>
 	</div>
 </div>
 
