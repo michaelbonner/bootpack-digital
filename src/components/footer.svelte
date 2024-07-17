@@ -31,7 +31,7 @@
 </script>
 
 <footer class="items-center justify-between py-8 text-navy-100 lg:flex lg:py-0">
-	<nav class="w-full items-end justify-between p-4 pb-12 text-sm md:p-8 md:pb-24 lg:flex">
+	<nav class="w-full items-end justify-between p-4 pb-12 text-sm md:p-8 md:pb-36 lg:flex">
 		<div class="block items-center px-4 text-lg lg:flex lg:px-0">
 			<p class="mb-4 mr-12 text-sm lg:mb-0">
 				&copy; {new Date().getFullYear()} Bootpack Digital, LLC
