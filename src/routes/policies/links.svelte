@@ -1,4 +1,4 @@
-<div class="flex flex-wrap gap-y-4 gap-x-8">
+<div class="flex flex-wrap gap-y-4 gap-x-8 view-transition-policy-links">
 	<a href="/policies/privacy-policy" class="text-navy-600 underline">Privacy Policy</a>
 
 	<a href="/policies/cookie-policy" class="text-navy-600 underline">Cookie Policy</a>

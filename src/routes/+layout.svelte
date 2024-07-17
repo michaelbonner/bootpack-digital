@@ -2,13 +2,24 @@
 	import '../app.css';
 
 	import { browser } from '$app/environment';
-	import { afterNavigate, beforeNavigate } from '$app/navigation';
+	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
 	import { partytownSnippet } from '@builder.io/partytown/integration';
 	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
 	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
+
+	onNavigate((navigation) => {
+		if (!(document as any).startViewTransition) return;
+
+		return new Promise((resolve) => {
+			(document as any).startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 
 	let scriptEl: HTMLScriptElement;
 	onMount(async () => {
