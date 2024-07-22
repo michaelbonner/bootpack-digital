@@ -16,7 +16,7 @@
 	<meta name="twitter:description" content={seoDescription} />
 	<script src="https://app.termageddon.com/js/termageddon.js"></script>
 
-	<link rel="canonical" href="https://bootpackdigital.com/policies" />
+	<link rel="canonical" href="https://bootpackdigital.com/policies/terms-of-service" />
 </svelte:head>
 
 <div class="bg-white pb-16 pt-8">
