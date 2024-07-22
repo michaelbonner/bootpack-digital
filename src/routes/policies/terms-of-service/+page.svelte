@@ -12,6 +12,7 @@
 	<meta name="description" content={seoDescription} />
 	<meta property="og:title" content={seoTitle} />
 	<meta property="og:description" content={seoDescription} />
+	<meta property="og:url" content="https://bootpackdigital.com/policies/terms-of-service" />
 	<meta name="twitter:title" content={seoTitle} />
 	<meta name="twitter:description" content={seoDescription} />
 	<script src="https://app.termageddon.com/js/termageddon.js"></script>

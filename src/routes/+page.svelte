@@ -14,6 +14,7 @@
 	<meta name="description" content={seoDescription} />
 	<meta property="og:title" content={seoTitle} />
 	<meta property="og:description" content={seoDescription} />
+	<meta property="og:url" content="https://bootpackdigital.com" />
 	<meta name="twitter:title" content={seoTitle} />
 	<meta name="twitter:description" content={seoDescription} />
 

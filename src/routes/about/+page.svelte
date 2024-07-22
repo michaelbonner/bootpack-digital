@@ -12,6 +12,7 @@
 	<meta name="description" content={seoDescription} />
 	<meta property="og:title" content={seoTitle} />
 	<meta property="og:description" content={seoDescription} />
+	<meta property="og:url" content="https://bootpackdigital.com/about" />
 	<meta name="twitter:title" content={seoTitle} />
 	<meta name="twitter:description" content={seoDescription} />
 
@@ -153,7 +154,7 @@
 			<p class="mt-4">
 				We're from Utah and we love skiing. Sometimes when you are skiing you need to unclip and
 				hike your way to find the best snow. To get there you can follow a boot pack, which is where
-				other hikers have hiked up a section too steap to skin up. The boot pack helps make the
+				other hikers have hiked up a section too steep to skin up. The boot pack helps make the
 				journey easier. That's where we come in; our goal is to help you, and your business, get to
 				the next level. We've spent years laying a solid boot pack of experience, now we want to
 				help you and your product reach new heights.
