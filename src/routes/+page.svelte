@@ -6,7 +6,7 @@
 
 	const seoTitle = 'Custom web and app developer in Utah | Bootpack Digital';
 	const seoDescription =
-		'We build websites, mobile applications, and web software. We want to help you turn your ideas into realities. We understand how to build quality software, and we understand what it takes for a business to succeed.';
+		'We develop websites, mobile apps, and web software to turn your ideas into reality, delivering quality solutions essential for business success.';
 </script>
 
 <svelte:head>
