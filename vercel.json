@@ -20,7 +20,7 @@
 	"redirects": [
 		{
 			"source": "/schedule-a-call",
-			"destination": "https://savvycal.com/bootpack/30-minute-project-discussion",
+			"destination": "https://savvycal.com/bootpack/30-minute-project-discussion?utm_source=schedule-a-call",
 			"permanent": true
 		}
 	]
