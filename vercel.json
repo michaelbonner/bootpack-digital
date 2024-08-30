@@ -16,5 +16,12 @@
 			"source": "/proxytown/ga",
 			"destination": "https://www.google-analytics.com/analytics.js"
 		}
+	],
+	"redirects": [
+		{
+			"source": "/schedule-a-call",
+			"destination": "https://savvycal.com/bootpack/30-minute-project-discussion",
+			"permanent": true
+		}
 	]
 }
