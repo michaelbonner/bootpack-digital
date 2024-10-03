@@ -5,7 +5,6 @@
 	import Cosgriff from '../../images/work/cosgriff.jpg?enhanced';
 	import CrewView from '../../images/work/crewview.jpg?enhanced';
 	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.jpg?enhanced';
-	import Faktory from '../../images/work/faktory.jpg?enhanced';
 	import Hanks from '../../images/work/hanks-garage-venue.jpg?enhanced';
 	import HereKidsWin from '../../images/work/here-kids-win.jpg?enhanced';
 	import HeritageOfPreston from '../../images/work/heritage-of-preston.jpg?enhanced';
@@ -138,14 +137,6 @@
 				linkText="Visit Cosgriff School"
 				poster={Cosgriff}
 				title={`J.E. Cosgriff School`}
-				lazy={true}
-			/>
-			<WorkItem
-				description="Faktory is a creative agency that needed a refresh of their old site. We worked with their designers and content team to build a site that would showcase their work and establish their brand."
-				link={`https://www.faktoryagency.com/`}
-				linkText="Visit Faktory Agency"
-				poster={Faktory}
-				title={`Faktory`}
 				lazy={true}
 			/>
 			<WorkItem
