@@ -1,10 +1,13 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import WorkItem from '../../components/work-item.svelte';
+
+	// images
 	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?enhanced';
 	import Cosgriff from '../../images/work/cosgriff.jpg?enhanced';
 	import CrewView from '../../images/work/crewview.jpg?enhanced';
 	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.jpg?enhanced';
+	import DKOW from '../../images/work/dkow.jpg?enhanced';
 	import Hanks from '../../images/work/hanks-garage-venue.jpg?enhanced';
 	import HereKidsWin from '../../images/work/here-kids-win.jpg?enhanced';
 	import HeritageOfPreston from '../../images/work/heritage-of-preston.jpg?enhanced';
@@ -54,6 +57,13 @@
 				linkText="Visit Here Kids Win"
 				poster={HereKidsWin}
 				title={`Primary Children's Hospital | Here Kids Win`}
+			/>
+			<WorkItem
+				description="DKOW is a Utah's most trusted name for wrongful death and personal injury law. They needed a site that would help them showcase their expertise and help them connect with potential clients."
+				link={`https://www.dkow.com/`}
+				linkText="Visit DKOW"
+				poster={DKOW}
+				title={`DKOW Law`}
 			/>
 			<WorkItem
 				description="National Energy Foundation (NEF) is a non-profit energy education organization that specializes in K-gray education. They needed a new website that represent their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update."
