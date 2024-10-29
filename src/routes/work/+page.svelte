@@ -37,11 +37,11 @@
 	<link rel="canonical" href="https://bootpackdigital.com/work" />
 </svelte:head>
 
-<div class="hero-bg relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 bg-white">
+<div class="relative px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 hero-bg">
 	<div class="relative mx-auto max-w-7xl">
 		<div>
 			<h1
-				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
+				class="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 text-navy-600"
 			>
 				Custom Web Design and Development Projects
 			</h1>
@@ -50,7 +50,7 @@
 				particularly proud of.
 			</p>
 		</div>
-		<div class="mx-auto mt-12 grid max-w-lg gap-x-5 gap-y-10 lg:max-w-none lg:grid-cols-3">
+		<div class="grid gap-x-5 gap-y-10 mx-auto mt-12 max-w-lg lg:grid-cols-3 lg:max-w-none">
 			<WorkItem
 				description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands.`}
 				link="https://herekidswin.com/"

@@ -19,14 +19,14 @@
 	<link rel="canonical" href="https://bootpackdigital.com/about" />
 </svelte:head>
 
-<div class="relative overflow-hidden bg-white py-16 text-lg leading-8">
+<div class="overflow-hidden relative py-16 text-lg leading-8 bg-white">
 	<div class="relative px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto mb-6 max-w-3xl text-lg">
 			<h1
-				class="mb-6 text-3xl font-extrabold tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
+				class="mb-6 text-3xl font-extrabold tracking-tight sm:text-4xl sm:leading-10 text-navy-600"
 			>
 				<span
-					class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-700"
+					class="block text-base font-semibold tracking-wide leading-6 text-orange-700 uppercase"
 				>
 					Introducing
 				</span>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="mx-auto mt-12 max-w-3xl text-gray-500">
 			<h2
-				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
+				class="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 text-navy-600"
 			>
 				Who are we?
 			</h2>
@@ -51,16 +51,16 @@
 		<div class="mx-auto mt-8 max-w-3xl">
 			<div class="items-start sm:grid sm:gap-6 lg:flex lg:gap-8">
 				<div
-					class="mt-4 h-80 w-full max-w-[460px] flex-shrink-0 overflow-hidden rounded-xl bg-gray-100 shadow-md md:mx-auto md:mt-0 md:h-72 md:w-56"
+					class="overflow-hidden flex-shrink-0 mt-4 w-full h-80 bg-gray-100 rounded-xl shadow-md md:mx-auto md:mt-0 md:w-56 md:h-72 max-w-[460px]"
 				>
 					<enhanced:img alt="Michael Bonner" loading="lazy" src={MichaelBonner} />
 				</div>
 
-				<div class="mt-4 flex flex-col justify-between lg:mt-0">
+				<div class="flex flex-col justify-between mt-4 lg:mt-0">
 					<div class="gap-y-4">
 						<div>
 							<p
-								class="block text-base font-semibold uppercase leading-6 tracking-wide text-orange-700"
+								class="block text-base font-semibold tracking-wide leading-6 text-orange-700 uppercase"
 							>
 								Founder
 							</p>
@@ -73,10 +73,10 @@
 							different companies, including managing a development team for 5 years.
 						</p>
 					</div>
-					<div class="mt-4 flex gap-4">
+					<div class="flex gap-4 mt-4">
 						<a href="https://www.linkedin.com/in/michaelbonner/" title="LinkedIn">
 							<svg
-								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -88,7 +88,7 @@
 						</a>
 						<a href="https://www.instagram.com/michael__bonner/" title="Instagram">
 							<svg
-								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -103,7 +103,7 @@
 						</a>
 						<a href="https://github.com/michaelbonner" title="GitHub">
 							<svg
-								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -115,7 +115,7 @@
 						</a>
 						<a href="https://michaelbonner.dev/" title="Personal Website">
 							<svg
-								class="h-8 w-8 fill-current text-blue-600 transition-all ease-in-out hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -137,17 +137,17 @@
 	</div>
 </div>
 
-<div class="relative bg-white overflow-hidden">
+<div class="overflow-hidden relative bg-white">
 	<enhanced:img
-		class="absolute inset-0 object-cover object-right lg:object-bottom h-full w-full"
+		class="object-cover object-right absolute inset-0 w-full h-full lg:object-bottom"
 		alt="Bootpack in snow"
 		loading="lazy"
 		src="../../images/bootpack-in-snow.jpg"
 	/>
-	<div class="relative mx-auto max-w-6xl pb-48 md:pb-80">
-		<div class="mx-auto max-w-3xl px-4 pt-12 text-gray-500">
+	<div class="relative pb-48 mx-auto max-w-6xl md:pb-80">
+		<div class="px-4 pt-12 mx-auto max-w-3xl text-gray-500">
 			<h2
-				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
+				class="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 text-navy-600"
 			>
 				Why the name "Bootpack"?
 			</h2>

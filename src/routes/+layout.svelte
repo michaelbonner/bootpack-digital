@@ -97,9 +97,9 @@
 	</script>
 </svelte:head>
 
-<div class="leading-normal tracking-normal text-gray-900">
-	<div class="sr-only text-right bg-white p-2">
-		<a class="border py-1 px-2" href="#main-content">Skip to main content</a>
+<div class="tracking-normal leading-normal text-gray-900">
+	<div class="p-2 text-right bg-white sr-only">
+		<a class="py-1 px-2 border" href="#main-content">Skip to main content</a>
 	</div>
 	<Header />
 	<main id="main-content">

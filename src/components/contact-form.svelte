@@ -43,14 +43,14 @@
 	name="contact"
 	on:submit|preventDefault={handleSubmit}
 >
-	<div class="-mx-3 mt-8 mb-6 flex flex-wrap">
-		<div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
-			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="firstName">
+	<div class="flex flex-wrap -mx-3 mt-8 mb-6">
+		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
+			<label class="block mb-2 text-xs font-bold tracking-wide text-gray-700" for="firstName">
 				First Name*
 			</label>
 			<input
 				aria-required="true"
-				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
 				id="firstName"
 				name="firstName"
 				placeholder="Jane"
@@ -63,13 +63,13 @@
 				{/if}
 			</p>
 		</div>
-		<div class="w-full px-3 md:w-1/2">
-			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="lastName">
+		<div class="px-3 w-full md:w-1/2">
+			<label class="block mb-2 text-xs font-bold tracking-wide text-gray-700" for="lastName">
 				Last Name*
 			</label>
 			<input
 				aria-required="true"
-				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
 				id="lastName"
 				name="lastName"
 				placeholder="Doe"
@@ -83,14 +83,14 @@
 			</p>
 		</div>
 	</div>
-	<div class="-mx-3 mb-6 flex flex-wrap">
-		<div class="mb-0 w-full px-3">
-			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="email">
+	<div class="flex flex-wrap -mx-3 mb-6">
+		<div class="px-3 mb-0 w-full">
+			<label class="block mb-2 text-xs font-bold tracking-wide text-gray-700" for="email">
 				Email*
 			</label>
 			<input
 				aria-required="true"
-				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
 				id="email"
 				name="email"
 				placeholder="jane@company.com"
@@ -102,13 +102,13 @@
 			{/if}
 		</div>
 	</div>
-	<div class="-mx-3 mb-6 flex flex-wrap">
-		<div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
-			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="company">
+	<div class="flex flex-wrap -mx-3 mb-6">
+		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
+			<label class="block mb-2 text-xs font-bold tracking-wide text-gray-700" for="company">
 				Company
 			</label>
 			<input
-				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
 				id="company"
 				name="company"
 				placeholder="Company Name"
@@ -118,12 +118,12 @@
 				{errors.company}
 			{/if}
 		</div>
-		<div class="w-full px-3 md:w-1/2">
-			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="phone">
+		<div class="px-3 w-full md:w-1/2">
+			<label class="block mb-2 text-xs font-bold tracking-wide text-gray-700" for="phone">
 				Phone Number
 			</label>
 			<input
-				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
 				id="phone"
 				name="phone"
 				placeholder="801-111-2222"
@@ -134,14 +134,14 @@
 			{/if}
 		</div>
 	</div>
-	<div class="-mx-3 mb-6 flex flex-wrap">
-		<div class="mb-6 w-full px-3 md:mb-0">
-			<label class="mb-2 block text-xs font-bold tracking-wide text-gray-700" for="message">
+	<div class="flex flex-wrap -mx-3 mb-6">
+		<div class="px-3 mb-6 w-full md:mb-0">
+			<label class="block mb-2 text-xs font-bold tracking-wide text-gray-700" for="message">
 				How Can We Help?*
 			</label>
 			<textarea
 				aria-required="true"
-				class="block w-full appearance-none rounded border border-gray-100 bg-gray-100 py-3 px-4 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
 				id="message"
 				name="message"
 				placeholder="Please give us details about what you're trying to accomplish"
@@ -161,7 +161,7 @@
 		</p>
 	{/if}
 	<button
-		class="focus:shadow-outline w-full rounded-md border border-transparent bg-orange-700 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none lg:w-auto"
+		class="py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-orange-600 focus:outline-none focus:shadow-outline"
 		disabled={isSubmitting}
 		type="submit"
 	>

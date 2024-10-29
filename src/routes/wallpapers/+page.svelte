@@ -45,10 +45,10 @@
 	<link rel="canonical" href="https://bootpackdigital.com/wallpapers" />
 </svelte:head>
 
-<div class="bg-white pt-8 pb-16">
-	<div class="container mx-auto mt-16 grid max-w-5xl gap-16 px-4 text-gray-700">
+<div class="pt-8 pb-16 bg-white">
+	<div class="container grid gap-16 px-4 mx-auto mt-16 max-w-5xl text-gray-700">
 		<div>
-			<h1 class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:leading-10">
+			<h1 class="text-3xl font-extrabold tracking-tight leading-9 sm:leading-10 text-navy-600">
 				Wallpapers
 			</h1>
 			<p class="mt-4 text-lg leading-7 text-gray-500">
@@ -57,16 +57,16 @@
 			</p>
 		</div>
 		{#each wallpapers as wallpaper}
-			<div class="grid justify-start gap-4">
-				<h2 class="text-2xl font-extrabold leading-9 text-navy-600 sm:text-3xl sm:leading-10">
+			<div class="grid gap-4 justify-start">
+				<h2 class="text-2xl font-extrabold leading-9 sm:text-3xl sm:leading-10 text-navy-600">
 					{wallpaper.title}
 				</h2>
-				<div class="group relative shadow-lg">
+				<div class="relative shadow-lg group">
 					<a href={wallpaper.src} download>
 						<img alt={`${wallpaper.title} Wallpaper`} src={wallpaper.src} width={wallpaper.width} />
 					</a>
 					<div
-						class="pointer-events-none absolute bottom-2 right-2 rounded-md bg-white p-2 opacity-100 transition-opacity group-hover:opacity-100 md:opacity-0"
+						class="absolute right-2 bottom-2 p-2 bg-white rounded-md opacity-100 transition-opacity pointer-events-none md:opacity-0 group-hover:opacity-100"
 					>
 						<svg
 							fill="none"

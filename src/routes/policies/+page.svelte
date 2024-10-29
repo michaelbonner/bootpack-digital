@@ -20,17 +20,17 @@
 	<link rel="canonical" href="https://bootpackdigital.com/policies" />
 </svelte:head>
 
-<div class="bg-white pb-16 pt-8">
-	<div class="container mx-auto mt-16 max-w-5xl px-4 text-gray-700">
-		<h1 class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:leading-10">
+<div class="pt-8 pb-16 bg-white">
+	<div class="container px-4 mx-auto mt-16 max-w-5xl text-gray-700">
+		<h1 class="text-3xl font-extrabold tracking-tight leading-9 sm:leading-10 text-navy-600">
 			Privacy Policy and Terms of Service
 		</h1>
 
-		<div class="prose mt-8">
+		<div class="mt-8 prose">
 			<p>
 				We take your privacy seriously. These policies describe how we collect and use information
 				about you when you use our website. Please read them carefully. If you have any questions,
-				please <a href="/contact" class="text-navy-600 underline">contact us</a>. We're happy to
+				please <a href="/contact" class="underline text-navy-600">contact us</a>. We're happy to
 				help.
 			</p>
 		</div>

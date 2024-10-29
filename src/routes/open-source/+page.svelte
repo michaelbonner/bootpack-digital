@@ -18,11 +18,11 @@
 	<link rel="canonical" href="https://bootpackdigital.com/open-source" />
 </svelte:head>
 
-<div class="hero-bg to-gray-100 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 bg-white">
-	<div class="relative mx-auto max-w-lg lg:max-w-3xl lg:px-4">
+<div class="px-4 pt-16 pb-20 bg-white to-gray-100 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 hero-bg">
+	<div class="relative mx-auto max-w-lg lg:px-4 lg:max-w-3xl">
 		<div>
 			<h1
-				class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:text-4xl sm:leading-10"
+				class="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 text-navy-600"
 			>
 				Open Source Projects
 			</h1>
@@ -34,13 +34,13 @@
 				</p>
 			</div>
 
-			<div class="mt-4 inline-flex text-gray-500 text-sm">
+			<div class="inline-flex mt-4 text-sm text-gray-500">
 				<a
-					class="group flex items-center gap-2 rounded-lg border bg-white py-2 px-5 shadow-sm transition-colors hover:text-navy-800 hover:underline"
+					class="flex gap-2 items-center py-2 px-5 bg-white rounded-lg border shadow-sm transition-colors hover:underline group hover:text-navy-800"
 					href="https://github.com/michaelbonner?tab=repositories&q=&type=source&language=&sort=&utm_source=bootpackdigital.com/open-source"
 				>
 					<svg
-						class="h-5 scale-90 fill-current text-gray-600 transition-all group-hover:scale-100 group-hover:text-blue-600"
+						class="h-5 text-gray-600 transition-all scale-90 fill-current group-hover:text-blue-600 group-hover:scale-100"
 						viewBox="0 0 512 512"
 						xmlns="http://www.w3.org/2000/svg"
 					>
@@ -53,8 +53,8 @@
 				</a>
 			</div>
 		</div>
-		<div class="mt-6 lg:mt-10 grid gap-4 lg:grid-cols-2">
-			<div class="lg:border rounded-lg p-2 lg:p-8">
+		<div class="grid gap-4 mt-6 lg:grid-cols-2 lg:mt-10">
+			<div class="p-2 rounded-lg lg:p-8 lg:border">
 				<a class="block hover:underline" href="https://github.com/michaelbonner/pagespeed">
 					<h2 class="text-xl font-semibold leading-7 text-gray-900">PageSpeed</h2>
 				</a>
@@ -75,7 +75,7 @@
 				</div>
 			</div>
 
-			<div class="lg:border rounded-lg p-2 lg:p-8">
+			<div class="p-2 rounded-lg lg:p-8 lg:border">
 				<a class="block hover:underline" href="https://github.com/michaelbonner/redirects-wizard">
 					<h2 class="text-xl font-semibold leading-7 text-gray-900">Redirects Wizard</h2>
 				</a>
@@ -93,7 +93,7 @@
 				</div>
 			</div>
 
-			<div class="lg:border rounded-lg p-2 lg:p-8">
+			<div class="p-2 rounded-lg lg:p-8 lg:border">
 				<a class="block hover:underline" href="https://github.com/michaelbonner/is-it-down">
 					<h2 class="text-xl font-semibold leading-7 text-gray-900">Is It Down Checker</h2>
 				</a>

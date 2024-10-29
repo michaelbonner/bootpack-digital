@@ -13,8 +13,8 @@
 	<meta name="twitter:description" content={seoDescription} />
 </svelte:head>
 
-<div class="bg-white pt-8 pb-16">
-	<div class="container prose mx-auto mt-16 max-w-5xl px-4 text-gray-700">
+<div class="pt-8 pb-16 bg-white">
+	<div class="container px-4 mx-auto mt-16 max-w-5xl text-gray-700 prose">
 		<h1>You shouldn't be here</h1>
 
 		<p>

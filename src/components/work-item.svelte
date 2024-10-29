@@ -14,7 +14,7 @@
 		<enhanced:img alt={title} loading={lazy ? 'lazy' : 'eager'} src={poster} />
 		<span class="sr-only"> (opens a new tab)</span>
 	</a>
-	<div class="flex flex-1 flex-col justify-between bg-white p-6">
+	<div class="flex flex-col flex-1 justify-between p-6 bg-white">
 		<div class="flex-1">
 			<a class="block" href={link} rel="noopener noreferrer" target="_blank">
 				<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900 hover:underline">
@@ -26,10 +26,10 @@
 				<span class="sr-only"> (opens a new tab)</span>
 			</a>
 		</div>
-		<div class="mt-6 flex items-center">
+		<div class="flex items-center mt-6">
 			<div class="flex-shrink-0">
 				<a
-					class="flex gap-2 items-center text-blue-600 underline hover:text-blue-700 transition-colors font-medium"
+					class="flex gap-2 items-center font-medium text-blue-600 underline transition-colors hover:text-blue-700"
 					href={link}
 					rel="noopener noreferrer"
 					target="_blank"

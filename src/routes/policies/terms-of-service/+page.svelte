@@ -20,15 +20,15 @@
 	<link rel="canonical" href="https://bootpackdigital.com/policies/terms-of-service" />
 </svelte:head>
 
-<div class="bg-white pb-16 pt-8">
-	<div class="container mx-auto mt-8 max-w-5xl px-4 text-gray-700">
+<div class="pt-8 pb-16 bg-white">
+	<div class="container px-4 mx-auto mt-8 max-w-5xl text-gray-700">
 		<Links />
 
-		<h1 class="text-3xl font-extrabold leading-9 tracking-tight text-navy-600 sm:leading-10 mt-10">
+		<h1 class="mt-10 text-3xl font-extrabold tracking-tight leading-9 sm:leading-10 text-navy-600">
 			Terms of Service
 		</h1>
 
-		<div class="prose max-w-3xl pt-4">
+		<div class="pt-4 max-w-3xl prose">
 			<article>
 				<p class="tg-last-updated-date">Last updated: Jul 17, 2024 1:32 PM</p>
 				<p>

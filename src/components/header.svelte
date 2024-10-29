@@ -24,9 +24,9 @@
 	];
 </script>
 
-<header class="sticky top-0 z-20 mx-auto w-full bg-white px-6 py-2 shadow-md lg:shadow-none">
-	<div class="flex w-full items-center justify-between 2xl:px-4">
-		<div class="flex w-full items-center justify-between">
+<header class="sticky top-0 z-20 py-2 px-6 mx-auto w-full bg-white shadow-md lg:shadow-none">
+	<div class="flex justify-between items-center w-full 2xl:px-4">
+		<div class="flex justify-between items-center w-full">
 			<object
 				class={clsx('cursor-pointer h-16 -ml-4', 'lg:h-[80px] lg:py-0 lg:-my-2 lg:-ml-4')}
 				data="/images/bootpack-horizontal-animated.svg"
@@ -40,7 +40,7 @@
 				>
 					<img
 						alt="Bootpack Digital"
-						class="lg:h-18 h-14 py-2 lg:py-2"
+						class="py-2 h-14 lg:py-2 lg:h-18"
 						height="45"
 						width="218"
 						src={BootpackHorizontal}
@@ -61,7 +61,7 @@
 					</a>
 				{/each}
 				<a
-					class="focus:shadow-outline flex items-center justify-center rounded-md border border-transparent bg-orange-700 px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none lg:ml-4"
+					class="flex justify-center items-center py-2 px-4 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out lg:ml-4 hover:bg-orange-600 focus:outline-none focus:shadow-outline"
 					href="/contact"
 				>
 					Request a Quote

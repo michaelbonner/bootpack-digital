@@ -58,7 +58,7 @@
 		class={`grid gap-2 absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-md border border-gray-100 py-4 px-6 rounded-md`}
 	>
 		<button
-			class="absolute right-3 top-5 h-6 w-6 font-semibold text-orange-500"
+			class="absolute right-3 top-5 w-6 h-6 font-semibold text-orange-500"
 			on:click={() => (mobileNavOpen = !mobileNavOpen)}
 		>
 			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -73,12 +73,12 @@
 		</button>
 
 		<a
-			class="mr-0 flex items-center text-2xl font-bold text-blue-400 no-underline hover:no-underline lg:mr-8 lg:text-4xl"
+			class="flex items-center mr-0 text-2xl font-bold text-blue-400 no-underline lg:mr-8 lg:text-4xl hover:no-underline"
 			href="/"
 		>
 			<img
 				alt="Bootpack Digital"
-				class="w-full max-w-72 mx-auto"
+				class="mx-auto w-full max-w-72"
 				loading="lazy"
 				src={BootpackDigital}
 				height="652"
@@ -97,7 +97,7 @@
 			</a>
 		{/each}
 
-		<div class="-mx-6 mt-4 -mb-4 flex justify-center rounded-b-md bg-gray-100 py-4 px-6">
+		<div class="flex justify-center py-4 px-6 -mx-6 mt-4 -mb-4 bg-gray-100 rounded-b-md">
 			<SocialIcons />
 		</div>
 	</div>

@@ -1,10 +1,10 @@
-<div class="bg-white py-12 lg:py-36">
-	<div class="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
+<div class="py-12 bg-white lg:py-36">
+	<div class="px-4 mx-auto max-w-xl sm:px-6 lg:px-8 lg:max-w-screen-xl">
 		<div class="lg:grid lg:grid-cols-3 lg:gap-8">
 			<div>
-				<div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
+				<div class="flex justify-center items-center w-12 h-12 text-white bg-blue-500 rounded-md">
 					<svg
-						class="h-6 w-6"
+						class="w-6 h-6"
 						fill="none"
 						role="presentation"
 						stroke="currentColor"
@@ -30,9 +30,9 @@
 				</div>
 			</div>
 			<div class="mt-10 lg:mt-0">
-				<div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
+				<div class="flex justify-center items-center w-12 h-12 text-white bg-blue-500 rounded-md">
 					<svg
-						class="h-6 w-6"
+						class="w-6 h-6"
 						fill="none"
 						role="presentation"
 						stroke="currentColor"
@@ -58,9 +58,9 @@
 				</div>
 			</div>
 			<div class="mt-10 lg:mt-0">
-				<div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
+				<div class="flex justify-center items-center w-12 h-12 text-white bg-blue-500 rounded-md">
 					<svg
-						class="h-6 w-6"
+						class="w-6 h-6"
 						fill="none"
 						role="presentation"
 						stroke="currentColor"
@@ -84,13 +84,13 @@
 					</p>
 					<p class="mt-4 text-sm underline">
 						<a
-							class="group flex items-center gap-2"
+							class="flex gap-2 items-center group"
 							href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fbootpackdigital.com%2F&form_factor=desktop"
 							rel="noopener nofollow noreferrer"
 							target="_blank"
 						>
 							<svg
-								class="h-5 w-5 transition-transform group-hover:scale-110"
+								class="w-5 h-5 transition-transform group-hover:scale-110"
 								height="2500"
 								role="presentation"
 								width="2500"

@@ -19,10 +19,10 @@
 	<link rel="canonical" href="https://bootpackdigital.com/contact" />
 </svelte:head>
 
-<div class="bg-white pt-8">
-	<div class="container mx-auto max-w-3xl px-4 text-gray-700">
+<div class="pt-8 bg-white">
+	<div class="container px-4 mx-auto max-w-3xl text-gray-700">
 		<div class="prose">
-			<h1 class="mt-12 text-3xl font-extrabold leading-9 text-navy-600 sm:text-4xl sm:leading-10">
+			<h1 class="mt-12 text-3xl font-extrabold leading-9 sm:text-4xl sm:leading-10 text-navy-600">
 				Get in touch
 			</h1>
 			<p>
@@ -39,12 +39,12 @@
 				design, web development, and app development.
 			</p>
 		</div>
-		<div class="mx-auto max-w-3xl pt-4">
-			<div class="flex flex-wrap items-end justify-between">
+		<div class="pt-4 mx-auto max-w-3xl">
+			<div class="flex flex-wrap justify-between items-end">
 				<div>
-					<div class="mt-4 flex items-center">
+					<div class="flex items-center mt-4">
 						<svg
-							class="h-5 w-6 fill-current text-blue-600"
+							class="w-6 h-5 text-blue-600 fill-current"
 							viewBox="0 0 512 512"
 							xmlns="http://www.w3.org/2000/svg"
 						>
@@ -75,9 +75,9 @@
 							<Obfuscate telephone="(801) 839-5287" />
 						</p>
 					</div>
-					<div class="mt-4 flex items-center">
+					<div class="flex items-center mt-4">
 						<svg
-							class="h-5 w-6 fill-current text-blue-600"
+							class="w-6 h-5 text-blue-600 fill-current"
 							viewBox="0 0 512 512"
 							xmlns="http://www.w3.org/2000/svg"
 						>
@@ -108,9 +108,9 @@
 							<Obfuscate email="hey@bootpackdigital.com" />
 						</p>
 					</div>
-					<div class="mt-4 flex items-center">
+					<div class="flex items-center mt-4">
 						<svg
-							class="h-5 w-6 fill-current text-blue-600"
+							class="w-6 h-5 text-blue-600 fill-current"
 							viewBox="0 0 512 512"
 							xmlns="http://www.w3.org/2000/svg"
 						>
@@ -135,15 +135,15 @@
 				</div>
 				<div>
 					<a
-						class="focus:shadow-outline mt-8 flex w-full rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-blue-500 focus:outline-none lg:w-auto"
+						class="flex py-3 px-5 mt-8 w-full text-base font-medium leading-6 text-white bg-blue-600 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-blue-500 focus:outline-none focus:shadow-outline"
 						href="https://savvycal.com/bootpack/30-minute-project-discussion?utm_source=bootpack_website"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						<span class="mx-2 flex items-end text-white">
+						<span class="flex items-end mx-2 text-white">
 							Schedule a call on
 							<svg
-								class="ml-2 inline-block w-20 fill-current text-white"
+								class="inline-block ml-2 w-20 text-white fill-current"
 								version="1.1"
 								viewBox="0 0 534 160"
 								x="0px"
@@ -185,7 +185,7 @@
 				</div>
 			</div>
 		</div>
-		<section class="mx-auto mt-8 w-full max-w-3xl border-t pt-6 pb-24 lg:mt-12 lg:pt-8">
+		<section class="pt-6 pb-24 mx-auto mt-8 w-full max-w-3xl border-t lg:pt-8 lg:mt-12">
 			<ContactForm />
 		</section>
 	</div>
