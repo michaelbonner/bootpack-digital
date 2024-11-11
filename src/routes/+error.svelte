@@ -1,5 +1,7 @@
 <script context="module" lang="ts">
 	import { page } from '$app/stores';
+
+	import Illustration404 from '../images/404-illustration.svg';
 </script>
 
 <svelte:head>
@@ -13,8 +15,16 @@
 		>
 			Looks like you got lost along the way
 		</h1>
+		<img
+			alt="404 illustration"
+			class="mx-auto w-sm"
+			height="300"
+			src={Illustration404}
+			width="300"
+		/>
 		<p>
-			{$page.status}: {$page.error?.message}
+			<strong>{$page.status}</strong> &ndash;
+			{$page.error?.message}
 		</p>
 	</div>
 </div>
