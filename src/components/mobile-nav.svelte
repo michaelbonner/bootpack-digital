@@ -1,14 +1,18 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import { navigating, page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
 
-	let mobileNavOpen = false;
+	let mobileNavOpen = $state(false);
 
-	$: if ($navigating) {
-		mobileNavOpen = false;
-	}
+	run(() => {
+		if ($navigating) {
+			mobileNavOpen = false;
+		}
+	});
 
 	const mainLinks = [
 		{
@@ -34,7 +38,7 @@
 	];
 </script>
 
-<button class="block pb-1 lg:hidden" on:click={() => (mobileNavOpen = !mobileNavOpen)}>
+<button class="block pb-1 lg:hidden" onclick={() => (mobileNavOpen = !mobileNavOpen)}>
 	<svg
 		class="w-8 stroke-current text-navy-500"
 		fill="none"
@@ -59,7 +63,7 @@
 	>
 		<button
 			class="absolute right-3 top-5 w-6 h-6 font-semibold text-orange-500"
-			on:click={() => (mobileNavOpen = !mobileNavOpen)}
+			onclick={() => (mobileNavOpen = !mobileNavOpen)}
 		>
 			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<title>Toggle menu</title>

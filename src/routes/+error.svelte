@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script module lang="ts">
 	import { page } from '$app/stores';
 
 	import Illustration404 from '../images/404-illustration.svg';

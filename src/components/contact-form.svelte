@@ -1,5 +1,7 @@
 <script lang="ts">
-	let submitted = false;
+	import { preventDefault } from 'svelte/legacy';
+
+	let submitted = $state(false);
 	let isSubmitting = false;
 
 	const handleSubmit = async (event: SubmitEvent) => {
@@ -34,14 +36,14 @@
 	};
 
 	let errors: any = {};
-	let errorMessage = '';
+	let errorMessage = $state('');
 	let touched: any = {};
 </script>
 
 <form
 	class={submitted ? `hidden` : `visible`}
 	name="contact"
-	on:submit|preventDefault={handleSubmit}
+	onsubmit={preventDefault(handleSubmit)}
 >
 	<div class="flex flex-wrap -mx-3 mt-8 mb-6">
 		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
@@ -147,7 +149,7 @@
 				placeholder="Please give us details about what you're trying to accomplish"
 				required
 				rows={10}
-			/>
+			></textarea>
 			<p class="px-2 pt-1 text-xs italic text-red-500">
 				{#if errors.message && touched.message}
 					{errors.message}

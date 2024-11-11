@@ -1,10 +1,21 @@
 <script lang="ts">
-	export let description: string;
-	export let link: string;
-	export let poster: string;
-	export let title: string;
-	export let lazy = false;
-	export let linkText = 'View Site';
+	interface Props {
+		description: string;
+		link: string;
+		poster: string;
+		title: string;
+		lazy?: boolean;
+		linkText?: string;
+	}
+
+	let {
+		description,
+		link,
+		poster,
+		title,
+		lazy = false,
+		linkText = 'View Site'
+	}: Props = $props();
 </script>
 
 <div
