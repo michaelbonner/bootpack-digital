@@ -1,8 +1,17 @@
 <script lang="ts">
-	export let title: string;
-	export let height: number;
-	export let logo: string;
-	export let width: number;
+	interface Props {
+		title: string;
+		height: number;
+		logo: string;
+		width: number;
+	}
+
+	let {
+		title,
+		height,
+		logo,
+		width
+	}: Props = $props();
 </script>
 
 <div class="py-3 px-4">

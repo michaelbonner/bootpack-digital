@@ -9,6 +9,11 @@
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
 	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	onNavigate((navigation) => {
 		if (!(document as any).startViewTransition) return;
@@ -21,7 +26,7 @@
 		});
 	});
 
-	let scriptEl: HTMLScriptElement;
+	let scriptEl: HTMLScriptElement = $state();
 	onMount(async () => {
 		if (typeof window !== 'undefined') {
 			printBootpackConsoleInfo();
@@ -48,6 +53,8 @@
 		beforeNavigate(() => posthog.capture('$pageleave'));
 		afterNavigate(() => posthog.capture('$pageview'));
 	}
+
+	const children_render = $derived(children);
 </script>
 
 <svelte:head>
@@ -103,7 +110,7 @@
 	</div>
 	<Header />
 	<main id="main-content">
-		<slot />
+		{@render children_render?.()}
 	</main>
 	<Footer />
 </div>

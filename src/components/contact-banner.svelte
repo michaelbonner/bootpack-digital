@@ -1,8 +1,17 @@
 <script lang="ts">
-	export let textLine1 = '';
-	export let textLine2 = '';
-	export let buttonText = 'Get in touch';
-	export let bgColor = 'bg-blue-50';
+	interface Props {
+		textLine1?: string;
+		textLine2?: string;
+		buttonText?: string;
+		bgColor?: string;
+	}
+
+	let {
+		textLine1 = '',
+		textLine2 = '',
+		buttonText = 'Get in touch',
+		bgColor = 'bg-blue-50'
+	}: Props = $props();
 </script>
 
 <div class={bgColor}>
