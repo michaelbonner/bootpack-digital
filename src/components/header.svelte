@@ -20,6 +20,10 @@
 		{
 			label: 'Open Source',
 			url: '/open-source'
+		},
+		{
+			label: 'Contact',
+			url: '/contact'
 		}
 	];
 </script>
@@ -60,12 +64,6 @@
 						{link.label}
 					</a>
 				{/each}
-				<a
-					class="flex justify-center items-center py-2 px-4 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out lg:ml-4 hover:bg-orange-600 focus:outline-none focus:shadow-outline"
-					href="/contact"
-				>
-					Request a Quote
-				</a>
 			</div>
 		</div>
 
