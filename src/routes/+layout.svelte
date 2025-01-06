@@ -26,7 +26,7 @@
 		});
 	});
 
-	let scriptEl: HTMLScriptElement = $state();
+	let scriptEl: HTMLScriptElement | undefined = $state();
 	onMount(async () => {
 		if (typeof window !== 'undefined') {
 			printBootpackConsoleInfo();

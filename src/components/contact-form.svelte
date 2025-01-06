@@ -1,10 +1,9 @@
 <script lang="ts">
-	import { preventDefault } from 'svelte/legacy';
-
 	let submitted = $state(false);
 	let isSubmitting = false;
 
 	const handleSubmit = async (event: SubmitEvent) => {
+		event.preventDefault();
 		const formData = new FormData(event.target as HTMLFormElement);
 
 		fetch('https://formspree.io/f/xgerlrdz', {
@@ -40,11 +39,7 @@
 	let touched: any = {};
 </script>
 
-<form
-	class={submitted ? `hidden` : `visible`}
-	name="contact"
-	onsubmit={preventDefault(handleSubmit)}
->
+<form class={submitted ? `hidden` : `visible`} name="contact" onsubmit={handleSubmit}>
 	<div class="flex flex-wrap -mx-3 mt-8 mb-6">
 		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
 			<label class="block mb-2 text-xs font-bold tracking-wide text-gray-700" for="firstName">
