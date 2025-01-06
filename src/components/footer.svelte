@@ -34,7 +34,7 @@
 	<nav class="justify-between items-end p-4 pb-12 w-full text-sm md:p-8 md:pb-36 lg:flex">
 		<div class="block items-center px-4 text-lg lg:flex lg:px-0">
 			<p class="mr-12 mb-4 text-sm lg:mb-0">
-				&copy; {new Date().getFullYear()} Bootpack Digital, LLC
+				&copy; 2019-{new Date().getFullYear()} Bootpack Digital, LLC
 			</p>
 			<div class="grid grid-cols-2 text-base lg:flex">
 				{#each links as link}
