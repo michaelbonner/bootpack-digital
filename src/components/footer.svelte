@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import SocialIcons from './social-icons.svelte';
 
 	const links = [
@@ -36,11 +36,11 @@
 			<p class="mr-12 mb-4 text-sm lg:mb-0">
 				&copy; 2019-{new Date().getFullYear()} Bootpack Digital, LLC
 			</p>
-			<div class="grid grid-cols-2 text-base lg:flex">
+			<div class="grid grid-cols-2 text-base lg:flex lg:flex-wrap">
 				{#each links as link}
 					<a
 						class={`block py-4 font-semibold decoration-2 transition-all hover:underline hover:decoration-blue-300 lg:px-4 lg:py-2
-						${$page.url.pathname === link.url && 'underline decoration-blue-600'}
+						${page.url.pathname === link.url && 'underline decoration-blue-600'}
 						`}
 						href={link.url}>{link.label}</a
 					>

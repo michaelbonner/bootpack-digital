@@ -1,5 +1,5 @@
 <a
-	class="inline-block p-2 h-10 text-center text-blue-400 no-underline md:p-4 md:h-auto hover:text-blue-600 hover:text-underline"
+	class="inline-block p-2 h-10 text-center text-blue-400 no-underline md:h-auto hover:text-blue-600 hover:text-underline"
 	href="https://fb.me/bootpack.digital"
 >
 	<svg class="h-6 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -8,7 +8,7 @@
 	</svg>
 </a>
 <a
-	class="inline-block p-2 h-10 text-center text-blue-400 no-underline md:p-4 md:h-auto hover:text-blue-600 hover:text-underline"
+	class="inline-block p-2 h-10 text-center text-blue-400 no-underline md:h-auto hover:text-blue-600 hover:text-underline"
 	href="https://www.instagram.com/bootpack.digital/"
 >
 	<svg class="h-6 fill-current" viewBox="0 0 511 511.9" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
 	</svg>
 </a>
 <a
-	class="inline-block p-2 h-10 text-center text-blue-400 no-underline md:p-4 md:h-auto hover:text-blue-600 hover:text-underline"
+	class="inline-block p-2 h-10 text-center text-blue-400 no-underline md:h-auto hover:text-blue-600 hover:text-underline"
 	href="https://github.com/michaelbonner"
 >
 	<svg class="h-6 fill-current" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
