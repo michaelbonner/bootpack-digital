@@ -98,7 +98,7 @@
 	</div>
 	<div class="container relative mx-auto lg:py-12">
 		<div
-			class="flex flex-col flex-wrap items-center py-12 px-6 mx-auto w-full max-w-screen-xl md:flex-row md:py-24"
+			class="flex flex-col flex-wrap items-center py-12 px-6 mx-auto w-full max-w-(--breakpoint-xl) md:flex-row md:py-24"
 		>
 			<div class="flex overflow-y-hidden flex-col justify-center w-full lg:items-start xl:w-4/5">
 				<h1
@@ -115,9 +115,9 @@
 					help you turn your ideas into solutions that scale with your business. We see ourselves as
 					a partner with you, and we're committed to making every venture as successful as possible.
 				</p>
-				<div class="my-4 rounded-md shadow lg:my-0">
+				<div class="my-4 rounded-md shadow-sm lg:my-0">
 					<a
-						class="flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-none focus:shadow-outline"
+						class="flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
 						href="/contact"
 					>
 						Request a Quote
@@ -130,7 +130,7 @@
 <WhatMakesUsDifferent />
 <Brands />
 <div class="py-12 bg-white" id="get-in-touch">
-	<div class="container mx-auto max-w-screen-xl">
+	<div class="container mx-auto max-w-(--breakpoint-xl)">
 		<div class="py-6 px-8 mx-auto w-full">
 			<h2 class="text-3xl font-extrabold leading-9 sm:text-4xl sm:leading-10 text-navy-600">
 				Get in touch!

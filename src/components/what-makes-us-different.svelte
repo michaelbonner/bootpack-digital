@@ -1,5 +1,5 @@
 <div class="py-12 bg-white lg:py-36">
-	<div class="px-4 mx-auto max-w-xl sm:px-6 lg:px-8 lg:max-w-screen-xl">
+	<div class="px-4 mx-auto max-w-xl sm:px-6 lg:px-8 lg:max-w-(--breakpoint-xl)">
 		<div class="lg:grid lg:grid-cols-3 lg:gap-8">
 			<div>
 				<div class="flex justify-center items-center w-12 h-12 text-white bg-blue-500 rounded-md">

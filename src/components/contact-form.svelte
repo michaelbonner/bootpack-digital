@@ -47,7 +47,7 @@
 			</label>
 			<input
 				aria-required="true"
-				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded-sm border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-hidden"
 				id="firstName"
 				name="firstName"
 				placeholder="Jane"
@@ -66,7 +66,7 @@
 			</label>
 			<input
 				aria-required="true"
-				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded-sm border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-hidden"
 				id="lastName"
 				name="lastName"
 				placeholder="Doe"
@@ -87,7 +87,7 @@
 			</label>
 			<input
 				aria-required="true"
-				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded-sm border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-hidden"
 				id="email"
 				name="email"
 				placeholder="jane@company.com"
@@ -105,7 +105,7 @@
 				Company
 			</label>
 			<input
-				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded-sm border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-hidden"
 				id="company"
 				name="company"
 				placeholder="Company Name"
@@ -120,7 +120,7 @@
 				Phone Number
 			</label>
 			<input
-				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded-sm border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-hidden"
 				id="phone"
 				name="phone"
 				placeholder="801-111-2222"
@@ -138,7 +138,7 @@
 			</label>
 			<textarea
 				aria-required="true"
-				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-none"
+				class="block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded-sm border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-hidden"
 				id="message"
 				name="message"
 				placeholder="Please give us details about what you're trying to accomplish"
@@ -158,7 +158,7 @@
 		</p>
 	{/if}
 	<button
-		class="py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-orange-600 focus:outline-none focus:shadow-outline"
+		class="py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
 		disabled={isSubmitting}
 		type="submit"
 	>
