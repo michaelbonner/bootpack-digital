@@ -51,7 +51,7 @@
 		<div class="mx-auto mt-8 max-w-3xl">
 			<div class="items-start sm:grid sm:gap-6 lg:flex lg:gap-8">
 				<div
-					class="overflow-hidden flex-shrink-0 mt-4 w-full h-80 bg-gray-100 rounded-xl shadow-md md:mx-auto md:mt-0 md:w-56 md:h-72 max-w-[460px]"
+					class="overflow-hidden shrink-0 mt-4 w-full h-80 bg-gray-100 rounded-xl shadow-md md:mx-auto md:mt-0 md:w-56 md:h-72 max-w-[460px]"
 				>
 					<enhanced:img alt="Michael Bonner" loading="lazy" src={MichaelBonner} />
 				</div>

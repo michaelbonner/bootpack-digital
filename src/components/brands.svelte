@@ -8,8 +8,8 @@
 	import BrandImage from './brand-image.svelte';
 </script>
 
-<div class="py-4 bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 lg:py-24">
-	<div class="py-12 px-4 mx-auto max-w-screen-xl sm:px-6 lg:py-24 lg:px-8">
+<div class="py-4 bg-linear-to-r from-blue-100 via-blue-50 to-blue-100 lg:py-24">
+	<div class="py-12 px-4 mx-auto max-w-(--breakpoint-xl) sm:px-6 lg:py-24 lg:px-8">
 		<div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
 			<div class="lg:mt-8">
 				<h2 class="text-3xl font-extrabold leading-9 sm:text-4xl sm:leading-10 text-navy-600">

@@ -38,7 +38,7 @@
 			</a>
 		</div>
 		<div class="flex items-center mt-6">
-			<div class="flex-shrink-0">
+			<div class="shrink-0">
 				<a
 					class="flex gap-2 items-center font-medium text-blue-600 underline transition-colors hover:text-blue-700"
 					href={link}

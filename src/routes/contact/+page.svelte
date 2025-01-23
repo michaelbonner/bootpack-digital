@@ -135,7 +135,7 @@
 				</div>
 				<div>
 					<a
-						class="flex py-3 px-5 mt-8 w-full text-base font-medium leading-6 text-white bg-blue-600 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-blue-500 focus:outline-none focus:shadow-outline"
+						class="flex py-3 px-5 mt-8 w-full text-base font-medium leading-6 text-white bg-blue-600 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-blue-500 focus:outline-hidden focus:shadow-outline"
 						href="https://savvycal.com/bootpack/30-minute-project-discussion?utm_source=bootpack_website"
 						rel="noopener noreferrer"
 						target="_blank"
