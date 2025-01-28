@@ -10,7 +10,8 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"postinstall": "svelte-kit sync"
+		"postinstall": "svelte-kit sync",
+		"out": "pnpm outdated"
 	},
 	"devDependencies": {
 		"@builder.io/partytown": "^0.10.3",
@@ -42,5 +43,6 @@
 		"@sveltejs/adapter-vercel": "^5.5.2",
 		"clsx": "^2.1.1",
 		"posthog-js": "^1.207.0"
-	}
+	},
+	"packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }
