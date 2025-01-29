@@ -1,6 +1,39 @@
 @import 'tailwindcss';
 
-@config '../tailwind.config.cjs';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--color-blue-50: #f5f9fb;
+	--color-blue-100: #e9f3f8;
+	--color-blue-200: #c9e1ed;
+	--color-blue-300: #a9cfe2;
+	--color-blue-400: #68abcd;
+	--color-blue-500: #2787b7;
+	--color-blue-600: #237aa5;
+	--color-blue-700: #17516e;
+	--color-blue-800: #123d52;
+	--color-blue-900: #0C293;
+
+	--color-navy-100: #e6eff4;
+	--color-navy-200: #bfd7e3;
+	--color-navy-300: #99bed2;
+	--color-navy-400: #4d8eb1;
+	--color-navy-500: #005d8f;
+	--color-navy-600: #005481;
+	--color-navy-700: #003856;
+	--color-navy-800: #002a40;
+	--color-navy-900: #001c2b;
+
+	--color-orange-100: #feefee;
+	--color-orange-200: #fbd7d4;
+	--color-orange-300: #f9bfba;
+	--color-orange-400: #f59086;
+	--color-orange-500: #f06052;
+	--color-orange-600: #d8564a;
+	--color-orange-700: #c65047;
+	--color-orange-800: #6c2b25;
+	--color-orange-900: #481d19;
+}
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -11,13 +44,13 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }
 
 html,
