@@ -71,7 +71,7 @@
 								stroke-width="32"
 							/>
 						</svg>
-						<p class="ml-2">
+						<p class="ml-2 hover:underline">
 							<Obfuscate telephone="(801) 839-5287" />
 						</p>
 					</div>
@@ -104,7 +104,7 @@
 								stroke-width="32"
 							/>
 						</svg>
-						<p class="ml-2">
+						<p class="ml-2 hover:underline">
 							<Obfuscate email="hey@bootpackdigital.com" />
 						</p>
 					</div>
