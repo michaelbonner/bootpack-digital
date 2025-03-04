@@ -10,4 +10,4 @@ declare namespace App {
 	// interface Stuff {}
 }
 
-declare module '@builder.io/partytown/integration';
+declare module '@qwik.dev/partytown/integration';
