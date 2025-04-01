@@ -68,9 +68,9 @@
 				<div class="mt-3">
 					<a
 						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
-						href="https://github.com/michaelbonner/is-it-down"
+						href="https://github.com/michaelbonner/pagespeed"
 					>
-						See Is It Down Checker Code on GitHub
+						See PageSpeed Code on GitHub
 					</a>
 				</div>
 			</div>
