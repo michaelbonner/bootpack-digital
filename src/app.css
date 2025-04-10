@@ -72,8 +72,10 @@ header {
 
 footer {
 	@apply bg-navy-700;
-	background-image: url('/images/navy-topo.svg');
 	background-repeat: repeat;
+}
+footer.bpd-inView {
+	background-image: url('/images/navy-topo.svg');
 }
 
 @keyframes fade-in {
