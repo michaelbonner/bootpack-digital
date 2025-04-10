@@ -1,9 +1,9 @@
 <script lang="ts">
 	import CocaCola from '../images/clients/coca-cola-classic-gray.svg';
+	import DominionEnergy from '../images/clients/dominion-energy-gray.svg';
 	import EdgeHomes from '../images/clients/edge-homes-gray.svg';
 	import IntermountainHealthcare from '../images/clients/intermountain-healthcare-gray.svg';
 	import Ogio from '../images/clients/ogio-gray.svg';
-	import DominionEnergy from '../images/clients/dominion-energy-gray.svg';
 	import PACS from '../images/clients/pacs-gray.svg';
 	import BrandImage from './brand-image.svelte';
 </script>

@@ -6,12 +6,7 @@
 		width: number;
 	}
 
-	let {
-		title,
-		height,
-		logo,
-		width
-	}: Props = $props();
+	let { title, height, logo, width }: Props = $props();
 </script>
 
 <div class="py-3 px-4">

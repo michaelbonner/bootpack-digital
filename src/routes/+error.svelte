@@ -1,11 +1,11 @@
 <script module lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	import Illustration404 from '../images/404-illustration.svg';
 </script>
 
 <svelte:head>
-	<title>{$page.status}: {$page.error?.message}</title>
+	<title>{page.status}: {page.error?.message}</title>
 </svelte:head>
 
 <div class="overflow-hidden relative py-16 text-lg leading-8 bg-white">
@@ -23,8 +23,8 @@
 			width="300"
 		/>
 		<p>
-			<strong>{$page.status}</strong> &ndash;
-			{$page.error?.message}
+			<strong>{page.status}</strong> &ndash;
+			{page.error?.message}
 		</p>
 	</div>
 </div>

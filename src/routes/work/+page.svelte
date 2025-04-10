@@ -1,7 +1,6 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import WorkItem from '../../components/work-item.svelte';
-
 	// images
 	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?enhanced';
 	import Cosgriff from '../../images/work/cosgriff.jpg?enhanced';

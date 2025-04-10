@@ -8,14 +8,7 @@
 		linkText?: string;
 	}
 
-	let {
-		description,
-		link,
-		poster,
-		title,
-		lazy = false,
-		linkText = 'View Site'
-	}: Props = $props();
+	let { description, link, poster, title, lazy = false, linkText = 'View Site' }: Props = $props();
 </script>
 
 <div

@@ -1,17 +1,14 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
-
-	import { navigating, page } from '$app/stores';
+	import { beforeNavigate } from '$app/navigation';
+	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
 
 	let mobileNavOpen = $state(false);
 
-	run(() => {
-		if ($navigating) {
-			mobileNavOpen = false;
-		}
+	beforeNavigate(() => {
+		mobileNavOpen = false;
 	});
 
 	const mainLinks = [
@@ -93,7 +90,7 @@
 		{#each mainLinks as link}
 			<a
 				class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
-					$page.url.pathname === link.url && 'bg-navy-100'
+					page.url.pathname === link.url && 'bg-navy-100'
 				}`}
 				href={link.url}
 			>

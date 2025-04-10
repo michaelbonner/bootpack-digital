@@ -9,6 +9,7 @@
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
 	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
+
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
