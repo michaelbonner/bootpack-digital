@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { clsx } from 'clsx';
+	import { page } from '$app/state';
 	import BootpackHorizontal from '../images/bootpack-horizontal.svg';
 	import MobileNav from './mobile-nav.svelte';
 
@@ -39,7 +38,7 @@
 				{#each mainLinks as link}
 					<a
 						class={`px-3 text-lg font-semibold text-navy-500 hover:underline hover:decoration-blue-400 ${
-							$page.url.pathname === link.url &&
+							page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}
 						href={link.url}
