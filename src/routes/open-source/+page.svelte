@@ -76,6 +76,24 @@
 			</div>
 
 			<div class="p-2 rounded-lg lg:p-8 lg:border">
+				<a class="block hover:underline" href="https://github.com/michaelbonner/screenshot-maker">
+					<h2 class="text-xl font-semibold leading-7 text-gray-900">Screenshot Maker</h2>
+				</a>
+				<p class="mt-3 text-base leading-6 text-gray-500">
+					Easy way to generate screenshots of websites. Just add the URL and it will generate a
+					screenshot.
+				</p>
+				<div class="mt-3">
+					<a
+						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+						href="https://github.com/michaelbonner/screenshot-maker"
+					>
+						See Screenshot Maker Code on GitHub
+					</a>
+				</div>
+			</div>
+
+			<div class="p-2 rounded-lg lg:p-8 lg:border">
 				<a class="block hover:underline" href="https://github.com/michaelbonner/redirects-wizard">
 					<h2 class="text-xl font-semibold leading-7 text-gray-900">Redirects Wizard</h2>
 				</a>
