@@ -5,7 +5,7 @@
 </script>
 
 <Seo
-	title="Privacy Policy and Terms of Service | Bootpack Digital"
+	title="Cookie Policy | Bootpack Digital"
 	description="We are committed to protecting your privacy. This Privacy Policy describes how we collect and use information about you when you use our website."
 	canonical="/policies/cookie-policy"
 />
