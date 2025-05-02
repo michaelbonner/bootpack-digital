@@ -7,9 +7,9 @@ import tailwindcss from '@tailwindcss/vite';
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [
+		enhancedImages(),
 		tailwindcss(),
 		sveltekit(),
-		enhancedImages(),
 		partytownVite({
 			// `dest` specifies where files are copied to in production
 			dest: join(process.cwd(), 'static', '~partytown')
