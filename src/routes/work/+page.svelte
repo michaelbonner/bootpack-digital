@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
+	import Seo from '../../components/seo.svelte';
 	import WorkItem from '../../components/work-item.svelte';
 	// images
 	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?enhanced';
@@ -18,23 +19,13 @@
 	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.jpg?enhanced';
 	import ThermWise from '../../images/work/thermwise.jpg?enhanced';
 	import WasatchCovers from '../../images/work/wasatch-covers.jpg?enhanced';
-
-	const seoTitle = 'Web Design & Development Portfolio from Bootpack Digital';
-	const seoDescription =
-		"We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of.";
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta property="og:url" content="https://bootpackdigital.com/work" />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-
-	<link rel="canonical" href="https://bootpackdigital.com/work" />
-</svelte:head>
+<Seo
+	title="Web Design & Development Portfolio from Bootpack Digital"
+	description="We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of."
+	canonical="/work"
+/>
 
 <div class="relative px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 hero-bg">
 	<div class="relative mx-auto max-w-7xl">

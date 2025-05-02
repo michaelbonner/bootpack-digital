@@ -1,23 +1,14 @@
 <script lang="ts">
 	import ContactBanner from '../../../components/contact-banner.svelte';
+	import Seo from '../../../components/seo.svelte';
 	import Links from '../links.svelte';
-
-	const seoTitle = 'Privacy Policy and Terms of Service | Bootpack Digital';
-	const seoDescription =
-		'We are committed to protecting your privacy. This Privacy Policy describes how we collect and use information about you when you use our website.';
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta property="og:url" content="https://bootpackdigital.com/policies/terms-of-service" />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-
-	<link rel="canonical" href="https://bootpackdigital.com/policies/terms-of-service" />
-</svelte:head>
+<Seo
+	title="Terms of Service | Bootpack Digital"
+	description="We are committed to protecting your privacy. This Privacy Policy describes how we collect and use information about you when you use our website."
+	canonical="/policies/terms-of-service"
+/>
 
 <div class="pt-8 pb-16 bg-white">
 	<div class="container px-4 mx-auto mt-8 max-w-5xl text-gray-700">

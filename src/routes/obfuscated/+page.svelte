@@ -1,17 +1,12 @@
 <script lang="ts">
-	const seoTitle = 'Obfuscated | Bootpack Digital';
-	const seoDescription =
-		'This page is obfuscated. It is not meant to be read. It is meant to be used as a placeholder for a real page.';
+	import Seo from '../../components/seo.svelte';
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-</svelte:head>
+<Seo
+	title="Obfuscated | Bootpack Digital"
+	description="This page is obfuscated. It is not meant to be read. It is meant to be used as a placeholder for a real page."
+	canonical="/obfuscated"
+/>
 
 <div class="pt-8 pb-16 bg-white">
 	<div class="container px-4 mx-auto mt-16 max-w-5xl text-gray-700 prose">

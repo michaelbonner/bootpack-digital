@@ -1,23 +1,14 @@
 <script lang="ts">
 	import { Obfuscate } from 'svelte-obfuscate';
 	import ContactForm from '../../components/contact-form.svelte';
-
-	const seoTitle = 'Get in Touch with Bootpack Digital';
-	const seoDescription =
-		'Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!';
+	import Seo from '../../components/seo.svelte';
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta property="og:url" content="https://bootpackdigital.com/contact" />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-
-	<link rel="canonical" href="https://bootpackdigital.com/contact" />
-</svelte:head>
+<Seo
+	title="Get in Touch with Bootpack Digital"
+	description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
+	canonical="/contact"
+/>
 
 <div class="pt-8 bg-white">
 	<div class="container px-4 mx-auto max-w-3xl text-gray-700">
