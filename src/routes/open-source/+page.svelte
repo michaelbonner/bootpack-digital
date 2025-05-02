@@ -1,22 +1,13 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
-
-	const seoTitle = 'Open Source Projects from Bootpack Digital';
-	const seoDescription =
-		'Open source is important to the modern web. We are committed to sharing tools we think will strengthen the web development community.';
+	import Seo from '../../components/seo.svelte';
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta property="og:url" content="https://bootpackdigital.com/open-source" />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-
-	<link rel="canonical" href="https://bootpackdigital.com/open-source" />
-</svelte:head>
+<Seo
+	title="Open Source Projects from Bootpack Digital"
+	description="Open source is important to the modern web. We are committed to sharing tools we think will strengthen the web development community."
+	canonical="/open-source"
+/>
 
 <div class="px-4 pt-16 pb-20 bg-white to-gray-100 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 hero-bg">
 	<div class="relative mx-auto max-w-lg lg:px-4 lg:max-w-3xl">

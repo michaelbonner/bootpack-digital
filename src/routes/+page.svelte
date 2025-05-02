@@ -1,25 +1,16 @@
 <script lang="ts">
 	import Brands from '../components/brands.svelte';
 	import ContactForm from '../components/contact-form.svelte';
+	import Seo from '../components/seo.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
 	import BlueTopo from '../images/blue-topo.svg';
-
-	const seoTitle = 'Custom web and app developer in Utah | Bootpack Digital';
-	const seoDescription =
-		'We develop websites, mobile apps, and web software to turn your ideas into reality, delivering quality solutions essential for business success.';
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta property="og:url" content="https://bootpackdigital.com" />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-
-	<link rel="canonical" href="https://bootpackdigital.com/" />
-</svelte:head>
+<Seo
+	title="Custom web and app developer in Utah | Bootpack Digital"
+	description="We develop websites, mobile apps, and web software to turn your ideas into reality, delivering quality solutions essential for business success."
+	canonical="/"
+/>
 
 <div class="relative bg-blue-50 hero-bg">
 	<div class="flex overflow-hidden absolute inset-0 w-full h-full opacity-80">

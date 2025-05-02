@@ -1,23 +1,14 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
+	import Seo from '../../components/seo.svelte';
 	import MichaelBonner from '../../images/michael-bonner.jpg?enhanced';
-
-	const seoTitle = 'About Bootpack Digital, a Utah Based Web and App Development Agency';
-	const seoDescription =
-		'Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for.';
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta property="og:url" content="https://bootpackdigital.com/about" />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-
-	<link rel="canonical" href="https://bootpackdigital.com/about" />
-</svelte:head>
+<Seo
+	title="About Bootpack Digital, a Utah Based Web and App Development Agency"
+	description="Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for."
+	canonical="/about"
+/>
 
 <div class="overflow-hidden relative py-16 text-lg leading-8 bg-white">
 	<div class="relative px-4 sm:px-6 lg:px-8">

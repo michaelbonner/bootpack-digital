@@ -1,13 +1,11 @@
 <script lang="ts">
+	import Seo from '../../components/seo.svelte';
+
 	type Wallpaper = {
 		title: string;
 		src: string;
 		width: number;
 	};
-
-	const seoTitle = 'Bootpack Wallpapers | Bootpack Digital';
-	const seoDescription =
-		"We have a collection of wallpapers that we've created for our own use. We hope you enjoy them.";
 
 	const wallpapers: Wallpaper[] = [
 		{
@@ -33,17 +31,11 @@
 	];
 </script>
 
-<svelte:head>
-	<title>{seoTitle}</title>
-	<meta name="description" content={seoDescription} />
-	<meta property="og:title" content={seoTitle} />
-	<meta property="og:description" content={seoDescription} />
-	<meta property="og:url" content="https://bootpackdigital.com/wallpapers" />
-	<meta name="twitter:title" content={seoTitle} />
-	<meta name="twitter:description" content={seoDescription} />
-
-	<link rel="canonical" href="https://bootpackdigital.com/wallpapers" />
-</svelte:head>
+<Seo
+	title="Bootpack Wallpapers | Bootpack Digital"
+	description="We have a collection of wallpapers that we've created for our own use. We hope you enjoy them."
+	canonical="/wallpapers"
+/>
 
 <div class="pt-8 pb-16 bg-white">
 	<div class="container grid gap-16 px-4 mx-auto mt-16 max-w-5xl text-gray-700">
