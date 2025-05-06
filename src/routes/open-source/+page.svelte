@@ -1,6 +1,35 @@
 <script lang="ts">
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import Seo from '../../components/seo.svelte';
+
+	const projects = [
+		{
+			name: 'PageSpeed',
+			description: `Keep track of your PageSpeed insights scores. Just add your URLs to the config and deploy
+					the code. Then you'll see a simple view of your PageSpeed scores. <a
+						class="underline"
+						href="https://pagespeed.bootpack.dev/">Here's what it looks like for this site</a>`,
+			link: 'https://github.com/michaelbonner/pagespeed'
+		},
+		{
+			name: 'Screenshot Maker',
+			description:
+				'Easy way to generate screenshots of websites. Just add the URL and it will generate a screenshot.',
+			link: 'https://github.com/michaelbonner/screenshot-maker'
+		},
+		{
+			name: 'Redirects Wizard',
+			description:
+				"Sometimes when you're migrating a site you have a lot of links you need to redirect somewhere else. Redirects Wizard allows you to do that task, but much quicker.",
+			link: 'https://github.com/michaelbonner/redirects-wizard'
+		},
+		{
+			name: 'GitHub Repositories Viewer',
+			description:
+				"GitHub doesn't make it easy to find who has access to what repos. This tool allows you to view all of your repos in a simple, easy to read format. It also helps you find open pull requests.",
+			link: 'https://github.com/michaelbonner/github-repositories-viewer'
+		}
+	];
 </script>
 
 <Seo
@@ -45,84 +74,26 @@
 			</div>
 		</div>
 		<div class="grid gap-4 mt-6 lg:grid-cols-2 lg:mt-10">
-			<div class="p-2 rounded-lg lg:p-8 lg:border">
-				<a class="block hover:underline" href="https://github.com/michaelbonner/pagespeed">
-					<h2 class="text-xl font-semibold leading-7 text-gray-900">PageSpeed</h2>
-				</a>
-				<p class="mt-3 text-base leading-6 text-gray-500">
-					Keep track of your PageSpeed insights scores. Just add your URLs to the config and deploy
-					the code. Then you'll see a simple view of your PageSpeed scores. <a
-						class="underline"
-						href="https://pagespeed.bootpack.dev/">Here's what it looks like for this site</a
-					>
-				</p>
-				<div class="mt-3">
-					<a
-						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
-						href="https://github.com/michaelbonner/pagespeed"
-					>
-						See PageSpeed Code on GitHub
+			{#each projects as project}
+				<div class="p-2 rounded-lg lg:p-8 lg:border">
+					<a class="block hover:underline" href={project.link}>
+						<h2 class="text-xl font-semibold leading-7 text-gray-900">{project.name}</h2>
 					</a>
+					<div class="mt-3">
+						<p class="mt-3 text-base leading-6 text-gray-500">
+							{@html project.description}
+						</p>
+					</div>
+					<div class="mt-3">
+						<a
+							class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
+							href={project.link}
+						>
+							See {project.name} Code on GitHub
+						</a>
+					</div>
 				</div>
-			</div>
-
-			<div class="p-2 rounded-lg lg:p-8 lg:border">
-				<a class="block hover:underline" href="https://github.com/michaelbonner/screenshot-maker">
-					<h2 class="text-xl font-semibold leading-7 text-gray-900">Screenshot Maker</h2>
-				</a>
-				<p class="mt-3 text-base leading-6 text-gray-500">
-					Easy way to generate screenshots of websites. Just add the URL and it will generate a
-					screenshot.
-				</p>
-				<div class="mt-3">
-					<a
-						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
-						href="https://github.com/michaelbonner/screenshot-maker"
-					>
-						See Screenshot Maker Code on GitHub
-					</a>
-				</div>
-			</div>
-
-			<div class="p-2 rounded-lg lg:p-8 lg:border">
-				<a class="block hover:underline" href="https://github.com/michaelbonner/redirects-wizard">
-					<h2 class="text-xl font-semibold leading-7 text-gray-900">Redirects Wizard</h2>
-				</a>
-				<p class="mt-3 text-base leading-6 text-gray-500">
-					Sometimes when you're migrating a site you have a lot of links you need to redirect
-					somewhere else. Redirects Wizard allows you to do that task, but much quicker.
-				</p>
-				<div class="mt-3">
-					<a
-						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
-						href="https://github.com/michaelbonner/redirects-wizard"
-					>
-						See Redirects Wizard Code on GitHub
-					</a>
-				</div>
-			</div>
-
-			<div class="p-2 rounded-lg lg:p-8 lg:border">
-				<a
-					class="block hover:underline"
-					href="https://github.com/michaelbonner/github-repositories-viewer"
-				>
-					<h2 class="text-xl font-semibold leading-7 text-gray-900">GitHub Repositories Viewer</h2>
-				</a>
-				<p class="mt-3 text-base leading-6 text-gray-500">
-					GitHub doesn't make it easy to find who has access to what repos. This tool allows you to
-					view all of your repos in a simple, easy to read format. It also helps you find open pull
-					requests.
-				</p>
-				<div class="mt-3">
-					<a
-						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
-						href="https://github.com/michaelbonner/github-repositories-viewer"
-					>
-						See GitHub Repositories Viewer Code on GitHub
-					</a>
-				</div>
-			</div>
+			{/each}
 		</div>
 	</div>
 </div>
