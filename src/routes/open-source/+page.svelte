@@ -103,20 +103,23 @@
 			</div>
 
 			<div class="p-2 rounded-lg lg:p-8 lg:border">
-				<a class="block hover:underline" href="https://github.com/michaelbonner/is-it-down">
-					<h2 class="text-xl font-semibold leading-7 text-gray-900">Is It Down Checker</h2>
+				<a
+					class="block hover:underline"
+					href="https://github.com/michaelbonner/github-repositories-viewer"
+				>
+					<h2 class="text-xl font-semibold leading-7 text-gray-900">GitHub Repositories Viewer</h2>
 				</a>
 				<p class="mt-3 text-base leading-6 text-gray-500">
-					A tool to track whether or not your sites are up. It also keeps track of how often a site
-					goes down, and for how long. An invaluable tool for any company that manages several
-					sites.
+					GitHub doesn't make it easy to find who has access to what repos. This tool allows you to
+					view all of your repos in a simple, easy to read format. It also helps you find open pull
+					requests.
 				</p>
 				<div class="mt-3">
 					<a
 						class="text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out hover:text-orange-500 hover:underline"
-						href="https://github.com/michaelbonner/is-it-down"
+						href="https://github.com/michaelbonner/github-repositories-viewer"
 					>
-						See Is It Down Checker Code on GitHub
+						See GitHub Repositories Viewer Code on GitHub
 					</a>
 				</div>
 			</div>
