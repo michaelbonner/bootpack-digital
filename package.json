@@ -14,7 +14,7 @@
 		"out": "bun outdated"
 	},
 	"devDependencies": {
-		"@sveltejs/enhanced-img": "^0.5.1",
+		"@sveltejs/enhanced-img": "^0.6.0",
 		"@sveltejs/kit": "^2.21.0",
 		"@tailwindcss/typography": "^0.5.16",
 		"@typescript-eslint/eslint-plugin": "^8.32.1",
