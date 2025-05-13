@@ -4,11 +4,10 @@
 	import { browser } from '$app/environment';
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
 	import { partytownSnippet } from '@qwik.dev/partytown/integration';
-	import posthog from 'posthog-js';
+	import type { PostHog } from 'posthog-js';
 	import { onMount } from 'svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
-	import { printBootpackConsoleInfo } from '../functions/printBootpackConsoleInfo';
 
 	interface Props {
 		children?: import('svelte').Snippet;
@@ -30,6 +29,7 @@
 	let scriptEl: HTMLScriptElement | undefined = $state();
 	onMount(async () => {
 		if (typeof window !== 'undefined') {
+			const { printBootpackConsoleInfo } = await import('../functions/printBootpackConsoleInfo');
 			printBootpackConsoleInfo();
 		}
 		if (scriptEl) {
@@ -37,8 +37,13 @@
 		}
 	});
 
+	let posthog: PostHog;
+
 	export const load = async () => {
 		if (browser) {
+			const { default: _posthog } = await import('posthog-js');
+			posthog = _posthog;
+
 			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
 				api_host: '/ingest',
 				capture_pageleave: false,
