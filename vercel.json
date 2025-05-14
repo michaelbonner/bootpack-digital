@@ -24,37 +24,14 @@
 			"permanent": true
 		},
 		{
-			"source": "/",
-			"destination": "https://bootpackdigital.com",
-			"permanent": true,
-			"has": [
-				{
-					"type": "host",
-					"value": "fictiveweb.com"
-				}
-			]
-		},
-		{
 			"source": "/blog",
 			"destination": "https://bootpackdigital.com/about",
-			"permanent": true,
-			"has": [
-				{
-					"type": "host",
-					"value": "fictiveweb.com"
-				}
-			]
+			"permanent": true
 		},
 		{
 			"source": "/cms-made-simple-vs-wordpress/",
 			"destination": "https://bootpackdigital.com/work",
-			"permanent": true,
-			"has": [
-				{
-					"type": "host",
-					"value": "fictiveweb.com"
-				}
-			]
+			"permanent": true
 		}
 	]
 }
