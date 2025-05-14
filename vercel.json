@@ -24,7 +24,7 @@
 			"permanent": true
 		},
 		{
-			"source": "/blog",
+			"source": "/blog/",
 			"destination": "https://bootpackdigital.com/about",
 			"permanent": true
 		},
