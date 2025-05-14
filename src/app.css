@@ -51,6 +51,10 @@
 	::file-selector-button {
 		border-color: var(--color-gray-200, currentColor);
 	}
+
+	button {
+		@apply cursor-pointer;
+	}
 }
 
 html,
