@@ -20,7 +20,7 @@
 	"redirects": [
 		{
 			"source": "/:path(.*)",
-			"destination": "/:path?fictiveweb",
+			"destination": "https://bootpackdigital.com/:path?fictiveweb",
 			"permanent": true,
 			"has": [
 				{
