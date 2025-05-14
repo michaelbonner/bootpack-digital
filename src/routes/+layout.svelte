@@ -6,6 +6,7 @@
 	import { partytownSnippet } from '@qwik.dev/partytown/integration';
 	import type { PostHog } from 'posthog-js';
 	import { onMount } from 'svelte';
+	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
 
@@ -119,4 +120,6 @@
 		{@render children_render?.()}
 	</main>
 	<Footer />
+
+	<FictiveRedirectModal />
 </div>

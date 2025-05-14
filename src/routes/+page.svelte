@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Brands from '../components/brands.svelte';
 	import ContactForm from '../components/contact-form.svelte';
-	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
 	import Seo from '../components/seo.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
 	import BlueTopo from '../images/blue-topo.svg';
@@ -133,5 +132,3 @@
 		</div>
 	</div>
 </div>
-
-<FictiveRedirectModal />
