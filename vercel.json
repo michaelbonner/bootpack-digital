@@ -22,6 +22,39 @@
 			"source": "/schedule-a-call",
 			"destination": "https://savvycal.com/bootpack/30-minute-project-discussion?utm_source=schedule-a-call",
 			"permanent": true
+		},
+		{
+			"source": "/",
+			"destination": "https://bootpackdigital.com",
+			"permanent": true,
+			"has": [
+				{
+					"type": "host",
+					"value": "fictiveweb.com"
+				}
+			]
+		},
+		{
+			"source": "/blog",
+			"destination": "https://bootpackdigital.com/about",
+			"permanent": true,
+			"has": [
+				{
+					"type": "host",
+					"value": "fictiveweb.com"
+				}
+			]
+		},
+		{
+			"source": "/cms-made-simple-vs-wordpress/",
+			"destination": "https://bootpackdigital.com/work",
+			"permanent": true,
+			"has": [
+				{
+					"type": "host",
+					"value": "fictiveweb.com"
+				}
+			]
 		}
 	]
 }
