@@ -34,7 +34,7 @@
 				>
 					<div>
 						<div
-							class="mx-auto flex size-24 items-center justify-center rounded-full bg-[#0283C1] p-4"
+							class="mx-auto flex max-w-[180px] items-center justify-center rounded-md bg-[#0283C1] px-6 py-4 mt-2"
 						>
 							<img
 								src="/images/fictiveweb-logo.png"
@@ -44,8 +44,8 @@
 							/>
 						</div>
 						<div class="mt-3 text-center sm:mt-5">
-							<h3 class="text-base font-semibold text-gray-900" id="modal-title">
-								Fictive Web &rarr; Bootpack Digital
+							<h3 class="text-base font-medium text-gray-800" id="modal-title">
+								Fictive Web &rarr; <span class="text-blue-600 font-bold">Bootpack Digital</span>
 							</h3>
 							<div class="mt-2 text-sm text-gray-500 prose">
 								<p>
@@ -61,7 +61,7 @@
 					<div class="mt-5 sm:mt-6">
 						<button
 							type="button"
-							class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							class="inline-flex w-full justify-center rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-orange-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
 							onclick={() => {
 								isVisible = false;
 								window.history.replaceState({}, '', window.location.pathname);
