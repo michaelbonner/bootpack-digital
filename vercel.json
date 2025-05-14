@@ -20,7 +20,7 @@
 	"redirects": [
 		{
 			"source": "/:path(.*)",
-			"destination": "https://bootpackdigital.com/:path?fictiveweb",
+			"destination": "https://bootpackdigital.com/:path?fictiveweb=bootpackdigital",
 			"permanent": true,
 			"has": [
 				{
@@ -30,17 +30,17 @@
 			]
 		},
 		{
-			"source": "/schedule-a-call",
+			"source": "/schedule-a-call\/?",
 			"destination": "https://savvycal.com/bootpack/30-minute-project-discussion?utm_source=schedule-a-call",
 			"permanent": true
 		},
 		{
-			"source": "/blog/",
+			"source": "/blog\/?",
 			"destination": "https://bootpackdigital.com/about",
 			"permanent": true
 		},
 		{
-			"source": "/cms-made-simple-vs-wordpress/",
+			"source": "/cms-made-simple-vs-wordpress\/?",
 			"destination": "https://bootpackdigital.com/work",
 			"permanent": true
 		}
