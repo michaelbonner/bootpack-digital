@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
+	import { replaceState } from '$app/navigation';
 
 	let isVisible = $state(false);
 
@@ -13,7 +14,7 @@
 
 	const closeModal = () => {
 		isVisible = false;
-		window.history.replaceState({}, '', window.location.pathname);
+		replaceState(window.location.pathname, {});
 	};
 </script>
 
