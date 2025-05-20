@@ -5,6 +5,7 @@
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
 	import { partytownSnippet } from '@qwik.dev/partytown/integration';
 	import type { PostHog } from 'posthog-js';
+	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
 	import Footer from '../components/footer.svelte';
@@ -38,13 +39,8 @@
 		}
 	});
 
-	let posthog: PostHog;
-
 	export const load = async () => {
 		if (browser) {
-			const { default: _posthog } = await import('posthog-js');
-			posthog = _posthog;
-
 			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
 				api_host: '/ingest',
 				capture_pageleave: false,
