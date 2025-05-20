@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 
-	let isVisible = false;
+	let isVisible = $state(false);
 
 	onMount(() => {
 		// see if the query string has ?fictiveweb

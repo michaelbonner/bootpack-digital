@@ -5,7 +5,7 @@
 	import SocialIcons from './social-icons.svelte';
 
 	// if this element has been in view add bpd-inView to the footer element
-	let isInView = false;
+	let isInView = $state(false);
 
 	onMount(() => {
 		const footer = document.querySelector('footer');
