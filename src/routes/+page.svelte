@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Brands from '../components/brands.svelte';
+	import ContactBanner from '../components/contact-banner.svelte';
 	import ContactForm from '../components/contact-form.svelte';
 	import Seo from '../components/seo.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
@@ -120,15 +121,8 @@
 </div>
 <WhatMakesUsDifferent />
 <Brands />
-<div class="py-12 bg-white" id="get-in-touch">
-	<div class="container mx-auto max-w-(--breakpoint-xl)">
-		<div class="py-6 px-8 mx-auto w-full">
-			<h2 class="text-3xl font-extrabold leading-9 sm:text-4xl sm:leading-10 text-navy-600">
-				Get in touch!
-			</h2>
-			<div class="lg:mx-24">
-				<ContactForm />
-			</div>
-		</div>
-	</div>
-</div>
+<ContactBanner
+	textLine1="Ready to get started?"
+	textLine2="Send us a message so we can chat."
+	bgColor="bg-navy-100"
+/>
