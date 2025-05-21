@@ -102,9 +102,9 @@
 				<p
 					class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left slide-in-bottom-subtitle"
 				>
-					We help you build websites, mobile applications, and web software that works. We want to
-					help you turn your ideas into solutions that scale with your business. We see ourselves as
-					a partner with you, and we're committed to making every venture as successful as possible.
+					We help you build websites, mobile apps, and web software that works. We want to help you
+					turn your ideas into solutions that scale with your business. We see ourselves as a
+					partner with you, and we're committed to making every venture as successful as possible.
 				</p>
 				<div class="my-4 rounded-md shadow-sm lg:my-0">
 					<a
