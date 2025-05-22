@@ -15,7 +15,7 @@
 	<div class="mx-auto max-w-7xl">
 		<div class="text-gray-700 xl:flex xl:gap-16 xl:px-8 2xl:px-0">
 			<div class="max-w-3xl mx-auto">
-				<div class="prose prose-lg text-gray-600">
+				<div class="prose lg:prose-lg text-gray-600">
 					<h1 class="text-navy-600">Get in touch</h1>
 					<p>
 						Set up some time to talk to Michael Bonner, the founder, not a sales person or an

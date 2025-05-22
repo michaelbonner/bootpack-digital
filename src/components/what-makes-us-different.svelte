@@ -1,6 +1,6 @@
 <div class="py-12 bg-white lg:pb-36 lg:pt-24">
 	<div class="px-4 mx-auto max-w-xl sm:px-6 lg:px-8 lg:max-w-7xl">
-		<div class="prose prose-lg">
+		<div class="prose lg:prose-lg">
 			<h2 class="text-navy-600">What we bring to the table</h2>
 			<p>
 				We are your go-to experts in design, marketing, and development &ndash; fully invested in

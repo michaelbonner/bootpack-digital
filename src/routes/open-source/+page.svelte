@@ -46,7 +46,7 @@
 <div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pb-28">
 	<div class="mx-auto max-w-7xl">
 		<div class="text-gray-600">
-			<div class="prose prose-lg text-gray-600">
+			<div class="prose lg:prose-lg text-gray-600">
 				<h1 class="tracking-tight text-navy-600">Open Source Projects</h1>
 				<div>
 					<p>

@@ -11,7 +11,7 @@
 <div class="py-4 bg-linear-to-r from-blue-100 via-blue-50 to-blue-100 lg:py-24">
 	<div class="py-12 px-4 mx-auto max-w-(--breakpoint-xl) sm:px-6 lg:py-24 lg:px-8">
 		<div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
-			<div class="prose prose-lg">
+			<div class="prose lg:prose-lg">
 				<h2 class="text-navy-600">Brands we have worked with</h2>
 				<p>We have worked with companies from all different industries on all sizes of projects.</p>
 				<p>

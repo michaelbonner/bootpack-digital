@@ -25,7 +25,7 @@
 			</h1>
 		</div>
 
-		<div class="mx-auto max-w-3xl text-gray-500 prose prose-lg">
+		<div class="mx-auto max-w-3xl text-gray-500 prose lg:prose-lg">
 			<p class="text-gray-500">
 				We are a small group of passionate creators trying to make a difference. We value quality
 				deliverables and human interaction. We are purpose built to fit into your business and
@@ -33,7 +33,7 @@
 				help you grow.
 			</p>
 		</div>
-		<div class="mx-auto mt-20 max-w-3xl text-gray-500 prose prose-lg">
+		<div class="mx-auto mt-20 max-w-3xl text-gray-500 prose lg:prose-lg">
 			<h2 class="text-navy-600">Who are we?</h2>
 		</div>
 		<div class="mx-auto mt-8 max-w-3xl">
@@ -147,7 +147,7 @@
 	/>
 	<div class="relative pb-64 mx-auto max-w-6xl">
 		<div
-			class="px-4 pt-12 mx-auto max-w-3xl text-gray-500 prose prose-lg bg-white/50 backdrop-blur-lg py-8 rounded-2xl"
+			class="px-4 pt-12 mx-auto max-w-3xl text-gray-500 prose lg:prose-lg bg-white/50 backdrop-blur-lg py-8 rounded-2xl"
 		>
 			<h2 class="text-navy-600">Why the name "Bootpack"?</h2>
 			<p>
