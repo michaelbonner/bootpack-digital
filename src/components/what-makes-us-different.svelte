@@ -28,7 +28,7 @@
 					</svg>
 				</div>
 				<div class="mt-5 prose">
-					<h3>18+ years of experience</h3>
+					<h3 class="text-navy-700">18+ years of experience</h3>
 					<p>
 						Experience matters when it comes to building quality software and websites. Working at
 						agencies, in-house, and freelance has given us a breadth of understanding that's hard to
@@ -56,7 +56,7 @@
 					</svg>
 				</div>
 				<div class="mt-5 prose">
-					<h3>Business knowledge</h3>
+					<h3 class="text-navy-700">Business knowledge</h3>
 					<p>
 						We are a business minded development group. We don't just think about the code. Helping
 						businesses grow has given us an understanding of ROI that allows us to help clients tune
@@ -84,7 +84,7 @@
 					</svg>
 				</div>
 				<div class="mt-5 prose">
-					<h3>The latest tech</h3>
+					<h3 class="text-navy-700">The latest tech</h3>
 					<p>
 						Blazing fast performance improves conversions. Period. We build on the latest tech to
 						make the customer experience as smooth and reliable as possible. We like the latest
