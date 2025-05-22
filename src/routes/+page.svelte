@@ -93,8 +93,7 @@
 			<div class="flex flex-col lg:items-start">
 				<h1
 					class={clsx(
-						'my-4 font-bold leading-tight text-center text-navy-500 text-2xl',
-						'sm:text-3xl',
+						'my-4 font-bold leading-tight text-center text-navy-500 text-[2rem]',
 						'md:text-4xl md:text-left',
 						'xl:text-[clamp(2rem,4cqw,4rem)]'
 					)}
