@@ -13,7 +13,7 @@
 
 <div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8">
 	<div class="mx-auto max-w-7xl">
-		<div class="text-gray-700 xl:flex xl:gap-16">
+		<div class="text-gray-700 xl:flex xl:gap-16 xl:px-8 2xl:px-0">
 			<div class="max-w-3xl mx-auto">
 				<div class="prose prose-lg text-gray-600">
 					<h1 class="text-navy-600">Get in touch</h1>
