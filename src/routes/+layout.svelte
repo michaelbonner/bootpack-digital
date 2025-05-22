@@ -23,39 +23,30 @@
 		});
 	});
 
-	let scriptEl: HTMLScriptElement | undefined = $state();
 	onMount(async () => {
-		if (typeof window !== 'undefined') {
+		if (browser) {
 			const { printBootpackConsoleInfo } = await import('../functions/printBootpackConsoleInfo');
 			printBootpackConsoleInfo();
-		}
-		if (scriptEl) {
-			scriptEl.textContent = partytownSnippet();
-		}
-	});
 
-	export const load = async () => {
-		if (browser) {
 			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
 				api_host: '/ingest',
 				capture_pageleave: false,
 				capture_pageview: false,
 				ui_host: 'https://us.posthog.com'
 			});
-		}
-		return;
-	};
-	load();
 
-	if (browser) {
-		beforeNavigate(() => posthog.capture('$pageleave'));
-		afterNavigate(() => posthog.capture('$pageview'));
-	}
+			beforeNavigate(() => posthog.capture('$pageleave'));
+			afterNavigate(() => posthog.capture('$pageview'));
+		}
+	});
 
 	const children_render = $derived(children);
 </script>
 
 <svelte:head>
+	<!-- eslint-disable-next-line svelte/no-at-html-tags @typescript-eslint/no-unused-expressions -->
+	{@html '<script>' + partytownSnippet() + '</script>'}
+
 	<script>
 		// Config options
 		partytown = {
@@ -80,8 +71,6 @@
 			}
 		};
 	</script>
-	<!-- Insert `partytownSnippet` here -->
-	<script bind:this={scriptEl}></script>
 
 	<!-- GTM script + config -->
 	<script
