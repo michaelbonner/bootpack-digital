@@ -1,4 +1,5 @@
 <script lang="ts">
+	import clsx from 'clsx';
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
 	import Seo from '../components/seo.svelte';
@@ -87,24 +88,27 @@
 			height="740"
 		/>
 	</div>
-	<div class="container relative mx-auto lg:py-12">
-		<div
-			class="flex flex-col flex-wrap items-center py-12 px-6 mx-auto w-full max-w-(--breakpoint-xl) md:flex-row md:py-24"
-		>
-			<div class="flex overflow-y-hidden flex-col justify-center w-full lg:items-start xl:w-4/5">
+	<div class="relative lg:py-8">
+		<div class="py-12 px-4 lg:px-8 mx-auto md:py-18 max-w-7xl">
+			<div class="flex flex-col lg:items-start">
 				<h1
-					class="my-4 text-2xl font-bold leading-tight text-center md:text-4xl md:text-left xl:text-5xl slide-in-bottom-h1 text-navy-500"
+					class={clsx(
+						'my-4 font-bold leading-tight text-center text-navy-500 text-2xl',
+						'sm:text-3xl',
+						'md:text-4xl md:text-left',
+						'xl:text-[clamp(2rem,4cqw,4rem)]'
+					)}
 				>
-					Design and development experts
+					Web design and development experts
 					<br />
 					<span class="text-blue-500">based in Salt Lake City, Utah</span>
 				</h1>
 				<p
 					class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left slide-in-bottom-subtitle"
 				>
-					We help you build <span class="font-extrabold">websites</span>, mobile
-					<span class="font-extrabold">apps</span>, and web
-					<span class="font-extrabold">software</span> applications that work.
+					We help you build <span class="font-bold">websites</span>, mobile
+					<span class="font-bold">apps</span>, and web
+					<span class="font-bold">software</span> applications that work.
 				</p>
 				<div class="my-4 rounded-md shadow-sm lg:my-0">
 					<a
