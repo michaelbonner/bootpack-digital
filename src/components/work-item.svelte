@@ -1,8 +1,10 @@
 <script lang="ts">
+	import type { Picture } from 'vite-imagetools';
+
 	interface Props {
 		description: string;
 		link: string;
-		poster: string;
+		poster: Picture;
 		title: string;
 		lazy?: boolean;
 		linkText?: string;
