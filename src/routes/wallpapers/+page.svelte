@@ -48,7 +48,7 @@
 				maybe somebody else will enjoy them too.
 			</p>
 		</div>
-		{#each wallpapers as wallpaper}
+		{#each wallpapers as wallpaper (wallpaper.title)}
 			<div class="grid gap-4 justify-start">
 				<h2 class="text-2xl font-extrabold leading-9 sm:text-3xl sm:leading-10 text-navy-600">
 					{wallpaper.title}

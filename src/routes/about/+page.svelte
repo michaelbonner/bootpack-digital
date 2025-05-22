@@ -25,47 +25,45 @@
 			</h1>
 		</div>
 
-		<div class="mx-auto max-w-3xl text-gray-500">
-			<p class="py-12 text-gray-500">
+		<div class="mx-auto max-w-3xl text-gray-500 prose prose-lg">
+			<p class="text-gray-500">
 				We are a small group of passionate creators trying to make a difference. We value quality
-				deliverables and human interaction. People are who we are, who we build for, and who we work
-				for.
+				deliverables and human interaction. We are purpose built to fit into your business and
+				contribute on day one. We have a proven track record of success and a team that is ready to
+				help you grow.
 			</p>
 		</div>
-		<div class="mx-auto mt-12 max-w-3xl text-gray-500">
-			<h2
-				class="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 text-navy-600"
-			>
-				Who are we?
-			</h2>
+		<div class="mx-auto mt-20 max-w-3xl text-gray-500 prose prose-lg">
+			<h2 class="text-navy-600">Who are we?</h2>
 		</div>
 		<div class="mx-auto mt-8 max-w-3xl">
 			<div class="items-start sm:grid sm:gap-6 lg:flex lg:gap-8">
-				<div
-					class="overflow-hidden shrink-0 mt-4 w-full h-80 bg-gray-100 rounded-xl shadow-md md:mx-auto md:mt-0 md:w-56 md:h-72 max-w-[460px]"
-				>
-					<enhanced:img alt="Michael Bonner" loading="lazy" src={MichaelBonner} />
-				</div>
+				<enhanced:img
+					class="object-cover object-top bg-gray-100 aspect-[24/30] max-w-2/3 md:max-w-[340px] w-full rounded-xl shadow-md"
+					alt="Michael Bonner"
+					loading="lazy"
+					src={MichaelBonner}
+				/>
 
 				<div class="flex flex-col justify-between mt-4 lg:mt-0">
-					<div class="gap-y-4">
+					<div class="gap-y-4 prose">
 						<div>
-							<p
-								class="block text-base font-semibold tracking-wide leading-6 text-orange-700 uppercase"
-							>
-								Founder
-							</p>
-							<h3 class="text-2xl font-bold text-navy-600">Michael Bonner</h3>
+							<p class="font-semibold text-orange-700 uppercase mt-0 mb-0">Founder</p>
+							<h3 class="text-navy-600 mt-0">Michael Bonner</h3>
 						</div>
-						<p class="mt-2 text-base leading-7 text-gray-500">
+						<p class="text-gray-500">
 							Michael started Bootpack Digital in 2019 as the next generation of a freelance
 							business he started in 2006. Michael has been building websites since he was 16. What
 							started out as a fun thing to do became a livelihood. Michael has worked at several
 							different companies, including managing a development team for 5 years.
 						</p>
 					</div>
-					<div class="flex gap-4 mt-4">
-						<a href="https://www.linkedin.com/in/michaelbonner/" title="LinkedIn">
+					<div class="flex gap-2 mt-4">
+						<a
+							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							href="https://www.linkedin.com/in/michaelbonner/"
+							title="LinkedIn"
+						>
 							<svg
 								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
@@ -77,7 +75,11 @@
 								/>
 							</svg>
 						</a>
-						<a href="https://www.instagram.com/michael__bonner/" title="Instagram">
+						<a
+							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							href="https://www.instagram.com/michael__bonner/"
+							title="Instagram"
+						>
 							<svg
 								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
@@ -92,7 +94,11 @@
 								/>
 							</svg>
 						</a>
-						<a href="https://github.com/michaelbonner" title="GitHub">
+						<a
+							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							href="https://github.com/michaelbonner"
+							title="GitHub"
+						>
 							<svg
 								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
@@ -104,7 +110,11 @@
 								/>
 							</svg>
 						</a>
-						<a href="https://michaelbonner.dev/" title="Personal Website">
+						<a
+							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							href="https://michaelbonner.dev/"
+							title="Personal Website"
+						>
 							<svg
 								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
@@ -135,14 +145,12 @@
 		loading="lazy"
 		src="../../images/bootpack-in-snow.jpg"
 	/>
-	<div class="relative pb-48 mx-auto max-w-6xl md:pb-80">
-		<div class="px-4 pt-12 mx-auto max-w-3xl text-gray-500">
-			<h2
-				class="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 text-navy-600"
-			>
-				Why the name "Bootpack"?
-			</h2>
-			<p class="mt-4">
+	<div class="relative pb-64 mx-auto max-w-6xl">
+		<div
+			class="px-4 pt-12 mx-auto max-w-3xl text-gray-500 prose prose-lg bg-white/50 backdrop-blur-lg py-8 rounded-2xl"
+		>
+			<h2 class="text-navy-600">Why the name "Bootpack"?</h2>
+			<p>
 				We're from Utah and we love skiing. Sometimes when you are skiing you need to unclip and
 				hike your way to find the best snow. To get there you can follow a boot pack, which is where
 				other hikers have hiked up a section too steep to skin up. The boot pack helps make the

@@ -27,22 +27,18 @@
 	canonical="/work"
 />
 
-<div class="relative px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 hero-bg">
-	<div class="relative mx-auto max-w-7xl">
-		<div>
-			<h1
-				class="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 text-navy-600"
-			>
-				Custom Web Design and Development Projects
-			</h1>
-			<p class="mt-3 max-w-2xl text-xl leading-7 text-gray-500 sm:mt-4">
+<div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pb-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="prose prose-lg text-gray-600">
+			<h1 class="tracking-tight text-navy-600">Custom Web Design and Development Projects</h1>
+			<p>
 				We build engaging, custom experiences for our clients. Here's a few examples we're
 				particularly proud of.
 			</p>
 		</div>
 		<div class="grid gap-x-5 gap-y-10 mx-auto mt-12 max-w-lg lg:grid-cols-3 lg:max-w-none">
 			<WorkItem
-				description={`Primary Children's Hospital launched a campaign called "Here Kids Win." As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands.`}
+				description="Primary Children's Hospital launched a campaign called &quot;Here Kids Win.&quot; As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands."
 				link="https://herekidswin.com/"
 				linkText="Visit Here Kids Win"
 				poster={HereKidsWin}

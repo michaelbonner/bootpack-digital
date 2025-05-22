@@ -1,4 +1,4 @@
-/* Partytown 0.11.0 - MIT QwikDev */
+/* Partytown 0.11.1 - MIT QwikDev */
 (window => {
     const isPromise = v => "object" == typeof v && v && v.then;
     const noop = () => {};
@@ -706,14 +706,14 @@
         };
     })(((accessReq, responseCallback) => mainAccessHandler(worker, accessReq).then(responseCallback))).then((onMessageHandler => {
         if (onMessageHandler) {
-            worker = new Worker(libPath + "partytown-ww-atomics.js?v=0.11.0", {
+            worker = new Worker(libPath + "partytown-ww-atomics.js?v=0.11.1", {
                 name: "Partytown 🎉"
             });
             worker.onmessage = ev => {
                 const msg = ev.data;
                 msg[0] === WorkerMessageType.AsyncAccessRequest ? mainAccessHandler(worker, msg[1]) : onMessageHandler(worker, msg);
             };
-            logMain("Created Partytown web worker (0.11.0)");
+            logMain("Created Partytown web worker (0.11.1)");
             worker.onerror = ev => console.error("Web Worker Error", ev);
             mainWindow.addEventListener("pt1", (ev => registerWindow(worker, getAndSetInstanceId(ev.detail.frameElement), ev.detail)));
         }
