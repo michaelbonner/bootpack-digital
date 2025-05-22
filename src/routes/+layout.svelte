@@ -27,18 +27,20 @@
 		if (browser) {
 			const { printBootpackConsoleInfo } = await import('../functions/printBootpackConsoleInfo');
 			printBootpackConsoleInfo();
-
-			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
-				api_host: '/ingest',
-				capture_pageleave: false,
-				capture_pageview: false,
-				ui_host: 'https://us.posthog.com'
-			});
-
-			beforeNavigate(() => posthog.capture('$pageleave'));
-			afterNavigate(() => posthog.capture('$pageview'));
 		}
 	});
+
+	if (browser) {
+		posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
+			api_host: '/ingest',
+			capture_pageleave: false,
+			capture_pageview: false,
+			ui_host: 'https://us.posthog.com'
+		});
+
+		beforeNavigate(() => posthog.capture('$pageleave'));
+		afterNavigate(() => posthog.capture('$pageview'));
+	}
 
 	const children_render = $derived(children);
 </script>
