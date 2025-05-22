@@ -4,24 +4,19 @@
 	import { browser } from '$app/environment';
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
 	import { partytownSnippet } from '@qwik.dev/partytown/integration';
-	import type { PostHog } from 'posthog-js';
 	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
 
-	interface Props {
-		children?: import('svelte').Snippet;
-	}
-
-	let { children }: Props = $props();
+	let { children } = $props();
 
 	onNavigate((navigation) => {
-		if (!(document as any).startViewTransition) return;
+		if (!(document as Document).startViewTransition) return;
 
 		return new Promise((resolve) => {
-			(document as any).startViewTransition(async () => {
+			(document as Document).startViewTransition(async () => {
 				resolve();
 				await navigation.complete;
 			});

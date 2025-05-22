@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
-	import ContactForm from '../components/contact-form.svelte';
 	import Seo from '../components/seo.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
 	import BlueTopo from '../images/blue-topo.svg';
@@ -96,16 +95,16 @@
 				<h1
 					class="my-4 text-2xl font-bold leading-tight text-center md:text-4xl md:text-left xl:text-5xl slide-in-bottom-h1 text-navy-500"
 				>
-					Software and Web Developers{` `}
+					Design and development experts
 					<br />
 					<span class="text-blue-500">based in Salt Lake City, Utah</span>
 				</h1>
 				<p
 					class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left slide-in-bottom-subtitle"
 				>
-					We help you build websites, mobile apps, and web software that works. We want to help you
-					turn your ideas into solutions that scale with your business. We see ourselves as a
-					partner with you, and we're committed to making every venture as successful as possible.
+					We help you build <span class="font-extrabold">websites</span>, mobile
+					<span class="font-extrabold">apps</span>, and web
+					<span class="font-extrabold">software</span> applications that work.
 				</p>
 				<div class="my-4 rounded-md shadow-sm lg:my-0">
 					<a
@@ -124,5 +123,5 @@
 <ContactBanner
 	textLine1="Ready to get started?"
 	textLine2="Send us a message so we can chat."
-	bgColor="bg-navy-100"
+	bgColor="bg-white/50"
 />

@@ -11,15 +11,11 @@
 <div class="py-4 bg-linear-to-r from-blue-100 via-blue-50 to-blue-100 lg:py-24">
 	<div class="py-12 px-4 mx-auto max-w-(--breakpoint-xl) sm:px-6 lg:py-24 lg:px-8">
 		<div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
-			<div class="lg:mt-8">
-				<h2 class="text-3xl font-extrabold leading-9 sm:text-4xl sm:leading-10 text-navy-600">
-					Brands we have worked with
-				</h2>
-				<p class="mt-3 max-w-3xl text-lg leading-7 text-navy-700">
-					We have worked with companies from all different industries on all sizes of projects.
-				</p>
-				<p class="mt-3">
-					<a class="text-lg text-blue-500 underline" href="/work">See some of our work</a>
+			<div class="prose prose-lg">
+				<h2 class="text-navy-600">Brands we have worked with</h2>
+				<p>We have worked with companies from all different industries on all sizes of projects.</p>
+				<p>
+					<a class="text-blue-500 underline" href="/work">See some of our work</a>
 				</p>
 			</div>
 			<div class="grid grid-cols-2 gap-x-0.5 gap-y-4 items-center mt-8 md:grid-cols-3 lg:mt-0">

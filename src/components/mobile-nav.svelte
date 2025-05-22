@@ -56,7 +56,7 @@
 	<div
 		in:fade|global={{ duration: 200 }}
 		out:fade|global={{ duration: 200 }}
-		class={`grid gap-2 absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-md border border-gray-100 py-4 px-6 rounded-md`}
+		class="grid gap-2 absolute text-center z-50 top-4 left-4 right-4 bg-white shadow-md border border-gray-100 py-4 px-6 rounded-md"
 	>
 		<button
 			class="absolute right-3 top-5 w-6 h-6 font-semibold text-orange-500"
@@ -87,7 +87,7 @@
 			/>
 		</a>
 
-		{#each mainLinks as link}
+		{#each mainLinks as link (link.url)}
 			<a
 				class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
 					page.url.pathname === link.url && 'bg-navy-100'

@@ -1,4 +1,4 @@
-/* Partytown 0.11.0 - MIT QwikDev */
+/* Partytown 0.11.1 - MIT QwikDev */
 (self => {
     var WorkerMessageType;
     !function(WorkerMessageType) {
@@ -863,7 +863,7 @@
         }
         return {};
     };
-    const getPartytownScript = () => `<script src="${partytownLibUrl("partytown.js?v=0.11.0")}"><\/script>`;
+    const getPartytownScript = () => `<script src="${partytownLibUrl("partytown.js?v=0.11.1")}"><\/script>`;
     const createImageConstructor = env => class HTMLImageElement {
         constructor() {
             this.s = "";
@@ -1195,6 +1195,11 @@
                     return getter(this, [ "scripts" ]);
                 }
             },
+            adoptedStyleSheets: {
+                get() {
+                    return getter(this, [ "adoptedStyleSheets" ]);
+                }
+            },
             implementation: {
                 get() {
                     return {
@@ -1516,7 +1521,7 @@
                         (() => {
                             if (!webWorkerCtx.$initWindowMedia$) {
                                 self.$bridgeToMedia$ = [ getter, setter, callMethod, constructGlobal, definePrototypePropertyDescriptor, randomId, WinIdKey, InstanceIdKey, ApplyPathKey ];
-                                webWorkerCtx.$importScripts$(partytownLibUrl("partytown-media.js?v=0.11.0"));
+                                webWorkerCtx.$importScripts$(partytownLibUrl("partytown-media.js?v=0.11.1"));
                                 webWorkerCtx.$initWindowMedia$ = self.$bridgeFromMedia$;
                                 delete self.$bridgeFromMedia$;
                             }

@@ -1,6 +1,14 @@
-<div class="py-12 bg-white lg:py-36">
+<div class="py-12 bg-white lg:pb-36 lg:pt-24">
 	<div class="px-4 mx-auto max-w-xl sm:px-6 lg:px-8 lg:max-w-(--breakpoint-xl)">
-		<div class="lg:grid lg:grid-cols-3 lg:gap-8">
+		<div class="prose prose-lg">
+			<h2 class="text-navy-600">What we bring to the table</h2>
+			<p>
+				We are your go-to experts in design, marketing, and development &ndash; fully invested in
+				your success. Your success fuels us. Our mission is to help your business grow and keep your
+				customers delighted.
+			</p>
+		</div>
+		<div class="lg:grid lg:grid-cols-3 lg:gap-8 mt-8 lg:mt-24">
 			<div>
 				<div class="flex justify-center items-center w-12 h-12 text-white bg-blue-500 rounded-md">
 					<svg
@@ -19,9 +27,9 @@
 						/>
 					</svg>
 				</div>
-				<div class="mt-5">
-					<h2 class="text-lg font-medium leading-6 text-gray-900">18+ years of experience</h2>
-					<p class="mt-2 text-base leading-6 text-gray-500">
+				<div class="mt-5 prose">
+					<h3>18+ years of experience</h3>
+					<p>
 						Experience matters when it comes to building quality software and websites. Working at
 						agencies, in-house, and freelance has given us a breadth of understanding that's hard to
 						come by any other way. We've built large scale production applications and will bring
@@ -47,9 +55,9 @@
 						/>
 					</svg>
 				</div>
-				<div class="mt-5">
-					<h2 class="text-lg font-medium leading-6 text-gray-900">Business knowledge</h2>
-					<p class="mt-2 text-base leading-6 text-gray-500">
+				<div class="mt-5 prose">
+					<h3>Business knowledge</h3>
+					<p>
 						We are a business minded development group. We don't just think about the code. Helping
 						businesses grow has given us an understanding of ROI that allows us to help clients tune
 						their ideas into something shippable and lovable. Go-to-market strategies can make or
@@ -75,9 +83,9 @@
 						/>
 					</svg>
 				</div>
-				<div class="mt-5">
-					<h2 class="text-lg font-medium leading-6 text-gray-900">The latest tech</h2>
-					<p class="mt-2 text-base leading-6 text-gray-500">
+				<div class="mt-5 prose">
+					<h3>The latest tech</h3>
+					<p>
 						Blazing fast performance improves conversions. Period. We build on the latest tech to
 						make the customer experience as smooth and reliable as possible. We like the latest
 						tech, your customers like the latest tech, it's a win-win.

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import clsx from 'clsx';
+
 	let submitted = $state(false);
 	let isSubmitting = false;
 
@@ -21,7 +23,9 @@
 					response.json().then((data) => {
 						console.error(data);
 						if (Object.hasOwn(data, 'errors')) {
-							errorMessage = data['errors'].map((error: any) => error['message']).join(', ');
+							errorMessage = data['errors']
+								.map((error: Record<'message', string>) => error['message'])
+								.join(', ');
 						} else {
 							errorMessage = 'Oops! There was a problem submitting your form';
 						}
@@ -34,9 +38,9 @@
 			});
 	};
 
-	let errors: any = {};
+	let errors: Record<string, string> = {};
 	let errorMessage = $state('');
-	let touched: any = {};
+	let touched: Record<string, boolean> = {};
 </script>
 
 <form class={submitted ? `hidden` : `visible`} name="contact" onsubmit={handleSubmit}>
@@ -157,13 +161,20 @@
 			{errorMessage}
 		</p>
 	{/if}
-	<button
-		class="py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
-		disabled={isSubmitting}
-		type="submit"
-	>
-		Submit
-	</button>
+	<div class={clsx('flex justify-start', 'xl:justify-end')}>
+		<button
+			class={clsx(
+				'py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out',
+				'lg:w-auto',
+				'hover:bg-orange-600',
+				'focus:outline-hidden focus:shadow-outline'
+			)}
+			disabled={isSubmitting}
+			type="submit"
+		>
+			Submit
+		</button>
+	</div>
 </form>
 <div class={submitted ? `visible` : `hidden`}>
 	<h2>Thank you for contacting us! We'll be in touch soon</h2>

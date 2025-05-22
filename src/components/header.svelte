@@ -35,7 +35,7 @@
 			>
 
 			<div class="hidden items-center lg:flex">
-				{#each mainLinks as link}
+				{#each mainLinks as link (link.url)}
 					<a
 						class={`px-3 text-lg font-semibold text-navy-500 hover:underline hover:decoration-blue-400 ${
 							page.url.pathname === link.url &&
