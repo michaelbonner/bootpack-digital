@@ -30,5 +30,6 @@
 		"Usercentrics",
 		"xgerlrdz",
 		"yoyo"
-	]
+	],
+	"ignorePaths": ["src/components/topo-bg.svelte"]
 }
