@@ -39,7 +39,9 @@
 			});
 			timelines.push(
 				gsap.from(title.words, {
-					y: -20,
+					rotate: -3,
+					scale: 1.05,
+					y: '-0.5rem',
 					autoAlpha: 0,
 					stagger: 0.08,
 					duration: 0.4
