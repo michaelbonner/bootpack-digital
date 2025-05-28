@@ -68,6 +68,8 @@
 		<TopoBg />
 		<TopoBg />
 		<TopoBg />
+		<TopoBg />
+		<TopoBg />
 	</div>
 	<div class="relative lg:py-8">
 		<div class="py-12 px-4 lg:px-8 mx-auto md:py-18 max-w-7xl">
