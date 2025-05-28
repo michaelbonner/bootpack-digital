@@ -9,6 +9,7 @@
 	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
+	import { PUBLIC_POSTHOG_ENABLED } from '$env/static/public';
 
 	let { children } = $props();
 
@@ -30,16 +31,18 @@
 		}
 	});
 
-	if (browser) {
-		posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
-			api_host: '/ingest',
-			capture_pageleave: false,
-			capture_pageview: false,
-			ui_host: 'https://us.posthog.com'
-		});
+	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
+		if (browser) {
+			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
+				api_host: '/ingest',
+				capture_pageleave: false,
+				capture_pageview: false,
+				ui_host: 'https://us.posthog.com'
+			});
 
-		beforeNavigate(() => posthog.capture('$pageleave'));
-		afterNavigate(() => posthog.capture('$pageview'));
+			beforeNavigate(() => posthog.capture('$pageleave'));
+			afterNavigate(() => posthog.capture('$pageview'));
+		}
 	}
 
 	const children_render = $derived(children);
