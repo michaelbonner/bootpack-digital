@@ -1,10 +1,59 @@
 <script lang="ts">
 	import clsx from 'clsx';
+	import gsap from 'gsap';
+	import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
+	import { SplitText } from 'gsap/SplitText';
+	import { onMount } from 'svelte';
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
 	import Seo from '../components/seo.svelte';
+	import TopoBg from '../components/topo-bg.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
-	import BlueTopo from '../images/blue-topo.svg';
+
+	onMount(() => {
+		gsap.registerPlugin(SplitText);
+		gsap.registerPlugin(DrawSVGPlugin);
+
+		gsap.from('.bpd-draw-svg path', {
+			duration: 5,
+			drawSVG: '2% 90%',
+			yoyo: true,
+			repeat: -1
+		});
+
+		let title = SplitText.create('.bpd-animate-split-title', {
+			type: 'words'
+		});
+
+		gsap.from(title.words, {
+			y: -20,
+			autoAlpha: 0,
+			stagger: 0.08,
+			duration: 0.4
+		});
+
+		let subtitle = SplitText.create('.bpd-animate-split-subtitle', {
+			type: 'lines'
+		});
+
+		gsap.from(subtitle.lines, {
+			y: -20,
+			autoAlpha: 0,
+			delay: 1.2
+		});
+
+		gsap.from('.bpd-animate-quote-button', {
+			y: -20,
+			autoAlpha: 0,
+			delay: 1.5
+		});
+
+		gsap.from('.bpd-animate-up-after-delay', {
+			y: -20,
+			autoAlpha: 0,
+			delay: 1.8
+		});
+	});
 </script>
 
 <Seo
@@ -14,79 +63,11 @@
 />
 
 <div class="relative bg-blue-50 hero-bg">
-	<div class="flex overflow-hidden absolute inset-0 w-full h-full opacity-80">
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
-		<img
-			loading="eager"
-			class="min-h-full"
-			src={BlueTopo}
-			alt="Blue topographic map"
-			width="740"
-			height="740"
-		/>
+	<div class="flex overflow-hidden absolute inset-0 w-full h-full">
+		<TopoBg />
+		<TopoBg />
+		<TopoBg />
+		<TopoBg />
 	</div>
 	<div class="relative lg:py-8">
 		<div class="py-12 px-4 lg:px-8 mx-auto md:py-18 max-w-7xl">
@@ -95,7 +76,8 @@
 					class={clsx(
 						'my-4 font-bold leading-tight text-center text-navy-500 text-[2rem]',
 						'md:text-4xl md:text-left',
-						'xl:text-[clamp(2rem,4cqw,4rem)]'
+						'xl:text-[clamp(2rem,4cqw,4rem)]',
+						'bpd-animate-split-title'
 					)}
 				>
 					Web design and development experts
@@ -103,13 +85,13 @@
 					<span class="text-blue-500">based in Salt Lake City, Utah</span>
 				</h1>
 				<p
-					class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left slide-in-bottom-subtitle"
+					class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left bpd-animate-split-subtitle"
 				>
 					We help you build <span class="font-bold">websites</span>, mobile
 					<span class="font-bold">apps</span>, and web
 					<span class="font-bold">software</span> applications that work.
 				</p>
-				<div class="my-4 rounded-md shadow-sm lg:my-0">
+				<div class="my-4 rounded-md shadow-sm lg:my-0 bpd-animate-quote-button">
 					<a
 						class="flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
 						href="/contact"
