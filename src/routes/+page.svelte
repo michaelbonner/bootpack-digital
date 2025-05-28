@@ -10,49 +10,81 @@
 	import TopoBg from '../components/topo-bg.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
 
+	let timelines: gsap.core.Tween[] = [];
+
 	onMount(() => {
+		// Respect user's motion preferences
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		if (prefersReducedMotion) return;
+
 		gsap.registerPlugin(SplitText);
 		gsap.registerPlugin(DrawSVGPlugin);
 
-		gsap.from('.bpd-draw-svg path', {
-			duration: 5,
-			drawSVG: '2% 90%',
-			yoyo: true,
-			repeat: -1
-		});
+		const drawElements = document.querySelectorAll('.bpd-draw-svg path');
+		if (drawElements.length > 0) {
+			timelines.push(
+				gsap.from('.bpd-draw-svg path', {
+					duration: 5,
+					drawSVG: '2% 90%',
+					yoyo: true,
+					repeat: -1
+				})
+			);
+		}
 
-		let title = SplitText.create('.bpd-animate-split-title', {
-			type: 'words'
-		});
+		const titleElement = document.querySelector('.bpd-animate-split-title');
+		if (titleElement) {
+			let title = SplitText.create(titleElement, {
+				type: 'words'
+			});
+			timelines.push(
+				gsap.from(title.words, {
+					y: -20,
+					autoAlpha: 0,
+					stagger: 0.08,
+					duration: 0.4
+				})
+			);
+		}
 
-		gsap.from(title.words, {
-			y: -20,
-			autoAlpha: 0,
-			stagger: 0.08,
-			duration: 0.4
-		});
+		const subtitleElement = document.querySelector('.bpd-animate-split-subtitle');
+		if (subtitleElement) {
+			let subtitle = SplitText.create(subtitleElement, {
+				type: 'lines'
+			});
 
-		let subtitle = SplitText.create('.bpd-animate-split-subtitle', {
-			type: 'lines'
-		});
+			gsap.from(subtitle.lines, {
+				y: -20,
+				autoAlpha: 0,
+				delay: 1.2
+			});
+		}
 
-		gsap.from(subtitle.lines, {
-			y: -20,
-			autoAlpha: 0,
-			delay: 1.2
-		});
+		const quoteButtonElement = document.querySelector('.bpd-animate-quote-button');
+		if (quoteButtonElement) {
+			timelines.push(
+				gsap.from(quoteButtonElement, {
+					y: -20,
+					autoAlpha: 0,
+					delay: 1.5
+				})
+			);
+		}
 
-		gsap.from('.bpd-animate-quote-button', {
-			y: -20,
-			autoAlpha: 0,
-			delay: 1.5
-		});
+		const upAfterDelayElements = document.querySelectorAll('.bpd-animate-up-after-delay');
+		if (upAfterDelayElements) {
+			timelines.push(
+				gsap.from(upAfterDelayElements, {
+					y: -20,
+					autoAlpha: 0,
+					delay: 1.8
+				})
+			);
+		}
 
-		gsap.from('.bpd-animate-up-after-delay', {
-			y: -20,
-			autoAlpha: 0,
-			delay: 1.8
-		});
+		return () => {
+			timelines.forEach((tl) => tl.kill());
+		};
 	});
 </script>
 
