@@ -10,6 +10,7 @@
 		"fictiveweb",
 		"formspree",
 		"googletagmanager",
+		"gsap",
 		"imagetools",
 		"Incoterms",
 		"jmills",
@@ -27,6 +28,8 @@
 		"topo",
 		"urlset",
 		"Usercentrics",
-		"xgerlrdz"
-	]
+		"xgerlrdz",
+		"yoyo"
+	],
+	"ignorePaths": ["src/components/topo-bg.svelte"]
 }
