@@ -1,93 +1,10 @@
 <script lang="ts">
 	import clsx from 'clsx';
-	import gsap from 'gsap';
-	import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
-	import { SplitText } from 'gsap/SplitText';
-	import { onMount } from 'svelte';
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
 	import Seo from '../components/seo.svelte';
 	import TopoBg from '../components/topo-bg.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
-
-	let timelines: gsap.core.Tween[] = [];
-
-	onMount(() => {
-		// Respect user's motion preferences
-		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-		if (prefersReducedMotion) return;
-
-		gsap.registerPlugin(SplitText);
-		gsap.registerPlugin(DrawSVGPlugin);
-
-		const drawElements = document.querySelectorAll('.bpd-draw-svg path');
-		if (drawElements.length > 0) {
-			timelines.push(
-				gsap.from('.bpd-draw-svg path', {
-					duration: 5,
-					drawSVG: '2% 90%',
-					yoyo: true,
-					repeat: -1
-				})
-			);
-		}
-
-		const titleElement = document.querySelector('.bpd-animate-split-title');
-		if (titleElement) {
-			let title = SplitText.create(titleElement, {
-				type: 'words'
-			});
-			timelines.push(
-				gsap.from(title.words, {
-					rotate: -3,
-					scale: 1.05,
-					y: '-0.5rem',
-					autoAlpha: 0,
-					stagger: 0.08,
-					duration: 0.4
-				})
-			);
-		}
-
-		const subtitleElement = document.querySelector('.bpd-animate-split-subtitle');
-		if (subtitleElement) {
-			let subtitle = SplitText.create(subtitleElement, {
-				type: 'lines'
-			});
-
-			gsap.from(subtitle.lines, {
-				y: -20,
-				autoAlpha: 0,
-				delay: 1.2
-			});
-		}
-
-		const quoteButtonElement = document.querySelector('.bpd-animate-quote-button');
-		if (quoteButtonElement) {
-			timelines.push(
-				gsap.from(quoteButtonElement, {
-					y: -20,
-					autoAlpha: 0,
-					delay: 1.5
-				})
-			);
-		}
-
-		const upAfterDelayElements = document.querySelectorAll('.bpd-animate-up-after-delay');
-		if (upAfterDelayElements) {
-			timelines.push(
-				gsap.from(upAfterDelayElements, {
-					y: -20,
-					autoAlpha: 0,
-					delay: 1.8
-				})
-			);
-		}
-
-		return () => {
-			timelines.forEach((tl) => tl.kill());
-		};
-	});
 </script>
 
 <Seo
