@@ -6,7 +6,7 @@
 	viewBox="0 0 600 600"
 >
 	<path
-		class="opacity-30"
+		class="opacity-20"
 		fill="none"
 		stroke-width="1px"
 		stroke="#d1e5ef"
