@@ -1,7 +1,5 @@
 <script lang="ts">
 	import clsx from 'clsx';
-	import gsap from 'gsap';
-	import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 	import { onMount } from 'svelte';
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
@@ -9,12 +7,15 @@
 	import TopoBg from '../components/topo-bg.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
 
-	let timelines: gsap.core.Tween[] = [];
+	onMount(async () => {
+		let timelines: gsap.core.Tween[] = [];
 
-	onMount(() => {
 		// Respect user's motion preferences
 		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 		if (prefersReducedMotion) return;
+
+		const gsap = (await import('gsap')).default;
+		const { DrawSVGPlugin } = await import('gsap/DrawSVGPlugin');
 
 		gsap.registerPlugin(DrawSVGPlugin);
 
@@ -29,10 +30,6 @@
 				})
 			);
 		}
-
-		return () => {
-			timelines.forEach((tl) => tl.kill());
-		};
 	});
 </script>
 
