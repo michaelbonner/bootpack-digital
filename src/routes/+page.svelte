@@ -2,7 +2,6 @@
 	import clsx from 'clsx';
 	import gsap from 'gsap';
 	import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
-	import { SplitText } from 'gsap/SplitText';
 	import { onMount } from 'svelte';
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
@@ -17,7 +16,6 @@
 		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 		if (prefersReducedMotion) return;
 
-		gsap.registerPlugin(SplitText);
 		gsap.registerPlugin(DrawSVGPlugin);
 
 		const drawElements = document.querySelectorAll('.bpd-draw-svg path');
@@ -28,58 +26,6 @@
 					drawSVG: '2% 90%',
 					yoyo: true,
 					repeat: -1
-				})
-			);
-		}
-
-		const titleElement = document.querySelector('.bpd-animate-split-title');
-		if (titleElement) {
-			let title = SplitText.create(titleElement, {
-				type: 'words'
-			});
-			timelines.push(
-				gsap.from(title.words, {
-					rotate: -3,
-					scale: 1.05,
-					y: '-0.5rem',
-					autoAlpha: 0,
-					stagger: 0.08,
-					duration: 0.4
-				})
-			);
-		}
-
-		const subtitleElement = document.querySelector('.bpd-animate-split-subtitle');
-		if (subtitleElement) {
-			let subtitle = SplitText.create(subtitleElement, {
-				type: 'lines'
-			});
-
-			gsap.from(subtitle.lines, {
-				y: -20,
-				autoAlpha: 0,
-				delay: 1.2
-			});
-		}
-
-		const quoteButtonElement = document.querySelector('.bpd-animate-quote-button');
-		if (quoteButtonElement) {
-			timelines.push(
-				gsap.from(quoteButtonElement, {
-					y: -20,
-					autoAlpha: 0,
-					delay: 1.5
-				})
-			);
-		}
-
-		const upAfterDelayElements = document.querySelectorAll('.bpd-animate-up-after-delay');
-		if (upAfterDelayElements) {
-			timelines.push(
-				gsap.from(upAfterDelayElements, {
-					y: -20,
-					autoAlpha: 0,
-					delay: 1.8
 				})
 			);
 		}
@@ -112,22 +58,19 @@
 					class={clsx(
 						'my-4 font-bold leading-tight text-center text-navy-500 text-[2rem]',
 						'md:text-4xl md:text-left',
-						'xl:text-[clamp(2rem,4cqw,4rem)]',
-						'bpd-animate-split-title'
+						'xl:text-[clamp(2rem,4cqw,4rem)]'
 					)}
 				>
 					Web design and development experts
 					<br />
 					<span class="text-blue-500">based in Salt Lake City, Utah</span>
 				</h1>
-				<p
-					class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left bpd-animate-split-subtitle"
-				>
+				<p class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left">
 					We help you build <span class="font-bold">websites</span>, mobile
 					<span class="font-bold">apps</span>, and web
 					<span class="font-bold">software</span> applications that work.
 				</p>
-				<div class="my-4 rounded-md shadow-sm lg:my-0 bpd-animate-quote-button">
+				<div class="my-4 rounded-md shadow-sm lg:my-0">
 					<a
 						class="flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
 						href="/contact"
