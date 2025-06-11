@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PUBLIC_TEST_CONTACT_FORM } from '$env/static/public';
 	import clsx from 'clsx';
 
 	let submitted = $state(false);
@@ -6,6 +7,12 @@
 
 	const handleSubmit = async (event: SubmitEvent) => {
 		event.preventDefault();
+
+		if (PUBLIC_TEST_CONTACT_FORM === 'true') {
+			submitted = true;
+			return;
+		}
+
 		const formData = new FormData(event.target as HTMLFormElement);
 
 		fetch('https://formspree.io/f/xgerlrdz', {
