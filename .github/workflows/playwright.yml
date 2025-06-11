@@ -19,6 +19,8 @@ jobs:
         run: |
           echo "PUBLIC_TEST_CONTACT_FORM=true" >> $GITHUB_ENV
           echo "PUBLIC_POSTHOG_ENABLED=false" >> $GITHUB_ENV
+      - name: Start dev server
+        run: bun run dev
       - name: Run Playwright tests
         run: bunx playwright test
       - uses: actions/upload-artifact@v4
