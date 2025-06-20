@@ -5,6 +5,7 @@
       "name": "bootpack-svelte",
       "dependencies": {
         "@eslint/compat": "^1.3.0",
+        "@fontsource-variable/figtree": "^5.2.8",
         "@qwik.dev/partytown": "^0.11.1",
         "@sveltejs/adapter-vercel": "^5.7.2",
         "@tailwindcss/vite": "^4.1.10",
@@ -110,6 +111,8 @@
     "@eslint/object-schema": ["@eslint/object-schema@2.1.6", "", {}, "sha512-RBMg5FRL0I0gs51M/guSAj5/e14VQ4tpZnQNWwuDT66P14I43ItmPfIZRhO9fUVIPOAQXU47atlywZ/czoqFPA=="],
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.3.2", "", { "dependencies": { "@eslint/core": "^0.15.0", "levn": "^0.4.1" } }, "sha512-4SaFZCNfJqvk/kenHpI8xvN42DMaoycy4PzKc5otHxRswww1kAt82OlBuwRVLofCACCTZEcla2Ydxv8scMXaTg=="],
+
+    "@fontsource-variable/figtree": ["@fontsource-variable/figtree@5.2.8", "", {}, "sha512-T1X/m2Yw0nKSlbBmaPdZR9Ed1I0cXZVIGc6kScyo9wgyxtGXR+bawboP+W2DHNMHWz90JEz1IAEPQ5bcNprn0w=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.1", "", {}, "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="],
 

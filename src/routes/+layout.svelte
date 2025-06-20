@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import '@fontsource-variable/figtree';
 
 	import { browser } from '$app/environment';
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
