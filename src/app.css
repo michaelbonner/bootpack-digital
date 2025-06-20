@@ -43,6 +43,13 @@
   If we ever want to remove these styles, we need to add an explicit border
   color utility to any element that depends on these defaults.
 */
+
+@layer theme {
+	:root {
+		--default-font-family: 'Figtree Variable', sans-serif;
+	}
+}
+
 @layer base {
 	*,
 	::after,
@@ -52,72 +59,72 @@
 		border-color: var(--color-gray-200, currentColor);
 	}
 
+	html,
+	body {
+		font-size: 18px;
+	}
+
 	button {
 		@apply cursor-pointer;
 	}
-}
 
-html,
-body {
-	font-size: 18px;
-}
-
-.underline {
-	text-underline-offset: 2px;
-}
-
-.table-responsive {
-	overflow-x: auto;
-}
-
-header {
-	view-transition-name: header;
-}
-
-footer {
-	@apply bg-navy-700;
-	background-repeat: repeat;
-}
-footer.bpd-inView {
-	background-image: url('/images/navy-topo.svg');
-}
-
-@keyframes fade-in {
-	from {
-		opacity: 0;
+	.underline {
+		text-underline-offset: 2px;
 	}
-}
 
-@keyframes fade-out {
-	to {
-		opacity: 0;
+	.table-responsive {
+		overflow-x: auto;
 	}
-}
 
-@keyframes slide-from-right {
-	from {
-		transform: translateX(20px);
+	header {
+		view-transition-name: header;
 	}
-}
 
-@keyframes slide-to-left {
-	to {
-		transform: translateX(-20px);
+	footer {
+		@apply bg-navy-700;
+		background-repeat: repeat;
 	}
-}
+	footer.bpd-inView {
+		background-image: url('/images/navy-topo.svg');
+	}
 
-:root::view-transition-old(root) {
-	animation:
-		90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
-}
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+	}
 
-:root::view-transition-new(root) {
-	animation:
-		210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
-}
+	@keyframes fade-out {
+		to {
+			opacity: 0;
+		}
+	}
 
-.view-transition-policy-links {
-	view-transition-name: policy-links;
+	@keyframes slide-from-right {
+		from {
+			transform: translateX(20px);
+		}
+	}
+
+	@keyframes slide-to-left {
+		to {
+			transform: translateX(-20px);
+		}
+	}
+
+	:root::view-transition-old(root) {
+		animation:
+			90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+	}
+
+	:root::view-transition-new(root) {
+		animation:
+			210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+	}
+
+	.view-transition-policy-links {
+		view-transition-name: policy-links;
+	}
 }
