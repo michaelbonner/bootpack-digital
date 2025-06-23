@@ -1,3 +1,42 @@
+const routes = [
+	{
+		route: '/',
+		priority: 1
+	},
+	{
+		route: '/about',
+		priority: 0.5
+	},
+	{
+		route: '/contact',
+		priority: 0.5
+	},
+	{
+		route: '/open-source',
+		priority: 0.5
+	},
+	{
+		route: '/work',
+		priority: 0.5
+	},
+	{
+		route: '/policies',
+		priority: 0.5
+	},
+	{
+		route: '/policies/privacy-policy',
+		priority: 0.3
+	},
+	{
+		route: '/policies/cookie-policy',
+		priority: 0.3
+	},
+	{
+		route: '/policies/terms-of-service',
+		priority: 0.3
+	}
+];
+
 export async function GET() {
 	const website = `https://bootpackdigital.com`;
 	const headers = {
@@ -14,51 +53,17 @@ export async function GET() {
         xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
       >
-        <url>
-            <loc>${website}</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/work</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/about</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/open-source</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/contact</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/policies</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/policies/privacy-policy</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/policies/cookie-policy</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
-        <url>
-            <loc>${website}/policies/terms-of-service</loc>
-            <changefreq>daily</changefreq>
-            <priority>0.7</priority>
-        </url>
+        ${routes
+					.map(
+						(route) => `
+            <url>
+                <loc>${website}${route.route}</loc>
+                <changefreq>weekly</changefreq>
+                <priority>${route.priority}</priority>
+            </url>
+        `
+					)
+					.join('')}
       </urlset>`,
 		{ headers: headers }
 	);
