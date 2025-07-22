@@ -71,12 +71,39 @@
 			telephone: '+18018395287',
 			email: 'hey@bootpackdigital.com',
 			priceRange: '$$$',
-			founder: 'Michael Bonner',
+			founder: {
+				'@type': 'Person',
+				name: 'Michael Bonner',
+				email: 'hey@bootpackdigital.com',
+				telephone: '+18018395287',
+				sameAs: [
+					'https://www.facebook.com/michaelwbonner',
+					'https://www.instagram.com/michael__bonner/',
+					'https://github.com/michaelbonner'
+				]
+			},
 			foundingDate: '2019',
 			sameAs: [
 				'https://www.facebook.com/bootpackdigital',
 				'https://www.instagram.com/bootpack.digital',
 				'https://github.com/bootpackdigital'
+			],
+			openingHoursSpecification: [
+				{
+					'@type': 'OpeningHoursSpecification',
+					dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+					opens: '09:00',
+					closes: '18:00'
+				}
+			],
+			contactPoint: [
+				{
+					'@type': 'ContactPoint',
+					telephone: '+18018395287',
+					contactType: 'customer service',
+					areaServed: 'US',
+					availableLanguage: ['English']
+				}
 			],
 			hasOfferCatalog: {
 				'@context': 'https://schema.org',
