@@ -55,27 +55,7 @@
 			name: 'Bootpack Digital',
 			url: 'https://bootpackdigital.com/',
 			description:
-				'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.',
-			publisher: {
-				'@type': 'Organization',
-				name: 'Bootpack Digital, LLC',
-				url: 'https://bootpackdigital.com/',
-				logo: {
-					'@type': 'ImageObject',
-					url: 'https://bootpackdigital.com/bpd-color-horizontal.png'
-				},
-				address: {
-					'@type': 'PostalAddress',
-					addressLocality: 'Salt Lake City',
-					addressRegion: 'UT',
-					addressCountry: 'US'
-				},
-				sameAs: [
-					'https://www.facebook.com/bootpackdigital',
-					'https://www.instagram.com/bootpack.digital',
-					'https://github.com/bootpackdigital'
-				]
-			}
+				'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.'
 		},
 		{
 			'@context': 'https://schema.org',
