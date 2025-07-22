@@ -48,21 +48,20 @@
 
 	const children_render = $derived(children);
 
-	const ldJson = [
+	export const ldJson = [
 		{
 			'@context': 'https://schema.org',
-			'@type': 'Organization',
+			'@type': ['Organization', 'LocalBusiness'],
+			'@id': 'https://bootpackdigital.com/#organization',
 			name: 'Bootpack Digital',
+			legalName: 'Bootpack Digital, LLC',
 			url: 'https://bootpackdigital.com/',
-			description:
-				'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.'
-		},
-		{
-			'@context': 'https://schema.org',
-			'@type': 'LocalBusiness',
-			name: 'Bootpack Digital',
+			logo: 'https://bootpackdigital.com/bpd-color-horizontal.png',
 			image: 'https://bootpackdigital.com/bpd-color-horizontal.png',
+			description:
+				'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.',
 			address: {
+				'@context': 'https://schema.org',
 				'@type': 'PostalAddress',
 				addressLocality: 'Salt Lake City',
 				addressRegion: 'UT',
@@ -70,55 +69,100 @@
 			},
 			areaServed: 'US',
 			telephone: '+18018395287',
-			url: 'https://bootpackdigital.com/',
-			description:
-				'Custom web and app developer in Utah, offering web design, development, and marketing services.',
+			email: 'hey@bootpackdigital.com',
+			priceRange: '$$$',
+			founder: 'Bootpack Digital Team',
+			foundingDate: '2007',
 			sameAs: [
 				'https://www.facebook.com/bootpackdigital',
 				'https://www.instagram.com/bootpack.digital',
 				'https://github.com/bootpackdigital'
-			]
-		},
-		// add services
-		...[
-			{
-				name: 'Web Design',
-				description: 'Custom web design and development services.'
-			},
-			{
-				name: 'Web Development',
-				description: 'Custom web development services.'
-			},
-			{
-				name: 'Web Software Development',
-				description: 'Custom web software development services.'
-			},
-			{
-				name: 'Mobile App Development',
-				description: 'Custom mobile app development services.'
-			},
-			{
-				name: 'Marketing',
-				description: 'Custom marketing services.'
-			},
-			{
-				name: 'SEO',
-				description: 'Custom SEO services.'
-			},
-			{
-				name: 'Social Media',
-				description: 'Custom social media services.'
+			],
+			hasOfferCatalog: {
+				'@context': 'https://schema.org',
+				'@type': 'OfferCatalog',
+				name: 'Services',
+				itemListElement: [
+					{
+						'@context': 'https://schema.org',
+						'@type': 'Offer',
+						itemOffered: {
+							'@type': 'Service',
+							name: 'Web Design',
+							description: 'Custom web design and development services.',
+							areaServed: 'United States',
+							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+						}
+					},
+					{
+						'@context': 'https://schema.org',
+						'@type': 'Offer',
+						itemOffered: {
+							'@type': 'Service',
+							name: 'Web Development',
+							description: 'Custom web development services.',
+							areaServed: 'United States',
+							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+						}
+					},
+					{
+						'@context': 'https://schema.org',
+						'@type': 'Offer',
+						itemOffered: {
+							'@type': 'Service',
+							name: 'Web Software Development',
+							description: 'Custom web software development services.',
+							areaServed: 'United States',
+							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+						}
+					},
+					{
+						'@context': 'https://schema.org',
+						'@type': 'Offer',
+						itemOffered: {
+							'@type': 'Service',
+							name: 'Mobile App Development',
+							description: 'Custom mobile app development services.',
+							areaServed: 'United States',
+							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+						}
+					},
+					{
+						'@context': 'https://schema.org',
+						'@type': 'Offer',
+						itemOffered: {
+							'@type': 'Service',
+							name: 'Marketing',
+							description: 'Custom marketing services.',
+							areaServed: 'United States',
+							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+						}
+					},
+					{
+						'@context': 'https://schema.org',
+						'@type': 'Offer',
+						itemOffered: {
+							'@type': 'Service',
+							name: 'SEO',
+							description: 'Custom SEO services.',
+							areaServed: 'United States',
+							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+						}
+					},
+					{
+						'@context': 'https://schema.org',
+						'@type': 'Offer',
+						itemOffered: {
+							'@type': 'Service',
+							name: 'Social Media',
+							description: 'Custom social media services.',
+							areaServed: 'United States',
+							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+						}
+					}
+				]
 			}
-		].map((service) => ({
-			'@context': 'https://schema.org',
-			'@type': 'Service',
-			...service,
-			areaServed: 'United States',
-			provider: {
-				'@type': 'Organization',
-				name: 'Bootpack Digital, LLC'
-			}
-		}))
+		}
 	];
 </script>
 
