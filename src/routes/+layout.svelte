@@ -79,7 +79,8 @@
 				sameAs: [
 					'https://www.facebook.com/michaelwbonner',
 					'https://www.instagram.com/michael__bonner/',
-					'https://github.com/michaelbonner'
+					'https://github.com/michaelbonner',
+					'https://g.page/bootpack'
 				]
 			},
 			foundingDate: '2019',
