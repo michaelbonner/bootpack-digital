@@ -48,34 +48,37 @@
 
 	const children_render = $derived(children);
 
-	const ldJson = {
-		'@context': 'https://schema.org',
-		'@type': 'WebSite',
-		name: 'Bootpack Digital',
-		url: 'https://bootpackdigital.com/',
-		description:
-			'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.',
-		publisher: {
+	const ldJson = [
+		{
+			'@context': 'https://schema.org',
 			'@type': 'Organization',
-			name: 'Bootpack Digital, LLC',
+			name: 'Bootpack Digital',
 			url: 'https://bootpackdigital.com/',
-			logo: {
-				'@type': 'ImageObject',
-				url: 'https://bootpackdigital.com/bpd-color-horizontal.png'
-			},
-			address: {
-				'@type': 'PostalAddress',
-				addressLocality: 'Salt Lake City',
-				addressRegion: 'UT',
-				addressCountry: 'US'
-			},
-			sameAs: [
-				'https://www.facebook.com/bootpackdigital',
-				'https://www.instagram.com/bootpack.digital',
-				'https://github.com/bootpackdigital'
-			]
+			description:
+				'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.',
+			publisher: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital, LLC',
+				url: 'https://bootpackdigital.com/',
+				logo: {
+					'@type': 'ImageObject',
+					url: 'https://bootpackdigital.com/bpd-color-horizontal.png'
+				},
+				address: {
+					'@type': 'PostalAddress',
+					addressLocality: 'Salt Lake City',
+					addressRegion: 'UT',
+					addressCountry: 'US'
+				},
+				sameAs: [
+					'https://www.facebook.com/bootpackdigital',
+					'https://www.instagram.com/bootpack.digital',
+					'https://github.com/bootpackdigital'
+				]
+			}
 		},
-		mainEntity: {
+		{
+			'@context': 'https://schema.org',
 			'@type': 'LocalBusiness',
 			name: 'Bootpack Digital',
 			image: 'https://bootpackdigital.com/bpd-color-horizontal.png',
@@ -95,8 +98,48 @@
 				'https://www.instagram.com/bootpack.digital',
 				'https://github.com/bootpackdigital'
 			]
-		}
-	};
+		},
+		// add services
+		...[
+			{
+				name: 'Web Design',
+				description: 'Custom web design and development services.'
+			},
+			{
+				name: 'Web Development',
+				description: 'Custom web development services.'
+			},
+			{
+				name: 'Web Software Development',
+				description: 'Custom web software development services.'
+			},
+			{
+				name: 'Mobile App Development',
+				description: 'Custom mobile app development services.'
+			},
+			{
+				name: 'Marketing',
+				description: 'Custom marketing services.'
+			},
+			{
+				name: 'SEO',
+				description: 'Custom SEO services.'
+			},
+			{
+				name: 'Social Media',
+				description: 'Custom social media services.'
+			}
+		].map((service) => ({
+			'@context': 'https://schema.org',
+			'@type': 'Service',
+			...service,
+			areaServed: 'United States',
+			provider: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital, LLC'
+			}
+		}))
+	];
 </script>
 
 <svelte:head>
