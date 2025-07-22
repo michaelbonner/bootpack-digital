@@ -6,7 +6,7 @@
 
 <Seo
 	title="About Bootpack Digital, a Utah Based Web and App Development Agency"
-	description="Bootpack Digital is a small group of passionate creators. We value quality deliverables and human interaction. People are who we are, who we build for, and who we work for."
+	description="Bootpack Digital: Utah-based web and app development agency helping businesses grow with quality solutions and a passion for collaboration."
 	canonical="/about"
 />
 
