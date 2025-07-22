@@ -71,8 +71,8 @@
 			telephone: '+18018395287',
 			email: 'hey@bootpackdigital.com',
 			priceRange: '$$$',
-			founder: 'Bootpack Digital Team',
-			foundingDate: '2007',
+			founder: 'Michael Bonner',
+			foundingDate: '2019',
 			sameAs: [
 				'https://www.facebook.com/bootpackdigital',
 				'https://www.instagram.com/bootpack.digital',
@@ -83,83 +83,46 @@
 				'@type': 'OfferCatalog',
 				name: 'Services',
 				itemListElement: [
-					{
-						'@context': 'https://schema.org',
-						'@type': 'Offer',
-						itemOffered: {
-							'@type': 'Service',
+					[
+						{
 							name: 'Web Design',
-							description: 'Custom web design and development services.',
-							areaServed: 'United States',
-							provider: { '@id': 'https://bootpackdigital.com/#organization' }
-						}
-					},
-					{
-						'@context': 'https://schema.org',
-						'@type': 'Offer',
-						itemOffered: {
-							'@type': 'Service',
+							description: 'Custom web design and development services.'
+						},
+						{
 							name: 'Web Development',
-							description: 'Custom web development services.',
-							areaServed: 'United States',
-							provider: { '@id': 'https://bootpackdigital.com/#organization' }
-						}
-					},
-					{
-						'@context': 'https://schema.org',
-						'@type': 'Offer',
-						itemOffered: {
-							'@type': 'Service',
+							description: 'Custom web development services.'
+						},
+						{
 							name: 'Web Software Development',
-							description: 'Custom web software development services.',
-							areaServed: 'United States',
-							provider: { '@id': 'https://bootpackdigital.com/#organization' }
-						}
-					},
-					{
-						'@context': 'https://schema.org',
-						'@type': 'Offer',
-						itemOffered: {
-							'@type': 'Service',
+							description: 'Custom web software development services.'
+						},
+						{
 							name: 'Mobile App Development',
-							description: 'Custom mobile app development services.',
-							areaServed: 'United States',
-							provider: { '@id': 'https://bootpackdigital.com/#organization' }
-						}
-					},
-					{
-						'@context': 'https://schema.org',
-						'@type': 'Offer',
-						itemOffered: {
-							'@type': 'Service',
+							description: 'Custom mobile app development services.'
+						},
+						{
 							name: 'Marketing',
-							description: 'Custom marketing services.',
-							areaServed: 'United States',
-							provider: { '@id': 'https://bootpackdigital.com/#organization' }
-						}
-					},
-					{
-						'@context': 'https://schema.org',
-						'@type': 'Offer',
-						itemOffered: {
-							'@type': 'Service',
+							description: 'Custom marketing services.'
+						},
+						{
 							name: 'SEO',
-							description: 'Custom SEO services.',
-							areaServed: 'United States',
-							provider: { '@id': 'https://bootpackdigital.com/#organization' }
+							description: 'Custom SEO services.'
+						},
+						{
+							name: 'Social Media',
+							description: 'Custom social media services.'
 						}
-					},
-					{
+					].map((service) => ({
 						'@context': 'https://schema.org',
 						'@type': 'Offer',
 						itemOffered: {
 							'@type': 'Service',
-							name: 'Social Media',
-							description: 'Custom social media services.',
+							name: service.name,
+							description: service.description,
 							areaServed: 'United States',
 							provider: { '@id': 'https://bootpackdigital.com/#organization' }
 						}
-					}
+					}))
 				]
 			}
 		}
