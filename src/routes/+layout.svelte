@@ -47,6 +47,56 @@
 	}
 
 	const children_render = $derived(children);
+
+	const ldJson = {
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: 'Bootpack Digital',
+		url: 'https://bootpackdigital.com/',
+		description:
+			'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.',
+		publisher: {
+			'@type': 'Organization',
+			name: 'Bootpack Digital, LLC',
+			url: 'https://bootpackdigital.com/',
+			logo: {
+				'@type': 'ImageObject',
+				url: 'https://bootpackdigital.com/bpd-color-horizontal.png'
+			},
+			address: {
+				'@type': 'PostalAddress',
+				addressLocality: 'Salt Lake City',
+				addressRegion: 'UT',
+				addressCountry: 'US'
+			},
+			sameAs: [
+				'https://www.facebook.com/bootpackdigital',
+				'https://www.instagram.com/bootpack.digital',
+				'https://github.com/bootpackdigital'
+			]
+		},
+		mainEntity: {
+			'@type': 'LocalBusiness',
+			name: 'Bootpack Digital',
+			image: 'https://bootpackdigital.com/bpd-color-horizontal.png',
+			address: {
+				'@type': 'PostalAddress',
+				addressLocality: 'Salt Lake City',
+				addressRegion: 'UT',
+				addressCountry: 'US'
+			},
+			areaServed: 'US',
+			telephone: '+18018395287',
+			url: 'https://bootpackdigital.com/',
+			description:
+				'Custom web and app developer in Utah, offering web design, development, and marketing services.',
+			sameAs: [
+				'https://www.facebook.com/bootpackdigital',
+				'https://www.instagram.com/bootpack.digital',
+				'https://github.com/bootpackdigital'
+			]
+		}
+	};
 </script>
 
 <svelte:head>
@@ -95,6 +145,8 @@
 			page_path: window.location.pathname
 		});
 	</script>
+
+	{@html `<script type="application/ld+json">${JSON.stringify(ldJson)}</script>`}
 </svelte:head>
 
 <div class="tracking-normal leading-normal text-gray-900">
