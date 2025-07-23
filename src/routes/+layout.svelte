@@ -48,113 +48,111 @@
 
 	const children_render = $derived(children);
 
-	export const ldJson = [
-		{
+	export const ldJson = {
+		'@context': 'https://schema.org',
+		'@type': ['Organization', 'LocalBusiness'],
+		'@id': 'https://bootpackdigital.com/#organization',
+		name: 'Bootpack Digital',
+		legalName: 'Bootpack Digital, LLC',
+		url: 'https://bootpackdigital.com/',
+		logo: 'https://bootpackdigital.com/bpd-color-horizontal.png',
+		image: 'https://bootpackdigital.com/bpd-color-horizontal.png',
+		description:
+			'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.',
+		address: {
 			'@context': 'https://schema.org',
-			'@type': ['Organization', 'LocalBusiness'],
-			'@id': 'https://bootpackdigital.com/#organization',
-			name: 'Bootpack Digital',
-			legalName: 'Bootpack Digital, LLC',
-			url: 'https://bootpackdigital.com/',
-			logo: 'https://bootpackdigital.com/bpd-color-horizontal.png',
-			image: 'https://bootpackdigital.com/bpd-color-horizontal.png',
-			description:
-				'Bootpack Digital is a web and app development agency based in Salt Lake City, Utah. We specialize in custom websites, mobile apps, and web software applications, leveraging 18+ years of experience to help businesses grow.',
-			address: {
-				'@context': 'https://schema.org',
-				'@type': 'PostalAddress',
-				addressLocality: 'Salt Lake City',
-				addressRegion: 'UT',
-				addressCountry: 'US'
-			},
-			areaServed: 'US',
-			telephone: '+18018395287',
+			'@type': 'PostalAddress',
+			addressLocality: 'Salt Lake City',
+			addressRegion: 'UT',
+			addressCountry: 'US'
+		},
+		areaServed: 'US',
+		telephone: '+18018395287',
+		email: 'hey@bootpackdigital.com',
+		priceRange: '$$$',
+		founder: {
+			'@type': 'Person',
+			name: 'Michael Bonner',
 			email: 'hey@bootpackdigital.com',
-			priceRange: '$$$',
-			founder: {
-				'@type': 'Person',
-				name: 'Michael Bonner',
-				email: 'hey@bootpackdigital.com',
-				telephone: '+18018395287',
-				sameAs: [
-					'https://www.facebook.com/michaelwbonner',
-					'https://www.instagram.com/michael__bonner/',
-					'https://github.com/michaelbonner',
-					'https://g.page/bootpack'
-				]
-			},
-			foundingDate: '2019',
+			telephone: '+18018395287',
 			sameAs: [
-				'https://www.facebook.com/bootpackdigital',
-				'https://www.instagram.com/bootpack.digital',
-				'https://github.com/bootpackdigital'
-			],
-			openingHoursSpecification: [
-				{
-					'@type': 'OpeningHoursSpecification',
-					dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-					opens: '09:00',
-					closes: '18:00'
-				}
-			],
-			contactPoint: [
-				{
-					'@type': 'ContactPoint',
-					telephone: '+18018395287',
-					contactType: 'customer service',
-					areaServed: 'US',
-					availableLanguage: ['English']
-				}
-			],
-			hasOfferCatalog: {
-				'@context': 'https://schema.org',
-				'@type': 'OfferCatalog',
-				name: 'Services',
-				itemListElement: [
-					[
-						{
-							name: 'Web Design',
-							description: 'Custom web design and development services.'
-						},
-						{
-							name: 'Web Development',
-							description: 'Custom web development services.'
-						},
-						{
-							name: 'Web Software Development',
-							description: 'Custom web software development services.'
-						},
-						{
-							name: 'Mobile App Development',
-							description: 'Custom mobile app development services.'
-						},
-						{
-							name: 'Marketing',
-							description: 'Custom marketing services.'
-						},
-						{
-							name: 'SEO',
-							description: 'Custom SEO services.'
-						},
-						{
-							name: 'Social Media',
-							description: 'Custom social media services.'
-						}
-					].map((service) => ({
-						'@context': 'https://schema.org',
-						'@type': 'Offer',
-						itemOffered: {
-							'@type': 'Service',
-							name: service.name,
-							description: service.description,
-							areaServed: 'United States',
-							provider: { '@id': 'https://bootpackdigital.com/#organization' }
-						}
-					}))
-				]
+				'https://www.facebook.com/michaelwbonner',
+				'https://www.instagram.com/michael__bonner/',
+				'https://github.com/michaelbonner',
+				'https://g.page/bootpack'
+			]
+		},
+		foundingDate: '2019',
+		sameAs: [
+			'https://www.facebook.com/bootpackdigital',
+			'https://www.instagram.com/bootpack.digital',
+			'https://github.com/bootpackdigital'
+		],
+		openingHoursSpecification: [
+			{
+				'@type': 'OpeningHoursSpecification',
+				dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+				opens: '09:00',
+				closes: '18:00'
 			}
+		],
+		contactPoint: [
+			{
+				'@type': 'ContactPoint',
+				telephone: '+18018395287',
+				contactType: 'customer service',
+				areaServed: 'US',
+				availableLanguage: ['English']
+			}
+		],
+		hasOfferCatalog: {
+			'@context': 'https://schema.org',
+			'@type': 'OfferCatalog',
+			name: 'Services',
+			itemListElement: [
+				[
+					{
+						name: 'Web Design',
+						description: 'Custom web design and development services.'
+					},
+					{
+						name: 'Web Development',
+						description: 'Custom web development services.'
+					},
+					{
+						name: 'Web Software Development',
+						description: 'Custom web software development services.'
+					},
+					{
+						name: 'Mobile App Development',
+						description: 'Custom mobile app development services.'
+					},
+					{
+						name: 'Marketing',
+						description: 'Custom marketing services.'
+					},
+					{
+						name: 'SEO',
+						description: 'Custom SEO services.'
+					},
+					{
+						name: 'Social Media',
+						description: 'Custom social media services.'
+					}
+				].map((service) => ({
+					'@context': 'https://schema.org',
+					'@type': 'Offer',
+					itemOffered: {
+						'@type': 'Service',
+						name: service.name,
+						description: service.description,
+						areaServed: 'United States',
+						provider: { '@id': 'https://bootpackdigital.com/#organization' }
+					}
+				}))
+			]
 		}
-	];
+	};
 </script>
 
 <svelte:head>
