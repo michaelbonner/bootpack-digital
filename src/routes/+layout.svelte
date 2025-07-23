@@ -64,7 +64,8 @@
 			'@type': 'PostalAddress',
 			addressLocality: 'Salt Lake City',
 			addressRegion: 'UT',
-			addressCountry: 'US'
+			addressCountry: 'US',
+			postalCode: '84171'
 		},
 		areaServed: 'US',
 		telephone: '+18018395287',
