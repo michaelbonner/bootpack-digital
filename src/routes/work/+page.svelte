@@ -19,6 +19,7 @@
 	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.jpg?enhanced';
 	import ThermWise from '../../images/work/thermwise.jpg?enhanced';
 	import WasatchCovers from '../../images/work/wasatch-covers.jpg?enhanced';
+	import UtahMountainAdventures from '../../images/work/utah-mountain-adventures.jpg?enhanced';
 </script>
 
 <Seo
@@ -45,7 +46,14 @@
 				title="Primary Children's Hospital | Here Kids Win"
 			/>
 			<WorkItem
-				description="DKOW is a Utah's most trusted name for wrongful death and personal injury law. They needed a site that would help them showcase their expertise and help them connect with potential clients."
+				description="Utah Mountain Adventures is the premier guiding service based in Utah, offering expert-led courses and trips in backcountry skiing, splitboarding, rock climbing, ice climbing, mountaineering, canyoneering, and avalanche education. With a team of highly experienced guides, UMA helps people of all skill levels explore Utah’s mountains, providing both group courses and custom private adventures."
+				link="https://www.utahmountainadventures.com/"
+				linkText="Visit UMA"
+				poster={UtahMountainAdventures}
+				title="Utah Mountain Adventures"
+			/>
+			<WorkItem
+				description="DKOW is a leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW’s experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
 				link="https://www.dkow.com/"
 				linkText="Visit DKOW"
 				poster={DKOW}
