@@ -40,7 +40,7 @@
 				out:fly={{ y: -40 }}
 			>
 				<div
-					class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6 pointer-events-auto"
+					class="relative overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl sm:my-8 sm:w-full sm:max-w-sm sm:p-6 pointer-events-auto"
 				>
 					<div>
 						<div

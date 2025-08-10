@@ -66,7 +66,7 @@
 					href="https://github.com/michaelbonner?tab=repositories&q=&type=source&language=&sort=&utm_source=bootpackdigital.com/open-source"
 				>
 					<svg
-						class="h-5 text-gray-600 transition-all scale-90 fill-current group-hover:text-blue-600 group-hover:scale-100"
+						class="h-5 text-gray-600 transition-transform scale-90 fill-current group-hover:text-blue-600 group-hover:scale-100"
 						viewBox="0 0 512 512"
 						xmlns="http://www.w3.org/2000/svg"
 					>

@@ -66,7 +66,7 @@
 				{#each links as link (link.url)}
 					<a
 						class={clsx(
-							'block py-4 font-semibold decoration-2 transition-all hover:underline hover:decoration-blue-300 lg:px-4 lg:py-2',
+							'block py-4 font-semibold decoration-2 underline-offset-4 hover:underline hover:decoration-blue-300 lg:px-4 lg:py-2',
 							page.url.pathname === link.url && 'underline decoration-blue-600'
 						)}
 						href={link.url}>{link.label}</a

@@ -60,12 +60,12 @@
 					</div>
 					<div class="flex gap-2 mt-4">
 						<a
-							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							class="size-10 inline-flex justify-center items-center transition-transform hover:rotate-6 hover:scale-110"
 							href="https://www.linkedin.com/in/michaelbonner/"
 							title="LinkedIn"
 						>
 							<svg
-								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-transform ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -76,12 +76,12 @@
 							</svg>
 						</a>
 						<a
-							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							class="size-10 inline-flex justify-center items-center transition-transform hover:rotate-6 hover:scale-110"
 							href="https://www.instagram.com/michael__bonner/"
 							title="Instagram"
 						>
 							<svg
-								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-transform ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -95,12 +95,12 @@
 							</svg>
 						</a>
 						<a
-							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							class="size-10 inline-flex justify-center items-center transition-transform hover:rotate-6 hover:scale-110"
 							href="https://github.com/michaelbonner"
 							title="GitHub"
 						>
 							<svg
-								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-transform ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
@@ -111,12 +111,12 @@
 							</svg>
 						</a>
 						<a
-							class="size-10 inline-flex justify-center items-center transition-all hover:rotate-6 hover:scale-110"
+							class="size-10 inline-flex justify-center items-center transition-transform hover:rotate-6 hover:scale-110"
 							href="https://michaelbonner.dev/"
 							title="Personal Website"
 						>
 							<svg
-								class="w-8 h-8 text-blue-600 transition-all ease-in-out fill-current hover:text-blue-800"
+								class="w-8 h-8 text-blue-600 transition-transform ease-in-out fill-current hover:text-blue-800"
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
