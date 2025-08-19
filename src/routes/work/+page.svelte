@@ -60,7 +60,7 @@
 				title="DKOW Law"
 			/>
 			<WorkItem
-				description="National Energy Foundation (NEF) is a non-profit energy education organization that specializes in K-gray education. They needed a new website that represent their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update."
+				description="National Energy Foundation (NEF) is a non-profit energy education organization that specializes in K-gray education. They needed a new website that represents their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update."
 				link="https://nef1.org/"
 				linkText="Visit NEF"
 				poster={NEF}
@@ -81,7 +81,7 @@
 				title="JME Film Co"
 			/>
 			<WorkItem
-				description="Accelerated Equity Plans is a new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. They bring industry leading expertise and support to your their clients' programs to deliver a best-in-class experience for your team, partners and participants."
+				description="Accelerated Equity Plans is a new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. They bring industry leading expertise and support to their clients' programs to deliver a best-in-class experience for your team, partners and participants."
 				link="https://www.acceleratedep.com"
 				linkText="Visit AEP"
 				poster={AcceleratedEquityPlans}
