@@ -81,7 +81,7 @@
 				title="JME Film Co"
 			/>
 			<WorkItem
-				description="Accelerated Equity Plans is a new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. The bring industry leading expertise and support to your their clients' programs to deliver a best-in-class experience for your team, partners and participants."
+				description="Accelerated Equity Plans is a new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. They bring industry leading expertise and support to your their clients' programs to deliver a best-in-class experience for your team, partners and participants."
 				link="https://www.acceleratedep.com"
 				linkText="Visit AEP"
 				poster={AcceleratedEquityPlans}
