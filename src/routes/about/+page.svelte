@@ -5,7 +5,7 @@
 </script>
 
 <Seo
-	title="About Bootpack Digital, a Utah Based Web and App Development Agency"
+	title="About Bootpack Digital, a Utah-based Web and App Development Agency"
 	description="Bootpack Digital: Utah-based web and app development agency helping businesses grow with quality solutions and a passion for collaboration."
 	canonical="/about"
 />
@@ -28,7 +28,7 @@
 		<div class="mx-auto max-w-3xl text-gray-500 prose lg:prose-lg">
 			<p class="text-gray-500">
 				We are a small group of passionate creators trying to make a difference. We value quality
-				deliverables and human interaction. We are purpose built to fit into your business and
+				deliverables and human interaction. We are purpose-built to fit into your business and
 				contribute on day one. We have a proven track record of success and a team that is ready to
 				help you grow.
 			</p>
@@ -155,7 +155,7 @@
 				hike your way to find the best snow. To get there you can follow a boot pack, which is where
 				other hikers have hiked a section too steep to skin up. The boot pack helps make the journey
 				easier. That's where we come in; our goal is to help you, and your business, get to the next
-				level. We've spent years laying a solid boot pack of experience, now we want to help you and
+				level. We've spent years laying a solid boot pack of experience; now we want to help you and
 				your product reach new heights.
 			</p>
 		</div>
