@@ -10,7 +10,7 @@
 			description: `Keep track of your PageSpeed insights scores. Just add your URLs to the config and deploy
 					the code. Then you'll see a simple view of your PageSpeed scores. <a
 						class="underline"
-						href="https://pagespeed.bootpack.dev/">Here's what it looks like for this site</a>`,
+						href="https://pagespeed.bootpack.dev/bootpackdigital">Here's what it looks like for this site</a>`,
 			link: 'https://github.com/michaelbonner/pagespeed'
 		},
 		{
