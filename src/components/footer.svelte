@@ -35,7 +35,7 @@
 			url: '/about'
 		},
 		{
-			label: 'Open Source',
+			label: 'Open-source',
 			url: '/open-source'
 		},
 		{
