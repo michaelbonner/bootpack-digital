@@ -18,11 +18,10 @@
 				<div class="prose lg:prose-lg text-gray-600">
 					<h1 class="text-navy-600">Get in touch</h1>
 					<p>
-						Set up some time to talk to Michael Bonner, the founder, not a sales person or an
-						intern.
+						Set up some time to talk to Michael Bonner, the founder, not a salesperson or an intern.
 					</p>
 					<p>
-						We love meeting new people and hearing new ideas. Our goal is to help you build your
+						We love meeting new people and hearing ideas. Our goal is to help you build your
 						website, mobile app, or web app. We'll work with you to understand what you need, and
 						we'll make it happen.
 					</p>

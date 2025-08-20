@@ -19,9 +19,9 @@
 				</p>
 			</div>
 			<div class="grid grid-cols-2 gap-x-0.5 gap-y-4 items-center mt-8 md:grid-cols-3 lg:mt-0">
-				<BrandImage height={126} logo={CocaCola} title="CocaCola logo" width={300} />
+				<BrandImage height={126} logo={CocaCola} title="Coca-Cola logo" width={300} />
 				<BrandImage height={43} logo={PACS} title="PACS logo" width={165} />
-				<BrandImage height={65} logo={EdgeHomes} title="EDGEHomes logo" width={300} />
+				<BrandImage height={65} logo={EdgeHomes} title="EDGEhomes logo" width={300} />
 				<BrandImage
 					height={63}
 					logo={IntermountainHealthcare}

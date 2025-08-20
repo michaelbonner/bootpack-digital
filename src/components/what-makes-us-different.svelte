@@ -32,7 +32,7 @@
 					<p>
 						Experience matters when it comes to building quality software and websites. Working at
 						agencies, in-house, and freelance has given us a breadth of understanding that's hard to
-						come by any other way. We've built large scale production applications and will bring
+						come by any other way. We've built large-scale production applications and will bring
 						that knowledge to any project, no matter how big or small.
 					</p>
 				</div>
@@ -58,7 +58,7 @@
 				<div class="mt-5 prose">
 					<h3 class="text-navy-700">Business knowledge</h3>
 					<p>
-						We are a business minded development group. We don't just think about the code. Helping
+						We are a business-minded development group. We don't just think about the code. Helping
 						businesses grow has given us an understanding of ROI that allows us to help clients tune
 						their ideas into something shippable and lovable. Go-to-market strategies can make or
 						break your product. We can help guide you down a path that works for you.
