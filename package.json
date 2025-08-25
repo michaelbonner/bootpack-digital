@@ -12,6 +12,7 @@
 		"format": "prettier --write .",
 		"postinstall": "svelte-kit sync",
 		"out": "bun outdated",
+		"up": "bun update",
 		"test:e2e": "playwright test",
 		"test": "bun run test:e2e"
 	},
@@ -28,7 +29,7 @@
 		"prettier": "^3.6.2",
 		"prettier-plugin-svelte": "^3.4.0",
 		"prettier-plugin-tailwindcss": "^0.6.14",
-		"svelte": "^5.38.2",
+		"svelte": "^5.38.3",
 		"svelte-check": "^4.3.1",
 		"svelte-obfuscate": "^0.3.0",
 		"svelte-preprocess": "^6.0.3",
