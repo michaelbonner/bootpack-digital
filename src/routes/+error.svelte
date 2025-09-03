@@ -6,7 +6,7 @@
 	import { browser } from '$app/environment';
 
 	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
-		if (browser) {
+		if (browser && page.status === 404) {
 			posthog.capture('not_found');
 		}
 	}
