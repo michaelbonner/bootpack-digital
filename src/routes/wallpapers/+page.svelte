@@ -54,7 +54,7 @@
 					{wallpaper.title}
 				</h2>
 				<div class="relative shadow-lg group">
-					<a href={wallpaper.src} download>
+					<a data-sveltekit-reload href={wallpaper.src} download>
 						<img alt={`${wallpaper.title} Wallpaper`} src={wallpaper.src} width={wallpaper.width} />
 					</a>
 					<div

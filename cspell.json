@@ -34,7 +34,5 @@
 		"xgerlrdz",
 		"yoyo"
 	],
-	"ignorePaths": [
-		"src/components/topo-bg.svelte"
-	]
+	"ignorePaths": ["src/components/topo-bg.svelte"]
 }

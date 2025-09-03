@@ -18,6 +18,7 @@
 		<Links />
 
 		<div class="pt-4 max-w-3xl prose [&_h2.text-center]:!text-left">
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			{@html data.policyBody}
 		</div>
 	</div>

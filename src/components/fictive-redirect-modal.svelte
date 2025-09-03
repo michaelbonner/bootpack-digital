@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { replaceState } from '$app/navigation';
+	import { resolve } from '$app/paths';
+	import type { RouteId } from '$app/types';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
-	import { replaceState } from '$app/navigation';
 
 	let isVisible = $state(false);
 
@@ -14,7 +16,7 @@
 
 	const closeModal = () => {
 		isVisible = false;
-		replaceState(window.location.pathname, {});
+		replaceState(resolve(window.location.pathname as RouteId), {});
 	};
 </script>
 
@@ -63,7 +65,7 @@
 									the same us, just a more polished and focused experience.
 								</p>
 								<p>
-									<a href="/about" class="underline">Learn more about us</a>
+									<a href={resolve('/about')} class="underline">Learn more about us</a>
 								</p>
 							</div>
 						</div>

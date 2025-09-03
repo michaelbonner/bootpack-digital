@@ -1,28 +1,30 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
+	import type { RouteId } from '$app/types';
 	import BootpackHorizontal from '../images/bootpack-horizontal.svg';
 	import MobileNav from './mobile-nav.svelte';
 
 	const mainLinks = [
 		{
 			label: 'Home',
-			url: '/'
+			url: '/' as RouteId
 		},
 		{
 			label: 'Work',
-			url: '/work'
+			url: '/work' as RouteId
 		},
 		{
 			label: 'About',
-			url: '/about'
+			url: '/about' as RouteId
 		},
 		{
 			label: 'Open-source',
-			url: '/open-source'
+			url: '/open-source' as RouteId
 		},
 		{
 			label: 'Contact',
-			url: '/contact'
+			url: '/contact' as RouteId
 		}
 	];
 </script>
@@ -30,7 +32,7 @@
 <header class="sticky top-0 z-20 py-2 px-6 mx-auto w-full bg-white shadow-md lg:shadow-none">
 	<div class="flex gap-2 justify-between items-center w-full 2xl:px-4">
 		<div class="flex justify-between items-center w-full">
-			<a class="py-2" href="/" title="Bootpack Digital home page">
+			<a class="py-2" href={resolve('/')} title="Bootpack Digital home page">
 				<img alt="Bootpack Digital" height="45" width="218" src={BootpackHorizontal} /></a
 			>
 
@@ -41,7 +43,7 @@
 							page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}
-						href={link.url}
+						href={resolve(link.url)}
 					>
 						{link.label}
 					</a>

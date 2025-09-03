@@ -10,6 +10,7 @@
 			description: `Keep track of your PageSpeed insights scores. Just add your URLs to the config and deploy
 					the code. Then you'll see a simple view of your PageSpeed scores. <a
 						class="underline"
+						data-sveltekit-reload
 						href="https://pagespeed.bootpack.dev/bootpackdigital">Here's what it looks like for this site</a>`,
 			link: 'https://github.com/michaelbonner/pagespeed'
 		},
@@ -63,6 +64,7 @@
 						'flex gap-2 items-center bg-white rounded-lg transition-colors group underline',
 						'hover:text-navy-800'
 					)}
+					data-sveltekit-reload
 					href="https://github.com/michaelbonner?tab=repositories&q=&type=source&language=&sort=&utm_source=bootpackdigital.com/open-source"
 				>
 					<svg
@@ -82,7 +84,7 @@
 		<div class={clsx('grid gap-8 mt-6', 'md:grid-cols-2', 'lg:mt-10 lg:gap-12', 'xl:gap-x-24')}>
 			{#each projects as project (project.name)}
 				<div class="prose text-gray-600">
-					<a class="no-underline hover:underline" href={project.link}>
+					<a class="no-underline hover:underline" data-sveltekit-reload href={project.link}>
 						<h2 class="text-xl lg:text-2xl text-navy-600">
 							{project.name}
 							{project.emoji}
@@ -99,6 +101,7 @@
 								'text-base font-semibold leading-6 text-orange-700 transition duration-150 ease-in-out',
 								'hover:text-orange-500 hover:underline'
 							)}
+							data-sveltekit-reload
 							href={project.link}
 						>
 							See {project.name} Code on GitHub

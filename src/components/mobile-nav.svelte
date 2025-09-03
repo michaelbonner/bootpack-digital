@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { beforeNavigate } from '$app/navigation';
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
+	import type { RouteId } from '$app/types';
 
 	let mobileNavOpen = $state(false);
 
@@ -14,23 +16,23 @@
 	const mainLinks = [
 		{
 			label: 'Home',
-			url: '/'
+			url: '/' as RouteId
 		},
 		{
 			label: 'Work',
-			url: '/work'
+			url: '/work' as RouteId
 		},
 		{
 			label: 'About',
-			url: '/about'
+			url: '/about' as RouteId
 		},
 		{
 			label: 'Open-source',
-			url: '/open-source'
+			url: '/open-source' as RouteId
 		},
 		{
 			label: 'Contact',
-			url: '/contact'
+			url: '/contact' as RouteId
 		}
 	];
 </script>
@@ -75,7 +77,7 @@
 
 		<a
 			class="flex items-center mr-0 text-2xl font-bold text-blue-400 no-underline lg:mr-8 lg:text-4xl hover:no-underline"
-			href="/"
+			href={resolve('/')}
 		>
 			<img
 				alt="Bootpack Digital"
@@ -92,7 +94,7 @@
 				class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
 					page.url.pathname === link.url && 'bg-navy-100'
 				}`}
-				href={link.url}
+				href={resolve(link.url)}
 			>
 				{link.label}
 			</a>

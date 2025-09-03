@@ -16,13 +16,19 @@
 <div
 	class="flex flex-col overflow-hidden rounded-lg shadow-lg transition-transform hover:-translate-y-1 hover:scale-[101%]"
 >
-	<a class="bg-blue-100" href={link} rel="noopener noreferrer" target="_blank">
+	<a
+		class="bg-blue-100"
+		data-sveltekit-reload
+		href={link}
+		rel="noopener noreferrer"
+		target="_blank"
+	>
 		<enhanced:img alt={title} loading={lazy ? 'lazy' : 'eager'} src={poster} />
 		<span class="sr-only"> (opens a new tab)</span>
 	</a>
 	<div class="flex flex-col flex-1 justify-between p-6 bg-white">
 		<div class="flex-1">
-			<a class="block" href={link} rel="noopener noreferrer" target="_blank">
+			<a class="block" data-sveltekit-reload href={link} rel="noopener noreferrer" target="_blank">
 				<h2 class="mt-2 text-xl font-semibold leading-7 text-gray-900 hover:underline">
 					{title}
 				</h2>
@@ -36,6 +42,7 @@
 			<div class="shrink-0">
 				<a
 					class="flex gap-2 items-center font-medium text-blue-600 underline transition-colors hover:text-blue-700"
+					data-sveltekit-reload
 					href={link}
 					rel="noopener noreferrer"
 					target="_blank"

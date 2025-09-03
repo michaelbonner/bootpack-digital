@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import Seo from '../../components/seo.svelte';
 </script>
 
@@ -14,7 +15,7 @@
 
 		<p>
 			You might be a bot, we don't really know. If you are a human, please
-			<a href="/contact"> contact us. </a>
+			<a href={resolve('/contact')}> contact us. </a>
 		</p>
 	</div>
 </div>

@@ -3,6 +3,8 @@
 	import clsx from 'clsx';
 	import { onMount } from 'svelte';
 	import SocialIcons from './social-icons.svelte';
+	import type { RouteId } from '$app/types';
+	import { resolve } from '$app/paths';
 
 	// if this element has been in view add bpd-inView to the footer element
 	let isInView = $state(false);
@@ -24,27 +26,27 @@
 	const links = [
 		{
 			label: 'Home',
-			url: '/'
+			url: '/' as RouteId
 		},
 		{
 			label: 'Work',
-			url: '/work'
+			url: '/work' as RouteId
 		},
 		{
 			label: 'About',
-			url: '/about'
+			url: '/about' as RouteId
 		},
 		{
 			label: 'Open-source',
-			url: '/open-source'
+			url: '/open-source' as RouteId
 		},
 		{
 			label: 'Contact',
-			url: '/contact'
+			url: '/contact' as RouteId
 		},
 		{
 			label: 'Policies',
-			url: '/policies'
+			url: '/policies' as RouteId
 		}
 	];
 </script>
@@ -69,7 +71,7 @@
 							'block py-4 font-semibold decoration-2 underline-offset-4 hover:underline hover:decoration-blue-300 lg:px-4 lg:py-2',
 							page.url.pathname === link.url && 'underline decoration-blue-600'
 						)}
-						href={link.url}>{link.label}</a
+						href={resolve(link.url)}>{link.label}</a
 					>
 				{/each}
 			</div>
