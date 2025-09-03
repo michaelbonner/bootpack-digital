@@ -1,7 +1,15 @@
 <script module lang="ts">
 	import { page } from '$app/state';
-
+	import posthog from 'posthog-js';
 	import Illustration404 from '../images/404-illustration.svg';
+	import { PUBLIC_POSTHOG_ENABLED } from '$env/static/public';
+	import { browser } from '$app/environment';
+
+	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
+		if (browser) {
+			posthog.capture('not_found');
+		}
+	}
 </script>
 
 <svelte:head>
