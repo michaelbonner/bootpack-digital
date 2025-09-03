@@ -6,8 +6,14 @@
 	import { browser } from '$app/environment';
 
 	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
-		if (browser && page.status === 404) {
-			posthog.capture('not_found');
+		if (browser) {
+			posthog.capture(page.status === 404 ? 'not_found' : 'unknown_error', {
+				distinctId: 'unknown',
+				properties: {
+					message: page.error?.message,
+					...page
+				}
+			});
 		}
 	}
 </script>
