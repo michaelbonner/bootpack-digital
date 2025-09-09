@@ -8,6 +8,7 @@
 	import CrewView from '../../images/work/crewview.jpg?enhanced';
 	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.jpg?enhanced';
 	import DKOW from '../../images/work/dkow.jpg?enhanced';
+	import ESK from '../../images/work/energy-safe-kids.jpg?enhanced';
 	import Hanks from '../../images/work/hanks-garage-venue.jpg?enhanced';
 	import HereKidsWin from '../../images/work/here-kids-win.jpg?enhanced';
 	import HeritageOfPreston from '../../images/work/heritage-of-preston.jpg?enhanced';
@@ -46,42 +47,49 @@
 				title="Primary Children's Hospital | Here Kids Win"
 			/>
 			<WorkItem
-				description="Utah Mountain Adventures is the premier guiding service based in Utah, offering expert-led courses and trips in backcountry skiing, splitboarding, rock climbing, ice climbing, mountaineering, canyoneering, and avalanche education. With a team of highly experienced guides, UMA helps people of all skill levels explore Utah’s mountains, providing both group courses and custom private adventures."
+				description="The premier guiding service based in Utah, offering expert-led courses and trips in backcountry skiing, splitboarding, rock climbing, ice climbing, mountaineering, canyoneering, and avalanche education. With a team of highly experienced guides, UMA helps people of all skill levels explore Utah’s mountains, providing both group courses and custom private adventures."
 				link="https://www.utahmountainadventures.com/"
 				linkText="Visit UMA"
 				poster={UtahMountainAdventures}
 				title="Utah Mountain Adventures"
 			/>
 			<WorkItem
-				description="DKOW is a leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW’s experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
+				description="An interactive educational platform created by the National Energy Foundation (NEF) to teach students and teachers about energy safety. The program is offered by NEF and their sponsoring partners across the country. The site is adaptable for each sponsor and their specific materials, videos, and branding."
+				link="https://energysafekids.org/"
+				linkText="Visit ESK"
+				poster={ESK}
+				title="Energy Safe Kids"
+			/>
+			<WorkItem
+				description="A leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW’s experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
 				link="https://www.dkow.com/"
 				linkText="Visit DKOW"
 				poster={DKOW}
 				title="DKOW Law"
 			/>
 			<WorkItem
-				description="National Energy Foundation (NEF) is a non-profit energy education organization that specializes in K-gray education. They needed a new website that represents their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update."
+				description="A non-profit energy education organization that specializes in K-gray education. They needed a new website that represents their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update."
 				link="https://nef1.org/"
 				linkText="Visit NEF"
 				poster={NEF}
 				title="National Energy Foundation"
 			/>
 			<WorkItem
-				description="Wasatch Covers was tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap, check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load."
+				description="They were tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap, check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load."
 				link="https://wasatchcovers.com/"
 				linkText="Visit Wasatch Covers"
 				poster={WasatchCovers}
 				title="Wasatch Covers"
 			/>
 			<WorkItem
-				description="JME FILM CO had an outdated website that didn't represent their brand. We partnered with their design team to create a beautiful and engaging experience that more reflected who they are. The site is built to allow infinite customization from the CMS and still provide excellent performance on the front-end."
+				description="They had an outdated website that didn't represent their brand. We partnered with their design team to create a beautiful and engaging experience that more reflected who they are. The site is built to allow infinite customization from the CMS and still provide excellent performance on the front-end."
 				link="https://www.jmillsent.com/"
 				linkText="Visit JME Film Co"
 				poster={JMills}
 				title="JME Film Co"
 			/>
 			<WorkItem
-				description="Accelerated Equity Plans is a new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. They bring industry leading expertise and support to their clients' programs to deliver a best-in-class experience for your team, partners and participants."
+				description="A new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. They bring industry leading expertise and support to their clients' programs to deliver a best-in-class experience for your team, partners and participants."
 				link="https://www.acceleratedep.com"
 				linkText="Visit AEP"
 				poster={AcceleratedEquityPlans}
@@ -96,7 +104,7 @@
 				lazy={true}
 			/>
 			<WorkItem
-				description="Know Your Force (KYF) is rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code, and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely. "
+				description="Rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code, and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely. "
 				link="https://knowyourforce.com/"
 				linkText="Visit KYF"
 				poster={KnowYourForce}
@@ -112,7 +120,7 @@
 				lazy={true}
 			/>
 			<WorkItem
-				description="Heritage Senior Living in Preston, ID reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos."
+				description="They needed a new website and reached out to revamp their outdated website. We rebuilt it to help customers find what they're looking for. The new site highlights the facility with lots of photos."
 				link="https://www.heritageofpreston.com/"
 				linkText="Visit Heritage Senior Living"
 				poster={HeritageOfPreston}
@@ -120,7 +128,7 @@
 				lazy={true}
 			/>
 			<WorkItem
-				description="Denver Window Well Covers was a ground up build to service the semi-custom needs of Colorado residents. Denver Window Well Covers offers a quality product at the lowest prices on window well covers in Colorado and Denver areas."
+				description="A ground up build to service the semi-custom needs of Colorado residents. Denver Window Well Covers offers a quality product at the lowest prices on window well covers in Colorado and Denver areas."
 				link="https://denverwindowwellcovers.com/"
 				linkText="Visit Denver Window Well Covers"
 				poster={DenverWindowWellCovers}
