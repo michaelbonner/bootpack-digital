@@ -2,11 +2,10 @@
 	import { beforeNavigate } from '$app/navigation';
 	import { base } from '$app/paths';
 	import { page } from '$app/state';
-	import type { RouteId } from '$app/types';
 	import { fade } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
-	import SocialIcons from './social-icons.svelte';
 	import { navLinks } from '../lib/nav-links';
+	import SocialIcons from './social-icons.svelte';
 
 	let mobileNavOpen = $state(false);
 
