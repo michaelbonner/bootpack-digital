@@ -1,10 +1,10 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/state';
+	import type { RouteId } from '$app/types';
 	import clsx from 'clsx';
 	import { onMount } from 'svelte';
 	import SocialIcons from './social-icons.svelte';
-	import type { RouteId } from '$app/types';
-	import { resolve } from '$app/paths';
 
 	// if this element has been in view add bpd-inView to the footer element
 	let isInView = $state(false);
@@ -23,30 +23,30 @@
 		}
 	});
 
-	const links = [
+	const links: { label: string; url: RouteId }[] = [
 		{
 			label: 'Home',
-			url: '/' as RouteId
+			url: '/'
 		},
 		{
 			label: 'Work',
-			url: '/work' as RouteId
+			url: '/work'
 		},
 		{
 			label: 'About',
-			url: '/about' as RouteId
+			url: '/about'
 		},
 		{
 			label: 'Open-source',
-			url: '/open-source' as RouteId
+			url: '/open-source'
 		},
 		{
 			label: 'Contact',
-			url: '/contact' as RouteId
+			url: '/contact'
 		},
 		{
 			label: 'Policies',
-			url: '/policies' as RouteId
+			url: '/policies'
 		}
 	];
 </script>
@@ -71,7 +71,7 @@
 							'block py-4 font-semibold decoration-2 underline-offset-4 hover:underline hover:decoration-blue-300 lg:px-4 lg:py-2',
 							page.url.pathname === link.url && 'underline decoration-blue-600'
 						)}
-						href={resolve(link.url)}>{link.label}</a
+						href={`${base}${link.url}`}>{link.label}</a
 					>
 				{/each}
 			</div>

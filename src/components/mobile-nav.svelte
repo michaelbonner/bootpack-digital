@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { beforeNavigate } from '$app/navigation';
-	import { resolve } from '$app/paths';
+	import { base } from '$app/paths';
 	import { page } from '$app/state';
+	import type { RouteId } from '$app/types';
 	import { fade } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
-	import type { RouteId } from '$app/types';
 
 	let mobileNavOpen = $state(false);
 
@@ -13,26 +13,26 @@
 		mobileNavOpen = false;
 	});
 
-	const mainLinks = [
+	const mainLinks: { label: string; url: RouteId }[] = [
 		{
 			label: 'Home',
-			url: '/' as RouteId
+			url: '/'
 		},
 		{
 			label: 'Work',
-			url: '/work' as RouteId
+			url: '/work'
 		},
 		{
 			label: 'About',
-			url: '/about' as RouteId
+			url: '/about'
 		},
 		{
 			label: 'Open-source',
-			url: '/open-source' as RouteId
+			url: '/open-source'
 		},
 		{
 			label: 'Contact',
-			url: '/contact' as RouteId
+			url: '/contact'
 		}
 	];
 </script>
@@ -77,7 +77,7 @@
 
 		<a
 			class="flex items-center mr-0 text-2xl font-bold text-blue-400 no-underline lg:mr-8 lg:text-4xl hover:no-underline"
-			href={resolve('/')}
+			href={`${base}/`}
 		>
 			<img
 				alt="Bootpack Digital"
@@ -94,7 +94,7 @@
 				class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
 					page.url.pathname === link.url && 'bg-navy-100'
 				}`}
-				href={resolve(link.url)}
+				href={`${base}${link.url}`}
 			>
 				{link.label}
 			</a>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { base } from '$app/paths';
 
 	interface Props {
 		textLine1?: string;
@@ -28,7 +28,7 @@
 			<div class="inline-flex rounded-md shadow-sm">
 				<a
 					class="inline-flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-blue-600 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-blue-500 no-underline hover:underline"
-					href={resolve('/contact')}
+					href={`${base}/contact`}
 				>
 					{buttonText}
 				</a>

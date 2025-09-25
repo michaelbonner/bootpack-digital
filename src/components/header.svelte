@@ -1,30 +1,30 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import type { RouteId } from '$app/types';
 	import BootpackHorizontal from '../images/bootpack-horizontal.svg';
 	import MobileNav from './mobile-nav.svelte';
 
-	const mainLinks = [
+	const mainLinks: { label: string; url: RouteId }[] = [
 		{
 			label: 'Home',
-			url: '/' as RouteId
+			url: '/'
 		},
 		{
 			label: 'Work',
-			url: '/work' as RouteId
+			url: '/work'
 		},
 		{
 			label: 'About',
-			url: '/about' as RouteId
+			url: '/about'
 		},
 		{
 			label: 'Open-source',
-			url: '/open-source' as RouteId
+			url: '/open-source'
 		},
 		{
 			label: 'Contact',
-			url: '/contact' as RouteId
+			url: '/contact'
 		}
 	];
 </script>
@@ -32,7 +32,7 @@
 <header class="sticky top-0 z-20 py-2 px-6 mx-auto w-full bg-white shadow-md lg:shadow-none">
 	<div class="flex gap-2 justify-between items-center w-full 2xl:px-4">
 		<div class="flex justify-between items-center w-full">
-			<a class="py-2" href={resolve('/')} title="Bootpack Digital home page">
+			<a class="py-2" href={`${base}/`} title="Bootpack Digital home page">
 				<img alt="Bootpack Digital" height="45" width="218" src={BootpackHorizontal} /></a
 			>
 
@@ -43,7 +43,7 @@
 							page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}
-						href={resolve(link.url)}
+						href={`${base}${link.url}`}
 					>
 						{link.label}
 					</a>
