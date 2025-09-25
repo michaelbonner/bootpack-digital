@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { replaceState } from '$app/navigation';
-	import { base, resolve } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import type { RouteId } from '$app/types';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
@@ -65,7 +65,7 @@
 									the same us, just a more polished and focused experience.
 								</p>
 								<p>
-									<a href={`${base}/about`} class="underline">Learn more about us</a>
+									<a href={resolve('/about')} class="underline">Learn more about us</a>
 								</p>
 							</div>
 						</div>

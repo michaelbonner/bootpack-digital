@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { beforeNavigate } from '$app/navigation';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
@@ -54,7 +54,7 @@
 
 		<a
 			class="flex items-center mr-0 text-2xl font-bold text-blue-400 no-underline lg:mr-8 lg:text-4xl hover:no-underline"
-			href={`${base}/`}
+			href={resolve('/')}
 		>
 			<img
 				alt="Bootpack Digital"
@@ -71,7 +71,7 @@
 				class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
 					page.url.pathname === link.url && 'bg-navy-100'
 				}`}
-				href={`${base}${link.url}`}
+				href={resolve(link.url)}
 			>
 				{link.label}
 			</a>
