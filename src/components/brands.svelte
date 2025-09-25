@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { base } from '$app/paths';
 	import CocaCola from '../images/clients/coca-cola-classic-gray.svg';
 	import DominionEnergy from '../images/clients/dominion-energy-gray.svg';
 	import EdgeHomes from '../images/clients/edge-homes-gray.svg';
@@ -16,7 +16,7 @@
 				<h2 class="text-navy-600">Brands we have worked with</h2>
 				<p>We have worked with companies from all different industries on all sizes of projects.</p>
 				<p>
-					<a class="text-blue-500 underline" href={resolve('/work')}>See some of our work</a>
+					<a class="text-blue-500 underline" href={`${base}/work`}>See some of our work</a>
 				</p>
 			</div>
 			<div class="grid grid-cols-2 gap-x-0.5 gap-y-4 items-center mt-8 md:grid-cols-3 lg:mt-0">

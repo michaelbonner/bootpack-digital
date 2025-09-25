@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { base } from '$app/paths';
 	import clsx from 'clsx';
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
@@ -48,7 +48,7 @@
 				<div class="my-4 rounded-md shadow-sm lg:my-0 bpd-animate-quote-button">
 					<a
 						class="flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
-						href={resolve('/contact')}
+						href={`${base}/contact`}
 					>
 						Request a Quote
 					</a>
