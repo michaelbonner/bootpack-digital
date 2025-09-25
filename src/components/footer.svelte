@@ -5,6 +5,7 @@
 	import clsx from 'clsx';
 	import { onMount } from 'svelte';
 	import SocialIcons from './social-icons.svelte';
+	import { navLinks } from '$lib/nav-links';
 
 	// if this element has been in view add bpd-inView to the footer element
 	let isInView = $state(false);
@@ -23,32 +24,7 @@
 		}
 	});
 
-	const links: { label: string; url: RouteId }[] = [
-		{
-			label: 'Home',
-			url: '/'
-		},
-		{
-			label: 'Work',
-			url: '/work'
-		},
-		{
-			label: 'About',
-			url: '/about'
-		},
-		{
-			label: 'Open-source',
-			url: '/open-source'
-		},
-		{
-			label: 'Contact',
-			url: '/contact'
-		},
-		{
-			label: 'Policies',
-			url: '/policies'
-		}
-	];
+	const links = [...navLinks, { label: 'Policies', url: '/policies' }];
 </script>
 
 <footer

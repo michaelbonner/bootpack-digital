@@ -1,32 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/state';
-	import type { RouteId } from '$app/types';
 	import BootpackHorizontal from '../images/bootpack-horizontal.svg';
 	import MobileNav from './mobile-nav.svelte';
 
-	const mainLinks: { label: string; url: RouteId }[] = [
-		{
-			label: 'Home',
-			url: '/'
-		},
-		{
-			label: 'Work',
-			url: '/work'
-		},
-		{
-			label: 'About',
-			url: '/about'
-		},
-		{
-			label: 'Open-source',
-			url: '/open-source'
-		},
-		{
-			label: 'Contact',
-			url: '/contact'
-		}
-	];
+	import { navLinks } from '../lib/nav-links';
 </script>
 
 <header class="sticky top-0 z-20 py-2 px-6 mx-auto w-full bg-white shadow-md lg:shadow-none">
@@ -37,7 +15,7 @@
 			>
 
 			<div class="hidden items-center lg:flex">
-				{#each mainLinks as link (link.url)}
+				{#each navLinks as link (link.url)}
 					<a
 						class={`px-3 text-lg font-semibold text-navy-500 hover:underline hover:decoration-blue-400 ${
 							page.url.pathname === link.url &&

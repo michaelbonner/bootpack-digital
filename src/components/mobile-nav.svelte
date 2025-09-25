@@ -6,35 +6,13 @@
 	import { fade } from 'svelte/transition';
 	import BootpackDigital from '../images/bootpack-digital.svg';
 	import SocialIcons from './social-icons.svelte';
+	import { navLinks } from '../lib/nav-links';
 
 	let mobileNavOpen = $state(false);
 
 	beforeNavigate(() => {
 		mobileNavOpen = false;
 	});
-
-	const mainLinks: { label: string; url: RouteId }[] = [
-		{
-			label: 'Home',
-			url: '/'
-		},
-		{
-			label: 'Work',
-			url: '/work'
-		},
-		{
-			label: 'About',
-			url: '/about'
-		},
-		{
-			label: 'Open-source',
-			url: '/open-source'
-		},
-		{
-			label: 'Contact',
-			url: '/contact'
-		}
-	];
 </script>
 
 <button class="block pb-1 lg:hidden" onclick={() => (mobileNavOpen = !mobileNavOpen)}>
@@ -89,7 +67,7 @@
 			/>
 		</a>
 
-		{#each mainLinks as link (link.url)}
+		{#each navLinks as link (link.url)}
 			<a
 				class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
 					page.url.pathname === link.url && 'bg-navy-100'
