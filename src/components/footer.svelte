@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import { page } from '$app/state';
 	import { navLinks } from '$lib/nav-links';
 	import clsx from 'clsx';
@@ -46,7 +45,7 @@
 							'block py-4 font-semibold decoration-2 underline-offset-4 hover:underline hover:decoration-blue-300 lg:px-4 lg:py-2',
 							page.url.pathname === link.url && 'underline decoration-blue-600'
 						)}
-						href={`${base}${link.url}`}>{link.label}</a
+						href={link.url}>{link.label}</a
 					>
 				{/each}
 			</div>

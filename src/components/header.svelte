@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base, resolve } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import BootpackHorizontal from '../images/bootpack-horizontal.svg';
 	import MobileNav from './mobile-nav.svelte';
@@ -21,7 +21,7 @@
 							page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}
-						href={`${base}${link.url}`}
+						href={link.url}
 					>
 						{link.label}
 					</a>
