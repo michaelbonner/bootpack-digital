@@ -4,6 +4,8 @@
 	import clsx from 'clsx';
 	import { onMount } from 'svelte';
 	import SocialIcons from './social-icons.svelte';
+	import { resolve } from '$app/paths';
+	import type { RouteId } from '$app/types';
 
 	// if this element has been in view add bpd-inView to the footer element
 	let isInView = $state(false);
@@ -22,7 +24,7 @@
 		}
 	});
 
-	const links = [...navLinks, { label: 'Policies', url: '/policies' }];
+	const links = [...navLinks, { label: 'Policies', url: '/policies' as RouteId }];
 </script>
 
 <footer
@@ -45,7 +47,7 @@
 							'block py-4 font-semibold decoration-2 underline-offset-4 hover:underline hover:decoration-blue-300 lg:px-4 lg:py-2',
 							page.url.pathname === link.url && 'underline decoration-blue-600'
 						)}
-						href={link.url}>{link.label}</a
+						href={resolve(link.url)}>{link.label}</a
 					>
 				{/each}
 			</div>

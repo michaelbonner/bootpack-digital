@@ -21,7 +21,7 @@
 							page.url.pathname === link.url &&
 							'underline decoration-blue-200 hover:decoration-blue-400'
 						}`}
-						href={link.url}
+						href={resolve(link.url)}
 					>
 						{link.label}
 					</a>
