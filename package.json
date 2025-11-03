@@ -23,7 +23,7 @@
 		"@tailwindcss/typography": "^0.5.19",
 		"@typescript-eslint/eslint-plugin": "^8.46.2",
 		"@typescript-eslint/parser": "^8.46.2",
-		"eslint": "^9.38.0",
+		"eslint": "^9.39.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.0",
 		"prettier": "^3.6.2",
@@ -47,6 +47,6 @@
 		"@sveltejs/adapter-vercel": "^6.1.1",
 		"@tailwindcss/vite": "^4.1.16",
 		"clsx": "^2.1.1",
-		"posthog-js": "^1.282.0"
+		"posthog-js": "^1.284.0"
 	}
 }
