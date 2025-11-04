@@ -23,13 +23,13 @@
 		"@tailwindcss/typography": "^0.5.19",
 		"@typescript-eslint/eslint-plugin": "^8.46.3",
 		"@typescript-eslint/parser": "^8.46.3",
-		"eslint": "^9.39.0",
+		"eslint": "^9.39.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.0",
 		"prettier": "^3.6.2",
 		"prettier-plugin-svelte": "^3.4.0",
 		"prettier-plugin-tailwindcss": "^0.7.1",
-		"svelte": "^5.43.2",
+		"svelte": "^5.43.3",
 		"svelte-check": "^4.3.3",
 		"svelte-obfuscate": "^0.3.0",
 		"svelte-preprocess": "^6.0.3",
@@ -47,6 +47,6 @@
 		"@sveltejs/adapter-vercel": "^6.1.1",
 		"@tailwindcss/vite": "^4.1.16",
 		"clsx": "^2.1.1",
-		"posthog-js": "^1.285.0"
+		"posthog-js": "^1.285.1"
 	}
 }
