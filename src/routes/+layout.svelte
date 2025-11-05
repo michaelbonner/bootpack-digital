@@ -203,19 +203,6 @@
 		});
 	</script>
 
-	<script>
-		(function (squid) {
-			window.$quid || (window.$quid = {});
-			document.head.appendChild(
-				(function (s) {
-					s.src = 'https://app.asksquid.ai/tfs/' + squid + '/sdk';
-					s.async = 1;
-					return s;
-				})(document.createElement('script'))
-			);
-		})('69039af162d0ecedcd945aa9');
-	</script>
-
 	{@html `<script type="application/ld+json">${JSON.stringify(ldJson)}</script>`}
 </svelte:head>
 
