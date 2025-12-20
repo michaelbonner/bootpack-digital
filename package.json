@@ -47,6 +47,6 @@
 		"@sveltejs/adapter-vercel": "^6.2.0",
 		"@tailwindcss/vite": "^4.1.18",
 		"clsx": "^2.1.1",
-		"posthog-js": "^1.308.0"
+		"posthog-js": "^1.309.1"
 	}
 }
