@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
-	import BootpackHorizontal from '../images/bootpack-horizontal.svg';
+	import BootpackHorizontal from '../images/bootpack-horizontal-elf.svg';
 	import MobileNav from './mobile-nav.svelte';
 
 	import { navLinks } from '../lib/nav-links';
