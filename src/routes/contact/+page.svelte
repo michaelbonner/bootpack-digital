@@ -169,9 +169,9 @@
 									/>
 								</svg>
 								<p class="ml-2">
-									P.O. Box 711235
+									PO Box 711235
 									<br />
-									Salt Lake City, UT 84171-1235
+									Salt Lake City, UT 84171
 								</p>
 							</div>
 						</div>
