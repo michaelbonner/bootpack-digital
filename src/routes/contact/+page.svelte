@@ -169,7 +169,7 @@
 									/>
 								</svg>
 								<p class="ml-2">
-									6890 S 2300 E, Unit 711235
+									P.O. Box 711235
 									<br />
 									Salt Lake City, UT 84171
 								</p>
