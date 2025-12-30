@@ -171,7 +171,7 @@
 								<p class="ml-2">
 									P.O. Box 711235
 									<br />
-									Salt Lake City, UT 84171
+									Salt Lake City, UT 84171-1235
 								</p>
 							</div>
 						</div>
@@ -182,7 +182,7 @@
 				class={clsx(
 					'pt-6 pb-24 mx-auto mt-8 w-full max-w-3xl border-t',
 					'lg:pt-8 lg:mt-12',
-					'xl:mt-0 xl:border-t-0 xl:border-l-1 xl:pl-16 xl:max-w-lg xl:pt-0'
+					'xl:mt-0 xl:border-t-0 xl:border-l xl:pl-16 xl:max-w-lg xl:pt-0'
 				)}
 			>
 				<ContactForm />
