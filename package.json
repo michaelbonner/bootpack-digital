@@ -17,20 +17,20 @@
 		"test": "bun run test:e2e"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.57.0",
+		"@playwright/test": "^1.58.0",
 		"@sveltejs/enhanced-img": "^0.9.3",
-		"@sveltejs/kit": "^2.50.0",
+		"@sveltejs/kit": "^2.50.1",
 		"@tailwindcss/typography": "^0.5.19",
-		"@types/node": "^25.0.9",
+		"@types/node": "^25.0.10",
 		"@typescript-eslint/eslint-plugin": "^8.53.1",
 		"@typescript-eslint/parser": "^8.53.1",
 		"eslint": "^9.39.2",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.14.0",
-		"prettier": "^3.8.0",
+		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.4.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
-		"svelte": "^5.47.1",
+		"svelte": "^5.48.1",
 		"svelte-check": "^4.3.5",
 		"svelte-obfuscate": "^0.3.0",
 		"svelte-preprocess": "^6.0.3",
@@ -45,9 +45,9 @@
 		"@eslint/compat": "^2.0.1",
 		"@fontsource-variable/figtree": "^5.2.10",
 		"@qwik.dev/partytown": "^0.11.2",
-		"@sveltejs/adapter-vercel": "^6.3.0",
+		"@sveltejs/adapter-vercel": "^6.3.1",
 		"@tailwindcss/vite": "^4.1.18",
 		"clsx": "^2.1.1",
-		"posthog-js": "^1.332.0"
+		"posthog-js": "^1.335.2"
 	}
 }
