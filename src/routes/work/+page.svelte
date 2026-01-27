@@ -21,6 +21,7 @@
 	import ThermWise from '../../images/work/thermwise.jpg?enhanced';
 	import WasatchCovers from '../../images/work/wasatch-covers.jpg?enhanced';
 	import UtahMountainAdventures from '../../images/work/utah-mountain-adventures.jpg?enhanced';
+	import WasatchFabrication from '../../images/work/wasatch-fabrication.jpg?enhanced';
 </script>
 
 <Seo
@@ -66,6 +67,13 @@
 				linkText="Visit DKOW"
 				poster={DKOW}
 				title="DKOW Law"
+			/>
+			<WorkItem
+				description="Wasatch Fabrication provides custom steel fabrication, laser cutting, welding, and powder coating for commercial, industrial, and custom projects. They needed a website to show their services and collect requests for quotes. We also built out an admin portal for them to manage their projects and quotes using Stripe for payments."
+				link="https://wasatchfabrication.com/"
+				linkText="Visit Wasatch Fabrication"
+				poster={WasatchFabrication}
+				title="Wasatch Fabrication"
 			/>
 			<WorkItem
 				description="A non-profit energy education organization that specializes in K-gray education. They needed a new website that represents their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update."
