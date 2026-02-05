@@ -10,6 +10,10 @@ export const navLinks: { label: string; url: RouteId }[] = [
 		url: '/work'
 	},
 	{
+		label: 'Case Studies',
+		url: '/case-studies'
+	},
+	{
 		label: 'About',
 		url: '/about'
 	},

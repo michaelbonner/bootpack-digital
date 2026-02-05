@@ -1,3 +1,5 @@
+import { caseStudies } from '$lib/data/case-studies';
+
 const routes = [
 	{
 		route: '/',
@@ -27,6 +29,14 @@ const routes = [
 		route: '/blog/how-we-work-with-you',
 		priority: 0.7
 	},
+	{
+		route: '/case-studies',
+		priority: 0.7
+	},
+	...caseStudies.map((study) => ({
+		route: `/case-studies/${study.slug}`,
+		priority: 0.7
+	})),
 	{
 		route: '/policies',
 		priority: 0.5
