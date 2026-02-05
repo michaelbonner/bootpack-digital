@@ -3,9 +3,10 @@
 		title?: string;
 		description?: string;
 		canonical?: string;
+		jsonLd?: Record<string, unknown>;
 	}
 
-	let { title = '', description = '', canonical = '/' }: Props = $props();
+	let { title = '', description = '', canonical = '/', jsonLd = undefined }: Props = $props();
 </script>
 
 <svelte:head>
@@ -18,4 +19,8 @@
 	<meta name="twitter:description" content={description} />
 
 	<link rel="canonical" href="https://bootpackdigital.com{canonical}" />
+
+	{#if jsonLd}
+		{@html `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`}
+	{/if}
 </svelte:head>

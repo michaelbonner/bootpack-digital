@@ -20,6 +20,14 @@ const routes = [
 		priority: 0.5
 	},
 	{
+		route: '/blog',
+		priority: 0.7
+	},
+	{
+		route: '/blog/how-we-work-with-you',
+		priority: 0.7
+	},
+	{
 		route: '/policies',
 		priority: 0.5
 	},

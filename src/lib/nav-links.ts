@@ -18,6 +18,10 @@ export const navLinks: { label: string; url: RouteId }[] = [
 		url: '/open-source'
 	},
 	{
+		label: 'Blog',
+		url: '/blog'
+	},
+	{
 		label: 'Contact',
 		url: '/contact'
 	}
