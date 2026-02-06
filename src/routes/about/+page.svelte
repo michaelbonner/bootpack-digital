@@ -39,7 +39,7 @@
 		<div class="mx-auto mt-8 max-w-3xl">
 			<div class="items-start sm:grid sm:gap-6 lg:flex lg:gap-8">
 				<enhanced:img
-					class="object-cover object-top bg-gray-100 aspect-[24/30] max-w-2/3 md:max-w-[340px] w-full rounded-xl shadow-md"
+					class="object-cover object-top bg-gray-100 aspect-24/30 max-w-2/3 md:max-w-[340px] w-full rounded-xl shadow-md"
 					alt="Michael Bonner"
 					loading="lazy"
 					src={MichaelBonner}

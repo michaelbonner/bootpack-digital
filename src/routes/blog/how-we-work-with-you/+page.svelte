@@ -57,7 +57,7 @@
 			Published on <time datetime={datePublished}>February 4, 2026</time>
 		</div>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
-			At Bootpack Digital, we believe that transparency and clear communication are imporant
+			At Bootpack Digital, we believe that transparency and clear communication are important
 			elements to make a successful project. Here is a look at our process and how we collaborate
 			with you to maintain alignment and quality throughout our engagement.
 		</p>
