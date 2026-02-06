@@ -138,6 +138,22 @@
 	</div>
 </div>
 
+<div class="overflow-hidden relative py-16 bg-white">
+	<div class="relative px-4 sm:px-6 lg:px-8">
+		<div class="mx-auto max-w-3xl text-gray-500 prose lg:prose-lg">
+			<h2 class="text-navy-600">Open Source</h2>
+			<p>
+				We believe that great software is built in the open. That's why we're committed to
+				contributing back to the developer community through our
+				<a class="text-blue-600 hover:text-blue-700" href="/open-source">open source projects</a>.
+				From tools that streamline everyday workflows to packages that solve real-world problems,
+				we're passionate about building quality developer tools that make everyone's work a little
+				easier.
+			</p>
+		</div>
+	</div>
+</div>
+
 <div class="overflow-hidden relative bg-white">
 	<enhanced:img
 		class="object-cover object-right absolute inset-0 w-full h-full lg:object-bottom"
@@ -145,9 +161,9 @@
 		loading="lazy"
 		src="../../images/bootpack-in-snow.jpg"
 	/>
-	<div class="relative pb-64 mx-auto max-w-6xl">
+	<div class="relative px-4 sm:px-6 lg:px-8 pb-64">
 		<div
-			class="px-4 pt-12 mx-auto max-w-3xl text-gray-500 prose lg:prose-lg bg-white/50 backdrop-blur-lg py-8 rounded-2xl"
+			class="pt-12 mx-auto max-w-3xl text-gray-500 prose lg:prose-lg bg-white/50 backdrop-blur-lg py-8 rounded-2xl"
 		>
 			<h2 class="text-navy-600">Why the name "Bootpack"?</h2>
 			<p>

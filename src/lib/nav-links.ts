@@ -18,10 +18,6 @@ export const navLinks: { label: string; url: RouteId }[] = [
 		url: '/about'
 	},
 	{
-		label: 'Open-source',
-		url: '/open-source'
-	},
-	{
 		label: 'Blog',
 		url: '/blog'
 	},
