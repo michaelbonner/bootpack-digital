@@ -137,7 +137,7 @@
 				</div>
 			</div>
 
-			<div class="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
+			<div class="relative mt-10 lg:-mx-4 lg:mt-0" aria-hidden="true">
 				<enhanced:img
 					class="relative mx-auto rounded-lg shadow-lg lg:max-w-none w-full max-w-lg"
 					src={caseStudy.image}
