@@ -8,6 +8,14 @@ import DashboardProfile from '../../images/case-study/wasatch-fabrication/dashbo
 import DashboardQuotes from '../../images/case-study/wasatch-fabrication/dashboard-quotes.jpg?enhanced';
 import MarketingHome from '../../images/case-study/wasatch-fabrication/marketing-home.jpg?enhanced';
 import MarketingService from '../../images/case-study/wasatch-fabrication/marketing-service.jpg?enhanced';
+
+import EnergySafeKidsHome from '../../images/case-study/energysafekids/general-home.jpg?enhanced';
+import EnergySafeKidsAbout from '../../images/case-study/energysafekids/general-about.jpg?enhanced';
+import EnergySafeKidsTeachers from '../../images/case-study/energysafekids/general-teachers.jpg?enhanced';
+import RockyMountainPowerHome from '../../images/case-study/energysafekids/rmp-home.jpg?enhanced';
+import RockyMountainPowerAbout from '../../images/case-study/energysafekids/rmp-about.jpg?enhanced';
+import EnergySafeLeadersHome from '../../images/case-study/energysafekids/esl-home.jpg?enhanced';
+import EnergySafeLeadersStudentResources from '../../images/case-study/energysafekids/esl-student-resources.jpg?enhanced';
 import type { Picture } from 'vite-imagetools';
 
 export interface CaseStudy {
@@ -32,6 +40,54 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
+	{
+		slug: 'energy-safe-kids',
+		title: 'Energy Safe Kids',
+		description:
+			'A scalable, multi-tenant platform for the National Energy Foundation. One simplified CMS powers distinct, branded educational websites for utility partners across the country.',
+		image: EnergySafeKidsHome,
+		link: 'https://energysafekids.org',
+		features: [
+			{
+				title: 'Multi-Tenant Architecture',
+				description:
+					'A single codebase and CMS instance manage dozens of unique educational sites. Updates to the core platform benefit every partner instantly.',
+				icon: 'lightning' // Using lightning as a metaphor for power/energy
+			},
+			{
+				title: 'White-Label Branding',
+				description:
+					'Each utility partner receives a unique website that automatically adapts to their brand guidelines, logos, and specific messaging requirements.',
+				icon: 'users'
+			}
+		],
+		sections: [
+			{
+				title: 'Unified Management',
+				content: [
+					'The National Energy Foundation (NEF) needed a way to manage educational content for numerous utility partners without duplicating effort. We built a centralized Content Management System (CMS) that acts as the single source of truth.',
+					'NEF administrators can publish safety resources, lesson plans, and games once, and then distribute them to all partner sites or target specific regions. This dramatically reduces administrative overhead and ensures consistent messaging across the board.'
+				],
+				images: [EnergySafeKidsAbout, EnergySafeKidsTeachers]
+			},
+			{
+				title: 'Vendor Customization',
+				content: [
+					"While the content is centrally managed, the user experience feels bespoke for each partner. For example, Rocky Mountain Power's site is automatically themed with their specific brand colors, logo, and localized information.",
+					'The system identifies the visitor context and seamlessly serves the correct branded experience, making it easy for NEF to onboard new utility partners without needing to build new websites from scratch.'
+				],
+				images: [RockyMountainPowerHome, RockyMountainPowerAbout]
+			},
+			{
+				title: 'Targeting High Schoolers',
+				content: [
+					"Education needs to evolve with the audience. We expanded the platform to include 'Energy Safe Leaders,' a dedicated experience geared towards high school students.",
+					'Leveraging the same underlying technology, this site provides a more mature interface and age-appropriate content, proving the platform\'s flexibility to handle diverse target demographics within a single ecosystem.'
+				],
+				images: [EnergySafeLeadersHome, EnergySafeLeadersStudentResources]
+			}
+		]
+	},
 	{
 		slug: 'wasatch-fabrication',
 		title: 'Wasatch Fabrication',
