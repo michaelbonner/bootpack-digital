@@ -4,6 +4,13 @@
 
 	const posts = [
 		{
+			title: 'Rapid product iteration with AI',
+			slug: 'ai-product-iteration',
+			description:
+				'How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of experience to help clients explore new opportunities.',
+			date: 'February 6, 2026'
+		},
+		{
 			title: 'How we work with you on projects',
 			slug: 'how-we-work-with-you',
 			description:

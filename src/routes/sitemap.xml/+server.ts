@@ -30,6 +30,10 @@ const routes = [
 		priority: 0.7
 	},
 	{
+		route: '/blog/ai-product-iteration',
+		priority: 0.7
+	},
+	{
 		route: '/case-studies',
 		priority: 0.7
 	},
