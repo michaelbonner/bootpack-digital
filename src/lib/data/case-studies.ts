@@ -47,7 +47,7 @@ export const caseStudies: CaseStudy[] = [
 			{
 				title: 'Rapid Development',
 				content: [
-					'Speed was of the essence for Wasatch Fabrication. They needed to get their business operations digitalized quickly to handle an influx of orders. We adopted an agile approach, prioritizing core features that delivered immediate value.',
+					'Speed was of the essence for Wasatch Fabrication. They needed to get their business operations up and running quickly to handle an influx of orders. We adopted an agile approach, prioritizing core features that delivered immediate value.',
 					'By keeping the feedback loop tight and iterating daily, we were able to go from an idea to a fully functional production application in under 6 weeks. This included database design, API development, and the front-end user interfaces for both administrators and customers.'
 				]
 			},
