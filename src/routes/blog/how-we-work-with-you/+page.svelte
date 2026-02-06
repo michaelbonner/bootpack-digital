@@ -2,7 +2,7 @@
 	import ContactBanner from '../../../components/contact-banner.svelte';
 	import Seo from '../../../components/seo.svelte';
 	import Breadcrumbs from '../../../components/breadcrumbs.svelte';
-	const datePublished = '2026-02-05';
+	const datePublished = '2026-02-04';
 
 	const jsonLd = {
 		'@context': 'https://schema.org',
@@ -54,7 +54,7 @@
 			<span class="block"> How we work with you on projects </span>
 		</h1>
 		<div class="text-gray-400">
-			Published on <time datetime={datePublished}>February 5, 2026</time>
+			Published on <time datetime={datePublished}>February 4, 2026</time>
 		</div>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			At Bootpack Digital, we believe that transparency and clear communication are imporant

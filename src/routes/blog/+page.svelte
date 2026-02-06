@@ -15,7 +15,7 @@
 			slug: 'how-we-work-with-you',
 			description:
 				'Learn about our onboarding process, how we collaborate in Basecamp, and our offline-first approach to problem solving.',
-			date: 'February 5, 2026'
+			date: 'February 4, 2026'
 		}
 	];
 
