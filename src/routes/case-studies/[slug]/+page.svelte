@@ -171,13 +171,31 @@
 						</p>
 					{/each}
 					{#if section.image}
-						<figure>
+						<figure class="my-8">
 							<enhanced:img
-								class="w-full rounded-lg"
+								class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 								src={section.image}
 								alt={section.imageAlt || section.title}
 							/>
 						</figure>
+					{/if}
+
+					{#if section.images && section.images.length > 0}
+						<div class="my-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+							{#each section.images as img, i}
+								<figure class="relative group not-prose">
+									<div
+										class="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
+									>
+										<enhanced:img
+											class="w-full transform transition-transform duration-700 group-hover:scale-105"
+											src={img}
+											alt="{section.title} Screenshot {i + 1}"
+										/>
+									</div>
+								</figure>
+							{/each}
+						</div>
 					{/if}
 					<div class="my-12"></div>
 				{/each}
