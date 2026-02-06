@@ -60,6 +60,7 @@
 				linkText="Visit ESK"
 				poster={ESK}
 				title="Energy Safe Kids"
+				caseStudyLink="/case-studies/energy-safe-kids"
 			/>
 			<WorkItem
 				description="A leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW’s experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
@@ -74,6 +75,7 @@
 				linkText="Visit Wasatch Fabrication"
 				poster={WasatchFabrication}
 				title="Wasatch Fabrication"
+				caseStudyLink="/case-studies/wasatch-fabrication"
 			/>
 			<WorkItem
 				description="A non-profit energy education organization that specializes in K-gray education. They needed a new website that represents their brand better and showcase their programs and reach. We designed and built a site that is easy to use and easy to update."

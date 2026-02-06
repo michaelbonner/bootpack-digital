@@ -8,9 +8,18 @@
 		title: string;
 		lazy?: boolean;
 		linkText?: string;
+		caseStudyLink?: string;
 	}
 
-	let { description, link, poster, title, lazy = false, linkText = 'View Site' }: Props = $props();
+	let {
+		description,
+		link,
+		poster,
+		title,
+		lazy = false,
+		linkText = 'View Site',
+		caseStudyLink
+	}: Props = $props();
 </script>
 
 <div
@@ -38,7 +47,7 @@
 				<span class="sr-only"> (opens a new tab)</span>
 			</a>
 		</div>
-		<div class="flex items-center mt-6">
+		<div class="flex flex-wrap gap-4 items-center mt-6">
 			<div class="shrink-0">
 				<a
 					class="flex gap-2 items-center font-medium text-blue-600 underline transition-colors hover:text-blue-700"
@@ -66,6 +75,36 @@
 					<span class="sr-only"> (opens a new tab)</span>
 				</a>
 			</div>
+			{#if caseStudyLink}
+				<div class="shrink-0">
+					<a
+						class="flex gap-2 items-center font-medium text-blue-600 underline transition-colors hover:text-blue-700"
+						href={caseStudyLink}
+					>
+						<svg
+							fill="none"
+							height="1em"
+							role="presentation"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							width="1em"
+							xmlns="http://www.w3.org/2000/svg"
+							><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline
+								points="14 2 14 8 20 8"
+							/><line x1="16" y1="13" x2="8" y2="13" /><line
+								x1="16"
+								y1="17"
+								x2="8"
+								y2="17"
+							/><polyline points="10 9 9 9 8 9" /></svg
+						>
+						View Case Study
+					</a>
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>
