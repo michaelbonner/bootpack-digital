@@ -139,7 +139,6 @@ export const caseStudies: CaseStudy[] = [
 					'Admins can generate invoices, collect payments through Stripe, and keep all communication tied to specific jobs. Nothing falls through the cracks because everything lives in one place instead of scattered across inboxes.'
 				],
 				images: [AdminDashboard, AdminQuote]
-
 			}
 		]
 	}
