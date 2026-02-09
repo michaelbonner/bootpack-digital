@@ -44,45 +44,45 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'energy-safe-kids',
 		title: 'Energy Safe Kids',
 		description:
-			'A scalable, multi-tenant platform for the National Energy Foundation. One simplified CMS powers distinct, branded educational websites for utility partners across the country.',
+			'We built a multi-tenant platform for the National Energy Foundation that lets one team manage dozens of branded educational sites for utility partners — without the copy-paste nightmare.',
 		image: EnergySafeKidsHome,
 		link: 'https://energysafekids.org',
 		features: [
 			{
 				title: 'Multi-Tenant Architecture',
 				description:
-					'A single codebase and CMS instance manage dozens of unique educational sites. Updates to the core platform benefit every partner instantly.',
+					'One codebase, dozens of sites. When NEF pushes an update, every partner site gets it instantly — no deployment marathons required.',
 				icon: 'lightning' // Using lightning as a metaphor for power/energy
 			},
 			{
 				title: 'White-Label Branding',
 				description:
-					'Each utility partner receives a unique website that automatically adapts to their brand guidelines, logos, and specific messaging requirements.',
+					'Each utility partner gets a site that looks and feels like their own — right down to brand colors, logos, and regional content.',
 				icon: 'users'
 			}
 		],
 		sections: [
 			{
-				title: 'Unified Management',
+				title: 'One CMS to Rule Them All',
 				content: [
-					'The National Energy Foundation (NEF) needed a way to manage educational content for numerous utility partners without duplicating effort. We built a centralized Content Management System (CMS) that acts as the single source of truth.',
-					'NEF administrators can publish safety resources, lesson plans, and games once, and then distribute them to all partner sites or target specific regions. This dramatically reduces administrative overhead and ensures consistent messaging across the board.'
+					'The National Energy Foundation (NEF) works with utility companies across the country to teach kids about energy safety. The problem? Every partner needed their own site, and NEF was drowning in duplicate content and one-off updates.',
+					'We built them a centralized CMS where they publish safety resources, lesson plans, and games once, then push that content to every partner site — or just specific regions. What used to take hours of copy-pasting now takes a single click.'
 				],
 				images: [EnergySafeKidsAbout, EnergySafeKidsTeachers]
 			},
 			{
-				title: 'Vendor Customization',
+				title: 'Same Platform, Different Brand',
 				content: [
-					"While the content is centrally managed, the user experience feels bespoke for each partner. For example, Rocky Mountain Power's site is automatically themed with their specific brand colors, logo, and localized information.",
-					'The system identifies the visitor context and seamlessly serves the correct branded experience, making it easy for NEF to onboard new utility partners without needing to build new websites from scratch.'
+					"Here's the cool part: even though everything runs on one platform, each partner's site feels completely custom. Rocky Mountain Power visitors see RMP branding, colors, and local info. Pacific Power visitors get theirs. It all happens automatically.",
+					"Adding a new utility partner used to mean building a whole new site. Now it's closer to flipping a switch — upload their logo, set their colors, and they're live. NEF can onboard new partners in a fraction of the time it used to take."
 				],
 				images: [RockyMountainPowerHome, RockyMountainPowerAbout]
 			},
 			{
-				title: 'Targeting High Schoolers',
+				title: 'Growing Up: Energy Safe Leaders',
 				content: [
-					"Education needs to evolve with the audience. We expanded the platform to include 'Energy Safe Leaders,' a dedicated experience geared towards high school students.",
-					'Leveraging the same underlying technology, this site provides a more mature interface and age-appropriate content, proving the platform\'s flexibility to handle diverse target demographics within a single ecosystem.'
+					"The original platform was built for younger kids, but NEF wanted to reach high schoolers too. Rather than start from scratch, we built 'Energy Safe Leaders' on top of the same tech stack.",
+					"It's a more mature look and feel with age-appropriate content, but under the hood it shares the same CMS and multi-tenant architecture. One platform, two audiences — and room to grow into more."
 				],
 				images: [EnergySafeLeadersHome, EnergySafeLeadersStudentResources]
 			}
