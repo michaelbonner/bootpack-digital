@@ -204,6 +204,21 @@
 	</div>
 {/if}
 
+{#if caseStudy.relatedBlogPost}
+	<div class="px-4 mx-auto max-w-prose sm:px-6 lg:px-8 py-12">
+		<h2 class="text-2xl font-bold tracking-tight text-navy-900">Related reading</h2>
+		<div class="mt-6">
+			<a
+				href={caseStudy.relatedBlogPost.href}
+				class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
+			>
+				<p class="text-xl font-semibold text-gray-900">{caseStudy.relatedBlogPost.title}</p>
+				<p class="mt-3 text-base text-gray-500">{caseStudy.relatedBlogPost.description}</p>
+			</a>
+		</div>
+	</div>
+{/if}
+
 <ContactBanner
 	textLine1="Have a project in mind?"
 	textLine2="Let's build something great together."

@@ -112,6 +112,22 @@
 	</div>
 </div>
 
+<div class="px-4 mx-auto mt-16 mb-12 max-w-prose sm:px-6 lg:px-8">
+	<h2 class="text-2xl font-bold tracking-tight text-navy-900">Related posts</h2>
+	<div class="mt-6">
+		<a
+			href="/blog/ai-product-iteration"
+			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
+		>
+			<p class="text-xl font-semibold text-gray-900">Rapid product iteration with AI</p>
+			<p class="mt-3 text-base text-gray-500">
+				How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and
+				leverage years of experience to help clients explore new opportunities.
+			</p>
+		</a>
+	</div>
+</div>
+
 <ContactBanner
 	textLine1="Ready to get started?"
 	textLine2="Send us a message so we can chat."

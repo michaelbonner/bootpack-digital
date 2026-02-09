@@ -36,7 +36,10 @@
 			<h1 class="tracking-tight text-navy-600">Custom Web Design and Development Projects</h1>
 			<p>
 				We build engaging, custom experiences for our clients. Here's a few examples we're
-				particularly proud of.
+				particularly proud of. Curious about what it's like to work with us?
+				<a href="/blog/how-we-work-with-you" class="text-blue-600 hover:text-blue-500"
+					>Read about how we run projects</a
+				>.
 			</p>
 		</div>
 		<div class="grid gap-x-5 gap-y-10 mx-auto mt-12 max-w-lg lg:grid-cols-3 lg:max-w-none">

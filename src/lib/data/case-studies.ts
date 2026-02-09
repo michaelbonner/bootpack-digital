@@ -37,6 +37,11 @@ export interface CaseStudy {
 		images?: Picture[];
 		imageAlt?: string;
 	}[];
+	relatedBlogPost?: {
+		href: string;
+		title: string;
+		description: string;
+	};
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -140,6 +145,12 @@ export const caseStudies: CaseStudy[] = [
 				],
 				images: [AdminDashboard, AdminQuote]
 			}
-		]
+		],
+		relatedBlogPost: {
+			href: '/blog/ai-product-iteration',
+			title: 'Rapid product iteration with AI',
+			description:
+				'How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of experience to help clients explore new opportunities.'
+		}
 	}
 ];

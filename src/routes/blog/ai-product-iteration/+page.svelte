@@ -135,6 +135,22 @@
 	</div>
 </div>
 
+<div class="px-4 mx-auto mt-16 mb-12 max-w-prose sm:px-6 lg:px-8">
+	<h2 class="text-2xl font-bold tracking-tight text-navy-900">Related posts</h2>
+	<div class="mt-6">
+		<a
+			href="/blog/how-we-work-with-you"
+			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
+		>
+			<p class="text-xl font-semibold text-gray-900">How we work with you on projects</p>
+			<p class="mt-3 text-base text-gray-500">
+				Learn about our onboarding process, how we collaborate in Basecamp, and our offline-first
+				approach to problem solving.
+			</p>
+		</a>
+	</div>
+</div>
+
 <ContactBanner
 	textLine1="Have a product idea to explore?"
 	textLine2="Let's build a prototype and find out what works."
