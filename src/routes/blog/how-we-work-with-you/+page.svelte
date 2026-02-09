@@ -11,7 +11,7 @@
 		datePublished,
 		dateModified: datePublished,
 		description:
-			'Learn about our onboarding process, collaboration in Basecamp, and our offline-first approach.',
+			'A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving.',
 		mainEntityOfPage: {
 			'@type': 'WebPage',
 			'@id': 'https://bootpackdigital.com/blog/how-we-work-with-you'
@@ -34,7 +34,7 @@
 
 <Seo
 	title="How we work with you on projects | Bootpack Digital"
-	description="Learn about our onboarding process, collaboration in Basecamp, and our offline-first approach."
+	description="A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving."
 	canonical="/blog/how-we-work-with-you"
 	{jsonLd}
 />
@@ -57,57 +57,57 @@
 			Published on <time datetime={datePublished}>February 4, 2026</time>
 		</div>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
-			At Bootpack Digital, we believe that transparency and clear communication are important
-			elements to make a successful project. Here is a look at our process and how we collaborate
-			with you to maintain alignment and quality throughout our engagement.
+			We've tried a lot of ways to run projects over the years. What we've settled on comes down to
+			a few things: keep everyone in the loop, write things down, and don't waste people's time.
+			Here's how it works in practice.
 		</p>
 	</div>
 	<div class="px-4 mx-auto mt-12 prose prose-lg text-gray-500 prose-blue">
-		<h2>The Onboarding Process</h2>
+		<h2>Getting started</h2>
 		<p>
-			Every project begins with a comprehensive onboarding phase. We take the time to deeply
-			understand your business goals, target audience, and technical requirements. This initial
-			investment ensures that we are building the right solution for your needs, not just writing
-			code.
+			Before we write any code, we spend time understanding what you're actually trying to
+			accomplish. Not just "build a website" or "make an app," but the business problem behind it.
+			Who are your users? What does success look like? What's been tried before? This upfront
+			conversation saves us from building the wrong thing.
 		</p>
 
-		<h2>Collaborating in the Open with Basecamp</h2>
+		<h2>Everything lives in Basecamp</h2>
 		<p>
 			We use <a href="https://basecamp.com/learn" target="_blank" rel="noopener noreferrer"
 				>Basecamp</a
-			>
-			as our central hub for project management. We invite all stakeholders into the project space, creating
-			a place where we can all collaborate in the open.
+			> for all project communication. Everyone on the project gets access: your team, our team,
+			whoever needs to be in the loop. Files, discussions, to-do lists, updates; it's all in one
+			place.
 		</p>
 		<p>
-			By centralized files, discussions, and to-do lists, we eliminate the chaos of scattered email
-			threads. You'll have full visibility into what we're working on, upcoming milestones, and any
-			blockers we're facing.
-		</p>
-
-		<h2>Weekly Check-in Meetings</h2>
-		<p>
-			We value regular syncs to keep momentum. We typically schedule weekly check-in meetings to
-			review progress, demonstrate completed features, and refine the roadmap. This is optional and
-			only applies to larger projects or when needed.
-		</p>
-		<p>
-			We record these meetings so that anyone who couldn't attend can catch up later, and so we have
-			a record of decisions made during the call. This helps ensure nothing falls through the
-			cracks. We'll also send you a summary of the meeting in Basecamp if you don't want to watch
-			the recording.
+			The big win here is no more digging through email threads to find that one decision from three
+			weeks ago. If it happened on the project, it's in Basecamp. You can check in anytime and see
+			exactly where things stand.
 		</p>
 
-		<h2>Offline-First Problem Solving</h2>
+		<h2>Weekly check-ins (when they make sense)</h2>
 		<p>
-			We adopt an "offline-first" approach to problem solving. This doesn't just mean our apps work
-			offline (though they often can); it means we encourages deep work and thoughtful responses
-			over instant messaging.
+			For bigger projects, we'll hop on a weekly call to show what we've built, talk through what's
+			coming up, and make decisions together. We keep these focused and try not to let them run long.
+			For smaller projects, we skip them and handle everything asynchronously in Basecamp.
 		</p>
 		<p>
-			By documenting problems and potential solutions in writing before discussing them, we can
-			often resolve complex issues more clearly and faster than through ad-hoc chats. This respect
-			for focus time allows our developers to build higher quality software for you.
+			We record every call. If someone can't make it, they can watch it later. We also post a
+			summary in Basecamp with the key decisions and action items, so nobody has to scrub through a
+			30-minute video for the one thing they need.
+		</p>
+
+		<h2>Writing first, meetings second</h2>
+		<p>
+			When a tricky problem comes up, our first instinct isn't to jump on a call. We write it up.
+			What's the problem, what are the options, what do we recommend. This gives everyone time to
+			think it through instead of making snap decisions in a meeting.
+		</p>
+		<p>
+			It also means our developers get long, uninterrupted stretches to focus on the work. Fewer
+			context switches, better code. When we do need to talk something through live, the
+			conversation is better because everyone's already read the write-up and had time to form an
+			opinion.
 		</p>
 	</div>
 </div>
