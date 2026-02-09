@@ -92,37 +92,37 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'wasatch-fabrication',
 		title: 'Wasatch Fabrication',
 		description:
-			'From concept to launch in under 6 weeks. We partnered with Wasatch Fabrication to build a custom platform that manages their entire workflow.',
+			'Idea to launch in under 6 weeks. We built Wasatch Fabrication a custom platform that handles quoting, invoicing, payments, and customer communication, all in one place.',
 		image: WasatchFabrication,
 		link: 'https://wasatchfabrication.com',
 		features: [
 			{
 				title: 'Rapid Development',
 				description:
-					"We went from the initial idea to a fully launched product in under 6 weeks, proving that quality software doesn't have to take years to build.",
+					'Six weeks from first conversation to production. Database, API, admin portal, customer portal, payments. The whole thing.',
 				icon: 'lightning'
 			},
 			{
 				title: 'Admin & Customer Portals',
 				description:
-					'A powerful admin section for communication, invoicing, and payments, paired with a customer dashboard for tracking quote requests and progress.',
+					'Admins manage quotes, invoices, and payments. Customers track their jobs and pay online. No more email chains.',
 				icon: 'users'
 			}
 		],
 		sections: [
 			{
-				title: 'Rapid Development',
+				title: 'Six Weeks, Start to Finish',
 				content: [
-					'Speed was of the essence for Wasatch Fabrication. They needed to get their business operations up and running quickly to handle an influx of orders. We adopted an agile approach, prioritizing core features that delivered immediate value.',
-					'By keeping the feedback loop tight and iterating daily, we were able to go from an idea to a fully functional production application in under 6 weeks. This included database design, API development, and the front-end user interfaces for both administrators and customers.'
+					'Wasatch Fabrication had orders coming in and no system to manage them. They needed something fast, but "fast" usually means cutting corners. We took a different approach: focus on the features that matter most, ship daily, and iterate based on real feedback.',
+					'In under six weeks we delivered the full stack: database design, API, a marketing site, an admin portal, and a customer-facing dashboard. It was tight, but the daily feedback loop kept us building the right things instead of guessing.'
 				],
 				images: [MarketingHome, MarketingService]
 			},
 			{
-				title: 'Customer Portal',
+				title: 'A Dashboard Customers Actually Use',
 				content: [
-					'The customer portal is designed to provide transparency and ease of use for Wasatch Fabrication clients. Instead of relying on scattered emails, customers can log in to a centralized dashboard.',
-					'From this dashboard, they can submit new quote requests, track the status of existing jobs, and communicate directly with the fabrication team. This self-service model reduces administrative overhead and improves customer satisfaction by providing real-time updates.'
+					'Before the portal, everything ran through email. Quote requests, status updates, file sharing, invoices. It worked, but things got lost. We built a customer dashboard where clients can submit quote requests, upload files, and track their jobs from start to finish.',
+					'Customers can see exactly where their order stands, view and pay invoices online through Stripe, and pull up their full history. It cut way down on "hey, what\'s the status of my order?" emails.'
 				],
 				images: [
 					DashboardHome,
@@ -133,10 +133,10 @@ export const caseStudies: CaseStudy[] = [
 				]
 			},
 			{
-				title: 'Admin Dashboard',
+				title: 'The Admin Side',
 				content: [
-					'Behind the scenes, the admin portal serves as the command center for the business. We built custom workflows to manage the entire lifecycle of a job, from initial inquiry to final delivery.',
-					'Admins can quickly generate PDF invoices, collect payments via Stripe integration, and manage production schedules. The system also consolidates all communication, ensuring that no customer request falls through the cracks.'
+					'The admin portal is where the real work happens. We built it around how the team actually works: a quote comes in, gets reviewed, priced out with line items, and sent as an invoice. When the customer pays, production kicks off.',
+					'Admins can generate invoices, collect payments through Stripe, and keep all communication tied to specific jobs. Nothing falls through the cracks because everything lives in one place instead of scattered across inboxes.'
 				],
 				images: [AdminDashboard, AdminQuote]
 
