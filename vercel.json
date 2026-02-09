@@ -46,11 +46,6 @@
 			"permanent": true
 		},
 		{
-			"source": "/blog(\/?)",
-			"destination": "https://bootpackdigital.com/about",
-			"permanent": true
-		},
-		{
 			"source": "/cms-made-simple-vs-wordpress(\/?)",
 			"destination": "https://bootpackdigital.com/work",
 			"permanent": true
