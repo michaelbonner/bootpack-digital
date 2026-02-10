@@ -32,8 +32,12 @@
 <div class="py-12 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 	<div class="lg:text-center">
 		<h2 class="text-base font-semibold tracking-wide uppercase text-blue-600">Blog</h2>
-		<p class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-navy-900 sm:text-4xl">
+		<h1 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-navy-900 sm:text-4xl">
 			Latest thoughts & updates
+		</h1>
+		<p class="mt-4 mx-auto max-w-2xl text-lg text-gray-500">
+			Notes on product strategy, web development, and how we build practical digital experiences
+			with our clients.
 		</p>
 	</div>
 
