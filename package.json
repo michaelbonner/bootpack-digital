@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.58.2",
-		"@sveltejs/enhanced-img": "^0.9.3",
+		"@sveltejs/enhanced-img": "^0.10.2",
 		"@sveltejs/kit": "^2.52.0",
 		"@tailwindcss/typography": "^0.5.19",
 		"@types/node": "^25.2.3",
