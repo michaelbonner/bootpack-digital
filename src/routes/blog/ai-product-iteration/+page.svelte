@@ -63,7 +63,7 @@
 		</p>
 	</div>
 	<div class="px-4 mx-auto mt-12 prose prose-lg text-gray-500 prose-blue">
-		<h2>You can click it, not just look at it</h2>
+		<h2>You can experiment with it, not just look at it</h2>
 		<p>
 			Wireframes and mockups are good for getting the general idea across, but they leave too many
 			questions unanswered. You can't really tell if a flow makes sense until you're clicking
@@ -98,27 +98,28 @@
 			knowing the downside is "we learned something," not "we took down the site."
 		</p>
 
-		<h2>Fast doesn't mean sloppy</h2>
+		<h2>Fast doesn't necessarily mean sloppy</h2>
 		<p>
-			There's a knee-jerk reaction that speed and quality are at odds with each other. We don't buy
-			it. AI handles the repetitive, boilerplate stuff so we can focus our time where it counts:
-			architecture decisions, edge cases, user experience, and making sure the code is maintainable
-			six months from now.
+			There's a default assumption that speed and quality are at odds with each other. That feels
+			like a false dichotomy to us. AI handles the repetitive, boilerplate stuff so we can focus our
+			time where it counts: architecture decisions, edge cases, user experience, and making sure the
+			code is maintainable.
 		</p>
 		<p>
-			We've been doing this long enough to know what happens when you cut corners to move fast. You
-			pay for it later, with interest. Our prototypes are built on solid foundations from day one,
-			so when something graduates from sandbox to production, you're not looking at a rewrite.
+			We've been doing this long enough to know what happens when you cut corners to move fast. Our
+			prototypes are built on solid foundations from day one, so when something graduates from
+			sandbox to production, you're not looking at a rewrite.
 		</p>
 
-		<h2>AI is fast, experience points it in the right direction</h2>
+		<h2>AI is a rapid iteration tool, driven by our experience</h2>
 		<p>
 			AI can generate code quickly, but it doesn't know which feature to prototype first, how to
-			structure a test so you actually learn something, or when to stop iterating and commit. That
-			takes judgment, and judgment comes from building a lot of products over a lot of years.
+			structure a test so you actually learn something, or when to stop iterating and commit to a
+			direction. That takes judgment, and judgment comes from building and maintaining successful
+			products.
 		</p>
 		<p>
-			We've worked across industries and product types. We've seen what works and what doesn't. When
+			We've worked across industries and project types. We've seen what works and what doesn't. When
 			we help you iterate on an idea, we're not just writing code; we're applying everything we've
 			learned about what makes products succeed to help you make better calls, faster.
 		</p>
