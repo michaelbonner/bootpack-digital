@@ -65,9 +65,9 @@
 	<div class="px-4 mx-auto mt-12 prose prose-lg text-gray-500 prose-blue">
 		<h2>You can click it, not just look at it</h2>
 		<p>
-			Wireframes and mockups are fine for getting the general idea across, but they leave a lot to
-			the imagination. You can't really tell if a flow makes sense until you're clicking through it,
-			filling out the forms, and watching data move between screens.
+			Wireframes and mockups are good for getting the general idea across, but they leave too many
+			questions unanswered. You can't really tell if a flow makes sense until you're clicking
+			through it, filling out the forms, and watching data move between screens.
 		</p>
 		<p>
 			AI lets us build working prototypes fast. Not pixel-perfect screenshots, actual applications
@@ -107,8 +107,8 @@
 		</p>
 		<p>
 			We've been doing this long enough to know what happens when you cut corners to move fast. You
-			pay for it later, with interest. Our prototypes are built on solid foundations from day one, so
-			when something graduates from sandbox to production, you're not looking at a rewrite.
+			pay for it later, with interest. Our prototypes are built on solid foundations from day one,
+			so when something graduates from sandbox to production, you're not looking at a rewrite.
 		</p>
 
 		<h2>AI is fast, experience points it in the right direction</h2>
@@ -129,9 +129,7 @@
 			the math changes when you can go from idea to working prototype in days. Less time debating in
 			the abstract, more time learning from real usage.
 		</p>
-		<p>
-			If you've got an idea you want to explore, let's build something and find out.
-		</p>
+		<p>If you've got an idea you want to explore, let's build something and find out.</p>
 	</div>
 </div>
 
