@@ -18,6 +18,8 @@
 		<Links />
 
 		<div class="pt-4 max-w-3xl prose">
+			<h1>Bootpack Digital's Terms of Service</h1>
+
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 			{@html data.policyBody}
 		</div>
