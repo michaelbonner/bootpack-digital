@@ -25,7 +25,7 @@
 
 <Seo
 	title="Blog | Bootpack Digital"
-	description="Insights and updates from Bootpack Digital."
+	description="Bootpack Digital’s latest blog posts on web development, product strategy, and digital experiences for modern applications."
 	canonical="/blog"
 />
 
