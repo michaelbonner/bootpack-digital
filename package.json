@@ -28,9 +28,9 @@
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.15.0",
 		"prettier": "^3.8.1",
-		"prettier-plugin-svelte": "^3.5.0",
+		"prettier-plugin-svelte": "^3.5.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
-		"svelte": "^5.53.6",
+		"svelte": "^5.53.7",
 		"svelte-check": "^4.4.4",
 		"svelte-obfuscate": "^0.3.0",
 		"svelte-preprocess": "^6.0.3",
@@ -48,6 +48,6 @@
 		"@sveltejs/adapter-vercel": "^6.3.3",
 		"@tailwindcss/vite": "^4.2.1",
 		"clsx": "^2.1.1",
-		"posthog-js": "^1.356.1"
+		"posthog-js": "^1.357.2"
 	}
 }
