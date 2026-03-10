@@ -4,6 +4,13 @@
 
 	const posts = [
 		{
+			title: 'Introducing EasyCustomerFeedback',
+			slug: 'introducing-easy-customer-feedback',
+			description:
+				'EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers.',
+			date: 'March 9, 2026'
+		},
+		{
 			title: 'Rapid product iteration with AI',
 			slug: 'ai-product-iteration',
 			description:
