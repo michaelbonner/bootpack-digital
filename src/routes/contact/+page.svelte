@@ -30,6 +30,13 @@
 						outside consultant? Fill out this form and we'll be in touch. We specialize in custom
 						web design, web development, and app development.
 					</p>
+					<p>
+						Looking for a job? Check out our <a
+							href="https://joblisting.app/w/66997a29-eadf-42b1-b1da-0dce217cbe19"
+							target="_blank"
+							rel="noopener noreferrer">available job listings</a
+						>.
+					</p>
 					<div>
 						<a
 							class="inline-flex py-3 px-5 text-base font-medium leading-6 text-white bg-blue-600 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-blue-500 focus:outline-hidden focus:shadow-outline"
