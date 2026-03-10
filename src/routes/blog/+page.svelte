@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import Seo from '../../components/seo.svelte';
+	import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg';
+	import aiThumbnail from '../../images/rapid-iteration-with-ai.jpg';
+	import howWeWorkThumbnail from '../../images/how-we-work-with-you.jpg';
 
 	const posts = [
 		{
@@ -8,21 +11,24 @@
 			slug: 'introducing-easy-customer-feedback',
 			description:
 				'EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers.',
-			date: 'March 9, 2026'
+			date: 'March 9, 2026',
+			thumbnail: ecfThumbnail
 		},
 		{
 			title: 'Rapid product iteration with AI',
 			slug: 'ai-product-iteration',
 			description:
 				'How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of experience to help clients explore new opportunities.',
-			date: 'February 6, 2026'
+			date: 'February 6, 2026',
+			thumbnail: aiThumbnail
 		},
 		{
 			title: 'How we work with you on projects',
 			slug: 'how-we-work-with-you',
 			description:
 				'Learn about our onboarding process, how we collaborate in Basecamp, and our offline-first approach to problem solving.',
-			date: 'February 4, 2026'
+			date: 'February 4, 2026',
+			thumbnail: howWeWorkThumbnail
 		}
 	];
 
@@ -51,6 +57,9 @@
 	<div class="grid gap-5 mx-auto mt-12 max-w-lg lg:grid-cols-3 lg:max-w-none">
 		{#each posts as post}
 			<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+				<a href={getBlogPostUrl(post.slug)} class="block shrink-0">
+					<enhanced:img src={post.thumbnail} alt={post.title} class="h-48 w-full object-cover" />
+				</a>
 				<div class="flex flex-col justify-between flex-1 p-6 bg-white">
 					<div class="flex-1">
 						<a href={getBlogPostUrl(post.slug)} class="block mt-2">
