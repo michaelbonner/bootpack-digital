@@ -55,9 +55,9 @@
 	</div>
 
 	<div class="grid gap-5 mx-auto mt-12 max-w-lg lg:grid-cols-3 lg:max-w-none">
-		{#each posts as post}
+		{#each posts as post (post.slug)}
 			<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-				<a href={getBlogPostUrl(post.slug)} class="block shrink-0">
+				<a aria-label={post.title} href={getBlogPostUrl(post.slug)} class="block shrink-0">
 					<enhanced:img src={post.thumbnail} alt={post.title} class="h-48 w-full object-cover" />
 				</a>
 				<div class="flex flex-col justify-between flex-1 p-6 bg-white">
