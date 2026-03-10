@@ -2,6 +2,7 @@
 	import ContactBanner from '../../../components/contact-banner.svelte';
 	import Seo from '../../../components/seo.svelte';
 	import Breadcrumbs from '../../../components/breadcrumbs.svelte';
+	import thumbnail from '../../../images/rapid-iteration-with-ai.jpg';
 	const datePublished = '2026-02-06';
 
 	const jsonLd = {
@@ -56,6 +57,7 @@
 		<div class="text-gray-400">
 			Published on <time datetime={datePublished}>February 6, 2026</time>
 		</div>
+		<enhanced:img src={thumbnail} alt="Rapid product iteration with AI" class="mt-8 w-full rounded-lg" />
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			Building software used to mean months of planning before anyone could touch the thing. AI has
 			changed that. We use it to get working prototypes in front of clients in days instead of

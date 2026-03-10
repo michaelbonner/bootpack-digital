@@ -2,6 +2,7 @@
 	import ContactBanner from '../../../components/contact-banner.svelte';
 	import Seo from '../../../components/seo.svelte';
 	import Breadcrumbs from '../../../components/breadcrumbs.svelte';
+	import thumbnail from '../../../images/how-we-work-with-you.jpg';
 	const datePublished = '2026-02-04';
 
 	const jsonLd = {
@@ -56,6 +57,7 @@
 		<div class="text-gray-400">
 			Published on <time datetime={datePublished}>February 4, 2026</time>
 		</div>
+		<enhanced:img src={thumbnail} alt="How we work with you on projects" class="mt-8 w-full rounded-lg" />
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			We've tried a lot of ways to run projects over the years. What we've settled on comes down to
 			a few things: keep everyone in the loop, write things down, and don't waste people's time.
