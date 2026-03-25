@@ -3,15 +3,15 @@
 	import Seo from '../../../components/seo.svelte';
 	import Breadcrumbs from '../../../components/breadcrumbs.svelte';
 
-	import homepageHero from '../../../images/easycustomerfeedback-screenshots/homepage-hero.jpg';
-	import dashboardOverview from '../../../images/easycustomerfeedback-screenshots/dashboard-overview.jpg';
-	import submissionsList from '../../../images/easycustomerfeedback-screenshots/submissions-list.jpg';
-	import submissionDetail from '../../../images/easycustomerfeedback-screenshots/submission-detail.jpg';
-	import widgetProjectsList from '../../../images/easycustomerfeedback-screenshots/widget-projects-list.jpg';
-	import featuresPage from '../../../images/easycustomerfeedback-screenshots/features-page.jpg';
-	import embeddableWidget from '../../../images/easycustomerfeedback-screenshots/embeddable-widget.jpg';
-	import widgetCustomization from '../../../images/easycustomerfeedback-screenshots/widget-customization.jpg';
-	import integrationsSyncTargets from '../../../images/easycustomerfeedback-screenshots/integrations-sync-targets.jpg';
+	import homepageHero from '../../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?enhanced';
+	import dashboardOverview from '../../../images/easycustomerfeedback-screenshots/dashboard-overview.jpg?enhanced';
+	import submissionsList from '../../../images/easycustomerfeedback-screenshots/submissions-list.jpg?enhanced';
+	import submissionDetail from '../../../images/easycustomerfeedback-screenshots/submission-detail.jpg?enhanced';
+	import widgetProjectsList from '../../../images/easycustomerfeedback-screenshots/widget-projects-list.jpg?enhanced';
+	import featuresPage from '../../../images/easycustomerfeedback-screenshots/features-page.jpg?enhanced';
+	import embeddableWidget from '../../../images/easycustomerfeedback-screenshots/embeddable-widget.jpg?enhanced';
+	import widgetCustomization from '../../../images/easycustomerfeedback-screenshots/widget-customization.jpg?enhanced';
+	import integrationsSyncTargets from '../../../images/easycustomerfeedback-screenshots/integrations-sync-targets.jpg?enhanced';
 
 	const datePublished = '2026-03-09';
 

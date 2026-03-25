@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import Seo from '../../components/seo.svelte';
-	import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg';
-	import aiThumbnail from '../../images/rapid-iteration-with-ai.jpg';
-	import howWeWorkThumbnail from '../../images/how-we-work-with-you.jpg';
+	import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?enhanced';
+	import aiThumbnail from '../../images/rapid-iteration-with-ai.jpg?enhanced';
+	import howWeWorkThumbnail from '../../images/how-we-work-with-you.jpg?enhanced';
 
 	const posts = [
 		{

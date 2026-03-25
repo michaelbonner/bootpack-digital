@@ -2,7 +2,7 @@
 	import ContactBanner from '../../../components/contact-banner.svelte';
 	import Seo from '../../../components/seo.svelte';
 	import Breadcrumbs from '../../../components/breadcrumbs.svelte';
-	import thumbnail from '../../../images/how-we-work-with-you.jpg';
+	import thumbnail from '../../../images/how-we-work-with-you.jpg?enhanced';
 	const datePublished = '2026-02-04';
 
 	const jsonLd = {
