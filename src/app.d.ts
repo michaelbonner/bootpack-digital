@@ -9,5 +9,3 @@ declare namespace App {
 	// interface Session {}
 	// interface Stuff {}
 }
-
-declare module '@qwik.dev/partytown/integration';

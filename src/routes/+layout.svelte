@@ -4,7 +4,6 @@
 
 	import { browser } from '$app/environment';
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
-	import { partytownSnippet } from '@qwik.dev/partytown/integration';
 	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
@@ -35,7 +34,7 @@
 	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
 		if (browser) {
 			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
-				api_host: '/ingest',
+				api_host: 'https://us.i.posthog.com',
 				capture_pageleave: false,
 				capture_pageview: false,
 				ui_host: 'https://us.posthog.com'
@@ -157,40 +156,8 @@
 </script>
 
 <svelte:head>
-	<!-- eslint-disable-next-line svelte/no-at-html-tags @typescript-eslint/no-unused-expressions -->
-	{@html '<script>' + partytownSnippet() + '</script>'}
-
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KCZ4PZC"></script>
 	<script>
-		// Config options
-		partytown = {
-			forward: ['dataLayer.push'],
-			resolveUrl: (url) => {
-				const siteUrl = 'https://bootpackdigital.com/proxytown';
-
-				if (url.hostname === 'www.googletagmanager.com') {
-					const proxyUrl = new URL(`${siteUrl}/gtm`);
-
-					const gtmId = new URL(url).searchParams.get('id');
-					gtmId && proxyUrl.searchParams.append('id', gtmId);
-
-					return proxyUrl;
-				} else if (url.hostname === 'www.google-analytics.com') {
-					const proxyUrl = new URL(`${siteUrl}/ga`);
-
-					return proxyUrl;
-				}
-
-				return url;
-			}
-		};
-	</script>
-
-	<!-- GTM script + config -->
-	<script
-		type="text/partytown"
-		src="https://www.googletagmanager.com/gtag/js?id=GTM-KCZ4PZC"
-	></script>
-	<script type="text/partytown">
 		window.dataLayer = window.dataLayer || [];
 
 		function gtag() {

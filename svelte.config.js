@@ -7,8 +7,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			postcss: true,
-			preserve: ['partytown']
+			postcss: true
 		})
 	],
 
