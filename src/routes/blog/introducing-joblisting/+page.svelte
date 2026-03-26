@@ -19,7 +19,7 @@
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'BlogPosting',
-		headline: 'Introducing JobListing',
+		headline: 'Introducing JobListing.app',
 		datePublished,
 		dateModified: datePublished,
 		description:
@@ -45,15 +45,15 @@
 </script>
 
 <Seo
-	title="Introducing JobListing | Bootpack Digital"
-	description="JobListing is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS."
+	title="Introducing JobListing.app | Bootpack Digital"
+	description="JobListing.app is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS."
 	canonical="/blog/introducing-joblisting"
 	{jsonLd}
 />
 
 <div class="px-4 mx-auto sm:px-6 lg:px-8">
 	<Breadcrumbs
-		items={[{ label: 'Blog', href: '/blog' }, { label: 'Introducing JobListing' }]}
+		items={[{ label: 'Blog', href: '/blog' }, { label: 'Introducing JobListing.app' }]}
 		className="mb-8"
 	/>
 </div>
@@ -63,7 +63,7 @@
 			<span class="block text-base font-semibold tracking-wide uppercase text-blue-600">
 				Blog
 			</span>
-			<span class="block"> Introducing JobListing </span>
+			<span class="block"> Introducing JobListing.app </span>
 		</h1>
 		<div class="text-gray-400">
 			Published on <time datetime={datePublished}>March 25, 2026</time>

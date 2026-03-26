@@ -8,7 +8,7 @@
 
 	const posts = [
 		{
-			title: 'Introducing JobListing',
+			title: 'Introducing JobListing.app',
 			slug: 'introducing-joblisting',
 			description:
 				'JobListing is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS.',
