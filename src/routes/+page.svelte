@@ -53,10 +53,16 @@
 		</div>
 	</div>
 </div>
-<WhatMakesUsDifferent />
-<Brands />
-<ContactBanner
-	textLine1="Ready to get started?"
-	textLine2="Send us a message so we can chat."
-	bgColor="bg-white/50"
-/>
+<div style="content-visibility: auto; contain-intrinsic-size: auto 800px;">
+	<WhatMakesUsDifferent />
+</div>
+<div style="content-visibility: auto; contain-intrinsic-size: auto 400px;">
+	<Brands />
+</div>
+<div style="content-visibility: auto; contain-intrinsic-size: auto 300px;">
+	<ContactBanner
+		textLine1="Ready to get started?"
+		textLine2="Send us a message so we can chat."
+		bgColor="bg-white/50"
+	/>
+</div>

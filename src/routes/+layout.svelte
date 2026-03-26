@@ -2,7 +2,6 @@
 	import '../app.css';
 	import '@fontsource-variable/figtree';
 
-	import { browser } from '$app/environment';
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
@@ -23,28 +22,31 @@
 		});
 	});
 
-	onMount(async () => {
-		if (browser) {
-			const { printBootpackConsoleInfo } = await import('../functions/printBootpackConsoleInfo');
-			printBootpackConsoleInfo();
+	onMount(() => {
+		import('../functions/printBootpackConsoleInfo').then((m) => m.printBootpackConsoleInfo());
+
+		if (PUBLIC_POSTHOG_ENABLED !== 'false') {
+			const initPostHog = () => {
+				import('posthog-js').then(({ default: posthog }) => {
+					posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
+						api_host: 'https://us.i.posthog.com',
+						capture_pageleave: false,
+						capture_pageview: false,
+						ui_host: 'https://us.posthog.com'
+					});
+
+					beforeNavigate(() => posthog.capture('$pageleave'));
+					afterNavigate(() => posthog.capture('$pageview'));
+				});
+			};
+
+			if ('requestIdleCallback' in window) {
+				requestIdleCallback(initPostHog);
+			} else {
+				setTimeout(initPostHog, 3500);
+			}
 		}
 	});
-
-	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
-		if (browser) {
-			import('posthog-js').then(({ default: posthog }) => {
-				posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
-					api_host: 'https://us.i.posthog.com',
-					capture_pageleave: false,
-					capture_pageview: false,
-					ui_host: 'https://us.posthog.com'
-				});
-
-				beforeNavigate(() => posthog.capture('$pageleave'));
-				afterNavigate(() => posthog.capture('$pageview'));
-			});
-		}
-	}
 
 	const children_render = $derived(children);
 
