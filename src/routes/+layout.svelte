@@ -4,7 +4,6 @@
 
 	import { browser } from '$app/environment';
 	import { afterNavigate, beforeNavigate, onNavigate } from '$app/navigation';
-	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
 	import Footer from '../components/footer.svelte';
@@ -33,15 +32,17 @@
 
 	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
 		if (browser) {
-			posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
-				api_host: 'https://us.i.posthog.com',
-				capture_pageleave: false,
-				capture_pageview: false,
-				ui_host: 'https://us.posthog.com'
-			});
+			import('posthog-js').then(({ default: posthog }) => {
+				posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
+					api_host: 'https://us.i.posthog.com',
+					capture_pageleave: false,
+					capture_pageview: false,
+					ui_host: 'https://us.posthog.com'
+				});
 
-			beforeNavigate(() => posthog.capture('$pageleave'));
-			afterNavigate(() => posthog.capture('$pageview'));
+				beforeNavigate(() => posthog.capture('$pageleave'));
+				afterNavigate(() => posthog.capture('$pageview'));
+			});
 		}
 	}
 
@@ -156,18 +157,29 @@
 </script>
 
 <svelte:head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KCZ4PZC"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
+		if (typeof window !== 'undefined') {
+			function loadGtag() {
+				var s = document.createElement('script');
+				s.src = 'https://www.googletagmanager.com/gtag/js?id=GTM-KCZ4PZC';
+				s.async = true;
+				document.head.appendChild(s);
+				window.dataLayer = window.dataLayer || [];
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+				window.gtag = gtag;
+				gtag('js', new Date());
+				gtag('config', 'GTM-KCZ4PZC', {
+					page_path: window.location.pathname
+				});
+			}
+			if ('requestIdleCallback' in window) {
+				requestIdleCallback(loadGtag);
+			} else {
+				setTimeout(loadGtag, 3500);
+			}
 		}
-
-		gtag('js', new Date());
-		gtag('config', 'GTM-KCZ4PZC', {
-			page_path: window.location.pathname
-		});
 	</script>
 
 	{@html `<script type="application/ld+json">${JSON.stringify(ldJson)}</script>`}

@@ -4,7 +4,6 @@
 	import Brands from '../components/brands.svelte';
 	import ContactBanner from '../components/contact-banner.svelte';
 	import Seo from '../components/seo.svelte';
-	import TopoBg from '../components/topo-bg.svelte';
 	import WhatMakesUsDifferent from '../components/what-makes-us-different.svelte';
 </script>
 
@@ -15,14 +14,11 @@
 />
 
 <div class="relative bg-blue-50 hero-bg">
-	<div class="flex overflow-hidden absolute inset-0 w-full h-full">
-		<TopoBg />
-		<TopoBg />
-		<TopoBg />
-		<TopoBg />
-		<TopoBg />
-		<TopoBg />
-	</div>
+	<div
+		class="absolute inset-0 w-full h-full"
+		style="background-image: url('/images/blue-topo.svg'); background-size: 600px 600px; background-repeat: repeat;"
+		aria-hidden="true"
+	></div>
 	<div class="relative lg:py-8">
 		<div class="py-12 px-4 lg:px-8 mx-auto md:py-18 max-w-7xl">
 			<div class="flex flex-col lg:items-start">
