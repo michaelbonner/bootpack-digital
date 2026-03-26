@@ -1,11 +1,20 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import Seo from '../../components/seo.svelte';
+	import jobListingThumbnail from '../../images/joblisting-app-screenshots/homepage.jpg?enhanced';
 	import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?enhanced';
 	import aiThumbnail from '../../images/rapid-iteration-with-ai.jpg?enhanced';
 	import howWeWorkThumbnail from '../../images/how-we-work-with-you.jpg?enhanced';
 
 	const posts = [
+		{
+			title: 'Introducing JobListing',
+			slug: 'introducing-joblisting',
+			description:
+				'JobListing is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS.',
+			date: 'March 25, 2026',
+			thumbnail: jobListingThumbnail
+		},
 		{
 			title: 'Introducing EasyCustomerFeedback',
 			slug: 'introducing-easy-customer-feedback',
