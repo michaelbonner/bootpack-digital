@@ -11,6 +11,9 @@
 
 	let { children } = $props();
 
+	// posthog is loaded lazily; hold a reference so the nav hooks below can use it
+	let posthogInstance: Awaited<typeof import('posthog-js')>['default'] | null = null;
+
 	onNavigate((navigation) => {
 		if (!(document as Document).startViewTransition) return;
 
@@ -21,6 +24,13 @@
 			});
 		});
 	});
+
+	// beforeNavigate/afterNavigate must be called during component initialisation —
+	// not inside onMount or async callbacks — so they live here at the top level.
+	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
+		beforeNavigate(() => posthogInstance?.capture('$pageleave'));
+		afterNavigate(() => posthogInstance?.capture('$pageview'));
+	}
 
 	onMount(() => {
 		import('../functions/printBootpackConsoleInfo').then((m) => m.printBootpackConsoleInfo());
@@ -34,9 +44,7 @@
 						capture_pageview: false,
 						ui_host: 'https://us.posthog.com'
 					});
-
-					beforeNavigate(() => posthog.capture('$pageleave'));
-					afterNavigate(() => posthog.capture('$pageview'));
+					posthogInstance = posthog;
 				});
 			};
 
