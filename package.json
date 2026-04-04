@@ -19,14 +19,14 @@
 	"devDependencies": {
 		"@playwright/test": "^1.59.1",
 		"@sveltejs/enhanced-img": "^0.10.4",
-		"@sveltejs/kit": "^2.55.0",
+		"@sveltejs/kit": "^2.56.1",
 		"@tailwindcss/typography": "^0.5.19",
-		"@types/node": "^25.5.0",
+		"@types/node": "^25.5.2",
 		"@typescript-eslint/eslint-plugin": "^8.58.0",
 		"@typescript-eslint/parser": "^8.58.0",
-		"eslint": "^10.1.0",
+		"eslint": "^10.2.0",
 		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-svelte": "^3.16.0",
+		"eslint-plugin-svelte": "^3.17.0",
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.5.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
@@ -42,11 +42,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@eslint/compat": "^2.0.3",
+		"@eslint/compat": "^2.0.4",
 		"@fontsource-variable/figtree": "^5.2.10",
 		"@sveltejs/adapter-vercel": "^6.3.3",
 		"@tailwindcss/vite": "^4.2.2",
 		"clsx": "^2.1.1",
-		"posthog-js": "^1.364.6"
+		"posthog-js": "^1.364.7"
 	}
 }
