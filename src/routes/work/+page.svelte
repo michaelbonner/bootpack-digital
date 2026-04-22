@@ -8,12 +8,14 @@
 	import CrewView from '../../images/work/crewview.jpg?enhanced';
 	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.jpg?enhanced';
 	import DKOW from '../../images/work/dkow.jpg?enhanced';
+	import EasyCustomerFeedback from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?enhanced';
 	import ESK from '../../images/work/energy-safe-kids.jpg?enhanced';
 	import Hanks from '../../images/work/hanks-garage-venue.jpg?enhanced';
 	import HereKidsWin from '../../images/work/here-kids-win.jpg?enhanced';
 	import HeritageOfPreston from '../../images/work/heritage-of-preston.jpg?enhanced';
 	import JeremyMiller from '../../images/work/jeremy-miller.jpg?enhanced';
 	import JMills from '../../images/work/jmills.jpg?enhanced';
+	import JobListing from '../../images/joblisting-app-screenshots/homepage.jpg?enhanced';
 	import KnowYourForce from '../../images/work/know-your-force.jpg?enhanced';
 	import NEF from '../../images/work/national-energy-foundation.jpg?enhanced';
 	import Ravens from '../../images/work/ravens.jpg?enhanced';
@@ -66,6 +68,13 @@
 				caseStudyLink="/case-studies/energy-safe-kids"
 			/>
 			<WorkItem
+				description="A Bootpack Digital product that gives small teams a practical hiring workflow without a bloated ATS. Publish branded job listings or embed openings in your own site, build custom application forms for each role, and manage candidates, notes, interviews, and analytics from a single dashboard."
+				link="https://joblisting.app/"
+				linkText="Visit JobListing"
+				poster={JobListing}
+				title="JobListing.app"
+			/>
+			<WorkItem
 				description="A leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW’s experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
 				link="https://www.dkow.com/"
 				linkText="Visit DKOW"
@@ -86,6 +95,13 @@
 				linkText="Visit NEF"
 				poster={NEF}
 				title="National Energy Foundation"
+			/>
+			<WorkItem
+				description="A Bootpack Digital service that makes it simple to collect, organize, and act on customer feedback. Custom feedback boards, embeddable widgets, and integrations with the tools your team already uses to deliver reviews and feature requests right into your workflow."
+				link="https://easycustomerfeedback.com/"
+				linkText="Visit EasyCustomerFeedback"
+				poster={EasyCustomerFeedback}
+				title="EasyCustomerFeedback"
 			/>
 			<WorkItem
 				description="They were tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap, check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load."
