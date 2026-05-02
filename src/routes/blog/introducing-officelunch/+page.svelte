@@ -72,7 +72,15 @@
 		<div class="text-gray-400">
 			Published on <time datetime={datePublished}>May 2, 2026</time>
 		</div>
-		<enhanced:img src={homepage} alt="Office Lunch App homepage" class="mt-8 w-full rounded-lg" />
+		<enhanced:img
+			src={homepage}
+			alt="Office Lunch App homepage"
+			class="mt-8 w-full rounded-lg"
+			width="1280"
+			height="3098"
+			sizes="(min-width: 1024px) 720px, 100vw"
+			fetchpriority="high"
+		/>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			Group lunch ordering is the kind of small, daily problem that quietly eats hours every week.
 			Someone has to ask who's in, chase replies, juggle a menu link in a chat thread, collect
@@ -101,6 +109,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={dashboard}
 					alt="Office Lunch App user dashboard"
+					width="1280"
+					height="1486"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 			<figure>
@@ -108,6 +120,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={pricing}
 					alt="Office Lunch App pricing page"
+					width="1280"
+					height="2129"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 		</div>
@@ -125,6 +141,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={vote}
 					alt="Cast your vote for lunch"
+					width="1280"
+					height="800"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 			<figure>
@@ -132,6 +152,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={votingResults}
 					alt="Admin voting results and winner selection"
+					width="1280"
+					height="1049"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 		</div>
@@ -153,6 +177,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={restaurants}
 					alt="Restaurant management list"
+					width="1280"
+					height="1331"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 			<figure>
@@ -160,6 +188,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={restaurantRequests}
 					alt="Restaurant requests review screen"
+					width="1280"
+					height="1204"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 			<figure>
@@ -167,6 +199,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={orderPreferences}
 					alt="Saved order preferences across restaurants"
+					width="1280"
+					height="2134"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 			<figure>
@@ -174,6 +210,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={orderManagement}
 					alt="Admin order management for the day's restaurant"
+					width="1280"
+					height="2354"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 		</div>
@@ -195,6 +235,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={organizations}
 					alt="Manage multiple organizations"
+					width="1280"
+					height="800"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 			<figure>
@@ -202,6 +246,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={users}
 					alt="Manage team members and roles"
+					width="1280"
+					height="1256"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 			<figure>
@@ -209,6 +257,10 @@
 					class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 					src={settings}
 					alt="Organization settings"
+					width="1280"
+					height="1254"
+					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
+					loading="lazy"
 				/>
 			</figure>
 		</div>
@@ -229,6 +281,10 @@
 				class="w-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 				src={apiTokens}
 				alt="API tokens for automation"
+				width="1280"
+				height="2139"
+				sizes="(min-width: 768px) 720px, 100vw"
+				loading="lazy"
 			/>
 		</figure>
 
