@@ -1,12 +1,21 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import Seo from '../../components/seo.svelte';
+	import officeLunchThumbnail from '../../images/officelunch-screenshots/homepage-hero.jpg?enhanced';
 	import jobListingThumbnail from '../../images/joblisting-app-screenshots/homepage.jpg?enhanced';
 	import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?enhanced';
 	import aiThumbnail from '../../images/rapid-iteration-with-ai.jpg?enhanced';
 	import howWeWorkThumbnail from '../../images/how-we-work-with-you.jpg?enhanced';
 
 	const posts = [
+		{
+			title: 'Introducing Office Lunch App',
+			slug: 'introducing-officelunch',
+			description:
+				'Office Lunch App is a new Bootpack Digital product that takes the daily back-and-forth out of group lunch ordering with voting, opt-ins, restaurant management, and an API for automation.',
+			date: 'May 2, 2026',
+			thumbnail: officeLunchThumbnail
+		},
 		{
 			title: 'Introducing JobListing.app',
 			slug: 'introducing-joblisting',
