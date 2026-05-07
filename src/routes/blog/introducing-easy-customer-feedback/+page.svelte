@@ -15,38 +15,59 @@
 
 	const datePublished = '2026-03-09';
 
-	const jsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BlogPosting',
-		headline: 'Introducing EasyCustomerFeedback',
-		datePublished,
-		dateModified: datePublished,
-		description:
-			'EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers.',
-		mainEntityOfPage: {
-			'@type': 'WebPage',
-			'@id': 'https://bootpackdigital.com/blog/introducing-easy-customer-feedback'
-		},
-		author: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			url: 'https://bootpackdigital.com'
-		},
-		publisher: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			logo: {
-				'@type': 'ImageObject',
-				url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+	const jsonLd = [
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: 'Introducing EasyCustomerFeedback',
+			datePublished,
+			dateModified: datePublished,
+			description:
+				'EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers.',
+			mainEntityOfPage: {
+				'@type': 'WebPage',
+				'@id': 'https://bootpackdigital.com/blog/introducing-easy-customer-feedback'
+			},
+			author: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				url: 'https://bootpackdigital.com'
+			},
+			publisher: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				logo: {
+					'@type': 'ImageObject',
+					url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+				}
 			}
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{
+					'@type': 'ListItem',
+					position: 1,
+					name: 'Blog',
+					item: 'https://bootpackdigital.com/blog'
+				},
+				{
+					'@type': 'ListItem',
+					position: 2,
+					name: 'Introducing EasyCustomerFeedback',
+					item: 'https://bootpackdigital.com/blog/introducing-easy-customer-feedback'
+				}
+			]
 		}
-	};
+	];
 </script>
 
 <Seo
 	title="Introducing EasyCustomerFeedback | Bootpack Digital"
 	description="EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers."
 	canonical="/blog/introducing-easy-customer-feedback"
+	ogType="article"
 	{jsonLd}
 />
 

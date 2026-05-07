@@ -5,38 +5,59 @@
 	import thumbnail from '../../../images/rapid-iteration-with-ai.jpg?enhanced';
 	const datePublished = '2026-02-06';
 
-	const jsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BlogPosting',
-		headline: 'Rapid product iteration with AI',
-		datePublished,
-		dateModified: datePublished,
-		description:
-			'How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of product development experience to help clients explore new opportunities.',
-		mainEntityOfPage: {
-			'@type': 'WebPage',
-			'@id': 'https://bootpackdigital.com/blog/ai-product-iteration'
-		},
-		author: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			url: 'https://bootpackdigital.com'
-		},
-		publisher: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			logo: {
-				'@type': 'ImageObject',
-				url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+	const jsonLd = [
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: 'Rapid product iteration with AI',
+			datePublished,
+			dateModified: datePublished,
+			description:
+				'How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of product development experience to help clients explore new opportunities.',
+			mainEntityOfPage: {
+				'@type': 'WebPage',
+				'@id': 'https://bootpackdigital.com/blog/ai-product-iteration'
+			},
+			author: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				url: 'https://bootpackdigital.com'
+			},
+			publisher: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				logo: {
+					'@type': 'ImageObject',
+					url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+				}
 			}
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{
+					'@type': 'ListItem',
+					position: 1,
+					name: 'Blog',
+					item: 'https://bootpackdigital.com/blog'
+				},
+				{
+					'@type': 'ListItem',
+					position: 2,
+					name: 'Rapid product iteration with AI',
+					item: 'https://bootpackdigital.com/blog/ai-product-iteration'
+				}
+			]
 		}
-	};
+	];
 </script>
 
 <Seo
 	title="Rapid product iteration with AI | Bootpack Digital"
 	description="How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of product development experience to help clients explore new opportunities."
 	canonical="/blog/ai-product-iteration"
+	ogType="article"
 	{jsonLd}
 />
 
