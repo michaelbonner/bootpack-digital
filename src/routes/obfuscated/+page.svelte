@@ -9,6 +9,10 @@
 	canonical="/obfuscated"
 />
 
+<svelte:head>
+	<meta name="robots" content="noindex, nofollow" />
+</svelte:head>
+
 <div class="pt-8 pb-16 bg-white">
 	<div class="container px-4 mx-auto mt-16 max-w-5xl text-gray-700 prose">
 		<h1>You shouldn't be here</h1>

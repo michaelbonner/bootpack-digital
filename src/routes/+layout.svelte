@@ -121,47 +121,45 @@
 			'@type': 'OfferCatalog',
 			name: 'Services',
 			itemListElement: [
-				[
-					{
-						name: 'Web Design',
-						description: 'Custom web design and development services.'
-					},
-					{
-						name: 'Web Development',
-						description: 'Custom web development services.'
-					},
-					{
-						name: 'Web Software Development',
-						description: 'Custom web software development services.'
-					},
-					{
-						name: 'Mobile App Development',
-						description: 'Custom mobile app development services.'
-					},
-					{
-						name: 'Marketing',
-						description: 'Custom marketing services.'
-					},
-					{
-						name: 'SEO',
-						description: 'Custom SEO services.'
-					},
-					{
-						name: 'Social Media',
-						description: 'Custom social media services.'
-					}
-				].map((service) => ({
-					'@context': 'https://schema.org',
-					'@type': 'Offer',
-					itemOffered: {
-						'@type': 'Service',
-						name: service.name,
-						description: service.description,
-						areaServed: 'United States',
-						provider: { '@id': 'https://bootpackdigital.com/#organization' }
-					}
-				}))
-			]
+				{
+					name: 'Web Design',
+					description: 'Custom web design and development services.'
+				},
+				{
+					name: 'Web Development',
+					description: 'Custom web development services.'
+				},
+				{
+					name: 'Web Software Development',
+					description: 'Custom web software development services.'
+				},
+				{
+					name: 'Mobile App Development',
+					description: 'Custom mobile app development services.'
+				},
+				{
+					name: 'Marketing',
+					description: 'Custom marketing services.'
+				},
+				{
+					name: 'SEO',
+					description: 'Custom SEO services.'
+				},
+				{
+					name: 'Social Media',
+					description: 'Custom social media services.'
+				}
+			].map((service) => ({
+				'@context': 'https://schema.org',
+				'@type': 'Offer',
+				itemOffered: {
+					'@type': 'Service',
+					name: service.name,
+					description: service.description,
+					areaServed: 'United States',
+					provider: { '@id': 'https://bootpackdigital.com/#organization' }
+				}
+			}))
 		}
 	};
 </script>
