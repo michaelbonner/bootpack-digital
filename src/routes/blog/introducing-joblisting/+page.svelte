@@ -16,38 +16,59 @@
 
 	const datePublished = '2026-03-25';
 
-	const jsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BlogPosting',
-		headline: 'Introducing JobListing.app',
-		datePublished,
-		dateModified: datePublished,
-		description:
-			'JobListing is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS.',
-		mainEntityOfPage: {
-			'@type': 'WebPage',
-			'@id': 'https://bootpackdigital.com/blog/introducing-joblisting'
-		},
-		author: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			url: 'https://bootpackdigital.com'
-		},
-		publisher: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			logo: {
-				'@type': 'ImageObject',
-				url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+	const jsonLd = [
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: 'Introducing JobListing.app',
+			datePublished,
+			dateModified: datePublished,
+			description:
+				'JobListing is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS.',
+			mainEntityOfPage: {
+				'@type': 'WebPage',
+				'@id': 'https://bootpackdigital.com/blog/introducing-joblisting'
+			},
+			author: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				url: 'https://bootpackdigital.com'
+			},
+			publisher: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				logo: {
+					'@type': 'ImageObject',
+					url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+				}
 			}
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{
+					'@type': 'ListItem',
+					position: 1,
+					name: 'Blog',
+					item: 'https://bootpackdigital.com/blog'
+				},
+				{
+					'@type': 'ListItem',
+					position: 2,
+					name: 'Introducing JobListing.app',
+					item: 'https://bootpackdigital.com/blog/introducing-joblisting'
+				}
+			]
 		}
-	};
+	];
 </script>
 
 <Seo
 	title="Introducing JobListing.app | Bootpack Digital"
 	description="JobListing.app is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS."
 	canonical="/blog/introducing-joblisting"
+	ogType="article"
 	{jsonLd}
 />
 

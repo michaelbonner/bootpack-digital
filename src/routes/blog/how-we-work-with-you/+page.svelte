@@ -5,38 +5,59 @@
 	import thumbnail from '../../../images/how-we-work-with-you.jpg?enhanced';
 	const datePublished = '2026-02-04';
 
-	const jsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BlogPosting',
-		headline: 'How we work with you on projects',
-		datePublished,
-		dateModified: datePublished,
-		description:
-			'A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving.',
-		mainEntityOfPage: {
-			'@type': 'WebPage',
-			'@id': 'https://bootpackdigital.com/blog/how-we-work-with-you'
-		},
-		author: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			url: 'https://bootpackdigital.com'
-		},
-		publisher: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			logo: {
-				'@type': 'ImageObject',
-				url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+	const jsonLd = [
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: 'How we work with you on projects',
+			datePublished,
+			dateModified: datePublished,
+			description:
+				'A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving.',
+			mainEntityOfPage: {
+				'@type': 'WebPage',
+				'@id': 'https://bootpackdigital.com/blog/how-we-work-with-you'
+			},
+			author: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				url: 'https://bootpackdigital.com'
+			},
+			publisher: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				logo: {
+					'@type': 'ImageObject',
+					url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+				}
 			}
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{
+					'@type': 'ListItem',
+					position: 1,
+					name: 'Blog',
+					item: 'https://bootpackdigital.com/blog'
+				},
+				{
+					'@type': 'ListItem',
+					position: 2,
+					name: 'How we work with you on projects',
+					item: 'https://bootpackdigital.com/blog/how-we-work-with-you'
+				}
+			]
 		}
-	};
+	];
 </script>
 
 <Seo
 	title="How we work with you on projects | Bootpack Digital"
 	description="A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving."
 	canonical="/blog/how-we-work-with-you"
+	ogType="article"
 	{jsonLd}
 />
 

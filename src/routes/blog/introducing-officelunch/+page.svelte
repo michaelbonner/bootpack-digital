@@ -20,38 +20,59 @@
 
 	const datePublished = '2026-05-02';
 
-	const jsonLd = {
-		'@context': 'https://schema.org',
-		'@type': 'BlogPosting',
-		headline: 'Introducing Office Lunch App',
-		datePublished,
-		dateModified: datePublished,
-		description:
-			'Office Lunch App is a new Bootpack Digital product that takes the daily back-and-forth out of group lunch ordering with voting, opt-ins, restaurant management, and an API for automation.',
-		mainEntityOfPage: {
-			'@type': 'WebPage',
-			'@id': 'https://bootpackdigital.com/blog/introducing-officelunch'
-		},
-		author: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			url: 'https://bootpackdigital.com'
-		},
-		publisher: {
-			'@type': 'Organization',
-			name: 'Bootpack Digital',
-			logo: {
-				'@type': 'ImageObject',
-				url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+	const jsonLd = [
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: 'Introducing Office Lunch App',
+			datePublished,
+			dateModified: datePublished,
+			description:
+				'Office Lunch App is a new Bootpack Digital product that takes the daily back-and-forth out of group lunch ordering with voting, opt-ins, restaurant management, and an API for automation.',
+			mainEntityOfPage: {
+				'@type': 'WebPage',
+				'@id': 'https://bootpackdigital.com/blog/introducing-officelunch'
+			},
+			author: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				url: 'https://bootpackdigital.com'
+			},
+			publisher: {
+				'@type': 'Organization',
+				name: 'Bootpack Digital',
+				logo: {
+					'@type': 'ImageObject',
+					url: 'https://bootpackdigital.com/images/bootpack-horizontal.png'
+				}
 			}
+		},
+		{
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{
+					'@type': 'ListItem',
+					position: 1,
+					name: 'Blog',
+					item: 'https://bootpackdigital.com/blog'
+				},
+				{
+					'@type': 'ListItem',
+					position: 2,
+					name: 'Introducing Office Lunch App',
+					item: 'https://bootpackdigital.com/blog/introducing-officelunch'
+				}
+			]
 		}
-	};
+	];
 </script>
 
 <Seo
 	title="Introducing Office Lunch App | Bootpack Digital"
 	description="Office Lunch App is a new Bootpack Digital product that takes the daily back-and-forth out of group lunch ordering with voting, opt-ins, restaurant management, and an API for automation."
 	canonical="/blog/introducing-officelunch"
+	ogType="article"
 	{jsonLd}
 />
 

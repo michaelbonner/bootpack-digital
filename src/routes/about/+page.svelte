@@ -2,12 +2,30 @@
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import Seo from '../../components/seo.svelte';
 	import MichaelBonner from '../../images/michael-bonner.jpg?enhanced';
+
+	const personJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		'@id': 'https://bootpackdigital.com/about#michael-bonner',
+		name: 'Michael Bonner',
+		jobTitle: 'Founder',
+		worksFor: { '@id': 'https://bootpackdigital.com/#organization' },
+		url: 'https://michaelbonner.dev/',
+		sameAs: [
+			'https://www.linkedin.com/in/michaelbonner/',
+			'https://github.com/michaelbonner',
+			'https://www.instagram.com/michael__bonner/',
+			'https://www.facebook.com/michaelwbonner',
+			'https://michaelbonner.dev/'
+		]
+	};
 </script>
 
 <Seo
 	title="About Bootpack Digital, a Utah-based Web and App Development Agency"
 	description="Bootpack Digital: Utah-based web and app development agency helping businesses grow with quality solutions and a passion for collaboration."
 	canonical="/about"
+	jsonLd={personJsonLd}
 />
 
 <div class="overflow-hidden relative py-16 text-lg leading-8 bg-white">

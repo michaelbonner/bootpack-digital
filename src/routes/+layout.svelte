@@ -60,7 +60,7 @@
 
 	export const ldJson = {
 		'@context': 'https://schema.org',
-		'@type': ['Organization', 'LocalBusiness'],
+		'@type': ['Organization', 'LocalBusiness', 'ProfessionalService'],
 		'@id': 'https://bootpackdigital.com/#organization',
 		name: 'Bootpack Digital',
 		legalName: 'Bootpack Digital, LLC',
@@ -72,10 +72,17 @@
 		address: {
 			'@context': 'https://schema.org',
 			'@type': 'PostalAddress',
+			streetAddress: 'PO Box 711235',
 			addressLocality: 'Salt Lake City',
 			addressRegion: 'UT',
 			addressCountry: 'US',
 			postalCode: '84171'
+		},
+		geo: {
+			'@context': 'https://schema.org',
+			'@type': 'GeoCoordinates',
+			latitude: 40.7608,
+			longitude: -111.891
 		},
 		areaServed: 'US',
 		telephone: '+18018395287',
