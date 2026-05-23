@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { PUBLIC_TEST_CONTACT_FORM, PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
+	import { PUBLIC_TEST_CONTACT_FORM } from '$env/static/public';
 	import clsx from 'clsx';
+	import Turnstile from './turnstile.svelte';
 
 	let submitted = $state(false);
 	let isSubmitting = $state(false);
@@ -68,10 +69,6 @@
 		}
 	};
 </script>
-
-<svelte:head>
-	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</svelte:head>
 
 <form class={submitted ? `hidden` : `visible`} name="contact" onsubmit={handleSubmit}>
 	<div class="flex flex-wrap -mx-3 mt-8 mb-6">
@@ -187,11 +184,7 @@
 		</div>
 	</div>
 	<div class={clsx('mb-6 flex justify-start', 'xl:justify-end')}>
-		<div
-			class="cf-turnstile"
-			data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
-			data-theme="light"
-		></div>
+		<Turnstile />
 	</div>
 	{#if errorMessage}
 		<p class="px-2 pt-1 text-xs italic text-red-500">
