@@ -1,6 +1,7 @@
 import { env } from '$env/dynamic/private';
 
 const TELEGRAM_API = 'https://api.telegram.org';
+const TELEGRAM_TIMEOUT_MS = 5000;
 
 export async function sendTelegramMessage(text: string): Promise<void> {
 	const token = env.TELEGRAM_BOT_TOKEN;
@@ -11,16 +12,25 @@ export async function sendTelegramMessage(text: string): Promise<void> {
 		return;
 	}
 
-	const res = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
-		method: 'POST',
-		headers: { 'Content-Type': 'application/json' },
-		body: JSON.stringify({
-			chat_id: chatId,
-			text,
-			parse_mode: 'HTML',
-			disable_web_page_preview: true
-		})
-	});
+	const controller = new AbortController();
+	const timeout = setTimeout(() => controller.abort(), TELEGRAM_TIMEOUT_MS);
+
+	let res: Response;
+	try {
+		res = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+				chat_id: chatId,
+				text,
+				parse_mode: 'HTML',
+				disable_web_page_preview: true
+			}),
+			signal: controller.signal
+		});
+	} finally {
+		clearTimeout(timeout);
+	}
 
 	if (!res.ok) {
 		const body = await res.text();

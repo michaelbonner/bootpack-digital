@@ -1,7 +1,8 @@
-import { json, type RequestHandler } from '@sveltejs/kit';
+import { json } from '@sveltejs/kit';
 import { getDb } from '$lib/server/db';
 import { contactSubmissions } from '$lib/server/db/schema';
 import { formatContactMessage, sendTelegramMessage } from '$lib/server/telegram';
+import type { RequestHandler } from './$types';
 
 export const prerender = false;
 
@@ -24,10 +25,18 @@ function asTrimmedString(value: unknown, max = MAX_LEN): string | null {
 	return trimmed;
 }
 
+function errorMessage(err: unknown): string {
+	return err instanceof Error ? err.message : 'unknown error';
+}
+
 export const POST: RequestHandler = async ({ request }) => {
 	let payload: Payload;
 	try {
-		payload = (await request.json()) as Payload;
+		const parsed: unknown = await request.json();
+		if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+			return json({ error: 'Invalid payload' }, { status: 400 });
+		}
+		payload = parsed as Payload;
 	} catch {
 		return json({ error: 'Invalid JSON' }, { status: 400 });
 	}
@@ -52,14 +61,14 @@ export const POST: RequestHandler = async ({ request }) => {
 	try {
 		await getDb().insert(contactSubmissions).values(submission);
 	} catch (err) {
-		console.error('Failed to insert contact submission', err);
+		console.error('Failed to insert contact submission:', errorMessage(err));
 		return json({ error: 'Could not save submission' }, { status: 500 });
 	}
 
 	try {
 		await sendTelegramMessage(formatContactMessage(submission));
 	} catch (err) {
-		console.error('Failed to send Telegram notification', err);
+		console.error('Failed to send Telegram notification:', errorMessage(err));
 	}
 
 	return json({ ok: true });

@@ -17,7 +17,7 @@
 		"test:e2e": "playwright test",
 		"test": "bun run test:e2e",
 		"db:up": "docker compose up -d postgres",
-		"db:down": "docker compose down",
+		"db:down": "docker compose down postgres",
 		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
 		"db:studio": "drizzle-kit studio"
