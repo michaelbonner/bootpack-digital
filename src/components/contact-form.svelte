@@ -1,9 +1,12 @@
 <script lang="ts">
-	import { PUBLIC_TEST_CONTACT_FORM } from '$env/static/public';
+	import { PUBLIC_TEST_CONTACT_FORM, PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
 	import clsx from 'clsx';
 
 	let submitted = $state(false);
-	let isSubmitting = false;
+	let isSubmitting = $state(false);
+	let errors: Record<string, string> = {};
+	let errorMessage = $state('');
+	let touched: Record<string, boolean> = {};
 
 	const handleSubmit = async (event: SubmitEvent) => {
 		event.preventDefault();
@@ -13,42 +16,62 @@
 			return;
 		}
 
-		const formData = new FormData(event.target as HTMLFormElement);
+		const form = event.target as HTMLFormElement;
+		const formData = new FormData(form);
+		const turnstileToken = formData.get('cf-turnstile-response');
 
-		fetch('https://formspree.io/f/xgerlrdz', {
-			method: 'POST',
-			body: formData,
-			headers: {
-				Accept: 'application/json'
-			}
-		})
-			.then((response) => {
-				if (response.ok) {
-					submitted = true;
-					// form.reset();
-				} else {
-					response.json().then((data) => {
-						console.error(data);
-						if (Object.hasOwn(data, 'errors')) {
-							errorMessage = data['errors']
-								.map((error: Record<'message', string>) => error['message'])
-								.join(', ');
-						} else {
-							errorMessage = 'Oops! There was a problem submitting your form';
-						}
-					});
-				}
-			})
-			.catch((error) => {
-				console.error(error);
-				errorMessage = 'Oops! There was a problem submitting your form';
+		if (!turnstileToken) {
+			errorMessage = 'Please complete the captcha before submitting';
+			return;
+		}
+
+		const payload = {
+			firstName: formData.get('firstName'),
+			lastName: formData.get('lastName'),
+			email: formData.get('email'),
+			company: formData.get('company'),
+			phone: formData.get('phone'),
+			message: formData.get('message'),
+			turnstileToken
+		};
+
+		isSubmitting = true;
+		errorMessage = '';
+
+		try {
+			const response = await fetch('/api/contact', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json'
+				},
+				body: JSON.stringify(payload)
 			});
-	};
 
-	let errors: Record<string, string> = {};
-	let errorMessage = $state('');
-	let touched: Record<string, boolean> = {};
+			if (response.ok) {
+				submitted = true;
+			} else {
+				const data = await response.json().catch(() => ({}));
+				errorMessage = data?.error ?? 'Oops! There was a problem submitting your form';
+				if (typeof window !== 'undefined' && window.turnstile) {
+					window.turnstile.reset();
+				}
+			}
+		} catch (error) {
+			console.error(error);
+			errorMessage = 'Oops! There was a problem submitting your form';
+			if (typeof window !== 'undefined' && window.turnstile) {
+				window.turnstile.reset();
+			}
+		} finally {
+			isSubmitting = false;
+		}
+	};
 </script>
+
+<svelte:head>
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</svelte:head>
 
 <form class={submitted ? `hidden` : `visible`} name="contact" onsubmit={handleSubmit}>
 	<div class="flex flex-wrap -mx-3 mt-8 mb-6">
@@ -162,6 +185,13 @@
 				{/if}
 			</p>
 		</div>
+	</div>
+	<div class={clsx('mb-6 flex justify-start', 'xl:justify-end')}>
+		<div
+			class="cf-turnstile"
+			data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
+			data-theme="light"
+		></div>
 	</div>
 	{#if errorMessage}
 		<p class="px-2 pt-1 text-xs italic text-red-500">

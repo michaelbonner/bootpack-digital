@@ -39,6 +39,16 @@ bun run out           # Check for outdated packages
 bun run up            # Update all dependencies
 ```
 
+### Database (local dev)
+
+```bash
+bun run db:up         # Start local Postgres in Docker
+bun run db:down       # Stop local Postgres
+bun run db:generate   # Generate SQL migrations from Drizzle schema changes
+bun run db:migrate    # Apply pending migrations to DATABASE_URL
+bun run db:studio     # Open Drizzle Studio
+```
+
 ## Architecture
 
 ### Framework Setup
@@ -100,7 +110,25 @@ bun run up            # Update all dependencies
 ### Environment Variables
 
 - `PUBLIC_POSTHOG_ENABLED`: Toggle PostHog analytics (default: enabled)
-- `PUBLIC_TEST_CONTACT_FORM`: Used for contact form testing
+- `PUBLIC_TEST_CONTACT_FORM`: Short-circuits the contact form so it shows the
+  success state without hitting `/api/contact` (used by e2e tests)
+- `DATABASE_URL`: Postgres connection string for the contact form endpoint
+- `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`: Credentials for the Telegram
+  notification fired on each contact submission (optional — missing creds
+  are logged and skipped, the DB write still happens)
+- `PUBLIC_TURNSTILE_SITE_KEY` / `TURNSTILE_SECRET_KEY`: Cloudflare Turnstile
+  credentials used by the contact form. Site key is rendered into the
+  widget on the client; secret key is used by `/api/contact` to verify
+  the submitted token via Cloudflare's siteverify endpoint. Missing
+  `TURNSTILE_SECRET_KEY` logs a warning and skips verification (intended
+  for local dev only).
+
+### Contact form
+
+Submissions POST JSON to `src/routes/api/contact/+server.ts`, which validates,
+inserts into the `contact_submissions` table via Drizzle, and sends a Telegram
+notification. The Drizzle schema lives in `src/lib/server/db/schema.ts`;
+generated SQL migrations land in `drizzle/`.
 
 ### Image Handling
 

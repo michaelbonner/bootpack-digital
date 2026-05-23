@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"start": "bun ./server.js",
+		"start": "bun run db:migrate && bun ./server.js",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -15,7 +15,12 @@
 		"out": "bun outdated",
 		"up": "bun update",
 		"test:e2e": "playwright test",
-		"test": "bun run test:e2e"
+		"test": "bun run test:e2e",
+		"db:up": "docker compose up -d postgres",
+		"db:down": "docker compose down postgres",
+		"db:generate": "drizzle-kit generate",
+		"db:migrate": "drizzle-kit migrate",
+		"db:studio": "drizzle-kit studio"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.60.0",
@@ -23,6 +28,7 @@
 		"@sveltejs/kit": "^2.60.1",
 		"@tailwindcss/typography": "^0.5.19",
 		"@types/node": "^25.9.0",
+		"drizzle-kit": "^0.31.10",
 		"eslint-plugin-svelte": "^3.17.1",
 		"lefthook": "^2.1.6",
 		"svelte": "^5.55.8",
@@ -39,6 +45,8 @@
 		"@fontsource-variable/figtree": "^5.2.10",
 		"@tailwindcss/vite": "^4.3.0",
 		"clsx": "^2.1.1",
+		"drizzle-orm": "^0.45.2",
+		"postgres": "^3.4.9",
 		"posthog-js": "^1.374.2",
 		"svelte-adapter-bun": "^1.0.1"
 	},
