@@ -56,7 +56,7 @@ export const caseStudies: CaseStudy[] = [
 			{
 				title: 'Multi-Tenant Architecture',
 				description:
-					'One codebase, 30+ sites. When NEF pushes an update, every partner site gets it instantly — no deployment marathons required.',
+					'One codebase, 30+ sites. When NEF pushes an update, every partner site gets it instantly. No deployment marathons required.',
 				icon: 'lightning' // Using lightning as a metaphor for power/energy
 			},
 			{
@@ -79,7 +79,7 @@ export const caseStudies: CaseStudy[] = [
 				title: 'Same Platform, Different Brand',
 				content: [
 					"Here's the cool part: even though everything runs on one platform, each partner's site feels completely custom. Rocky Mountain Power visitors see RMP branding, colors, and local info. Pacific Power visitors get theirs. It all happens automatically.",
-					"Adding a new utility partner used to mean building a whole new site — about four weeks of work. Now it's closer to flipping a switch: upload their logo, set their colors, and they're live in an hour. That's how NEF has onboarded 30 partners."
+					"Adding a new utility partner used to mean building a whole new site, about four weeks of work. Now it's closer to flipping a switch: upload their logo, set their colors, and they're live in an hour. That's how NEF has onboarded 30 partners."
 				],
 				images: [RockyMountainPowerHome, RockyMountainPowerAbout]
 			},
