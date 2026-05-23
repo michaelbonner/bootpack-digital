@@ -3,7 +3,10 @@
 	import clsx from 'clsx';
 
 	let submitted = $state(false);
-	let isSubmitting = false;
+	let isSubmitting = $state(false);
+	let errors: Record<string, string> = {};
+	let errorMessage = $state('');
+	let touched: Record<string, boolean> = {};
 
 	const handleSubmit = async (event: SubmitEvent) => {
 		event.preventDefault();
@@ -14,40 +17,41 @@
 		}
 
 		const formData = new FormData(event.target as HTMLFormElement);
+		const payload = {
+			firstName: formData.get('firstName'),
+			lastName: formData.get('lastName'),
+			email: formData.get('email'),
+			company: formData.get('company'),
+			phone: formData.get('phone'),
+			message: formData.get('message')
+		};
 
-		fetch('https://formspree.io/f/xgerlrdz', {
-			method: 'POST',
-			body: formData,
-			headers: {
-				Accept: 'application/json'
-			}
-		})
-			.then((response) => {
-				if (response.ok) {
-					submitted = true;
-					// form.reset();
-				} else {
-					response.json().then((data) => {
-						console.error(data);
-						if (Object.hasOwn(data, 'errors')) {
-							errorMessage = data['errors']
-								.map((error: Record<'message', string>) => error['message'])
-								.join(', ');
-						} else {
-							errorMessage = 'Oops! There was a problem submitting your form';
-						}
-					});
-				}
-			})
-			.catch((error) => {
-				console.error(error);
-				errorMessage = 'Oops! There was a problem submitting your form';
+		isSubmitting = true;
+		errorMessage = '';
+
+		try {
+			const response = await fetch('/api/contact', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json'
+				},
+				body: JSON.stringify(payload)
 			});
-	};
 
-	let errors: Record<string, string> = {};
-	let errorMessage = $state('');
-	let touched: Record<string, boolean> = {};
+			if (response.ok) {
+				submitted = true;
+			} else {
+				const data = await response.json().catch(() => ({}));
+				errorMessage = data?.error ?? 'Oops! There was a problem submitting your form';
+			}
+		} catch (error) {
+			console.error(error);
+			errorMessage = 'Oops! There was a problem submitting your form';
+		} finally {
+			isSubmitting = false;
+		}
+	};
 </script>
 
 <form class={submitted ? `hidden` : `visible`} name="contact" onsubmit={handleSubmit}>
