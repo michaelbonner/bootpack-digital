@@ -186,8 +186,12 @@
 			</p>
 		</div>
 	</div>
-	<div class="mb-6">
-		<div class="cf-turnstile" data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}></div>
+	<div class={clsx('mb-6 flex justify-start', 'xl:justify-end')}>
+		<div
+			class="cf-turnstile"
+			data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
+			data-theme="light"
+		></div>
 	</div>
 	{#if errorMessage}
 		<p class="px-2 pt-1 text-xs italic text-red-500">
