@@ -7,8 +7,8 @@
 	let errorMessage = $state('');
 
 	const inputClass =
-		'block py-3 px-4 w-full leading-tight text-gray-700 bg-gray-100 rounded-sm border border-gray-100 appearance-none focus:bg-white focus:border-gray-500 focus:outline-hidden';
-	const labelClass = 'block mb-2 text-xs font-bold tracking-wide text-gray-700';
+		'block py-3 px-4 w-full text-base text-gray-700 bg-gray-100 rounded-md border border-gray-200 appearance-none transition-colors focus:bg-white focus:outline-2 focus:-outline-offset-1 focus:outline-blue-500';
+	const labelClass = 'block mb-2 text-sm font-semibold tracking-wide text-gray-700';
 
 	const handleSubmit = async (event: SubmitEvent) => {
 		event.preventDefault();
@@ -79,10 +79,12 @@
 	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </svelte:head>
 
-<form class={submitted ? `hidden` : `visible`} name="free-website" onsubmit={handleSubmit}>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
-			<label class={labelClass} for="firstName">First Name*</label>
+<form class={clsx(submitted && 'hidden')} name="free-website" onsubmit={handleSubmit}>
+	<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+		<div>
+			<label class={labelClass} for="firstName">
+				First Name <span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
 			<input
 				aria-required="true"
 				class={inputClass}
@@ -93,8 +95,10 @@
 				type="text"
 			/>
 		</div>
-		<div class="px-3 w-full md:w-1/2">
-			<label class={labelClass} for="lastName">Last Name*</label>
+		<div>
+			<label class={labelClass} for="lastName">
+				Last Name <span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
 			<input
 				aria-required="true"
 				class={inputClass}
@@ -105,10 +109,10 @@
 				type="text"
 			/>
 		</div>
-	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
-			<label class={labelClass} for="email">Email*</label>
+		<div>
+			<label class={labelClass} for="email">
+				Email <span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
 			<input
 				aria-required="true"
 				class={inputClass}
@@ -119,14 +123,14 @@
 				type="email"
 			/>
 		</div>
-		<div class="px-3 w-full md:w-1/2">
+		<div>
 			<label class={labelClass} for="phone">Phone Number</label>
-			<input class={inputClass} id="phone" name="phone" placeholder="801-111-2222" type="text" />
+			<input class={inputClass} id="phone" name="phone" placeholder="801-111-2222" type="tel" />
 		</div>
-	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
-			<label class={labelClass} for="organizationName">Organization Name*</label>
+		<div>
+			<label class={labelClass} for="organizationName">
+				Organization Name <span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
 			<input
 				aria-required="true"
 				class={inputClass}
@@ -137,22 +141,40 @@
 				type="text"
 			/>
 		</div>
-		<div class="px-3 w-full md:w-1/2">
+		<div>
 			<label class={labelClass} for="organizationType">Organization Type</label>
-			<select class={inputClass} id="organizationType" name="organizationType">
-				<option value="">Select one</option>
-				<option value="Nonprofit (501c3)">Nonprofit (501(c)(3))</option>
-				<option value="Community organization">Community organization</option>
-				<option value="Mutual aid / grassroots group">Mutual aid / grassroots group</option>
-				<option value="Faith-based organization">Faith-based organization</option>
-				<option value="School / education">School / education</option>
-				<option value="Other">Other</option>
-			</select>
+			<div
+				class="grid grid-cols-[1fr_--spacing(8)] items-center bg-gray-100 rounded-md border border-gray-200 transition-colors focus-within:bg-white focus-within:outline-2 focus-within:-outline-offset-1 focus-within:outline-blue-500"
+			>
+				<select
+					class="col-span-full row-start-1 py-3 px-4 pr-8 w-full text-base text-gray-700 bg-transparent appearance-none focus:outline-hidden"
+					id="organizationType"
+					name="organizationType"
+				>
+					<option value="">Select one</option>
+					<option value="Nonprofit (501c3)">Nonprofit (501(c)(3))</option>
+					<option value="Community organization">Community organization</option>
+					<option value="Mutual aid / grassroots group">Mutual aid / grassroots group</option>
+					<option value="Faith-based organization">Faith-based organization</option>
+					<option value="School / education">School / education</option>
+					<option value="Other">Other</option>
+				</select>
+				<svg
+					viewBox="0 0 8 5"
+					width="8"
+					height="5"
+					fill="none"
+					aria-hidden="true"
+					class="col-start-2 row-start-1 place-self-center text-gray-500 pointer-events-none"
+				>
+					<path d="M.5.5 4 4 7.5.5" stroke="currentColor" />
+				</svg>
+			</div>
 		</div>
-	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="px-3 mb-6 w-full md:mb-0 md:w-1/2">
-			<label class={labelClass} for="city">City / Area*</label>
+		<div>
+			<label class={labelClass} for="city">
+				City / Area <span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
 			<input
 				aria-required="true"
 				class={inputClass}
@@ -163,20 +185,21 @@
 				type="text"
 			/>
 		</div>
-		<div class="px-3 w-full md:w-1/2">
+		<div>
 			<label class={labelClass} for="website">Current Website (if any)</label>
 			<input
 				class={inputClass}
 				id="website"
 				name="website"
 				placeholder="https://example.org"
-				type="text"
+				type="url"
 			/>
 		</div>
-	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="px-3 w-full">
-			<label class={labelClass} for="mission">Tell us about your organization and the good you do*</label>
+		<div class="sm:col-span-2">
+			<label class={labelClass} for="mission">
+				Tell us about your organization and the good you do
+				<span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
 			<textarea
 				aria-required="true"
 				class={inputClass}
@@ -187,10 +210,11 @@
 				rows={6}
 			></textarea>
 		</div>
-	</div>
-	<div class="flex flex-wrap -mx-3 mb-6">
-		<div class="px-3 w-full">
-			<label class={labelClass} for="goals">What would a website help you accomplish?*</label>
+		<div class="sm:col-span-2">
+			<label class={labelClass} for="goals">
+				What would a website help you accomplish?
+				<span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
 			<textarea
 				aria-required="true"
 				class={inputClass}
@@ -201,47 +225,83 @@
 				rows={6}
 			></textarea>
 		</div>
-	</div>
-	<div class="flex items-start px-3 mb-6">
-		<input
-			class="mt-1 mr-3 w-4 h-4"
-			id="ownership"
-			name="ownership"
-			required
-			type="checkbox"
-		/>
-		<label class="text-sm text-gray-600" for="ownership">
-			I understand that we'll own the website's Git repository and control its deployment, so we can
-			maintain and update it ourselves later.*
-		</label>
-	</div>
-	<div class={clsx('mb-6 flex justify-start', 'xl:justify-end')}>
-		<div class="cf-turnstile" data-sitekey={PUBLIC_TURNSTILE_SITE_KEY} data-theme="light"></div>
-	</div>
-	{#if errorMessage}
-		<p class="px-2 pt-1 text-xs italic text-red-500">
-			{errorMessage}
-		</p>
-	{/if}
-	<div class={clsx('flex justify-start', 'xl:justify-end')}>
-		<button
-			class={clsx(
-				'py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out',
-				'lg:w-auto',
-				'hover:bg-orange-600',
-				'focus:outline-hidden focus:shadow-outline'
-			)}
-			disabled={isSubmitting}
-			type="submit"
-		>
-			Apply for a free website
-		</button>
+		<div class="flex gap-3 items-start sm:col-span-2">
+			<span class="flex shrink-0 items-center text-sm h-lh">
+				<span class="grid grid-cols-1 group size-5 sm:size-4">
+					<input
+						class="col-start-1 row-start-1 bg-white rounded-sm border border-gray-300 appearance-none checked:border-blue-600 checked:bg-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:border-gray-300 disabled:bg-gray-100 forced-colors:appearance-auto"
+						id="ownership"
+						name="ownership"
+						required
+						type="checkbox"
+					/>
+					<svg
+						viewBox="0 0 14 14"
+						fill="none"
+						aria-hidden="true"
+						class="col-start-1 row-start-1 self-center justify-self-center stroke-white pointer-events-none size-3.5"
+					>
+						<path
+							d="M3 8L6 11L11 3.5"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="group-not-has-checked:opacity-0"
+						/>
+					</svg>
+				</span>
+			</span>
+			<label class="text-sm text-gray-600" for="ownership">
+				I understand that we'll own the website's Git repository and control its deployment, so we
+				can maintain and update it ourselves later.
+				<span aria-hidden="true" class="text-orange-600">*</span>
+			</label>
+		</div>
+		<div class={clsx('flex justify-start sm:col-span-2', 'xl:justify-end')}>
+			<div class="cf-turnstile" data-sitekey={PUBLIC_TURNSTILE_SITE_KEY} data-theme="light"></div>
+		</div>
+		{#if errorMessage}
+			<p class="text-sm text-red-600 sm:col-span-2" role="alert">
+				{errorMessage}
+			</p>
+		{/if}
+		<div class={clsx('flex justify-start sm:col-span-2', 'xl:justify-end')}>
+			<button
+				class={clsx(
+					'py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out',
+					'lg:w-auto',
+					'hover:bg-orange-600',
+					'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700',
+					'disabled:opacity-60 disabled:cursor-not-allowed'
+				)}
+				disabled={isSubmitting}
+				type="submit"
+			>
+				{isSubmitting ? 'Submitting…' : 'Apply for a free website'}
+			</button>
+		</div>
 	</div>
 </form>
-<div class={submitted ? `visible` : `hidden`}>
-	<h2 class="text-navy-600">Application received!</h2>
-	<p class="text-gray-600">
-		Thank you for telling us about your organization. We review applications every quarter and will
-		be in touch if you're selected. In the meantime, keep up the good work.
-	</p>
+<div class={clsx(!submitted && 'hidden')}>
+	<div class="flex flex-col gap-4 items-center py-6 text-center">
+		<span class="flex justify-center items-center bg-blue-100 rounded-full size-12">
+			<svg
+				class="w-6 h-6 text-blue-600"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+				aria-hidden="true"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M16.704 5.29a1 1 0 010 1.42l-7.5 7.5a1 1 0 01-1.42 0l-3.5-3.5a1 1 0 011.42-1.42l2.79 2.79 6.79-6.79a1 1 0 011.42 0z"
+					clip-rule="evenodd"
+				/>
+			</svg>
+		</span>
+		<h2 class="text-2xl font-semibold tracking-tight text-navy-600">Application received!</h2>
+		<p class="max-w-md text-pretty text-gray-600">
+			Thank you for telling us about your organization. We review applications every quarter and will
+			be in touch if you're selected. In the meantime, keep up the good work.
+		</p>
+	</div>
 </div>
