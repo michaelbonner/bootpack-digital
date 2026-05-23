@@ -157,6 +157,7 @@
 					<option value="Mutual aid / grassroots group">Mutual aid / grassroots group</option>
 					<option value="Faith-based organization">Faith-based organization</option>
 					<option value="School / education">School / education</option>
+					<option value="LGBTQIA+ support organization">LGBTQIA+ support organization</option>
 					<option value="Other">Other</option>
 				</select>
 				<svg
@@ -268,8 +269,9 @@
 		</span>
 		<h2 class="text-2xl font-semibold tracking-tight text-navy-600">Application received!</h2>
 		<p class="max-w-md text-pretty text-gray-600">
-			Thank you for telling us about your organization. We review applications every quarter and will
-			be in touch if you're selected. In the meantime, keep up the good work.
+			Thank you for telling us about your organization. We review applications every quarter and reach
+			out directly to the organization we select. Your application stays on file for future rounds.
+			In the meantime, keep up the good work.
 		</p>
 	</div>
 </div>

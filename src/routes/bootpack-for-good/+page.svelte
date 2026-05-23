@@ -14,7 +14,7 @@
 		},
 		{
 			title: 'We design and build it with you',
-			body: 'We build up to five pages in a clean, brochure-style site that matches your brand — think Home, About, Programs, and Contact.'
+			body: 'We build up to five pages in a clean, brochure-style site that matches your brand. Think Home, About, Programs, and Contact.'
 		},
 		{
 			title: 'You own it, forever',
@@ -24,11 +24,11 @@
 
 	const included = [
 		'A brand-matched, mobile-friendly website',
-		'Up to five pages (for example: Home, About, Programs, Contact, and one more)',
-		'A Git repository that belongs to you',
+		'Up to five pages (for example: Home, About, Programs, and Contact)',
+		'All your website files, yours to keep (a Git repository you own)',
 		'Freedom to host and deploy wherever you want',
 		'The ability to make edits later with AI tools like Claude Code or ChatGPT',
-		'Built by the Bootpack Digital team — at no cost to you'
+		'Built by the Bootpack Digital team, at no cost to you'
 	];
 
 	const orgTypes = [
@@ -36,7 +36,8 @@
 		'Community organizations',
 		'Mutual aid & grassroots groups',
 		'Faith-based organizations',
-		'Schools & education'
+		'Schools & education',
+		'LGBTQIA+ support organizations'
 	];
 
 	const faqs = [
@@ -54,7 +55,7 @@
 		},
 		{
 			q: 'What does "up to five pages" mean?',
-			a: 'A focused, brochure-style site — typically a home page plus pages like About, Programs or Services, and Contact. We’ll figure out the right mix together.'
+			a: 'A focused, brochure-style site. Typically that’s a home page plus pages like About, Programs or Services, and Contact. We’ll figure out the right mix together.'
 		},
 		{
 			q: 'Do we have to know how to code to maintain it?',
@@ -102,8 +103,8 @@
 				<span class="text-blue-500">doing good</span>
 			</h1>
 			<p class="mt-6 max-w-xl text-pretty text-base text-blue-700 md:text-lg">
-				Every quarter, we partner with one local nonprofit or community organization to design and
-				build a website that matches their brand — completely free. You walk away owning the code.
+				The work you do deserves a website that helps, not one that holds you back. Each quarter, we
+				partner with one local nonprofit or community organization to design and build a brand-matched site, completely free. You walk away owning it outright, with no monthly fees or strings. We're a Salt Lake studio that builds for paying clients, and we give one site away every quarter.
 			</p>
 			<div class="flex flex-wrap gap-5 items-center mt-8">
 				<a
@@ -174,9 +175,17 @@
 					</li>
 				{/each}
 			</ul>
+			<p class="mt-6">
+				<a
+					class="text-base font-semibold text-blue-700 transition-colors hover:text-blue-600"
+					href="/work"
+				>
+					See examples of our work →
+				</a>
+			</p>
 		</div>
 		<div class="p-8 bg-white rounded-xl border border-navy-100 shadow-sm">
-			<h3 class="text-xl font-semibold text-navy-600">You own it — not us</h3>
+			<h3 class="text-xl font-semibold text-navy-600">You own it, not us</h3>
 			<p class="mt-3 text-pretty text-gray-600">
 				This isn't a rented website you have to keep paying for. We build everything in a Git
 				repository that becomes yours, and you control where and how it's deployed.
@@ -185,7 +194,7 @@
 				That means no lock-in. Down the road you can update copy, add pages, or redesign the whole
 				thing using modern AI tools like
 				<span class="font-semibold text-navy-600">Claude Code</span> or
-				<span class="font-semibold text-navy-600">ChatGPT</span> — or hand it off to any developer
+				<span class="font-semibold text-navy-600">ChatGPT</span>, or hand it off to any developer
 				you choose.
 			</p>
 		</div>
@@ -202,7 +211,7 @@
 				We're looking for nonprofits and community organizations based in or serving the greater Salt
 				Lake City area that are making their community better but don't have the budget for a
 				professionally built website. We choose each quarter's recipient based on need and the impact a
-				new site could have — so this is for mission-driven groups doing a lot with a little, not
+				new site could have. This is for mission-driven groups doing a lot with a little, not
 				well-funded businesses looking for something free.
 			</p>
 		</div>
@@ -223,8 +232,8 @@
 			Apply for a free website
 		</h2>
 		<p class="mx-auto mt-4 mb-4 max-w-2xl text-pretty text-center text-gray-600">
-			Tell us about your organization. There's no deadline — we review applications and choose a new
-			organization every quarter.
+			Tell us about your organization. There's no deadline. We review applications and choose a new
+			organization every quarter. If you're not selected right away, your application stays in the running for future quarters.
 		</p>
 		<div class="p-6 bg-white rounded-xl border border-navy-100 shadow-sm sm:p-8">
 			<FreeWebsiteForm />
