@@ -26,7 +26,7 @@
 		'A brand-matched, mobile-friendly website',
 		'Up to five pages (for example: Home, About, Programs, and Contact)',
 		'All your website files, yours to keep (a Git repository you own)',
-		'Freedom to host and deploy wherever you want',
+		"Freedom to host and deploy wherever you want (we'll help you get set up)",
 		'The ability to make edits later with AI tools like Claude Code or ChatGPT',
 		'Built by the Bootpack Digital team, at no cost to you'
 	];
