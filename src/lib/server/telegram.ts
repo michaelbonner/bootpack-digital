@@ -68,3 +68,46 @@ export function formatContactMessage(submission: {
 
 	return lines.join('\n');
 }
+
+export function formatFreeWebsiteApplication(application: {
+	firstName: string;
+	lastName: string;
+	email: string;
+	phone?: string | null;
+	organizationName: string;
+	organizationType?: string | null;
+	website?: string | null;
+	city: string;
+	mission: string;
+	goals: string;
+}): string {
+	const lines = [
+		'<b>New Bootpack for Good application</b>',
+		'',
+		`<b>Organization:</b> ${escapeHtml(application.organizationName)}`,
+		`<b>Contact:</b> ${escapeHtml(application.firstName)} ${escapeHtml(application.lastName)}`,
+		`<b>Email:</b> ${escapeHtml(application.email)}`,
+		`<b>City:</b> ${escapeHtml(application.city)}`
+	];
+
+	if (application.organizationType) {
+		lines.push(`<b>Type:</b> ${escapeHtml(application.organizationType)}`);
+	}
+	if (application.phone) {
+		lines.push(`<b>Phone:</b> ${escapeHtml(application.phone)}`);
+	}
+	if (application.website) {
+		lines.push(`<b>Current website:</b> ${escapeHtml(application.website)}`);
+	}
+
+	lines.push(
+		'',
+		'<b>About the organization:</b>',
+		escapeHtml(application.mission),
+		'',
+		'<b>Website goals:</b>',
+		escapeHtml(application.goals)
+	);
+
+	return lines.join('\n');
+}

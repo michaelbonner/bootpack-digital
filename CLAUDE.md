@@ -62,6 +62,9 @@ bun run db:studio     # Open Drizzle Studio
 
 - Standard SvelteKit file-based routing in `src/routes/`
 - Main pages: Home (`/`), Work (`/work`), About (`/about`), Open-source (`/open-source`), Contact (`/contact`)
+- Bootpack for Good (`/bootpack-for-good`): landing page + application form for the
+  quarterly free-website giveaway to Salt Lake–area nonprofits and community orgs
+  (linked from the footer)
 - Policies section with Termageddon integration for legal pages
 - All pages are prerendered at build time
 
@@ -110,8 +113,9 @@ bun run db:studio     # Open Drizzle Studio
 ### Environment Variables
 
 - `PUBLIC_POSTHOG_ENABLED`: Toggle PostHog analytics (default: enabled)
-- `PUBLIC_TEST_CONTACT_FORM`: Short-circuits the contact form so it shows the
-  success state without hitting `/api/contact` (used by e2e tests)
+- `PUBLIC_TEST_CONTACT_FORM`: Short-circuits the contact form and the Bootpack for
+  Good application form so they show the success state without hitting their API
+  routes (used by e2e tests)
 - `DATABASE_URL`: Postgres connection string for the contact form endpoint
 - `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`: Credentials for the Telegram
   notification fired on each contact submission (optional — missing creds
@@ -129,6 +133,13 @@ Submissions POST JSON to `src/routes/api/contact/+server.ts`, which validates,
 inserts into the `contact_submissions` table via Drizzle, and sends a Telegram
 notification. The Drizzle schema lives in `src/lib/server/db/schema.ts`;
 generated SQL migrations land in `drizzle/`.
+
+### Bootpack for Good application form
+
+The `/bootpack-for-good` page (`free-website-form.svelte`) POSTs JSON to
+`src/routes/api/free-website/+server.ts`, which mirrors the contact endpoint:
+validate, verify Turnstile, insert into the `free_website_applications` table
+via Drizzle, and send a Telegram notification (`formatFreeWebsiteApplication`).
 
 ### Image Handling
 

@@ -16,6 +16,9 @@ test('can load all pages', async ({ page }) => {
 	await page.goto('/contact');
 	await expect(page.locator('h1')).toBeVisible();
 
+	await page.goto('/bootpack-for-good');
+	await expect(page.locator('h1')).toBeVisible();
+
 	await page.goto('/policies');
 	await expect(page.locator('h1')).toBeVisible();
 

@@ -37,6 +37,10 @@
 							rel="noopener noreferrer">available job listings</a
 						>.
 					</p>
+					<p>
+						Run a Salt Lake–area nonprofit or community organization? We give away a free
+						website every quarter through <a href="/bootpack-for-good">Bootpack for Good</a>.
+					</p>
 					<div>
 						<a
 							class="inline-flex py-3 px-5 text-base font-medium leading-6 text-white bg-blue-600 rounded-md border border-transparent transition duration-150 ease-in-out lg:w-auto hover:bg-blue-500 focus:outline-hidden focus:shadow-outline"
