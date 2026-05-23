@@ -2,6 +2,7 @@ import { json } from '@sveltejs/kit';
 import { getDb } from '$lib/server/db';
 import { contactSubmissions } from '$lib/server/db/schema';
 import { formatContactMessage, sendTelegramMessage } from '$lib/server/telegram';
+import { verifyTurnstileToken } from '$lib/server/turnstile';
 import type { RequestHandler } from './$types';
 
 export const prerender = false;
@@ -16,6 +17,7 @@ type Payload = {
 	company?: unknown;
 	phone?: unknown;
 	message?: unknown;
+	turnstileToken?: unknown;
 };
 
 function asTrimmedString(value: unknown, max = MAX_LEN): string | null {
@@ -29,7 +31,7 @@ function errorMessage(err: unknown): string {
 	return err instanceof Error ? err.message : 'unknown error';
 }
 
-export const POST: RequestHandler = async ({ request }) => {
+export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 	let payload: Payload;
 	try {
 		const parsed: unknown = await request.json();
@@ -47,6 +49,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	const message = asTrimmedString(payload.message);
 	const company = asTrimmedString(payload.company, 200);
 	const phone = asTrimmedString(payload.phone, 50);
+	const turnstileToken = asTrimmedString(payload.turnstileToken, 2048);
 
 	if (!firstName || !lastName || !email || !message) {
 		return json({ error: 'Missing required fields' }, { status: 400 });
@@ -54,6 +57,15 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	if (!EMAIL_RE.test(email)) {
 		return json({ error: 'Invalid email' }, { status: 400 });
+	}
+
+	if (!turnstileToken) {
+		return json({ error: 'Captcha token missing' }, { status: 400 });
+	}
+
+	const captchaOk = await verifyTurnstileToken(turnstileToken, getClientAddress());
+	if (!captchaOk) {
+		return json({ error: 'Captcha verification failed' }, { status: 400 });
 	}
 
 	const submission = { firstName, lastName, email, company, phone, message };

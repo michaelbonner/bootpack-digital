@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_TEST_CONTACT_FORM } from '$env/static/public';
+	import { PUBLIC_TEST_CONTACT_FORM, PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
 	import clsx from 'clsx';
 
 	let submitted = $state(false);
@@ -16,14 +16,23 @@
 			return;
 		}
 
-		const formData = new FormData(event.target as HTMLFormElement);
+		const form = event.target as HTMLFormElement;
+		const formData = new FormData(form);
+		const turnstileToken = formData.get('cf-turnstile-response');
+
+		if (!turnstileToken) {
+			errorMessage = 'Please complete the captcha before submitting';
+			return;
+		}
+
 		const payload = {
 			firstName: formData.get('firstName'),
 			lastName: formData.get('lastName'),
 			email: formData.get('email'),
 			company: formData.get('company'),
 			phone: formData.get('phone'),
-			message: formData.get('message')
+			message: formData.get('message'),
+			turnstileToken
 		};
 
 		isSubmitting = true;
@@ -44,15 +53,25 @@
 			} else {
 				const data = await response.json().catch(() => ({}));
 				errorMessage = data?.error ?? 'Oops! There was a problem submitting your form';
+				if (typeof window !== 'undefined' && window.turnstile) {
+					window.turnstile.reset();
+				}
 			}
 		} catch (error) {
 			console.error(error);
 			errorMessage = 'Oops! There was a problem submitting your form';
+			if (typeof window !== 'undefined' && window.turnstile) {
+				window.turnstile.reset();
+			}
 		} finally {
 			isSubmitting = false;
 		}
 	};
 </script>
+
+<svelte:head>
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</svelte:head>
 
 <form class={submitted ? `hidden` : `visible`} name="contact" onsubmit={handleSubmit}>
 	<div class="flex flex-wrap -mx-3 mt-8 mb-6">
@@ -166,6 +185,9 @@
 				{/if}
 			</p>
 		</div>
+	</div>
+	<div class="mb-6">
+		<div class="cf-turnstile" data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}></div>
 	</div>
 	{#if errorMessage}
 		<p class="px-2 pt-1 text-xs italic text-red-500">

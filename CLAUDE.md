@@ -116,6 +116,12 @@ bun run db:studio     # Open Drizzle Studio
 - `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`: Credentials for the Telegram
   notification fired on each contact submission (optional — missing creds
   are logged and skipped, the DB write still happens)
+- `PUBLIC_TURNSTILE_SITE_KEY` / `TURNSTILE_SECRET_KEY`: Cloudflare Turnstile
+  credentials used by the contact form. Site key is rendered into the
+  widget on the client; secret key is used by `/api/contact` to verify
+  the submitted token via Cloudflare's siteverify endpoint. Missing
+  `TURNSTILE_SECRET_KEY` logs a warning and skips verification (intended
+  for local dev only).
 
 ### Contact form
 
