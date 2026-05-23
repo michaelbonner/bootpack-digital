@@ -49,20 +49,20 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'energy-safe-kids',
 		title: 'Energy Safe Kids',
 		description:
-			'We built a multi-tenant platform for the National Energy Foundation that lets one team manage dozens of branded educational sites for utility partners, without the copy-paste nightmare.',
+			'We built a multi-tenant platform for the National Energy Foundation that lets one team manage 30+ branded educational sites for utility partners, without the copy-paste nightmare.',
 		image: EnergySafeKidsHome,
 		link: 'https://energysafekids.org',
 		features: [
 			{
 				title: 'Multi-Tenant Architecture',
 				description:
-					'One codebase, dozens of sites. When NEF pushes an update, every partner site gets it instantly; no deployment marathons required.',
+					'One codebase, 30+ sites. When NEF pushes an update, every partner site gets it instantly — no deployment marathons required.',
 				icon: 'lightning' // Using lightning as a metaphor for power/energy
 			},
 			{
 				title: 'White-Label Branding',
 				description:
-					'Each utility partner gets a site that looks and feels like their own, right down to brand colors, logos, and regional content.',
+					'Each utility partner gets a site that looks and feels like their own, right down to brand colors, logos, and regional content. Partners get the credit; NEF skips the rebuild.',
 				icon: 'users'
 			}
 		],
@@ -79,7 +79,7 @@ export const caseStudies: CaseStudy[] = [
 				title: 'Same Platform, Different Brand',
 				content: [
 					"Here's the cool part: even though everything runs on one platform, each partner's site feels completely custom. Rocky Mountain Power visitors see RMP branding, colors, and local info. Pacific Power visitors get theirs. It all happens automatically.",
-					"Adding a new utility partner used to mean building a whole new site. Now it's closer to flipping a switch; upload their logo, set their colors, and they're live. NEF can onboard new partners in a fraction of the time it used to take."
+					"Adding a new utility partner used to mean building a whole new site — about four weeks of work. Now it's closer to flipping a switch: upload their logo, set their colors, and they're live in an hour. That's how NEF has onboarded 30 partners."
 				],
 				images: [RockyMountainPowerHome, RockyMountainPowerAbout]
 			},
@@ -87,7 +87,7 @@ export const caseStudies: CaseStudy[] = [
 				title: 'Growing Up: Energy Safe Leaders',
 				content: [
 					"The original platform was built for younger kids, but NEF wanted to reach high schoolers too. Rather than start from scratch, we built 'Energy Safe Leaders' on top of the same tech stack.",
-					"It's a more mature look and feel with age-appropriate content, but under the hood it shares the same CMS and multi-tenant architecture. One platform, two audiences, and room to grow into more."
+					"It's a more mature look and feel with age-appropriate content, but under the hood it shares the same CMS and multi-tenant architecture. One platform, two audiences, and room to grow."
 				],
 				images: [EnergySafeLeadersHome, EnergySafeLeadersStudentResources]
 			}
