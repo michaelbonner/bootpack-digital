@@ -15,7 +15,6 @@ test('free website application form', async ({ page }) => {
 	await page
 		.getByRole('textbox', { name: 'What would a website help you accomplish?' })
 		.fill('Reach more people and share our programs.');
-	await page.getByRole('checkbox').check();
 	await page.getByRole('button', { name: 'Apply for a free website' }).click();
 	await expect(page.getByText('Application received!')).toBeVisible();
 });

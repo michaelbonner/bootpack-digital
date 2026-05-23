@@ -225,38 +225,6 @@
 				rows={6}
 			></textarea>
 		</div>
-		<div class="flex gap-3 items-start sm:col-span-2">
-			<span class="flex shrink-0 items-center text-sm h-lh">
-				<span class="grid grid-cols-1 group size-5 sm:size-4">
-					<input
-						class="col-start-1 row-start-1 bg-white rounded-sm border border-gray-300 appearance-none checked:border-blue-600 checked:bg-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:border-gray-300 disabled:bg-gray-100 forced-colors:appearance-auto"
-						id="ownership"
-						name="ownership"
-						required
-						type="checkbox"
-					/>
-					<svg
-						viewBox="0 0 14 14"
-						fill="none"
-						aria-hidden="true"
-						class="col-start-1 row-start-1 self-center justify-self-center stroke-white pointer-events-none size-3.5"
-					>
-						<path
-							d="M3 8L6 11L11 3.5"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="group-not-has-checked:opacity-0"
-						/>
-					</svg>
-				</span>
-			</span>
-			<label class="text-sm text-gray-600" for="ownership">
-				I understand that we'll own the website's Git repository and control its deployment, so we
-				can maintain and update it ourselves later.
-				<span aria-hidden="true" class="text-orange-600">*</span>
-			</label>
-		</div>
 		<div class={clsx('flex justify-start sm:col-span-2', 'xl:justify-end')}>
 			<div class="cf-turnstile" data-sitekey={PUBLIC_TURNSTILE_SITE_KEY} data-theme="light"></div>
 		</div>
