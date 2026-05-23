@@ -10,7 +10,7 @@
 		},
 		{
 			title: 'We pick one organization each quarter',
-			body: 'Every quarter we choose one Salt Lake–area organization from the applications we receive and reach out to get started.'
+			body: 'Every quarter we choose one Salt Lake–area organization based on need and the impact a new website could have, then reach out to get started.'
 		},
 		{
 			title: 'We design and build it with you',
@@ -47,6 +47,10 @@
 		{
 			q: 'How often do you choose an organization?',
 			a: 'We review applications and select one organization every quarter, so it’s worth applying even if it isn’t your turn yet.'
+		},
+		{
+			q: 'How do you decide who gets selected?',
+			a: 'We weigh need and impact. This is for nonprofits and community organizations that genuinely can’t afford a professionally built website, so we prioritize the groups where a new site will do the most good for the community. It isn’t meant for well-funded businesses looking for free work.'
 		},
 		{
 			q: 'What does "up to five pages" mean?',
@@ -195,9 +199,11 @@
 				Who can apply
 			</h2>
 			<p class="mx-auto mt-4 text-pretty text-gray-600">
-				We're looking for organizations based in or serving the greater Salt Lake City area that are
-				making their community better. If you're doing good and a better website would help you do
-				more of it, we'd love to hear from you.
+				We're looking for nonprofits and community organizations based in or serving the greater Salt
+				Lake City area that are making their community better but don't have the budget for a
+				professionally built website. We choose each quarter's recipient based on need and the impact a
+				new site could have — so this is for mission-driven groups doing a lot with a little, not
+				well-funded businesses looking for something free.
 			</p>
 		</div>
 		<ul role="list" class="grid gap-4 mt-10 sm:grid-cols-2 lg:grid-cols-3">
