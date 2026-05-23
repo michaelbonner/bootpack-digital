@@ -49,14 +49,14 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'energy-safe-kids',
 		title: 'Energy Safe Kids',
 		description:
-			'We built a multi-tenant platform for the National Energy Foundation that lets one team manage 30+ branded educational sites for utility partners, without the copy-paste nightmare.',
+			'We built a single platform for the National Energy Foundation that lets one team manage 30+ branded educational sites for utility partners, without the copy-paste nightmare.',
 		image: EnergySafeKidsHome,
 		link: 'https://energysafekids.org',
 		features: [
 			{
-				title: 'Multi-Tenant Architecture',
+				title: 'One Platform, Many Sites',
 				description:
-					'One codebase, 30+ sites. When NEF pushes an update, every partner site gets it instantly. No deployment marathons required.',
+					'All 30+ sites run on one shared system. When NEF pushes an update, every partner site gets it instantly. No deployment marathons required.',
 				icon: 'lightning' // Using lightning as a metaphor for power/energy
 			},
 			{
@@ -87,7 +87,7 @@ export const caseStudies: CaseStudy[] = [
 				title: 'Growing Up: Energy Safe Leaders',
 				content: [
 					"The original platform was built for younger kids, but NEF wanted to reach high schoolers too. Rather than start from scratch, we built 'Energy Safe Leaders' on top of the same tech stack.",
-					"It's a more mature look and feel with age-appropriate content, but under the hood it shares the same CMS and multi-tenant architecture. One platform, two audiences, and room to grow."
+					"It's a more mature look and feel with age-appropriate content, but under the hood it shares the same CMS and infrastructure. One platform, two audiences, and room to grow."
 				],
 				images: [EnergySafeLeadersHome, EnergySafeLeadersStudentResources]
 			}
