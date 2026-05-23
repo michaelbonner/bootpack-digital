@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"start": "bun ./server.js",
+		"start": "bun run db:migrate && bun ./server.js",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
