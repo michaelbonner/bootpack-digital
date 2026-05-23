@@ -39,7 +39,7 @@
 			const initPostHog = () => {
 				import('posthog-js').then(({ default: posthog }) => {
 					posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
-						api_host: 'https://us.i.posthog.com',
+						api_host: '/ingest',
 						capture_pageleave: false,
 						capture_pageview: false,
 						ui_host: 'https://us.posthog.com'
