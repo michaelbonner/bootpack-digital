@@ -7,6 +7,7 @@
 		canonical?: string;
 		ogType?: OgType;
 		ogImage?: string;
+		ogImageAlt?: string;
 		jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 	}
 
@@ -16,6 +17,7 @@
 		canonical = '/',
 		ogType = 'website',
 		ogImage,
+		ogImageAlt,
 		jsonLd = undefined
 	}: Props = $props();
 
@@ -44,7 +46,13 @@
 
 	{#if resolvedOgImage}
 		<meta property="og:image" content={resolvedOgImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
 		<meta name="twitter:image" content={resolvedOgImage} />
+		{#if ogImageAlt}
+			<meta property="og:image:alt" content={ogImageAlt} />
+			<meta name="twitter:image:alt" content={ogImageAlt} />
+		{/if}
 	{/if}
 
 	<link rel="canonical" href="https://bootpackdigital.com{canonical}" />

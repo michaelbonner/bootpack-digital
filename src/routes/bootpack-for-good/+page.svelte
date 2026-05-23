@@ -83,6 +83,8 @@
 	title="Bootpack for Good | Free websites for Salt Lake organizations doing good"
 	description="Each quarter, Bootpack Digital builds a free, brand-matched website for one Salt Lake–area nonprofit or community organization doing good. You own the code and control the deployment. Apply today."
 	canonical="/bootpack-for-good"
+	ogImage="/og-bootpack-for-good.jpg"
+	ogImageAlt="Bootpack for Good — free websites for Salt Lake organizations doing good"
 />
 
 <div class="relative bg-blue-50">
