@@ -24,7 +24,11 @@
 		}
 	});
 
-	const links = [...navLinks, { label: 'Policies', url: '/policies' as RouteId }];
+	const links = [
+		...navLinks,
+		{ label: 'Bootpack for Good', url: '/bootpack-for-good' as RouteId },
+		{ label: 'Policies', url: '/policies' as RouteId }
+	];
 </script>
 
 <footer
