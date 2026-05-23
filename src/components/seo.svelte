@@ -16,8 +16,8 @@
 		description = '',
 		canonical = '/',
 		ogType = 'website',
-		ogImage,
-		ogImageAlt,
+		ogImage = '/og-image.jpg',
+		ogImageAlt = 'Bootpack Digital — custom web and app development',
 		jsonLd = undefined
 	}: Props = $props();
 
