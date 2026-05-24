@@ -3,7 +3,7 @@
 		<div class="prose lg:prose-lg">
 			<h2 class="text-navy-600">What we bring to the table</h2>
 			<p>
-				We are your go-to experts in design, marketing, and development &ndash; fully invested in
+				We are your go-to experts in design and development &ndash; fully invested in
 				your success. Your success fuels us. Our mission is to help your business grow and keep your
 				customers delighted.
 			</p>
@@ -59,8 +59,8 @@
 					<h3 class="text-navy-700">Business knowledge</h3>
 					<p>
 						We are a business-minded development group. We don't just think about the code. Helping
-						businesses grow has given us an understanding of ROI that allows us to help clients tune
-						their ideas into something shippable and lovable. Go-to-market strategies can make or
+						businesses grow has given us an understanding of ROI that allows us to help clients shape
+						their ideas into something customers actually love. Go-to-market strategies can make or
 						break your product. We can help guide you down a path that works for you.
 					</p>
 				</div>
@@ -87,8 +87,8 @@
 					<h3 class="text-navy-700">The latest tech</h3>
 					<p>
 						Blazing fast performance improves conversions. Period. We build on the latest tech to
-						make the customer experience as smooth and reliable as possible. We like the latest
-						tech, your customers like the latest tech, it's a win-win.
+						make the customer experience as smooth and reliable as possible. You get a faster, more
+						reliable product; your customers get an experience that keeps them coming back.
 					</p>
 					<p class="mt-4 text-sm underline">
 						<a

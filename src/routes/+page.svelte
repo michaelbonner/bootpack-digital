@@ -38,15 +38,15 @@
 					class="mb-8 text-base leading-normal text-center text-blue-600 md:text-xl md:text-left bpd-animate-split-subtitle"
 				>
 					We help you build <span class="font-bold">websites</span>, mobile
-					<span class="font-bold">apps</span>, and web
-					<span class="font-bold">software</span> applications that work.
+					<span class="font-bold">apps</span>, and custom
+					<span class="font-bold">software</span> that just works.
 				</p>
 				<div class="my-4 rounded-md shadow-sm lg:my-0 bpd-animate-quote-button">
 					<a
 						class="flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
 						href={resolve('/contact')}
 					>
-						Request a Quote
+						Request a Free Quote
 					</a>
 				</div>
 			</div>

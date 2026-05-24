@@ -14,7 +14,10 @@
 		<div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
 			<div class="prose lg:prose-lg">
 				<h2 class="text-navy-600">Brands we have worked with</h2>
-				<p>We have worked with companies from all different industries on all sizes of projects.</p>
+				<p>
+					From global brands like Coca-Cola and Intermountain Healthcare to local startups, we've
+					shipped projects of every size and industry &ndash; and we'd love to add yours.
+				</p>
 				<p>
 					<a class="text-blue-500 underline" href={resolve('/work')}>See some of our work</a>
 				</p>
