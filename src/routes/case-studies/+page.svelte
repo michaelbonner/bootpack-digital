@@ -9,6 +9,8 @@
 	title="Case Studies | Bootpack Digital"
 	description="See how we've helped businesses like Wasatch Fabrication achieve their goals through custom software solutions."
 	canonical="/case-studies"
+	ogImage="/og-case-studies.jpg"
+	ogImageAlt="Bootpack Digital case studies"
 	jsonLd={{
 		'@context': 'https://schema.org',
 		'@type': 'CollectionPage',

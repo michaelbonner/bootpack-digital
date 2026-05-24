@@ -13,6 +13,8 @@
 	title="Blog | Bootpack Digital"
 	description="Bootpack Digital’s latest blog posts on web development, product strategy, and digital experiences for modern applications."
 	canonical="/blog"
+	ogImage="/og-blog.jpg"
+	ogImageAlt="The Bootpack Blog"
 />
 
 <div class="py-12 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
