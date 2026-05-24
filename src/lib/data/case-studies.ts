@@ -37,6 +37,11 @@ export interface CaseStudy {
 		images?: Picture[];
 		imageAlt?: string;
 	}[];
+	testimonial?: {
+		quote: string;
+		author: string;
+		company?: string;
+	};
 	relatedBlogPost?: {
 		href: string;
 		title: string;
@@ -97,7 +102,7 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'wasatch-fabrication',
 		title: 'Wasatch Fabrication',
 		description:
-			'Idea to launch in under 6 weeks. We built Wasatch Fabrication a custom platform that handles quoting, invoicing, payments, and customer communication, all in one place.',
+			'Idea to launch in under six weeks. We built Wasatch Fabrication a custom platform that handles quoting, invoicing, payments, and customer communication, all in one place.',
 		image: WasatchFabrication,
 		link: 'https://wasatchfabrication.com',
 		features: [
@@ -146,6 +151,12 @@ export const caseStudies: CaseStudy[] = [
 				images: [AdminDashboard, AdminQuote]
 			}
 		],
+		testimonial: {
+			quote:
+				"We gave Bootpack an idea and a loose outline, and they turned it into a site ready to take orders in no time! We've already seen a big uptick in customers sending in quote requests.",
+			author: 'Alvin',
+			company: 'Wasatch Fabrication'
+		},
 		relatedBlogPost: {
 			href: '/blog/ai-product-iteration',
 			title: 'Rapid product iteration with AI',
