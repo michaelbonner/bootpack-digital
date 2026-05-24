@@ -37,6 +37,10 @@
 	canonical="/wallpapers"
 />
 
+<svelte:head>
+	<meta name="robots" content="noindex, nofollow" />
+</svelte:head>
+
 <div class="pt-8 pb-16 bg-white">
 	<div class="container grid gap-16 px-4 mx-auto mt-16 max-w-5xl text-gray-700">
 		<div>
