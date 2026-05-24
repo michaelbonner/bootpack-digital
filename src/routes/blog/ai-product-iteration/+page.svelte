@@ -58,6 +58,8 @@
 	description="How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of product development experience to help clients explore new opportunities."
 	canonical="/blog/ai-product-iteration"
 	ogType="article"
+	ogImage="/og-blog-ai-product-iteration.jpg"
+	ogImageAlt="Rapid product iteration with AI"
 	{jsonLd}
 />
 

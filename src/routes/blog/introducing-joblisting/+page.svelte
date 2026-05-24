@@ -69,6 +69,8 @@
 	description="JobListing.app is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS."
 	canonical="/blog/introducing-joblisting"
 	ogType="article"
+	ogImage="/og-blog-introducing-joblisting.jpg"
+	ogImageAlt="Introducing JobListing.app"
 	{jsonLd}
 />
 

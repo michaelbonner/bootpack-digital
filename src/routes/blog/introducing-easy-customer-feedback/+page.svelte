@@ -68,6 +68,8 @@
 	description="EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers."
 	canonical="/blog/introducing-easy-customer-feedback"
 	ogType="article"
+	ogImage="/og-blog-introducing-easy-customer-feedback.jpg"
+	ogImageAlt="Introducing EasyCustomerFeedback"
 	{jsonLd}
 />
 

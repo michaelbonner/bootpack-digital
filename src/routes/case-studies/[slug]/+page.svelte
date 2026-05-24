@@ -13,6 +13,8 @@
 	description={caseStudy.description}
 	canonical="/case-studies/{caseStudy.slug}"
 	ogType="article"
+	ogImage="/og-case-study-{caseStudy.slug}.jpg"
+	ogImageAlt="{caseStudy.title} case study"
 	jsonLd={[
 		{
 			'@context': 'https://schema.org',

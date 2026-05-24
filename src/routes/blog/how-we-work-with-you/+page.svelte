@@ -58,6 +58,8 @@
 	description="A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving."
 	canonical="/blog/how-we-work-with-you"
 	ogType="article"
+	ogImage="/og-blog-how-we-work-with-you.jpg"
+	ogImageAlt="How we work with you on projects"
 	{jsonLd}
 />
 

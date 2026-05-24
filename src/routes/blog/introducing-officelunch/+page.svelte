@@ -73,6 +73,8 @@
 	description="Office Lunch App is a new Bootpack Digital product that takes the daily back-and-forth out of group lunch ordering with voting, opt-ins, restaurant management, and an API for automation."
 	canonical="/blog/introducing-officelunch"
 	ogType="article"
+	ogImage="/og-blog-introducing-officelunch.jpg"
+	ogImageAlt="Introducing Office Lunch App"
 	{jsonLd}
 />
 
