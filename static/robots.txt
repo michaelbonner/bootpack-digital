@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /obfuscated
+Disallow: /cdn-cgi/
 Allow: /
 
 Sitemap: https://bootpackdigital.com/sitemap.xml
