@@ -23,6 +23,10 @@ const routes = [
 		priority: 0.5
 	},
 	{
+		route: '/bootpack-for-good',
+		priority: 0.7
+	},
+	{
 		route: '/blog',
 		priority: 0.7
 	},
