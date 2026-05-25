@@ -49,7 +49,7 @@
 							rel="noopener noreferrer"
 							target="_blank"
 						>
-							<span class="flex gap-2 items-center mx-2 text-white">
+							<span class="flex gap-2 items-center mr-2 text-white">
 								<svg
 									aria-hidden="true"
 									class="w-6 h-6 text-white"
