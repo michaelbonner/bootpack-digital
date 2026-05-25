@@ -47,15 +47,15 @@
 		},
 		{
 			q: 'How often do you choose an organization?',
-			a: 'We review applications and select one organization every quarter, so it's worth applying even if it isn't your turn yet.'
+			a: "We review applications and select one organization every quarter, so it's worth applying even if it isn't your turn yet."
 		},
 		{
 			q: 'How do you decide who gets selected?',
-			a: 'We weigh need and impact. This is for nonprofits and community organizations that genuinely can't afford a professionally built website, so we prioritize the groups where a new site will do the most good for the community. It isn't meant for well-funded businesses looking for free work.'
+			a: "We weigh need and impact. This is for nonprofits and community organizations that genuinely can't afford a professionally built website, so we prioritize the groups where a new site will do the most good for the community. It isn't meant for well-funded businesses looking for free work."
 		},
 		{
 			q: 'What does "up to five pages" mean?',
-			a: 'A focused, brochure-style site. Typically that's a home page plus pages like About, Programs or Services, and Contact. We'll figure out the right mix together.'
+			a: "A focused, brochure-style site. Typically that's a home page plus pages like About, Programs or Services, and Contact. We'll figure out the right mix together."
 		},
 		{
 			q: 'Do we have to know how to code to maintain it?',
