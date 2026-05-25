@@ -10,7 +10,7 @@
 		},
 		{
 			title: 'We pick one organization each quarter',
-			body: 'Every quarter we choose one Salt Lake–area organization based on need and the impact a new website could have, then reach out to get started.'
+			body: 'Every quarter we choose one Salt Lake-area organization based on need and the impact a new website could have, then reach out to get started.'
 		},
 		{
 			title: 'We design and build it with you',
@@ -47,15 +47,15 @@
 		},
 		{
 			q: 'How often do you choose an organization?',
-			a: 'We review applications and select one organization every quarter, so it’s worth applying even if it isn’t your turn yet.'
+			a: 'We review applications and select one organization every quarter, so it's worth applying even if it isn't your turn yet.'
 		},
 		{
 			q: 'How do you decide who gets selected?',
-			a: 'We weigh need and impact. This is for nonprofits and community organizations that genuinely can’t afford a professionally built website, so we prioritize the groups where a new site will do the most good for the community. It isn’t meant for well-funded businesses looking for free work.'
+			a: 'We weigh need and impact. This is for nonprofits and community organizations that genuinely can't afford a professionally built website, so we prioritize the groups where a new site will do the most good for the community. It isn't meant for well-funded businesses looking for free work.'
 		},
 		{
 			q: 'What does "up to five pages" mean?',
-			a: 'A focused, brochure-style site. Typically that’s a home page plus pages like About, Programs or Services, and Contact. We’ll figure out the right mix together.'
+			a: 'A focused, brochure-style site. Typically that's a home page plus pages like About, Programs or Services, and Contact. We'll figure out the right mix together.'
 		},
 		{
 			q: 'Do we have to know how to code to maintain it?',
@@ -81,10 +81,10 @@
 
 <Seo
 	title="Bootpack for Good | Free websites for Salt Lake organizations doing good"
-	description="Each quarter, Bootpack Digital builds a free, brand-matched website for one Salt Lake–area nonprofit or community organization doing good. You own the code and control the deployment. Apply today."
+	description="Each quarter, Bootpack Digital builds a free, brand-matched website for one Salt Lake-area nonprofit or community organization doing good. You own the code and control the deployment. Apply today."
 	canonical="/bootpack-for-good"
 	ogImage="/og-bootpack-for-good.jpg"
-	ogImageAlt="Bootpack for Good — free websites for Salt Lake organizations doing good"
+	ogImageAlt="Bootpack for Good: free websites for Salt Lake organizations doing good"
 />
 
 <div class="relative bg-blue-50">
@@ -106,7 +106,7 @@
 			</h1>
 			<p class="mt-6 max-w-xl text-pretty text-base text-blue-700 md:text-lg">
 				The work you do deserves a website that helps, not one that holds you back. Each quarter, we
-				partner with one local nonprofit or community organization to design and build a brand-matched site, completely free. You walk away owning it outright, with no monthly fees or strings. We're a Salt Lake studio that builds for paying clients, and we give one site away every quarter.
+				partner with one local nonprofit or community organization to design and build a brand-matched site, completely free. You walk away owning it outright, with no monthly fees or strings. We're a Salt Lake studio that builds for paying clients, and this is how we give back.
 			</p>
 			<div class="flex flex-wrap gap-5 items-center mt-8">
 				<a
