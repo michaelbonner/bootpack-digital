@@ -92,7 +92,7 @@
 		</div>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			We work with a handful of companies that care a lot about what their customers have to say,
-			but they didn't have an easy and affordable way to collect that feedback; so we built it.
+			but they didn't have an easy and affordable way to collect that feedback, so we built it.
 		</p>
 	</div>
 
@@ -118,7 +118,7 @@
 			</figure>
 		</div>
 
-		<h2>Custom Feedback Boards</h2>
+		<h2>Custom feedback boards</h2>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
 				<enhanced:img
@@ -143,11 +143,11 @@
 			</figure>
 		</div>
 		<p>
-			All of the submissions that come in are shown in a list, then you can prioritize them, assign
-			them, or sync them with a third party ticket system.
+			All of the submissions that come in are shown in a list. From there, you can prioritize them,
+			assign them, or sync them with a third-party ticket system.
 		</p>
 
-		<h2>Embeddable Widgets</h2>
+		<h2>Embeddable widgets</h2>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
 				<enhanced:img
@@ -190,7 +190,7 @@
 		</div>
 		<p>You can currently integrate with Linear, GitHub Issues, or Basecamp.</p>
 
-		<h2>Blazing Fast</h2>
+		<h2>Blazing fast</h2>
 		<p>We built it from scratch with the latest tech to be as fast as possible.</p>
 
 		<h2>Try it today and tell us what you think</h2>

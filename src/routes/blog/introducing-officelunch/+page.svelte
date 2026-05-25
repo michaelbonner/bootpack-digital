@@ -121,7 +121,7 @@
 		<p>
 			We're a distributed team that still loves a good shared lunch when people are in the office.
 			What kept tripping us up wasn't the food, it was the coordination: opt-ins lost in chat,
-			restaurant links pasted in twice, and the same handful of people always doing the wheel of
+			restaurant links pasted in twice, and the same handful of people always stuck asking
 			"who's ordering today?" Office Lunch App turns that into a calm, predictable flow. Admins set
 			up restaurants and rules once, and everyone else just opts in, votes, and saves their
 			favorite orders.

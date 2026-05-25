@@ -165,7 +165,7 @@
 			</figure>
 		</div>
 		<p>
-			That means less forcing your process into someone else's template. Need a resume upload, short
+			That means no more forcing your process into someone else's template. Need a resume upload, short
 			text answers, longer written responses, or different required fields? Build the form you need,
 			then present it inside a branded application experience or embed it into an existing website.
 			Once submissions start coming in, manage candidates in either a board or table view.

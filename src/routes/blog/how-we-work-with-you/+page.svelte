@@ -101,7 +101,7 @@
 			We use <a href="https://basecamp.com/learn" target="_blank" rel="noopener noreferrer"
 				>Basecamp</a
 			> for all project communication. Everyone on the project gets access: your team, our team,
-			whoever needs to be in the loop. Files, discussions, to-do lists, updates; it's all in one
+			whoever needs to be in the loop. Files, discussions, to-do lists, updates. It's all in one
 			place.
 		</p>
 		<p>
