@@ -28,7 +28,7 @@
 
 <Seo
 	title="Web Design & Development Portfolio from Bootpack Digital"
-	description="We build engaging, custom experiences for our clients. Here's a few examples we're particularly proud of."
+	description="We build engaging, custom experiences for our clients. Here are a few examples we're particularly proud of."
 	canonical="/work"
 />
 
@@ -37,7 +37,7 @@
 		<div class="prose lg:prose-lg text-gray-600">
 			<h1 class="tracking-tight text-navy-600">Custom Web Design and Development Projects</h1>
 			<p>
-				We build engaging, custom experiences for our clients. Here's a few examples we're
+				We build engaging, custom experiences for our clients. Here are a few examples we're
 				particularly proud of. Curious about what it's like to work with us?
 				<a href="/blog/how-we-work-with-you" class="text-blue-600 hover:text-blue-500"
 					>Read about how we run projects</a
@@ -53,7 +53,7 @@
 				title="Primary Children's Hospital | Here Kids Win"
 			/>
 			<WorkItem
-				description="The premier guiding service based in Utah, offering expert-led courses and trips in backcountry skiing, splitboarding, rock climbing, ice climbing, mountaineering, canyoneering, and avalanche education. With a team of highly experienced guides, UMA helps people of all skill levels explore Utah’s mountains, providing both group courses and custom private adventures."
+				description="The premier guiding service based in Utah, offering expert-led courses and trips in backcountry skiing, splitboarding, rock climbing, ice climbing, mountaineering, canyoneering, and avalanche education. With a team of highly experienced guides, UMA helps people of all skill levels explore Utah's mountains, providing both group courses and custom private adventures."
 				link="https://www.utahmountainadventures.com/"
 				linkText="Visit UMA"
 				poster={UtahMountainAdventures}
@@ -75,7 +75,7 @@
 				title="JobListing.app"
 			/>
 			<WorkItem
-				description="A leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW’s experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
+				description="A leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW's experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
 				link="https://www.dkow.com/"
 				linkText="Visit DKOW"
 				poster={DKOW}
@@ -104,7 +104,7 @@
 				title="EasyCustomerFeedback"
 			/>
 			<WorkItem
-				description="They were tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap, check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load."
+				description="They were tired of their WordPress site's performance so we rebuilt the thing using modern technologies. The site now loads in a snap. Check it out for yourself. Conversion rates are dramatically up now that customers aren't waiting seconds for a single page to load."
 				link="https://wasatchcovers.com/"
 				linkText="Visit Wasatch Covers"
 				poster={WasatchCovers}
@@ -118,7 +118,7 @@
 				title="JME Film Co"
 			/>
 			<WorkItem
-				description="A new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. They bring industry leading expertise and support to their clients' programs to deliver a best-in-class experience for your team, partners and participants."
+				description="A new business looking to establish their brand in a competitive financial services industry. We designed and developed a site for them that helps them stand out from their competition. They bring industry-leading expertise and support to their clients' programs, delivering a best-in-class experience for their clients' teams, partners, and participants."
 				link="https://www.acceleratedep.com"
 				linkText="Visit AEP"
 				poster={AcceleratedEquityPlans}
@@ -133,7 +133,7 @@
 				lazy={true}
 			/>
 			<WorkItem
-				description="Rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code, and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely. "
+				description="Rethinking the way police and communities communicate. QR codes are generated for each employee and can be printed anywhere. The end user scans the QR code and leaves a review for the representative. We built the platform from the ground up using serverless technology to help the platform scale infinitely."
 				link="https://knowyourforce.com/"
 				linkText="Visit KYF"
 				poster={KnowYourForce}
