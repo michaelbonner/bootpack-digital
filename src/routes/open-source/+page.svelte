@@ -7,7 +7,7 @@
 		{
 			name: 'PageSpeed Score Tracker',
 			emoji: '⚡',
-			description: `Keep track of your PageSpeed insights scores. Just add your URLs to the config and deploy
+			description: `Keep track of your PageSpeed Insights scores. Just add your URLs to the config and deploy
 					the code. Then you'll see a simple view of your PageSpeed scores. <a
 						class="underline"
 						data-sveltekit-reload
@@ -18,14 +18,14 @@
 			name: 'Screenshot Maker',
 			emoji: '🌌',
 			description:
-				'Easy way to generate screenshots of websites. Just add the URL and it will generate a screenshot.',
+				'An easy way to generate screenshots of websites. Just add the URL and it will generate a screenshot.',
 			link: 'https://github.com/michaelbonner/screenshot-maker'
 		},
 		{
 			name: 'Redirects Wizard',
 			emoji: '⏭️',
 			description:
-				"Sometimes when you're migrating a site you have a lot of links you need to redirect somewhere else. Redirects Wizard allows you to do that task, but much quicker.",
+				"Sometimes when you're migrating a site you have a lot of links you need to redirect somewhere else. Redirects Wizard lets you do it much faster.",
 			link: 'https://github.com/michaelbonner/redirects-wizard'
 		},
 		{
@@ -51,7 +51,7 @@
 				<h1 class="tracking-tight text-navy-600">Open-source Projects</h1>
 				<div>
 					<p>
-						Most of the web is built on open-source projects. Since open-source projects are such a
+						Most of the web is built on open-source projects. Since they're such a
 						valuable resource, we are committed to sharing tools we think will strengthen the web
 						development community.
 					</p>
@@ -104,7 +104,7 @@
 							data-sveltekit-reload
 							href={project.link}
 						>
-							See {project.name} Code on GitHub
+							See {project.name} code on GitHub
 						</a>
 					</p>
 				</div>
