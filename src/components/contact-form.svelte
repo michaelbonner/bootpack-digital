@@ -53,14 +53,14 @@
 				submitted = true;
 			} else {
 				const data = await response.json().catch(() => ({}));
-				errorMessage = data?.error ?? 'Oops! There was a problem submitting your form';
+				errorMessage = data?.error ?? 'Oops! There was a problem submitting your form. Please try again, or email us at hey@bootpackdigital.com.';
 				if (typeof window !== 'undefined' && window.turnstile) {
 					window.turnstile.reset();
 				}
 			}
 		} catch (error) {
 			console.error(error);
-			errorMessage = 'Oops! There was a problem submitting your form';
+			errorMessage = 'Oops! There was a problem submitting your form. Please try again, or email us at hey@bootpackdigital.com.';
 			if (typeof window !== 'undefined' && window.turnstile) {
 				window.turnstile.reset();
 			}
@@ -202,10 +202,10 @@
 			disabled={isSubmitting}
 			type="submit"
 		>
-			Submit
+			Send message
 		</button>
 	</div>
 </form>
 <div class={submitted ? `visible` : `hidden`}>
-	<h2>Thank you for contacting us! We'll be in touch soon</h2>
+	<h2>Thanks for reaching out! We'll get back to you within one business day.</h2>
 </div>

@@ -27,7 +27,8 @@
 					</p>
 					<p>
 						Do you have a project idea or an existing site that needs to be updated? Do you need an
-						outside consultant? Fill out this form and we'll be in touch. We specialize in custom
+						outside consultant? Fill out this form and we'll get back to you within one business day. We
+						specialize in custom
 						web design, web development, and app development.
 					</p>
 					<p>
@@ -38,7 +39,7 @@
 						>.
 					</p>
 					<p>
-						Run a Salt Lake–area nonprofit or community organization? We give away a free
+						Run a Salt Lake-area nonprofit or community organization? We give away a free
 						website every quarter through <a href="/bootpack-for-good">Bootpack for Good</a>.
 					</p>
 					<div>
@@ -49,7 +50,7 @@
 							target="_blank"
 						>
 							<span class="flex items-end mx-2 text-white">
-								Schedule a call on
+								Schedule a 30-minute call on
 								<svg
 									class="inline-block ml-2 w-20 text-white fill-current"
 									version="1.1"
