@@ -45,10 +45,9 @@
 
 		<div class="mx-auto max-w-3xl text-gray-500 prose lg:prose-lg">
 			<p class="text-gray-500">
-				We are a small group of passionate creators trying to make a difference. We value quality
-				deliverables and human interaction. We are purpose-built to fit into your business and
-				contribute on day one. We have a proven track record of success and a team that is ready to
-				help you grow.
+				We're a small team that cares about doing great work and treating people like people. We
+				build to fit your business and start contributing on day one, with no long ramp-up required.
+				We've shipped real products for companies of every size, and we're ready to help you grow.
 			</p>
 		</div>
 		<div class="mx-auto mt-20 max-w-3xl text-gray-500 prose lg:prose-lg">
@@ -70,10 +69,10 @@
 							<h3 class="text-navy-600 mt-0">Michael Bonner</h3>
 						</div>
 						<p class="text-gray-500">
-							Michael started Bootpack Digital in 2019 as the next generation of a freelance
-							business he started in 2006. Michael has been building websites since he was 16. What
-							started out as a fun thing to do became a livelihood. Michael has worked at several
-							different companies, including managing a development team for 5 years.
+							Michael founded Bootpack Digital in 2019, building on the freelance business he'd run
+							since 2006. He's been making websites since he was 16. What began as a hobby became a
+							career. Along the way he's worked at several companies, including five years leading a
+							development team.
 						</p>
 					</div>
 					<div class="flex gap-2 mt-4">
