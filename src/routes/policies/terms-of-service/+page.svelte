@@ -11,6 +11,8 @@
 	title="Terms of Service | Bootpack Digital"
 	description="We are committed to protecting your privacy. This Privacy Policy describes how we collect and use information about you when you use our website."
 	canonical="/policies/terms-of-service"
+	ogImage="/og-terms-of-service.jpg"
+	ogImageAlt="Bootpack Digital terms of service"
 />
 
 <div class="pt-8 pb-16 bg-white">

@@ -25,6 +25,8 @@
 	title="About Bootpack Digital, a Utah-based Web and App Development Agency"
 	description="Bootpack Digital: Utah-based web and app development agency helping businesses grow with quality solutions and a passion for collaboration."
 	canonical="/about"
+	ogImage="/og-about.jpg"
+	ogImageAlt="About Bootpack Digital"
 	jsonLd={personJsonLd}
 />
 

@@ -35,6 +35,8 @@
 	title="Bootpack Wallpapers | Bootpack Digital"
 	description="We have a collection of wallpapers that we've created for our own use. We hope you enjoy them."
 	canonical="/wallpapers"
+	ogImage="/og-wallpapers.jpg"
+	ogImageAlt="Bootpack Digital wallpapers"
 />
 
 <svelte:head>

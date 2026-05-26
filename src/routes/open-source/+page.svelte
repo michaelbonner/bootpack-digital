@@ -42,6 +42,8 @@
 	title="Open-source Projects from Bootpack Digital"
 	description="Open-source software is invaluable for the modern web. We are committed to sharing tools we think will strengthen the web development community."
 	canonical="/open-source"
+	ogImage="/og-open-source.jpg"
+	ogImageAlt="Open-source projects from Bootpack Digital"
 />
 
 <div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pb-28">

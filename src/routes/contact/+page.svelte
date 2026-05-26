@@ -9,6 +9,8 @@
 	title="Get in Touch with Bootpack Digital"
 	description="Do you have a project idea or an existing site that needs to be updated? Do you need an outside consultant? Get in touch!"
 	canonical="/contact"
+	ogImage="/og-contact.jpg"
+	ogImageAlt="Contact Bootpack Digital"
 />
 
 <div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8">

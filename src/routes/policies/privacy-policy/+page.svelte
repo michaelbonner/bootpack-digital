@@ -11,6 +11,8 @@
 	title="Privacy Policy | Bootpack Digital"
 	description="We are committed to protecting your privacy. This Privacy Policy describes how we collect and use information about you when you use our website."
 	canonical="/policies/privacy-policy"
+	ogImage="/og-privacy-policy.jpg"
+	ogImageAlt="Bootpack Digital privacy policy"
 />
 
 <div class="pt-8 pb-16 bg-white">

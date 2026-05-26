@@ -30,6 +30,8 @@
 	title="Web Design & Development Portfolio from Bootpack Digital"
 	description="We build engaging, custom experiences for our clients. Here are a few examples we're particularly proud of."
 	canonical="/work"
+	ogImage="/og-work.jpg"
+	ogImageAlt="Bootpack Digital web design and development portfolio"
 />
 
 <div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pb-28">
