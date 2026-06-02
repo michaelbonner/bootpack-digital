@@ -7,6 +7,15 @@
 	let isSubmitting = $state(false);
 	let errorMessage = $state('');
 
+	const PRIDE_TYPE = 'LGBTQIA+ support organization';
+	let organizationType = $state('');
+
+	const isPride = $derived(organizationType === PRIDE_TYPE);
+
+	const handleTypeChange = (event: Event) => {
+		organizationType = (event.currentTarget as HTMLSelectElement).value;
+	};
+
 	const inputClass =
 		'block py-3 px-4 w-full text-base text-gray-700 bg-gray-100 rounded-md border border-gray-200 appearance-none transition-colors focus:bg-white focus:outline-2 focus:-outline-offset-1 focus:outline-blue-500';
 	const labelClass = 'block mb-2 text-sm font-semibold tracking-wide text-gray-700';
@@ -147,14 +156,16 @@
 					class="col-span-full row-start-1 py-3 px-4 pr-8 w-full text-base text-gray-700 bg-transparent appearance-none focus:outline-hidden"
 					id="organizationType"
 					name="organizationType"
+					value={organizationType}
+					onchange={handleTypeChange}
 				>
 					<option value="">Select one</option>
-					<option value="Nonprofit (501c3)">Nonprofit (501(c)(3))</option>
 					<option value="Community organization">Community organization</option>
-					<option value="Mutual aid / grassroots group">Mutual aid / grassroots group</option>
 					<option value="Faith-based organization">Faith-based organization</option>
-					<option value="School / education">School / education</option>
 					<option value="LGBTQIA+ support organization">LGBTQIA+ support organization</option>
+					<option value="Mutual aid / grassroots group">Mutual aid / grassroots group</option>
+					<option value="Nonprofit (501c3)">Nonprofit (501(c)(3))</option>
+					<option value="School / education">School / education</option>
 					<option value="Other">Other</option>
 				</select>
 				<svg
@@ -234,11 +245,11 @@
 		<div class={clsx('flex justify-start sm:col-span-2', 'xl:justify-end')}>
 			<button
 				class={clsx(
-					'py-3 px-5 w-full text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out',
+					'py-3 px-5 w-full text-base font-medium leading-6 text-white rounded-md border border-transparent transition duration-150 ease-in-out',
 					'lg:w-auto',
-					'hover:bg-orange-600',
 					'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700',
-					'disabled:opacity-60 disabled:cursor-not-allowed'
+					'disabled:opacity-60 disabled:cursor-not-allowed',
+					isPride ? 'pride-button hover:brightness-110' : 'bg-orange-700 hover:bg-orange-600'
 				)}
 				disabled={isSubmitting}
 				type="submit"
@@ -272,3 +283,33 @@
 		</p>
 	</div>
 </div>
+
+<style>
+	/* Persistent rainbow on the submit button while the option stays selected. */
+	:global(.pride-button) {
+		background: linear-gradient(
+			90deg,
+			#e40303,
+			#ff8c00,
+			#ffed00,
+			#008026,
+			#004dff,
+			#750787,
+			#e40303
+		);
+		background-size: 200% 100%;
+		animation: pride-button 6s linear infinite;
+	}
+
+	@keyframes pride-button {
+		to {
+			background-position: -200% 0;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		:global(.pride-button) {
+			animation: none;
+		}
+	}
+</style>
