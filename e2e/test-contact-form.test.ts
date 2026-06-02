@@ -15,6 +15,6 @@ test('test', async ({ page }) => {
 	await page.getByRole('textbox', { name: 'Phone Number' }).fill('8012223333');
 	await page.getByRole('textbox', { name: 'Phone Number' }).press('Tab');
 	await page.getByRole('textbox', { name: 'How Can We Help?*' }).fill('Testing the form');
-	await page.getByRole('button', { name: 'Submit' }).click();
-	await expect(page.getByText('Thank you for contacting us')).toBeVisible();
+	await page.getByRole('button', { name: 'Send message' }).click();
+	await expect(page.getByText('Thanks for reaching out!')).toBeVisible();
 });
