@@ -39,9 +39,10 @@
 			const initPostHog = () => {
 				import('posthog-js').then(({ default: posthog }) => {
 					posthog.init('phc_bjb8pFfDLmpxH2XySWdJVgqkqSyoafIqOT3HK9Hh46d', {
-						api_host: '/ingest',
+						api_host: 'https://g.michaelbonner.dev',
 						capture_pageleave: false,
 						capture_pageview: false,
+						defaults: '2026-05-30',
 						ui_host: 'https://us.posthog.com'
 					});
 					posthogInstance = posthog;
