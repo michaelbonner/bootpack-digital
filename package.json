@@ -25,14 +25,14 @@
 	"devDependencies": {
 		"@playwright/test": "^1.60.0",
 		"@sveltejs/enhanced-img": "^0.10.4",
-		"@sveltejs/kit": "^2.62.0",
+		"@sveltejs/kit": "^2.63.0",
 		"@tailwindcss/typography": "^0.5.19",
-		"@types/node": "^25.9.1",
+		"@types/node": "^25.9.2",
 		"drizzle-kit": "^0.31.10",
 		"eslint-plugin-svelte": "^3.19.0",
 		"lefthook": "^2.1.9",
-		"svelte": "^5.56.1",
-		"svelte-check": "^4.5.0",
+		"svelte": "^5.56.3",
+		"svelte-check": "^4.6.0",
 		"svelte-obfuscate": "^0.3.0",
 		"svelte-preprocess": "^6.0.5",
 		"tailwindcss": "^4.3.0",
@@ -47,7 +47,7 @@
 		"clsx": "^2.1.1",
 		"drizzle-orm": "^0.45.2",
 		"postgres": "^3.4.9",
-		"posthog-js": "^1.378.1",
+		"posthog-js": "^1.382.0",
 		"svelte-adapter-bun": "^1.0.1"
 	},
 	"packageManager": "bun@1.3.13"
