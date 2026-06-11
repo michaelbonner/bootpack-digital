@@ -152,6 +152,12 @@ via Drizzle, and send a Telegram notification (`formatFreeWebsiteApplication`).
 - Reusable components in `src/components/`
 - Key components: Header (with mobile nav), Footer, ContactForm, ContactBanner, SEO, WorkItem
 - `topo-bg.svelte`: Large inline SVG for topographic background pattern
+- `topo-hero-bg.svelte`: Interactive home-hero topo background. SSR renders the
+  static tiled `/images/blue-topo.svg`; on fine-pointer/no-reduced-motion
+  clients it swaps in an inline SVG (one `<path>` per contour line from
+  `src/lib/data/topo-lines.ts`, lazily imported) with a cursor-following
+  radial-gradient glow and per-point line warp. Regenerate the line data with
+  `bun --install=fallback run scripts/generate-topo-lines.ts`
 - Navigation links centralized in `src/lib/nav-links.ts` using typed RouteId
 
 ### Redirects and Rewrites
