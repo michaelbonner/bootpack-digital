@@ -4,13 +4,15 @@
 	// Tile size must match the 600px repeat of /images/blue-topo.svg
 	const TILE = 600;
 	// How far (px) from the cursor the glow and the line warp reach
-	const RADIUS = 250;
+	const RADIUS = 350;
 	// Max distance (px) a line point is pulled toward the cursor
 	const MAX_SHIFT = 6;
 	// Higher = the glow chases the cursor faster (1/s)
 	const POSITION_RATE = 10;
 	// Higher = the glow fades in/out faster (1/s)
 	const STRENGTH_RATE = 5;
+	// Caps the visible hover glow while preserving cursor tracking strength
+	const GLOW_OPACITY = 0.3;
 	// Distance (px) between precomputed points along each line
 	const SAMPLE_STEP = 5;
 	const BASE_COLOR = '#e9f3f8'; // blue-100, matches the static SVG fill
@@ -153,7 +155,7 @@
 			return;
 		}
 
-		svgEl.style.setProperty('--topo-strength', strength.toFixed(3));
+		svgEl.style.setProperty('--topo-strength', (strength * GLOW_OPACITY).toFixed(3));
 
 		const lineCount = geometry.length;
 		for (let t = 0; t < tiles.length; t++) {
