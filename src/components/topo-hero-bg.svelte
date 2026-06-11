@@ -242,8 +242,13 @@
 				: (cb: () => void) => setTimeout(cb, 200);
 		idle(async () => {
 			if (disposed) return;
-			const { topoLines } = await import('$lib/data/topo-lines');
-			if (!disposed) lines = topoLines;
+			try {
+				const { topoLines } = await import('$lib/data/topo-lines');
+				if (!disposed) lines = topoLines;
+			} catch (error) {
+				// The static tiled background stays visible, so just log
+				console.error('Failed to load topo line data', error);
+			}
 		});
 
 		return () => {
