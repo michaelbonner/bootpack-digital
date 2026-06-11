@@ -136,11 +136,17 @@
 		if (inHero) {
 			glowX += (mx - glowX) * positionEase;
 			glowY += (my - glowY) * positionEase;
+			// Snap once converged so the loop can stop instead of easing forever
+			if (Math.abs(mx - glowX) < 0.1 && Math.abs(my - glowY) < 0.1) {
+				glowX = mx;
+				glowY = my;
+			}
 		}
 		strength += (target - strength) * strengthEase;
+		if (Math.abs(target - strength) < 0.002) strength = target;
+		const settled = strength === target && (!inHero || (glowX === mx && glowY === my));
 
-		if (!target && strength < 0.004) {
-			strength = 0;
+		if (!target && !strength) {
 			for (let i = 0; i < warped.length; i++) restore(i);
 			svgEl.style.setProperty('--topo-strength', '0');
 			lastTime = 0;
@@ -177,6 +183,11 @@
 			}
 		}
 
+		if (settled) {
+			// Fully converged; pointermove/scroll restarts the loop
+			lastTime = 0;
+			return;
+		}
 		frameId = requestAnimationFrame(frame);
 	}
 
@@ -219,7 +230,9 @@
 			pointerSeen = false;
 			ensureLoop();
 		};
+		const onScroll = () => ensureLoop();
 		window.addEventListener('pointermove', onPointerMove, { passive: true });
+		window.addEventListener('scroll', onScroll, { passive: true });
 		document.documentElement.addEventListener('mouseleave', onPointerGone);
 		window.addEventListener('blur', onPointerGone);
 
@@ -237,6 +250,7 @@
 			disposed = true;
 			observer.disconnect();
 			window.removeEventListener('pointermove', onPointerMove);
+			window.removeEventListener('scroll', onScroll);
 			document.documentElement.removeEventListener('mouseleave', onPointerGone);
 			window.removeEventListener('blur', onPointerGone);
 			if (frameId) cancelAnimationFrame(frameId);
