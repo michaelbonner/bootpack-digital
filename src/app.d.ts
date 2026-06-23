@@ -10,6 +10,10 @@ declare namespace App {
 	// interface Stuff {}
 }
 
+// Fontsource packages export only CSS (no type declarations), so TS can't
+// resolve the side-effect import on its own.
+declare module '@fontsource-variable/figtree';
+
 interface Window {
 	turnstile?: {
 		reset: (widgetId?: string) => void;

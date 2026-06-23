@@ -1,5 +1,6 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
+  import { resolveRoute } from "$lib/resolve-route";
   import type { RouteId } from "$app/types";
 
   interface BreadcrumbItem {
@@ -41,7 +42,7 @@
           </svg>
           {#if item.href}
             <a
-              href={resolve(item.href)}
+              href={resolveRoute(item.href)}
               class="ml-2 text-sm font-medium text-gray-500 hover:text-gray-700"
             >
               {item.label}
