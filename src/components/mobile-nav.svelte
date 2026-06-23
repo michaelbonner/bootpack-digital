@@ -1,6 +1,7 @@
 <script lang="ts">
   import { beforeNavigate } from "$app/navigation";
   import { resolve } from "$app/paths";
+  import { resolveRoute } from "$lib/resolve-route";
   import { page } from "$app/state";
   import { fade } from "svelte/transition";
   import BootpackDigital from "../images/bootpack-digital.svg";
@@ -79,7 +80,7 @@
         class={`block text-navy-500 font-semibold text-xl py-2 px-4 rounded-lg ${
           page.url.pathname === link.url && "bg-navy-100"
         }`}
-        href={resolve(link.url)}
+        href={resolveRoute(link.url)}
       >
         {link.label}
       </a>

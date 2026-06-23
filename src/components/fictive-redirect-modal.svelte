@@ -1,7 +1,6 @@
 <script lang="ts">
   import { replaceState } from "$app/navigation";
   import { resolve } from "$app/paths";
-  import type { RouteId } from "$app/types";
   import { onMount } from "svelte";
   import { fade, fly } from "svelte/transition";
 
@@ -16,7 +15,11 @@
 
   const closeModal = () => {
     isVisible = false;
-    replaceState(resolve(window.location.pathname as RouteId), {});
+    // `resolve()` distributes its argument across the RouteId union, so a
+    // dynamic route id isn't assignable to any single overload; narrow to a
+    // param-free route so the literal `resolve()` call still satisfies the
+    // svelte/no-navigation-without-resolve lint rule.
+    replaceState(resolve(window.location.pathname as "/"), {});
   };
 </script>
 
