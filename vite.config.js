@@ -22,7 +22,14 @@ export default defineConfig({
 			currentTime: 'readonly',
 			registerProcessor: 'readonly',
 			sampleRate: 'readonly',
-			WorkletGlobalScope: 'readonly'
+			WorkletGlobalScope: 'readonly',
+			$state: 'readonly',
+			$derived: 'readonly',
+			$effect: 'readonly',
+			$props: 'readonly',
+			$bindable: 'readonly',
+			$inspect: 'readonly',
+			$host: 'readonly'
 		},
 		ignorePatterns: [
 			'**/test-results',
@@ -36,7 +43,8 @@ export default defineConfig({
 			'!**/.env.example',
 			'**/.vercel',
 			'**/.output',
-			'**/playwright-report'
+			'**/playwright-report',
+			'vite.config.js'
 		],
 		rules: {
 			'constructor-super': 'error',
@@ -186,7 +194,9 @@ export default defineConfig({
 				files: ['*.svelte', '**/*.svelte'],
 				rules: {
 					'no-inner-declarations': 'off',
-					'no-self-assign': 'off'
+					'no-self-assign': 'off',
+					// `bind:this` targets are assigned by Svelte at runtime, which this rule can't see
+					'no-unassigned-vars': 'off'
 				},
 				jsPlugins: ['eslint-plugin-svelte']
 			}
