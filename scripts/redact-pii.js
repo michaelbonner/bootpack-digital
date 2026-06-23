@@ -39,7 +39,7 @@
 			.map(titleCase)
 			.join(' ');
 
-	const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 	const emailRe = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
 
 	function fakeEmailFor(realEmail) {
@@ -75,7 +75,7 @@
 	function applyReplacements(text) {
 		let out = text.replace(emailRe, (e) => fakeEmailFor(e));
 		nameMap.forEach((fake, real) => {
-			out = out.replace(new RegExp('\\b' + escape(real) + '\\b', 'g'), fake);
+			out = out.replace(new RegExp('\\b' + escapeRe(real) + '\\b', 'g'), fake);
 		});
 		return out;
 	}

@@ -46,7 +46,7 @@ function onSameEdge(a: { x: number; y: number }, b: { x: number; y: number }) {
 	);
 }
 
-const STRAIGHT = new Set([
+const STRAIGHT = new Set<number>([
 	SVGPathData.LINE_TO,
 	SVGPathData.HORIZ_LINE_TO,
 	SVGPathData.VERT_LINE_TO,

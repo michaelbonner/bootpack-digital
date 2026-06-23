@@ -58,6 +58,6 @@
 	<link rel="canonical" href="https://bootpackdigital.com{canonical}" />
 
 	{#each jsonLdBlocks as block, i (i)}
-		{@html `<script type="application/ld+json">${JSON.stringify(block)}</script>`}
+		{@html `<script type="application/ld+json">${JSON.stringify(block)}<\/script>`}
 	{/each}
 </svelte:head>
