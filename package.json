@@ -38,7 +38,7 @@
     "svelte-preprocess": "^6.0.5",
     "svg-pathdata": "^9.0.0",
     "tailwindcss": "^4.3.3",
-    "typescript": "6.0.3",
+    "typescript": "^6.0.3",
     "vite": "^8.1.5",
     "vite-plus": "^0.2.4"
   },
