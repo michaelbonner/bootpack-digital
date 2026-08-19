@@ -29,7 +29,7 @@
   class={clsx(
     "group border-t border-blue-200 pt-5",
     featured &&
-      "mx-auto w-full overflow-hidden border-0 bg-navy-800 pt-0 md:col-span-2 lg:grid lg:max-w-[1040px] lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)] xl:col-span-3",
+      "w-full overflow-hidden border-0 bg-navy-800 pt-0 md:col-span-2 lg:grid lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)] xl:col-span-3",
   )}
 >
   <a
@@ -51,7 +51,7 @@
       fetchpriority={featured ? "high" : "auto"}
       loading={featured ? "eager" : lazy ? "lazy" : "eager"}
       sizes={featured
-        ? "(min-width: 1024px) min(600px, calc(57.5vw - 37px)), calc(100vw - 32px)"
+        ? "(min-width: 1024px) min(700px, calc(57.5vw - 37px)), calc(100vw - 32px)"
         : "(min-width: 1440px) 432px, (min-width: 1280px) calc(33.333vw - 48px), (min-width: 1024px) calc(50vw - 48px), (min-width: 768px) calc(50vw - 40px), calc(100vw - 32px)"}
       src={poster}
     />
