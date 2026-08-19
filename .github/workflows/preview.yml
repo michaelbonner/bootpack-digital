@@ -49,7 +49,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       # Only the image ref: the preview host is the script's to decide, and the
       # PR comment reads it back from the deploy step's preview_url output.
@@ -211,7 +211,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       # Same trusted-script rule as the deploy job, and the same reason to fail
       # closed: teardown runs with DOKPLOY_API_KEY and deletes an application,
