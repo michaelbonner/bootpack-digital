@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import ContactBanner from '../../components/contact-banner.svelte';
 	import Seo from '../../components/seo.svelte';
+	import TopoHeroBg from '../../components/topo-hero-bg.svelte';
 	import WorkItem from '../../components/work-item.svelte';
 	// images
 	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?enhanced';
@@ -28,27 +30,71 @@
 
 <Seo
 	title="Web Design & Development Portfolio from Bootpack Digital"
-	description="We build engaging, custom experiences for our clients. Here are a few examples we're particularly proud of."
+	description="Explore websites, mobile apps, and custom software designed and developed by Bootpack Digital."
 	canonical="/work"
 	ogImage="/og-work.jpg"
 	ogImageAlt="Bootpack Digital web design and development portfolio"
 />
 
-<div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pb-28">
+
+<section class="overflow-hidden relative bg-blue-50">
+	<TopoHeroBg />
+	<div class="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 md:py-24 lg:px-8 lg:py-28">
+		<div class="grid gap-8 items-end lg:grid-cols-[minmax(0,1.35fr)_minmax(20rem,0.65fr)] lg:gap-20">
+			<div>
+				<p class="mb-5 text-sm font-bold tracking-[0.18em] text-orange-700 uppercase">
+					Selected work
+				</p>
+				<h1
+					class="max-w-4xl text-4xl font-extrabold tracking-tight leading-[1.04] text-navy-700 sm:text-5xl lg:text-6xl xl:text-7xl"
+				>
+					Websites and software built to pull their weight.
+				</h1>
+			</div>
+			<div class="pb-1">
+				<p class="max-w-xl text-lg leading-8 text-navy-600">
+					From public campaigns seen by hundreds of thousands to custom tools that replace
+					spreadsheets and inboxes, we build useful digital products for the real world.
+				</p>
+				<a
+					class="inline-flex items-center mt-6 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
+					href={resolve('/blog/how-we-work-with-you')}
+				>
+					See how we run projects
+					<svg aria-hidden="true" class="ml-2 size-4" fill="none" viewBox="0 0 20 20">
+						<path
+							d="m7 4 6 6-6 6"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+						/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="px-4 py-16 bg-white sm:px-6 md:py-24 lg:px-8 lg:py-28">
 	<div class="mx-auto max-w-7xl">
-		<div class="prose lg:prose-lg text-gray-600">
-			<h1 class="tracking-tight text-navy-600">Custom Web Design and Development Projects</h1>
-			<p>
-				We build engaging, custom experiences for our clients. Here are a few examples we're
-				particularly proud of. Curious about what it's like to work with us?
-				<a href="/blog/how-we-work-with-you" class="text-blue-600 hover:text-blue-500"
-					>Read about how we run projects</a
-				>.
+		<div class="grid gap-6 items-end mb-12 md:grid-cols-[1fr_auto] md:mb-16">
+			<div>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">The work</p>
+				<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
+					A few projects we are proud to put our name on
+				</h2>
+			</div>
+			<p class="max-w-md text-base leading-7 text-gray-600 md:text-right">
+				Strategy, design, development, and long-term partnership, shaped around what each client
+				actually needs.
 			</p>
 		</div>
-		<div class="grid gap-x-5 gap-y-10 mx-auto mt-12 max-w-lg lg:grid-cols-3 lg:max-w-none">
+
+		<div class="grid gap-x-8 gap-y-16 lg:grid-cols-2 lg:gap-y-20">
 			<WorkItem
 				description="Primary Children's Hospital launched a campaign called &quot;Here Kids Win.&quot; As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands."
+				featured={true}
 				link="https://herekidswin.com/"
 				linkText="Visit Here Kids Win"
 				poster={HereKidsWin}
@@ -208,10 +254,10 @@
 			/>
 		</div>
 	</div>
-</div>
+</section>
 
 <ContactBanner
-	textLine1="Ready to get started?"
-	textLine2="Send us a message so we can chat."
+	textLine1="Have a project that needs to work harder?"
+	textLine2="Tell us where you want to take it."
 	bgColor="bg-navy-100"
 />
