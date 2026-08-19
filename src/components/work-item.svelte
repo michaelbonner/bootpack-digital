@@ -51,7 +51,7 @@
       fetchpriority={featured ? "high" : "auto"}
       loading={featured ? "eager" : lazy ? "lazy" : "eager"}
       sizes={featured
-        ? "(min-width: 1024px) min(700px, calc(57.5vw - 37px)), calc(100vw - 32px)"
+        ? "(min-width: 1024px) min(736px, calc(57.5vw - 37px)), calc(100vw - 32px)"
         : "(min-width: 1440px) 432px, (min-width: 1280px) calc(33.333vw - 48px), (min-width: 1024px) calc(50vw - 48px), (min-width: 768px) calc(50vw - 40px), calc(100vw - 32px)"}
       src={poster}
     />
