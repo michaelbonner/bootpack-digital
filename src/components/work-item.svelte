@@ -18,7 +18,7 @@
     link,
     poster,
     title,
-    lazy = false,
+    lazy = true,
     linkText = "View Site",
     caseStudyLink,
     featured = false,
@@ -29,13 +29,13 @@
   class={clsx(
     "group border-t border-blue-200 pt-5",
     featured &&
-      "overflow-hidden border-0 bg-navy-800 pt-0 lg:col-span-2 lg:grid lg:grid-cols-[minmax(0,1.35fr)_minmax(20rem,0.65fr)]",
+      "mx-auto w-full overflow-hidden border-0 bg-navy-800 pt-0 md:col-span-2 lg:grid lg:max-w-[1040px] lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)] xl:col-span-3",
   )}
 >
   <a
     class={clsx(
       "block overflow-hidden bg-blue-100",
-      featured ? "min-h-72 lg:min-h-[34rem]" : "rounded-md",
+      featured ? "min-h-72 lg:min-h-[30rem]" : "rounded-md",
     )}
     data-sveltekit-reload
     href={link}
@@ -46,9 +46,13 @@
       alt={title}
       class={clsx(
         "h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.025]",
-        featured ? "min-h-72 lg:min-h-[34rem]" : "aspect-[16/10]",
+        featured ? "min-h-72 lg:min-h-[30rem]" : "aspect-[16/10]",
       )}
-      loading={lazy ? "lazy" : "eager"}
+      fetchpriority={featured ? "high" : "auto"}
+      loading={featured ? "eager" : lazy ? "lazy" : "eager"}
+      sizes={featured
+        ? "(min-width: 1024px) min(600px, calc(57.5vw - 37px)), calc(100vw - 32px)"
+        : "(min-width: 1440px) 432px, (min-width: 1280px) calc(33.333vw - 48px), (min-width: 1024px) calc(50vw - 48px), (min-width: 768px) calc(50vw - 40px), calc(100vw - 32px)"}
       src={poster}
     />
     <span class="sr-only"> (opens a new tab)</span>

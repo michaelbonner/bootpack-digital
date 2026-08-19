@@ -14,6 +14,15 @@ declare namespace App {
 // resolve the side-effect import on its own.
 declare module '@fontsource-variable/figtree';
 
+// @sveltejs/enhanced-img only declares bare `?enhanced` imports. Responsive
+// width directives use `&enhanced` and return the same Picture object.
+declare module '*&enhanced' {
+	import type { Picture } from 'vite-imagetools';
+
+	const value: Picture;
+	export default value;
+}
+
 interface Window {
 	turnstile?: {
 		reset: (widgetId?: string) => void;

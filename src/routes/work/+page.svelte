@@ -5,27 +5,27 @@
 	import TopoHeroBg from '../../components/topo-hero-bg.svelte';
 	import WorkItem from '../../components/work-item.svelte';
 	// images
-	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?enhanced';
-	import Cosgriff from '../../images/work/cosgriff.jpg?enhanced';
-	import CrewView from '../../images/work/crewview.jpg?enhanced';
-	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.jpg?enhanced';
-	import DKOW from '../../images/work/dkow.jpg?enhanced';
-	import EasyCustomerFeedback from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?enhanced';
-	import ESK from '../../images/work/energy-safe-kids.jpg?enhanced';
-	import Hanks from '../../images/work/hanks-garage-venue.jpg?enhanced';
-	import HereKidsWin from '../../images/work/here-kids-win.jpg?enhanced';
-	import HeritageOfPreston from '../../images/work/heritage-of-preston.jpg?enhanced';
-	import JeremyMiller from '../../images/work/jeremy-miller.jpg?enhanced';
-	import JMills from '../../images/work/jmills.jpg?enhanced';
-	import JobListing from '../../images/joblisting-app-screenshots/homepage.jpg?enhanced';
-	import KnowYourForce from '../../images/work/know-your-force.jpg?enhanced';
-	import NEF from '../../images/work/national-energy-foundation.jpg?enhanced';
-	import Ravens from '../../images/work/ravens.jpg?enhanced';
-	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.jpg?enhanced';
-	import ThermWise from '../../images/work/thermwise.jpg?enhanced';
-	import WasatchCovers from '../../images/work/wasatch-covers.jpg?enhanced';
-	import UtahMountainAdventures from '../../images/work/utah-mountain-adventures.jpg?enhanced';
-	import WasatchFabrication from '../../images/work/wasatch-fabrication.jpg?enhanced';
+	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?w=320;480;640;800;960;1200&enhanced';
+	import Cosgriff from '../../images/work/cosgriff.jpg?w=320;480;640;800;960;1200&enhanced';
+	import CrewView from '../../images/work/crewview.jpg?w=320;480;640;800;960;1200&enhanced';
+	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.jpg?w=320;480;640;800;960;1200&enhanced';
+	import DKOW from '../../images/work/dkow.jpg?w=320;480;640;800;960;1200&enhanced';
+	import EasyCustomerFeedback from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?w=320;480;640;800;960;1200&enhanced';
+	import ESK from '../../images/work/energy-safe-kids.jpg?w=320;480;640;800;960;1200&enhanced';
+	import Hanks from '../../images/work/hanks-garage-venue.jpg?w=320;480;640;800;960;1200&enhanced';
+	import HereKidsWin from '../../images/work/here-kids-win.jpg?w=320;480;640;800;960;1200&enhanced';
+	import HeritageOfPreston from '../../images/work/heritage-of-preston.jpg?w=320;480;640;800;960;1200&enhanced';
+	import JeremyMiller from '../../images/work/jeremy-miller.jpg?w=320;480;640;800;960;1200&enhanced';
+	import JMills from '../../images/work/jmills.jpg?w=320;480;640;800;960;1200&enhanced';
+	import JobListing from '../../images/joblisting-app-screenshots/homepage.jpg?w=320;480;640;800;960;1200&enhanced';
+	import KnowYourForce from '../../images/work/know-your-force.jpg?w=320;480;640;800;960;1200&enhanced';
+	import NEF from '../../images/work/national-energy-foundation.jpg?w=320;480;640;800;960;1200&enhanced';
+	import Ravens from '../../images/work/ravens.jpg?w=320;480;640;800;960;1200&enhanced';
+	import TheDoctorsCbd from '../../images/work/the-doctors-cbd.jpg?w=320;480;640;800;960;1200&enhanced';
+	import ThermWise from '../../images/work/thermwise.jpg?w=320;480;640;800;960;1200&enhanced';
+	import WasatchCovers from '../../images/work/wasatch-covers.jpg?w=320;480;640;800;960;1200&enhanced';
+	import UtahMountainAdventures from '../../images/work/utah-mountain-adventures.jpg?w=320;480;640;800;960;1200&enhanced';
+	import WasatchFabrication from '../../images/work/wasatch-fabrication.jpg?w=320;480;640;800;960;1200&enhanced';
 </script>
 
 <Seo
@@ -91,7 +91,7 @@
 			</p>
 		</div>
 
-		<div class="grid gap-x-8 gap-y-16 lg:grid-cols-2 lg:gap-y-20">
+		<div class="grid gap-x-8 gap-y-16 md:grid-cols-2 lg:gap-y-20 xl:grid-cols-3">
 			<WorkItem
 				description="Primary Children's Hospital launched a campaign called &quot;Here Kids Win.&quot; As part of the campaign they wanted an interactive website to showcase some of the patient stories that have been submitted. We worked with the talented design team at Faktory to build an engaging experience seen by hundreds of thousands."
 				featured={true}
