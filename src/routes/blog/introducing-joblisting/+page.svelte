@@ -24,7 +24,7 @@
 			datePublished,
 			dateModified: datePublished,
 			description:
-				'JobListing is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS.',
+				'JobListing gives growing teams a branded careers page and a focused way to collect applications, manage candidates, and schedule interviews.',
 			mainEntityOfPage: {
 				'@type': 'WebPage',
 				'@id': 'https://bootpackdigital.com/blog/introducing-joblisting'
@@ -66,7 +66,7 @@
 
 <Seo
 	title="Introducing JobListing.app | Bootpack Digital"
-	description="JobListing.app is a new Bootpack Digital product for creating branded job pages, collecting applications, and managing candidates without a bloated ATS."
+	description="JobListing gives growing teams a branded careers page and a focused way to collect applications, manage candidates, and schedule interviews."
 	canonical="/blog/introducing-joblisting"
 	ogType="article"
 	ogImage="/og-blog-introducing-joblisting.jpg"
@@ -93,10 +93,9 @@
 		</div>
 		<enhanced:img src={homepage} alt="JobListing homepage" class="mt-8 w-full rounded-lg" />
 		<p class="mt-8 text-xl leading-8 text-gray-500">
-			Hiring tools have a habit of getting complicated fast. You start with a simple need, post a
-			job, collect applications, move good candidates through the process, and suddenly you're
-			buried in an ATS built for a much bigger company than yours. JobListing is our answer to that
-			problem.
+			Hiring software gets complicated fast. A growing team needs to publish a job, collect
+			applications, and keep promising candidates moving. It does not need an applicant tracking
+			system designed for a multinational company. We built JobListing for that gap.
 		</p>
 	</div>
 
@@ -105,12 +104,11 @@
 			Visit <a href="https://joblisting.app/">joblisting.app</a> to see it in action.
 		</p>
 
-		<h2>A clean hiring workflow from the first click</h2>
+		<h2>A focused hiring workflow from the first click</h2>
 		<p>
-			JobListing gives employers a straightforward place to publish openings and manage hiring
-			without the usual clutter. The public-facing side is a branded job listing site your
-			candidates can apply through, and the internal side is a focused dashboard for listings,
-			applicants, interviews, and hiring activity.
+			JobListing combines a branded careers site for candidates with a private dashboard for your
+			team. You can publish openings, collect applications, review candidates, and coordinate
+			interviews without navigating unrelated enterprise features.
 		</p>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
@@ -129,10 +127,8 @@
 			</figure>
 		</div>
 		<p>
-			For small teams and growing companies, that simplicity matters. We can give clients a hosted,
-			branded careers page that looks like part of their company instead of a bolted-on third-party
-			tool. If they already have a website they want to keep applicants on, they can also use an
-			embeddable widget to place openings and applications directly on their own site.
+			Each company gets a hosted careers page that matches its brand. Teams that want to keep
+			candidates on an existing website can embed their openings and application forms there instead.
 		</p>
 
 		<h2>Create job listings and application forms that fit the role</h2>
@@ -165,17 +161,16 @@
 			</figure>
 		</div>
 		<p>
-			That means no more forcing your process into someone else's template. Need a resume upload, short
-			text answers, longer written responses, or different required fields? Build the form you need,
-			then present it inside a branded application experience or embed it into an existing website.
-			Once submissions start coming in, manage candidates in either a board or table view.
+			A role can ask for a resume, short answers, longer responses, or any required fields your team
+			needs. Publish the form on your JobListing careers page or embed it on your existing site. As
+			applications arrive, review them in a board or table view.
 		</p>
 
-		<h2>Track candidates with the context you actually need</h2>
+		<h2>Keep the full story with each candidate</h2>
 		<p>
-			A resume by itself usually isn't enough. Hiring requires notes, stage changes, interview
-			details, internal discussion, and a clear history of what happened when. JobListing keeps that
-			context on each submission so your team can move faster without losing the thread.
+			A resume rarely tells the whole story. Each application keeps its notes, rating, stage changes,
+			interview details, and activity history together, so the team does not have to reconstruct a
+			decision from email and chat.
 		</p>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
@@ -201,15 +196,14 @@
 			</figure>
 		</div>
 		<p>
-			You can review the submission, add internal notes, rate applicants, move them through stages,
-			and schedule interviews from the same place. The result is a hiring process that's easier to
-			follow for everyone involved.
+			Reviewers can see the submission, add internal notes, rate the applicant, change their stage,
+			and schedule an interview from the same screen. Everyone works from the same record.
 		</p>
 
 		<h2>Interviews and analytics built into the workflow</h2>
 		<p>
-			JobListing doesn't stop at collecting applications. It also helps you coordinate interviews
-			and understand how each job listing is performing.
+			The interview view gathers upcoming meetings and participant details in one schedule. Calendar
+			subscriptions keep that schedule available outside JobListing.
 		</p>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
@@ -228,25 +222,21 @@
 			</figure>
 		</div>
 		<p>
-			Upcoming interviews are collected in one view, with calendar subscription support and
-			participant details right there in the schedule. On the analytics side, you can see views,
-			applications, conversion rate, and where candidates are coming from, including direct traffic
-			and UTM-tagged sources.
+			Listing analytics show page views, applications, conversion rate, direct traffic, and
+			UTM-tagged sources. That makes it easier to see which recruiting channels bring in candidates
+			instead of relying on a hunch.
 		</p>
 
 		<h2>Built for teams that want less software, not more</h2>
 		<p>
-			We built JobListing for companies that need a solid hiring workflow without adopting an
-			overengineered platform. If your team wants a better-looking careers page, clearer application
-			intake, and a practical system for moving candidates forward, that's exactly what this product
-			is for.
+			JobListing is for teams that need a credible careers page and an organized hiring process, but
+			do not need the cost and complexity of an enterprise system.
 		</p>
 
 		<h2>See JobListing for yourself</h2>
 		<p>
-			If you're hiring and your current process feels messier than it should, take a look at
-			<a href="https://joblisting.app/">JobListing</a>. It gives you the essentials to publish jobs,
-			collect applications, and run a more organized hiring process from start to finish.
+			If applications are scattered across forms, email, and spreadsheets, visit
+			<a href="https://joblisting.app/">JobListing</a> to see the full workflow.
 		</p>
 	</div>
 </div>
@@ -260,8 +250,8 @@
 		>
 			<p class="text-xl font-semibold text-gray-900">Rapid product iteration with AI</p>
 			<p class="mt-3 text-base text-gray-500">
-				How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and
-				leverage years of experience to help clients explore new opportunities.
+				How we build working prototypes in isolated sandboxes so clients can test an idea before
+				committing to a full build.
 			</p>
 		</a>
 	</div>

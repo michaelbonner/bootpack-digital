@@ -23,7 +23,7 @@
 			datePublished,
 			dateModified: datePublished,
 			description:
-				'EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers.',
+				'EasyCustomerFeedback puts an embeddable feedback form, a shared inbox, and integrations with Linear, GitHub Issues, and Basecamp in one service.',
 			mainEntityOfPage: {
 				'@type': 'WebPage',
 				'@id': 'https://bootpackdigital.com/blog/introducing-easy-customer-feedback'
@@ -65,7 +65,7 @@
 
 <Seo
 	title="Introducing EasyCustomerFeedback | Bootpack Digital"
-	description="EasyCustomerFeedback is a new service from Bootpack Digital that makes it simple to collect, organize, and act on feedback from your customers."
+	description="EasyCustomerFeedback puts an embeddable feedback form, a shared inbox, and integrations with Linear, GitHub Issues, and Basecamp in one service."
 	canonical="/blog/introducing-easy-customer-feedback"
 	ogType="article"
 	ogImage="/og-blog-introducing-easy-customer-feedback.jpg"
@@ -91,15 +91,16 @@
 			Published on <time datetime={datePublished}>March 9, 2026</time>
 		</div>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
-			We work with a handful of companies that care a lot about what their customers have to say,
-			but they didn't have an easy and affordable way to collect that feedback, so we built it.
+			Customer feedback tends to arrive everywhere: email, support tickets, calls, and chat. We built
+			EasyCustomerFeedback to collect it in one place and move useful submissions into the tools
+			your team already uses.
 		</p>
 	</div>
 
 	<div class="px-4 mx-auto mt-12 prose prose-lg text-gray-500 prose-blue">
 		<p>
-			Visit <a href="https://easycustomerfeedback.com/"> easycustomerfeedback.com </a> to get started
-			now.
+			Visit <a href="https://easycustomerfeedback.com/">easycustomerfeedback.com</a> to see it in
+			action.
 		</p>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
@@ -118,7 +119,7 @@
 			</figure>
 		</div>
 
-		<h2>Custom feedback boards</h2>
+		<h2>One inbox for customer feedback</h2>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
 				<enhanced:img
@@ -143,11 +144,11 @@
 			</figure>
 		</div>
 		<p>
-			All of the submissions that come in are shown in a list. From there, you can prioritize them,
-			assign them, or sync them with a third-party ticket system.
+			Every submission appears in a shared inbox. Your team can review the details, set a priority,
+			assign an owner, and send the item to the system where the work will happen.
 		</p>
 
-		<h2>Embeddable widgets</h2>
+		<h2>Add the form to your existing site</h2>
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
 				<enhanced:img
@@ -165,12 +166,12 @@
 			</figure>
 		</div>
 		<p>
-			We make it easy for you to drop the widget on your existing pages. Just copy and paste the
-			script from the dashboard. We give you some options to configure the text, the available
-			fields, and the colors.
+			Copy one script from the dashboard to add the feedback form to an existing page. You can choose
+			the fields, rewrite the prompts, and match the colors to your site without rebuilding the
+			form yourself.
 		</p>
 
-		<h2>Integrations with existing systems</h2>
+		<h2>Send accepted feedback to the right tool</h2>
 
 		<div class="grid gap-x-5 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			<figure>
@@ -188,23 +189,28 @@
 				/>
 			</figure>
 		</div>
-		<p>You can currently integrate with Linear, GitHub Issues, or Basecamp.</p>
-
-		<h2>Blazing fast</h2>
-		<p>We built it from scratch with the latest tech to be as fast as possible.</p>
-
-		<h2>Try it today and tell us what you think</h2>
 		<p>
-			We're excited for as many people as possible to use it. Give it a try and give us some
-			feedback! <a href="https://easycustomerfeedback.com/"
-				>Start collecting feedback from your customers today</a
-			>
+			Turn a submission into a Linear issue, GitHub issue, or Basecamp to-do without copying the
+			details by hand. The original feedback remains available for reference.
+		</p>
+
+		<h2>A small tool with a focused job</h2>
+		<p>
+			EasyCustomerFeedback does not try to replace your project tracker or support desk. It collects
+			feedback, helps your team sort it, and passes accepted work to the tools you already trust.
+		</p>
+
+		<h2>Collect your first submission</h2>
+		<p>
+			Create a board, customize the form, and add it to your site at
+			<a href="https://easycustomerfeedback.com/">easycustomerfeedback.com</a>. And yes, you can use
+			it to tell us what needs work.
 		</p>
 	</div>
 </div>
 
 <ContactBanner
-	textLine1="Have some web app development questions?"
-	textLine2="Send us a message so we can chat."
+	textLine1="Need a focused tool for your team's workflow?"
+	textLine2="Tell us where the current process breaks down."
 	bgColor="bg-gray-100"
 />

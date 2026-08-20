@@ -11,7 +11,7 @@
 
 <Seo
 	title="Blog | Bootpack Digital"
-	description="Bootpack Digital’s latest blog posts on web development, product strategy, and digital experiences for modern applications."
+	description="Practical notes from Bootpack Digital on building products, testing ideas, and running client projects."
 	canonical="/blog"
 	ogImage="/og-blog.jpg"
 	ogImageAlt="The Bootpack Blog"
@@ -21,11 +21,11 @@
 	<div class="lg:text-center">
 		<p class="text-base font-semibold tracking-wide uppercase text-blue-600">Blog</p>
 		<h1 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-navy-900 sm:text-4xl">
-			Latest thoughts & updates
+			Notes from the work
 		</h1>
 		<p class="mt-4 mx-auto max-w-2xl text-lg text-gray-500">
-			Notes on product strategy, web development, and how we build practical digital experiences
-			with our clients.
+			What we are building, how we test product ideas, and the habits that keep client projects
+			moving.
 		</p>
 	</div>
 
