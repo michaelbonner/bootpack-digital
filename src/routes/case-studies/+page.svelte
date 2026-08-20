@@ -7,7 +7,7 @@
 
 <Seo
 	title="Case Studies | Bootpack Digital"
-	description="See how we've helped businesses like Wasatch Fabrication achieve their goals through custom software solutions."
+	description="See how we built a multi-site education platform for the National Energy Foundation and launched Wasatch Fabrication's custom operations software in under six weeks."
 	canonical="/case-studies"
 	ogImage="/og-case-studies.jpg"
 	ogImageAlt="Bootpack Digital case studies"
@@ -16,7 +16,7 @@
 		'@type': 'CollectionPage',
 		headline: 'Case Studies',
 		description:
-			"See how we've helped businesses like Wasatch Fabrication achieve their goals through custom software solutions.",
+			"See how we built a multi-site education platform for the National Energy Foundation and launched Wasatch Fabrication's custom operations software in under six weeks.",
 		mainEntity: {
 			'@type': 'ItemList',
 			itemListElement: caseStudies.map((study, i) => ({
@@ -32,7 +32,10 @@
 	<div class="mx-auto max-w-7xl">
 		<div class="prose lg:prose-lg text-gray-600">
 			<h1 class="tracking-tight text-navy-600">Case Studies</h1>
-			<p>A deep dive into some of our recent work.</p>
+			<p>
+				See how we replaced repeated content updates with one shared platform and turned an
+				operations workflow into working software in under six weeks.
+			</p>
 		</div>
 		<div class="grid gap-x-5 gap-y-10 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
 			{#each caseStudies as study}
@@ -73,7 +76,7 @@
 </div>
 
 <ContactBanner
-	textLine1="Ready to get started?"
-	textLine2="Send us a message so we can chat."
+	textLine1="Have a workflow that needs better software?"
+	textLine2="Tell us what's slowing your team down."
 	bgColor="bg-navy-100"
 />

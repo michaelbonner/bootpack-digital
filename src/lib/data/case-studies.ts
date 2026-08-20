@@ -54,45 +54,45 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'energy-safe-kids',
 		title: 'Energy Safe Kids',
 		description:
-			'We built a single platform for the National Energy Foundation that lets one team manage 30+ branded educational sites for utility partners, without the copy-paste nightmare.',
+			'We built one platform that lets the National Energy Foundation manage more than 30 educational sites for utility partners without maintaining each site separately.',
 		image: EnergySafeKidsHome,
 		link: 'https://energysafekids.org',
 		features: [
 			{
-				title: 'One Platform, Many Sites',
+				title: 'One platform, more than 30 sites',
 				description:
-					'All 30+ sites run on one shared system. When NEF pushes an update, every partner site gets it instantly. No deployment marathons required.',
+					'Every partner site runs on the same system. NEF can publish an update across the network or send it only to selected regions.',
 				icon: 'lightning' // Using lightning as a metaphor for power/energy
 			},
 			{
-				title: 'White-Label Branding',
+				title: 'A distinct brand for every partner',
 				description:
-					'Each utility partner gets a site that looks and feels like their own, right down to brand colors, logos, and regional content. Partners get the credit; NEF skips the rebuild.',
+					'Each utility partner has its own colors, logo, and regional content. NEF can launch a new branded site without rebuilding the platform.',
 				icon: 'users'
 			}
 		],
 		sections: [
 			{
-				title: 'One CMS to Rule Them All',
+				title: 'Publish once, update many sites',
 				content: [
-					'The National Energy Foundation (NEF) works with utility companies across the country to teach kids about energy safety. The problem? Every partner needed their own site, and NEF was drowning in duplicate content and one-off updates.',
-					'We built them a centralized CMS where they publish safety resources, lesson plans, and games once, then push that content to every partner site, or just specific regions. What used to take hours of copy-pasting now takes a single click.'
+					'The National Energy Foundation (NEF) works with utility companies across the country to teach children about energy safety. Each partner needed its own site, which left NEF maintaining duplicate content and repeating the same updates.',
+					'We built a central content management system for safety resources, lesson plans, and games. NEF can publish an item to every partner site or select specific regions, replacing hours of copying and pasting with one update.'
 				],
 				images: [EnergySafeKidsAbout, EnergySafeKidsTeachers]
 			},
 			{
-				title: 'Same Platform, Different Brand',
+				title: 'One system, distinct partner brands',
 				content: [
-					"Here's the cool part: even though everything runs on one platform, each partner's site feels completely custom. Rocky Mountain Power visitors see RMP branding, colors, and local info. Pacific Power visitors get theirs. It all happens automatically.",
-					"Adding a new utility partner used to mean building a whole new site, about four weeks of work. Now it's closer to flipping a switch: upload their logo, set their colors, and they're live in an hour. That's how NEF has onboarded 30 partners."
+					"A shared platform does not require a shared look. Rocky Mountain Power visitors see that utility's logo, colors, and local information. Pacific Power visitors see its brand and content, all from the same system.",
+					'A new utility partner once required about four weeks of development. Now NEF can upload a logo, choose the brand colors, and launch the site in about an hour. The organization has used that process to onboard 30 partners.'
 				],
 				images: [RockyMountainPowerHome, RockyMountainPowerAbout]
 			},
 			{
-				title: 'Growing Up: Energy Safe Leaders',
+				title: 'Reaching high school students',
 				content: [
-					"The original platform was built for younger kids, but NEF wanted to reach high schoolers too. Rather than start from scratch, we built 'Energy Safe Leaders' on top of the same tech stack.",
-					"It's a more mature look and feel with age-appropriate content, but under the hood it shares the same CMS and infrastructure. One platform, two audiences, and room to grow."
+					'NEF also wanted to reach high school students. We built Energy Safe Leaders on the existing platform instead of creating and maintaining another system.',
+					'The program has its own age-appropriate content and visual design, while sharing the same content management system and infrastructure as Energy Safe Kids. NEF can serve both audiences without duplicating the work behind the sites.'
 				],
 				images: [EnergySafeLeadersHome, EnergySafeLeadersStudentResources]
 			}
@@ -102,37 +102,37 @@ export const caseStudies: CaseStudy[] = [
 		slug: 'wasatch-fabrication',
 		title: 'Wasatch Fabrication',
 		description:
-			'Idea to launch in under six weeks. We built Wasatch Fabrication a custom platform that handles quoting, invoicing, payments, and customer communication, all in one place.',
+			"In under six weeks, we turned Wasatch Fabrication's idea into a custom platform for quotes, invoices, payments, job updates, and customer communication.",
 		image: WasatchFabrication,
 		link: 'https://wasatchfabrication.com',
 		features: [
 			{
-				title: 'Rapid Development',
+				title: 'Launched in under six weeks',
 				description:
-					'Six weeks from first conversation to production. Database, API, admin portal, customer portal, payments. The whole thing.',
+					'We designed and shipped the database, API, marketing site, admin portal, customer dashboard, and payment flow in under six weeks.',
 				icon: 'lightning'
 			},
 			{
-				title: 'Admin & Customer Portals',
+				title: 'One workflow for staff and customers',
 				description:
-					'Admins manage quotes, invoices, and payments. Customers track their jobs and pay online. No more email chains.',
+					'Staff manage quotes, invoices, and payments while customers request quotes, track jobs, share files, and pay online.',
 				icon: 'users'
 			}
 		],
 		sections: [
 			{
-				title: 'Six Weeks, Start to Finish',
+				title: 'From first conversation to launch in under six weeks',
 				content: [
-					'Wasatch Fabrication had orders coming in and no system to manage them. They needed something fast, but "fast" usually means cutting corners. We took a different approach: focus on the features that matter most, ship daily, and iterate based on real feedback.',
-					'In under six weeks we delivered the full stack: database design, API, a marketing site, an admin portal, and a customer-facing dashboard. It was tight, but the daily feedback loop kept us building the right things instead of guessing.'
+					'Wasatch Fabrication had orders coming in but no central system to manage them. The team needed software quickly, so we focused on the essential workflow, shipped updates daily, and used their feedback to decide what to build next.',
+					'In under six weeks, we delivered the database, API, marketing site, admin portal, customer dashboard, and payment flow. Daily feedback kept the scope grounded in the work Wasatch Fabrication was already doing.'
 				],
 				images: [MarketingHome, MarketingService]
 			},
 			{
-				title: 'A Dashboard Customers Actually Use',
+				title: 'A clear view for every customer',
 				content: [
-					'Before the portal, everything ran through email. Quote requests, status updates, file sharing, invoices. It worked, but things got lost. We built a customer dashboard where clients can submit quote requests, upload files, and track their jobs from start to finish.',
-					'Customers can see exactly where their order stands, view and pay invoices online through Stripe, and pull up their full history. It cut way down on "hey, what\'s the status of my order?" emails.'
+					'Before the portal, quote requests, status updates, files, and invoices all moved through email. Details were easy to lose. We built a customer dashboard where clients can request quotes, upload files, and follow each job from start to finish.',
+					"Customers can check an order's status, review past work, and pay invoices through Stripe. They no longer need to email the team whenever they want an update."
 				],
 				images: [
 					DashboardHome,
@@ -143,10 +143,10 @@ export const caseStudies: CaseStudy[] = [
 				]
 			},
 			{
-				title: 'The Admin Side',
+				title: 'An admin portal built around the real workflow',
 				content: [
-					'The admin portal is where the real work happens. We built it around how the team actually works: a quote comes in, gets reviewed, priced out with line items, and sent as an invoice. When the customer pays, production kicks off.',
-					'Admins can generate invoices, collect payments through Stripe, and keep all communication tied to specific jobs. Nothing falls through the cracks because everything lives in one place instead of scattered across inboxes.'
+					"We shaped the admin portal around Wasatch Fabrication's workflow. The team reviews each quote request, adds line-item pricing, sends the invoice, and starts production after payment.",
+					'Staff can generate invoices, collect payments through Stripe, and keep messages and files attached to the right job. The full record stays in one place instead of being split across inboxes.'
 				],
 				images: [AdminDashboard, AdminQuote]
 			}
@@ -161,7 +161,7 @@ export const caseStudies: CaseStudy[] = [
 			href: '/blog/ai-product-iteration',
 			title: 'Rapid product iteration with AI',
 			description:
-				'How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and leverage years of experience to help clients explore new opportunities.'
+				'How we build working prototypes in isolated sandboxes so clients can test an idea and learn from it before committing to a full build.'
 		}
 	}
 ];

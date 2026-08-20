@@ -80,7 +80,7 @@
 		<div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
 			<div class="relative">
 				<h2 class="text-2xl font-extrabold tracking-tight text-navy-900 sm:text-3xl">
-					Project Highlights
+					Project highlights
 				</h2>
 
 				<dl class="mt-10 space-y-10">
@@ -276,6 +276,6 @@
 
 <ContactBanner
 	textLine1="Have a project in mind?"
-	textLine2="Let's build something great together."
+	textLine2="Tell us what your team needs to accomplish."
 	bgColor="bg-gray-50"
 />

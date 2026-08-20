@@ -13,7 +13,7 @@
 			datePublished,
 			dateModified: datePublished,
 			description:
-				'A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving.',
+				'How we start projects, keep decisions in Basecamp, use focused weekly calls, and solve problems in writing before scheduling another meeting.',
 			mainEntityOfPage: {
 				'@type': 'WebPage',
 				'@id': 'https://bootpackdigital.com/blog/how-we-work-with-you'
@@ -55,7 +55,7 @@
 
 <Seo
 	title="How we work with you on projects | Bootpack Digital"
-	description="A look at how we run projects at Bootpack Digital: onboarding, Basecamp collaboration, weekly check-ins, and our writing-first approach to problem solving."
+	description="How we start projects, keep decisions in Basecamp, use focused weekly calls, and solve problems in writing before scheduling another meeting."
 	canonical="/blog/how-we-work-with-you"
 	ogType="article"
 	ogImage="/og-blog-how-we-work-with-you.jpg"
@@ -82,57 +82,55 @@
 		</div>
 		<enhanced:img src={thumbnail} alt="How we work with you on projects" class="mt-8 w-full rounded-lg" />
 		<p class="mt-8 text-xl leading-8 text-gray-500">
-			We've tried a lot of ways to run projects over the years. What we've settled on comes down to
-			a few things: keep everyone in the loop, write things down, and don't waste people's time.
-			Here's how it works in practice.
+			Good project communication should make the work easier, not become another job to manage. We
+			keep decisions visible, write down the details, and schedule a meeting only when a live
+			conversation will help.
 		</p>
 	</div>
 	<div class="px-4 mx-auto mt-12 prose prose-lg text-gray-500 prose-blue">
 		<h2>Getting started</h2>
 		<p>
-			Before we write any code, we spend time understanding what you're actually trying to
-			accomplish. Not just "build a website" or "make an app," but the business problem behind it.
-			Who are your users? What does success look like? What's been tried before? This upfront
-			conversation saves us from building the wrong thing.
+			Before we write code, we spend time understanding what you are trying to accomplish. "Build a
+			website" or "make an app" describes the output. We need to understand the business problem
+			behind it.
+			Who are your users? What does success look like? What has been tried before? Answering those
+			questions helps us define the right project before development begins.
 		</p>
 
 		<h2>Everything lives in Basecamp</h2>
 		<p>
 			We use <a href="https://basecamp.com/learn" target="_blank" rel="noopener noreferrer"
 				>Basecamp</a
-			> for all project communication. Everyone on the project gets access: your team, our team,
-			whoever needs to be in the loop. Files, discussions, to-do lists, updates. It's all in one
-			place.
+			> for project communication. Everyone who needs the context gets access. Basecamp holds the
+			files, discussions, to-do lists, decisions, and progress updates in one place.
 		</p>
 		<p>
-			The big win here is no more digging through email threads to find that one decision from three
-			weeks ago. If it happened on the project, it's in Basecamp. You can check in anytime and see
-			exactly where things stand.
+			You do not have to dig through email for a decision from three weeks ago. If it affects the
+			project, it goes in Basecamp, where anyone can check the current status and the record behind
+			it.
 		</p>
 
 		<h2>Weekly check-ins (when they make sense)</h2>
 		<p>
-			For bigger projects, we'll hop on a weekly call to show what we've built, talk through what's
-			coming up, and make decisions together. We keep these focused and try not to let them run long.
+			For larger projects, we use a weekly call to demonstrate the work, discuss what is next, and
+			make decisions together. We keep the agenda focused and the call short.
 			For smaller projects, we skip them and handle everything asynchronously in Basecamp.
 		</p>
 		<p>
 			We record every call. If someone can't make it, they can watch it later. We also post a
 			summary in Basecamp with the key decisions and action items, so nobody has to scrub through a
-			30-minute video for the one thing they need.
+			30-minute recording for one decision.
 		</p>
 
 		<h2>Writing first, meetings second</h2>
 		<p>
-			When a tricky problem comes up, our first instinct isn't to jump on a call. We write it up.
-			What's the problem, what are the options, what do we recommend. This gives everyone time to
-			think it through instead of making snap decisions in a meeting.
+			When a tricky problem comes up, we write it down before scheduling a call. We explain the
+			problem, lay out the options, and make a recommendation. Everyone gets time to consider the
+			tradeoffs instead of making a snap decision in a meeting.
 		</p>
 		<p>
-			It also means our developers get long, uninterrupted stretches to focus on the work. Fewer
-			context switches, better code. When we do need to talk something through live, the
-			conversation is better because everyone's already read the write-up and had time to form an
-			opinion.
+			Writing first also gives our developers longer blocks of uninterrupted work. When a live
+			conversation is necessary, everyone arrives with the same context and time to form an opinion.
 		</p>
 	</div>
 </div>
@@ -146,15 +144,15 @@
 		>
 			<p class="text-xl font-semibold text-gray-900">Rapid product iteration with AI</p>
 			<p class="mt-3 text-base text-gray-500">
-				How we use AI to build interactive prototypes, deploy them to sandboxes for testing, and
-				leverage years of experience to help clients explore new opportunities.
+				How we build working prototypes in isolated sandboxes so clients can test an idea before
+				committing to a full build.
 			</p>
 		</a>
 	</div>
 </div>
 
 <ContactBanner
-	textLine1="Ready to get started?"
-	textLine2="Send us a message so we can chat."
+	textLine1="Have a project that needs a clear plan?"
+	textLine2="Tell us what you're trying to accomplish."
 	bgColor="bg-gray-50"
 />
