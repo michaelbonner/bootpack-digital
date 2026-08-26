@@ -31,25 +31,26 @@
 
 <section class="px-4 py-16 bg-white sm:px-6 md:py-24 lg:px-8 lg:py-28">
 	<div class="mx-auto max-w-7xl">
-		<article
-			class="overflow-hidden w-full bg-navy-800 group lg:grid lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)]"
-		>
-			<div class="overflow-hidden min-h-72 bg-blue-100 lg:min-h-[30rem]">
-				<enhanced:img
-					alt={featuredPost.title}
-					class="object-cover w-full h-full min-h-72 transition-transform duration-500 ease-out group-hover:scale-[1.025] motion-reduce:transition-none motion-reduce:group-hover:scale-100 lg:min-h-[30rem]"
-					fetchpriority="high"
-					loading="eager"
-					sizes="(min-width: 1024px) min(736px, calc(57.5vw - 37px)), calc(100vw - 32px)"
-					src={featuredPost.thumbnail}
-				/>
-			</div>
+		<article class="overflow-hidden w-full bg-navy-800 group">
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+			<a
+				class="block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600 lg:grid lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)]"
+				href={getBlogPostUrl(featuredPost.slug)}
+			>
+				<div class="overflow-hidden min-h-72 bg-blue-100 lg:min-h-[30rem]">
+					<enhanced:img
+						alt={featuredPost.title}
+						class="object-cover w-full h-full min-h-72 transition-transform duration-500 ease-out group-hover:scale-[1.025] motion-reduce:transition-none motion-reduce:group-hover:scale-100 lg:min-h-[30rem]"
+						fetchpriority="high"
+						loading="eager"
+						sizes="(min-width: 1024px) min(736px, calc(57.5vw - 37px)), calc(100vw - 32px)"
+						src={featuredPost.thumbnail}
+					/>
+				</div>
 
-			<div class="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
-				<div>
-					<p class="text-xs font-bold tracking-[0.16em] text-orange-300 uppercase">Latest post</p>
-					<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-					<a class="block" href={getBlogPostUrl(featuredPost.slug)}>
+				<div class="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
+					<div>
+						<p class="text-xs font-bold tracking-[0.16em] text-orange-300 uppercase">Latest post</p>
 						<h2
 							class="mt-3 text-3xl font-bold tracking-tight leading-tight text-white hover:underline sm:text-4xl"
 						>
@@ -58,23 +59,21 @@
 						<p class="mt-4 text-base leading-7 text-navy-100">
 							{featuredPost.description}
 						</p>
-					</a>
-				</div>
+					</div>
 
-				<div class="flex flex-wrap gap-x-6 gap-y-3 items-center mt-7">
-					<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-					<a
-						class="inline-flex gap-2 items-center font-semibold text-white underline decoration-1 decoration-blue-300 underline-offset-4 transition-colors hover:text-blue-200"
-						href={getBlogPostUrl(featuredPost.slug)}
-					>
-						Read the post
-						<LinkArrow />
-					</a>
-					<time class="text-sm font-medium text-navy-200" datetime={featuredPost.publishedAt}>
-						{formatBlogPostDate(featuredPost.publishedAt)}
-					</time>
+					<div class="flex flex-wrap gap-x-6 gap-y-3 items-center mt-7">
+						<span
+							class="inline-flex gap-2 items-center font-semibold text-white underline decoration-1 decoration-blue-300 underline-offset-4 transition-colors hover:text-blue-200"
+						>
+							Read the post
+							<LinkArrow />
+						</span>
+						<time class="text-sm font-medium text-navy-200" datetime={featuredPost.publishedAt}>
+							{formatBlogPostDate(featuredPost.publishedAt)}
+						</time>
+					</div>
 				</div>
-			</div>
+			</a>
 		</article>
 
 		<div class="mt-16 mb-12 md:mt-24 md:mb-16">
