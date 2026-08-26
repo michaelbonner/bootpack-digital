@@ -1,8 +1,10 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import ContactBanner from '../../components/contact-banner.svelte';
+	import ContentListCard from '../../components/content-list-card.svelte';
+	import ContentPageHero from '../../components/content-page-hero.svelte';
 	import Seo from '../../components/seo.svelte';
 	import { caseStudies } from '$lib/data/case-studies';
-	import { resolve } from '$app/paths';
 </script>
 
 <Seo
@@ -28,52 +30,44 @@
 	}}
 />
 
-<div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:px-8 lg:pb-28">
+<ContentPageHero
+	description="See how we replaced repeated content updates with one shared platform and turned an operations workflow into working software in under six weeks."
+	eyebrow="Case studies"
+	heading="The full story behind the work, from first call to launch."
+	linkHref={resolve('/work')}
+	linkText="See more of the work we've shipped"
+/>
+
+<section class="px-4 py-16 bg-white sm:px-6 md:py-24 lg:px-8 lg:py-28">
 	<div class="mx-auto max-w-7xl">
-		<div class="prose lg:prose-lg text-gray-600">
-			<h1 class="tracking-tight text-navy-600">Case Studies</h1>
-			<p>
-				See how we replaced repeated content updates with one shared platform and turned an
-				operations workflow into working software in under six weeks.
+		<div class="grid gap-6 items-end mb-12 md:grid-cols-[1fr_auto] md:mb-16">
+			<div>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-800 uppercase">Selected builds</p>
+				<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
+					Problems worth solving, start to finish
+				</h2>
+			</div>
+			<p class="max-w-md text-base leading-7 text-gray-600 md:text-right">
+				What the client needed, what we built, and what changed once it shipped.
 			</p>
 		</div>
-		<div class="grid gap-x-5 gap-y-10 mx-auto mt-12 max-w-lg lg:grid-cols-2 lg:max-w-none">
-			{#each caseStudies as study}
-				<div
-					class="flex flex-col overflow-hidden rounded-lg shadow-lg transition-transform hover:-translate-y-1 hover:scale-[101%]"
-				>
-					<a
-						href={resolve(`/case-studies/${study.slug}`)}
-						class="shrink-0 bg-blue-100"
-						aria-label={study.title}
-					>
-						<enhanced:img class="w-full h-48 object-cover" src={study.image} alt={study.title} />
-					</a>
-					<div class="flex flex-col flex-1 justify-between p-6 bg-white">
-						<div class="flex-1">
-							<a href={resolve(`/case-studies/${study.slug}`)} class="block">
-								<h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
-									{study.title}
-								</h3>
-								<p class="mt-3 text-base leading-6 text-gray-500">
-									{study.description}
-								</p>
-							</a>
-						</div>
-						<div class="mt-6">
-							<a
-								href={resolve(`/case-studies/${study.slug}`)}
-								class="text-base font-semibold text-blue-600 hover:text-blue-500"
-							>
-								Read full case study <span aria-hidden="true">&rarr;</span>
-							</a>
-						</div>
-					</div>
-				</div>
+
+		<div class="grid gap-x-8 gap-y-16 lg:grid-cols-2 lg:gap-y-20">
+			{#each caseStudies as study (study.slug)}
+				<ContentListCard
+					description={study.description}
+					href={resolve(`/case-studies/${study.slug}`)}
+					image={study.image}
+					linkText="Read the full case study"
+					metadata={{ kind: 'label', text: 'Case study' }}
+					sizes="(min-width: 1280px) 592px, (min-width: 1024px) calc(50vw - 48px), calc(100vw - 32px)"
+					title={study.title}
+					titleSize="large"
+				/>
 			{/each}
 		</div>
 	</div>
-</div>
+</section>
 
 <ContactBanner
 	textLine1="Have a workflow that needs better software?"
