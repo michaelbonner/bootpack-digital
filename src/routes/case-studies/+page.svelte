@@ -42,7 +42,7 @@
 	<div class="mx-auto max-w-7xl">
 		<div class="grid gap-6 items-end mb-12 md:grid-cols-[1fr_auto] md:mb-16">
 			<div>
-				<p class="text-sm font-bold tracking-[0.16em] text-orange-800 uppercase">Selected builds</p>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">Selected builds</p>
 				<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
 					Problems worth solving, start to finish
 				</h2>

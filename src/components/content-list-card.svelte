@@ -47,7 +47,7 @@
 		</div>
 
 		<div class="pt-6 pb-4">
-			<p class="text-xs font-bold tracking-[0.16em] text-orange-800 uppercase">
+			<p class="text-xs font-bold tracking-[0.16em] text-orange-700 uppercase">
 				{#if metadata.kind === 'date'}
 					<time datetime={metadata.dateTime}>{metadata.text}</time>
 				{:else}

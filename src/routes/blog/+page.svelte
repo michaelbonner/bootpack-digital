@@ -77,7 +77,7 @@
 		</article>
 
 		<div class="mt-16 mb-12 md:mt-24 md:mb-16">
-			<p class="text-sm font-bold tracking-[0.16em] text-orange-800 uppercase">More posts</p>
+			<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">More posts</p>
 			<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
 				What we have been building and learning
 			</h2>

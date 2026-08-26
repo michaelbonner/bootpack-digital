@@ -27,7 +27,7 @@
 	<div class="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 md:py-24 lg:px-8 lg:py-28">
 		<div class="grid gap-8 items-end lg:grid-cols-[minmax(0,1.35fr)_minmax(20rem,0.65fr)] lg:gap-20">
 			<div>
-				<p class="mb-5 text-sm font-bold tracking-[0.18em] text-orange-800 uppercase">
+				<p class="mb-5 text-sm font-bold tracking-[0.18em] text-orange-700 uppercase">
 					{eyebrow}
 				</p>
 				<h1
