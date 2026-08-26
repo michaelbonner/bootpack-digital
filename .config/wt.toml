@@ -1,0 +1,2 @@
+[pre-start]
+setup = "cp {{ base_worktree_path }}/.env .env && bun install"
