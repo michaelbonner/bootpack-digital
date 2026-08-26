@@ -1,4 +1,4 @@
-import WasatchFabrication from '../../images/work/wasatch-fabrication.jpg?enhanced';
+import WasatchFabrication from '../../images/work/wasatch-fabrication.jpg?w=320;480;640;800;960;1200&enhanced';
 import AdminDashboard from '../../images/case-study/wasatch-fabrication/admin-dashboard.jpg?enhanced';
 import AdminQuote from '../../images/case-study/wasatch-fabrication/admin-quote.jpg?enhanced';
 import DashboardHome from '../../images/case-study/wasatch-fabrication/dashboard-home.jpg?enhanced';
@@ -9,7 +9,7 @@ import DashboardQuotes from '../../images/case-study/wasatch-fabrication/dashboa
 import MarketingHome from '../../images/case-study/wasatch-fabrication/marketing-home.jpg?enhanced';
 import MarketingService from '../../images/case-study/wasatch-fabrication/marketing-service.jpg?enhanced';
 
-import EnergySafeKidsHome from '../../images/case-study/energysafekids/general-home.jpg?enhanced';
+import EnergySafeKidsHome from '../../images/case-study/energysafekids/general-home.jpg?w=320;480;640;800;960;1200&enhanced';
 import EnergySafeKidsAbout from '../../images/case-study/energysafekids/general-about.jpg?enhanced';
 import EnergySafeKidsTeachers from '../../images/case-study/energysafekids/general-teachers.jpg?enhanced';
 import RockyMountainPowerHome from '../../images/case-study/energysafekids/rmp-home.jpg?enhanced';
