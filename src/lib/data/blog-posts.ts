@@ -1,5 +1,5 @@
 import type { Picture } from 'vite-imagetools';
-import officeLunchThumbnail from '../../images/officelunch-screenshots/homepage-hero.jpg?w=320;480;640;800;960;1200&enhanced';
+import officeLunchThumbnail from '../../images/officelunch-screenshots/homepage-hero.png?w=320;480;640;800;960;1200&enhanced';
 import jobListingThumbnail from '../../images/joblisting-app-screenshots/homepage.jpg?w=320;480;640;800;960;1200&enhanced';
 import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?w=320;480;640;800;960;1200&enhanced';
 import aiThumbnail from '../../images/rapid-iteration-with-ai.jpg?w=320;480;640;800;960;1200&enhanced';

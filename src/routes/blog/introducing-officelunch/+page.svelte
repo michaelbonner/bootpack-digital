@@ -3,19 +3,19 @@
 	import Seo from '../../../components/seo.svelte';
 	import Breadcrumbs from '../../../components/breadcrumbs.svelte';
 
-	import homepage from '../../../images/officelunch-screenshots/homepage.jpg?enhanced';
-	import pricing from '../../../images/officelunch-screenshots/pricing.jpg?enhanced';
-	import dashboard from '../../../images/officelunch-screenshots/dashboard.jpg?enhanced';
-	import vote from '../../../images/officelunch-screenshots/vote.jpg?enhanced';
-	import votingResults from '../../../images/officelunch-screenshots/voting-results.jpg?enhanced';
-	import restaurants from '../../../images/officelunch-screenshots/restaurants.jpg?enhanced';
-	import restaurantRequests from '../../../images/officelunch-screenshots/restaurant-requests.jpg?enhanced';
-	import orderManagement from '../../../images/officelunch-screenshots/order-management.jpg?enhanced';
-	import orderPreferences from '../../../images/officelunch-screenshots/order-preferences.jpg?enhanced';
-	import users from '../../../images/officelunch-screenshots/users.jpg?enhanced';
-	import organizations from '../../../images/officelunch-screenshots/organizations.jpg?enhanced';
-	import settings from '../../../images/officelunch-screenshots/settings.jpg?enhanced';
-	import apiTokens from '../../../images/officelunch-screenshots/api-tokens.jpg?enhanced';
+	import homepage from '../../../images/officelunch-screenshots/homepage.png?enhanced';
+	import pricing from '../../../images/officelunch-screenshots/pricing.png?enhanced';
+	import dashboard from '../../../images/officelunch-screenshots/dashboard.png?enhanced';
+	import vote from '../../../images/officelunch-screenshots/vote.png?enhanced';
+	import votingResults from '../../../images/officelunch-screenshots/voting-results.png?enhanced';
+	import restaurants from '../../../images/officelunch-screenshots/restaurants.png?enhanced';
+	import restaurantRequests from '../../../images/officelunch-screenshots/restaurant-requests.png?enhanced';
+	import orderManagement from '../../../images/officelunch-screenshots/order-management.png?enhanced';
+	import orderPreferences from '../../../images/officelunch-screenshots/order-preferences.png?enhanced';
+	import users from '../../../images/officelunch-screenshots/users.png?enhanced';
+	import organizations from '../../../images/officelunch-screenshots/organizations.png?enhanced';
+	import settings from '../../../images/officelunch-screenshots/settings.png?enhanced';
+	import apiTokens from '../../../images/officelunch-screenshots/api-tokens.png?enhanced';
 	import { resolve } from '$app/paths';
 
 	const datePublished = '2026-05-02';
