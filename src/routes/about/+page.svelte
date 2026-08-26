@@ -111,9 +111,9 @@
 			</div>
 		</div>
 
-		<dl class="grid gap-px mt-14 bg-blue-200 border border-blue-200 rounded-xl overflow-hidden sm:grid-cols-3 md:mt-20">
+		<dl class="grid gap-px mt-14 rounded-xl overflow-hidden sm:grid-cols-3 md:mt-20">
 			{#each facts as fact (fact.label)}
-				<div class="px-6 py-7 bg-blue-50/90">
+				<div class="px-6 py-7 bg-white/80">
 					<dt class="text-xs font-bold tracking-[0.16em] text-orange-700 uppercase">
 						{fact.label}
 					</dt>
