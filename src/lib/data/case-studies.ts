@@ -1,4 +1,4 @@
-import WasatchFabrication from '../../images/work/wasatch-fabrication.jpg?w=320;480;640;800;960;1200&enhanced';
+import WasatchFabrication from '../../images/work/wasatch-fabrication.jpg?w=320;480;640;800;960;1200;1440&enhanced';
 import AdminDashboard from '../../images/case-study/wasatch-fabrication/admin-dashboard.jpg?enhanced';
 import AdminQuote from '../../images/case-study/wasatch-fabrication/admin-quote.jpg?enhanced';
 import DashboardHome from '../../images/case-study/wasatch-fabrication/dashboard-home.jpg?enhanced';
