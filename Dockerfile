@@ -1,72 +1,29 @@
-# syntax=docker/dockerfile:1
-
 # =====================================================================
-# Production image for Bootpack Digital.
+# Runtime image for Bootpack Digital.
 #
-# Built in GitHub Actions (see .github/workflows/deploy.yml) and pushed to
-# GHCR; Dokploy only pulls and runs it. Previously Dokploy built this on the
-# production box with nixpacks, which pinned the CPU for the length of every
-# `vite build` and made deploys compete with the live site for RAM.
+# This image is NOT where the app is built. `bun install` and `vite build` run
+# on the GitHub runner (see .github/actions/build-image), so the build context
+# arriving here is a tree that has already been installed and built, and this
+# file only lays it into a Bun image and drops privileges.
 #
-# The build needs NO database and NO real secrets. Everything private is read
-# through `$env/dynamic/private` (i.e. process.env at container start), so none
-# of it is inlined into the bundle. Only the `$env/static/public` values below
-# are needed at build time, and those ship to every browser anyway.
+# The reason is cache lifetime. About 90s of every cold build was
+# @sveltejs/enhanced-img re-encoding ~300 avif/webp variants; vite-imagetools
+# caches those in node_modules/.cache/imagetools, and that cache can only be
+# carried between CI runs by actions/cache, which has nothing to hook into
+# inside a build layer. Building on the runner also removes the need for
+# `cache-to: type=gha,mode=max`, which was spending 51s exporting layers to buy
+# back a single ~11s `bun install`.
 #
-# Both stages resolve the same base through this one ARG so they cannot drift
-# apart, and so there is a single place to pin. Override to pin an exact image:
+# The trade is that node_modules is copied in rather than resolved here, so the
+# machine that builds the context and this image have to be the same platform.
+# Both are linux/amd64 (ubuntu-latest runners, oven/bun:1), and the workflow
+# passes --platform linux/amd64 to keep it that way.
+#
+# Override the base to pin an exact image:
 #   docker build --build-arg BUN_IMAGE=oven/bun:1@sha256:<digest> .
 # =====================================================================
 ARG BUN_IMAGE=oven/bun:1
-
-FROM ${BUN_IMAGE} AS build
-WORKDIR /app
-
-# Install dependencies first so this layer caches unless the lockfile moves.
-# devDependencies are needed both for the build (vite, svelte, tailwind) and at
-# runtime (drizzle-kit runs the migrations on start), so this is deliberately
-# not a --production install.
-#
-# --ignore-scripts: nothing here needs a postinstall, and it also skips the root
-# `prepare` (`svelte-kit sync` plus `lefthook install`, which has no git repo to
-# install into here). The SvelteKit Vite plugin re-runs the sync during build.
-COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile --ignore-scripts
-
-COPY . .
-
-# `$env/static/public` values — inlined into the client bundle at build time, so
-# they must be present now rather than at container start. All three are public:
-# two feature flags and the Turnstile *site* key. Preview builds pass
-# Cloudflare's always-passes test site key instead of the live one.
-ARG PUBLIC_TEST_CONTACT_FORM
-ARG PUBLIC_POSTHOG_ENABLED
-ARG PUBLIC_TURNSTILE_SITE_KEY
-ENV PUBLIC_TEST_CONTACT_FORM=$PUBLIC_TEST_CONTACT_FORM \
-    PUBLIC_POSTHOG_ENABLED=$PUBLIC_POSTHOG_ENABLED \
-    PUBLIC_TURNSTILE_SITE_KEY=$PUBLIC_TURNSTILE_SITE_KEY
-
-# SvelteKit's build imports every server route once to read its page options, so
-# any module doing work at import time has to be satisfiable. These placeholders
-# are scoped to this RUN, so they never reach the image's ENV — and every module
-# that reads them uses `$env/dynamic/private`, so the running container sees the
-# real Dokploy values. Nothing connects during the build and nothing is
-# prerendered against a database.
-RUN DATABASE_URL=postgres://build:build@127.0.0.1:5432/build \
-    BETTER_AUTH_SECRET=build_time_placeholder_not_used_at_runtime \
-    bun run build
-
-# =====================================================================
-# Runtime — stays on the same Bun base as the build stage so the native
-# binaries resolved during install are still the right ones.
-#
-# The whole /app tree is carried over rather than just build/: SvelteKit
-# externalizes dependencies from the server bundle (so build/server still
-# imports from node_modules at runtime), and `drizzle-kit migrate` needs
-# drizzle/, drizzle.config.ts and the schema — with drizzle-kit itself being a
-# devDependency.
-# =====================================================================
-FROM ${BUN_IMAGE} AS runtime
+FROM ${BUN_IMAGE}
 WORKDIR /app
 
 # HOST/PORT are what svelte-adapter-bun's server reads to bind.
@@ -74,19 +31,27 @@ ENV NODE_ENV=production \
     PORT=3000 \
     HOST=0.0.0.0
 
+# The whole tree comes over rather than just build/: SvelteKit externalizes
+# dependencies from the server bundle (so build/server still imports from
+# node_modules at runtime), and `drizzle-kit migrate` needs drizzle/,
+# drizzle.config.ts and the schema — with drizzle-kit itself a devDependency.
+# .dockerignore is what keeps the build-only files (source images, the
+# .svelte-kit intermediates, the imagetools cache) out.
+#
 # The base image ships an unprivileged `bun` user (uid/gid 1000) but still
 # defaults to root. Copy the tree with that ownership and drop to it, so neither
 # the drizzle-kit migration nor the server runs as root inside the container.
 # Ownership matters as well as the USER: bun writes into node_modules/.cache.
-COPY --from=build --chown=bun:bun /app ./
+COPY --chown=bun:bun . ./
 USER bun
 
 EXPOSE 3000
 
 # Runtime config (DATABASE_URL, TELEGRAM_*, TURNSTILE_SECRET_KEY, ...) is
-# injected by Dokploy as container env vars.
+# injected by Dokploy as container env vars and read through
+# `$env/dynamic/private`, so none of it is needed to produce this image.
 #
-# `start` = `bun run db:migrate && bun ./server.js`, exactly as before. A failed
-# migration exits non-zero before the server binds, so the new container never
-# becomes healthy and Dokploy keeps the previous one serving.
+# `start` = `bun run db:migrate && bun ./server.js`. A failed migration exits
+# non-zero before the server binds, so the new container never becomes healthy
+# and Dokploy keeps the previous one serving.
 CMD ["bun", "run", "start"]

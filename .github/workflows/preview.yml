@@ -67,33 +67,32 @@ jobs:
         id: vars
         run: echo "image=$(echo "${IMAGE}" | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_OUTPUT"
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v4
-
-      - name: Log in to GHCR
-        uses: docker/login-action@v4
-        with:
-          registry: ghcr.io
-          # PAT with write:packages — the package is user-owned, so the
-          # per-repo GITHUB_TOKEN can't push to it.
-          username: michaelbonner
-          password: ${{ secrets.GHCR_TOKEN }}
-
+      # Same action production uses, so the two build paths cannot drift. It
+      # installs and builds on this runner rather than inside `docker build` —
+      # see the action's header.
+      #
+      # `bun run build` therefore runs PR code on the runner, and the action
+      # keeps the GHCR credential out of every step at or below the build. That
+      # narrows what a compromised dependency can reach during the build; it is
+      # NOT a boundary against the PR author. `pull_request` runs the workflow
+      # and the composite action from the PR's own tree, so a same-repo PR that
+      # wants this secret can just ask for it — as it could before this action
+      # existed, by editing the login step that used to live here. The fork
+      # guard above is what limits that to people who already have write
+      # access, and every other step in this job rests on the same assumption;
+      # the base-branch checkout below is defense in depth on top of it, not a
+      # replacement for it.
       - name: Build & push preview image
-        uses: docker/build-push-action@v7
+        uses: ./.github/actions/build-image
         with:
-          context: .
-          push: true
-          platforms: linux/amd64
           tags: |
             ${{ steps.vars.outputs.image }}:pr-${{ github.event.number }}
             ${{ steps.vars.outputs.image }}:pr-${{ github.event.number }}-${{ github.sha }}
-          build-args: |
-            PUBLIC_TEST_CONTACT_FORM=FALSE
-            PUBLIC_POSTHOG_ENABLED=true
-            PUBLIC_TURNSTILE_SITE_KEY=1x00000000000000000000AA
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          public-test-contact-form: 'FALSE'
+          public-posthog-enabled: 'true'
+          public-turnstile-site-key: '1x00000000000000000000AA'
+          ghcr-username: michaelbonner
+          ghcr-token: ${{ secrets.GHCR_TOKEN }}
 
       # The non-empty check above cannot tell whether the token still WORKS. An
       # expired or revoked one would sail past it, and then saveDockerProvider

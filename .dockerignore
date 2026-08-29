@@ -1,11 +1,16 @@
-# Reinstalled / regenerated inside the image
-node_modules
+# The image is assembled from an already-installed, already-built tree (see
+# Dockerfile), so node_modules/ and build/ are deliberately NOT ignored — they
+# are the payload. Everything below is either regenerated, build-only, or must
+# never reach a published image.
+
+# Build-only. .svelte-kit is vite's intermediate output; the adapter has already
+# copied what the server needs into build/. node_modules/.cache is the
+# imagetools variant cache — ~100MB of generated avif/webp that actions/cache
+# carries between CI runs and that nothing reads at runtime.
 .svelte-kit
-build
+node_modules/.cache
 
 # bunfig.toml sets minimumReleaseAge, a guard for interactive `bun add` in dev.
-# The image installs from a frozen lockfile where nothing is resolved, so it can
-# only cause surprises.
 bunfig.toml
 
 # Version control / CI
@@ -13,9 +18,9 @@ bunfig.toml
 .gitignore
 .github
 
-# Local env & secrets. Runtime env comes from Dokploy; build-time values come
-# from build-args. Without this, a local .env would be baked into a published
-# GHCR image.
+# Local env & secrets. Runtime env comes from Dokploy; the build-time
+# `$env/static/public` values are baked in on the runner before the context is
+# assembled. Without this, a local .env would end up in a published GHCR image.
 .env
 .env.*
 !.env.example
@@ -31,11 +36,13 @@ Dockerfile
 .dokploy
 lefthook.yml
 
-# Tests and their fixtures
+# Tests and their fixtures. Scoped to src/ rather than **/ now that
+# node_modules is part of the context: a bare **/*.test.ts would also prune
+# files out of installed packages.
 playwright.config.ts
 e2e
-**/*.test.ts
-**/*.spec.ts
+src/**/*.test.ts
+src/**/*.spec.ts
 test-results
 playwright-report
 

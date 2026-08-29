@@ -1,0 +1,135 @@
+name: Build & push the app image
+description: >-
+  Install and build the SvelteKit app on the runner, then push a runtime image
+  to GHCR. Shared by deploy.yml (production) and preview.yml (per-PR).
+
+# Why the build happens here and not inside `docker build`:
+#
+# Roughly 90s of every cold build was @sveltejs/enhanced-img re-encoding ~300
+# avif/webp variants. vite-imagetools caches those under
+# node_modules/.cache/imagetools, but a cache that lives inside a build layer
+# has nothing for actions/cache to hook into, so every run started cold. Doing
+# the install and build on the runner lets actions/cache carry both the bun
+# install cache and the image variants between runs, and lets us drop
+# `cache-to: type=gha,mode=max`, which was spending ~51s exporting layers to buy
+# back a single ~11s install.
+#
+# The Dockerfile therefore consumes an already-built tree. See its header for
+# the platform constraint that comes with copying node_modules in.
+
+inputs:
+  tags:
+    description: Newline-separated list of full image refs to tag and push.
+    required: true
+  public-test-contact-form:
+    description: PUBLIC_TEST_CONTACT_FORM, inlined into the client bundle.
+    required: true
+  public-posthog-enabled:
+    description: PUBLIC_POSTHOG_ENABLED, inlined into the client bundle.
+    required: true
+  public-turnstile-site-key:
+    description: PUBLIC_TURNSTILE_SITE_KEY, inlined into the client bundle.
+    required: true
+  ghcr-username:
+    description: GHCR user for the push login.
+    required: true
+  ghcr-token:
+    description: PAT with write:packages. Only reaches the login and push steps.
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - uses: oven-sh/setup-bun@v2
+
+    - name: Restore the bun install cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.bun/install/cache
+        key: bun-install-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+        restore-keys: bun-install-${{ runner.os }}-
+
+    # --ignore-scripts matches what the Dockerfile used to do: nothing here
+    # needs a postinstall (sharp and @tailwindcss/oxide ship prebuilt binaries
+    # as optional deps), and it keeps lefthook from installing git hooks onto a
+    # runner. The SvelteKit Vite plugin runs `svelte-kit sync` during the build.
+    - name: Install dependencies
+      shell: bash
+      run: bun install --frozen-lockfile --ignore-scripts
+
+    # Keyed on the images AND the components, because the widths imagetools
+    # generates come from each `<enhanced:img>`'s sizes/width — a layout change
+    # produces new variants even when no image file moved. restore-keys still
+    # gives a warm start on a miss, so the worst case is regenerating the few
+    # variants that actually changed. Bump -v1 to discard the cache entirely;
+    # nothing prunes stale entries out of it.
+    - name: Restore the generated-image cache
+      uses: actions/cache@v4
+      with:
+        path: node_modules/.cache/imagetools
+        key: imagetools-v1-${{ hashFiles('src/images/**', 'src/**/*.svelte', 'bun.lock') }}
+        restore-keys: imagetools-v1-
+
+    # `$env/static/public` values are inlined into the client bundle here.
+    # All three are public: two feature flags and the Turnstile *site* key.
+    #
+    # The DATABASE_URL/BETTER_AUTH_SECRET placeholders are scoped to this step.
+    # SvelteKit's build imports every server route once to read its page
+    # options, so any module doing work at import time has to be satisfiable;
+    # every module that reads them uses `$env/dynamic/private`, so the running
+    # container sees the real Dokploy values. Nothing connects during the build
+    # and nothing is prerendered against a database.
+    - name: Build
+      shell: bash
+      env:
+        PUBLIC_TEST_CONTACT_FORM: ${{ inputs.public-test-contact-form }}
+        PUBLIC_POSTHOG_ENABLED: ${{ inputs.public-posthog-enabled }}
+        PUBLIC_TURNSTILE_SITE_KEY: ${{ inputs.public-turnstile-site-key }}
+        DATABASE_URL: postgres://build:build@127.0.0.1:5432/build
+        BETTER_AUTH_SECRET: build_time_placeholder_not_used_at_runtime
+      run: bun run build
+
+    # Deliberately after the build, so the credential is never in the
+    # environment while `bun run build` runs. That is worth having against a
+    # dependency going bad — `--ignore-scripts` stops postinstall hooks, but
+    # vite plugins still execute — and it is the property the old in-Docker
+    # build had for free. It is not a trust boundary against a PR author: on
+    # `pull_request` this file is checked out from the PR too. See the caller in
+    # preview.yml.
+    - name: Log in to GHCR
+      uses: docker/login-action@v4
+      with:
+        registry: ghcr.io
+        # PAT with write:packages — the package is user-owned, so the per-repo
+        # GITHUB_TOKEN can't push to it. The PAT owner can.
+        username: ${{ inputs.ghcr-username }}
+        password: ${{ inputs.ghcr-token }}
+
+    # Plain docker build/push rather than docker/build-push-action: the
+    # Dockerfile is now a single COPY, so there is nothing left that needs the
+    # buildx container driver. Skipping it drops the ~10s buildkit boot and the
+    # provenance attestation manifest along with it.
+    - name: Build & push image
+      shell: bash
+      env:
+        TAGS: ${{ inputs.tags }}
+      run: |
+        set -euo pipefail
+        args=()
+        refs=()
+        while IFS= read -r tag; do
+          tag="$(echo "$tag" | tr -d '[:space:]')"
+          [ -n "$tag" ] || continue
+          args+=(--tag "$tag")
+          refs+=("$tag")
+        done <<< "$TAGS"
+        if [ "${#refs[@]}" -eq 0 ]; then
+          echo "::error::No image tags were passed to the build-image action."
+          exit 1
+        fi
+        # The Dockerfile copies a node_modules resolved on this runner, so the
+        # platform is fixed rather than incidental.
+        docker build --platform linux/amd64 "${args[@]}" .
+        for ref in "${refs[@]}"; do
+          docker push "$ref"
+        done
