@@ -89,6 +89,31 @@ runs:
         BETTER_AUTH_SECRET: build_time_placeholder_not_used_at_runtime
       run: bun run build
 
+    # The image needs what the server bundle and the drizzle-kit migration
+    # import at runtime; everything else in node_modules was build tooling.
+    # Reinstalling without devDependencies before the context is assembled
+    # roughly halves it (378M -> 173M), which comes off the COPY, the push and
+    # every Dokploy pull.
+    #
+    # bun does not prune in place -- a --production install on top of a full one
+    # only adds -- so node_modules has to go and be rebuilt. The imagetools
+    # cache lives under it and actions/cache does not save until the end of the
+    # job, so it is moved aside and put back. The move stays inside the
+    # workspace to keep it a rename rather than a ~100MB copy.
+    - name: Prune to runtime dependencies
+      shell: bash
+      run: |
+        set -euo pipefail
+        if [ -d node_modules/.cache ]; then
+          mv node_modules/.cache .bun-cache-holdover
+        fi
+        rm -rf node_modules
+        bun install --frozen-lockfile --production --ignore-scripts
+        if [ -d .bun-cache-holdover ]; then
+          mkdir -p node_modules
+          mv .bun-cache-holdover node_modules/.cache
+        fi
+
     # Deliberately after the build, so the credential is never in the
     # environment while `bun run build` runs. That is worth having against a
     # dependency going bad — `--ignore-scripts` stops postinstall hooks, but
