@@ -31,12 +31,14 @@ ENV NODE_ENV=production \
     PORT=3000 \
     HOST=0.0.0.0
 
-# The whole tree comes over rather than just build/: SvelteKit externalizes
-# dependencies from the server bundle (so build/server still imports from
-# node_modules at runtime), and `drizzle-kit migrate` needs drizzle/,
-# drizzle.config.ts and the schema — with drizzle-kit itself a devDependency.
-# .dockerignore is what keeps the build-only files (source images, the
-# .svelte-kit intermediates, the imagetools cache) out.
+# node_modules comes over rather than just build/, because SvelteKit
+# externalizes dependencies from the server bundle — build/server still imports
+# @sveltejs/kit, svelte, drizzle-orm, postgres and friends at runtime. The
+# runner has already reinstalled it without devDependencies, so what arrives is
+# the runtime set; `drizzle-kit migrate` also needs drizzle/, drizzle.config.ts
+# and the schema, which is why drizzle-kit is a dependency and src/ stays.
+# .dockerignore keeps the rest of the build-only files (the .svelte-kit
+# intermediates, the imagetools cache) out.
 #
 # The base image ships an unprivileged `bun` user (uid/gid 1000) but still
 # defaults to root. Copy the tree with that ownership and drop to it, so neither
