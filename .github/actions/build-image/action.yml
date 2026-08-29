@@ -89,10 +89,13 @@ runs:
         BETTER_AUTH_SECRET: build_time_placeholder_not_used_at_runtime
       run: bun run build
 
-    # Deliberately after the build. On a PR, `bun run build` executes code from
-    # the PR; keeping every step that has the registry credential in scope below
-    # it means that code never runs with the token in its environment, which is
-    # the same property the old in-Docker build had for free.
+    # Deliberately after the build, so the credential is never in the
+    # environment while `bun run build` runs. That is worth having against a
+    # dependency going bad — `--ignore-scripts` stops postinstall hooks, but
+    # vite plugins still execute — and it is the property the old in-Docker
+    # build had for free. It is not a trust boundary against a PR author: on
+    # `pull_request` this file is checked out from the PR too. See the caller in
+    # preview.yml.
     - name: Log in to GHCR
       uses: docker/login-action@v4
       with:
