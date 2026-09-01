@@ -4,6 +4,8 @@
 	import Seo from '../../components/seo.svelte';
 	import TopoHeroBg from '../../components/topo-hero-bg.svelte';
 	import WorkItem from '../../components/work-item.svelte';
+	import LinkArrow from '../../components/link-arrow.svelte';
+	import { services } from '$lib/data/services';
 	// images
 	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?w=320;480;640;800;960;1200&enhanced';
 	import Cosgriff from '../../images/work/cosgriff.jpg?w=320;480;640;800;960;1200&enhanced';
@@ -253,6 +255,57 @@
 				lazy={true}
 			/>
 		</div>
+	</div>
+</section>
+
+<section class="px-4 py-16 bg-blue-50 sm:px-6 md:py-24 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="grid gap-6 items-end mb-12 md:grid-cols-[1fr_auto] md:mb-16">
+			<div>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">What goes into it</p>
+				<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
+					The services behind this work
+				</h2>
+			</div>
+			<a
+				class="inline-flex items-center font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600 md:justify-self-end"
+				href={resolve('/services')}
+			>
+				See all of our services
+				<LinkArrow class="ml-2" />
+			</a>
+		</div>
+
+		<ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+			{#each services as service (service.id)}
+				<li>
+					<a
+						class="flex flex-col p-7 h-full bg-white rounded-2xl border border-blue-200 transition-colors group hover:border-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
+						href="{resolve('/services')}#{service.id}"
+					>
+						<svg
+							aria-hidden="true"
+							class="size-7 text-blue-600"
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="1.5"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d={service.path} />
+						</svg>
+						<h3
+							class="mt-5 text-xl font-bold tracking-tight text-navy-700 group-hover:underline group-hover:decoration-blue-300 group-hover:underline-offset-4"
+						>
+							{service.shortTitle}
+						</h3>
+						<p class="mt-3 text-base leading-7 text-gray-600">{service.shortSummary}</p>
+					</a>
+				</li>
+			{/each}
+		</ul>
 	</div>
 </section>
 

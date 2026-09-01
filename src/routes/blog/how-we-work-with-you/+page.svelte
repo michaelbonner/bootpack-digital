@@ -96,6 +96,11 @@
 			Who are your users? What does success look like? What has been tried before? Answering those
 			questions helps us define the right project before development begins.
 		</p>
+		<p>
+			That first conversation is the same no matter which of our
+			<a href="/services">design and development services</a> a project ends up needing, whether
+			that is a marketing site, a mobile app, or a search visibility problem.
+		</p>
 
 		<h2>Everything lives in Basecamp</h2>
 		<p>

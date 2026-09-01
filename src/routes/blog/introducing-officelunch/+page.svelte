@@ -349,6 +349,11 @@ olm admin lunch set <restaurant-id>`}</code
 			give it a try at
 			<a href="https://officelunch.app/">officelunch.app</a>.
 		</p>
+		<p>
+			We built Office Lunch App the same way we build for clients. If your team needs a tool like
+			this one, that is what our <a href="/services#web-development">web application development</a>
+			work is for.
+		</p>
 	</div>
 </div>
 

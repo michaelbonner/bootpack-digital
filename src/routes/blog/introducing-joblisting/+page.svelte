@@ -238,6 +238,11 @@
 			If applications are scattered across forms, email, and spreadsheets, visit
 			<a href="https://joblisting.app/">JobListing</a> to see the full workflow.
 		</p>
+		<p>
+			JobListing is our own product, but the work behind it is the same
+			<a href="/services#web-development">custom software development</a> we do for clients who need
+			a tool built around how their team actually works.
+		</p>
 	</div>
 </div>
 

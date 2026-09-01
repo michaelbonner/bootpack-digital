@@ -206,6 +206,10 @@
 			<a href="https://easycustomerfeedback.com/">easycustomerfeedback.com</a>. And yes, you can use
 			it to tell us what needs work.
 		</p>
+		<p>
+			If you would rather have something built around your own workflow, that is what our
+			<a href="/services">design and development services</a> cover.
+		</p>
 	</div>
 </div>
 
