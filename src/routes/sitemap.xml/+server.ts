@@ -19,6 +19,10 @@ const routes = [
 		priority: 0.5
 	},
 	{
+		route: '/services',
+		priority: 0.8
+	},
+	{
 		route: '/work',
 		priority: 0.5
 	},

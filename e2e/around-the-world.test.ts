@@ -7,6 +7,9 @@ test('can load all pages', async ({ page }) => {
 	await page.goto('/about');
 	await expect(page.locator('h1')).toBeVisible();
 
+	await page.goto('/services');
+	await expect(page.locator('h1')).toBeVisible();
+
 	await page.goto('/work');
 	await expect(page.locator('h1')).toBeVisible();
 
