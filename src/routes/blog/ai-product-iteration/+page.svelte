@@ -151,6 +151,10 @@
 			working prototype gives the discussion something concrete. You spend less time debating what
 			might work and more time learning from people using it.
 		</p>
+		<p>
+			When a prototype earns its place, it becomes the starting point for the real build, and our
+			<a href="/services">design and development work</a> picks up from there.
+		</p>
 		<p>If you've got an idea you want to explore, let's build something and find out.</p>
 	</div>
 </div>
