@@ -101,6 +101,7 @@
 				linkText="Visit Here Kids Win"
 				poster={HereKidsWin}
 				title="Primary Children's Hospital | Here Kids Win"
+				video="/videos/here-kids-win.mp4"
 			/>
 			<WorkItem
 				description="The premier guiding service based in Utah, offering expert-led courses and trips in backcountry skiing, splitboarding, rock climbing, ice climbing, mountaineering, canyoneering, and avalanche education. With a team of highly experienced guides, UMA helps people of all skill levels explore Utah's mountains, providing both group courses and custom private adventures."

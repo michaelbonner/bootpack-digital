@@ -1,5 +1,6 @@
 <script lang="ts">
   import clsx from "clsx";
+  import { onMount } from "svelte";
   import type { Picture } from "vite-imagetools";
 
   interface Props {
@@ -11,6 +12,8 @@
     linkText?: string;
     caseStudyLink?: string;
     featured?: boolean;
+    /** Optional looping video (e.g. "/videos/foo.mp4") shown over the poster */
+    video?: string;
   }
 
   let {
@@ -22,7 +25,54 @@
     linkText = "View Site",
     caseStudyLink,
     featured = false,
+    video,
   }: Props = $props();
+
+  let media: HTMLAnchorElement;
+  let videoEl = $state<HTMLVideoElement>();
+  // The poster carries SSR and the first paint; the video only mounts on
+  // clients that want motion, and only once the card is nearly in view.
+  let loadVideo = $state(false);
+  let videoPlaying = $state(false);
+
+  function play() {
+    // Autoplay is refused on slow connections and on some mobile power
+    // profiles; the poster underneath stays visible when it is.
+    videoEl?.play().catch(() => {});
+  }
+
+  onMount(() => {
+    if (
+      !video ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.some((entry) => entry.isIntersecting);
+        if (visible) {
+          loadVideo = true;
+          play();
+        } else {
+          videoEl?.pause();
+        }
+      },
+      { rootMargin: "200px" },
+    );
+    observer.observe(media);
+
+    return () => observer.disconnect();
+  });
+
+  // Chromium only honors `autoplay` when the element is muted as it loads,
+  // and Svelte applies `muted` after inserting the node, so start it here.
+  $effect(() => {
+    if (!videoEl) return;
+    videoEl.muted = true;
+    play();
+  });
 </script>
 
 <article
@@ -33,8 +83,9 @@
   )}
 >
   <a
+    bind:this={media}
     class={clsx(
-      "block overflow-hidden bg-blue-100",
+      "relative block overflow-hidden bg-blue-100",
       featured ? "min-h-72 lg:min-h-[30rem]" : "rounded-md",
     )}
     data-sveltekit-reload
@@ -55,6 +106,23 @@
         : "(min-width: 1440px) 432px, (min-width: 1280px) calc(33.333vw - 48px), (min-width: 1024px) calc(50vw - 48px), (min-width: 768px) calc(50vw - 40px), calc(100vw - 32px)"}
       src={poster}
     />
+    {#if video && loadVideo}
+      <!-- Decorative: the poster underneath already carries the alt text -->
+      <video
+        bind:this={videoEl}
+        aria-hidden="true"
+        autoplay
+        class="object-cover absolute inset-0 w-full h-full transition-all duration-700 ease-out group-hover:scale-[1.025]"
+        loop
+        muted
+        onplaying={() => (videoPlaying = true)}
+        playsinline
+        preload="auto"
+        src={video}
+        style:opacity={videoPlaying ? 1 : 0}
+        tabindex="-1"
+      ></video>
+    {/if}
     <span class="sr-only"> (opens a new tab)</span>
   </a>
 
