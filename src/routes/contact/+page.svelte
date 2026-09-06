@@ -67,7 +67,7 @@
 					</p>
 					<a
 						class="inline-flex gap-2 items-center py-3 px-5 mt-6 text-base font-semibold text-white bg-navy-700 rounded-lg transition-colors hover:bg-navy-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
-						href="https://savvycal.com/bootpack/30-minute-project-discussion?utm_source=bootpack_website"
+						href="https://bookameetingtime.com/book/michael-bonner/bootpack-project-discussion-198efa?utm_source=bootpack_website"
 						rel="noopener noreferrer"
 						target="_blank"
 					>

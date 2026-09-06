@@ -4,7 +4,7 @@ const FICTIVEWEB_HOSTS = new Set(['fictiveweb.com', 'www.fictiveweb.com']);
 
 const PATH_REDIRECTS = {
 	'/schedule-a-call':
-		'https://savvycal.com/bootpack/30-minute-project-discussion?utm_source=schedule-a-call',
+		'https://bookameetingtime.com/book/michael-bonner/bootpack-project-discussion-198efa?utm_source=schedule-a-call',
 	'/cms-made-simple-vs-wordpress': 'https://bootpackdigital.com/work'
 };
 
