@@ -17,9 +17,9 @@
   };
 
   const inputClass =
-    "block py-3 px-4 w-full text-base text-gray-700 bg-gray-100 rounded-md border border-gray-200 appearance-none transition-colors focus:bg-white focus:outline-2 focus:-outline-offset-1 focus:outline-blue-500";
+    "block py-3 px-4 w-full text-base text-navy-800 bg-white rounded-lg border border-blue-200 appearance-none transition-colors placeholder:text-gray-400 focus:border-blue-500 focus:outline-2 focus:outline-offset-2 focus:outline-blue-400";
   const labelClass =
-    "block mb-2 text-sm font-semibold tracking-wide text-gray-700";
+    "block mb-2 text-xs font-bold tracking-[0.16em] text-navy-700 uppercase";
 
   const handleSubmit = async (event: SubmitEvent) => {
     event.preventDefault();
@@ -165,10 +165,10 @@
     <div>
       <label class={labelClass} for="organizationType">Organization Type</label>
       <div
-        class="grid grid-cols-[1fr_--spacing(8)] items-center bg-gray-100 rounded-md border border-gray-200 transition-colors focus-within:bg-white focus-within:outline-2 focus-within:-outline-offset-1 focus-within:outline-blue-500"
+        class="grid grid-cols-[1fr_--spacing(8)] items-center bg-white rounded-lg border border-blue-200 transition-colors focus-within:border-blue-500 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-400"
       >
         <select
-          class="col-span-full row-start-1 py-3 px-4 pr-8 w-full text-base text-gray-700 bg-transparent appearance-none focus:outline-hidden"
+          class="col-span-full row-start-1 py-3 px-4 pr-8 w-full text-base text-navy-800 bg-transparent appearance-none focus:outline-hidden"
           id="organizationType"
           name="organizationType"
           value={organizationType}
@@ -259,16 +259,16 @@
       <Turnstile />
     </div>
     {#if errorMessage}
-      <p class="text-sm text-red-600 sm:col-span-2" role="alert">
+      <p class="text-sm font-medium text-orange-700 sm:col-span-2" role="alert">
         {errorMessage}
       </p>
     {/if}
     <div class={clsx("flex justify-start sm:col-span-2", "xl:justify-end")}>
       <button
         class={clsx(
-          "py-3 px-5 w-full text-base font-medium leading-6 text-white rounded-md border border-transparent transition duration-150 ease-in-out",
+          "py-3 px-6 w-full text-base font-semibold text-white rounded-lg transition-colors",
           "lg:w-auto",
-          "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700",
+          "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600",
           "disabled:opacity-60 disabled:cursor-not-allowed",
           isPride
             ? "pride-button hover:brightness-110"
@@ -283,7 +283,7 @@
   </div>
 </form>
 <div class={clsx(!submitted && "hidden")}>
-  <div class="flex flex-col gap-4 items-center py-6 text-center">
+  <div class="flex flex-col gap-4 items-center p-7 bg-white rounded-xl border border-blue-200 text-center sm:p-8">
     <span
       class="flex justify-center items-center bg-blue-100 rounded-full size-12"
     >
@@ -300,10 +300,10 @@
         />
       </svg>
     </span>
-    <h2 class="text-2xl font-semibold tracking-tight text-navy-600">
+    <h2 class="text-2xl font-bold tracking-tight text-navy-700">
       Application received!
     </h2>
-    <p class="max-w-md text-pretty text-gray-600">
+    <p class="max-w-md text-base leading-7 text-gray-600">
       Thank you for telling us about your organization. We review applications
       every quarter and reach out directly to the organization we select. Your
       application stays on file for future rounds. In the meantime, keep up the

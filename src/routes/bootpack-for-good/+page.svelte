@@ -1,7 +1,16 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import clsx from 'clsx';
 	import FreeWebsiteForm from '../../components/free-website-form.svelte';
+	import LinkArrow from '../../components/link-arrow.svelte';
 	import Seo from '../../components/seo.svelte';
+	import TopoHeroBg from '../../components/topo-hero-bg.svelte';
+
+	const facts = [
+		{ value: 'One website', label: 'Built each quarter' },
+		{ value: 'Up to five pages', label: 'Designed and developed' },
+		{ value: '$0', label: 'Your total cost' }
+	];
 
 	const steps = [
 		{
@@ -87,114 +96,123 @@
 	ogImageAlt="Bootpack for Good: free websites for Salt Lake organizations doing good"
 />
 
-<div class="relative bg-blue-50">
-	<div
-		class="absolute inset-0 w-full h-full"
-		style="background-image: url('/images/blue-topo.svg'); background-size: 600px 600px; background-repeat: repeat;"
-		aria-hidden="true"
-	></div>
-	<div
-		class="grid relative gap-12 items-center px-4 py-16 mx-auto max-w-6xl sm:px-6 lg:grid-cols-2 lg:py-24 lg:px-8"
-	>
-		<div>
-			<p class="text-sm font-bold tracking-widest text-orange-700 uppercase">Bootpack for Good</p>
-			<h1
-				class="mt-3 max-w-[18ch] text-balance text-[2rem] font-semibold tracking-tight text-navy-500 md:text-4xl xl:text-5xl"
-			>
-				Free websites for Salt Lake organizations
-				<span class="text-blue-500">doing good</span>
-			</h1>
-			<p class="mt-6 max-w-xl text-pretty text-base text-blue-700 md:text-lg">
-				The work you do deserves a website that helps, not one that holds you back. Each quarter, we
-				partner with one local nonprofit or community organization to design and build a brand-matched site, completely free. You walk away owning it outright, with no monthly fees or strings. We're a Salt Lake studio that builds for paying clients, and this is how we give back.
-			</p>
-			<div class="flex flex-wrap gap-5 items-center mt-8">
-				<a
-					class="flex justify-center items-center py-3 px-5 text-base font-medium leading-6 text-white bg-orange-700 rounded-md border border-transparent transition duration-150 ease-in-out hover:bg-orange-600 focus:outline-hidden focus:shadow-outline"
-					href="#apply"
-				>
-					Apply for a free website
-				</a>
-				<a
-					class="text-base font-semibold text-blue-700 transition-colors hover:text-blue-600"
-					href="#how"
-				>
-					See how it works
-				</a>
-			</div>
-		</div>
-		<div class="p-8 bg-white rounded-xl border shadow-sm border-navy-100">
-			<p class="text-sm font-bold tracking-widest text-orange-700 uppercase">
-				What you walk away with
-			</p>
-			<ul role="list" class="mt-4 space-y-3">
-				{#each included.slice(0, 4) as item (item)}
-					<li class="flex gap-3 items-start text-gray-700">
-						{@render check('mt-1')}
-						<span>{item}</span>
-					</li>
-				{/each}
-			</ul>
-		</div>
-	</div>
-</div>
-
-<section id="how" class="px-4 py-16 bg-white sm:px-6 lg:py-20 lg:px-8 scroll-mt-20">
-	<div class="mx-auto max-w-5xl">
-		<h2 class="text-2xl font-semibold tracking-tight text-balance text-center text-navy-600 md:text-3xl">
-			How it works
-		</h2>
-		<div class="grid gap-8 mt-12 sm:grid-cols-2">
-			{#each steps as step, i (step.title)}
-				<div class="flex gap-4 items-start">
-					<div
-						class="flex shrink-0 justify-center items-center w-10 h-10 text-lg font-bold text-white bg-blue-600 rounded-full"
-						aria-hidden="true"
+	<section class="overflow-hidden relative bg-blue-50">
+		<TopoHeroBg />
+		<div class="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 md:py-24 lg:px-8 lg:py-28">
+			<div class="grid gap-8 items-end lg:grid-cols-[minmax(0,1.35fr)_minmax(20rem,0.65fr)] lg:gap-20">
+				<div>
+					<p class="mb-5 text-sm font-bold tracking-[0.18em] text-orange-700 uppercase">
+						Bootpack for Good
+					</p>
+					<h1
+						class="max-w-4xl text-4xl font-extrabold tracking-tight leading-[1.04] text-navy-700 text-balance sm:text-5xl lg:text-6xl xl:text-7xl"
 					>
-						{i + 1}
-					</div>
-					<div>
-						<h3 class="text-lg font-semibold text-navy-600">{step.title}</h3>
-						<p class="mt-1 text-pretty text-gray-600">{step.body}</p>
+						Free websites for Salt Lake organizations
+						<span class="block text-blue-600">doing good</span>
+					</h1>
+				</div>
+				<div class="pb-1">
+					<p class="max-w-xl text-lg leading-8 text-navy-600">
+						Each quarter, we design and build a website for one local nonprofit or community
+						organization, completely free. You own the finished site outright.
+					</p>
+					<div class="flex flex-wrap gap-x-6 gap-y-4 items-center mt-7">
+						<a
+							class="inline-flex items-center py-3 px-5 text-base font-semibold text-white bg-navy-700 rounded-lg transition-colors hover:bg-navy-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
+							href="#apply"
+						>
+							Apply for a free website
+						</a>
+						<a
+							class="inline-flex items-center font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
+							href="#how"
+						>
+							See how it works
+							<LinkArrow class="ml-2" />
+						</a>
 					</div>
 				</div>
-			{/each}
+			</div>
+
+			<dl class="grid overflow-hidden gap-px mt-14 rounded-xl md:grid-cols-3 md:mt-20">
+				{#each facts as fact (fact.label)}
+					<div class="px-6 py-7 bg-white/80">
+						<dt class="text-xs font-bold tracking-[0.16em] text-orange-700 uppercase">
+							{fact.label}
+						</dt>
+						<dd class="mt-2 text-2xl font-bold tracking-tight text-navy-700 xl:text-3xl">
+							{fact.value}
+						</dd>
+					</div>
+				{/each}
+			</dl>
 		</div>
+	</section>
+
+<section id="how" class="px-4 py-16 bg-navy-800 sm:px-6 md:py-24 lg:px-8 lg:py-28 scroll-mt-20">
+	<div class="mx-auto max-w-7xl">
+		<div class="grid gap-6 items-end mb-12 md:grid-cols-[1fr_auto] md:mb-16">
+			<div>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-300 uppercase">How it works</p>
+				<h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+					Four steps from application to launch
+				</h2>
+			</div>
+			<p class="max-w-md text-base leading-7 text-navy-100 md:text-right">
+				We choose one organization each quarter and work directly with its team to build the right
+				site.
+			</p>
+		</div>
+		<ol class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+			{#each steps as step, i (step.title)}
+				<li class="p-7 rounded-2xl border bg-navy-900/40 border-navy-600">
+					<p class="text-3xl font-extrabold tracking-tight text-blue-300">
+						{String(i + 1).padStart(2, '0')}
+					</p>
+					<h3 class="mt-4 text-xl font-bold tracking-tight text-white">{step.title}</h3>
+					<p class="mt-3 text-base leading-7 text-navy-100">{step.body}</p>
+				</li>
+			{/each}
+		</ol>
 	</div>
 </section>
 
-<section class="px-4 py-16 bg-blue-50 sm:px-6 lg:py-20 lg:px-8">
-	<div class="grid gap-12 mx-auto max-w-5xl lg:grid-cols-2 lg:items-center">
+<section class="px-4 py-16 bg-white sm:px-6 md:py-24 lg:px-8 lg:py-28">
+	<div class="grid gap-12 mx-auto max-w-7xl lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,0.9fr)] lg:gap-20 lg:items-center">
 		<div>
-			<h2 class="text-2xl font-semibold tracking-tight text-balance text-navy-600 md:text-3xl">
-				What you get
+			<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">What you get</p>
+			<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
+				A useful website, built to be yours
 			</h2>
-			<ul class="mt-6 space-y-3" role="list">
+			<ul class="grid gap-4 mt-8" role="list">
 				{#each included as item (item)}
-					<li class="flex gap-3 items-start text-gray-700">
-						{@render check('mt-1')}
-						<span>{item}</span>
+					<li class="flex gap-3 items-start text-base leading-7 text-gray-600">
+						{@render check('mt-1.5')}
+						{item}
 					</li>
 				{/each}
 			</ul>
-			<p class="mt-6">
-				<a
-					class="text-base font-semibold text-blue-700 transition-colors hover:text-blue-600"
-					href="/work"
-				>
-					See examples of our work →
-				</a>
-			</p>
+			<a
+				class="inline-flex items-center mt-8 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
+				href={resolve('/work')}
+			>
+				See the work we've shipped
+				<LinkArrow class="ml-2" />
+			</a>
 		</div>
-		<div class="p-8 bg-white rounded-xl border border-navy-100 shadow-sm">
-			<h3 class="text-xl font-semibold text-navy-600">You own it, not us</h3>
-			<p class="mt-3 text-pretty text-gray-600">
+		<div class="p-7 bg-blue-50 rounded-2xl border border-blue-200 sm:p-9">
+			<svg aria-hidden="true" class="size-9 text-blue-600" fill="none" viewBox="0 0 24 24">
+				<path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" />
+				<path d="M8.5 10 12 12l3.5-2M12 12v5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+			</svg>
+			<h3 class="mt-5 text-2xl font-bold tracking-tight text-navy-700">You own it, not us</h3>
+			<p class="mt-3 text-base leading-7 text-gray-600">
 				This isn't a rented website you have to keep paying for. We build everything in a Git
 				repository that becomes yours, and you control where and how it's deployed.
 			</p>
-			<p class="mt-3 text-pretty text-gray-600">
+			<p class="mt-4 text-base leading-7 text-gray-600">
 				That means no lock-in. Down the road you can update copy, add pages, or redesign the whole
-				thing using modern AI tools like
+				thing using tools like
 				<span class="font-semibold text-navy-600">Claude Code</span> or
 				<span class="font-semibold text-navy-600">ChatGPT</span>, or hand it off to any developer
 				you choose.
@@ -203,60 +221,73 @@
 	</div>
 </section>
 
-<section class="px-4 py-16 bg-white sm:px-6 lg:py-20 lg:px-8">
-	<div class="mx-auto max-w-5xl">
-		<div class="mx-auto max-w-2xl text-center">
-			<h2 class="text-2xl font-semibold tracking-tight text-balance text-navy-600 md:text-3xl">
-				Who can apply
-			</h2>
-			<p class="mx-auto mt-4 text-pretty text-gray-600">
-				We're looking for nonprofits and community organizations based in or serving the greater Salt
-				Lake City area that are making their community better but don't have the budget for a
-				professionally built website. We choose each quarter's recipient based on need and the impact a
-				new site could have. This is for mission-driven groups doing a lot with a little, not
-				well-funded businesses looking for something free.
+<section class="px-4 py-16 bg-blue-50 sm:px-6 md:py-24 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="grid gap-6 items-end mb-12 md:grid-cols-[1fr_auto] md:mb-16">
+			<div>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">Who can apply</p>
+				<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
+					Built for groups doing a lot with a little
+				</h2>
+			</div>
+			<p class="max-w-xl text-base leading-7 text-gray-600 md:text-right">
+				We work with nonprofits and community organizations based in or serving the greater Salt
+				Lake City area. We choose based on need and the impact a new website could have.
 			</p>
 		</div>
-		<ul role="list" class="grid gap-4 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+		<ul role="list" class="grid overflow-hidden gap-px rounded-2xl sm:grid-cols-2 lg:grid-cols-3">
 			{#each orgTypes as type (type)}
-				<li class="flex gap-3 items-center p-5 bg-blue-50 rounded-xl border border-navy-100">
+				<li class="flex gap-3 items-center p-6 bg-white">
 					{@render check('')}
-					<span class="font-semibold text-navy-600">{type}</span>
+					<span class="font-semibold text-navy-700">{type}</span>
 				</li>
 			{/each}
 		</ul>
+		<p class="mt-6 max-w-3xl text-sm leading-6 text-gray-600">
+			This program is for mission-driven groups that cannot afford a professionally built website.
+			It is not intended for well-funded businesses looking for free work.
+		</p>
 	</div>
 </section>
 
-<section id="apply" class="px-4 py-16 bg-blue-50 sm:px-6 lg:py-20 lg:px-8 scroll-mt-20">
-	<div class="mx-auto max-w-3xl">
-		<h2 class="text-2xl font-semibold tracking-tight text-balance text-center text-navy-600 md:text-3xl">
-			Apply for a free website
-		</h2>
-		<p class="mx-auto mt-4 mb-4 max-w-2xl text-pretty text-center text-gray-600">
-			Tell us about your organization. There's no deadline. We review applications and choose a new
-			organization every quarter. If you're not selected right away, your application stays in the running for future quarters.
-		</p>
-		<div class="p-6 bg-white rounded-xl border border-navy-100 shadow-sm sm:p-8">
+<section id="apply" class="px-4 py-16 bg-white sm:px-6 md:py-24 lg:px-8 lg:py-28 scroll-mt-20">
+	<div class="mx-auto max-w-7xl">
+		<div class="grid gap-12 lg:grid-cols-[minmax(18rem,0.65fr)_minmax(0,1.35fr)] lg:gap-20">
+			<div>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">Apply</p>
+				<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
+					Tell us about your organization
+				</h2>
+				<p class="mt-5 max-w-md text-base leading-7 text-gray-600">
+					There is no deadline. We review applications each quarter. If we do not select your
+					organization right away, your application stays in the running for future quarters.
+				</p>
+			</div>
+			<div class="p-6 bg-blue-50 rounded-2xl border border-blue-200 sm:p-8 lg:p-10">
 			<FreeWebsiteForm />
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="px-4 py-16 bg-white sm:px-6 lg:py-20 lg:px-8">
-	<div class="mx-auto max-w-3xl">
-		<h2 class="text-2xl font-semibold tracking-tight text-balance text-center text-navy-600 md:text-3xl">
-			Frequently asked questions
-		</h2>
-		<div class="mt-10 rounded-xl border divide-y divide-navy-100 border-navy-100">
+<section class="px-4 py-16 bg-navy-100 sm:px-6 md:py-24 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="grid gap-10 items-start lg:grid-cols-[minmax(18rem,0.65fr)_minmax(0,1.35fr)] lg:gap-20">
+			<div>
+				<p class="text-sm font-bold tracking-[0.16em] text-orange-700 uppercase">Questions</p>
+				<h2 class="mt-3 text-3xl font-bold tracking-tight text-navy-700 sm:text-4xl">
+					A few things you may want to know
+				</h2>
+			</div>
+			<div class="overflow-hidden bg-white rounded-2xl border divide-y divide-blue-200 border-blue-200">
 			{#each faqs as faq (faq.q)}
 				<details class="group">
 					<summary
-						class="flex gap-4 justify-between items-center px-6 py-5 list-none cursor-pointer [&::-webkit-details-marker]:hidden"
+						class="flex gap-4 justify-between items-center px-6 py-5 list-none cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500 sm:px-8 sm:py-6 [&::-webkit-details-marker]:hidden"
 					>
-						<span class="text-lg font-semibold text-navy-600">{faq.q}</span>
+						<span class="text-lg font-bold text-navy-700">{faq.q}</span>
 						<svg
-							class="shrink-0 w-5 h-5 transition-transform duration-200 text-navy-400 group-open:rotate-180"
+							class="shrink-0 size-5 text-blue-600 transition-transform duration-200 group-open:rotate-180"
 							viewBox="0 0 20 20"
 							fill="currentColor"
 							aria-hidden="true"
@@ -268,9 +299,10 @@
 							/>
 						</svg>
 					</summary>
-					<p class="px-6 pb-5 text-pretty text-gray-600">{faq.a}</p>
+					<p class="px-6 pb-6 max-w-3xl text-base leading-7 text-gray-600 sm:px-8">{faq.a}</p>
 				</details>
 			{/each}
+			</div>
 		</div>
 	</div>
 </section>
