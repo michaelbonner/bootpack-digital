@@ -8,6 +8,7 @@
 	import { services } from '$lib/data/services';
 	// images
 	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?w=320;480;640;800;960;1200&enhanced';
+	import BookAMeetingTime from '../../images/work/book-a-meeting-time.jpg?w=320;480;640;800;960;1200&enhanced';
 	import Cosgriff from '../../images/work/cosgriff.jpg?w=320;480;640;800;960;1200&enhanced';
 	import CrewView from '../../images/work/crewview.jpg?w=320;480;640;800;960;1200&enhanced';
 	import DenverWindowWellCovers from '../../images/work/denver-window-well-covers.jpg?w=320;480;640;800;960;1200&enhanced';
@@ -124,6 +125,13 @@
 				linkText="Visit JobListing"
 				poster={JobListing}
 				title="JobListing.app"
+			/>
+			<WorkItem
+				description="A Bootpack Digital product that ends the back and forth of finding a time to meet. Share one public or private booking link, connect the Google and Apple calendars that matter, and let guests pick from the times that already work for you. Availability rules, time zones, and reminders are handled automatically."
+				link="https://bookameetingtime.com/"
+				linkText="Visit Book a Meeting Time"
+				poster={BookAMeetingTime}
+				title="Book a Meeting Time"
 			/>
 			<WorkItem
 				description="A leading Utah law firm specializing in catastrophic injury and wrongful death cases. With a proven track record of record-breaking verdicts and settlements, DKOW's experienced trial attorneys provide compassionate, results-driven representation for clients across a wide range of personal injury matters."
