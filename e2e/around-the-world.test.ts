@@ -16,6 +16,9 @@ test('can load all pages', async ({ page }) => {
 	await page.goto('/open-source');
 	await expect(page.locator('h1')).toBeVisible();
 
+	await page.goto('/links');
+	await expect(page.locator('h1')).toBeVisible();
+
 	await page.goto('/contact');
 	await expect(page.locator('h1')).toBeVisible();
 
