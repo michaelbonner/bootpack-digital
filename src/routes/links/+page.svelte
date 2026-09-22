@@ -12,6 +12,7 @@
 	import JobListing from '../../images/links/joblisting.jpg?w=288;384;640;800&enhanced';
 	import MichaelBonner from '../../images/links/michaelbonner.jpg?w=288;384;640;800&enhanced';
 	import OfficeLunch from '../../images/links/officelunch.jpg?w=288;384;640;800&enhanced';
+	import WhatToDoInSaltLake from '../../images/links/whattodoinsaltlake.jpg?w=288;384;640;800&enhanced';
 
 	const utm = '?utm_source=bootpackdigital.com/links';
 
@@ -63,6 +64,14 @@
 						'Opt in, vote on a restaurant, save your usual order, and skip the lunch-day chat thread.',
 					href: `https://officelunch.app/${utm}`,
 					display: 'officelunch.app'
+				},
+				{
+					name: 'What To Do In Salt Lake',
+					screenshot: WhatToDoInSaltLake,
+					description:
+						'A two-week agenda of concerts, markets, and meetups around Salt Lake, kept up by people who actually go.',
+					href: `https://whattodoinsaltlake.com/${utm}`,
+					display: 'whattodoinsaltlake.com'
 				}
 			]
 		},
