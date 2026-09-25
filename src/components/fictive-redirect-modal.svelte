@@ -51,7 +51,7 @@
         >
           <div>
             <div
-              class="mx-auto flex max-w-[180px] items-center justify-center rounded-md bg-[#0283C1] px-6 py-4 mt-2"
+              class="mx-auto flex max-w-45 items-center justify-center rounded-md bg-[#0283C1] px-6 py-4 mt-2"
             >
               <img
                 src="/images/fictiveweb-logo.png"
