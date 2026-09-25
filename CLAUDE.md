@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Bootpack Digital website - a SvelteKit 5 static site using Tailwind CSS v4, TypeScript, and deployed on Vercel. This is a marketing website with static prerendering enabled.
+Bootpack Digital website - a SvelteKit 5 static site using Tailwind CSS v4, TypeScript, and deployed on Dokploy. This is a marketing website with static prerendering enabled.
 
 ## Commands
 
@@ -53,7 +53,7 @@ bun run db:studio     # Open Drizzle Studio
 
 ### Framework Setup
 
-- **SvelteKit 5** with adapter-vercel for static deployment
+- **SvelteKit 5** with adapter-node for static deployment
 - **Prerendering**: Site is fully prerendered (set in `+layout.server.ts`)
 - **Svelte 5**: Uses modern Svelte 5 syntax including `$props()`, `$derived`, and `{@render}` blocks
 - **TypeScript**: Full TypeScript support with strict checking enabled
@@ -89,14 +89,14 @@ bun run db:studio     # Open Drizzle Studio
 
 #### Analytics
 
-- **PostHog**: Client-side analytics with proxied API calls through `/ingest/*` (configured in `vercel.json`)
+- **PostHog**: Client-side analytics with proxied API calls through `/ingest/*`
 - Controlled by `PUBLIC_POSTHOG_ENABLED` env variable
 - Custom pageview/pageleave tracking on navigation
 
 #### Partytown
 
 - Google Tag Manager runs in a web worker via Partytown
-- Scripts proxied through `/proxytown/*` endpoints (configured in `vercel.json`)
+- Scripts proxied through `/proxytown/*` endpoints
 - Prevents blocking main thread execution
 
 #### Termageddon
@@ -162,7 +162,6 @@ via Drizzle, and send a Telegram notification (`formatFreeWebsiteApplication`).
 
 ### Redirects and Rewrites
 
-- Configured in `vercel.json`
 - Handles domain redirects (fictiveweb.com → bootpackdigital.com)
 - Proxies for analytics and tag manager
 - Legacy route redirects (e.g., `/blog` → `/about`)
@@ -188,6 +187,6 @@ via Drizzle, and send a Telegram notification (`formatFreeWebsiteApplication`).
 
 ### Deployment
 
-- Auto-deployed to Vercel on push
+- Auto-deployed to Dokploy on push
 - Static site generation (all routes prerendered)
 - Edge network distribution

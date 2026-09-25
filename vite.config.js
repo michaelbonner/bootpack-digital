@@ -41,7 +41,6 @@ export default defineConfig({
 			'**/.env',
 			'**/.env.*',
 			'!**/.env.example',
-			'**/.vercel',
 			'**/.output',
 			'**/playwright-report',
 			'vite.config.js'
