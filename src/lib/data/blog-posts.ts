@@ -1,4 +1,5 @@
 import type { Picture } from 'vite-imagetools';
+import whatToDoInSaltLakeThumbnail from '../../images/whattodoinsaltlake-screenshots/homepage.png?w=320;480;640;800;960;1200&enhanced';
 import officeLunchThumbnail from '../../images/officelunch-screenshots/homepage-hero.png?w=320;480;640;800;960;1200&enhanced';
 import jobListingThumbnail from '../../images/joblisting-app-screenshots/homepage.jpg?w=320;480;640;800;960;1200&enhanced';
 import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?w=320;480;640;800;960;1200&enhanced';
@@ -24,6 +25,14 @@ export const formatBlogPostDate = (publishedAt: BlogPost['publishedAt']) =>
 	blogPostDateFormatter.format(new Date(`${publishedAt}T00:00:00Z`));
 
 export const blogPosts = [
+	{
+		title: 'Introducing What To Do In Salt Lake',
+		slug: 'introducing-whattodoinsaltlake',
+		description:
+			'What To Do In Salt Lake is a two-week agenda of concerts, markets, shows, and meetups around Salt Lake, built to answer one question fast.',
+		publishedAt: '2026-09-24',
+		thumbnail: whatToDoInSaltLakeThumbnail
+	},
 	{
 		title: 'Introducing Office Lunch App',
 		slug: 'introducing-officelunch',
