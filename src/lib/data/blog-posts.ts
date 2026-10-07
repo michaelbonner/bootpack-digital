@@ -26,6 +26,14 @@ export const formatBlogPostDate = (publishedAt: BlogPost['publishedAt']) =>
 
 export const blogPosts = [
 	{
+		title: 'From Lovable to a production app you can trust',
+		slug: 'ai-builder-to-production',
+		description:
+			'Move your Lovable, Bolt.new, Replit, v0, or Base44 app toward production with practical checks for security, reliability, and scale.',
+		publishedAt: '2026-10-07',
+		thumbnail: aiThumbnail
+	},
+	{
 		title: 'Introducing What To Do In Salt Lake',
 		slug: 'introducing-whattodoinsaltlake',
 		description:
