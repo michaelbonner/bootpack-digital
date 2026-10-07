@@ -61,12 +61,12 @@
 </script>
 
 <Seo
-	title="Lovable to Production: Secure, Scalable Apps | Bootpack Digital"
+	title="Lovable to production: secure, scalable apps | Bootpack Digital"
 	{description}
 	{canonical}
 	ogType="article"
 	ogImage="/og-image.jpg"
-	ogImageAlt="Bootpack Digital — web and app development experts based in Salt Lake City, Utah"
+	ogImageAlt="Bootpack Digital, web and app development experts based in Salt Lake City, Utah"
 	{jsonLd}
 />
 
@@ -88,54 +88,45 @@
 			class="mt-8 w-full rounded-lg"
 		/>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
-			You built an app with Lovable or another AI builder. You can click through the screens, save
-			data, and show people how the idea works. Now you're thinking about letting customers depend
-			on it.
+			You built an app with Lovable or another AI builder. People can click through the screens and
+			save data. Now you want to let customers depend on it.
 		</p>
 		<p>
-			That's where a different set of questions starts showing up. Can one customer see another
-			customer's data? What happens when a payment fails? Will the app slow down as people use it?
+			Can one customer see another customer's data? What happens when a payment fails? Will the app
+			slow down as people use it?
 			Can you ship an update without breaking something that already works?
 		</p>
 		<p>
-			We're seeing founders reach this point with real progress behind them and uncertainty about
-			what comes next. At Bootpack Digital, we can help turn that progress into an application you
-			can run with confidence.
+			At Bootpack Digital, we can review your app and help fix the problems that need attention
+			before launch.
 		</p>
 	</div>
 	<div class="px-4 mx-auto mt-12 prose prose-lg text-gray-500 prose-blue">
-		<h2>Taking AI builder apps to production</h2>
+		<h2>Review your AI-built app</h2>
 		<p>
-			AI builders give you a useful way to explore an idea and learn what people need. We
-			<a href={resolve('/blog/ai-product-iteration')}>use AI in our own product work</a> for the same
-			reason: putting working software in front of someone makes the conversation more specific.
+			AI builders help you test an idea with working software. We
+			<a href={resolve('/blog/ai-product-iteration')}>use AI in our own product work</a> so clients can
+			try a product early and tell us where it needs work.
 		</p>
 		<p>
-			An app built with AI may already have a solid foundation. The right next step is to review
-			the code, data, integrations, and hosting against what your business actually needs.
+			Lovable, Bolt.new, Replit Agent, v0 by Vercel, and Base44 offer ways to build and publish apps.
+			Their approaches to code, hosting, databases, authentication, and storage differ. Review the
+			code and services your app uses, and confirm what your business controls. Moving a code
+			repository alone may leave services and data behind.
 		</p>
 		<p>
-			That applies whether you're using Lovable, Bolt.new, Replit Agent, v0 by Vercel, or Base44.
-			Each offers ways to build and publish applications, but the exact mix of code, hosting,
-			databases, authentication, and storage varies. Before changing anything, map those pieces and
-			confirm what your business controls. Moving a code repository alone may leave important
-			services and data behind.
+			Use the review to decide what to keep and what to change. If you propose a migration or
+			rewrite, explain which requirement or limitation makes it necessary.
 		</p>
 		<p>
-			That review should tell you what to keep, what to improve, and whether anything needs to be
-			replaced. Changing platforms or rewriting the whole application should follow a concrete
-			reason, such as a requirement the current setup cannot support.
-		</p>
-		<p>
-			Start by defining the next release. Who will use it? What information will it hold? Which
+			Define the next release. Who will use it? What information will it hold? Which
 			tasks must work reliably? A small internal tool and a customer-facing subscription product
 			need different levels of preparation.
 		</p>
 
 		<h2>Check who can access your data</h2>
 		<p>
-			A working login screen is only the beginning. Your app also needs rules for what each person
-			is allowed to read and change.
+			Define what each user can read and change after they sign in.
 		</p>
 		<p>
 			For example, if two companies use your product, someone at Company A should never be able to
@@ -152,9 +143,8 @@
 			on the server, even if the form already checks it.
 		</p>
 		<p>
-			Use the security tools your builder provides, then verify the rules against your actual
-			product. A scan can help find problems, but the intended access rules still need to be defined
-			and tested.
+			Use your builder's security tools to check for coding and configuration problems. Also test
+			whether the app enforces the access rules you defined.
 		</p>
 
 		<h2>Test what happens when a task goes wrong</h2>
@@ -163,28 +153,27 @@
 			through a task. An outside service may respond slowly or send the same notification twice.
 		</p>
 		<p>
-			Payments are a good example. Your server should verify payment notifications, called
-			webhooks, and handle repeated delivery without fulfilling the same order twice. Engineers
-			call this idempotency: repeating an operation does not repeat its effect.
+			Your server should verify payment notifications, called webhooks. Handle repeated delivery
+			so the app fulfills each order only once. Engineers call this idempotency. Repeating an
+			operation does not repeat its effect.
 		</p>
 		<p>
-			Also test failed payments, cancellations, and delayed notifications. Paid access should
-			reflect verified payment or subscription state. A successful-looking checkout screen is
-			insufficient evidence on its own.
+			Test failed payments, cancellations, and delayed notifications. Grant paid access based on
+			verified payment or subscription state. The checkout screen alone cannot confirm that.
 		</p>
 		<p>
-			Apply the same thinking to uploads, invitations, bookings, and any workflow your customers
-			rely on. Can the user tell whether it finished? Is retrying safe? Can you recover from a
-			partial failure?
+			Test interruptions in uploads, invitations, bookings, and other workflows your customers
+			rely on. Can the user tell whether the task finished? Is retrying safe? Can you recover from
+			a partial failure?
 		</p>
 		<p>
-			Add automated tests around the most important flows and the problems you uncover. Those tests
-			give you a repeatable way to check future changes, including code generated by AI.
+			Automate tests for critical workflows and the problems you find. Run them before shipping
+			future changes, including code generated by AI.
 		</p>
 
 		<h2>Measure the workload you expect</h2>
 		<p>
-			Scalability starts with understanding how people will use the app. A thousand people reading
+			The workload depends on how people use the app. A thousand people reading
 			a public page creates a different workload from a hundred people uploading files and
 			generating reports at once.
 		</p>
@@ -193,82 +182,75 @@
 			database queries, failure rates, and the cost of completing important tasks.
 		</p>
 		<p>
-			The results should guide the work. A growing list might need pagination so it loads a page of
+			A growing list might need pagination so it loads a page of
 			records at a time. A slow query might need an index. A long-running report might belong in a
 			background job. More server capacity can help when resources are the actual constraint.
 		</p>
 		<p>
-			Check the limits of connected services too. Email delivery, file storage, payments, and AI
-			APIs can have their own quotas and costs. Put sensible usage limits and alerts around expensive
-			operations.
+			Check the quotas and costs for email delivery, file storage, payments, and AI APIs. Set usage
+			limits and cost alerts for expensive operations.
 		</p>
 		<p>
-			Choose a setup that handles your next expected stage of growth, with room to adjust as you
-			learn. You can make that decision based on measurements rather than the name of the tool that
-			generated the code.
+			Use those measurements to choose hosting and service plans for your next stage of growth.
+			Review that setup as usage changes.
 		</p>
 
-		<h2>Make changes and recovery predictable</h2>
-		<p>Once people depend on the product, you need a safe way to keep improving it.</p>
+		<h2>Plan releases and recovery</h2>
 		<p>
-			Keep the code in version control and test changes in a separate environment before they reach
-			customers. Include database changes in that process. Reverting application code may not undo a
-			change to stored data.
+			Keep your code in version control. Test releases in a separate environment before they reach
+			customers, including changes to the database. Reverting application code may not undo a change
+			to stored data.
 		</p>
 		<p>
-			Set up error reporting and monitoring for important workflows, with someone responsible for
-			responding. Knowing the homepage is online does not tell you whether customers can finish
-			signing up or complete an order.
+			Monitor the workflows customers depend on, such as signing up or placing an order. Set up
+			error reporting and name the person responsible for responding to failures.
 		</p>
 		<p>
-			Confirm what gets backed up and practice restoring it. Code, database records, and uploaded
-			files may have different recovery paths. Decide how much lost data and downtime the business
-			could tolerate, then check that the recovery setup meets those needs.
+			Check what your backups cover and practice restoring it. Code, database records, and uploaded
+			files may require different recovery steps. Decide how much data loss and downtime your
+			business can tolerate. Test that your recovery process meets those limits.
 		</p>
 		<p>
-			Make sure your business controls its essential accounts, domain, repository, and hosting.
-			Document how to deploy, where to investigate a failure, and who owns maintenance. These details
-			matter when the person who usually handles everything is unavailable.
+			Your business should control its essential accounts, domain, repository, and hosting.
+			Document how to deploy and investigate a failure, and who handles maintenance. Another person
+			should be able to follow those instructions when the usual maintainer is unavailable.
 		</p>
 
 		<h2>Common questions about AI-built apps</h2>
-		<h3>Can a Lovable app be used in production?</h3>
+		<h3>Can I use a Lovable app in production?</h3>
 		<p>
-			Yes. A Lovable app can serve real customers when its implementation, configuration, and
-			hosting meet the product's requirements. Check access permissions, critical workflows,
-			performance under expected load, and recovery before relying on it. Publishing the app does
-			not establish those things by itself. The same review applies to other AI builders.
+			Yes, when its code, configuration, and hosting meet your product's requirements. Check access
+			permissions, critical workflows, performance under expected load, and recovery before
+			customers rely on it. Publishing the app does not verify those things. Review other AI-built
+			apps the same way.
 		</p>
 		<h3>Do I need to rebuild my AI-generated app?</h3>
 		<p>
-			No, not automatically. Start with a technical review of the existing app. Keep the parts that
-			work, improve weak areas, and replace components only when there is a clear reason. If a
-			migration is needed, plan for customer records, uploaded files, authentication, and connected
-			services as well as the code. A full rewrite should have an explicit justification.
+			No, not automatically. Review the existing app and keep the parts that work. Fix weak areas
+			and replace components when you can explain why they need replacing. If you migrate, plan for
+			customer records, uploaded files, authentication, and connected services as well as the code.
+			Explain why a full rewrite is necessary before starting one.
 		</p>
 
 		<h2>How Bootpack Digital can help</h2>
 		<p>
-			If you're stuck between a working app and a launch you feel comfortable with, we can help you
-			work through that gap.
+			Bring us the app you've built and tell us who needs to use it. We review your
+			<a href={resolve('/services')}>application code and connected services</a> to find problems
+			that need fixing before launch. You get recommended fixes and a list of improvements that
+			can wait.
 		</p>
 		<p>
-			We start with what you've already built and what you're trying to accomplish. Together, we
-			can identify the issues that need attention before launch and the improvements that can wait.
+			We can fix access checks in the application and database. We test the workflows customers
+			depend on and investigate slow queries or failed integrations. Before launch, we show you
+			what we tested and what still needs attention.
 		</p>
 		<p>
-			From there, we can help with the
-			<a href={resolve('/services')}>application code, integrations, deployment, and ongoing maintenance</a>.
-			Security and performance work should have concrete checks behind it, so you can see what was
-			tested and what still needs attention.
+			We also help set up a test environment and a deployment process your team can use. We
+			document how to investigate errors and recover data, and we can maintain the app after launch.
 		</p>
 		<p>
-			The goal is to preserve useful work, address the risks that matter, and give you a practical
-			way to keep building as customers arrive.
-		</p>
-		<p>
-			Built something with Lovable or another AI builder? Show us where you are and what's getting
-			in the way. Let's talk through what it needs to be ready for real customers.
+			If you've built an app with Lovable or another AI builder, show us what's working and where
+			you're stuck. We'll help you work out what needs fixing before customers start using it.
 		</p>
 		<p><a href={resolve('/contact')}>Talk to Bootpack Digital about your app</a></p>
 	</div>
@@ -301,8 +283,8 @@
 </div>
 
 <ContactBanner
-	textLine1="Built an app with AI?"
-	textLine2="Let's get it ready for real customers."
+	textLine1="Show us the app you've built."
+	textLine2="Let's work through what it needs before launch."
 	buttonText="Talk about your app"
 	bgColor="bg-gray-50"
 />
