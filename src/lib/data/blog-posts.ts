@@ -4,6 +4,7 @@ import officeLunchThumbnail from '../../images/officelunch-screenshots/homepage-
 import jobListingThumbnail from '../../images/joblisting-app-screenshots/homepage.jpg?w=320;480;640;800;960;1200&enhanced';
 import ecfThumbnail from '../../images/easycustomerfeedback-screenshots/homepage-hero.jpg?w=320;480;640;800;960;1200&enhanced';
 import aiThumbnail from '../../images/rapid-iteration-with-ai.jpg?w=320;480;640;800;960;1200&enhanced';
+import productionThumbnail from '../../images/ai-builder-to-production.jpg?w=320;480;640;800;960;1200&enhanced';
 import howWeWorkThumbnail from '../../images/how-we-work-with-you.jpg?w=320;480;640;800;960;1200&enhanced';
 
 export type BlogPost = {
@@ -31,7 +32,7 @@ export const blogPosts = [
 		description:
 			'Move your Lovable, Bolt.new, Replit, v0, or Base44 app toward production with practical checks for security, reliability, and scale.',
 		publishedAt: '2026-10-07',
-		thumbnail: aiThumbnail
+		thumbnail: productionThumbnail
 	},
 	{
 		title: 'Introducing What To Do In Salt Lake',
