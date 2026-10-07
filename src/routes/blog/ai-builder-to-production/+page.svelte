@@ -174,7 +174,7 @@
 		<h2>Measure the workload you expect</h2>
 		<p>
 			The workload depends on how people use the app. A thousand people reading
-			a public page creates a different workload from a hundred people uploading files and
+			a public page create a different workload from a hundred people uploading files and
 			generating reports at once.
 		</p>
 		<p>
