@@ -156,7 +156,7 @@
 				src={candidateDetails}
 				alt="JobListing candidate details with a resume, application answers, interview stage, and rating"
 				class="block w-full"
-				sizes="(min-width: 1024px) 960px, (min-width: 768px) 720px, calc(100vw - 2rem)"
+				sizes="(min-width: 676px) 640px, calc(100vw - 2rem)"
 				loading="lazy"
 			/>
 			<figcaption class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6">
@@ -197,7 +197,7 @@
 				src={feedbackWorkflow}
 				alt="EasyCustomerFeedback submission with workflow status, attachments, and GitHub and Linear sync results"
 				class="block w-full"
-				sizes="(min-width: 1024px) 960px, (min-width: 768px) 720px, calc(100vw - 2rem)"
+				sizes="(min-width: 676px) 640px, calc(100vw - 2rem)"
 				loading="lazy"
 			/>
 			<figcaption class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6">
@@ -238,7 +238,7 @@
 				src={lunchOrders}
 				alt="Office Lunch order management with a restaurant selector and team members' opt-in actions"
 				class="block w-full"
-				sizes="(min-width: 1024px) 960px, (min-width: 768px) 720px, calc(100vw - 2rem)"
+				sizes="(min-width: 676px) 640px, calc(100vw - 2rem)"
 				loading="lazy"
 			/>
 			<figcaption class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6">
@@ -347,16 +347,8 @@
 
 <style>
 	.product-example {
-		margin-block: 3rem;
-	}
-
-	@media (min-width: 1024px) {
-		.product-example {
-			position: relative;
-			left: 50%;
-			width: min(960px, calc(100vw - 4rem));
-			max-width: none;
-			transform: translateX(-50%);
-		}
+		width: 100%;
+		max-width: 640px;
+		margin: 3rem auto;
 	}
 </style>
