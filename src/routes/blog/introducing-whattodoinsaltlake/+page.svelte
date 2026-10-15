@@ -66,12 +66,12 @@
 
 <Seo
 	title="Introducing What To Do In Salt Lake | Bootpack Digital"
-	{description}
+	description={description}
 	canonical="/blog/introducing-whattodoinsaltlake"
 	ogType="article"
 	ogImage="/og-blog-introducing-whattodoinsaltlake.jpg"
 	ogImageAlt="Introducing What To Do In Salt Lake"
-	{jsonLd}
+	jsonLd={jsonLd}
 />
 
 <div class="px-4 mx-auto sm:px-6 lg:px-8">
@@ -99,7 +99,7 @@
 			height="800"
 			sizes="(min-width: 1024px) 720px, 100vw"
 			fetchpriority="high"
-		/>
+		></enhanced:img>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			Salt Lake has plenty going on. The hard part is finding it. Shows are listed on venue
 			websites, markets live on Instagram, and half the good stuff turns up in a friend's group
@@ -145,7 +145,7 @@
 					height="800"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -156,7 +156,7 @@
 					height="800"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 		</div>
 		<p>
@@ -180,7 +180,7 @@
 				height="800"
 				sizes="(min-width: 768px) 720px, 100vw"
 				loading="lazy"
-			/>
+			></enhanced:img>
 		</figure>
 
 		<h2>Event pages that do the basics well</h2>
@@ -199,7 +199,7 @@
 				height="800"
 				sizes="(min-width: 768px) 720px, 100vw"
 				loading="lazy"
-			/>
+			></enhanced:img>
 		</figure>
 
 		<h2>Save events and share lists</h2>
@@ -232,7 +232,7 @@
 				height="800"
 				sizes="(min-width: 768px) 720px, 100vw"
 				loading="lazy"
-			/>
+			></enhanced:img>
 		</figure>
 
 		<h2>Built for your phone first</h2>
@@ -250,7 +250,7 @@
 				height="844"
 				sizes="320px"
 				loading="lazy"
-			/>
+			></enhanced:img>
 		</figure>
 
 		<h2>See what's on this week</h2>
@@ -271,7 +271,7 @@
 	<h2 class="text-2xl font-bold tracking-tight text-navy-900">Related posts</h2>
 	<div class="mt-6 grid gap-6 sm:grid-cols-2">
 		<a
-			href={resolve('/blog/introducing-officelunch')}
+			href={resolve('blog/introducing-officelunch')}
 			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
 		>
 			<p class="text-xl font-semibold text-gray-900">Introducing Office Lunch App</p>
@@ -281,7 +281,7 @@
 			</p>
 		</a>
 		<a
-			href={resolve('/blog/introducing-joblisting')}
+			href={resolve('blog/introducing-joblisting')}
 			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
 		>
 			<p class="text-xl font-semibold text-gray-900">Introducing JobListing.app</p>

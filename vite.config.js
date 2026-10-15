@@ -1,3 +1,4 @@
+import adapter from '@sveltejs/adapter-bun';
 import { defineConfig } from 'vite-plus';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { enhancedImages } from '@sveltejs/enhanced-img';
@@ -18,6 +19,7 @@ export default defineConfig({
 		globals: {
 			AudioWorkletGlobalScope: 'readonly',
 			AudioWorkletProcessor: 'readonly',
+			Bun: 'readonly',
 			currentFrame: 'readonly',
 			currentTime: 'readonly',
 			registerProcessor: 'readonly',
@@ -226,5 +228,5 @@ export default defineConfig({
 			'static/nortonsw_f6bac440-9821-0.html'
 		]
 	},
-	plugins: [enhancedImages(), tailwindcss(), sveltekit()]
+	plugins: [enhancedImages(), tailwindcss(), sveltekit({ adapter: adapter() })]
 });

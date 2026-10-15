@@ -18,7 +18,7 @@
 	description="You'll talk to Michael Bonner, the founder, not a salesperson or an intern. We take on custom web design, web development, and app development, and we reply within one business day."
 	eyebrow="Get in touch"
 	heading="Tell us what you're building and we'll tell you how we'd build it."
-	linkHref={resolve('/work')}
+	linkHref={resolve('work')}
 	linkText="See the work we've shipped"
 />
 
@@ -55,8 +55,16 @@
 					>
 						<path
 							d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z"
-						/>
-						<rect height="288" rx="64" ry="64" width="336" x="32" y="112" />
+						></path>
+
+						<rect
+							height="288"
+							rx="64"
+							ry="64"
+							width="336"
+							x="32"
+							y="112"
+						></rect>
 					</svg>
 					<h3 class="mt-5 text-2xl font-bold tracking-tight text-navy-700">
 						Schedule a 30-minute call
@@ -80,7 +88,7 @@
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								stroke-width="2"
-							/>
+							></path>
 						</svg>
 					</a>
 				</div>
@@ -101,10 +109,18 @@
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
-								<rect height="480" rx="48" ry="48" width="256" x="128" y="16" />
+								<rect
+									height="480"
+									rx="48"
+									ry="48"
+									width="256"
+									x="128"
+									y="16"
+								></rect>
+
 								<path
 									d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24"
-								/>
+								></path>
 							</svg>
 							Phone
 						</dt>
@@ -128,8 +144,16 @@
 								viewBox="0 0 512 512"
 								xmlns="http://www.w3.org/2000/svg"
 							>
-								<rect height="320" rx="40" ry="40" width="416" x="48" y="96" />
-								<path d="M112 160l144 112 144-112" />
+								<rect
+									height="320"
+									rx="40"
+									ry="40"
+									width="416"
+									x="48"
+									y="96"
+								></rect>
+
+								<path d="M112 160l144 112 144-112"></path>
 							</svg>
 							Email
 						</dt>
@@ -156,8 +180,11 @@
 									d="M336.76 161l-186.53 82.35c-10.47 4.8-6.95 20.67 4.57 20.67H244a4 4 0 014 4v89.18c0 11.52 16 15 20.78 4.56L351 175.24A10.73 10.73 0 00336.76 161z"
 									fill="currentColor"
 									stroke="none"
-								/>
-								<path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" />
+								></path>
+
+								<path
+									d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+								></path>
 							</svg>
 							Mailing address
 						</dt>
@@ -182,8 +209,10 @@
 						Run a Salt Lake-area nonprofit or community organization? We give away a free website
 						every quarter through <a
 							class="font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-							href={resolve('/bootpack-for-good')}>Bootpack for Good</a
-						>.
+							href={resolve('bootpack-for-good')}
+						>Bootpack for Good</a>
+
+						.
 					</p>
 				</div>
 			</div>

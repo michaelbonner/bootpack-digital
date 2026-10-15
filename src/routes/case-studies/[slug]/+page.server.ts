@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { caseStudies } from '$lib/data/case-studies';
+import { caseStudies } from '#lib/data/case-studies.js';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {

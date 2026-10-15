@@ -21,10 +21,14 @@
 
 		<div class="mt-8 prose">
 			<p>
-				We take your privacy seriously. These policies describe how we collect and use information
-				about you when you use our website. Please read them carefully. If you have any questions,
-				please <a href={resolve('/contact')} class="underline text-navy-600">contact us</a>. We're
-				happy to help.
+				We take your privacy seriously. These policies describe how we collect and use information about you when you use our website. Please read them carefully. If you have any questions, please 
+
+				<a
+					href={resolve('contact')}
+					class="underline text-navy-600"
+				>contact us</a>
+
+				. We're happy to help.
 			</p>
 		</div>
 

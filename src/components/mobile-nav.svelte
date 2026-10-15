@@ -1,7 +1,7 @@
 <script lang="ts">
   import { beforeNavigate } from "$app/navigation";
   import { resolve } from "$app/paths";
-  import { resolveRoute } from "$lib/resolve-route";
+  import { resolveRoute } from "#lib/resolve-route.js";
   import { page } from "$app/state";
   import { fade } from "svelte/transition";
   import BootpackDigital from "../images/bootpack-digital.svg";
@@ -10,14 +10,16 @@
 
   let mobileNavOpen = $state(false);
 
-  beforeNavigate(() => {
+  beforeNavigate(({ shallow, type }) => {
+    if (shallow && type === 'goto') return;
+
     mobileNavOpen = false;
   });
 </script>
 
 <button
   class="block pb-1 lg:hidden"
-  onclick={() => (mobileNavOpen = !mobileNavOpen)}
+  onclick={() => mobileNavOpen = !mobileNavOpen}
 >
   <svg
     class="w-8 stroke-current text-navy-500"
@@ -32,7 +34,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke-width={2}
-    />
+    ></path>
   </svg>
 </button>
 {#if mobileNavOpen}
@@ -43,7 +45,7 @@
   >
     <button
       class="absolute right-3 top-5 w-6 h-6 font-semibold text-orange-500"
-      onclick={() => (mobileNavOpen = !mobileNavOpen)}
+      onclick={() => mobileNavOpen = !mobileNavOpen}
     >
       <svg
         fill="none"
@@ -57,7 +59,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width={2}
-        />
+        ></path>
       </svg>
     </button>
 

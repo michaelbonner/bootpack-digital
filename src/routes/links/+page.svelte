@@ -99,10 +99,10 @@
 	];
 
 	const siteLinks = [
-		{ label: 'Our work', href: resolve('/work') },
-		{ label: 'Services', href: resolve('/services') },
-		{ label: 'Blog', href: resolve('/blog') },
-		{ label: 'Contact us', href: resolve('/contact') }
+		{ label: 'Our work', href: resolve('work') },
+		{ label: 'Services', href: resolve('services') },
+		{ label: 'Blog', href: resolve('blog') },
+		{ label: 'Contact us', href: resolve('contact') }
 	];
 </script>
 
@@ -155,7 +155,7 @@
 										loading="lazy"
 										sizes="(min-width: 640px) 144px, calc(100vw - 72px)"
 										src={link.screenshot}
-									/>
+									></enhanced:img>
 								</span>
 								<span class="flex-1 min-w-0">
 									<span class="flex gap-2 justify-between items-center">
@@ -169,7 +169,11 @@
 											stroke-width="2"
 											viewBox="0 0 24 24"
 										>
-											<path d="M5 12h14m0 0-6-6m6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M5 12h14m0 0-6-6m6 6-6 6"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											></path>
 										</svg>
 									</span>
 									<span class="block mt-1 text-base leading-7 text-gray-600">

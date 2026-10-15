@@ -1,4 +1,4 @@
-import { env } from '$env/dynamic/private';
+import { TURNSTILE_SECRET_KEY } from '$app/env/private';
 
 const VERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
 const VERIFY_TIMEOUT_MS = 5000;
@@ -9,7 +9,7 @@ type SiteverifyResponse = {
 };
 
 export async function verifyTurnstileToken(token: string, remoteIp?: string): Promise<boolean> {
-	const secret = env.TURNSTILE_SECRET_KEY;
+	const secret = TURNSTILE_SECRET_KEY;
 	if (!secret) {
 		console.warn('TURNSTILE_SECRET_KEY missing; skipping captcha verification');
 		return true;

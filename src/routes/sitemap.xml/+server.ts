@@ -1,5 +1,5 @@
-import { caseStudies } from '$lib/data/case-studies';
-import { blogPosts } from '$lib/data/blog-posts';
+import { caseStudies } from '#lib/data/case-studies.js';
+import { blogPosts } from '#lib/data/blog-posts.js';
 
 const routes = [
 	{

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
-  import { resolveRoute } from "$lib/resolve-route";
+  import { resolveRoute } from "#lib/resolve-route.js";
   import { page } from "$app/state";
   import BootpackHorizontal from "../images/bootpack-horizontal.svg";
   import MobileNav from "./mobile-nav.svelte";

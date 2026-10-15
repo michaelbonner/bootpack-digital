@@ -3,8 +3,8 @@
 	import { page } from '$app/state';
 	import posthog from 'posthog-js';
 	import Illustration404 from '../images/404-illustration.svg';
-	import { PUBLIC_POSTHOG_ENABLED } from '$env/static/public';
-	import { browser } from '$app/environment';
+	import { PUBLIC_POSTHOG_ENABLED } from '$app/env/public';
+	import { browser } from '$app/env';
 
 	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
 		if (browser) {
@@ -75,7 +75,7 @@
 					</a>
 					<a
 						class="inline-flex justify-center items-center px-6 py-3 text-base font-semibold rounded-md border text-navy-700 border-navy-300 transition-colors hover:bg-navy-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-						href={resolve('/work')}
+						href={resolve('work')}
 					>
 						Explore our work
 						<svg aria-hidden="true" class="ml-2 size-4" fill="none" viewBox="0 0 20 20">
@@ -85,7 +85,7 @@
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								stroke-width="2"
-							/>
+							></path>
 						</svg>
 					</a>
 				</div>
@@ -148,7 +148,7 @@
 									stroke-linecap="round"
 									stroke-linejoin="round"
 									stroke-width="2"
-								/>
+								></path>
 							</svg>
 						</a>
 					{/each}

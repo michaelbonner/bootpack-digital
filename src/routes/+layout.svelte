@@ -7,7 +7,7 @@
 	import FictiveRedirectModal from '../components/fictive-redirect-modal.svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
-	import { PUBLIC_POSTHOG_ENABLED } from '$env/static/public';
+	import { PUBLIC_POSTHOG_ENABLED } from '$app/env/public';
 
 	let { children } = $props();
 
@@ -15,6 +15,7 @@
 	let posthogInstance: Awaited<typeof import('posthog-js')>['default'] | null = null;
 
 	onNavigate((navigation) => {
+		if (navigation.shallow && navigation.type === 'goto') return;
 		if (!(document as Document).startViewTransition) return;
 
 		return new Promise((resolve) => {
@@ -28,8 +29,17 @@
 	// beforeNavigate/afterNavigate must be called during component initialisation —
 	// not inside onMount or async callbacks — so they live here at the top level.
 	if (PUBLIC_POSTHOG_ENABLED !== 'false') {
-		beforeNavigate(() => posthogInstance?.capture('$pageleave'));
-		afterNavigate(() => posthogInstance?.capture('$pageview'));
+		beforeNavigate(({ shallow, type }) => {
+			if (shallow && type === 'goto') return;
+
+			return posthogInstance?.capture('$pageleave');
+		});
+
+		afterNavigate(({ shallow, type }) => {
+			if (shallow && type === 'goto') return;
+
+			return posthogInstance?.capture('$pageview');
+		});
 	}
 
 	onMount(() => {
@@ -145,14 +155,8 @@
 					name: 'Mobile App Development',
 					description: 'Custom mobile app development services.'
 				},
-				{
-					name: 'Marketing',
-					description: 'Custom marketing services.'
-				},
-				{
-					name: 'SEO',
-					description: 'Custom SEO services.'
-				},
+				{ name: 'Marketing', description: 'Custom marketing services.' },
+				{ name: 'SEO', description: 'Custom SEO services.' },
 				{
 					name: 'Social Media',
 					description: 'Custom social media services.'

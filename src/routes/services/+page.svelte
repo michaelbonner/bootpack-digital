@@ -4,7 +4,7 @@
 	import LinkArrow from '../../components/link-arrow.svelte';
 	import Seo from '../../components/seo.svelte';
 	import TopoHeroBg from '../../components/topo-hero-bg.svelte';
-	import { services } from '$lib/data/services';
+	import { services } from '#lib/data/services.js';
 
 	const facts = [
 		{ value: 'Design and development', label: 'What we handle' },
@@ -134,13 +134,12 @@
 				<div class="flex flex-wrap gap-x-6 gap-y-4 items-center mt-7">
 					<a
 						class="inline-flex items-center py-3 px-5 text-base font-semibold text-white bg-navy-700 rounded-lg transition-colors hover:bg-navy-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
-						href={resolve('/contact')}
-					>
-						Request a Free Quote
-					</a>
+						href={resolve('contact')}
+					>Request a Free Quote</a>
+
 					<a
 						class="inline-flex items-center font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-						href={resolve('/work')}
+						href={resolve('work')}
 					>
 						See the work we've shipped
 						<LinkArrow class="ml-2" />
@@ -199,25 +198,23 @@
 								stroke-width="1.5"
 								viewBox="0 0 24 24"
 								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path d={service.path} />
-							</svg>
+							><path d={service.path}></path></svg>
 						</span>
 						<p class="text-xs font-bold tracking-[0.16em] text-orange-700 uppercase">
 							{service.eyebrow}
 						</p>
 					</div>
 
-					<h3 class="mt-5 text-2xl font-bold tracking-tight text-navy-700">
-						{service.title}
-					</h3>
-					<p class="mt-3 text-base leading-7 text-gray-600">
-						{service.summary}
-					</p>
+					<h3
+						class="mt-5 text-2xl font-bold tracking-tight text-navy-700"
+					>{service.title}</h3>
 
-					<h4 class="mt-7 text-xs font-bold tracking-[0.16em] text-navy-600 uppercase">
-						What you get
-					</h4>
+					<p class="mt-3 text-base leading-7 text-gray-600">{service.summary}</p>
+
+					<h4
+						class="mt-7 text-xs font-bold tracking-[0.16em] text-navy-600 uppercase"
+					>What you get</h4>
+
 					<ul class="grid gap-2 mt-4">
 						{#each service.deliverables as deliverable (deliverable)}
 							<li class="flex gap-3 items-start text-base leading-7 text-gray-600">
@@ -231,9 +228,8 @@
 									stroke-width="2.5"
 									viewBox="0 0 24 24"
 									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path d="M5 13l4 4L19 7" />
-								</svg>
+								><path d="M5 13l4 4L19 7"></path></svg>
+
 								{deliverable}
 							</li>
 						{/each}
@@ -281,7 +277,7 @@
 
 		<a
 			class="inline-flex items-center mt-12 font-semibold text-white underline decoration-blue-300 underline-offset-4 hover:text-blue-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
-			href={resolve('/blog/how-we-work-with-you')}
+			href={resolve('blog/how-we-work-with-you')}
 		>
 			Read more about how we run projects
 			<LinkArrow class="ml-2" />
@@ -303,11 +299,8 @@
 				</p>
 				<a
 					class="inline-flex items-center mt-6 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-					href={resolve('/contact')}
-				>
-					Ask us anything
-					<LinkArrow class="ml-2" />
-				</a>
+					href={resolve('contact')}
+				>Ask us anything <LinkArrow class="ml-2" /></a>
 			</div>
 
 			<dl class="grid gap-8">

@@ -5,7 +5,7 @@
 	import TopoHeroBg from '../../components/topo-hero-bg.svelte';
 	import WorkItem from '../../components/work-item.svelte';
 	import LinkArrow from '../../components/link-arrow.svelte';
-	import { services } from '$lib/data/services';
+	import { services } from '#lib/data/services.js';
 	// images
 	import AcceleratedEquityPlans from '../../images/work/accelerated-equity-plans.jpg?w=320;480;640;800;960;1200&enhanced';
 	import BookAMeetingTime from '../../images/work/book-a-meeting-time.jpg?w=320;480;640;800;960;1200&enhanced';
@@ -61,7 +61,7 @@
 				</p>
 				<a
 					class="inline-flex items-center mt-6 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-					href={resolve('/blog/how-we-work-with-you')}
+					href={resolve('blog/how-we-work-with-you')}
 				>
 					See how we run projects
 					<svg aria-hidden="true" class="ml-2 size-4" fill="none" viewBox="0 0 20 20">
@@ -71,7 +71,7 @@
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-						/>
+						></path>
 					</svg>
 				</a>
 			</div>
@@ -278,11 +278,8 @@
 			</div>
 			<a
 				class="inline-flex items-center font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600 md:justify-self-end"
-				href={resolve('/services')}
-			>
-				See all of our services
-				<LinkArrow class="ml-2" />
-			</a>
+				href={resolve('services')}
+			>See all of our services <LinkArrow class="ml-2" /></a>
 		</div>
 
 		<ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -290,7 +287,7 @@
 				<li>
 					<a
 						class="flex flex-col p-7 h-full bg-white rounded-2xl border border-blue-200 transition-colors group hover:border-blue-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
-						href="{resolve('/services')}#{service.id}"
+						href="{resolve('services')}#{service.id}"
 					>
 						<svg
 							aria-hidden="true"
@@ -302,9 +299,8 @@
 							stroke-width="1.5"
 							viewBox="0 0 24 24"
 							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path d={service.path} />
-						</svg>
+						><path d={service.path}></path></svg>
+
 						<h3
 							class="mt-5 text-xl font-bold tracking-tight text-navy-700 group-hover:underline group-hover:decoration-blue-300 group-hover:underline-offset-4"
 						>

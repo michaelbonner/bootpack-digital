@@ -1,11 +1,11 @@
-import { env } from '$env/dynamic/private';
+import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from '$app/env/private';
 
 const TELEGRAM_API = 'https://api.telegram.org';
 const TELEGRAM_TIMEOUT_MS = 5000;
 
 export async function sendTelegramMessage(text: string): Promise<void> {
-	const token = env.TELEGRAM_BOT_TOKEN;
-	const chatId = env.TELEGRAM_CHAT_ID;
+	const token = TELEGRAM_BOT_TOKEN;
+	const chatId = TELEGRAM_CHAT_ID;
 
 	if (!token || !chatId) {
 		console.warn('Telegram credentials missing; skipping notification');

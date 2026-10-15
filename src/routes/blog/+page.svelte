@@ -5,12 +5,12 @@
 	import ContentPageHero from '../../components/content-page-hero.svelte';
 	import LinkArrow from '../../components/link-arrow.svelte';
 	import Seo from '../../components/seo.svelte';
-	import { blogPosts, formatBlogPostDate } from '$lib/data/blog-posts';
+	import { blogPosts, formatBlogPostDate } from '#lib/data/blog-posts.js';
 
 	const [featuredPost, ...morePosts] = blogPosts;
 
 	// oxlint-disable-next-line @typescript-eslint/no-explicit-any
-	const getBlogPostUrl = (slug: string) => resolve(('/blog/' + slug) as any);
+	const getBlogPostUrl = (slug: string) => resolve('/blog/' + slug as any);
 </script>
 
 <Seo
@@ -25,7 +25,7 @@
 	description="What we are building, how we test product ideas, and the habits that keep client projects moving."
 	eyebrow="The Bootpack blog"
 	heading="Notes from the work"
-	linkHref={resolve('/work')}
+	linkHref={resolve('work')}
 	linkText="See the work we've shipped"
 />
 
@@ -45,7 +45,7 @@
 						loading="eager"
 						sizes="(min-width: 1024px) min(736px, calc(57.5vw - 37px)), calc(100vw - 32px)"
 						src={featuredPost.thumbnail}
-					/>
+					></enhanced:img>
 				</div>
 
 				<div class="flex flex-col justify-center p-7 sm:p-10 lg:p-12">

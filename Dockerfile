@@ -26,15 +26,16 @@ ARG BUN_IMAGE=oven/bun:1
 FROM ${BUN_IMAGE}
 WORKDIR /app
 
-# HOST/PORT are what svelte-adapter-bun's server reads to bind.
+# HOST/PORT are what server.js (the custom Bun entry) reads to bind.
 ENV NODE_ENV=production \
     PORT=3000 \
     HOST=0.0.0.0
 
-# node_modules comes over rather than just build/, because SvelteKit
-# externalizes dependencies from the server bundle — build/server still imports
-# @sveltejs/kit, svelte, drizzle-orm, postgres and friends at runtime. The
-# runner has already reinstalled it without devDependencies, so what arrives is
+# node_modules comes over rather than just build/, because @sveltejs/adapter-bun
+# externalizes the server bundle's production dependencies — build/ still imports
+# svelte, drizzle-orm, postgres and friends at runtime (build tooling such as
+# @sveltejs/kit is bundled into the server output and needs no runtime install).
+# The runner has already reinstalled it without devDependencies, so what arrives is
 # the runtime set; `drizzle-kit migrate` also needs drizzle/, drizzle.config.ts
 # and the schema, which is why drizzle-kit is a dependency and src/ stays.
 # .dockerignore keeps the rest of the build-only files (the .svelte-kit

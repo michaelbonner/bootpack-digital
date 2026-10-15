@@ -44,13 +44,12 @@
 				<div class="flex flex-wrap gap-x-6 gap-y-4 items-center mt-7">
 					<a
 						class="inline-flex items-center py-3 px-5 text-base font-semibold text-white bg-navy-700 rounded-lg transition-colors hover:bg-navy-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
-						href={resolve('/contact')}
-					>
-						Request a Free Quote
-					</a>
+						href={resolve('contact')}
+					>Request a Free Quote</a>
+
 					<a
 						class="inline-flex items-center font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-						href={resolve('/work')}
+						href={resolve('work')}
 					>
 						See the work we've shipped
 						<LinkArrow class="ml-2" />

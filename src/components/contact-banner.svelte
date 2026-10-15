@@ -31,10 +31,8 @@
 			</div>
 			<a
 				class="inline-flex justify-self-start items-center py-3 px-5 text-base font-semibold text-white bg-navy-700 rounded-lg transition-colors hover:bg-navy-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
-				href={resolve('/contact')}
-			>
-				{buttonText}
-			</a>
+				href={resolve('contact')}
+			>{buttonText}</a>
 		</div>
 	</div>
 </section>
