@@ -75,7 +75,7 @@
 	ogType="article"
 	ogImage="/og-blog-introducing-officelunch.jpg"
 	ogImageAlt="Introducing Office Lunch App"
-	{jsonLd}
+	jsonLd={jsonLd}
 />
 
 <div class="px-4 mx-auto sm:px-6 lg:px-8">
@@ -103,7 +103,7 @@
 			height="3098"
 			sizes="(min-width: 1024px) 720px, 100vw"
 			fetchpriority="high"
-		/>
+		></enhanced:img>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			A group lunch can generate a surprising amount of admin. Someone asks who is in, chases
 			replies, finds the menu, collects orders, and remembers who paid. Office Lunch App puts that
@@ -133,7 +133,7 @@
 					height="1486"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -144,7 +144,7 @@
 					height="2129"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 		</div>
 
@@ -165,7 +165,7 @@
 					height="800"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -176,7 +176,7 @@
 					height="1049"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 		</div>
 		<p>
@@ -201,7 +201,7 @@
 					height="1331"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -212,7 +212,7 @@
 					height="1204"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -223,7 +223,7 @@
 					height="2134"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -234,7 +234,7 @@
 					height="2354"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 		</div>
 		<p>
@@ -257,7 +257,7 @@
 					height="800"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -268,7 +268,7 @@
 					height="1256"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 			<figure>
 				<enhanced:img
@@ -279,7 +279,7 @@
 					height="1254"
 					sizes="(min-width: 1024px) 360px, (min-width: 640px) 512px, 100vw"
 					loading="lazy"
-				/>
+				></enhanced:img>
 			</figure>
 		</div>
 		<p>
@@ -302,7 +302,7 @@
 				height="2139"
 				sizes="(min-width: 768px) 720px, 100vw"
 				loading="lazy"
-			/>
+			></enhanced:img>
 		</figure>
 
 		<h2>A command-line tool for regular users and admins</h2>
@@ -361,7 +361,7 @@ olm admin lunch set <restaurant-id>`}</code
 	<h2 class="text-2xl font-bold tracking-tight text-navy-900">Related posts</h2>
 	<div class="mt-6 grid gap-6 sm:grid-cols-2">
 		<a
-			href="{resolve('/blog/introducing-joblisting')}"
+			href={resolve('blog/introducing-joblisting')}
 			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
 		>
 			<p class="text-xl font-semibold text-gray-900">Introducing JobListing.app</p>
@@ -371,7 +371,7 @@ olm admin lunch set <restaurant-id>`}</code
 			</p>
 		</a>
 		<a
-			href="{resolve('/blog/introducing-easy-customer-feedback')}"
+			href={resolve('blog/introducing-easy-customer-feedback')}
 			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
 		>
 			<p class="text-xl font-semibold text-gray-900">Introducing EasyCustomerFeedback</p>

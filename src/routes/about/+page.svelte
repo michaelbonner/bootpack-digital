@@ -95,7 +95,7 @@
 				</p>
 				<a
 					class="inline-flex items-center mt-6 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-					href={resolve('/work')}
+					href={resolve('work')}
 				>
 					See the work we've shipped
 					<svg aria-hidden="true" class="ml-2 size-4" fill="none" viewBox="0 0 20 20">
@@ -105,7 +105,7 @@
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-						/>
+						></path>
 					</svg>
 				</a>
 			</div>
@@ -142,7 +142,7 @@
 				loading="lazy"
 				sizes="(min-width: 1024px) 384px, (min-width: 640px) 384px, calc(100vw - 32px)"
 				src={MichaelBonner}
-			/>
+			></enhanced:img>
 
 			<div>
 				<p class="text-xs font-bold tracking-[0.16em] text-orange-700 uppercase">Founder</p>
@@ -177,7 +177,7 @@
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									{#each social.paths as d (d)}
-										<path {d} />
+										<path d={d}></path>
 									{/each}
 								</svg>
 								{social.title}
@@ -206,7 +206,7 @@
 				</p>
 				<a
 					class="inline-flex items-center mt-6 font-semibold text-white underline decoration-blue-300 underline-offset-4 hover:text-blue-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
-					href={resolve('/open-source')}
+					href={resolve('open-source')}
 				>
 					Browse our open source projects
 					<svg aria-hidden="true" class="ml-2 size-4" fill="none" viewBox="0 0 20 20">
@@ -216,7 +216,7 @@
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-						/>
+						></path>
 					</svg>
 				</a>
 			</div>
@@ -243,7 +243,7 @@
 				</p>
 				<a
 					class="inline-flex items-center mt-6 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-					href={resolve('/blog/how-we-work-with-you')}
+					href={resolve('blog/how-we-work-with-you')}
 				>
 					See how we run projects
 					<svg aria-hidden="true" class="ml-2 size-4" fill="none" viewBox="0 0 20 20">
@@ -253,7 +253,7 @@
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-						/>
+						></path>
 					</svg>
 				</a>
 			</div>
@@ -266,7 +266,7 @@
 		loading="lazy"
 		sizes="100vw"
 		src={BootpackInSnow}
-	/>
+	></enhanced:img>
 </section>
 
 <ContactBanner

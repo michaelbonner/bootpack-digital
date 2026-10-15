@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { PUBLIC_TURNSTILE_SITE_KEY } from "$env/static/public";
+  import { PUBLIC_TURNSTILE_SITE_KEY } from '$app/env/public';
   import { onMount } from "svelte";
 
   let { theme = "light" }: { theme?: "light" | "dark" | "auto" } = $props();

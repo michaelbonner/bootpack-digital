@@ -18,8 +18,8 @@
 		<h1>You shouldn't be here</h1>
 
 		<p>
-			You might be a bot, we don't really know. If you are a human, please
-			<a href={resolve('/contact')}> contact us. </a>
+			You might be a bot, we don't really know. If you are a human, please 
+			<a href={resolve('contact')}>contact us.</a>
 		</p>
 	</div>
 </div>

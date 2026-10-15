@@ -1,10 +1,10 @@
 <script lang="ts">
   import { page } from "$app/state";
-  import { navLinks } from "$lib/nav-links";
+  import { navLinks } from "#lib/nav-links.js";
   import clsx from "clsx";
   import { onMount } from "svelte";
   import SocialIcons from "./social-icons.svelte";
-  import { resolveRoute } from "$lib/resolve-route";
+  import { resolveRoute } from "#lib/resolve-route.js";
   import type { RouteId } from "$app/types";
 
   // if this element has been in view add bpd-inView to the footer element

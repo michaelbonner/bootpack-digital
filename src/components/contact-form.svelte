@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { PUBLIC_TEST_CONTACT_FORM } from "$env/static/public";
+  import { PUBLIC_TEST_CONTACT_FORM } from '$app/env/public';
   import clsx from "clsx";
   import Turnstile from "./turnstile.svelte";
 

@@ -4,7 +4,7 @@
 	import ContentListCard from '../../components/content-list-card.svelte';
 	import ContentPageHero from '../../components/content-page-hero.svelte';
 	import Seo from '../../components/seo.svelte';
-	import { caseStudies } from '$lib/data/case-studies';
+	import { caseStudies } from '#lib/data/case-studies.js';
 </script>
 
 <Seo
@@ -34,7 +34,7 @@
 	description="See how we replaced repeated content updates with one shared platform and turned an operations workflow into working software in under six weeks."
 	eyebrow="Case studies"
 	heading="The full story behind the work, from first call to launch."
-	linkHref={resolve('/work')}
+	linkHref={resolve('work')}
 	linkText="See more of the work we've shipped"
 />
 
@@ -56,7 +56,7 @@
 			{#each caseStudies as study (study.slug)}
 				<ContentListCard
 					description={study.description}
-					href={resolve(`/case-studies/${study.slug}`)}
+					href={resolve(`case-studies/${study.slug}`)}
 					image={study.image}
 					linkText="Read the full case study"
 					metadata={{ kind: 'label', text: 'Case study' }}

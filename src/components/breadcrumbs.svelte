@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
-  import { resolveRoute } from "$lib/resolve-route";
+  import { resolveRoute } from "#lib/resolve-route.js";
   import type { RouteId } from "$app/types";
 
   interface BreadcrumbItem {

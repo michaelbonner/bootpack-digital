@@ -84,7 +84,7 @@
 			fill-rule="evenodd"
 			d="M16.704 5.29a1 1 0 010 1.42l-7.5 7.5a1 1 0 01-1.42 0l-3.5-3.5a1 1 0 011.42-1.42l2.79 2.79 6.79-6.79a1 1 0 011.42 0z"
 			clip-rule="evenodd"
-		/>
+		></path>
 	</svg>
 {/snippet}
 
@@ -96,58 +96,58 @@
 	ogImageAlt="Bootpack for Good: free websites for Salt Lake organizations doing good"
 />
 
-	<section class="overflow-hidden relative bg-blue-50">
-		<TopoHeroBg />
+<section class="overflow-hidden relative bg-blue-50">
+	<TopoHeroBg />
 		<div class="relative px-4 py-16 mx-auto max-w-7xl sm:px-6 md:py-24 lg:px-8 lg:py-28">
 			<div class="grid gap-8 items-end lg:grid-cols-[minmax(0,1.35fr)_minmax(20rem,0.65fr)] lg:gap-20">
-				<div>
+			<div>
 					<p class="mb-5 text-sm font-bold tracking-[0.18em] text-orange-700 uppercase">
 						Bootpack for Good
 					</p>
-					<h1
-						class="max-w-4xl text-4xl font-extrabold tracking-tight leading-[1.04] text-navy-700 text-balance sm:text-5xl lg:text-6xl xl:text-7xl"
-					>
-						Free websites for Salt Lake organizations
-						<span class="block text-blue-600">doing good</span>
-					</h1>
-				</div>
-				<div class="pb-1">
-					<p class="max-w-xl text-lg leading-8 text-navy-600">
+				<h1
+					class="max-w-4xl text-4xl font-extrabold tracking-tight leading-[1.04] text-navy-700 text-balance sm:text-5xl lg:text-6xl xl:text-7xl"
+				>
+					Free websites for Salt Lake organizations 
+					<span class="block text-blue-600">doing good</span>
+				</h1>
+			</div>
+			<div class="pb-1">
+				<p class="max-w-xl text-lg leading-8 text-navy-600">
 						Each quarter, we design and build a website for one local nonprofit or community
 						organization, completely free. You own the finished site outright.
-					</p>
+				</p>
 					<div class="flex flex-wrap gap-x-6 gap-y-4 items-center mt-7">
-						<a
-							class="inline-flex items-center py-3 px-5 text-base font-semibold text-white bg-navy-700 rounded-lg transition-colors hover:bg-navy-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
-							href="#apply"
+					<a
+						class="inline-flex items-center py-3 px-5 text-base font-semibold text-white bg-navy-700 rounded-lg transition-colors hover:bg-navy-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy-600"
+						href="#apply"
 						>
 							Apply for a free website
 						</a>
-						<a
-							class="inline-flex items-center font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-							href="#how"
+					<a
+						class="inline-flex items-center font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
+						href="#how"
 						>
 							See how it works
 							<LinkArrow class="ml-2" />
 						</a>
-					</div>
 				</div>
 			</div>
+		</div>
 
 			<dl class="grid overflow-hidden gap-px mt-14 rounded-xl md:grid-cols-3 md:mt-20">
-				{#each facts as fact (fact.label)}
-					<div class="px-6 py-7 bg-white/80">
+			{#each facts as fact (fact.label)}
+				<div class="px-6 py-7 bg-white/80">
 						<dt class="text-xs font-bold tracking-[0.16em] text-orange-700 uppercase">
 							{fact.label}
 						</dt>
 						<dd class="mt-2 text-2xl font-bold tracking-tight text-navy-700 xl:text-3xl">
 							{fact.value}
 						</dd>
-					</div>
-				{/each}
-			</dl>
-		</div>
-	</section>
+				</div>
+			{/each}
+		</dl>
+	</div>
+</section>
 
 <section id="how" class="px-4 py-16 bg-navy-800 sm:px-6 md:py-24 lg:px-8 lg:py-28 scroll-mt-20">
 	<div class="mx-auto max-w-7xl">
@@ -194,16 +194,36 @@
 			</ul>
 			<a
 				class="inline-flex items-center mt-8 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-				href={resolve('/work')}
+				href={resolve('work')}
 			>
 				See the work we've shipped
 				<LinkArrow class="ml-2" />
 			</a>
 		</div>
-		<div class="p-7 bg-blue-50 rounded-2xl border border-blue-200 sm:p-9">
-			<svg aria-hidden="true" class="size-9 text-blue-600" fill="none" viewBox="0 0 24 24">
-				<path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" />
-				<path d="M8.5 10 12 12l3.5-2M12 12v5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+
+		<div
+			class="p-7 bg-blue-50 rounded-2xl border border-blue-200 sm:p-9"
+		>
+			<svg
+				aria-hidden="true"
+				class="size-9 text-blue-600"
+				fill="none"
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z"
+					stroke="currentColor"
+					stroke-linejoin="round"
+					stroke-width="1.5"
+				></path>
+
+				<path
+					d="M8.5 10 12 12l3.5-2M12 12v5"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="1.5"
+				></path>
 			</svg>
 			<h3 class="mt-5 text-2xl font-bold tracking-tight text-navy-700">You own it, not us</h3>
 			<p class="mt-3 text-base leading-7 text-gray-600">
@@ -280,28 +300,28 @@
 				</h2>
 			</div>
 			<div class="overflow-hidden bg-white rounded-2xl border divide-y divide-blue-200 border-blue-200">
-			{#each faqs as faq (faq.q)}
-				<details class="group">
-					<summary
-						class="flex gap-4 justify-between items-center px-6 py-5 list-none cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500 sm:px-8 sm:py-6 [&::-webkit-details-marker]:hidden"
-					>
-						<span class="text-lg font-bold text-navy-700">{faq.q}</span>
-						<svg
-							class="shrink-0 size-5 text-blue-600 transition-transform duration-200 group-open:rotate-180"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							aria-hidden="true"
+				{#each faqs as faq (faq.q)}
+					<details class="group">
+						<summary
+							class="flex gap-4 justify-between items-center px-6 py-5 list-none cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500 sm:px-8 sm:py-6 [&::-webkit-details-marker]:hidden"
 						>
-							<path
-								fill-rule="evenodd"
-								d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</summary>
+							<span class="text-lg font-bold text-navy-700">{faq.q}</span>
+							<svg
+								class="shrink-0 size-5 text-blue-600 transition-transform duration-200 group-open:rotate-180"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+						</summary>
 					<p class="px-6 pb-6 max-w-3xl text-base leading-7 text-gray-600 sm:px-8">{faq.a}</p>
-				</details>
-			{/each}
+					</details>
+				{/each}
 			</div>
 		</div>
 	</div>

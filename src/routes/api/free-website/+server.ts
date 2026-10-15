@@ -1,8 +1,7 @@
-import { json } from '@sveltejs/kit';
-import { getDb } from '$lib/server/db';
-import { freeWebsiteApplications } from '$lib/server/db/schema';
-import { formatFreeWebsiteApplication, sendTelegramMessage } from '$lib/server/telegram';
-import { verifyTurnstileToken } from '$lib/server/turnstile';
+import { getDb } from '#lib/server/db/index.js';
+import { freeWebsiteApplications } from '#lib/server/db/schema.js';
+import { formatFreeWebsiteApplication, sendTelegramMessage } from '#lib/server/telegram.js';
+import { verifyTurnstileToken } from '#lib/server/turnstile.js';
 import type { RequestHandler } from './$types';
 
 export const prerender = false;
@@ -40,11 +39,11 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 	try {
 		const parsed: unknown = await request.json();
 		if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
-			return json({ error: 'Invalid payload' }, { status: 400 });
+			return Response.json({ error: 'Invalid payload' }, { status: 400 });
 		}
 		payload = parsed as Payload;
 	} catch {
-		return json({ error: 'Invalid JSON' }, { status: 400 });
+		return Response.json({ error: 'Invalid JSON' }, { status: 400 });
 	}
 
 	const firstName = asTrimmedString(payload.firstName, 200);
@@ -60,20 +59,20 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 	const turnstileToken = asTrimmedString(payload.turnstileToken, 2048);
 
 	if (!firstName || !lastName || !email || !organizationName || !city || !mission || !goals) {
-		return json({ error: 'Missing required fields' }, { status: 400 });
+		return Response.json({ error: 'Missing required fields' }, { status: 400 });
 	}
 
 	if (!EMAIL_RE.test(email)) {
-		return json({ error: 'Invalid email' }, { status: 400 });
+		return Response.json({ error: 'Invalid email' }, { status: 400 });
 	}
 
 	if (!turnstileToken) {
-		return json({ error: 'Captcha token missing' }, { status: 400 });
+		return Response.json({ error: 'Captcha token missing' }, { status: 400 });
 	}
 
 	const captchaOk = await verifyTurnstileToken(turnstileToken, getClientAddress());
 	if (!captchaOk) {
-		return json({ error: 'Captcha verification failed' }, { status: 400 });
+		return Response.json({ error: 'Captcha verification failed' }, { status: 400 });
 	}
 
 	const application = {
@@ -93,7 +92,7 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 		await getDb().insert(freeWebsiteApplications).values(application);
 	} catch (err) {
 		console.error('Failed to insert free website application:', errorMessage(err));
-		return json({ error: 'Could not save application' }, { status: 500 });
+		return Response.json({ error: 'Could not save application' }, { status: 500 });
 	}
 
 	try {
@@ -102,5 +101,5 @@ export const POST: RequestHandler = async ({ request, getClientAddress }) => {
 		console.error('Failed to send Telegram notification:', errorMessage(err));
 	}
 
-	return json({ ok: true });
+	return Response.json({ ok: true });
 };

@@ -253,7 +253,7 @@
     idle(async () => {
       if (disposed) return;
       try {
-        const { topoLines } = await import("$lib/data/topo-lines");
+        const { topoLines } = await import("#lib/data/topo-lines.js");
         if (!disposed) lines = topoLines;
       } catch (error) {
         // The static tiled background stays visible, so just log

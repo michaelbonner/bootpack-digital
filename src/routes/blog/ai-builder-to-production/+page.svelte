@@ -65,12 +65,12 @@
 
 <Seo
 	title="Lovable to production: secure, scalable apps | Bootpack Digital"
-	{description}
-	{canonical}
+	description={description}
+	canonical={canonical}
 	ogType="article"
 	ogImage="/og-blog-ai-builder-to-production.jpg"
 	ogImageAlt="A sketched app prototype becomes a finished application with a secure foundation"
-	{jsonLd}
+	jsonLd={jsonLd}
 />
 
 <div class="px-4 mx-auto sm:px-6 lg:px-8">
@@ -91,7 +91,7 @@
 			class="mt-8 w-full rounded-lg"
 			sizes="(min-width: 768px) 720px, calc(100vw - 2rem)"
 			fetchpriority="high"
-		/>
+		></enhanced:img>
 		<p class="mt-8 text-xl leading-8 text-gray-500">
 			You built an app with Lovable or another AI builder. People can click through the screens and
 			save data. Now you want to let customers depend on it.
@@ -109,9 +109,9 @@
 	<div class="px-4 mx-auto mt-12 prose prose-lg text-gray-500 prose-blue">
 		<h2>Review your AI-built app</h2>
 		<p>
-			AI builders help you test an idea with working software. We
-			<a href={resolve('/blog/ai-product-iteration')}>use AI in our own product work</a> so clients can
-			try a product early and tell us where it needs work.
+			AI builders help you test an idea with working software. We 
+			<a href={resolve('blog/ai-product-iteration')}>use AI in our own product work</a>
+			so clients can try a product early and tell us where it needs work.
 		</p>
 		<p>
 			Lovable, Bolt.new, Replit Agent, v0 by Vercel, and Base44 offer ways to build and publish apps.
@@ -130,41 +130,46 @@
 		</p>
 
 		<h2>Check who can access your data</h2>
+		<p>Define what each user can read and change after they sign in.</p>
+
 		<p>
-			Define what each user can read and change after they sign in.
+			For example, if two companies use your product, someone at Company A should never be able to fetch Company B's private records by changing an ID in a request. Test that boundary directly, including files, exports, and administrative actions.
 		</p>
 		<p>
-			For example, if two companies use your product, someone at Company A should never be able to
-			fetch Company B's private records by changing an ID in a request. Test that boundary directly,
-			including files, exports, and administrative actions.
+			Enforce permissions on the server and in the database where appropriate. For a Supabase-backed app, review and test row-level security policies, which control access to individual records. Hiding a button in the interface does not protect the action behind it.
 		</p>
 		<p>
-			Enforce permissions on the server and in the database where appropriate. For a
-			Supabase-backed app, review and test row-level security policies, which control access to
-			individual records. Hiding a button in the interface does not protect the action behind it.
+			Keep secret API keys and privileged credentials out of browser code. Validate incoming data on the server, even if the form already checks it.
 		</p>
 		<p>
-			Keep secret API keys and privileged credentials out of browser code. Validate incoming data
-			on the server, even if the form already checks it.
+			Use your builder's security tools to check for coding and configuration problems. Also test whether the app enforces the access rules you defined.
 		</p>
-		<p>
-			Use your builder's security tools to check for coding and configuration problems. Also test
-			whether the app enforces the access rules you defined.
-		</p>
-		<figure class="product-example not-prose overflow-hidden rounded-xl border border-gray-200 bg-gray-50">
+
+		<figure
+			class="product-example not-prose overflow-hidden rounded-xl border border-gray-200 bg-gray-50"
+		>
 			<enhanced:img
 				src={candidateDetails}
 				alt="JobListing candidate details with a resume, application answers, interview stage, and rating"
 				class="block w-full"
 				sizes="(min-width: 676px) 640px, calc(100vw - 2rem)"
 				loading="lazy"
-			/>
-			<figcaption class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6">
-				<p class="m-0 text-sm font-semibold tracking-wide uppercase text-blue-700">Access boundaries</p>
+			></enhanced:img>
+
+			<figcaption
+				class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6"
+			>
+				<p
+					class="m-0 text-sm font-semibold tracking-wide uppercase text-blue-700"
+				>Access boundaries</p>
+
 				<p class="mt-2 mb-0">
-					<a class="font-semibold text-navy-700 underline" href={resolve('/blog/introducing-joblisting')}>JobListing</a>,
-					one of our products, keeps resumes and application answers in a team's hiring workflow.
-					These are the kinds of private records an access review needs to cover.
+					<a
+						class="font-semibold text-navy-700 underline"
+						href={resolve('blog/introducing-joblisting')}
+					>JobListing</a>
+
+					, one of our products, keeps resumes and application answers in a team's hiring workflow. These are the kinds of private records an access review needs to cover.
 				</p>
 			</figcaption>
 		</figure>
@@ -199,13 +204,24 @@
 				class="block w-full"
 				sizes="(min-width: 676px) 640px, calc(100vw - 2rem)"
 				loading="lazy"
-			/>
-			<figcaption class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6">
-				<p class="m-0 text-sm font-semibold tracking-wide uppercase text-blue-700">Connected workflows</p>
+			></enhanced:img>
+
+			<figcaption
+				class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6"
+			>
+				<p
+					class="m-0 text-sm font-semibold tracking-wide uppercase text-blue-700"
+				>Connected workflows</p>
+
 				<p class="mt-2 mb-0">
-					Our <a class="font-semibold text-navy-700 underline" href={resolve('/blog/introducing-easy-customer-feedback')}>EasyCustomerFeedback</a>
-					app shows sync results alongside the original submission. For a workflow like this, test
-					what the user sees when an outside service fails and whether retrying creates duplicates.
+					Our 
+
+					<a
+						class="font-semibold text-navy-700 underline"
+						href={resolve('blog/introducing-easy-customer-feedback')}
+					>EasyCustomerFeedback</a>
+
+					app shows sync results alongside the original submission. For a workflow like this, test what the user sees when an outside service fails and whether retrying creates duplicates.
 				</p>
 			</figcaption>
 		</figure>
@@ -240,13 +256,24 @@
 				class="block w-full"
 				sizes="(min-width: 676px) 640px, calc(100vw - 2rem)"
 				loading="lazy"
-			/>
-			<figcaption class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6">
-				<p class="m-0 text-sm font-semibold tracking-wide uppercase text-blue-700">Realistic workloads</p>
+			></enhanced:img>
+
+			<figcaption
+				class="border-t border-gray-200 px-5 py-4 text-base leading-7 text-gray-600 sm:px-6"
+			>
+				<p
+					class="m-0 text-sm font-semibold tracking-wide uppercase text-blue-700"
+				>Realistic workloads</p>
+
 				<p class="mt-2 mb-0">
-					Our <a class="font-semibold text-navy-700 underline" href={resolve('/blog/introducing-officelunch')}>Office Lunch App</a>
-					brings a team's lunch responses into one view. A useful load test for this kind of app
-					would include a larger team and people updating their choices at the same time.
+					Our 
+
+					<a
+						class="font-semibold text-navy-700 underline"
+						href={resolve('blog/introducing-officelunch')}
+					>Office Lunch App</a>
+
+					brings a team's lunch responses into one view. A useful load test for this kind of app would include a larger team and people updating their choices at the same time.
 				</p>
 			</figcaption>
 		</figure>
@@ -290,10 +317,9 @@
 
 		<h2>How Bootpack Digital can help</h2>
 		<p>
-			Bring us the app you've built and tell us who needs to use it. We review your
-			<a href={resolve('/services')}>application code and connected services</a> to find problems
-			that need fixing before launch. You get recommended fixes and a list of improvements that
-			can wait.
+			Bring us the app you've built and tell us who needs to use it. We review your 
+			<a href={resolve('services')}>application code and connected services</a>
+			to find problems that need fixing before launch. You get recommended fixes and a list of improvements that can wait.
 		</p>
 		<p>
 			We can fix access checks in the application and database. We test the workflows customers
@@ -308,7 +334,7 @@
 			If you've built an app with Lovable or another AI builder, show us what's working and where
 			you're stuck. We'll help you work out what needs fixing before customers start using it.
 		</p>
-		<p><a href={resolve('/contact')}>Talk to Bootpack Digital about your app</a></p>
+		<p><a href={resolve('contact')}>Talk to Bootpack Digital about your app</a></p>
 	</div>
 </article>
 
@@ -316,7 +342,7 @@
 	<h2 class="text-2xl font-bold tracking-tight text-navy-900">Related posts</h2>
 	<div class="mt-6 grid gap-6">
 		<a
-			href={resolve('/blog/ai-product-iteration')}
+			href={resolve('blog/ai-product-iteration')}
 			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
 		>
 			<p class="text-xl font-semibold text-gray-900">Rapid product iteration with AI</p>
@@ -326,7 +352,7 @@
 			</p>
 		</a>
 		<a
-			href={resolve('/blog/how-we-work-with-you')}
+			href={resolve('blog/how-we-work-with-you')}
 			class="block p-6 rounded-lg shadow-lg bg-white hover:-translate-y-1 transition-all duration-300"
 		>
 			<p class="text-xl font-semibold text-gray-900">How we work with you on projects</p>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { replaceState } from "$app/navigation";
+  import { goto } from "$app/navigation";
   import { resolve } from "$app/paths";
   import { onMount } from "svelte";
   import { fade, fly } from "svelte/transition";
@@ -19,7 +19,7 @@
     // dynamic route id isn't assignable to any single overload; narrow to a
     // param-free route so the literal `resolve()` call still satisfies the
     // svelte/no-navigation-without-resolve lint rule.
-    replaceState(resolve(window.location.pathname as "/"), {});
+    goto(resolve(window.location.pathname as "/"), { shallow: true, replace: true });
   };
 </script>
 
@@ -61,10 +61,12 @@
               />
             </div>
             <div class="mt-3 text-center sm:mt-5">
-              <h3 class="text-base font-medium text-gray-800" id="modal-title">
-                Fictive Web &rarr; <span class="text-blue-600 font-bold"
-                  >Bootpack Digital</span
-                >
+              <h3
+                class="text-base font-medium text-gray-800"
+                id="modal-title"
+              >
+                Fictive Web → 
+                <span class="text-blue-600 font-bold">Bootpack Digital</span>
               </h3>
               <div class="mt-2 text-sm text-gray-500 prose">
                 <p>
@@ -72,11 +74,8 @@
                   Digital in 2018. Still the same us, just a more polished and
                   focused experience.
                 </p>
-                <p>
-                  <a href={resolve("/about")} class="underline"
-                    >Learn more about us</a
-                  >
-                </p>
+
+                <p><a href={resolve('about')} class="underline">Learn more about us</a></p>
               </div>
             </div>
           </div>

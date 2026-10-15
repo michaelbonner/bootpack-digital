@@ -11,7 +11,13 @@
 	const brands = [
 		{ title: 'Coca-Cola logo', logo: CocaCola, width: 300, height: 126 },
 		{ title: 'PACS logo', logo: PACS, width: 165, height: 43 },
-		{ title: 'EDGEhomes logo', logo: EdgeHomes, width: 300, height: 65 },
+		{
+			title: 'EDGEhomes logo',
+			logo: EdgeHomes,
+			width: 300,
+			height: 65
+		},
+
 		{
 			title: 'Intermountain Healthcare logo',
 			logo: IntermountainHealthcare,
@@ -37,11 +43,8 @@
 				</p>
 				<a
 					class="inline-flex items-center mt-6 font-semibold text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-navy-600"
-					href={resolve('/work')}
-				>
-					See some of our work
-					<LinkArrow class="ml-2" />
-				</a>
+					href={resolve('work')}
+				>See some of our work <LinkArrow class="ml-2" /></a>
 			</div>
 
 			<ul class="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3">

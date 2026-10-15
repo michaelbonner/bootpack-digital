@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { PUBLIC_TEST_CONTACT_FORM } from "$env/static/public";
+  import { PUBLIC_TEST_CONTACT_FORM } from '$app/env/public';
   import clsx from "clsx";
   import Turnstile from "./turnstile.svelte";
 
@@ -196,9 +196,7 @@
           fill="none"
           aria-hidden="true"
           class="col-start-2 row-start-1 place-self-center text-gray-500 pointer-events-none"
-        >
-          <path d="M.5.5 4 4 7.5.5" stroke="currentColor" />
-        </svg>
+        ><path d="M.5.5 4 4 7.5.5" stroke="currentColor"></path></svg>
       </div>
     </div>
     <div>
@@ -297,7 +295,7 @@
           fill-rule="evenodd"
           d="M16.704 5.29a1 1 0 010 1.42l-7.5 7.5a1 1 0 01-1.42 0l-3.5-3.5a1 1 0 011.42-1.42l2.79 2.79 6.79-6.79a1 1 0 011.42 0z"
           clip-rule="evenodd"
-        />
+        ></path>
       </svg>
     </span>
     <h2 class="text-2xl font-bold tracking-tight text-navy-700">
