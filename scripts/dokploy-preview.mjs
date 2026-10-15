@@ -68,7 +68,8 @@ async function call(path, { method = 'POST', query, body } = {}) {
 			'Content-Type': 'application/json',
 			accept: 'application/json'
 		},
-		body: method === 'POST' ? JSON.stringify(body ?? {}) : undefined
+		// GET must not carry a body, so the property only exists for POST.
+		...(method === 'POST' && { body: JSON.stringify(body ?? {}) })
 	});
 	const text = await res.text();
 	let json;
