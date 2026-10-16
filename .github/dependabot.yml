@@ -1,0 +1,45 @@
+# Weekly Dependabot pass over the third-party actions CI uses, so versions
+# like the actions/cache v4 -> v6 bump happen as reviewed PRs instead of
+# drifting until someone audits them by hand.
+#
+# Two blocks, because the github-actions ecosystem does not scan
+# .github/actions/ from `directory: /` -- that only covers
+# .github/workflows/. A composite action's action.yml needs its own entry
+# pointing at the directory that holds it, which is why build-image gets a
+# block of its own.
+#
+# The per-PR cost here is unusually high: every pull_request, Dependabot's
+# included, builds the full image and spins up a per-PR Dokploy preview app
+# (see preview.yml). Grouping each block's updates into one PR keeps that
+# cost down, and the preview build doubles as the canary -- the updated
+# workflow runs against the bumped action version before merge.
+
+version: 2
+updates:
+  # Workflows: actions/checkout, actions/github-script, actions/setup-node,
+  # actions/upload-artifact, oven-sh/setup-bun.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns:
+          - '*'
+
+  # The shared composite action: oven-sh/setup-bun, actions/cache,
+  # docker/login-action.
+  #
+  # oven-sh/setup-bun also appears in playwright.yml, so a bun bump lands in
+  # both blocks' grouped PRs the same week. That is harmless -- merging them
+  # in either order just pins the new tag in both files.
+  - package-ecosystem: github-actions
+    directory: /.github/actions/build-image
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns:
+          - '*'
