@@ -33,13 +33,13 @@
 		"@types/node": "^26.6.5",
 		"eslint-plugin-svelte": "^3.23.1",
 		"lefthook": "^2.2.2",
-		"svelte-check": "^4.7.6",
+		"svelte-check": "^4.7.7",
 		"svelte-obfuscate": "^0.3.0",
 		"svg-pathdata": "^9.0.0",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^6.0.3",
-		"vite": "^8.3.4",
-		"vite-plus": "^1.2.0"
+		"vite": "^8.3.5",
+		"vite-plus": "^1.4.0"
 	},
 	"type": "module",
 	"dependencies": {
@@ -47,7 +47,7 @@
 		"drizzle-kit": "^0.31.11",
 		"drizzle-orm": "^0.45.4",
 		"postgres": "^3.4.9",
-		"posthog-js": "^1.438.12",
+		"posthog-js": "^1.438.20",
 		"svelte": "^5.57.2"
 	},
 	"packageManager": "bun@1.4.0",
