@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<meta name="color-scheme" content="light only" />
+		<meta name="theme-color" content="#005D8F" />
+		<title>Something went wrong | Bootpack Digital</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				margin: 0;
+				font-size: 18px;
+			}
+
+			body {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				background: #f5f9fb;
+				color: #003856;
+				font-family:
+					'Figtree Variable',
+					Figtree,
+					ui-sans-serif,
+					system-ui,
+					-apple-system,
+					'Segoe UI',
+					Roboto,
+					'Helvetica Neue',
+					Arial,
+					sans-serif;
+				line-height: 1.5;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			header {
+				background: #fff;
+				padding: 0.75rem 1.5rem;
+				box-shadow: 0 1px 3px rgba(0, 42, 64, 0.08);
+			}
+
+			header a {
+				display: inline-block;
+				padding: 0.25rem 0;
+			}
+
+			header img {
+				display: block;
+				height: 45px;
+				width: auto;
+			}
+
+			main {
+				flex: 1;
+				position: relative;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+			}
+
+			main::before {
+				content: '';
+				position: absolute;
+				inset: 0 0 auto;
+				height: 1px;
+				background: linear-gradient(to right, transparent, #a9cfe2, transparent);
+			}
+
+			.rings {
+				position: absolute;
+				right: -6rem;
+				bottom: -6rem;
+				width: 28rem;
+				height: 28rem;
+				border-radius: 50%;
+				border: 1px solid #c9e1ed;
+				box-shadow:
+					0 0 0 3rem #f5f9fb,
+					0 0 0 calc(3rem + 1px) #c9e1ed,
+					0 0 0 6rem #f5f9fb,
+					0 0 0 calc(6rem + 1px) #c9e1ed;
+				pointer-events: none;
+				display: none;
+			}
+
+			.content {
+				position: relative;
+				width: 100%;
+				max-width: 80rem;
+				margin: 0 auto;
+				padding: 4rem 1rem;
+			}
+
+			.inner {
+				max-width: 42rem;
+			}
+
+			.eyebrow {
+				margin: 0 0 1.25rem;
+				font-size: 0.875rem;
+				font-weight: 700;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				color: #c65047;
+			}
+
+			h1 {
+				margin: 0;
+				font-size: 2.25rem;
+				font-weight: 800;
+				line-height: 1.08;
+				letter-spacing: -0.025em;
+				color: #003856;
+			}
+
+			.lead {
+				margin: 1.5rem 0 0;
+				max-width: 36rem;
+				font-size: 1.125rem;
+				line-height: 1.75;
+				color: #005481;
+			}
+
+			.actions {
+				display: flex;
+				flex-direction: column;
+				gap: 0.75rem;
+				margin-top: 2.25rem;
+			}
+
+			.button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.75rem 1.5rem;
+				border-radius: 0.375rem;
+				font: inherit;
+				font-size: 1rem;
+				font-weight: 600;
+				text-decoration: none;
+				cursor: pointer;
+				transition:
+					background-color 150ms,
+					color 150ms;
+			}
+
+			.button:focus-visible {
+				outline: 2px solid #c65047;
+				outline-offset: 4px;
+			}
+
+			.primary {
+				border: 0;
+				background: #c65047;
+				color: #fff;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+			}
+
+			.primary:hover {
+				background: #d8564a;
+			}
+
+			.secondary {
+				border: 1px solid #99bed2;
+				background: transparent;
+				color: #003856;
+			}
+
+			.secondary:hover {
+				background: #e6eff4;
+			}
+
+			.secondary:focus-visible {
+				outline-color: #005481;
+			}
+
+			.note {
+				margin: 2.5rem 0 0;
+				font-size: 0.875rem;
+				color: #4b5563;
+			}
+
+			.note a {
+				color: #005d8f;
+				font-weight: 600;
+				text-underline-offset: 2px;
+			}
+
+			footer {
+				background: #003856;
+				color: #e6eff4;
+				padding: 1.5rem;
+				font-size: 0.875rem;
+				text-align: center;
+			}
+
+			@media (min-width: 640px) {
+				.rings {
+					display: block;
+				}
+
+				.content {
+					padding: 6rem 1.5rem;
+				}
+
+				h1 {
+					font-size: 3rem;
+				}
+
+				.lead {
+					font-size: 1.25rem;
+				}
+
+				.actions {
+					flex-direction: row;
+					align-items: center;
+				}
+			}
+
+			@media (min-width: 1024px) {
+				.content {
+					padding: 7rem 2rem;
+				}
+
+				h1 {
+					font-size: 3.75rem;
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				.button {
+					transition: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="/" title="Bootpack Digital home page">
+				<img src="/images/bootpack-horizontal.svg" alt="Bootpack Digital" width="218" height="45" />
+			</a>
+		</header>
+
+		<main>
+			<div class="rings" aria-hidden="true"></div>
+			<div class="content">
+				<div class="inner">
+					<p class="eyebrow">Trail marker %sveltekit.status%</p>
+					<h1>We hit a rough patch.</h1>
+					<p class="lead">
+						Something on our end didn't load the way it should. Give it another try in a moment, or
+						head back to the trailhead and pick another route.
+					</p>
+					<div class="actions">
+						<button class="button primary" type="button" onclick="location.reload()">
+							Try again
+						</button>
+						<a class="button secondary" href="/">Back to the trailhead</a>
+					</div>
+					<p class="note">
+						Still stuck? <a href="/contact">Get in touch</a> and we'll help you find your way.
+					</p>
+				</div>
+			</div>
+		</main>
+
+		<footer>&copy; Bootpack Digital</footer>
+	</body>
+</html>
