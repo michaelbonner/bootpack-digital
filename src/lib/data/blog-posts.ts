@@ -1,4 +1,5 @@
 import type { Picture } from 'vite-imagetools';
+import appAfterLaunchCostsThumbnail from '../../images/app-after-launch-costs.jpg?w=320;480;640;800;960;1200&enhanced';
 import whatToDoInSaltLakeThumbnail from '../../images/whattodoinsaltlake-screenshots/homepage.png?w=320;480;640;800;960;1200&enhanced';
 import officeLunchThumbnail from '../../images/officelunch-screenshots/homepage-hero.png?w=320;480;640;800;960;1200&enhanced';
 import jobListingThumbnail from '../../images/joblisting-app-screenshots/homepage.jpg?w=320;480;640;800;960;1200&enhanced';
@@ -26,6 +27,14 @@ export const formatBlogPostDate = (publishedAt: BlogPost['publishedAt']) =>
 	blogPostDateFormatter.format(new Date(`${publishedAt}T00:00:00Z`));
 
 export const blogPosts = [
+	{
+		title: 'What does a custom app cost after launch?',
+		slug: 'app-after-launch-costs',
+		description:
+			'A practical way to budget for hosting, third-party services, maintenance, support, and new features after your custom app goes live.',
+		publishedAt: '2026-10-25',
+		thumbnail: appAfterLaunchCostsThumbnail
+	},
 	{
 		title: 'From Lovable to a production app you can trust',
 		slug: 'ai-builder-to-production',
