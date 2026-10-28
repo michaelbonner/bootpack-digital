@@ -31,10 +31,12 @@ inputs:
     description: PUBLIC_TURNSTILE_SITE_KEY, inlined into the client bundle.
     required: true
   ghcr-username:
-    description: GHCR user for the push login.
+    description: GHCR user for the push login (the workflow's github.actor).
     required: true
   ghcr-token:
-    description: PAT with write:packages. Only reaches the login and push steps.
+    description: >-
+      The workflow's GITHUB_TOKEN, with packages write. Only reaches the login
+      and push steps.
     required: true
 
 runs:
@@ -125,8 +127,9 @@ runs:
       uses: docker/login-action@v4
       with:
         registry: ghcr.io
-        # PAT with write:packages — the package is user-owned, so the per-repo
-        # GITHUB_TOKEN can't push to it. The PAT owner can.
+        # GITHUB_TOKEN with `packages: write` (set on the calling job). The
+        # package is org-owned and linked to this repo, which is what lets the
+        # per-repo token push to it; no PAT needed.
         username: ${{ inputs.ghcr-username }}
         password: ${{ inputs.ghcr-token }}
 
