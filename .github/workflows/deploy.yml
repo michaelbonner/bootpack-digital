@@ -51,14 +51,14 @@ jobs:
       # Fails before the build rather than after it. GHCR_PULL_TOKEN is what
       # Dokploy stores to pull this image; an unset secret interpolates to an
       # empty string, which would hand Dokploy blank credentials and leave it
-      # unable to pull. There is deliberately no fallback to GHCR_TOKEN, because
-      # that would silently restore the push-capable token this separates out.
+      # unable to pull. There is deliberately no fallback to GITHUB_TOKEN: it can
+      # push, and it expires when this job ends, so Dokploy could not reuse it.
       - name: Require the GHCR pull token
         env:
           GHCR_PULL_TOKEN: ${{ secrets.GHCR_PULL_TOKEN }}
         run: |
           if [ -z "$GHCR_PULL_TOKEN" ]; then
-            echo "::error::GHCR_PULL_TOKEN is not set. Dokploy needs a read:packages token to pull this image. Create one and add it as a repository secret; do not reuse GHCR_TOKEN, which can push."
+            echo "::error::GHCR_PULL_TOKEN is not set. Dokploy needs a read:packages token to pull this image. Create one and add it as a repository secret; do not reuse a token that can push."
             exit 1
           fi
 
@@ -83,8 +83,8 @@ jobs:
           public-test-contact-form: 'FALSE'
           public-posthog-enabled: 'true'
           public-turnstile-site-key: '0x4AAAAAADVBAAlmPC-i5FhE'
-          ghcr-username: michaelbonner
-          ghcr-token: ${{ secrets.GHCR_TOKEN }}
+          ghcr-username: ${{ github.actor }}
+          ghcr-token: ${{ secrets.GITHUB_TOKEN }}
 
       # The non-empty check above cannot tell whether the token still WORKS. An
       # expired or revoked one would sail past it, and then saveDockerProvider
@@ -95,7 +95,7 @@ jobs:
       #
       # DOCKER_CONFIG points at a throwaway directory on purpose: the push login
       # earlier in this job is still active, and without an isolated credential
-      # store `docker manifest inspect` would happily succeed on GHCR_TOKEN and
+      # store `docker manifest inspect` would happily succeed on GITHUB_TOKEN and
       # tell us nothing about GHCR_PULL_TOKEN.
       - name: Verify the pull token can actually read this image
         env:
@@ -133,7 +133,7 @@ jobs:
           DOKPLOY_API_KEY: ${{ secrets.DOKPLOY_API_KEY }}
           DOKPLOY_APPLICATION_ID: ${{ secrets.DOKPLOY_APPLICATION_ID }}
           # Pull-only. Dokploy stores this credential, so it must not be able to
-          # push to the package; GHCR_TOKEN stays scoped to the login above.
+          # push to the package; GITHUB_TOKEN stays scoped to the login above.
           GHCR_PULL_TOKEN: ${{ secrets.GHCR_PULL_TOKEN }}
           IMAGE_REF: ${{ steps.meta.outputs.image }}:${{ github.sha }}
         run: |

@@ -6,4 +6,4 @@ Public website for Bootpack Digital, LLC
 
 ## License
 
-[MIT](https://github.com/michaelbonner/bootpack-digital/blob/master/LICENSE.md)
+[MIT](https://github.com/bootpackdigital/bootpack-digital/blob/master/LICENSE.md)
